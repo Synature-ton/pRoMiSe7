@@ -4064,3 +4064,4 @@ CREATE TABLE DocumentTemplateHideMaterial (
 
 -- INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6205'));
 INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6207'));
+-- 12/07/2019
