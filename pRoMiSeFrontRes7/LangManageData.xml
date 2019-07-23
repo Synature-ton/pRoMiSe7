@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Form>
+		<FormID>1</FormID>
+		<TextID>1</TextID>
+		<DefaultText>Ok</DefaultText>
+		<Lang1>Ok</Lang1>
+		<Lang2>Ok</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>2</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>3</TextID>
+		<DefaultText>Close</DefaultText>
+		<Lang1>Close</Lang1>
+		<Lang2>Close</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>4</TextID>
+		<DefaultText>&gt;&gt;   Next</DefaultText>
+		<Lang1>&gt;&gt;   Next</Lang1>
+		<Lang2>&gt;&gt;   Next</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>5</TextID>
+		<DefaultText>&lt;&lt;   Back</DefaultText>
+		<Lang1>&lt;&lt;   Back</Lang1>
+		<Lang2>&lt;&lt;   Back</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>6</TextID>
+		<DefaultText>Apply</DefaultText>
+		<Lang1>Apply</Lang1>
+		<Lang2>Apply</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>7</TextID>
+		<DefaultText>Export Data</DefaultText>
+		<Lang1>Export Data</Lang1>
+		<Lang2>การส่งข้อมูล - Export</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>8</TextID>
+		<DefaultText>Transfer Data</DefaultText>
+		<Lang1>Transfer Data</Lang1>
+		<Lang2>การดึงข้อมูลจาก Branch</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>9</TextID>
+		<DefaultText>Data Can Export</DefaultText>
+		<Lang1>Data Can Export</Lang1>
+		<Lang2>ข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>10</TextID>
+		<DefaultText>Selected Data For Export</DefaultText>
+		<Lang1>Selected Data For Export</Lang1>
+		<Lang2>ข้อมูลที่ต้องการส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>11</TextID>
+		<DefaultText>Data Can Transfer To Branch</DefaultText>
+		<Lang1>Data Can Transfer To Branch</Lang1>
+		<Lang2>ข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>12</TextID>
+		<DefaultText>Selected Data For Transfer To Branch</DefaultText>
+		<Lang1>Selected Data For Transfer To Branch</Lang1>
+		<Lang2>ข้อมูลที่ต้องการดึงจาก Branch</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>13</TextID>
+		<DefaultText>Set Import Schedule</DefaultText>
+		<Lang1>Set Import Schedule</Lang1>
+		<Lang2>ตั้งเวลาการรับส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>14</TextID>
+		<DefaultText>Set Export Schedule</DefaultText>
+		<Lang1>Set Export Schedule</Lang1>
+		<Lang2>ตั้งเวลาการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>15</TextID>
+		<DefaultText>Prepare Data For Export</DefaultText>
+		<Lang1>Prepare Data For Export</Lang1>
+		<Lang2>เตรียมตัวสำหรับการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>16</TextID>
+		<DefaultText>Data Description</DefaultText>
+		<Lang1>Data Description</Lang1>
+		<Lang2>คำอธิบายของข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>17</TextID>
+		<DefaultText>Save</DefaultText>
+		<Lang1>Save</Lang1>
+		<Lang2>Save</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>18</TextID>
+		<DefaultText>Search</DefaultText>
+		<Lang1>Search</Lang1>
+		<Lang2>Search</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>19</TextID>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>20</TextID>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>1</TextID>
+		<DefaultText>Transfer &amp;Data</DefaultText>
+		<Lang1>Transfer &amp;Data</Lang1>
+		<Lang2>Transfer &amp;Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>2</TextID>
+		<DefaultText>&amp;Export Data</DefaultText>
+		<Lang1>&amp;Export Data</Lang1>
+		<Lang2>&amp;Export Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>3</TextID>
+		<DefaultText>&amp;Import Data</DefaultText>
+		<Lang1>&amp;Import Data</Lang1>
+		<Lang2>&amp;Import Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>4</TextID>
+		<DefaultText>Create SQL File To Region</DefaultText>
+		<Lang1>Create SQL File To Region</Lang1>
+		<Lang2>Create SQL File To Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>5</TextID>
+		<DefaultText>Exit</DefaultText>
+		<Lang1>Exit</Lang1>
+		<Lang2>Exit</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>6</TextID>
+		<DefaultText>Tool</DefaultText>
+		<Lang1>Tool</Lang1>
+		<Lang2>Tool</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>7</TextID>
+		<DefaultText>Synchronize Data Schedule</DefaultText>
+		<Lang1>Synchronize Data Schedule</Lang1>
+		<Lang2>Synchronize Data Schedule</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>8</TextID>
+		<DefaultText>Preference</DefaultText>
+		<Lang1>Preference</Lang1>
+		<Lang2>Preference</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>9</TextID>
+		<DefaultText>Set Data Type Group</DefaultText>
+		<Lang1>Set Data Type Group</Lang1>
+		<Lang2>Set Data Type Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>10</TextID>
+		<DefaultText>Language</DefaultText>
+		<Lang1>Language</Lang1>
+		<Lang2>Language</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>11</TextID>
+		<DefaultText>English</DefaultText>
+		<Lang1>English</Lang1>
+		<Lang2>English</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>12</TextID>
+		<DefaultText>Thai</DefaultText>
+		<Lang1>Thai</Lang1>
+		<Lang2>Thai</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>13</TextID>
+		<DefaultText>Export Data</DefaultText>
+		<Lang1>Export Data</Lang1>
+		<Lang2>Export Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>14</TextID>
+		<DefaultText>Import Data</DefaultText>
+		<Lang1>Import Data</Lang1>
+		<Lang2>Import Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>15</TextID>
+		<DefaultText>Transfer From Branch</DefaultText>
+		<Lang1>Transfer From Branch</Lang1>
+		<Lang2>Transfer From Branch</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>16</TextID>
+		<DefaultText>Import Branch</DefaultText>
+		<Lang1>Import Branch</Lang1>
+		<Lang2>Import Branch</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>17</TextID>
+		<DefaultText>File to Region</DefaultText>
+		<Lang1>File to Region</Lang1>
+		<Lang2>File to Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>18</TextID>
+		<DefaultText>Log Report</DefaultText>
+		<Lang1>Log Report</Lang1>
+		<Lang2>รายงาน Log Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>19</TextID>
+		<DefaultText>To Terminal</DefaultText>
+		<Lang1>To Terminal</Lang1>
+		<Lang2>To Terminal</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>20</TextID>
+		<DefaultText>pRoMiSe Manage Data</DefaultText>
+		<Lang1>pRoMiSe Manage Data</Lang1>
+		<Lang2>pRoMiSe Manage Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>21</TextID>
+		<DefaultText>(Branch)</DefaultText>
+		<Lang1>(Branch)</Lang1>
+		<Lang2>(Branch)</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>22</TextID>
+		<DefaultText>(Head Quarter)</DefaultText>
+		<Lang1>(Head Quarter)</Lang1>
+		<Lang2>(Head Quarter)</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>23</TextID>
+		<DefaultText>Prepare For Import Data</DefaultText>
+		<Lang1>Prepare For Import Data</Lang1>
+		<Lang2>Prepare For Import Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>24</TextID>
+		<DefaultText>Import Data Finish</DefaultText>
+		<Lang1>Import Data Finish</Lang1>
+		<Lang2>Import Data Finish</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>25</TextID>
+		<DefaultText>Prepare For Import Data To Branch</DefaultText>
+		<Lang1>Prepare For Import Data To Branch</Lang1>
+		<Lang2>Prepare For Import Data To Branch</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>26</TextID>
+		<DefaultText>Import Data To Each Branch Finish</DefaultText>
+		<Lang1>Import Data To Each Branch Finish</Lang1>
+		<Lang2>Import Data To Each Branch Finish</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>27</TextID>
+		<DefaultText>Export Data To Each Terminal Finish</DefaultText>
+		<Lang1>Export Data To Each Terminal Finish</Lang1>
+		<Lang2>Export Data To Each Terminal Finish</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<TextID>28</TextID>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>1</TextID>
+		<DefaultText>Export Selected Product</DefaultText>
+		<Lang1>Export Selected Product</Lang1>
+		<Lang2>Export แบบเลือกสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>2</TextID>
+		<DefaultText>Select Region For Export Data</DefaultText>
+		<Lang1>Select Region For Export Data</Lang1>
+		<Lang2>เลือก Region ที่ต้องการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>3</TextID>
+		<DefaultText>Export Data Type</DefaultText>
+		<Lang1>Export Data Type</Lang1>
+		<Lang2>ข้อมูลที่ต้องการส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>4</TextID>
+		<DefaultText>Data Type</DefaultText>
+		<Lang1>Data Type</Lang1>
+		<Lang2>ข้อมูลที่ต้องการส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>5</TextID>
+		<DefaultText>Export Data</DefaultText>
+		<Lang1>Export Data</Lang1>
+		<Lang2>Export Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>6</TextID>
+		<DefaultText>Export Data Type</DefaultText>
+		<Lang1>Export Data Type</Lang1>
+		<Lang2>ข้อมูลที่ต้องการส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>7</TextID>
+		<DefaultText>Export Data Summary</DefaultText>
+		<Lang1>Export Data Summary</Lang1>
+		<Lang2>สรุปการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>8</TextID>
+		<DefaultText>Expor Time</DefaultText>
+		<Lang1>Expor Time</Lang1>
+		<Lang2>ช่วงเวลาการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>9</TextID>
+		<DefaultText>Export From Last Export Date</DefaultText>
+		<Lang1>Export From Last Export Date</Lang1>
+		<Lang2>ข้อมูลที่เลือกต่อจากการส่งครั้งล่าสุด</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>10</TextID>
+		<DefaultText>Export All Data</DefaultText>
+		<Lang1>Export All Data</Lang1>
+		<Lang2>ส่งข้อมูลที่เลือกทั้งหมดตั้งแต่แรก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>11</TextID>
+		<DefaultText>Export Data Wizzard</DefaultText>
+		<Lang1>Export Data Wizzard</Lang1>
+		<Lang2>Export Data Wizzard</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>12</TextID>
+		<DefaultText>Transfer Data Selected Product</DefaultText>
+		<Lang1>Transfer Data Selected Product</Lang1>
+		<Lang2>TransferData แบบเลือกสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>13</TextID>
+		<DefaultText>Select Region For Transfer Data</DefaultText>
+		<Lang1>Select Region For Transfer Data</Lang1>
+		<Lang2>เลือก Region ที่ต้องการดึงข้อมูลกลับมา</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>14</TextID>
+		<DefaultText>Transfer Data Type</DefaultText>
+		<Lang1>Transfer Data Type</Lang1>
+		<Lang2>ข้อมูลที่ต้องการดึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>15</TextID>
+		<DefaultText>Data Type</DefaultText>
+		<Lang1>Data Type</Lang1>
+		<Lang2>ข้อมูลที่ต้องการดึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>16</TextID>
+		<DefaultText>Transfer Data</DefaultText>
+		<Lang1>Transfer Data</Lang1>
+		<Lang2>Transfer Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>17</TextID>
+		<DefaultText>Transfer Data Type</DefaultText>
+		<Lang1>Transfer Data Type</Lang1>
+		<Lang2>ข้อมูลที่ต้องการดึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>18</TextID>
+		<DefaultText>Transfer Data Summary</DefaultText>
+		<Lang1>Transfer Data Summary</Lang1>
+		<Lang2>Transfer Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>19</TextID>
+		<DefaultText>Transfer Time</DefaultText>
+		<Lang1>Transfer Time</Lang1>
+		<Lang2>ช่วงเวลาการดึงข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>20</TextID>
+		<DefaultText>Transfer Data From Last Transfer Time</DefaultText>
+		<Lang1>Transfer Data From Last Transfer Time</Lang1>
+		<Lang2>ข้อมูลที่เลือกต่อจากการส่งครั้งล่าสุด</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>21</TextID>
+		<DefaultText>Transfer All Data</DefaultText>
+		<Lang1>Transfer All Data</Lang1>
+		<Lang2>ส่งข้อมูลที่เลือกทั้งหมดตั้งแต่แรก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>22</TextID>
+		<DefaultText>Transfer Data Direct Link</DefaultText>
+		<Lang1>Transfer Data Direct Link</Lang1>
+		<Lang2>Transfer Data Direct Link</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>23</TextID>
+		<DefaultText>Select All</DefaultText>
+		<Lang1>Select All</Lang1>
+		<Lang2>เลือกทั้งหมด</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>24</TextID>
+		<DefaultText>Region Name</DefaultText>
+		<Lang1>Region Name</Lang1>
+		<Lang2>ชื่อ Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>25</TextID>
+		<DefaultText>Shop In Region</DefaultText>
+		<Lang1>Shop In Region</Lang1>
+		<Lang2>ร้านใน Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>26</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>คำอธิบาย</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>27</TextID>
+		<DefaultText>Time Criteria</DefaultText>
+		<Lang1>Time Criteria</Lang1>
+		<Lang2>Time Criteria</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>28</TextID>
+		<DefaultText>DataType</DefaultText>
+		<Lang1>DataType</Lang1>
+		<Lang2>ข้อมูลที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>29</TextID>
+		<DefaultText>Region</DefaultText>
+		<Lang1>Region</Lang1>
+		<Lang2>Region ที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>30</TextID>
+		<DefaultText>Region Name</DefaultText>
+		<Lang1>Region Name</Lang1>
+		<Lang2>ชื่อ Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>31</TextID>
+		<DefaultText>From</DefaultText>
+		<Lang1>From</Lang1>
+		<Lang2>จาก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>32</TextID>
+		<DefaultText>To</DefaultText>
+		<Lang1>To</Lang1>
+		<Lang2>ถึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>33</TextID>
+		<DefaultText>Export Between Date</DefaultText>
+		<Lang1>Export Between Date</Lang1>
+		<Lang2>ข้อมูลที่เลือกระหว่างวัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>34</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>35</TextID>
+		<DefaultText>There is other export data process is running. Program can allow only 1 export data process run at a time. Please try again latter.</DefaultText>
+		<Lang1>There is other export data process is running. Program can allow only 1 export data process run at a time. Please try again latter.</Lang1>
+		<Lang2>There is other export data process is running. Program can allow only 1 export data process run at a time. Please try again latter.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>36</TextID>
+		<DefaultText>Other Export Data Process Running.</DefaultText>
+		<Lang1>Other Export Data Process Running.</Lang1>
+		<Lang2>Other Export Data Process Running.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>37</TextID>
+		<DefaultText>Export Data Is Not Success. Please Check Error Log.</DefaultText>
+		<Lang1>Export Data Is Not Success. Please Check Error Log.</Lang1>
+		<Lang2>Export Data Is Not Success. Please Check Error Log.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>38</TextID>
+		<DefaultText>Export Data Success</DefaultText>
+		<Lang1>Export Data Success</Lang1>
+		<Lang2>Export Data Success</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>39</TextID>
+		<DefaultText>Export Data</DefaultText>
+		<Lang1>Export Data</Lang1>
+		<Lang2>Export Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>40</TextID>
+		<DefaultText>Delete All</DefaultText>
+		<Lang1>Delete All</Lang1>
+		<Lang2>Delete All</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>41</TextID>
+		<DefaultText>All &gt;&gt;</DefaultText>
+		<Lang1>All &gt;&gt;</Lang1>
+		<Lang2>All &gt;&gt;</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>42</TextID>
+		<DefaultText>Delete</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>Delete</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>43</TextID>
+		<DefaultText>Product Dept</DefaultText>
+		<Lang1>Product Dept</Lang1>
+		<Lang2>หมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>44</TextID>
+		<DefaultText>Product Group</DefaultText>
+		<Lang1>Product Group</Lang1>
+		<Lang2>กลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>45</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัสสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>46</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>ชื่อสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>47</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>48</TextID>
+		<DefaultText>Export Data</DefaultText>
+		<Lang1>Export Data</Lang1>
+		<Lang2>Export Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>49</TextID>
+		<DefaultText>Export Product Summary</DefaultText>
+		<Lang1>Export Product Summary</Lang1>
+		<Lang2>สรุปการส่งข้อมูลสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>50</TextID>
+		<DefaultText>Selected Product</DefaultText>
+		<Lang1>Selected Product</Lang1>
+		<Lang2>ข้อมูลสินค้าที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>51</TextID>
+		<DefaultText>Selected Region</DefaultText>
+		<Lang1>Selected Region</Lang1>
+		<Lang2>Region ที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>52</TextID>
+		<DefaultText>Export Product Problem</DefaultText>
+		<Lang1>Export Product Problem</Lang1>
+		<Lang2>ปัญหาในการ export สินค้าที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>53</TextID>
+		<DefaultText>Selected Shop</DefaultText>
+		<Lang1>Selected Shop</Lang1>
+		<Lang2>ร้านที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>54</TextID>
+		<DefaultText>Shop</DefaultText>
+		<Lang1>Shop</Lang1>
+		<Lang2>ร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>55</TextID>
+		<DefaultText>Note</DefaultText>
+		<Lang1>Note</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>56</TextID>
+		<DefaultText>*** Product not allow to export product unit there is no problem in list.</DefaultText>
+		<Lang1>*** Product not allow to export product unit there is no problem in list.</Lang1>
+		<Lang2>*** โปรแกรมจะไม่อนุญาตให้ export ข้อมูลจนกว่าจะทำการแก้ไขปัญาที่แสดงใน list หมด</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>57</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>58</TextID>
+		<DefaultText>Validate</DefaultText>
+		<Lang1>Validate</Lang1>
+		<Lang2>Validate</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>59</TextID>
+		<DefaultText>Export Product Data Wizzard</DefaultText>
+		<Lang1>Export Product Data Wizzard</Lang1>
+		<Lang2>Export Product Data Wizzard</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>60</TextID>
+		<DefaultText>--- Select Shop ---</DefaultText>
+		<Lang1>--- Select Shop ---</Lang1>
+		<Lang2>--- Select Shop ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>61</TextID>
+		<DefaultText>--- Select Group ---</DefaultText>
+		<Lang1>--- Select Group ---</Lang1>
+		<Lang2>--- Select Group ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>62</TextID>
+		<DefaultText>--- All Group ---</DefaultText>
+		<Lang1>--- All Group ---</Lang1>
+		<Lang2>--- All Group ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>63</TextID>
+		<DefaultText>--- Select Dept --</DefaultText>
+		<Lang1>--- Select Dept --</Lang1>
+		<Lang2>--- Select Dept --</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>64</TextID>
+		<DefaultText>--- All Dept ---</DefaultText>
+		<Lang1>--- All Dept ---</Lang1>
+		<Lang2>--- All Dept ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>65</TextID>
+		<DefaultText>Select All</DefaultText>
+		<Lang1>Select All</Lang1>
+		<Lang2>Select All</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>66</TextID>
+		<DefaultText>Region Name</DefaultText>
+		<Lang1>Region Name</Lang1>
+		<Lang2>Region Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>67</TextID>
+		<DefaultText>Shop In Region</DefaultText>
+		<Lang1>Shop In Region</Lang1>
+		<Lang2>Shop In Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>68</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>69</TextID>
+		<DefaultText>Select Region to copy export file</DefaultText>
+		<Lang1>Select Region to copy export file</Lang1>
+		<Lang2>Select Region to copy export file</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>70</TextID>
+		<DefaultText>Copy file</DefaultText>
+		<Lang1>Copy file</Lang1>
+		<Lang2>Copy file</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>71</TextID>
+		<DefaultText>Copy Export File To Region Folder</DefaultText>
+		<Lang1>Copy Export File To Region Folder</Lang1>
+		<Lang2>Copy Export File To Region Folder</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>72</TextID>
+		<DefaultText>Select Region to SQL file</DefaultText>
+		<Lang1>Select Region to SQL file</Lang1>
+		<Lang2>Select Region to SQL file</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>73</TextID>
+		<DefaultText>Create File</DefaultText>
+		<Lang1>Create File</Lang1>
+		<Lang2>Create File</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>74</TextID>
+		<DefaultText>Creat SQL File For Region</DefaultText>
+		<Lang1>Creat SQL File For Region</Lang1>
+		<Lang2>Creat SQL File For Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>75</TextID>
+		<DefaultText>Please select region to copy export file.</DefaultText>
+		<Lang1>Please select region to copy export file.</Lang1>
+		<Lang2>Please select region to copy export file.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>76</TextID>
+		<DefaultText>Invalid Data</DefaultText>
+		<Lang1>Invalid Data</Lang1>
+		<Lang2>Invalid Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>77</TextID>
+		<DefaultText>Copy file to destination folder success.</DefaultText>
+		<Lang1>Copy file to destination folder success.</Lang1>
+		<Lang2>Copy file to destination folder success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>78</TextID>
+		<DefaultText>Copy File Success.</DefaultText>
+		<Lang1>Copy File Success.</Lang1>
+		<Lang2>Copy File Success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>79</TextID>
+		<DefaultText>Please select region to create SQL file.</DefaultText>
+		<Lang1>Please select region to create SQL file.</Lang1>
+		<Lang2>Please select region to create SQL file.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>80</TextID>
+		<DefaultText>Create SQL file success.</DefaultText>
+		<Lang1>Create SQL file success.</Lang1>
+		<Lang2>Create SQL file success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>81</TextID>
+		<DefaultText>Create SQL File Success.</DefaultText>
+		<Lang1>Create SQL File Success.</Lang1>
+		<Lang2>Create SQL File Success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>82</TextID>
+		<DefaultText>Export Data Advance Mode</DefaultText>
+		<Lang1>Export Data Advance Mode</Lang1>
+		<Lang2>Export Data Advance Mode</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>83</TextID>
+		<DefaultText>Max File Day in Backup Folder</DefaultText>
+		<Lang1>Max File Day in Backup Folder</Lang1>
+		<Lang2>Max File Day in Backup Folder</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>84</TextID>
+		<DefaultText>Manage Data Class Version</DefaultText>
+		<Lang1>Manage Data Class Version</Lang1>
+		<Lang2>Manage Data Class Version</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>85</TextID>
+		<DefaultText>Preference</DefaultText>
+		<Lang1>Preference</Lang1>
+		<Lang2>Preference</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>86</TextID>
+		<DefaultText>Group Of DataType</DefaultText>
+		<Lang1>Group Of DataType</Lang1>
+		<Lang2>กลุ่มชนิดข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>87</TextID>
+		<DefaultText>DataType</DefaultText>
+		<Lang1>DataType</Lang1>
+		<Lang2>ชนิดข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>88</TextID>
+		<DefaultText>Export Setting</DefaultText>
+		<Lang1>Export Setting</Lang1>
+		<Lang2>Export Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>89</TextID>
+		<DefaultText>Select Data Type Setting</DefaultText>
+		<Lang1>Select Data Type Setting</Lang1>
+		<Lang2>กำหนดค่าและลำดับชนิดการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>90</TextID>
+		<DefaultText>Save Data Finish</DefaultText>
+		<Lang1>Save Data Success</Lang1>
+		<Lang2>ทำการบันทึกข้อมูลเสร็จสิ้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>91</TextID>
+		<DefaultText>Save Data Success</DefaultText>
+		<Lang1>Save Data Success</Lang1>
+		<Lang2>Save Data Success</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>92</TextID>
+		<DefaultText>Export Transfer DataType Success.</DefaultText>
+		<Lang1>Export Transfer DataType Success.</Lang1>
+		<Lang2>Export Transfer DataType Success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>93</TextID>
+		<DefaultText>Export Success</DefaultText>
+		<Lang1>Export Success</Lang1>
+		<Lang2>Export Success</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>94</TextID>
+		<DefaultText>Import Data Is Not Complete. Please Check Error Log.</DefaultText>
+		<Lang1>Import Data Is Not Complete. Please Check Error Log.</Lang1>
+		<Lang2>Import Data Is Not Complete. Please Check Error Log.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>95</TextID>
+		<DefaultText>Import Data Success</DefaultText>
+		<Lang1>Import Data Success</Lang1>
+		<Lang2>Import Data Success</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>96</TextID>
+		<DefaultText>Import Data To Each Branch Is Not Complete. Please Check Error Log.</DefaultText>
+		<Lang1>Import Data To Each Branch Is Not Complete. Please Check Error Log.</Lang1>
+		<Lang2>Import Data To Each Branch Is Not Complete. Please Check Error Log.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>97</TextID>
+		<DefaultText>Import Data To Each Branch Success.</DefaultText>
+		<Lang1>Import Data To Each Branch Success.</Lang1>
+		<Lang2>Import Data To Each Branch Success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>98</TextID>
+		<DefaultText>Generate</DefaultText>
+		<Lang1>Generate</Lang1>
+		<Lang2>สร้างข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>99</TextID>
+		<DefaultText>data for</DefaultText>
+		<Lang1>data for</Lang1>
+		<Lang2>สำหรับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>100</TextID>
+		<DefaultText>Export Data To Terminal For Shop :</DefaultText>
+		<Lang1>Export Data To Terminal For Shop :</Lang1>
+		<Lang2>Export Data To Terminal For Shop :</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>101</TextID>
+		<DefaultText>Export Data To Each Terminal Is Not Complete. Please Check Error Log.</DefaultText>
+		<Lang1>Export Data To Each Terminal Is Not Complete. Please Check Error Log.</Lang1>
+		<Lang2>Export Data To Each Terminal Is Not Complete. Please Check Error Log.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>102</TextID>
+		<DefaultText>Export Data To Each Terminal Success.</DefaultText>
+		<Lang1>Export Data To Each Terminal Success.</Lang1>
+		<Lang2>Export Data To Each Terminal Success.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<TextID>103</TextID>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>1</TextID>
+		<DefaultText>Transfer Data Report</DefaultText>
+		<Lang1>Transfer Data Report</Lang1>
+		<Lang2>Transfer Data Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>2</TextID>
+		<DefaultText>รายงานการการรับ-ส่งข้อมูล</DefaultText>
+		<Lang1>Send-Recv Data Report</Lang1>
+		<Lang2>รายงานการการรับ-ส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>3</TextID>
+		<DefaultText>รายงานการส่งข้อมูลจากส่วนกลาง</DefaultText>
+		<Lang1>Export From HQ Report</Lang1>
+		<Lang2>รายงานการส่งข้อมูลจากส่วนกลาง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>4</TextID>
+		<DefaultText>รายงานแสดงข้อมูลที่มีการ Import</DefaultText>
+		<Lang1>Import Data Report</Lang1>
+		<Lang2>รายงานแสดงข้อมูลที่มีการ Import</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>5</TextID>
+		<DefaultText>แสดง File ที่เตรียมส่งไปยังปลายทาง</DefaultText>
+		<Lang1>Display Export File Name</Lang1>
+		<Lang2>แสดง File ที่เตรียมส่งไปยังปลายทาง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>6</TextID>
+		<DefaultText>แสดง File ที่รอการ Import</DefaultText>
+		<Lang1>Display Import File Name</Lang1>
+		<Lang2>แสดง File ที่รอการ Import</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>7</TextID>
+		<DefaultText>รายงานการรับส่งข้อมูล</DefaultText>
+		<Lang1>Send-Recv Data Report</Lang1>
+		<Lang2>รายงานการรับส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>8</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>9</TextID>
+		<DefaultText>เวลา</DefaultText>
+		<Lang1>Time</Lang1>
+		<Lang2>เวลา</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>10</TextID>
+		<DefaultText>จากร้าน</DefaultText>
+		<Lang1>From Shop</Lang1>
+		<Lang2>จากร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>11</TextID>
+		<DefaultText>ไปยังร้าน</DefaultText>
+		<Lang1>To Shop</Lang1>
+		<Lang2>ไปยังร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>12</TextID>
+		<DefaultText>ข้อมูลที่ส่ง</DefaultText>
+		<Lang1>Data Type</Lang1>
+		<Lang2>ข้อมูลที่ส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>13</TextID>
+		<DefaultText>ข้อมูลจากร้าน</DefaultText>
+		<Lang1>Export From</Lang1>
+		<Lang2>ข้อมูลจากร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>14</TextID>
+		<DefaultText>ไปยังร้าน</DefaultText>
+		<Lang1>To Shop</Lang1>
+		<Lang2>ไปยังร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>15</TextID>
+		<DefaultText>รับส่งข้อมูลระหว่างวันที่</DefaultText>
+		<Lang1>Data Between</Lang1>
+		<Lang2>รับส่งข้อมูลระหว่างวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>16</TextID>
+		<DefaultText>ถึง</DefaultText>
+		<Lang1>To</Lang1>
+		<Lang2>ถึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>17</TextID>
+		<DefaultText>รายงานการรับส่งข้อมูล</DefaultText>
+		<Lang1>Export Data Report</Lang1>
+		<Lang2>รายงานการรับส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>18</TextID>
+		<DefaultText>รายงานการ Sync. ข้อมูล</DefaultText>
+		<Lang1>Sync. Data Report</Lang1>
+		<Lang2>รายงานการ Sync. ข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>19</TextID>
+		<DefaultText>แสดงรายงานรับส่งข้อมูล</DefaultText>
+		<Lang1>View Send-Recv Data</Lang1>
+		<Lang2>แสดงรายงานรับส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>20</TextID>
+		<DefaultText>แสดงรายงาน Sync. ข้อมูลล่าสุด</DefaultText>
+		<Lang1>View Sync. Data</Lang1>
+		<Lang2>แสดงรายงาน Sync. ข้อมูลล่าสุด</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>21</TextID>
+		<DefaultText>สำเร็จ</DefaultText>
+		<Lang1>Success</Lang1>
+		<Lang2>สำเร็จ</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>22</TextID>
+		<DefaultText>ร้านที่ทำการ sync. ข้อมูล</DefaultText>
+		<Lang1>Sync. Shop Name</Lang1>
+		<Lang2>ร้านที่ทำการ sync. ข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>23</TextID>
+		<DefaultText>วัน-เวลา sync. ข้อมูลล่าสุด</DefaultText>
+		<Lang1>Sync. Date-Time</Lang1>
+		<Lang2>วัน-เวลา sync. ข้อมูลล่าสุด</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>24</TextID>
+		<DefaultText>Retry</DefaultText>
+		<Lang1>Retry</Lang1>
+		<Lang2>Retry</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>25</TextID>
+		<DefaultText>Refresh</DefaultText>
+		<Lang1>Refresh</Lang1>
+		<Lang2>Refresh</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>26</TextID>
+		<DefaultText>รายงานการรับส่งข้อมูลต่าง ๆ</DefaultText>
+		<Lang1>Export DataType Report</Lang1>
+		<Lang2>รายงานการรับส่งข้อมูลต่าง ๆ</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>27</TextID>
+		<DefaultText>---- ทุกร้าน ----</DefaultText>
+		<Lang1>---- All Shop ----</Lang1>
+		<Lang2>---- ทุกร้าน ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>28</TextID>
+		<DefaultText>ข้อมูล</DefaultText>
+		<Lang1>DataType</Lang1>
+		<Lang2>ข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>29</TextID>
+		<DefaultText>ชื่อ File</DefaultText>
+		<Lang1>File Name</Lang1>
+		<Lang2>ชื่อ File</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>30</TextID>
+		<DefaultText>เวลา</DefaultText>
+		<Lang1>Time</Lang1>
+		<Lang2>เวลา</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>31</TextID>
+		<DefaultText>จากร้าน</DefaultText>
+		<Lang1>From Shop</Lang1>
+		<Lang2>จากร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>32</TextID>
+		<DefaultText>รายละเอียด file ที่ส่งไปยัง</DefaultText>
+		<Lang1>Send file detail :</Lang1>
+		<Lang2>รายละเอียด file ที่ส่งไปยัง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>33</TextID>
+		<DefaultText>file ที่เตรียมทำการส่ง</DefaultText>
+		<Lang1>Send File</Lang1>
+		<Lang2>file ที่เตรียมทำการส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>34</TextID>
+		<DefaultText>ร้านปลายทาง</DefaultText>
+		<Lang1>To Shop</Lang1>
+		<Lang2>ร้านปลายทาง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>35</TextID>
+		<DefaultText>รายละเอียด file ที่รอการ import จาก</DefaultText>
+		<Lang1>Import file detail :</Lang1>
+		<Lang2>รายละเอียด file ที่รอการ import จาก</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>36</TextID>
+		<DefaultText>File ที่กำลังจะทำการ import</DefaultText>
+		<Lang1>Import File</Lang1>
+		<Lang2>File ที่กำลังจะทำการ import</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>37</TextID>
+		<DefaultText>File ที่มีการ import เข้าสู่</DefaultText>
+		<Lang1>Import File To</Lang1>
+		<Lang2>File ที่มีการ import เข้าสู่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>38</TextID>
+		<DefaultText>ในวันที่</DefaultText>
+		<Lang1>On</Lang1>
+		<Lang2>ในวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>39</TextID>
+		<DefaultText>File ที่มีการ import เข้าร้าน</DefaultText>
+		<Lang1>Import File To Shop</Lang1>
+		<Lang2>File ที่มีการ import เข้าร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>40</TextID>
+		<DefaultText>ชื่อร้าน</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>41</TextID>
+		<DefaultText>แสดง File ต่าง ๆ ที่รอจะทำการส่งไปยังสาขาปลายทาง</DefaultText>
+		<Lang1>Display export file</Lang1>
+		<Lang2>แสดง File ต่าง ๆ ที่รอจะทำการส่งไปยังสาขาปลายทาง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>42</TextID>
+		<DefaultText>แสดง File ต่าง ๆ ที่รอทำการ import เข้าในฐานข้อมูล</DefaultText>
+		<Lang1>Display import file</Lang1>
+		<Lang2>แสดง File ต่าง ๆ ที่รอทำการ import เข้าในฐานข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>43</TextID>
+		<DefaultText>Region</DefaultText>
+		<Lang1>Region</Lang1>
+		<Lang2>Region</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>44</TextID>
+		<DefaultText>ดูรายงานการส่งข้อมูลตามวัน</DefaultText>
+		<Lang1>View By Date</Lang1>
+		<Lang2>ดูรายงานการส่งข้อมูลตามวัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>45</TextID>
+		<DefaultText>ดูรายงานการส่งข้อมูลตาม region</DefaultText>
+		<Lang1>View By Region</Lang1>
+		<Lang2>ดูรายงานการส่งข้อมูลตาม region</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>46</TextID>
+		<DefaultText>ดูรายงานตาม region</DefaultText>
+		<Lang1>View By Region</Lang1>
+		<Lang2>ดูรายงานตาม region</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>47</TextID>
+		<DefaultText>Region ที่ส่งข้อมูลมา</DefaultText>
+		<Lang1>From Region</Lang1>
+		<Lang2>Region ที่ส่งข้อมูลมา</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>48</TextID>
+		<DefaultText>เดือน</DefaultText>
+		<Lang1>Month</Lang1>
+		<Lang2>เดือน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>49</TextID>
+		<DefaultText>ปี</DefaultText>
+		<Lang1>Year</Lang1>
+		<Lang2>ปี</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>50</TextID>
+		<DefaultText>ดูรายงานตามวันที่</DefaultText>
+		<Lang1>View By Date</Lang1>
+		<Lang2>ดูรายงานตามวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>51</TextID>
+		<DefaultText>วันที่เลือก</DefaultText>
+		<Lang1>Select Date</Lang1>
+		<Lang2>วันที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>52</TextID>
+		<DefaultText>รายงานแสดงการส่งข้อมูลต่าง ๆ</DefaultText>
+		<Lang1>Send Data Report</Lang1>
+		<Lang2>รายงานแสดงการส่งข้อมูลต่าง ๆ</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>53</TextID>
+		<DefaultText>กรุณาเลือกเดือนที่ต้องการดูรายงานก่อน</DefaultText>
+		<Lang1>Please select date.</Lang1>
+		<Lang2>กรุณาเลือกเดือนที่ต้องการดูรายงานก่อน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>54</TextID>
+		<DefaultText>กรุณาเลือกปีที่ต้องการดูรายงานก่อน</DefaultText>
+		<Lang1>Please select year.</Lang1>
+		<Lang2>กรุณาเลือกปีที่ต้องการดูรายงานก่อน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>55</TextID>
+		<DefaultText>ไม่มี region ในฐานข้อมูลทำให้ไม่สามารถสร้างรายงานได้</DefaultText>
+		<Lang1>No region in database</Lang1>
+		<Lang2>ไม่มี region ในฐานข้อมูลทำให้ไม่สามารถสร้างรายงานได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>56</TextID>
+		<DefaultText>Invalid Data</DefaultText>
+		<Lang1>Invalid Data</Lang1>
+		<Lang2>Invalid Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>57</TextID>
+		<DefaultText>ไม่มีข้อมูลการ import ในช่วงเวลาที่เลือก</DefaultText>
+		<Lang1>No import data</Lang1>
+		<Lang2>ไม่มีข้อมูลการ import ในช่วงเวลาที่เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>58</TextID>
+		<DefaultText>ไม่พบข้อมูล</DefaultText>
+		<Lang1>Data not found</Lang1>
+		<Lang2>ไม่พบข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>59</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>60</TextID>
+		<DefaultText>ข้อมูลเข้าที่ร้าน</DefaultText>
+		<Lang1>Data To Shop</Lang1>
+		<Lang2>ข้อมูลเข้าที่ร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>61</TextID>
+		<DefaultText>ร้านที่ทำการ Synchronize ข้อมูลไม่ได้เมื่อครั้งล่าสุด</DefaultText>
+		<Lang1>Shop name that can not sync. Data</Lang1>
+		<Lang2>ร้านที่ทำการ Synchronize ข้อมูลไม่ได้เมื่อครั้งล่าสุด</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>62</TextID>
+		<DefaultText>Retry Synchronize ข้อมูลที่ไม่สามารถติดต่อได้เมื่อครั้งล่าสุด</DefaultText>
+		<Lang1>Retry to sync. Data</Lang1>
+		<Lang2>Retry Synchronize ข้อมูลที่ไม่สามารถติดต่อได้เมื่อครั้งล่าสุด</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>63</TextID>
+		<DefaultText>!! กรุณาเลือกร้านที่ต้องการทำการส่งข้อมูลอีกครั้งก่อน</DefaultText>
+		<Lang1>!! Please select export shop.</Lang1>
+		<Lang2>!! กรุณาเลือกร้านที่ต้องการทำการส่งข้อมูลอีกครั้งก่อน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>64</TextID>
+		<DefaultText>ไม่ได้เลือกร้าน</DefaultText>
+		<Lang1>No Shop Select</Lang1>
+		<Lang2>ไม่ได้เลือกร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>65</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>66</TextID>
+		<DefaultText># Batch</DefaultText>
+		<Lang1># Batch</Lang1>
+		<Lang2># Batch</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>67</TextID>
+		<DefaultText>ไปยังร้าน</DefaultText>
+		<Lang1>To Shop</Lang1>
+		<Lang2>ไปยังร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>68</TextID>
+		<DefaultText>ข้อมูลที่ส่ง</DefaultText>
+		<Lang1>Export Data</Lang1>
+		<Lang2>ข้อมูลที่ส่ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>69</TextID>
+		<DefaultText>Export </DefaultText>
+		<Lang1>Export </Lang1>
+		<Lang2>Export </Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>70</TextID>
+		<DefaultText>Import</DefaultText>
+		<Lang1>Import</Lang1>
+		<Lang2>Import</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>71</TextID>
+		<DefaultText>Validate</DefaultText>
+		<Lang1>Validate</Lang1>
+		<Lang2>Validate</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>72</TextID>
+		<DefaultText>ข้อมูลจากร้าน</DefaultText>
+		<Lang1>Data From</Lang1>
+		<Lang2>ข้อมูลจากร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>73</TextID>
+		<DefaultText>ระหว่างวันที่</DefaultText>
+		<Lang1>Between </Lang1>
+		<Lang2>ระหว่างวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>74</TextID>
+		<DefaultText>ถึง</DefaultText>
+		<Lang1>To</Lang1>
+		<Lang2>ถึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>75</TextID>
+		<DefaultText>ส่งข้อมูลไปยังร้าน</DefaultText>
+		<Lang1>Send Data To</Lang1>
+		<Lang2>ส่งข้อมูลไปยังร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>76</TextID>
+		<DefaultText>รายงานการส่งข้อมูล</DefaultText>
+		<Lang1>Export Data Report</Lang1>
+		<Lang2>รายงานการส่งข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>77</TextID>
+		<DefaultText>รายงานแสดงการส่งข้อมูลต่าง ๆ ไปยังแต่ละร้าน</DefaultText>
+		<Lang1>Export Data To Shop Report</Lang1>
+		<Lang2>รายงานแสดงการส่งข้อมูลต่าง ๆ ไปยังแต่ละร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<TextID>78</TextID>
+	</Form>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+	<Form/>
+</LanguageData>

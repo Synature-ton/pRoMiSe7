@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" ?>
+<!-- POSAPI設定xml -->
+<pos>
+	<!-- 受信タイムアウト時間（秒） -->
+	<RECV_TIMEOUT>60</RECV_TIMEOUT>
+	<CONN_TIMEOUT>60</CONN_TIMEOUT>
+	<SEND_TIMEOUT>60</SEND_TIMEOUT>
+</pos>

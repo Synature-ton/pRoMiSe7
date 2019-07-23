@@ -1,0 +1,12 @@
+LoginWnd.png		630x440		สำหรับหน้าจอ Login Screen
+Logo.png			115x66		สำหรับ Logo มุมซ้ายบน ของแต่ละ Screen
+BannerFF.png		315x214		สำหรับ Banner ตำแหน่งข่าวของ FastFood Shop
+
+About Screen	
+About.png.png		830x302		สำหรับ About screen
+CompanyLogo.png		220/65		สำหรับ Logo บริษัท 
+About.xml				สำหรับ text ทั้งหมดใน About Screen
+
+
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AboutData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<About>
+		<AboutID>1</AboutID>
+		<LineName>Technical Support</LineName>
+		<LineText>Technical Support :</LineText>
+	</About>
+	<About>
+		<AboutID>2</AboutID>
+		<LineName>Call Center</LineName>
+		<LineText>Call Center : +660 81 844 5500</LineText>
+	</About>
+	<About>
+		<AboutID>3</AboutID>
+		<LineName>WorkTime1</LineName>
+		<LineText>Mon-Sat 9.00 am. - 22.00 pm.</LineText>
+	</About>
+	<About>
+		<AboutID>4</AboutID>
+		<LineName>WorkTime2</LineName>
+		<LineText>Sun 9.00 am. - 18.00pm.</LineText>
+	</About>
+	<About>
+		<AboutID>5</AboutID>
+		<LineName>Online Ticket System</LineName>
+		<LineText>Online Ticket System =></LineText>
+	</About>
+	<About>
+		<AboutID>6</AboutID>
+		<LineName>Ticket URL</LineName>
+		<LineText>http://support.synaturegroup.com/supportcenter</LineText>
+	</About>
+	<About>
+		<AboutID>7</AboutID>
+		<LineName>E Mail</LineName>
+		<LineText>E-Mail : support@synaturegroup.com</LineText>
+	</About>
+	<About>
+		<AboutID>8</AboutID>
+		<LineName>Fax</LineName>
+		<LineText>Fax : +660 2 530 3092</LineText>
+	</About>
+	<About>
+		<AboutID>9</AboutID>
+		<LineName>Head Office</LineName>
+		<LineText>Synature Office :</LineText>
+	</About>
+	<About>
+		<AboutID>10</AboutID>
+		<LineName>Office Address</LineName>
+		<LineText>55/165 M.Baanklangmuang, Soi Ladprao 88 Rd., Wangthonglang, Bangkok, Thailand.10310</LineText>
+	</About>
+	<About>
+		<AboutID>11</AboutID>
+		<LineName>Click Web Ticket URL</LineName>
+		<LineText>http://support.synaturegroup.com/supportcenter</LineText>
+	</About>
+	<About>
+		<AboutID>12</AboutID>
+		<LineName>Click Logo URL</LineName>
+		<LineText>http://www.synaturegroup.com</LineText>
+	</About>
+</AboutData>
