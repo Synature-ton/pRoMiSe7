@@ -273,9 +273,33 @@ CREATE TABLE PMSCMC_ExportUsageStockTextFileColumn(
 
 ALTER TABLE PMSCMC_ConfigSetting ADD CheckHotelDateWhenSendCMC tinyint NOT NULL DEFAULT '1' After SendVoidTransactionToCMC;
 
-
+-- 24/07/2019 - AR Account
 ALTER TABLE PMSCMC_PaymentMapping ADD MST_ARNo varchar(10) NULL After AccountNoForAR;
 
+Create TABLE PMSCMC_PaymentARAccountInfo(
+ TransactionID int NOT NULL DEFAULT '0',
+ ComputerID int NOT NULL DEFAULT '0',
+ PayDetailID int NOT NULL DEFAULT '0',
+ ShopID int NOT NULL DEFAULT '0',
+ SaleDate date NULL,
+ PaymentAmount decimal(18,4) NOT NULL DEFAULT '0',
+ PayTypeID int NOT NULL DEFAULT '0',
+ CMC_Dept varchar(3) NULL,
+ CMC_Refer varchar(20) NULL,
+ CMC_Desc varchar(150) NULL,
+ CMC_Gst varchar(150) NULL,
+ CMC_NVAT decimal(18,4) NOT NULL DEFAULT '0',
+ CMC_VAT decimal(18,4) NOT NULL DEFAULT '0',
+ CMC_Amount decimal(18,4) NOT NULL DEFAULT '0',
+ CMC_Rmk varchar(200) NULL,
+ CMC_MST_ARNo varchar(10) NULL,
+ CMC_PayType varchar(2) NULL,
+ CMC_FolioSeq int NOT NULL DEFAULT '0',
+ CMC_CRCardNo  varchar(30) NULL,
+ AR_RowID int NOT NULL DEFAULT '0',
+ AR_DocNo varchar(10) NULL,
+ PRIMARY KEY(TransactionID, ComputerID, PayDetailID) 
+) ENGINE=InnoDB;
 
 
 
