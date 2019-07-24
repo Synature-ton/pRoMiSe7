@@ -1,0 +1,3206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>ระบบจัดการ การแลกแต้มสะสม</DefaultText>
+		<Lang1>Redeem Management</Lang1>
+		<Lang2>ระบบจัดการ การแลกแต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>เพิ่มรายการ การแลกแต้ม</DefaultText>
+		<Lang1>Add Redeem</Lang1>
+		<Lang2>เพิ่มรายการ การแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>#</DefaultText>
+		<Lang1>#</Lang1>
+		<Lang2>#</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ประเภทรายการ</DefaultText>
+		<Lang1>Type Name</Lang1>
+		<Lang2>ประเภทรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>คะแนน</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>คะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>เริ่มวันที่</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>เริ่มวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>สิ้นสุดวันที่</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>สิ้นสุดวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>สถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>สถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>เปลี่ยนสถานะ</DefaultText>
+		<Lang1>Change Status</Lang1>
+		<Lang2>เปลี่ยนสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>แก้ไข</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>ร้านสาขา</DefaultText>
+		<Lang1>Branch</Lang1>
+		<Lang2>ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ลบ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ทุกเงื่อนไข Redeem</DefaultText>
+		<Lang1>All Redeem</Lang1>
+		<Lang2>ทุกเงื่อนไข Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>ใช้งาน Redeem</DefaultText>
+		<Lang1>Redeem Active</Lang1>
+		<Lang2>ใช้งาน Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>ยกเลิกการใช้งาน Redeem</DefaultText>
+		<Lang1>Redeem Non Active</Lang1>
+		<Lang2>ยกเลิกการใช้งาน Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>ช่วงเวลาหมดอายุ Redeem</DefaultText>
+		<Lang1>Redeem Expire</Lang1>
+		<Lang2>ช่วงเวลาหมดอายุ Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30001</FormID>
+		<FormName>Redeem</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>ไม่มีกำหนด</DefaultText>
+		<Lang1>Infinity</Lang1>
+		<Lang2>ไม่มีกำหนด</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดรายการ การแลกแต้ม</DefaultText>
+		<Lang1>Redeem Setting</Lang1>
+		<Lang2>กำหนดรายการ การแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>คะแนนที่ใช้</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>คะแนนที่ใช้</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>เริ่ม วันที่</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>เริ่ม วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>สิ้นสุด วันที่</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>สิ้นสุด วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ประเภทแลกแต้ม</DefaultText>
+		<Lang1>Type Name</Lang1>
+		<Lang2>ประเภทแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>หมายเหตุ</DefaultText>
+		<Lang1>Note</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>กำหนดสถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>กำหนดสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>ใช้งาน</DefaultText>
+		<Lang1>Active</Lang1>
+		<Lang2>ใช้งาน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ยกเลิก</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>ต่อไป</DefaultText>
+		<Lang1>Next</Lang1>
+		<Lang2>ต่อไป</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กลับ</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>กรุณากำหนด ชื่อ Redeem</DefaultText>
+		<Lang1>Please enter redeem name</Lang1>
+		<Lang2>กรุณากำหนด ชื่อ Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>กรุณากำหนด คะแนนมากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter point more than zoro</Lang1>
+		<Lang2>กรุณากำหนด คะแนนมากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>กรุณากำหนด คะแนนให้ถูกต้อง</DefaultText>
+		<Lang1>Please specify the correct</Lang1>
+		<Lang2>กรุณากำหนด คะแนนให้ถูกต้อง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>กรุณากำหนด วันเริ่ม Redeem</DefaultText>
+		<Lang1>Please enter start date</Lang1>
+		<Lang2>กรุณากำหนด วันเริ่ม Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30002</FormID>
+		<FormName>RedeemEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>กรุณากำหนด ประเภท Redeem</DefaultText>
+		<Lang1>Please enter redeem type</Lang1>
+		<Lang2>กรุณากำหนด ประเภท Redeem</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดรายการสินค้า สำหรับการแลกแต้ม</DefaultText>
+		<Lang1>Add Product For Redeem</Lang1>
+		<Lang2>กำหนดรายการสินค้า สำหรับการแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>กำหนดสถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>กำหนดสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>สำหรับ สินค้า</DefaultText>
+		<Lang1>For Product</Lang1>
+		<Lang2>สำหรับ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>สำหรับ Coupon / Voucher</DefaultText>
+		<Lang1>For Coupon / Voucher</Lang1>
+		<Lang2>สำหรับ Coupon / Voucher</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>รายการ Coupon/Voucher</DefaultText>
+		<Lang1>Coupon / Voucher List</Lang1>
+		<Lang2>รายการ Coupon/Voucher</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>เพิ่มรายการ</DefaultText>
+		<Lang1>Add Product</Lang1>
+		<Lang2>เพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>&lt;&lt; กลับ</DefaultText>
+		<Lang1>&lt;&lt; Back</Lang1>
+		<Lang2>&lt;&lt; กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>รหัส</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>ProductCode</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>กลุ่ม สินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่ม สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>หมวด สินค้า</DefaultText>
+		<Lang1>ProductCatergory</Lang1>
+		<Lang2>หมวด สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>ชื่อรายการ สินค้า</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>บันทึกรายการ</DefaultText>
+		<Lang1>Save</Lang1>
+		<Lang2>บันทึกรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ทำการเพิ่มเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการเพิ่มเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items you want</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ  หรือ กดยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>กรุณาเลือก ประเภทหมวดคลัง</DefaultText>
+		<Lang1>Please select shop</Lang1>
+		<Lang2>กรุณาเลือก ประเภทหมวดคลัง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>กรุณาเลือก ประเภทกลุ่มสินค้า</DefaultText>
+		<Lang1>Please select group</Lang1>
+		<Lang2>กรุณาเลือก ประเภทกลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>กรุณาเลือก ประเภทหมวดสินค้า</DefaultText>
+		<Lang1>Please select catergory</Lang1>
+		<Lang2>กรุณาเลือก ประเภทหมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30003</FormID>
+		<FormName>RedeemManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>ต้องการ เพิ่มรายการต่อหรือไม่</DefaultText>
+		<Lang1>Do you want add item ?</Lang1>
+		<Lang2>ต้องการ เพิ่มรายการต่อหรือไม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนด ร้านสาขา</DefaultText>
+		<Lang1>Branch Setting</Lang1>
+		<Lang2>กำหนด ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>สาขาร่วมรายการ การแลกแต้มสะสม</DefaultText>
+		<Lang1>Participating stores</Lang1>
+		<Lang2>สาขาร่วมรายการ การแลกแต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ไปหน้าเพิ่มรายการ</DefaultText>
+		<Lang1>Add to list</Lang1>
+		<Lang2>ไปหน้าเพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ลบรายการสาขา</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบรายการสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>รหัส ร้านสาขา</DefaultText>
+		<Lang1>BranchID</Lang1>
+		<Lang2>รหัส ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ชื่อ ร้านสาขา</DefaultText>
+		<Lang1>Branch name</Lang1>
+		<Lang2>ชื่อ ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>เลือกสาขาที่ต้องการร่วมรายการ การแลกแต้มสะสม</DefaultText>
+		<Lang1>Select the field you want to participate</Lang1>
+		<Lang2>เลือกสาขาที่ต้องการร่วมรายการ การแลกแต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เพิ่มรายการ</DefaultText>
+		<Lang1>Add</Lang1>
+		<Lang2>เพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>กลับ</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>ทำการเพิ่มเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการเพิ่มเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30004</FormID>
+		<FormName>RedeemManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>ระบบจัดการ การให้แต้มสะสม</DefaultText>
+		<Lang1>Reward Management</Lang1>
+		<Lang2>ระบบจัดการ การให้แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>เพิ่มรายการ การแลกแต้ม</DefaultText>
+		<Lang1>Add Reward</Lang1>
+		<Lang2>เพิ่มรายการ การแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ประเภทรายการ</DefaultText>
+		<Lang1>Type Name</Lang1>
+		<Lang2>ประเภทรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ต่อราคา</DefaultText>
+		<Lang1>Per Price</Lang1>
+		<Lang2>ต่อราคา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ต่อคะแนน</DefaultText>
+		<Lang1>Per Point</Lang1>
+		<Lang2>ต่อคะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>เริ่มคำนวน</DefaultText>
+		<Lang1>Start Cal</Lang1>
+		<Lang2>เริ่มคำนวน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>เริ่มวันที่</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>เริ่มวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>สิ้นสุดวันที่</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>สิ้นสุดวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>สถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>สถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>เปลี่ยนสถานะ</DefaultText>
+		<Lang1>Change Status</Lang1>
+		<Lang2>เปลี่ยนสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>แก้ไข</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ร้านสาขา</DefaultText>
+		<Lang1>Branch</Lang1>
+		<Lang2>ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ลบ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>ทุกเงื่อนไข Reward</DefaultText>
+		<Lang1>All Reward</Lang1>
+		<Lang2>ทุกเงื่อนไข Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>ใช้งาน Reward</DefaultText>
+		<Lang1>Reward Active</Lang1>
+		<Lang2>ใช้งาน Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>ยกเลิกการใช้งาน Reward</DefaultText>
+		<Lang1>Reward Non Active</Lang1>
+		<Lang2>ยกเลิกการใช้งาน Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>ช่วงเวลาหมดอายุ Reward</DefaultText>
+		<Lang1>Reward Expire</Lang1>
+		<Lang2>ช่วงเวลาหมดอายุ Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>ไม่มีกำหนด</DefaultText>
+		<Lang1>Infinity</Lang1>
+		<Lang2>ไม่มีกำหนด</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>เปลี่ยนสถานะ</DefaultText>
+		<Lang1>Change Status</Lang1>
+		<Lang2>เปลี่ยนสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>แก้ไข</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>ร้านสาขา</DefaultText>
+		<Lang1>Branch</Lang1>
+		<Lang2>ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30005</FormID>
+		<FormName>RewardManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>ลบ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดรายการ การให้แต้มสะสม</DefaultText>
+		<Lang1>Reward Setting</Lang1>
+		<Lang2>กำหนดรายการ การให้แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>เริ่ม วันที่</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>เริ่ม วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>สิ้นสุด วันที่</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>สิ้นสุด วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ประเภทแลกแต้ม</DefaultText>
+		<Lang1>Reward Type</Lang1>
+		<Lang2>ประเภทแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ต่อราคา</DefaultText>
+		<Lang1>Per Price</Lang1>
+		<Lang2>ต่อราคา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ต่อคะแนน</DefaultText>
+		<Lang1>Per Point</Lang1>
+		<Lang2>ต่อคะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ราคาเริ่มคำนวน</DefaultText>
+		<Lang1>Start Cal Reward</Lang1>
+		<Lang2>ราคาเริ่มคำนวน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>การปัดทศนิยม</DefaultText>
+		<Lang1>Rounded</Lang1>
+		<Lang2>การปัดทศนิยม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>หมายเหตุ</DefaultText>
+		<Lang1>Note</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>กำหนดสถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>กำหนดสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>ใช้งาน</DefaultText>
+		<Lang1>Active</Lang1>
+		<Lang2>ใช้งาน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ยกเลิก</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ต่อไป</DefaultText>
+		<Lang1>Next</Lang1>
+		<Lang2>ต่อไป</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>ยกเลิก</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>ปัดทศนิยมลง</DefaultText>
+		<Lang1>Round Up</Lang1>
+		<Lang2>ปัดทศนิยมลง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>ปัดทศนิยมขึ้น</DefaultText>
+		<Lang1>Round Down</Lang1>
+		<Lang2>ปัดทศนิยมขึ้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>กรุณากำหนด ชื่อ Reward</DefaultText>
+		<Lang1>Please enter reward name</Lang1>
+		<Lang2>กรุณากำหนด ชื่อ Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>กรุณากำหนด คะแนนมากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter point greater than zero. Point</Lang1>
+		<Lang2>กรุณากำหนด คะแนนมากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>กรุณากำหนด ราคามากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter price greater than zero. Price</Lang1>
+		<Lang2>กรุณากำหนด ราคามากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>กรุณากำหนด ราคาเริ่มคำนวนมากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter point greater than zero. Start calculation</Lang1>
+		<Lang2>กรุณากำหนด ราคาเริ่มคำนวนมากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>กรุณากำหนด คะแนนให้ถูกต้อง</DefaultText>
+		<Lang1>Please enter point</Lang1>
+		<Lang2>กรุณากำหนด คะแนนให้ถูกต้อง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>กรุณากำหนด วันเริ่ม</DefaultText>
+		<Lang1>Please enter start date</Lang1>
+		<Lang2>กรุณากำหนด วันเริ่ม Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>กรุณากำหนด ประเภท</DefaultText>
+		<Lang1>Please select reward type</Lang1>
+		<Lang2>กรุณากำหนด ประเภท Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30006</FormID>
+		<FormName>RewardEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>กรุณากำหนด ประเภท การปัดทศนิยม</DefaultText>
+		<Lang1>Please select round</Lang1>
+		<Lang2>กรุณากำหนด ประเภท การปัดทศนิยม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดรายการสินค้า สำหรับการให้แต้ม</DefaultText>
+		<Lang1>Add Product For Reward</Lang1>
+		<Lang2>กำหนดรายการสินค้า สำหรับการให้แต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับ</DefaultText>
+		<Lang1>&lt;&lt; Back</Lang1>
+		<Lang2>&lt;&lt; กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>กำหนดสถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>กำหนดสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>สำหรับ สินค้า</DefaultText>
+		<Lang1>For Product</Lang1>
+		<Lang2>สำหรับ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>รหัส</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>ProductCode</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>กลุ่ม สินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่ม สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>หมวด สินค้า</DefaultText>
+		<Lang1>ProductCatergory</Lang1>
+		<Lang2>หมวด สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เพิ่มรายการ</DefaultText>
+		<Lang1>Add Product</Lang1>
+		<Lang2>เพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ทำการเพิ่มเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการเพิ่มเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items you want</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กรุณาเลือก ประเภทหมวดคลัง</DefaultText>
+		<Lang1>Please select shop</Lang1>
+		<Lang2>กรุณาเลือก ประเภทหมวดคลัง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>กรุณาเลือก ประเภทกลุ่มสินค้า</DefaultText>
+		<Lang1>Please select group</Lang1>
+		<Lang2>กรุณาเลือก ประเภทกลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>กรุณาเลือก ประเภทหมวดสินค้า</DefaultText>
+		<Lang1>Please select catergory</Lang1>
+		<Lang2>กรุณาเลือก ประเภทหมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30007</FormID>
+		<FormName>RewardManagementAdd</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>ต้องการ เพิ่มรายการต่อหรือไม่</DefaultText>
+		<Lang1>Do you want add item ?</Lang1>
+		<Lang2>ต้องการ เพิ่มรายการต่อหรือไม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนด ร้านสาขา</DefaultText>
+		<Lang1>Branch Setting</Lang1>
+		<Lang2>กำหนด ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>สาขาร่วมรายการ การให้แต้มสะสม</DefaultText>
+		<Lang1>Participating stores</Lang1>
+		<Lang2>สาขาร่วมรายการ การให้แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ไปหน้าเพิ่มรายการ</DefaultText>
+		<Lang1>Add to list</Lang1>
+		<Lang2>ไปหน้าเพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ลบรายการสาขา</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบรายการสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>รหัส ร้านสาขา</DefaultText>
+		<Lang1>BranchID</Lang1>
+		<Lang2>รหัส ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ชื่อ ร้านสาขา</DefaultText>
+		<Lang1>Branch name</Lang1>
+		<Lang2>ชื่อ ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>เลือกสาขาที่ต้องการร่วมรายการ การให้แต้มสะสม</DefaultText>
+		<Lang1>Select the field you want to participate</Lang1>
+		<Lang2>เลือกสาขาที่ต้องการร่วมรายการ การให้แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เพิ่มรายการ</DefaultText>
+		<Lang1>Add</Lang1>
+		<Lang2>เพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>กลับ</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>ทำการเพิ่มเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการเพิ่มเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30008</FormID>
+		<FormName>RewardManagementSetBranch</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>การแลกแต้มสะสม</DefaultText>
+		<Lang1>Redeem Edit</Lang1>
+		<Lang2>การแลกแต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>คะแนนที่ใช้</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>คะแนนที่ใช้</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>เริ่ม วันที่</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>เริ่ม วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>สิ้นสุด วันที่</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>สิ้นสุด วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ประเภทแลกแต้ม</DefaultText>
+		<Lang1>Type Name</Lang1>
+		<Lang2>ประเภทแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>หมายเหตุ</DefaultText>
+		<Lang1>Note</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>กำหนดสถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>กำหนดสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>ใช้งาน</DefaultText>
+		<Lang1>Active</Lang1>
+		<Lang2>ใช้งาน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ยกเลิก</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>แก้ไขข้อมูลข้างต้น</DefaultText>
+		<Lang1>Update Text</Lang1>
+		<Lang2>แก้ไขข้อมูลข้างต้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>รายการสินค้าที่ร่วมรายการ</DefaultText>
+		<Lang1>participating items</Lang1>
+		<Lang2>รายการสินค้าที่ร่วมรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ไปหน้าเพิ่มรายการ</DefaultText>
+		<Lang1>Add to list</Lang1>
+		<Lang2>ไปหน้าเพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>ลบรายการ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>รหัส</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>ProductCode</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>กลุ่ม สินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่ม สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>หมวด สินค้า</DefaultText>
+		<Lang1>ProductCatergory</Lang1>
+		<Lang2>หมวด สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>ชื่อรายการ สินค้า</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>รายการ Coupon / Voucher ที่ร่วมรายการ</DefaultText>
+		<Lang1>Coupon / Voucher List</Lang1>
+		<Lang2>รายการ Coupon / Voucher ที่ร่วมรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>Product Code</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>ชื่อรายการ สินค้า</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>ชื่อรายการ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>วันที่หมดอายุ</DefaultText>
+		<Lang1>Expire Date</Lang1>
+		<Lang2>วันที่หมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>เปลี่ยน Coupon/Voucher</DefaultText>
+		<Lang1>Update Coupon/Voucher</Lang1>
+		<Lang2>เปลี่ยน Coupon/Voucher</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>ลบรายการเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ลบรายการเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>27</TextID>
+		<DefaultText>ไม่สามารถลบ รายการได้</DefaultText>
+		<Lang1>Can't process !</Lang1>
+		<Lang2>ไม่สามารถลบ รายการได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>28</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>29</TextID>
+		<DefaultText>ทำการบันทึก ปรับปรุงเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการบันทึก ปรับปรุงเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>30</TextID>
+		<DefaultText>กรุณาใส่ ชื่อรายการ</DefaultText>
+		<Lang1>Please enter  name</Lang1>
+		<Lang2>กรุณาใส่ ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>31</TextID>
+		<DefaultText>กรุณากำหนด คะแนนมากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter point greater than zero</Lang1>
+		<Lang2>กรุณากำหนด คะแนนมากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>32</TextID>
+		<DefaultText>กรุณากำหนด คะแนนให้ถูกต้อง</DefaultText>
+		<Lang1>Please specify the correct</Lang1>
+		<Lang2>กรุณากำหนด คะแนนให้ถูกต้อง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30009</FormID>
+		<FormName>RedeemEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>33</TextID>
+		<DefaultText>กรุณากำหนด วันที่เริ่ม</DefaultText>
+		<Lang1>Please enter start date</Lang1>
+		<Lang2>กรุณากำหนด วันที่เริ่ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>กำหนดรายการ การให้แต้มสะสม</DefaultText>
+		<Lang1>Reward Setting</Lang1>
+		<Lang2>กำหนดรายการ การให้แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>เริ่ม วันที่</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>เริ่ม วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>สิ้นสุด วันที่</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>สิ้นสุด วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ประเภทแลกแต้ม</DefaultText>
+		<Lang1>Reward Type</Lang1>
+		<Lang2>ประเภทแลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ต่อราคา</DefaultText>
+		<Lang1>Per Price</Lang1>
+		<Lang2>ต่อราคา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ต่อคะแนน</DefaultText>
+		<Lang1>Per Point</Lang1>
+		<Lang2>ต่อคะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>ราคาเริ่มคำนวน</DefaultText>
+		<Lang1>Start Cal Reward</Lang1>
+		<Lang2>ราคาเริ่มคำนวน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>การปัดทศนิยม</DefaultText>
+		<Lang1>Rounded</Lang1>
+		<Lang2>การปัดทศนิยม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>หมายเหตุ</DefaultText>
+		<Lang1>Note</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กำหนดสถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>กำหนดสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ใช้งาน</DefaultText>
+		<Lang1>Active</Lang1>
+		<Lang2>ใช้งาน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ยกเลิก</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>แก้ไขข้อมูลข้างต้น</DefaultText>
+		<Lang1>Update Text</Lang1>
+		<Lang2>แก้ไขข้อมูลข้างต้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>รายการสินค้า ที่ร่วมรายการ</DefaultText>
+		<Lang1>Product For Reward</Lang1>
+		<Lang2>รายการสินค้า ที่ร่วมรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>ไปหน้าเพิ่มรายการ</DefaultText>
+		<Lang1>Add to list</Lang1>
+		<Lang2>ไปหน้าเพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>ลบรายการ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>รหัส</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>ProductCode</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>กลุ่ม สินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่ม สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>หมวด สินค้า</DefaultText>
+		<Lang1>ProductCatergory</Lang1>
+		<Lang2>หมวด สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>ชื่อรายการ สินค้า</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>ปัดทศนิยมลง</DefaultText>
+		<Lang1>Round Up</Lang1>
+		<Lang2>ปัดทศนิยมลง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>ปัดทศนิยมขึ้น</DefaultText>
+		<Lang1>Round Down</Lang1>
+		<Lang2>ปัดทศนิยมขึ้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>ลบรายการเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ลบรายการเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>27</TextID>
+		<DefaultText>ไม่สามารถลบ รายการได้</DefaultText>
+		<Lang1>Can't process !</Lang1>
+		<Lang2>ไม่สามารถลบ รายการได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>28</TextID>
+		<DefaultText>กรุณากำหนด ชื่อ Reward</DefaultText>
+		<Lang1>Please enter reward name</Lang1>
+		<Lang2>กรุณากำหนด ชื่อ Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>29</TextID>
+		<DefaultText>กรุณากำหนด คะแนนมากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter point greater than zero. Point</Lang1>
+		<Lang2>กรุณากำหนด คะแนนมากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>30</TextID>
+		<DefaultText>กรุณากำหนด ราคามากกว่า ศูนย์</DefaultText>
+		<Lang1>Please enter price greater than zero. Price</Lang1>
+		<Lang2>กรุณากำหนด ราคามากกว่า ศูนย์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>31</TextID>
+		<DefaultText>กรุณากำหนด วันเริ่ม</DefaultText>
+		<Lang1>Please enter start date</Lang1>
+		<Lang2>กรุณากำหนด วันเริ่ม Reward</Lang2>
+	</Form>
+	<Form>
+		<FormID>30010</FormID>
+		<FormName>RewardEditPromo</FormName>
+		<TextType>1</TextType>
+		<TextID>32</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items you want</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30011</FormID>
+		<FormName>MaterialByShopManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดวัตถุดิบสำหรับเอกสาร</DefaultText>
+		<Lang1>Material Managagement</Lang1>
+		<Lang2>กำหนดวัตถุดิบสำหรับเอกสาร</Lang2>
+	</Form>
+	<Form>
+		<FormID>30011</FormID>
+		<FormName>MaterialByShopManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>กำหนดรายการเพิ่ม</DefaultText>
+		<Lang1>Add Material</Lang1>
+		<Lang2>กำหนดรายการเพิ่ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30011</FormID>
+		<FormName>MaterialByShopManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30011</FormID>
+		<FormName>MaterialByShopManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>แก้ไข</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>
+	<Form>
+		<FormID>30011</FormID>
+		<FormName>MaterialByShopManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ร้านสาขา</DefaultText>
+		<Lang1>Branch</Lang1>
+		<Lang2>ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30011</FormID>
+		<FormName>MaterialByShopManagement</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ลบ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดเอกสารสำหรับวัถุดิบ</DefaultText>
+		<Lang1>Material Edit</Lang1>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>ชื่อ รายการวัตถุดิบ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ รายการวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ประเภท เอกสาร</DefaultText>
+		<Lang1>Document Type</Lang1>
+		<Lang2>ประเภท เอกสาร</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>หมายเหตุ</DefaultText>
+		<Lang1>Note</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ต่อไป</DefaultText>
+		<Lang1>Next</Lang1>
+		<Lang2>ต่อไป</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>แก้ไขข้อมูลข้างต้น</DefaultText>
+		<Lang1>Update Text</Lang1>
+		<Lang2>แก้ไขข้อมูลข้างต้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>รายการวัตถุดิบ</DefaultText>
+		<Lang1>Next</Lang1>
+		<Lang2>รายการวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>ไปหน้าเพิ่มรายการ</DefaultText>
+		<Lang1>Add Material</Lang1>
+		<Lang2>ไปหน้าเพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ลบรายการ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>รหัส</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>ProductCode</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>กลุ่ม สินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่ม สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>หมวด สินค้า</DefaultText>
+		<Lang1>ProductCatergory</Lang1>
+		<Lang2>หมวด สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>ชื่อรายการ สินค้า</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>มีการกำหนดประเภทเอกสารครบแล้ว</DefaultText>
+		<Lang1>Complete set of documents</Lang1>
+		<Lang2>มีการกำหนดประเภทเอกสารครบแล้ว</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>1 - ใบรับสินค้าจากสั่งซื้อ</DefaultText>
+		<Lang1>1 - Purchase Order</Lang1>
+		<Lang2>1 - ใบรับสินค้าจากสั่งซื้อ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>3 - ใบเบิกจ่ายสินค้า</DefaultText>
+		<Lang1>3 - Transfer Order</Lang1>
+		<Lang2>3 - ใบเบิกจ่ายสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>17 - ใบขอสินค้า</DefaultText>
+		<Lang1>17 - Request Order</Lang1>
+		<Lang2>17 - ใบขอสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>39 - ใบรับสินค้าตรง</DefaultText>
+		<Lang1>39 - Direct Receive Order</Lang1>
+		<Lang2>39 - ใบรับสินค้าตรง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>ลบรายการเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ลบรายการเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>ทำการบันทึก ปรับปรุงเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการบันทึก ปรับปรุงเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>ไม่สามารถทำการบันทึกได้ กรุณาลองใหม่</DefaultText>
+		<Lang1>Please try again</Lang1>
+		<Lang2>ไม่สามารถทำการบันทึกได้ กรุณาลองใหม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>กรุณาใส่ ชื่อรายการ</DefaultText>
+		<Lang1>Please enter material name</Lang1>
+		<Lang2>กรุณาใส่ ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30012</FormID>
+		<FormName>MaterialByShopDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>กรุณาเลือกประเภทเอกสาร</DefaultText>
+		<Lang1>Please select the document type</Lang1>
+		<Lang2>กรุณาเลือกประเภทเอกสาร</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดรายการวัตถุดิบ</DefaultText>
+		<Lang1>Set Material Shop</Lang1>
+		<Lang2>กำหนดรายการวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับ</DefaultText>
+		<Lang1>&lt;&lt; Back</Lang1>
+		<Lang2>&lt;&lt; กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>เพิ่มรายการ</DefaultText>
+		<Lang1>Add Product</Lang1>
+		<Lang2>เพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>รหัส</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>รหัส สินค้า</DefaultText>
+		<Lang1>ProductCode</Lang1>
+		<Lang2>รหัส สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>กลุ่ม สินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่ม สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>หมวด สินค้า</DefaultText>
+		<Lang1>ProductCatergory</Lang1>
+		<Lang2>หมวด สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ชื่อรายการ สินค้า</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>ทำการเพิ่มเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการเพิ่มเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items you want</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>กรุณาเลือก ประเภทหมวดคลัง</DefaultText>
+		<Lang1>Please select shop</Lang1>
+		<Lang2>กรุณาเลือก ประเภทหมวดคลัง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กรุณาเลือก ประเภทกลุ่มสินค้า</DefaultText>
+		<Lang1>Please select group</Lang1>
+		<Lang2>กรุณาเลือก ประเภทกลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>กรุณาเลือก ประเภทหมวดสินค้า</DefaultText>
+		<Lang1>Please select catergory</Lang1>
+		<Lang2>กรุณาเลือก ประเภทหมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30013</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ต้องการ เพิ่มรายการต่อหรือไม่</DefaultText>
+		<Lang1>Do you want add item ?</Lang1>
+		<Lang2>ต้องการ เพิ่มรายการต่อหรือไม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนด ร้านสาขา</DefaultText>
+		<Lang1>Branch Setting</Lang1>
+		<Lang2>กำหนด ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>สาขาร่วมรายการ การให้แต้มสะสม</DefaultText>
+		<Lang1>Participating stores</Lang1>
+		<Lang2>สาขาร่วมรายการ การให้แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ไปหน้าเพิ่มรายการ</DefaultText>
+		<Lang1>Add to list</Lang1>
+		<Lang2>ไปหน้าเพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ลบรายการสาขา</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบรายการสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>รหัส ร้านสาขา</DefaultText>
+		<Lang1>BranchID</Lang1>
+		<Lang2>รหัส ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ชื่อ ร้านสาขา</DefaultText>
+		<Lang1>Branch name</Lang1>
+		<Lang2>ชื่อ ร้านสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>เลือกสาขาที่ต้องการร่วมรายการ</DefaultText>
+		<Lang1>Select the field you want to participate</Lang1>
+		<Lang2>เลือกสาขาที่ต้องการร่วมรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เพิ่มรายการ</DefaultText>
+		<Lang1>Add</Lang1>
+		<Lang2>เพิ่มรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>กลับ</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>กลับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>ทำการเพิ่มเรียบร้อย</DefaultText>
+		<Lang1>Success fully</Lang1>
+		<Lang2>ทำการเพิ่มเรียบร้อย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30014</FormID>
+		<FormName>MaterialByShopEdit</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>กรุณาเลือกรายการที่ต้องการ</DefaultText>
+		<Lang1>Please select the items</Lang1>
+		<Lang2>กรุณาเลือกรายการที่ต้องการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>รายงาน สรุปความพอใจลูกค้า</DefaultText>
+		<Lang1>Customser Service Report</Lang1>
+		<Lang2>รายงาน สรุปความพอใจลูกค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>ชื่อสาขา</DefaultText>
+		<Lang1>Branch</Lang1>
+		<Lang2>ชื่อสาขา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>หมายเลขใบเสร็จ</DefaultText>
+		<Lang1>Receipt No.</Lang1>
+		<Lang2>หมายเลขใบเสร็จ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>สถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>สถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30015</FormID>
+		<FormName>ReportCustomerservice</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>สร้างรายงาน</DefaultText>
+		<Lang1>View Report</Lang1>
+		<Lang2>สร้างรายงาน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>รายงาน แต้มสะสมสมาชิก</DefaultText>
+		<Lang1>MemberPoint Report</Lang1>
+		<Lang2>รายงาน แต้มสะสมสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>ค้นหาด้วย</DefaultText>
+		<Lang1>search</Lang1>
+		<Lang2>ค้นหาด้วย</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>กลุ่มสมาชิก</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ถึง</DefaultText>
+		<Lang1>To</Lang1>
+		<Lang2>ถึง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>จำนวนข้อมูล(แถว)</DefaultText>
+		<Lang1>amount of data</Lang1>
+		<Lang2>จำนวนข้อมูล(แถว)</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>เรียกรายงาน</DefaultText>
+		<Lang1>View Report</Lang1>
+		<Lang2>เรียกรายงาน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>รหัสสมาชิก</DefaultText>
+		<Lang1>MemberID</Lang1>
+		<Lang2>รหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>กลุ่มสมาชิก</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>รายชื่อ - สกุล</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>รายชื่อ - สกุล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>ยอดแต้มสะสม</DefaultText>
+		<Lang1>Total Point</Lang1>
+		<Lang2>ยอดแต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>เวลาปรับปรุง</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>เวลาปรับปรุง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>วันหมดอายุ</DefaultText>
+		<Lang1>Expire</Lang1>
+		<Lang2>วันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ข้อมูลส่วนตัว</DefaultText>
+		<Lang1>Info.</Lang1>
+		<Lang2>ข้อมูลส่วนตัว</Lang2>
+	</Form>
+	<Form>
+		<FormID>30016</FormID>
+		<FormName>PointReport</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>รายล่ะเอียด</DefaultText>
+		<Lang1>Detail</Lang1>
+		<Lang2>รายล่ะเอียด</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>รายละเอียด สมาชิก</DefaultText>
+		<Lang1>Member Information</Lang1>
+		<Lang2>รายละเอียด สมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>&lt;&lt; กลับหน้าหลัก</DefaultText>
+		<Lang1>&lt;&lt; Home</Lang1>
+		<Lang2>&lt;&lt; กลับหน้าหลัก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>หมายเลขสมาชิก</DefaultText>
+		<Lang1>MemberID</Lang1>
+		<Lang2>หมายเลขสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>กลุ่มสมาชิก</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>วันที่สมัคร</DefaultText>
+		<Lang1>Register Date</Lang1>
+		<Lang2>วันที่สมัคร</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>วันหมดอายุ</DefaultText>
+		<Lang1>Expire Date</Lang1>
+		<Lang2>วันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ชื่อ - สกุล</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ - สกุล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>เพศ</DefaultText>
+		<Lang1>Gender</Lang1>
+		<Lang2>เพศ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>วันเกิด</DefaultText>
+		<Lang1>BirthDay</Lang1>
+		<Lang2>วันเกิด</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>อีเมล์</DefaultText>
+		<Lang1>Email</Lang1>
+		<Lang2>อีเมล์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>หมายเลขโทรศัพท์</DefaultText>
+		<Lang1>Phone</Lang1>
+		<Lang2>หมายเลขโทรศัพท์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>มือถือ</DefaultText>
+		<Lang1>Mobile</Lang1>
+		<Lang2>มือถือ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ที่อยู่</DefaultText>
+		<Lang1>Address</Lang1>
+		<Lang2>ที่อยู่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ยอดแต้มสะสม</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>ยอดแต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>รายการข้อมูล</DefaultText>
+		<Lang1>List</Lang1>
+		<Lang2>รายการข้อมูล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>รายล่ะเอียดสะสมคะแนน</DefaultText>
+		<Lang1>History Point</Lang1>
+		<Lang2>รายล่ะเอียดสะสมคะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>สิทธิ์แลกใช้</DefaultText>
+		<Lang1>Redeem</Lang1>
+		<Lang2>สิทธิ์แลกใช้</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>ข้อมูลการ แลกแต้ม</DefaultText>
+		<Lang1>History Redeem</Lang1>
+		<Lang2>ข้อมูลการ แลกแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>ชื่อรายการ</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>ประเภทรายการ</DefaultText>
+		<Lang1>Type</Lang1>
+		<Lang2>ประเภทรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>คะแนน</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>คะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>เริ่มวันที่</DefaultText>
+		<Lang1>StartDate</Lang1>
+		<Lang2>เริ่มวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>สิ้นสุดวันที่</DefaultText>
+		<Lang1>EndDate</Lang1>
+		<Lang2>สิ้นสุดวันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>รายละเอียดสิ้นค้า</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>รายละเอียดสิ้นค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>ดูรายการ</DefaultText>
+		<Lang1>Detail</Lang1>
+		<Lang2>ดูรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>หมายเลขเอกสาร</DefaultText>
+		<Lang1>Receipt No.</Lang1>
+		<Lang2>หมายเลขเอกสาร</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>27</TextID>
+		<DefaultText>ร้าน</DefaultText>
+		<Lang1>Branch</Lang1>
+		<Lang2>ร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>28</TextID>
+		<DefaultText>วันที่</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>วันที่</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>29</TextID>
+		<DefaultText>ประเภทคะแนน</DefaultText>
+		<Lang1>Type point</Lang1>
+		<Lang2>ประเภทคะแนน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>30</TextID>
+		<DefaultText>ราคาทั้งหมดต่อบิล</DefaultText>
+		<Lang1>Price/Bill</Lang1>
+		<Lang2>ราคาทั้งหมดต่อบิล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>31</TextID>
+		<DefaultText>ราคาได้คะแนนต่อบิล</DefaultText>
+		<Lang1>Point/Bill</Lang1>
+		<Lang2>ราคาได้คะแนนต่อบิล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>32</TextID>
+		<DefaultText>คะแนนก่อนหน้า</DefaultText>
+		<Lang1>Before</Lang1>
+		<Lang2>คะแนนก่อนหน้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>30017</FormID>
+		<FormName>MemberInfo</FormName>
+		<TextType>1</TextType>
+		<TextID>33</TextID>
+		<DefaultText>คะแนนที่ได้</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>คะแนนที่ได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>ระบบแต้มสมาชิก</DefaultText>
+		<Lang1>Member Point </Lang1>
+		<Lang2>ระบบจัดการแต้มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>รหัสสมาชิก</DefaultText>
+		<Lang1>Member Code</Lang1>
+		<Lang2>รหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>กลุ่มสมาชิก</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>ชื่อ</DefaultText>
+		<Lang1>First Name</Lang1>
+		<Lang2>ชื่อ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>นามสกุล</DefaultText>
+		<Lang1>Last Name</Lang1>
+		<Lang2>นามสกุล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>หมายเลขโทรศัพท์</DefaultText>
+		<Lang1>Tel.</Lang1>
+		<Lang2>หมายเลขโทรศัพท์</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>การเรียงลำดับ</DefaultText>
+		<Lang1>Ordering</Lang1>
+		<Lang2>การเรียงลำดับ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ค้นหา</DefaultText>
+		<Lang1>Search</Lang1>
+		<Lang2>ค้นหา</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>สถานะ</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>สถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>เปลี่ยนสถานะ</DefaultText>
+		<Lang1>Change status</Lang1>
+		<Lang2>เปลี่ยนสถานะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>ประเภท</DefaultText>
+		<Lang1>Type</Lang1>
+		<Lang2>ประเภท</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>รหัสสมาชิก</DefaultText>
+		<Lang1>Member Code</Lang1>
+		<Lang2>รหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ชื่อ-สกุล</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ-สกุล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>แต้มสะสม</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>วันเกิด</DefaultText>
+		<Lang1>BirthDay</Lang1>
+		<Lang2>วันเกิด</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Email</DefaultText>
+		<Lang1>Email</Lang1>
+		<Lang2>Email</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>รายละเอียด</DefaultText>
+		<Lang1>Detail</Lang1>
+		<Lang2>รายละเอียด</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>รวมแต้ม</DefaultText>
+		<Lang1>Merge</Lang1>
+		<Lang2>รวมแต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>แก้ไข</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>ลบ</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>เปลี่ยน</DefaultText>
+		<Lang1>Change</Lang1>
+		<Lang2>เปลี่ยน</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>เพิ่มสมาชิก</DefaultText>
+		<Lang1>Add Member</Lang1>
+		<Lang2>เพิ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>ชื่อ-สกุล</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ-สกุล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>รหัสสมาชิก</DefaultText>
+		<Lang1>Member Code</Lang1>
+		<Lang2>รหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>กลุ่มสมาชิก</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30018</FormID>
+		<FormName>MemberDetail</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>แต้ม</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>แต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>ระบบจัดการแต้มสมาชิก</DefaultText>
+		<Lang1>Member Point</Lang1>
+		<Lang2>ระบบจัดการแต้มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>จัดการแต้ม สมาชิก</DefaultText>
+		<Lang1>Member Point Management</Lang1>
+		<Lang2>จัดการแต้ม สมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>รหัสมาชิก</DefaultText>
+		<Lang1>Member Code</Lang1>
+		<Lang2>รหัสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>แต้ม</DefaultText>
+		<Lang1>Point</Lang1>
+		<Lang2>แต้ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>สมาชิก ผู้ถือครอง</DefaultText>
+		<Lang1>Registered holders</Lang1>
+		<Lang2>สมาชิก ผู้ถือครอง</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>รหัสสมาชิก</DefaultText>
+		<Lang1>Member Code</Lang1>
+		<Lang2>รหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>กลุ่มสมาชิก</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>รายชื่อ - สกุล</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>รายชื่อ - สกุล</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>แต้มสะสม</DefaultText>
+		<Lang1>Total Point</Lang1>
+		<Lang2>แต้มสะสม</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>วันหมดอายุ</DefaultText>
+		<Lang1>Expire Date</Lang1>
+		<Lang2>วันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>30019</FormID>
+		<FormName>MemberMergpoint</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>รวมแต้ม</DefaultText>
+		<Lang1>Merge</Lang1>
+		<Lang2>รวมแต้ม</Lang2>
+	</Form>
+</LanguageData>

@@ -1,0 +1,28 @@
+การแสดง ExtraData สำหรับในหน้าแก้ไข นิติบุคคล (ProductLevel) โดยต้องตั้งค่าในหลายจุด
+
+1. Set ProgramType = 8, Property = 1 ในหน้า Set Property (ตั้งค่าเริ่มต้น) <> 0 โดยมีค่าดังนี้
+ = 1  แสดง link สำหรับ Ootoya ตาม database setting
+ >= 2 แสดง link extra data ตาม database setting
+ = 99 แสดง link extra data เสมอโดยไม่สนใจ database setting 
+
+2. Set MultiBranch = 1 (Yes)
+3. Shop จะต้องเป็นร้านที่อยู่ภายใต้ MasterShop หนึ่ง ๆ (ยกเว้น Set Property = 99 จะแสดง link เสมอ)
+
+Link ExtraData สามารถเปลี่ยน url ได้โดย Set ที่ TextValue ของ ProgramType = 8 Property = 1 ถ้าไม่ได้ set จะใช้ link default คือ ERP_Mapping.aspx แทน
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

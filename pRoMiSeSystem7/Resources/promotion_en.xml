@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>0</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Setting</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>1</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>New Promotion</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>2</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Status</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>3</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Activated</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>4</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>5</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>LinkTo</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>6</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Product Setting</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>7</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Free/Purchase</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>8</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Level</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>9</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Branch Setting</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>10</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Edit</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>11</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Del</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>12</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Enable</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>13</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Disable</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>14</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Link to</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>15</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Product Setting</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>16</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Free/Purchase</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>17</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Level</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>18</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Branch Setting</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>19</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>Only for Payment</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>20</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>For Payment</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>0</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotoin Level Setting</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>1</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Home Page</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>2</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>New Promotion</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>3</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Status</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>4</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Activated</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>5</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Name</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>6</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value><![CDATA[>]]></value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>7</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value><![CDATA[<=]]></value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>8</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Free/Purchase</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>9</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Edit</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>10</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Delete</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>11</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Enable</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>12</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Disable</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>13</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>สินค้าเข้าร่วม</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>0</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Setting</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>1</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>2</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>From Date</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>3</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>To Date</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>4</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Start Time</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>5</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>End Time</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>6</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Conditions around the time</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>7</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Used with other promotions</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>8</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Allow Multiple Voucher</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>9</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Enable</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>10</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Type</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>11</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Week</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>12</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Month</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>13</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Do not specify time</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>14</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>No print receipt copy</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>15</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>PrintSignatureInReceipt</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>16</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Exempt Product Tax (SCD Discount)</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>0</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Setting</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>1</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Select promotion type</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>2</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Select Discount</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>3</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Discount</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>4</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Discount is other.</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>5</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Free/ Purchase</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>6</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Condition for Free/Purchase</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>7</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Any amount</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>8</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Any price</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>9</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>The Discount for</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>10</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Discount</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>11</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Free</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>12</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Redeem /purchase</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>13</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Amount specified above for the product</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>14</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Product same</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>15</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Product different</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>16</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Percent</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>17</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Bath</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>18</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Piece</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>19</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>A piece</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>20</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Home Page</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>21</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion base on</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>22</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Sort by price.</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>23</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>The Highest price first.</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>24</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>The lowest first prices.</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>0</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion level Setting</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>1</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>2</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Name</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>3</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Amount</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>4</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promotion Use Only</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>5</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>No Discount</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>6</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Discount coupon on the next bill</value>
+  </Form>
+  <Form>
+    <formid>5</formid>
+    <formname>promotion_Level_Edit.aspx</formname>
+    <id>7</id>
+    <name>promotion_Level_Edit.aspx</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Coupon</value>
+  </Form>
+
+  <!-- Modify Date 2014-04-24-->
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>25</id>
+    <name>Promotion Link</name>
+    <type>Lable</type>
+    <langid>1</langid>
+    <value>Free</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>26</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>1</langid>
+    <value>%</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>27</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>1</langid>
+    <value>Baht</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>28</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>1</langid>
+    <value>One price</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>29</id>
+    <name>Promotion Link</name>
+    <type>Lable</type>
+    <langid>1</langid>
+    <value>Total price product is over.</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>30</id>
+    <name>Promotion Link</name>
+    <type>Lable</type>
+    <langid>1</langid>
+    <value>Sorting price.</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>31</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>1</langid>
+    <value>The Highest price first.</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>32</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>1</langid>
+    <value>The lowest first prices.</value>
+  </Form>
+</LanguageData>

@@ -1,0 +1,4956 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Print Report</DefaultText>
+		<Lang1>Print Report</Lang1>
+		<Lang2>Print Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Export to Excel</DefaultText>
+		<Lang1>Export to Excel</Lang1>
+		<Lang2>Export to Excel</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Create Report Date:</DefaultText>
+		<Lang1>Create Report Date:</Lang1>
+		<Lang2>Create Report Date:</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Generate Report</DefaultText>
+		<Lang1>Generate Report</Lang1>
+		<Lang2>Generate Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Day</DefaultText>
+		<Lang1>Day</Lang1>
+		<Lang2>Day</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Month</DefaultText>
+		<Lang1>Month</Lang1>
+		<Lang2>Month</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Year</DefaultText>
+		<Lang1>Year</Lang1>
+		<Lang2>Year</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>January</DefaultText>
+		<Lang1>February</Lang1>
+		<Lang2>March</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Febauary</DefaultText>
+		<Lang1>Febauary</Lang1>
+		<Lang2>Febauary</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>March</DefaultText>
+		<Lang1>March</Lang1>
+		<Lang2>March</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>April</DefaultText>
+		<Lang1>April</Lang1>
+		<Lang2>April</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>May</DefaultText>
+		<Lang1>May</Lang1>
+		<Lang2>May</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>June</DefaultText>
+		<Lang1>June</Lang1>
+		<Lang2>June</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>July</DefaultText>
+		<Lang1>July</Lang1>
+		<Lang2>July</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>August</DefaultText>
+		<Lang1>August</Lang1>
+		<Lang2>August</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>September</DefaultText>
+		<Lang1>September</Lang1>
+		<Lang2>September</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>October</DefaultText>
+		<Lang1>October</Lang1>
+		<Lang2>October</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+		<DefaultText>November</DefaultText>
+		<Lang1>November</Lang1>
+		<Lang2>November</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>December</DefaultText>
+		<Lang1>December</Lang1>
+		<Lang2>December</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Invalid date format</DefaultText>
+		<Lang1>Invalid date format</Lang1>
+		<Lang2>Invalid date format</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>20</TextID>
+		<DefaultText>Print</DefaultText>
+		<Lang1>Print</Lang1>
+		<Lang2>Print</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>21</TextID>
+		<DefaultText>Close Windows</DefaultText>
+		<Lang1>Close Windows</Lang1>
+		<Lang2>Close Windows</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>22</TextID>
+		<DefaultText>To</DefaultText>
+		<Lang1>To</Lang1>
+		<Lang2>To</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>23</TextID>
+		<DefaultText>All Shops</DefaultText>
+		<Lang1>All Shops</Lang1>
+		<Lang2>All Shops</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>24</TextID>
+		<DefaultText>Hour</DefaultText>
+		<Lang1>Hour</Lang1>
+		<Lang2>Hour</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>25</TextID>
+		<DefaultText>Minute</DefaultText>
+		<Lang1>Minute</Lang1>
+		<Lang2>Minute</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>26</TextID>
+		<DefaultText>No Data Found</DefaultText>
+		<Lang1>No Data Found</Lang1>
+		<Lang2>No Data Found</Lang2>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>27</TextID>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>28</TextID>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>29</TextID>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>30</TextID>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>31</TextID>
+	</Form>
+	<Form>
+		<FormID>999</FormID>
+		<FormName>Default</FormName>
+		<TextType>2</TextType>
+		<TextID>32</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+	</Form>
+	<Form>
+		<FormID>998</FormID>
+		<FormName>Dummy</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Preferences</DefaultText>
+		<Lang1>Preferences</Lang1>
+		<Lang2>Preferences</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Year Type</DefaultText>
+		<Lang1>Year Type</Lang1>
+		<Lang2>Year Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Discount Rounding</DefaultText>
+		<Lang1>Discount Rounding</Lang1>
+		<Lang2>Discount Rounding</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Bill Rounding</DefaultText>
+		<Lang1>Bill Rounding</Lang1>
+		<Lang2>Bill Rounding</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Product Price Rounding</DefaultText>
+		<Lang1>Product Price Rounding</Lang1>
+		<Lang2>Product Price Rounding</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Service Charge Rounding</DefaultText>
+		<Lang1>Service Charge Rounding</Lang1>
+		<Lang2>Service Charge Rounding</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Remote Image Folder</DefaultText>
+		<Lang1>Remote Image Folder</Lang1>
+		<Lang2>Remote Image Folder</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>SMTP Mail Server</DefaultText>
+		<Lang1>SMTP Mail Server</Lang1>
+		<Lang2>SMTP Mail Server</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Contact Email Address</DefaultText>
+		<Lang1>Contact Email Address</Lang1>
+		<Lang2>Contact Email Address</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Running Member Code Type</DefaultText>
+		<Lang1>Running Member Code Type</Lang1>
+		<Lang2>Running Member Code Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Member Code Digit</DefaultText>
+		<Lang1>Member Code Digit</Lang1>
+		<Lang2>Member Code Digit</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Running Member Code Resetting</DefaultText>
+		<Lang1>Running Member Code Resetting</Lang1>
+		<Lang2>Running Member Code Resetting</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Member Code Year</DefaultText>
+		<Lang1>Member Code Year</Lang1>
+		<Lang2>Member Code Year</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>After paid, go back to</DefaultText>
+		<Lang1>After paid, go back to</Lang1>
+		<Lang2>After paid, go back to</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>A.D.</DefaultText>
+		<Lang1>A.D.</Lang1>
+		<Lang2>A.D.</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>B.E.</DefaultText>
+		<Lang1>B.E.</Lang1>
+		<Lang2>B.E.</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Print Package Detail in Receipt</DefaultText>
+		<Lang1>Print Package Detail in Receipt</Lang1>
+		<Lang2>Print Package Detail in Receipt</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Currency Symbol</DefaultText>
+		<Lang1>Currency Symbol</Lang1>
+		<Lang2>Currency Symbol</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Currency Code</DefaultText>
+		<Lang1>Currency Code</Lang1>
+		<Lang2>Currency Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Currency Name</DefaultText>
+		<Lang1>Currency Name</Lang1>
+		<Lang2>Currency Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>Currency Format</DefaultText>
+		<Lang1>Currency Format</Lang1>
+		<Lang2>Currency Format</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>Date Format</DefaultText>
+		<Lang1>Date Format</Lang1>
+		<Lang2>Date Format</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>Time Format</DefaultText>
+		<Lang1>Time Format</Lang1>
+		<Lang2>Time Format</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>Quantity Format</DefaultText>
+		<Lang1>Quantity Format</Lang1>
+		<Lang2>Quantity Format</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>A.D.</DefaultText>
+		<Lang1>A.D.</Lang1>
+		<Lang2>A.D.</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>B.E.</DefaultText>
+		<Lang1>B.E.</Lang1>
+		<Lang2>B.E.</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>Description</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>27</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>Value</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>28</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>Description</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>29</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>Value</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>30</TextID>
+		<DefaultText>Decimal digit of rounding amount</DefaultText>
+		<Lang1>Decimal digit of rounding amount</Lang1>
+		<Lang2>Decimal digit of rounding amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>31</TextID>
+		<DefaultText>Sale Mode Configuration</DefaultText>
+		<Lang1>Sale Mode Configuration</Lang1>
+		<Lang2>Sale Mode Configuration</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>32</TextID>
+		<DefaultText>Administration Area</DefaultText>
+		<Lang1>Administration Area</Lang1>
+		<Lang2>Administration Area</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>33</TextID>
+		<DefaultText>Sale Mode ID</DefaultText>
+		<Lang1>Sale Mode ID</Lang1>
+		<Lang2>Sale Mode ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>34</TextID>
+		<DefaultText>Sale Mode Name</DefaultText>
+		<Lang1>Sale Mode Name</Lang1>
+		<Lang2>Sale Mode Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>35</TextID>
+		<DefaultText>Position Prefix</DefaultText>
+		<Lang1>Position Prefix</Lang1>
+		<Lang2>Position Prefix</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>36</TextID>
+		<DefaultText>Prefix Text</DefaultText>
+		<Lang1>Prefix Text</Lang1>
+		<Lang2>Prefix Text</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>37</TextID>
+		<DefaultText>Prefix Text for Printing</DefaultText>
+		<Lang1>Prefix Text for Printing</Lang1>
+		<Lang2>Prefix Text for Printing</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>38</TextID>
+		<DefaultText>Service Charge</DefaultText>
+		<Lang1>Service Charge</Lang1>
+		<Lang2>Service Charge</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>39</TextID>
+		<DefaultText>Activate</DefaultText>
+		<Lang1>Activate</Lang1>
+		<Lang2>Activate</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>40</TextID>
+		<DefaultText>System Parameters</DefaultText>
+		<Lang1>System Parameters</Lang1>
+		<Lang2>System Parameters</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>41</TextID>
+		<DefaultText>TypeID</DefaultText>
+		<Lang1>TypeID</Lang1>
+		<Lang2>TypeID</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>42</TextID>
+		<DefaultText>ID</DefaultText>
+		<Lang1>ID</Lang1>
+		<Lang2>ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>43</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>Description</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>44</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>Value</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>45</TextID>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>46</TextID>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>47</TextID>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>48</TextID>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<FormName>Preferences:main.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>49</TextID>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Manage Material Data</DefaultText>
+		<Lang1>Manage Material Data</Lang1>
+		<Lang2>Manage Material Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Material Group</DefaultText>
+		<Lang1>Material Group</Lang1>
+		<Lang2>Material Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Material Department</DefaultText>
+		<Lang1>Material Department</Lang1>
+		<Lang2>Material Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Materials</DefaultText>
+		<Lang1>Materials</Lang1>
+		<Lang2>Materials</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Keyword(s):</DefaultText>
+		<Lang1>Keyword(s):</Lang1>
+		<Lang2>Keyword(s):</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Search</DefaultText>
+		<Lang1>Search</Lang1>
+		<Lang2>Search</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Group Code</DefaultText>
+		<Lang1>Group Code</Lang1>
+		<Lang2>Group Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Group Name</DefaultText>
+		<Lang1>Group Name</Lang1>
+		<Lang2>Group Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Add Material Group</DefaultText>
+		<Lang1>Add Material Group</Lang1>
+		<Lang2>Add Material Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Edit</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>Edit</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Delete</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>Delete</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Department Code</DefaultText>
+		<Lang1>Department Code</Lang1>
+		<Lang2>Department Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Department Name</DefaultText>
+		<Lang1>Department Name</Lang1>
+		<Lang2>Department Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Add Material Department</DefaultText>
+		<Lang1>Add Material Department</Lang1>
+		<Lang2>Add Material Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Material Code</DefaultText>
+		<Lang1>Material Code</Lang1>
+		<Lang2>Material Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Material Name</DefaultText>
+		<Lang1>Material Name</Lang1>
+		<Lang2>Material Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Check Recipe</DefaultText>
+		<Lang1>Check Recipe</Lang1>
+		<Lang2>Check Recipe</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Set Invent Unit</DefaultText>
+		<Lang1>Set Invent Unit</Lang1>
+		<Lang2>Set Invent Unit</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Mapping Unit</DefaultText>
+		<Lang1>Mapping Unit</Lang1>
+		<Lang2>Mapping Unit</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>Add Material</DefaultText>
+		<Lang1>Add Material</Lang1>
+		<Lang2>Add Material</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>-- Select Material Group --</DefaultText>
+		<Lang1>-- Select Material Group --</Lang1>
+		<Lang2>-- Select Material Group --</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>-- Select Material Dept --</DefaultText>
+		<Lang1>-- Select Material Dept --</Lang1>
+		<Lang2>-- Select Material Dept --</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>Set Recipe</DefaultText>
+		<Lang1>Set Recipe</Lang1>
+		<Lang2>Set Recipe</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>Select</DefaultText>
+		<Lang1>Select</Lang1>
+		<Lang2>Select</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>Are you sure you want to delete</DefaultText>
+		<Lang1>Are you sure you want to delete</Lang1>
+		<Lang2>Are you sure you want to delete</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>?</DefaultText>
+		<Lang1>?</Lang1>
+		<Lang2>?</Lang2>
+	</Form>
+	<Form>
+		<FormID>2</FormID>
+		<FormName>MaterialData</FormName>
+		<TextType>1</TextType>
+		<TextID>27</TextID>
+		<DefaultText>Select Material</DefaultText>
+		<Lang1>Select Material</Lang1>
+		<Lang2>Select Material</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Manage Material Group Data</DefaultText>
+		<Lang1>Manage Material Group Data</Lang1>
+		<Lang2>Manage Material Group Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Add Material Group</DefaultText>
+		<Lang1>Add Material Group</Lang1>
+		<Lang2>Add Material Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Material Group Code</DefaultText>
+		<Lang1>Material Group Code</Lang1>
+		<Lang2>Material Group Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Material Group Name</DefaultText>
+		<Lang1>Material Group Name</Lang1>
+		<Lang2>Material Group Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Material Group Type</DefaultText>
+		<Lang1>Material Group Type</Lang1>
+		<Lang2>Material Group Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Add Data</DefaultText>
+		<Lang1>Add Data</Lang1>
+		<Lang2>Add Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Update Data</DefaultText>
+		<Lang1>Update Data</Lang1>
+		<Lang2>Update Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Material Group Code must be filled before submission.</DefaultText>
+		<Lang1>Material Group Code must be filled before submission.</Lang1>
+		<Lang2>Material Group Code must be filled before submission.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Material Group Name must be filled before submission.</DefaultText>
+		<Lang1>Material Group Name must be filled before submission.</Lang1>
+		<Lang2>Material Group Name must be filled before submission.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Material Group Code already exist in database.</DefaultText>
+		<Lang1>Material Group Code already exist in database.</Lang1>
+		<Lang2>Material Group Code already exist in database.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Edit Material Group</DefaultText>
+		<Lang1>Edit Material Group</Lang1>
+		<Lang2>Edit Material Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Material Group</DefaultText>
+		<Lang1>Material Group</Lang1>
+		<Lang2>Material Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Material Department Code</DefaultText>
+		<Lang1>Material Department Code</Lang1>
+		<Lang2>Material Department Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Material Department Name</DefaultText>
+		<Lang1>Material Department Name</Lang1>
+		<Lang2>Material Department Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Material Department Code must be filled before submission.</DefaultText>
+		<Lang1>Material Department Code must be filled before submission.</Lang1>
+		<Lang2>Material Department Code must be filled before submission.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Material Department Name must be filled before submission.</DefaultText>
+		<Lang1>Material Department Name must be filled before submission.</Lang1>
+		<Lang2>Material Department Name must be filled before submission.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Manage Material Department Data</DefaultText>
+		<Lang1>Manage Material Department Data</Lang1>
+		<Lang2>Manage Material Department Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Add Material Department</DefaultText>
+		<Lang1>Add Material Department</Lang1>
+		<Lang2>Add Material Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>Edit Material Department</DefaultText>
+		<Lang1>Edit Material Department</Lang1>
+		<Lang2>Edit Material Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>Material Department Code already exist in database.</DefaultText>
+		<Lang1>Material Department Code already exist in database.</Lang1>
+		<Lang2>Material Department Code already exist in database.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
+		<DefaultText>Please select material group before submission.</DefaultText>
+		<Lang1>Please select material group before submission.</Lang1>
+		<Lang2>Please select material group before submission.</Lang2>
+	</Form>
+	<Form>
+		<FormID>3</FormID>
+		<FormName>MaterialGroup</FormName>
+		<TextType>1</TextType>
+		<TextID>23</TextID>
+		<DefaultText>-- Select Material Group --</DefaultText>
+		<Lang1>-- Select Material Group --</Lang1>
+		<Lang2>-- Select Material Group --</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Manage Credit Card Type</DefaultText>
+		<Lang1>Manage Credit Card Type</Lang1>
+		<Lang2>Manage Credit Card Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Add Credit Card Type</DefaultText>
+		<Lang1>Add Credit Card Type</Lang1>
+		<Lang2>Add Credit Card Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Credit Card Type Name</DefaultText>
+		<Lang1>Credit Card Type Name</Lang1>
+		<Lang2>Credit Card Type Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Edit</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>Edit</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Delete</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>Delete</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Are you sure you want to delete</DefaultText>
+		<Lang1>Are you sure you want to delete</Lang1>
+		<Lang2>Are you sure you want to delete</Lang2>
+	</Form>
+	<Form>
+		<FormID>4</FormID>
+		<FormName>CreditCardType.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>?</DefaultText>
+		<Lang1>?</Lang1>
+		<Lang2>?</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Company Profile</DefaultText>
+		<Lang1>Company Profile</Lang1>
+		<Lang2>Company Profile</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Company Name</DefaultText>
+		<Lang1>Company Name</Lang1>
+		<Lang2>Company Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Address1</DefaultText>
+		<Lang1>Address1</Lang1>
+		<Lang2>Address1</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Address2</DefaultText>
+		<Lang1>Address2</Lang1>
+		<Lang2>Address2</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>City</DefaultText>
+		<Lang1>City</Lang1>
+		<Lang2>City</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Province</DefaultText>
+		<Lang1>Province</Lang1>
+		<Lang2>Province</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Zipcode</DefaultText>
+		<Lang1>Zipcode</Lang1>
+		<Lang2>Zipcode</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Telephone</DefaultText>
+		<Lang1>Telephone</Lang1>
+		<Lang2>Telephone</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Fax</DefaultText>
+		<Lang1>Fax</Lang1>
+		<Lang2>Fax</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Tax ID</DefaultText>
+		<Lang1>Tax ID</Lang1>
+		<Lang2>Tax ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Register ID</DefaultText>
+		<Lang1>Register ID</Lang1>
+		<Lang2>Register ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>VAT</DefaultText>
+		<Lang1>VAT</Lang1>
+		<Lang2>VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Update Data</DefaultText>
+		<Lang1>Update Data</Lang1>
+		<Lang2>Update Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>5</FormID>
+		<FormName>Company_Profile.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>VAT must be numeric number.</DefaultText>
+		<Lang1>VAT must be numeric number.</Lang1>
+		<Lang2>VAT must be numeric number.</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Sale Report</DefaultText>
+		<Lang1>Sale Report</Lang1>
+		<Lang2>Sale Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Reported By Bill</DefaultText>
+		<Lang1>Reported By Bill</Lang1>
+		<Lang2>Reported By Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Reported By Products</DefaultText>
+		<Lang1>Reported By Products</Lang1>
+		<Lang2>Reported By Products</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Order By Product Code</DefaultText>
+		<Lang1>Order By Product Code</Lang1>
+		<Lang2>Order By Product Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Order By Product Name</DefaultText>
+		<Lang1>Order By Product Name</Lang1>
+		<Lang2>Order By Product Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Group By Day of Week</DefaultText>
+		<Lang1>Group By Day of Week</Lang1>
+		<Lang2>Group By Day of Week</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Group By Hourly</DefaultText>
+		<Lang1>Group By Hourly</Lang1>
+		<Lang2>Group By Hourly</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Show Receipt Details</DefaultText>
+		<Lang1>Show Receipt Details</Lang1>
+		<Lang2>Show Receipt Details</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Display Graph for Monthly Report and Date Range Report</DefaultText>
+		<Lang1>Display Graph for Monthly Report and Date Range Report</Lang1>
+		<Lang2>Display Graph for Monthly Report and Date Range Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Line Chart</DefaultText>
+		<Lang1>Line Chart</Lang1>
+		<Lang2>Line Chart</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Column Chart</DefaultText>
+		<Lang1>Column Chart</Lang1>
+		<Lang2>Column Chart</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Generate Report</DefaultText>
+		<Lang1>Generate Report</Lang1>
+		<Lang2>Generate Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Sale Report By Bill of</DefaultText>
+		<Lang1>Sale Report By Bill of</Lang1>
+		<Lang2>Sale Report By Bill of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Sale Report By Month of</DefaultText>
+		<Lang1>Sale Report By Month of</Lang1>
+		<Lang2>Sale Report By Month of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Sale Report By Year of</DefaultText>
+		<Lang1>Sale Report By Year of</Lang1>
+		<Lang2>Sale Report By Year of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Sale Report By Date of</DefaultText>
+		<Lang1>Sale Report By Date of</Lang1>
+		<Lang2>Sale Report By Date of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Sale Report By Product of</DefaultText>
+		<Lang1>Sale Report By Product of</Lang1>
+		<Lang2>Sale Report By Product of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Sale Report By Day of Week of</DefaultText>
+		<Lang1>Sale Report By Day of Week of</Lang1>
+		<Lang2>Sale Report By Day of Week of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Sale Report By Hourly of</DefaultText>
+		<Lang1>Sale Report By Hourly of</Lang1>
+		<Lang2>Sale Report By Hourly of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Table</DefaultText>
+		<Lang1>Table</Lang1>
+		<Lang2>Table</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>20</TextID>
+		<DefaultText># Bills</DefaultText>
+		<Lang1># Bills</Lang1>
+		<Lang2># Bills</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>21</TextID>
+		<DefaultText>Guest</DefaultText>
+		<Lang1>Guest</Lang1>
+		<Lang2>Guest</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>22</TextID>
+		<DefaultText>Total Price</DefaultText>
+		<Lang1>Total Price</Lang1>
+		<Lang2>Total Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>23</TextID>
+		<DefaultText>Disc</DefaultText>
+		<Lang1>Disc</Lang1>
+		<Lang2>Disc</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>24</TextID>
+		<DefaultText>Sub Total</DefaultText>
+		<Lang1>Sub Total</Lang1>
+		<Lang2>Sub Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>25</TextID>
+		<DefaultText>SC</DefaultText>
+		<Lang1>SC</Lang1>
+		<Lang2>SC</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>26</TextID>
+		<DefaultText>Total Sale</DefaultText>
+		<Lang1>Total Sale</Lang1>
+		<Lang2>Total Sale</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>27</TextID>
+		<DefaultText>Product &amp;&lt;br&gt;Service VAT</DefaultText>
+		<Lang1>Product &amp;&lt;br&gt;Service VAT</Lang1>
+		<Lang2>Product &amp;&lt;br&gt;Service VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>28</TextID>
+		<DefaultText>Total Sale&lt;br&gt;Include VAT</DefaultText>
+		<Lang1>Total Sale&lt;br&gt;Include VAT</Lang1>
+		<Lang2>Total Sale&lt;br&gt;Include VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>29</TextID>
+		<DefaultText>VATable</DefaultText>
+		<Lang1>VATable</Lang1>
+		<Lang2>VATable</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>30</TextID>
+		<DefaultText>Total VAT</DefaultText>
+		<Lang1>Total VAT</Lang1>
+		<Lang2>Total VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>31</TextID>
+		<DefaultText>Total Payment</DefaultText>
+		<Lang1>Total Payment</Lang1>
+		<Lang2>Total Payment</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>32</TextID>
+		<DefaultText>Diff</DefaultText>
+		<Lang1>Diff</Lang1>
+		<Lang2>Diff</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>33</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>34</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>Product Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>35</TextID>
+		<DefaultText>%</DefaultText>
+		<Lang1>%</Lang1>
+		<Lang2>%</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>36</TextID>
+		<DefaultText>Unit Price</DefaultText>
+		<Lang1>Unit Price</Lang1>
+		<Lang2>Unit Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>37</TextID>
+		<DefaultText>Qty</DefaultText>
+		<Lang1>Qty</Lang1>
+		<Lang2>Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>38</TextID>
+		<DefaultText>Sub Total</DefaultText>
+		<Lang1>Sub Total</Lang1>
+		<Lang2>Sub Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>39</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>40</TextID>
+		<DefaultText>Total</DefaultText>
+		<Lang1>Total</Lang1>
+		<Lang2>Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>41</TextID>
+		<DefaultText>Payment Summary</DefaultText>
+		<Lang1>Payment Summary</Lang1>
+		<Lang2>Payment Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>42</TextID>
+		<DefaultText>Payment Type</DefaultText>
+		<Lang1>Payment Type</Lang1>
+		<Lang2>Payment Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>43</TextID>
+		<DefaultText>Total Payment</DefaultText>
+		<Lang1>Total Payment</Lang1>
+		<Lang2>Total Payment</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>44</TextID>
+		<DefaultText>Amount Diff</DefaultText>
+		<Lang1>Amount Diff</Lang1>
+		<Lang2>Amount Diff</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>45</TextID>
+		<DefaultText>Discount Summary</DefaultText>
+		<Lang1>Discount Summary</Lang1>
+		<Lang2>Discount Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>46</TextID>
+		<DefaultText>Name</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>47</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>48</TextID>
+		<DefaultText>Statistics</DefaultText>
+		<Lang1>Statistics</Lang1>
+		<Lang2>Statistics</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>49</TextID>
+		<DefaultText>Bill Statistics</DefaultText>
+		<Lang1>Bill Statistics</Lang1>
+		<Lang2>Bill Statistics</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>50</TextID>
+		<DefaultText>Total</DefaultText>
+		<Lang1>Total</Lang1>
+		<Lang2>Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>51</TextID>
+		<DefaultText>Avg.</DefaultText>
+		<Lang1>Avg.</Lang1>
+		<Lang2>Avg.</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>52</TextID>
+		<DefaultText>Amount</DefaultText>
+		<Lang1>Amount</Lang1>
+		<Lang2>Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>53</TextID>
+		<DefaultText>Total Discount</DefaultText>
+		<Lang1>Total Discount</Lang1>
+		<Lang2>Total Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>54</TextID>
+		<DefaultText>Avg Per Customer</DefaultText>
+		<Lang1>Avg Per Customer</Lang1>
+		<Lang2>Avg Per Customer</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>55</TextID>
+		<DefaultText>Avg Per Bill</DefaultText>
+		<Lang1>Avg Per Bill</Lang1>
+		<Lang2>Avg Per Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>56</TextID>
+		<DefaultText>Avg Items Per Bill</DefaultText>
+		<Lang1>Avg Items Per Bill</Lang1>
+		<Lang2>Avg Items Per Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>57</TextID>
+		<DefaultText>Used Bills</DefaultText>
+		<Lang1>Used Bills</Lang1>
+		<Lang2>Used Bills</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>58</TextID>
+		<DefaultText>Vioded Bills</DefaultText>
+		<Lang1>Vioded Bills</Lang1>
+		<Lang2>Vioded Bills</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>59</TextID>
+		<DefaultText>Total Bills</DefaultText>
+		<Lang1>Total Bills</Lang1>
+		<Lang2>Total Bills</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>60</TextID>
+		<DefaultText>Time Range</DefaultText>
+		<Lang1>Time Range</Lang1>
+		<Lang2>Time Range</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>61</TextID>
+		<DefaultText>Day of Week</DefaultText>
+		<Lang1>Day of Week</Lang1>
+		<Lang2>Day of Week</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>62</TextID>
+		<DefaultText>To</DefaultText>
+		<Lang1>To</Lang1>
+		<Lang2>To</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>63</TextID>
+		<DefaultText>Month</DefaultText>
+		<Lang1>Month</Lang1>
+		<Lang2>Month</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>64</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>Shop Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>65</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>66</TextID>
+		<DefaultText>Used Course</DefaultText>
+		<Lang1>Used Course</Lang1>
+		<Lang2>Used Course</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>67</TextID>
+		<DefaultText>Total Revenue</DefaultText>
+		<Lang1>Total Revenue</Lang1>
+		<Lang2>Total Revenue</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>68</TextID>
+		<DefaultText>Total&lt;br&gt;Credit&amp;Prepaid</DefaultText>
+		<Lang1>Total&lt;br&gt;Credit&amp;Prepaid</Lang1>
+		<Lang2>Total&lt;br&gt;Credit&amp;Prepaid</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>69</TextID>
+		<DefaultText>Total Revenue</DefaultText>
+		<Lang1>Total Revenue</Lang1>
+		<Lang2>Total Revenue</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>70</TextID>
+		<DefaultText>All Shops</DefaultText>
+		<Lang1>All Shops</Lang1>
+		<Lang2>All Shops</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>71</TextID>
+		<DefaultText>Invalid date format</DefaultText>
+		<Lang1>Invalid date format</Lang1>
+		<Lang2>Invalid date format</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>72</TextID>
+		<DefaultText>based on</DefaultText>
+		<Lang1>based on</Lang1>
+		<Lang2>based on</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>73</TextID>
+		<DefaultText>VAT</DefaultText>
+		<Lang1>VAT</Lang1>
+		<Lang2>VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>74</TextID>
+		<DefaultText>Disc</DefaultText>
+		<Lang1>Disc</Lang1>
+		<Lang2>Disc</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>75</TextID>
+		<DefaultText>Actual</DefaultText>
+		<Lang1>Actual</Lang1>
+		<Lang2>Actual</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>76</TextID>
+		<DefaultText>Total Payment (Not count prepaid payment)</DefaultText>
+		<Lang1>Total Payment (Not count prepaid payment)</Lang1>
+		<Lang2>Total Payment (Not count prepaid payment)</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>77</TextID>
+		<DefaultText>Price Discount</DefaultText>
+		<Lang1>Price Discount</Lang1>
+		<Lang2>Price Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>78</TextID>
+		<DefaultText>Member Discount</DefaultText>
+		<Lang1>Member Discount</Lang1>
+		<Lang2>Member Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>79</TextID>
+		<DefaultText>Staff Discount</DefaultText>
+		<Lang1>Staff Discount</Lang1>
+		<Lang2>Staff Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>80</TextID>
+		<DefaultText>Coupon Discount</DefaultText>
+		<Lang1>Coupon Discount</Lang1>
+		<Lang2>Coupon Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>81</TextID>
+		<DefaultText>Voucher Discount</DefaultText>
+		<Lang1>Voucher Discount</Lang1>
+		<Lang2>Voucher Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>82</TextID>
+		<DefaultText>Total Discount</DefaultText>
+		<Lang1>Total Discount</Lang1>
+		<Lang2>Total Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>83</TextID>
+		<DefaultText>Credit Money: Paid By</DefaultText>
+		<Lang1>Credit Money: Paid By</Lang1>
+		<Lang2>Credit Money: Paid By</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>84</TextID>
+		<DefaultText>Summary Credit Money</DefaultText>
+		<Lang1>Summary Credit Money</Lang1>
+		<Lang2>Summary Credit Money</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>85</TextID>
+		<DefaultText>Total Payment (include credit money)</DefaultText>
+		<Lang1>Total Payment (include credit money)</Lang1>
+		<Lang2>Total Payment (include credit money)</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>86</TextID>
+		<DefaultText>Other Discount</DefaultText>
+		<Lang1>Other Discount</Lang1>
+		<Lang2>Other Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>87</TextID>
+		<DefaultText>Avg/Cust</DefaultText>
+		<Lang1>Avg/Cust</Lang1>
+		<Lang2>Avg/Cust</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>88</TextID>
+		<DefaultText>Avg/Bill</DefaultText>
+		<Lang1>Avg/Bill</Lang1>
+		<Lang2>Avg/Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>89</TextID>
+		<DefaultText>Summary for</DefaultText>
+		<Lang1>Summary for</Lang1>
+		<Lang2>Summary for</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>90</TextID>
+		<DefaultText>group</DefaultText>
+		<Lang1>group</Lang1>
+		<Lang2>group</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>91</TextID>
+		<DefaultText>Total for</DefaultText>
+		<Lang1>Total for</Lang1>
+		<Lang2>Total for</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>92</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>93</TextID>
+		<DefaultText>Service Charge</DefaultText>
+		<Lang1>Service Charge</Lang1>
+		<Lang2>Service Charge</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>94</TextID>
+		<DefaultText>Product &amp; Service VAT</DefaultText>
+		<Lang1>Product &amp; Service VAT</Lang1>
+		<Lang2>Product &amp; Service VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>95</TextID>
+		<DefaultText>Total Sale</DefaultText>
+		<Lang1>Total Sale</Lang1>
+		<Lang2>Total Sale</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>96</TextID>
+		<DefaultText>(Voided)</DefaultText>
+		<Lang1>(Voided)</Lang1>
+		<Lang2>(Voided)</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>97</TextID>
+		<DefaultText>Summary</DefaultText>
+		<Lang1>Summary</Lang1>
+		<Lang2>Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>98</TextID>
+		<DefaultText>Order #</DefaultText>
+		<Lang1>Order #</Lang1>
+		<Lang2>Order #</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>99</TextID>
+		<DefaultText>Received By</DefaultText>
+		<Lang1>Received By</Lang1>
+		<Lang2>Received By</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>100</TextID>
+		<DefaultText>Amount Paid</DefaultText>
+		<Lang1>Amount Paid</Lang1>
+		<Lang2>Amount Paid</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>101</TextID>
+		<DefaultText>Status</DefaultText>
+		<Lang1>Status</Lang1>
+		<Lang2>Status</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>102</TextID>
+		<DefaultText>Completed</DefaultText>
+		<Lang1>Completed</Lang1>
+		<Lang2>Completed</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>103</TextID>
+		<DefaultText>Voided</DefaultText>
+		<Lang1>Voided</Lang1>
+		<Lang2>Voided</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>104</TextID>
+		<DefaultText>Total Paid</DefaultText>
+		<Lang1>Total Paid</Lang1>
+		<Lang2>Total Paid</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>105</TextID>
+		<DefaultText>Balance</DefaultText>
+		<Lang1>Balance</Lang1>
+		<Lang2>Balance</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>106</TextID>
+		<DefaultText>Promotion Info:</DefaultText>
+		<Lang1>Promotion Info:</Lang1>
+		<Lang2>Promotion Info:</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>107</TextID>
+		<DefaultText>Coupon</DefaultText>
+		<Lang1>Coupon</Lang1>
+		<Lang2>Coupon</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>108</TextID>
+		<DefaultText>Voucher</DefaultText>
+		<Lang1>Voucher</Lang1>
+		<Lang2>Voucher</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>109</TextID>
+		<DefaultText>Received By</DefaultText>
+		<Lang1>Received By</Lang1>
+		<Lang2>Received By</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>110</TextID>
+		<DefaultText>Voided By</DefaultText>
+		<Lang1>Voided By</Lang1>
+		<Lang2>Voided By</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>111</TextID>
+		<DefaultText>Member's Name:</DefaultText>
+		<Lang1>Member's Name:</Lang1>
+		<Lang2>Member's Name:</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>112</TextID>
+		<DefaultText>Customer's Name:</DefaultText>
+		<Lang1>Customer's Name:</Lang1>
+		<Lang2>Customer's Name:</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>113</TextID>
+		<DefaultText>Paid By:</DefaultText>
+		<Lang1>Paid By:</Lang1>
+		<Lang2>Paid By:</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>114</TextID>
+		<DefaultText>Total Summary</DefaultText>
+		<Lang1>Total Summary</Lang1>
+		<Lang2>Total Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>115</TextID>
+		<DefaultText>Total Price</DefaultText>
+		<Lang1>Total Price</Lang1>
+		<Lang2>Total Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>116</TextID>
+		<DefaultText>Total Discount</DefaultText>
+		<Lang1>Total Discount</Lang1>
+		<Lang2>Total Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>117</TextID>
+		<DefaultText>Total Sale</DefaultText>
+		<Lang1>Total Sale</Lang1>
+		<Lang2>Total Sale</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>118</TextID>
+		<DefaultText>Sale Report By Time</DefaultText>
+		<Lang1>Sale Report By Time</Lang1>
+		<Lang2>Sale Report By Time</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>119</TextID>
+		<DefaultText>Open time between</DefaultText>
+		<Lang1>Open time between</Lang1>
+		<Lang2>Open time between</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>120</TextID>
+		<DefaultText>and</DefaultText>
+		<Lang1>and</Lang1>
+		<Lang2>and</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>121</TextID>
+		<DefaultText>Open time &gt;=</DefaultText>
+		<Lang1>Open time &gt;=</Lang1>
+		<Lang2>Open time &gt;=</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>122</TextID>
+		<DefaultText>Open time &lt;=</DefaultText>
+		<Lang1>Open time &lt;=</Lang1>
+		<Lang2>Open time &lt;=</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>123</TextID>
+		<DefaultText>Sale Report By Time of</DefaultText>
+		<Lang1>Sale Report By Time of</Lang1>
+		<Lang2>Sale Report By Time of</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>124</TextID>
+		<DefaultText>Sale Stock Only Report</DefaultText>
+		<Lang1>Sale Stock Only Report</Lang1>
+		<Lang2>Sale Stock Only Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>125</TextID>
+		<DefaultText>Document Name</DefaultText>
+		<Lang1>Document Name</Lang1>
+		<Lang2>Document Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>126</TextID>
+		<DefaultText>Input By</DefaultText>
+		<Lang1>Input By</Lang1>
+		<Lang2>Input By</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>127</TextID>
+		<DefaultText>Remark</DefaultText>
+		<Lang1>Remark</Lang1>
+		<Lang2>Remark</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>128</TextID>
+		<DefaultText>There is no stock only data in database</DefaultText>
+		<Lang1>There is no stock only data in database</Lang1>
+		<Lang2>There is no stock only data in database</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>129</TextID>
+		<DefaultText>All Types</DefaultText>
+		<Lang1>All Types</Lang1>
+		<Lang2>All Types</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>130</TextID>
+		<DefaultText>Stock Only</DefaultText>
+		<Lang1>Stock Only</Lang1>
+		<Lang2>Stock Only</Lang2>
+	</Form>
+	<Form>
+		<FormID>6</FormID>
+		<FormName>report_sale_new.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>131</TextID>
+		<DefaultText>Report of</DefaultText>
+		<Lang1>Report of</Lang1>
+		<Lang2>Report of</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Summary Sale Report</DefaultText>
+		<Lang1>Summary Sale Report</Lang1>
+		<Lang2>Summary Sale Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<Lang1>To</Lang1>
+		<Lang2>To</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Summary Sale Report of All Shops</DefaultText>
+		<Lang1>Summary Sale Report of All Shops</Lang1>
+		<Lang2>Summary Sale Report of All Shops</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Summary Sale Report of</DefaultText>
+		<Lang1>Summary Sale Report of</Lang1>
+		<Lang2>Summary Sale Report of</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Shop Code</DefaultText>
+		<Lang1>Shop Code</Lang1>
+		<Lang2>Shop Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>Shop Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Bill</DefaultText>
+		<Lang1>Bill</Lang1>
+		<Lang2>Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Guest</DefaultText>
+		<Lang1>Guest</Lang1>
+		<Lang2>Guest</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Sub Total</DefaultText>
+		<Lang1>Sub Total</Lang1>
+		<Lang2>Sub Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Disc</DefaultText>
+		<Lang1>Disc</Lang1>
+		<Lang2>Disc</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Sale Amount</DefaultText>
+		<Lang1>Sale Amount</Lang1>
+		<Lang2>Sale Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>SC</DefaultText>
+		<Lang1>SC</Lang1>
+		<Lang2>SC</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Total Sales</DefaultText>
+		<Lang1>Total Sales</Lang1>
+		<Lang2>Total Sales</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Vatable</DefaultText>
+		<Lang1>Vatable</Lang1>
+		<Lang2>Vatable</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>VAT</DefaultText>
+		<Lang1>VAT</Lang1>
+		<Lang2>VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Total Sales</DefaultText>
+		<Lang1>Total Sales</Lang1>
+		<Lang2>Total Sales</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Vatable</DefaultText>
+		<Lang1>Vatable</Lang1>
+		<Lang2>Vatable</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>VAT</DefaultText>
+		<Lang1>VAT</Lang1>
+		<Lang2>VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Total Sales&lt;br&gt;(Inc VAT)</DefaultText>
+		<Lang1>Total Sales&lt;br&gt;(Inc VAT)</Lang1>
+		<Lang2>Total Sales&lt;br&gt;(Inc VAT)</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>20</TextID>
+		<DefaultText>Avg/Head</DefaultText>
+		<Lang1>Avg/Head</Lang1>
+		<Lang2>Avg/Head</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>21</TextID>
+		<DefaultText>Avg/Bill</DefaultText>
+		<Lang1>Avg/Bill</Lang1>
+		<Lang2>Avg/Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>22</TextID>
+		<DefaultText>Total Payment</DefaultText>
+		<Lang1>Total Payment</Lang1>
+		<Lang2>Total Payment</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>23</TextID>
+		<DefaultText>Diff</DefaultText>
+		<Lang1>Diff</Lang1>
+		<Lang2>Diff</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>24</TextID>
+		<DefaultText>Total Revenue</DefaultText>
+		<Lang1>Total Revenue</Lang1>
+		<Lang2>Total Revenue</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>25</TextID>
+		<DefaultText>Total Prepaid</DefaultText>
+		<Lang1>Total Prepaid</Lang1>
+		<Lang2>Total Prepaid</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>26</TextID>
+		<DefaultText>Total Payment&lt;br&gt;(witout prepaid)</DefaultText>
+		<Lang1>Total Payment&lt;br&gt;(witout prepaid)</Lang1>
+		<Lang2>Total Payment&lt;br&gt;(witout prepaid)</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>27</TextID>
+		<DefaultText>#Void</DefaultText>
+		<Lang1>#Void</Lang1>
+		<Lang2>#Void</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>28</TextID>
+		<DefaultText>Void Amt</DefaultText>
+		<Lang1>Void Amt</Lang1>
+		<Lang2>Void Amt</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>29</TextID>
+		<DefaultText>closed by:</DefaultText>
+		<Lang1>closed by:</Lang1>
+		<Lang2>closed by:</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>30</TextID>
+		<DefaultText>Terminal:</DefaultText>
+		<Lang1>Terminal:</Lang1>
+		<Lang2>Terminal:</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>31</TextID>
+		<DefaultText>Duration:</DefaultText>
+		<Lang1>Duration:</Lang1>
+		<Lang2>Duration:</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>32</TextID>
+		<DefaultText>(Voided)</DefaultText>
+		<Lang1>(Voided)</Lang1>
+		<Lang2>(Voided)</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>33</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>7</FormID>
+		<FormName>report_sale_bygroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>34</TextID>
+		<DefaultText>Sub Total</DefaultText>
+		<Lang1>Sub Total</Lang1>
+		<Lang2>Sub Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Void Bill Report</DefaultText>
+		<Lang1>Void Bill Report</Lang1>
+		<Lang2>Void Bill Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Voided By</DefaultText>
+		<Lang1>Voided By</Lang1>
+		<Lang2>Voided By</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Member</DefaultText>
+		<Lang1>Member</Lang1>
+		<Lang2>Member</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Bill Amount</DefaultText>
+		<Lang1>Bill Amount</Lang1>
+		<Lang2>Bill Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Void Date</DefaultText>
+		<Lang1>Void Date</Lang1>
+		<Lang2>Void Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Void Reason</DefaultText>
+		<Lang1>Void Reason</Lang1>
+		<Lang2>Void Reason</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>Shop Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Order By Bill Date</DefaultText>
+		<Lang1>Order By Bill Date</Lang1>
+		<Lang2>Order By Bill Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Order By Staff</DefaultText>
+		<Lang1>Order By Staff</Lang1>
+		<Lang2>Order By Staff</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Void Bill Report of</DefaultText>
+		<Lang1>Void Bill Report of</Lang1>
+		<Lang2>Void Bill Report of</Lang2>
+	</Form>
+	<Form>
+		<FormID>8</FormID>
+		<FormName>report_void.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Total Void</DefaultText>
+		<Lang1>Total Void</Lang1>
+		<Lang2>Total Void</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>No Grouping</DefaultText>
+		<Lang1>No Grouping</Lang1>
+		<Lang2>No Grouping</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Group By Type</DefaultText>
+		<Lang1>Group By Type</Lang1>
+		<Lang2>Group By Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Group By Bank</DefaultText>
+		<Lang1>Group By Bank</Lang1>
+		<Lang2>Group By Bank</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Group By Bank/Type</DefaultText>
+		<Lang1>Group By Bank/Type</Lang1>
+		<Lang2>Group By Bank/Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Grouping Date</DefaultText>
+		<Lang1>Grouping Date</Lang1>
+		<Lang2>Grouping Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>Shop Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Credit Card #</DefaultText>
+		<Lang1>Credit Card #</Lang1>
+		<Lang2>Credit Card #</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Bank Name</DefaultText>
+		<Lang1>Bank Name</Lang1>
+		<Lang2>Bank Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Credit Card Type Name</DefaultText>
+		<Lang1>Credit Card Type Name</Lang1>
+		<Lang2>Credit Card Type Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Paid Amount</DefaultText>
+		<Lang1>Paid Amount</Lang1>
+		<Lang2>Paid Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>No Result</DefaultText>
+		<Lang1>No Result</Lang1>
+		<Lang2>No Result</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Total Amount</DefaultText>
+		<Lang1>Total Amount</Lang1>
+		<Lang2>Total Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>No Data Found</DefaultText>
+		<Lang1>No Data Found</Lang1>
+		<Lang2>No Data Found</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Credit Card Report Between</DefaultText>
+		<Lang1>Credit Card Report Between</Lang1>
+		<Lang2>Credit Card Report Between</Lang2>
+	</Form>
+	<Form>
+		<FormID>9</FormID>
+		<FormName>CreditCard_SaleReport.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>and</DefaultText>
+		<Lang1>and</Lang1>
+		<Lang2>and</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Sale Report By Category</DefaultText>
+		<Lang1>Sale Report By Category</Lang1>
+		<Lang2>Sale Report By Category</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Group By Product Group</DefaultText>
+		<Lang1>Group By Product Group</Lang1>
+		<Lang2>Group By Product Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Product Dept</DefaultText>
+		<Lang1>Product Dept</Lang1>
+		<Lang2>Product Dept</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Product Group</DefaultText>
+		<Lang1>Product Group</Lang1>
+		<Lang2>Product Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Qty</DefaultText>
+		<Lang1>Qty</Lang1>
+		<Lang2>Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>%</DefaultText>
+		<Lang1>%</Lang1>
+		<Lang2>%</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Sub Total</DefaultText>
+		<Lang1>Sub Total</Lang1>
+		<Lang2>Sub Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>SC</DefaultText>
+		<Lang1>SC</Lang1>
+		<Lang2>SC</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Total Sale</DefaultText>
+		<Lang1>Total Sale</Lang1>
+		<Lang2>Total Sale</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>Shop Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Sale Report By Category of</DefaultText>
+		<Lang1>Sale Report By Category of</Lang1>
+		<Lang2>Sale Report By Category of</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Summary for Product Group</DefaultText>
+		<Lang1>Summary for Product Group</Lang1>
+		<Lang2>Summary for Product Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Total for</DefaultText>
+		<Lang1>Total for</Lang1>
+		<Lang2>Total for</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Sale Report By Sale Mode of</DefaultText>
+		<Lang1>Sale Report By Sale Mode of</Lang1>
+		<Lang2>Sale Report By Sale Mode of</Lang2>
+	</Form>
+	<Form>
+		<FormID>10</FormID>
+		<FormName>report_bydept.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Sale Report By Sale Mode</DefaultText>
+		<Lang1>Sale Report By Sale Mode</Lang1>
+		<Lang2>Sale Report By Sale Mode</Lang2>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Shift Close Summary Report</DefaultText>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>20</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>21</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>22</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>23</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>24</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>25</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>26</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>27</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>28</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>29</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>30</TextID>
+	</Form>
+	<Form>
+		<FormID>11</FormID>
+		<FormName>report_session_summary.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>31</TextID>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Order Staff Report</DefaultText>
+		<Lang1>Order Staff Report</Lang1>
+		<Lang2>Order Staff Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Use "," for more than one code</DefaultText>
+		<Lang1>Use "," for more than one code</Lang1>
+		<Lang2>Use "," for more than one code</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>-- No Filter --</DefaultText>
+		<Lang1>-- No Filter --</Lang1>
+		<Lang2>-- No Filter --</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Filter By Group Code</DefaultText>
+		<Lang1>Filter By Group Code</Lang1>
+		<Lang2>Filter By Group Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Filter By Product Code</DefaultText>
+		<Lang1>Filter By Product Code</Lang1>
+		<Lang2>Filter By Product Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>#</DefaultText>
+		<Lang1>#</Lang1>
+		<Lang2>#</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Group Code</DefaultText>
+		<Lang1>Group Code</Lang1>
+		<Lang2>Group Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Group Name</DefaultText>
+		<Lang1>Group Name</Lang1>
+		<Lang2>Group Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Product Code</DefaultText>
+		<Lang1>Product Code</Lang1>
+		<Lang2>Product Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>Product Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Qty</DefaultText>
+		<Lang1>Qty</Lang1>
+		<Lang2>Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Total Sale</DefaultText>
+		<Lang1>Total Sale</Lang1>
+		<Lang2>Total Sale</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Order Staff Report of</DefaultText>
+		<Lang1>Order Staff Report of</Lang1>
+		<Lang2>Order Staff Report of</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Sub Total for</DefaultText>
+		<Lang1>Sub Total for</Lang1>
+		<Lang2>Sub Total for</Lang2>
+	</Form>
+	<Form>
+		<FormID>12</FormID>
+		<FormName>report_orderstaff.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Sale VAT Report</DefaultText>
+		<Lang1>Sale VAT Report</Lang1>
+		<Lang2>Sale VAT Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Item Name</DefaultText>
+		<Lang1>Item Name</Lang1>
+		<Lang2>Item Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>products/services</DefaultText>
+		<Lang1>products/services</Lang1>
+		<Lang2>products/services</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Sale VAT Report</DefaultText>
+		<Lang1>Sale VAT Report</Lang1>
+		<Lang2>Sale VAT Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>VAT Included</DefaultText>
+		<Lang1>VAT Included</Lang1>
+		<Lang2>VAT Included</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Registration Tax ID</DefaultText>
+		<Lang1>Registration Tax ID</Lang1>
+		<Lang2>Registration Tax ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>#</DefaultText>
+		<Lang1>#</Lang1>
+		<Lang2>#</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>d/mm/yyy</DefaultText>
+		<Lang1>d/mm/yyy</Lang1>
+		<Lang2>d/mm/yyy</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Short Form Tax</DefaultText>
+		<Lang1>Short Form Tax</Lang1>
+		<Lang2>Short Form Tax</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Terminal</DefaultText>
+		<Lang1>Terminal</Lang1>
+		<Lang2>Terminal</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Product/Service</DefaultText>
+		<Lang1>Product/Service</Lang1>
+		<Lang2>Product/Service</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Amount Before VAT</DefaultText>
+		<Lang1>Amount Before VAT</Lang1>
+		<Lang2>Amount Before VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>VAT</DefaultText>
+		<Lang1>VAT</Lang1>
+		<Lang2>VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Amount</DefaultText>
+		<Lang1>Amount</Lang1>
+		<Lang2>Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Remark</DefaultText>
+		<Lang1>Remark</Lang1>
+		<Lang2>Remark</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Customer Name</DefaultText>
+		<Lang1>Customer Name</Lang1>
+		<Lang2>Customer Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>13</FormID>
+		<FormName>report_salevat.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Credit Card Report</DefaultText>
+		<Lang1>Credit Card Report</Lang1>
+		<Lang2>Credit Card Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>No Grouping</DefaultText>
+		<Lang1>No Grouping</Lang1>
+		<Lang2>No Grouping</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Group By Type</DefaultText>
+		<Lang1>Group By Type</Lang1>
+		<Lang2>Group By Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Group By Bank</DefaultText>
+		<Lang1>Group By Bank</Lang1>
+		<Lang2>Group By Bank</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Group By Bank/Type</DefaultText>
+		<Lang1>Group By Bank/Type</Lang1>
+		<Lang2>Group By Bank/Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Grouping Date</DefaultText>
+		<Lang1>Grouping Date</Lang1>
+		<Lang2>Grouping Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>Shop Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Credit Card #</DefaultText>
+		<Lang1>Credit Card #</Lang1>
+		<Lang2>Credit Card #</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Bank Name</DefaultText>
+		<Lang1>Bank Name</Lang1>
+		<Lang2>Bank Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Credit Card Type</DefaultText>
+		<Lang1>Credit Card Type</Lang1>
+		<Lang2>Credit Card Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Amount</DefaultText>
+		<Lang1>Amount</Lang1>
+		<Lang2>Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Select Shop</DefaultText>
+		<Lang1>Select Shop</Lang1>
+		<Lang2>Select Shop</Lang2>
+	</Form>
+	<Form>
+		<FormID>14</FormID>
+		<FormName>creditcard.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Total Amount</DefaultText>
+		<Lang1>Total Amount</Lang1>
+		<Lang2>Total Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Print Check Bill Report</DefaultText>
+		<Lang1>Print Check Bill Report</Lang1>
+		<Lang2>Print Check Bill Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText># Print</DefaultText>
+		<Lang1># Print</Lang1>
+		<Lang2># Print</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Type</DefaultText>
+		<Lang1>Type</Lang1>
+		<Lang2>Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Details</DefaultText>
+		<Lang1>Details</Lang1>
+		<Lang2>Details</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Print bill but no payment</DefaultText>
+		<Lang1>Print bill but no payment</Lang1>
+		<Lang2>Print bill but no payment</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Print bill more than once</DefaultText>
+		<Lang1>Print bill more than once</Lang1>
+		<Lang2>Print bill more than once</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Print Check Bill Report of</DefaultText>
+		<Lang1>Print Check Bill Report of</Lang1>
+		<Lang2>Print Check Bill Report of</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Manual Closed</DefaultText>
+		<Lang1>Manual Closed</Lang1>
+		<Lang2>Manual Closed</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Print Check Bill</DefaultText>
+		<Lang1>Print Check Bill</Lang1>
+		<Lang2>Print Check Bill</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Reprint Receipt</DefaultText>
+		<Lang1>Reprint Receipt</Lang1>
+		<Lang2>Reprint Receipt</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>more details</DefaultText>
+		<Lang1>more details</Lang1>
+		<Lang2>more details</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Printed By</DefaultText>
+		<Lang1>Printed By</Lang1>
+		<Lang2>Printed By</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Print Time</DefaultText>
+		<Lang1>Print Time</Lang1>
+		<Lang2>Print Time</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Reason</DefaultText>
+		<Lang1>Reason</Lang1>
+		<Lang2>Reason</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Deleted By</DefaultText>
+		<Lang1>Deleted By</Lang1>
+		<Lang2>Deleted By</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>Product Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Product Price</DefaultText>
+		<Lang1>Product Price</Lang1>
+		<Lang2>Product Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Delete Time</DefaultText>
+		<Lang1>Delete Time</Lang1>
+		<Lang2>Delete Time</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>report_numprint.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Delete Products Details</DefaultText>
+		<Lang1>Delete Products Details</Lang1>
+		<Lang2>Delete Products Details</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Move/Delete Data History Report</DefaultText>
+		<Lang1>Move/Delete Data History Report</Lang1>
+		<Lang2>Move/Delete Data History Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>-- Display All Types --</DefaultText>
+		<Lang1>-- Display All Types --</Lang1>
+		<Lang2>-- Display All Types --</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Only Move Table</DefaultText>
+		<Lang1>Only Move Table</Lang1>
+		<Lang2>Only Move Table</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Only Move Order</DefaultText>
+		<Lang1>Only Move Order</Lang1>
+		<Lang2>Only Move Order</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Only Delete Order</DefaultText>
+		<Lang1>Only Delete Order</Lang1>
+		<Lang2>Only Delete Order</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Move/Delete Data History Report of</DefaultText>
+		<Lang1>Move/Delete Data History Report of</Lang1>
+		<Lang2>Move/Delete Data History Report of</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>From Table</DefaultText>
+		<Lang1>From Table</Lang1>
+		<Lang2>From Table</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>To Table</DefaultText>
+		<Lang1>To Table</Lang1>
+		<Lang2>To Table</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Opt Code</DefaultText>
+		<Lang1>Opt Code</Lang1>
+		<Lang2>Opt Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Opt Name</DefaultText>
+		<Lang1>Opt Name</Lang1>
+		<Lang2>Opt Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>Product Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Org Qty</DefaultText>
+		<Lang1>Org Qty</Lang1>
+		<Lang2>Org Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Move Qty</DefaultText>
+		<Lang1>Move Qty</Lang1>
+		<Lang2>Move Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Staff Name</DefaultText>
+		<Lang1>Staff Name</Lang1>
+		<Lang2>Staff Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Time</DefaultText>
+		<Lang1>Time</Lang1>
+		<Lang2>Time</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Move From Ref</DefaultText>
+		<Lang1>Move From Ref</Lang1>
+		<Lang2>Move From Ref</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Move To Ref</DefaultText>
+		<Lang1>Move To Ref</Lang1>
+		<Lang2>Move To Ref</Lang2>
+	</Form>
+	<Form>
+		<FormID>16</FormID>
+		<FormName>report_movedata.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Reason</DefaultText>
+		<Lang1>Reason</Lang1>
+		<Lang2>Reason</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Full Tax Invoice Report</DefaultText>
+		<Lang1>Full Tax Invoice Report</Lang1>
+		<Lang2>Full Tax Invoice Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>products/services</DefaultText>
+		<Lang1>products/services</Lang1>
+		<Lang2>products/services</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Full Tax Invoice Report</DefaultText>
+		<Lang1>Full Tax Invoice Report</Lang1>
+		<Lang2>Full Tax Invoice Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>(Voided)</DefaultText>
+		<Lang1>(Voided)</Lang1>
+		<Lang2>(Voided)</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Company Registration Number</DefaultText>
+		<Lang1>Company Registration Number</Lang1>
+		<Lang2>Company Registration Number</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>#</DefaultText>
+		<Lang1>#</Lang1>
+		<Lang2>#</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>d/mm/yyy</DefaultText>
+		<Lang1>d/mm/yyy</Lang1>
+		<Lang2>d/mm/yyy</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Receipt No</DefaultText>
+		<Lang1>Receipt No</Lang1>
+		<Lang2>Receipt No</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Customer Name</DefaultText>
+		<Lang1>Customer Name</Lang1>
+		<Lang2>Customer Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Product/Service</DefaultText>
+		<Lang1>Product/Service</Lang1>
+		<Lang2>Product/Service</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Amount Before VAT</DefaultText>
+		<Lang1>Amount Before VAT</Lang1>
+		<Lang2>Amount Before VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>VAT</DefaultText>
+		<Lang1>VAT</Lang1>
+		<Lang2>VAT</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Amount</DefaultText>
+		<Lang1>Amount</Lang1>
+		<Lang2>Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>17</FormID>
+		<FormName>report_fulltax.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Remark</DefaultText>
+		<Lang1>Remark</Lang1>
+		<Lang2>Remark</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Promotion Discount Report</DefaultText>
+		<Lang1>Promotion Discount Report</Lang1>
+		<Lang2>Promotion Discount Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Display Only Net = 0</DefaultText>
+		<Lang1>Display Only Net = 0</Lang1>
+		<Lang2>Display Only Net = 1</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>All Shops Sum Only</DefaultText>
+		<Lang1>All Shops Sum Only</Lang1>
+		<Lang2>All Shops Sum Only</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>Product Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Unit Price</DefaultText>
+		<Lang1>Unit Price</Lang1>
+		<Lang2>Unit Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Qty</DefaultText>
+		<Lang1>Qty</Lang1>
+		<Lang2>Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Price</DefaultText>
+		<Lang1>Price</Lang1>
+		<Lang2>Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Net</DefaultText>
+		<Lang1>Net</Lang1>
+		<Lang2>Net</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>%</DefaultText>
+		<Lang1>%</Lang1>
+		<Lang2>%</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Discount History By Item</DefaultText>
+		<Lang1>Discount History By Item</Lang1>
+		<Lang2>Discount History By Item</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Summary</DefaultText>
+		<Lang1>Summary</Lang1>
+		<Lang2>Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Branch Total</DefaultText>
+		<Lang1>Branch Total</Lang1>
+		<Lang2>Branch Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Promotion</DefaultText>
+		<Lang1>Promotion</Lang1>
+		<Lang2>Promotion</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>18</FormID>
+		<FormName>report_promotion_byproduct.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Summary for All Shops</DefaultText>
+		<Lang1>Summary for All Shops</Lang1>
+		<Lang2>Summary for All Shops</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Promotion Discount By Product Group Report</DefaultText>
+		<Lang1>Promotion Discount By Product Group Report</Lang1>
+		<Lang2>Promotion Discount By Product Group Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Promotion Name</DefaultText>
+		<Lang1>Promotion Name</Lang1>
+		<Lang2>Promotion Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Qty</DefaultText>
+		<Lang1>Qty</Lang1>
+		<Lang2>Qty</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Price</DefaultText>
+		<Lang1>Price</Lang1>
+		<Lang2>Price</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Net</DefaultText>
+		<Lang1>Net</Lang1>
+		<Lang2>Net</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>%</DefaultText>
+		<Lang1>%</Lang1>
+		<Lang2>%</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Discount Type Summary Report</DefaultText>
+		<Lang1>Discount Type Summary Report</Lang1>
+		<Lang2>Discount Type Summary Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Summary</DefaultText>
+		<Lang1>Summary</Lang1>
+		<Lang2>Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>NONE</DefaultText>
+		<Lang1>NONE</Lang1>
+		<Lang2>NONE</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Grand Total</DefaultText>
+		<Lang1>Grand Total</Lang1>
+		<Lang2>Grand Total</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Promotion Discount By Staff Report</DefaultText>
+		<Lang1>Promotion Discount By Staff Report</Lang1>
+		<Lang2>Promotion Discount By Staff Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Discount Type Summary By Staff Report</DefaultText>
+		<Lang1>Discount Type Summary By Staff Report</Lang1>
+		<Lang2>Discount Type Summary By Staff Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Terminal</DefaultText>
+		<Lang1>Terminal</Lang1>
+		<Lang2>Terminal</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Duration</DefaultText>
+		<Lang1>Duration</Lang1>
+		<Lang2>Duration</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Total Discount</DefaultText>
+		<Lang1>Total Discount</Lang1>
+		<Lang2>Total Discount</Lang2>
+	</Form>
+	<Form>
+		<FormID>19</FormID>
+		<FormName>report_promo_byproductgroup.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Summary for</DefaultText>
+		<Lang1>Summary for</Lang1>
+		<Lang2>Summary for</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Voucher/Coupon Report</DefaultText>
+		<Lang1>Voucher/Coupon Report</Lang1>
+		<Lang2>Voucher/Coupon Report</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Coupon/Voucher</DefaultText>
+		<Lang1>Coupon/Voucher</Lang1>
+		<Lang2>Coupon/Voucher</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>You can use , as number list</DefaultText>
+		<Lang1>You can use , as number list</Lang1>
+		<Lang2>You can use , as number list</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>0</TextID>
+		<DefaultText>Select Shop</DefaultText>
+		<Lang1>Select Shop</Lang1>
+		<Lang2>Select Shop</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Coupons</DefaultText>
+		<Lang1>Coupons</Lang1>
+		<Lang2>Coupons</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Coupon #</DefaultText>
+		<Lang1>Coupon #</Lang1>
+		<Lang2>Coupon #</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Vouchers</DefaultText>
+		<Lang1>Vouchers</Lang1>
+		<Lang2>Vouchers</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Voucher #</DefaultText>
+		<Lang1>Voucher #</Lang1>
+		<Lang2>Voucher #</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Cash Coupon</DefaultText>
+		<Lang1>Cash Coupon</Lang1>
+		<Lang2>Cash Coupon</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Cash Coupon #</DefaultText>
+		<Lang1>Cash Coupon #</Lang1>
+		<Lang2>Cash Coupon #</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Shop</DefaultText>
+		<Lang1>Shop</Lang1>
+		<Lang2>Shop</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Date</DefaultText>
+		<Lang1>Date</Lang1>
+		<Lang2>Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Receipt #</DefaultText>
+		<Lang1>Receipt #</Lang1>
+		<Lang2>Receipt #</Lang2>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>10</TextID>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>11</TextID>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>12</TextID>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>13</TextID>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>14</TextID>
+	</Form>
+	<Form>
+		<FormID>20</FormID>
+		<FormName>report_voucher.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+	</Form>
+</LanguageData>

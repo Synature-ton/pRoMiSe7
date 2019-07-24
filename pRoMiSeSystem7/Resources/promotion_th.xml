@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>0</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ตั้งค่าโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>1</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สร้างโปรโมชั่นใหม่</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>2</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สถานะ</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>3</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>อนุญาต</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>4</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ชื่อโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>5</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เชื่อมโยงเงื่อนไข</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>6</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าเข้าร่วม</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>7</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าแลกซื้อ/แถม</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>8</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>โปรโมชั่นลำดับชั้น</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>9</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สาขาเข้าร่วม</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>10</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>แก้ไข</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>11</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ลบ</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>12</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เปิดใช้งาน</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>13</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ปิดใช้งาน</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>14</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เชื่อมโยง</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>15</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าเข้าร่วม</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>16</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าแลกซื้อ/แถม</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>17</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>โปรโมชั่นลำดับชั้น</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>18</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สาขาเข้าร่วม</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>19</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ใช้เฉพาะการจ่ายเงิน</value>
+  </Form>
+  <Form>
+    <formid>1</formid>
+    <formname>promotion_setup.aspx</formname>
+    <id>20</id>
+    <name>Promotion Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เฉพาะการจ่ายเงิน</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>0</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ตั้งค่าโปรโมชั่นลำดับชั้น</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>1</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>กลับหน้าหลัก</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>2</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สร้างโปรโมชั่นใหม่</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>3</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สถานะ</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>4</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>อนุญาต</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>5</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ชื่อโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>6</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value><![CDATA[>]]></value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>7</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value><![CDATA[<=]]></value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>8</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าแลกซื้อ/แถม</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>9</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>แก้ไข</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>10</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ลบ</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>11</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เปิดใช้งาน</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>12</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ปิดใช้งาน</value>
+  </Form>
+  <Form>
+    <formid>2</formid>
+    <formname>Promotion_Level.aspx</formname>
+    <id>13</id>
+    <name>Promotion Level Setting</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าเข้าร่วม</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>0</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>กำหนดเงื่อนไขโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>1</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ชื่อโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>2</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>วันที่เริ่มต้น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>3</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>วันที่สิ้นสุด</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>4</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เวลาเริ่มต้น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>5</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เวลาสิ้นสุด</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>6</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เงื่อนไขรอบเวลา</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>7</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>อนุญาตให้ใช้ร่วมกับโปรโมชั่นอื่น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>8</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>อนุญาตใช้บัตกำนัลร่วมกันได้</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>9</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>อนุญาตเปิดใช้งาน</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>10</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ประเภทโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>11</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สัปดาห์</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>12</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เดือน</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>13</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ไม่กำหนด</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>14</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>พิมพ์บิลคัดลอกโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>15</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>บิลโปรโมชั่นต้องมีลายเซ็นต์</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>15</id>
+    <name>Promotion Price Eidt</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ยกเว้น VAT ของสินค้า (SCD Discount)</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>0</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เชื่อมโยงโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>1</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เลือกประเภทโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>2</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เลือกส่วนลด</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>3</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ส่วนลด</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>4</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ส่วนลดเป็นตัวๆ</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>5</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>แลกซื้อ/แถมฟรี</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>6</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เงื่อนไขสำหรับส่วนลดแลกซื้อ/แถมฟรี</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>7</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ทุกๆ จำนวน</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>8</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ทุกๆ ราคา</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>9</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ส่วนลดสำหรับ</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>10</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ส่วนลดราคา</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>11</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ฟรี/แลกซื้อ</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>12</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>จำนวน</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>13</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>สินค้าที่เข้าร่วมโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>14</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เป็นสินค้าชนิดเดียวกัน</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>15</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เป็นสินค้าต่างชนิดกันได้</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>16</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เปอร์เซนต์</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>17</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>บาท</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>18</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ชิ้น</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>19</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เฉพาะ</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>20</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>กลับหน้าหลัก</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>21</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ชนิดโปรโมชั่น</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>22</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>กำหนดเงื่อนไขราคารวม</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>23</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ลดจากราคาสูงก่อน</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>24</id>
+    <name>Promotion Link</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>ลดจากราคาต่ำก่อน</value>
+  </Form>
+
+  <!-- Modify Date 2014-04-24-->
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>25</id>
+    <name>Promotion Link</name>
+    <type>Lable</type>
+    <langid>2</langid>
+    <value>ฟรี</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>26</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>2</langid>
+    <value>%</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>27</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>2</langid>
+    <value>บาท</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>28</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>2</langid>
+    <value>ขายที่ราคา</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>29</id>
+    <name>Promotion Link</name>
+    <type>Lable</type>
+    <langid>2</langid>
+    <value>สำหรับราคารวมสินค้าที่มากกว่า</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>30</id>
+    <name>Promotion Link</name>
+    <type>Lable</type>
+    <langid>2</langid>
+    <value>การเรียงลำดับราคาที่ลด</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>31</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>2</langid>
+    <value>ลดจากราคาสูงก่อน</value>
+  </Form>
+  <Form>
+    <formid>4</formid>
+    <formname>Promotion_Link.aspx</formname>
+    <id>32</id>
+    <name>Promotion Link</name>
+    <type>DropDownList</type>
+    <langid>2</langid>
+    <value>ลดจากราคาต่ำก่อน</value>
+  </Form>
+</LanguageData>

@@ -1,0 +1,1304 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Form>
+		<FormID>9001</FormID>
+		<FormName>inventory_department.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Department Code</DefaultText>
+		<Lang1>Department Code</Lang1>
+		<Lang2>Department Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>9001</FormID>
+		<FormName>inventory_department.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Department Name</DefaultText>
+		<Lang1>Department Name</Lang1>
+		<Lang2>Department Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9001</FormID>
+		<FormName>inventory_department.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Edit</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>Edit</Lang2>
+	</Form>
+	<Form>
+		<FormID>9001</FormID>
+		<FormName>inventory_department.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Delete</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>Delete</Lang2>
+	</Form>
+	<Form>
+		<FormID>9001</FormID>
+		<FormName>inventory_department.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>คุณต้องการลบข้อมูลใช่หรือไม่  Department Code :</DefaultText>
+		<Lang1>Do you want to delete this data? Department Code :</Lang1>
+		<Lang2>คุณต้องการลบข้อมูลใช่หรือไม่  Department Code :</Lang2>
+	</Form>
+	<Form>
+		<FormID>9001</FormID>
+		<FormName>inventory_department.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Add New Department</DefaultText>
+		<Lang1>Add New Department</Lang1>
+		<Lang2>Add New Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>New Department</DefaultText>
+		<Lang1>New Department</Lang1>
+		<Lang2>New Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Edit Department</DefaultText>
+		<Lang1>Edit Department</Lang1>
+		<Lang2>Edit Department</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Department Code</DefaultText>
+		<Lang1>Department Code</Lang1>
+		<Lang2>Department Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Department Name</DefaultText>
+		<Lang1>Department Name</Lang1>
+		<Lang2>Department Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>Update</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Please input Department Code</DefaultText>
+		<Lang1>Please input Department Code</Lang1>
+		<Lang2>Please input Department Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Please input Department Name</DefaultText>
+		<Lang1>Please input Department Name</Lang1>
+		<Lang2>Please input Department Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9002</FormID>
+		<FormName>inventory_department_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>N</DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>ตั้งค่าสำหรับการพิมพ์ใบ Delivery</DefaultText>
+		<Lang1>Print Delivery Form Setting</Lang1>
+		<Lang2>ตั้งค่าสำหรับการพิมพ์ใบ Delivery</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Printer ที่พิมพ์</DefaultText>
+		<Lang1>Printer name</Lang1>
+		<Lang2>Printer ที่พิมพ์</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>อักษรสำหรับการขึ้นบรรทัดใหม่</DefaultText>
+		<Lang1>Character for new line</Lang1>
+		<Lang2>อักษรสำหรับการขึ้นบรรทัดใหม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Sale Mode ที่พิมพ์ใบ Delivery</DefaultText>
+		<Lang1>Sale mode to print delivery</Lang1>
+		<Lang2>Sale Mode ที่พิมพ์ใบ Delivery</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>แสดงราคาสินค้า</DefaultText>
+		<Lang1>Display product price</Lang1>
+		<Lang2>แสดงราคาสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>บันทีก</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ใช่</DefaultText>
+		<Lang1>Yes</Lang1>
+		<Lang2>ใช่</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ไม่ใช่</DefaultText>
+		<Lang1>No</Lang1>
+		<Lang2>ไม่ใช่</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Data has been updated</DefaultText>
+		<Lang1>Data has been updated</Lang1>
+		<Lang2>Data has been updated</Lang2>
+	</Form>
+	<Form>
+		<FormID>9003</FormID>
+		<FormName>PrintDeliveryJobOrderSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>กำหนดสินค้าที่จะพิมพ์</DefaultText>
+		<Lang1>Set Product for Print</Lang1>
+		<Lang2>กำหนดสินค้าที่จะพิมพ์</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>กำหนดสินค้าที่ให้พิมพ์ใบ Delivery</DefaultText>
+		<Lang1>Set Product for Print Delivery Form</Lang1>
+		<Lang2>กำหนดสินค้าที่ให้พิมพ์ใบ Delivery</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>บันทึก</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>เสร็จสิ้น</DefaultText>
+		<Lang1>Finish</Lang1>
+		<Lang2>เสร็จสิ้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>-- เลือกหมวดสินค้า --</DefaultText>
+		<Lang1>--Select Dept--</Lang1>
+		<Lang2>-- เลือกหมวดสินค้า --</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>-- เลือกกลุ่มสินค้า --</DefaultText>
+		<Lang1>-- Select Group --</Lang1>
+		<Lang2>-- เลือกกลุ่มสินค้า --</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>เลือก</DefaultText>
+		<Lang1>Select</Lang1>
+		<Lang2>เลือก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>รหัสกลุ่มสินค้า</DefaultText>
+		<Lang1>Product Group Code</Lang1>
+		<Lang2>รหัสกลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ชื่อกลุ่มสินค้า</DefaultText>
+		<Lang1>Product Group Name</Lang1>
+		<Lang2>ชื่อกลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>รหัสหมวดสินค้า</DefaultText>
+		<Lang1>Product Dept Code</Lang1>
+		<Lang2>รหัสหมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ชื่อหมวดสินค้า</DefaultText>
+		<Lang1>Product Dept Name</Lang1>
+		<Lang2>ชื่อหมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>รหัสสินค้า</DefaultText>
+		<Lang1>Product Code</Lang1>
+		<Lang2>รหัสสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>ชื่อสินค้า</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>ชื่อสินค้า</Lang2>
+	</Form>
+	<Form> 
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>กลุ่มสินค้า</DefaultText>
+		<Lang1>ProductGroup</Lang1>
+		<Lang2>กลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>ทำการบันทึกข้อมูลเสร็จสมบูรณ์</DefaultText>
+		<Lang1>Update success.</Lang1>
+		<Lang2>ทำการบันทึกข้อมูลเสร็จสมบูรณ์</Lang2>
+	</Form>
+	<Form>
+		<FormID>9004</FormID>
+		<FormName>PrintDeliveryJobOrderSetting_Product.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To BuzzeBees Config Setting</DefaultText>
+		<Lang1>Link To BuzzeBees Config Setting</Lang1>
+		<Lang2>Link To BuzzeBees Config Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>Description</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>Value</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>WebService - URL</DefaultText>
+		<Lang1>WebService - URL</Lang1>
+		<Lang2>WebService - URL</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>WebService - Token</DefaultText>
+		<Lang1>WebService - Token</Lang1>
+		<Lang2>WebService - Token</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>BrandID</DefaultText>
+		<Lang1>BrandID</Lang1>
+		<Lang2>BrandID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Shop Setting</DefaultText>
+		<Lang1>Shop Setting</Lang1>
+		<Lang2>Shop Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Computer Setting</DefaultText>
+		<Lang1>Computer Setting</Lang1>
+		<Lang2>Computer Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ข้อความสำหรับการยกเลิก manual payment</DefaultText>
+		<Lang1>Message for void manual payment</Lang1>
+		<Lang2>ข้อความสำหรับการยกเลิก manual payment</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To BuzzeBees Shop Setting</DefaultText>
+		<Lang1>Link To BuzzeBees Shop Setting</Lang1>
+		<Lang2>Link To BuzzeBees Shop Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>BuzzeBees BranchID</DefaultText>
+		<Lang1>BuzzeBees BranchID</Lang1>
+		<Lang2>BuzzeBees BranchID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>Update</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ID</DefaultText>
+		<Lang1>ID</Lang1>
+		<Lang2>ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Back to Config Setting</DefaultText>
+		<Lang1>Back to Config Setting</Lang1>
+		<Lang2>Back to Config Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9006</FormID>
+		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID></TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To BuzzeBees Terminal Setting</DefaultText>
+		<Lang1>Link To BuzzeBees Terminal Setting</Lang1>
+		<Lang2>Link To BuzzeBees Terminal Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>BuzzeBees TerminalID</DefaultText>
+		<Lang1>BuzzeBees TerminalID</Lang1>
+		<Lang2>BuzzeBees TerminalID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>Update</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ID</DefaultText>
+		<Lang1>ID</Lang1>
+		<Lang2>ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Back to Config Setting</DefaultText>
+		<Lang1>Back to Config Setting</Lang1>
+		<Lang2>Back to Config Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Computer Name</DefaultText>
+		<Lang1>Computer Name</Lang1>
+		<Lang2>Computer Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>--- All Shop ---</DefaultText>
+		<Lang1>--- All Shop ---</Lang1>
+		<Lang2>--- All Shop ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>9007</FormID>
+		<FormName>LinkBuzzeBeeComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To Value Design Config Setting</DefaultText>
+		<Lang1>Link To Value Design Config Setting</Lang1>
+		<Lang2>Link To Value Design Config Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>Description</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>Value</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Host IPAddress</DefaultText>
+		<Lang1>Host IPAddress</Lang1>
+		<Lang2>Host IPAddress</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Host Port No.</DefaultText>
+		<Lang1>Host Port No.</Lang1>
+		<Lang2>Host Port No.</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Computer Setting</DefaultText>
+		<Lang1>Computer Setting</Lang1>
+		<Lang2>Computer Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>บันทึก</DefaultText>
+		<Lang1>บันทึก</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>API - Service URL</DefaultText>
+		<Lang1>API - Service URL</Lang1>
+		<Lang2>API - Service URL</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>API - Access Key</DefaultText>
+		<Lang1>API - Access Key</Lang1>
+		<Lang2>API - Access Key</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>API - PIN Code</DefaultText>
+		<Lang1>API - PIN Code</Lang1>
+		<Lang2>API - PIN Code</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>API - Version</DefaultText>
+		<Lang1>API - Version</Lang1>
+		<Lang2>API - Version</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Use Value Design By</DefaultText>
+		<Lang1>Use Value Design By</Lang1>
+		<Lang2>Use Value Design By</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>From Service API</DefaultText>
+		<Lang1>From Service API</Lang1>
+		<Lang2>From Service API</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>From DLL</DefaultText>
+		<Lang1>From DLL</Lang1>
+		<Lang2>From DLL</Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9008</FormID>
+		<FormName>LinkValueDesignSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID></TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+
+	
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To Value Design Terminal Setting</DefaultText>
+		<Lang1>Link To Value Design Terminal Setting</Lang1>
+		<Lang2>Link To Value Design Terminal Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Value Design TerminalID</DefaultText>
+		<Lang1>Value Design TerminalID</Lang1>
+		<Lang2>Value Design TerminalID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>Update</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>ID</DefaultText>
+		<Lang1>ID</Lang1>
+		<Lang2>ID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Back to Config Setting</DefaultText>
+		<Lang1>Back to Config Setting</Lang1>
+		<Lang2>Back to Config Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Computer Name</DefaultText>
+		<Lang1>Computer Name</Lang1>
+		<Lang2>Computer Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>--- All Shop ---</DefaultText>
+		<Lang1>--- All Shop ---</Lang1>
+		<Lang2>--- All Shop ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>9009</FormID>
+		<FormName>LinkValueDesignComputerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Import Material Cost File.</DefaultText>
+		<Lang1>Import Material Cost File.</Lang1>
+		<Lang2>Import Material Cost File.</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Path File</DefaultText>
+		<Lang1>Path File</Lang1>
+		<Lang2>Path File</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Upload File</DefaultText>
+		<Lang1>Upload File</Lang1>
+		<Lang2>Upload File</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Import File</DefaultText>
+		<Lang1>Import File</Lang1>
+		<Lang2>Import File</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Back</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>Back</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Display only error record</DefaultText>
+		<Lang1>Display only error record</Lang1>
+		<Lang2>Display only error record</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>เกิดข้อผิลพลาดในการ  Upload File :</DefaultText>
+		<Lang1>Error when update file :</Lang1>
+		<Lang2>เกิดข้อผิลพลาดในการ  Upload File :</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>กรุณาเลือก file ที่ต้องการจะ import ก่อน</DefaultText>
+		<Lang1>Please select file to be imported.</Lang1>
+		<Lang2>กรุณาเลือก file ที่ต้องการจะ import ก่อน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เกิดข้อผิลพลาดในการ  Upload File </DefaultText>
+		<Lang1>Error when update load file</Lang1>
+		<Lang2>เกิดข้อผิลพลาดในการ  Upload File </Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>เกิดข้อผิลพลาดในการ Import File ตรวจสอบ file ที่ใช้ในการ Import อีกครั้ง</DefaultText>
+		<Lang1>Error when import file. Please check file again.</Lang1>
+		<Lang2>เกิดข้อผิลพลาดในการ Import File ตรวจสอบ file ที่ใช้ในการ Import อีกครั้ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>เกิดข้อผิลพลาดในการ Import File ไม่พบข้อมูลในการ import file</DefaultText>
+		<Lang1>Error when import file. There is no data for import.</Lang1>
+		<Lang2>เกิดข้อผิลพลาดในการ Import File ไม่พบข้อมูลในการ import file</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>เกิดข้อผิลพลาดในการ Import File ไม่พบข้อมูลกลุ่มต้นทุนวัตถุดิบที่ต้องการ import</DefaultText>
+		<Lang1>Error when import file. There is no material cost group data.</Lang1>
+		<Lang2>เกิดข้อผิลพลาดในการ Import File ไม่พบข้อมูลกลุ่มต้นทุนวัตถุดิบที่ต้องการ import</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>เกิดข้อผิลพลาดในการ Import File </DefaultText>
+		<Lang1>Error when import file</Lang1>
+		<Lang2>เกิดข้อผิลพลาดในการ Import File </Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>คุณต้องการ Import File Material Cost นี้ใช่หรือไม่</DefaultText>
+		<Lang1>Do you want ot import material cost file?</Lang1>
+		<Lang2>คุณต้องการ Import File Material Cost นี้ใช่หรือไม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>คุณต้องการ Import File Product Cost นี้ใช่หรือไม่</DefaultText>
+		<Lang1>Do you want ot import product cost file?</Lang1>
+		<Lang2>คุณต้องการ Import File Product Cost นี้ใช่หรือไม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Import Product Cost File.</DefaultText>
+		<Lang1>Import Product Cost File.</Lang1>
+		<Lang2>Import Product Cost File.</Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9010</FormID>
+		<FormName>ImportMaterialProductCostTable.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>BuzzeBees Payment Validate Code Setting</DefaultText>
+		<Lang1>BuzzeBees Payment Validate Code Setting</Lang1>
+		<Lang2>BuzzeBees Payment Validate Code Setting</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>ID</DefaultText>
+		<Lang1>ID</Lang1>
+		<Lang2>ID</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Payment Name</DefaultText>
+		<Lang1>Payment Name</Lang1>
+		<Lang2>Payment Name</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Start With Text</DefaultText>
+		<Lang1>Start With Text</Lang1>
+		<Lang2>ขึ้นต้นด้วยตัวหนังสือ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Valid Length Start</DefaultText>
+		<Lang1>Valid Length Start</Lang1>
+		<Lang2>ความยาวรหัสเริ่มต้น</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Valid Length End</DefaultText>
+		<Lang1>Valid Length End</Lang1>
+		<Lang2>ความยาวรหัสเริ่มสิ้นสุด</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Edit</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Back to Config Setting</DefaultText>
+		<Lang1>Back to Config Setting</Lang1>
+		<Lang2>Back to Config Setting</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Edit BuzzeBees Payment Property</DefaultText>
+		<Lang1>Edit BuzzeBees Payment Property</Lang1>
+		<Lang2>แก้ไขเงื่อนไขของ BuzzeBees Payment</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Valid length must be numeric or blank value only.</DefaultText>
+		<Lang1>Valid length must be numeric or blank value only.</Lang1>
+		<Lang2>ความยาวรหัสต้องเป็นตัวเลขหรือค่าว่างเท่านั้น</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Is Manual BuzzeBees Payment</DefaultText>
+		<Lang1>Is Manual BuzzeBees Payment</Lang1>
+		<Lang2>เป็นการจ่ายเงินแบบ Manual BuzzeBees</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Yes</DefaultText>
+		<Lang1>Yes</Lang1>
+		<Lang2>Yes</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>No</DefaultText>
+		<Lang1>No</Lang1>
+		<Lang2>No</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Is Manual</DefaultText>
+		<Lang1>Is Manual</Lang1>
+		<Lang2>Is Manual</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9011</FormID>
+		<FormName>LinkBuzzeBeePaymentConditionSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Numeric Only</DefaultText>
+		<Lang1>Numeric Only</Lang1>
+		<Lang2>Numeric Only</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To iNet - Loga Config Setting</DefaultText>
+		<Lang1>Link To iNet - Loga Config Setting</Lang1>
+		<Lang2>Link To iNet - Loga Config Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Description</DefaultText>
+		<Lang1>Description</Lang1>
+		<Lang2>Description</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>Value</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>WebService - URL</DefaultText>
+		<Lang1>WebService - URL</Lang1>
+		<Lang2>WebService - URL</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>User Name</DefaultText>
+		<Lang1>User Name</Lang1>
+		<Lang2>User Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Password</DefaultText>
+		<Lang1>Password</Lang1>
+		<Lang2>Password</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Loga CardID</DefaultText>
+		<Lang1>Loga CardID</Lang1>
+		<Lang2>Loga CardID</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>บันทึก</DefaultText>
+		<Lang1>Submit</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Default MemberGroup For Add in DB</DefaultText>
+		<Lang1>Default MemberGroup For Add in DB</Lang1>
+		<Lang2>Default MemberGroup For Add in DB</Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9012</FormID>
+		<FormName>LinkiNetLogaSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	
+	</LanguageData>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,2596 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40"
+ xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>ThinkPad</LastAuthor>
+  <Created>2011-11-28T10:15:00Z</Created>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8505</WindowHeight>
+  <WindowWidth>15315</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>60</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+  <FutureVer>11</FutureVer>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="269" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column ss:Width="60.75"/>
+   <Column ss:Width="118.5"/>
+   <Column ss:Width="70.5"/>
+   <Column ss:Width="57"/>
+   <Column ss:Width="309" ss:Span="1"/>
+   <Column ss:Index="7" ss:Width="214.5"/>
+   <Row>
+    <Cell><Data ss:Type="String">FormID</Data></Cell>
+    <Cell><Data ss:Type="String">FormName</Data></Cell>
+    <Cell><Data ss:Type="String">TextType</Data></Cell>
+    <Cell><Data ss:Type="String">TextID</Data></Cell>
+    <Cell><Data ss:Type="String">DefaultText</Data></Cell>
+    <Cell><Data ss:Type="String">Lang1</Data></Cell>
+    <Cell><Data ss:Type="String">Lang2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดตัวแปรของระบบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Year Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Year Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การแสดงค่าของปี</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Discount Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Discount Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดการปัดเศษส่วนลด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Bill Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Bill Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดการปัดเศษของบิล</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Price Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Price Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดการปัดเศษของราคาสินค้า</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Service Charge Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Service Charge Rounding</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดการปัดเศษของ service charge</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Remote Image Folder</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Remote Image Folder</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนด folder ของรูปภาพ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SMTP Mail Server</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SMTP Mail Server</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SMTP Mail Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Contact Email Address</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Contact Email Address</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Contact Email Address</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Running Member Code Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Running Member Code Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การ running รหัสสมาชิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Member Code Digit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Member Code Digit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จำนวนหลักของรหัสสมาชิกกรณีตั้งค่า running</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Running Member Code Resetting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Running Member Code Resetting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การ reset ค่า running</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Member Code Year</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Member Code Year</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รูปแบบปีที่แสดงของรหัสสมาชิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">After paid, go back to</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">After paid, go back to</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">หลังจากจ่ายเงินแล้วให้ระบบกลับไปยัง</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">A.D.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">A.D.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ค.ศ.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">B.E.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">B.E.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">พ.ศ.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Print Package Detail in Receipt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Print Package Detail in Receipt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">พิมพ์รายละเอียด package ที่บิล</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Symbol</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Symbol</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Symbol</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Code</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Name</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Currency Format</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Date Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Date Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Date Format</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Time Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Time Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Time Format</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Preferences:main.aspx</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Quantity Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Quantity Format</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Quantity Format</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Manage Material Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Manage Material Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดหมวดหมู่ของวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">หมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Materials</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Materials</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ข้อมูลวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Keyword(s):</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Keyword(s):</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Keyword(s):</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Search</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Search</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ค้นหา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">แก้ไข</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Delete</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Delete</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ลบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Department Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Department Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Department Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Department Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Check Recipe</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Check Recipe</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ตรวจสอบเมนูที่ใช้วัตถดิบนี้</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Invent Unit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Invent Unit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดหน่วยกับเอกสาร</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Mapping Unit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Mapping Unit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Mapping Unit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- Select Material Group &#45;-</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- Select Material Group &#45;-</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- เลือกกลุ่มวัตถุดิบ &#45;-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- Select Material Dept &#45;-</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- Select Material Dept &#45;-</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- เลือกหมวดวัตถุดิบ &#45;-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Recipe</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Recipe</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดสูตร</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Select</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Select</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Are you sure you want to delete</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Are you sure you want to delete</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คุณแน่ใจหรือไม่ที่จะลบรายการ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">?</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">?</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ออกจากระบบ?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialData</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Select Material</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Select Material</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Manage Material Group Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Manage Material Group Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ข้อมูลกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชนิดกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มข้อมูล</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Update Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Update Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ปรับปรุงข้อมูล</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Code must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Code must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กรุณาใส่ข้อมูลของรหัสกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Name must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Name must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กรุณาใส่ข้อมูลของชื่อกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Code already exist in database.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group Code already exist in database.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มวัตถุดิบมีในฐานข้อมูลแล้ว</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">แก้ไขข้อมูลกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Code</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Code must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Code must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กรุณาใส่ข้อมูลรหัสหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Name must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Name must be filled before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กรุณาใส่ข้อมูลชื่อหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Manage Material Department Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Manage Material Department Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ข้อมูลหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit Material Department</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">แก้ไขข้อมูลหมวดวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Code already exist in database.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Material Department Code already exist in database.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสหมวดวัตถุดิบมีในฐานข้อมูลแล้ว</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Please select material group before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Please select material group before submission.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กรุณาเลื่อกกลุ่มวัตถุดิบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MaterialGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- Select Material Group &#45;-</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- Select Material Group &#45;-</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">&#45;- กรุณาเลือกกลุ่มวัตถุดิบ &#45;-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40001</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuGroupSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40001</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuGroupSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40001</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuGroupSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สาขา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40001</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuGroupSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Group Menu</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Group Menu</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกสาขา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Menu Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Menu Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Normal</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Normal</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ปกติ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Recommend menu</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Recommend menu</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เมนูแนะนำ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Promotion</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Promotion</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">โปรโมชั่น</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name Default</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Name Default</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Group Dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Group Dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดกลุ่มย่อย</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Type</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ประเภทกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มเมนู 1 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Group Name 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มเมนู 2 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Type :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Type :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ประเภทกลุ่มเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงกลุ่มเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการกลุ่มย่อยเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกสาขา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">หน้ากลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Menu Dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Menu Dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่มย่อยเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มย่อยเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มย่อยเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Menu Item</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Menu Item</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงกลุ่มย่อยเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่มย่อยเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Dept ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่มย่อยเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dept Name Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dept Name Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มย่อยเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dept Name 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dept Name 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มย่อย 1 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dept Name 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Dept Name 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่มย่อย 2 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงกลุ่มย่อย :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuDept</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกสาขา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">หน้ากลุ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu dept</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">หน้ากลุ่มเมนูย่อย</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Menu Item</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Menu Item</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Price</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Price</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ราคา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คำอธิบาย</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รูปภาพ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Item</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Item</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มเมนู</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สินค้า :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Price :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Price :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ราคา :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Item Name Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Item Name Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Short Description :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Short Description :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คำอธิบาย :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Long Description :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Long Description :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คำอธิบายเพิ่มเติม :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Item Name 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Item Name 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อเมนู 1 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Item Name 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Item Name 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อเมนู 2 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Image Link :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Image Link :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกรูป :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Item Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงเมนู :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">No Picture</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">No Picture</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ไม่มีรูปภาพ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40008</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuCommentSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Comment Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Comment Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการเมนูคอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40008</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuCommentSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40008</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuCommentSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สาขา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40008</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MenuCommentSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Comment Menu</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Comment Menu</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดเมนูคอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Comment</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Comment</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เมนูคอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select branch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกสาขา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Get Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Get Data</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ดึงข้อมูล</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Comment ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu Comment ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสเมนูคอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อสินค้า</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Price</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Price</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ราคา</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Default</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Default</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงคอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Comment</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Menu Comment</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มเมนูคอมเม้นต์</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Default :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คอมเม้นต์ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment 1 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คอมเม้นต์ 1 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment 2 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คอมเม้นต์ 2 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment 3 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment 3 :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คอมเม้นต์ 3 :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงคอมเม้นต์ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addMenuComment</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40011</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WelcomeImageSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการรูปภาพ Welcome</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40011</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WelcomeImageSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40011</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WelcomeImageSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Shop</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Shop</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ร้าน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40011</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WelcomeImageSetting</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Set Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดรูปภาพ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รูปภาพ Welcome</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select shop</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">select shop</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกร้าน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มรูปภาพ Welcome</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสรูปภาพ Welcome</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Picture Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Picture Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อรูป</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รูปภาพ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียง</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Welcome Image</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มรูปภาพ Welcome</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสรูปภาพ Welcome :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Welcome Image :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกรูปภาพ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Order :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียง :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">No Picture</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">No Picture</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ไม่มีรูปภาพ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addWelcomeImage</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Menu :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เมนู  :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการกลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Permission Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Permission Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Ordering</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงกลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">แก้ไข</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add new permission group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add new permission group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มกลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่ม Link URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Name EN :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Name EN :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่ม Link URL (อังกฤษ) :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Name TH :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group Name TH :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อกลุ่ม Link URL (ไทย) :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Order No :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Order No :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียงกลุ่ม Link URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionGroup</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Setting</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">การจัดการ Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">All Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">All Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ทุกกลุ่ม</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Permission</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Permission</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัส Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กลุ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อ Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Param</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Param</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อพารามิเตอร์ URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item URL</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item URL</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ตำแหน่ง Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Order</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Order</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียง Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item ID Parent</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item ID Parent</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัส Link URL หลัก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Assign</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Assign</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">กำหนดการใช้งาน URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Active</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Active</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สถานะ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Edit</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">แก้ไข</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Delete</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Delete</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ลบ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สามารถใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ไม่สามารถใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add new permission</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add new permission</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่ม Link URL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัส Link URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Group ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสกลุ่ม Link URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Param :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Item Param :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อพารามิเตอร์ URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Name EN :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Name EN :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อ Link URL(อังกฤษ) :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Name TH :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Name TH :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อ Link URL(ไทย) :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission URL :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission URL :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ตำแหน่ง URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Order No :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Order No :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">จัดเรียง Link URL :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Parent ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Permission Parent ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัส Link URL หลัก :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Active :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Active :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สถานะ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ย้อนกลับ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สามารถใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ไม่สามารถใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPermissionItem</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">not set</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">not set</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ไม่ระบุ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">List pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">List pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รายการสินค้า pRoMiSe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มรายการสินค้า pRoMiSe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสสินค้า</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อสินค้า</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Version</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product Version</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รุ่นสินค้า</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สถานะ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่มสินค้า pRoMiSe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัสสินค้า pRoMiSe :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product Name :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product Name :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อสินค้า pRoMiSe :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product Version :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product Version :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รุ่นสินค้า pRoMiSe :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สถานะ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromiseProduct</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">List Patch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">List Patch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รายการ Patch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Patch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add New Patch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่ม Patch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Patch ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Patch ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัส Patch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อสินค้า pRoMiSe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Patch Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Patch Name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ชื่อไฟล์ Patch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คำอธิบาย</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สถานะ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">listPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Download</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Download</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ดาวน์โหลด</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Save</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">บันทึก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Cancel</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ยกเลิก</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Patch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Add Patch</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เพิ่ม Patch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Patch ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Patch ID :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รหัส Patch :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">pRoMiSe Product :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">รายการสินค้า pRoMiSe :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Choose File :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Choose File :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เลือกไฟล์ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">คำอธิบาย :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Status :</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">สถานะ :</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Enable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">เปิดใช้งาน</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40021</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">addPromisePatch</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disable</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ปิดใช้งาน</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <TopRowVisible>124</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>75</ActiveRow>
+     <RangeSelection>R76C1:R269C7</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <x2:MapInfo x2:HideInactiveListBorder="false">
+  <x2:Schema x2:ID="Schema1" x2:Namespace=""><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"><xsd:element nillable="true" name="LanguageData"><xsd:complexType><xsd:sequence minOccurs="0"><xsd:element minOccurs="0" maxOccurs="unbounded" nillable="true" name="Form" form="unqualified"><xsd:complexType><xsd:sequence minOccurs="0"><xsd:element minOccurs="0" nillable="true" type="xsd:integer" name="FormID" form="unqualified"></xsd:element><xsd:element minOccurs="0" nillable="true" type="xsd:string" name="FormName" form="unqualified"></xsd:element><xsd:element minOccurs="0" nillable="true" type="xsd:integer" name="TextType" form="unqualified"></xsd:element><xsd:element minOccurs="0" nillable="true" type="xsd:integer" name="TextID" form="unqualified"></xsd:element><xsd:element minOccurs="0" nillable="true" type="xsd:string" name="DefaultText" form="unqualified"></xsd:element><xsd:element minOccurs="0" nillable="true" type="xsd:string" name="Lang1" form="unqualified"></xsd:element><xsd:element minOccurs="0" nillable="true" type="xsd:string" name="Lang2" form="unqualified"></xsd:element></xsd:sequence></xsd:complexType></xsd:element></xsd:sequence></xsd:complexType></xsd:element></xsd:schema></x2:Schema>
+  <x2:Map x2:ID="LanguageData_Map" x2:SchemaID="Schema1"
+   x2:RootElement="LanguageData">
+   <x2:Entry x2:Type="table" x2:ID="1" x2:ShowTotals="false">
+    <x2:Range>Sheet1!R2C1:R269C7</x2:Range>
+    <x2:HeaderRange>R1C1</x2:HeaderRange>
+    <x:FilterOn>True</x:FilterOn>
+    <x2:XPath>/LanguageData/Form</x2:XPath>
+    <x2:Field x2:ID="FormID">
+     <x2:Range>RC</x2:Range>
+     <x2:XPath>FormID</x2:XPath>
+     <x2:XSDType>integer</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+    <x2:Field x2:ID="FormName">
+     <x2:Range>RC[1]</x2:Range>
+     <x2:XPath>FormName</x2:XPath>
+     <x2:XSDType>string</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+    <x2:Field x2:ID="TextType">
+     <x2:Range>RC[2]</x2:Range>
+     <x2:XPath>TextType</x2:XPath>
+     <x2:XSDType>integer</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+    <x2:Field x2:ID="TextID">
+     <x2:Range>RC[3]</x2:Range>
+     <x2:XPath>TextID</x2:XPath>
+     <x2:XSDType>integer</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+    <x2:Field x2:ID="DefaultText">
+     <x2:Range>RC[4]</x2:Range>
+     <x2:XPath>DefaultText</x2:XPath>
+     <x2:XSDType>string</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+    <x2:Field x2:ID="Lang1">
+     <x2:Range>RC[5]</x2:Range>
+     <x2:XPath>Lang1</x2:XPath>
+     <x2:XSDType>string</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+    <x2:Field x2:ID="Lang2">
+     <x2:Range>RC[6]</x2:Range>
+     <x2:XPath>Lang2</x2:XPath>
+     <x2:XSDType>string</x2:XSDType>
+     <ss:Cell>
+     </ss:Cell>
+     <x2:Aggregate>None</x2:Aggregate>
+    </x2:Field>
+   </x2:Entry>
+  </x2:Map>
+ </x2:MapInfo>
+ <x2:Binding x2:ID="Binding1" x2:LoadMode="normal">
+  <x2:MapID>LanguageData_Map</x2:MapID>
+<udc:DataSource MajorVersion="1" MinorVersion="0" xmlns:udc="http://schemas.microsoft.com/data/udc">
+  <udc:Type Type="XMLFile" MajorVersion="1" MinorVersion="0"/>
+  <udc:Name>Binding1</udc:Name>
+  <udc:ConnectionInfo Purpose="Query">
+    <udcxf:File xmlns:udcxf="http://schemas.microsoft.com/data/udc/xmlfile">D:\Inetpub\wwwroot\pRoMiSeSystem6\Resources\Language.xml</udcxf:File>
+  </udc:ConnectionInfo>
+</udc:DataSource>
+ </x2:Binding>
+</Workbook>

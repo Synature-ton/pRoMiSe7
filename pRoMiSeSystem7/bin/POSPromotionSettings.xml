@@ -1,0 +1,1792 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POSPromotionSettings
+</name>
+</assembly>
+<members>
+<member name="F:POSPromotionSettings._Default.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.lbPromoName">
+	<summary>
+lbPromoName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.Pl2">
+	<summary>
+Pl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.ChkShopList">
+	<summary>
+ChkShopList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.btnAddShop">
+	<summary>
+btnAddShop control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.btnRemoveShop">
+	<summary>
+btnRemoveShop control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.ChkSelectShop">
+	<summary>
+ChkSelectShop control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.btnBackToEditPromo">
+	<summary>
+btnBackToEditPromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.ApplyPromoToShop.btnBackToHomePage">
+	<summary>
+btnBackToHomePage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb0">
+	<summary>
+lb0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.txtPromoName">
+	<summary>
+txtPromoName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb1">
+	<summary>
+lb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.date_startdate">
+	<summary>
+date_startdate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.validate_startdate">
+	<summary>
+validate_startdate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb2">
+	<summary>
+lb2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.date_enddate">
+	<summary>
+date_enddate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb3">
+	<summary>
+lb3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ddlHourFromTime">
+	<summary>
+ddlHourFromTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ddlMinuteFromTime">
+	<summary>
+ddlMinuteFromTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.validFormTime">
+	<summary>
+validFormTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb4">
+	<summary>
+lb4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ddlHourToTime">
+	<summary>
+ddlHourToTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ddlMinuteToTime">
+	<summary>
+ddlMinuteToTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.validToTime">
+	<summary>
+validToTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb5">
+	<summary>
+lb5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.WeeklyOption">
+	<summary>
+WeeklyOption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ckWeekly">
+	<summary>
+ckWeekly control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.MonthOption">
+	<summary>
+MonthOption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ckMonthly">
+	<summary>
+ckMonthly control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.NoneOption">
+	<summary>
+NoneOption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb6">
+	<summary>
+lb6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.RdoAllowOtherPromo">
+	<summary>
+RdoAllowOtherPromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb7">
+	<summary>
+lb7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.RdoAllowOtherPromoSameLV">
+	<summary>
+RdoAllowOtherPromoSameLV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb8">
+	<summary>
+lb8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.RdoActivated">
+	<summary>
+RdoActivated control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.LbNoPrintReceiptCopy">
+	<summary>
+LbNoPrintReceiptCopy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.txtPrintReceiptCopy">
+	<summary>
+txtPrintReceiptCopy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.LbPrintSignatureInReceipt">
+	<summary>
+LbPrintSignatureInReceipt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.RdoPrintSignatureInReceipt">
+	<summary>
+RdoPrintSignatureInReceipt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.lb9">
+	<summary>
+lb9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.RdoAmountType">
+	<summary>
+RdoAmountType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.promoAmountType">
+	<summary>
+promoAmountType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.btSavePromo">
+	<summary>
+btSavePromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.btEditPromo">
+	<summary>
+btEditPromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.btCancel">
+	<summary>
+btCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Price_Edit.ErrorText">
+	<summary>
+ErrorText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.LbtnAddPromotion">
+	<summary>
+LbtnAddPromotion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.DDLActivated">
+	<summary>
+DDLActivated control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh1">
+	<summary>
+lbh1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh2">
+	<summary>
+lbh2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh3">
+	<summary>
+lbh3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh5">
+	<summary>
+lbh5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh8">
+	<summary>
+lbh8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh9">
+	<summary>
+lbh9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.lbh10">
+	<summary>
+lbh10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_setup.OutStringData">
+	<summary>
+OutStringData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:POSPromotionSettings.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:POSPromotionSettings.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:POSPromotionSettings.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:POSPromotionSettings.Promotion_Level.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.LbtBackToHomePage">
+	<summary>
+LbtBackToHomePage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.LbtnAddPromotion">
+	<summary>
+LbtnAddPromotion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh1">
+	<summary>
+lbh1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh2">
+	<summary>
+lbh2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh3">
+	<summary>
+lbh3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh4">
+	<summary>
+lbh4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh5">
+	<summary>
+lbh5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh6">
+	<summary>
+lbh6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh7">
+	<summary>
+lbh7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.lbh8">
+	<summary>
+lbh8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_Level.OutStringData">
+	<summary>
+OutStringData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lbBackToHomePage">
+	<summary>
+lbBackToHomePage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lbPromoName">
+	<summary>
+lbPromoName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lf1">
+	<summary>
+lf1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.PlPromoType">
+	<summary>
+PlPromoType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoPromoType">
+	<summary>
+RdoPromoType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Pl1">
+	<summary>
+Pl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.ChkPromoStaff">
+	<summary>
+ChkPromoStaff control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Pl2">
+	<summary>
+Pl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.ChkPromoCoupon">
+	<summary>
+ChkPromoCoupon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Pl3">
+	<summary>
+Pl3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.ChkVoucher">
+	<summary>
+ChkVoucher control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Pl4">
+	<summary>
+Pl4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.ChkMemberGroup">
+	<summary>
+ChkMemberGroup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lf2">
+	<summary>
+lf2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoPercentDiscount">
+	<summary>
+RdoPercentDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtPercentDiscount">
+	<summary>
+txtPercentDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbPercentDiscount">
+	<summary>
+LbPercentDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoDiscountAmount">
+	<summary>
+RdoDiscountAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtDiscountAmount">
+	<summary>
+txtDiscountAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbDiscountAmount">
+	<summary>
+LbDiscountAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoDiscountOther">
+	<summary>
+RdoDiscountOther control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbDiscountOther">
+	<summary>
+LbDiscountOther control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoFree">
+	<summary>
+RdoFree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbRdoFree">
+	<summary>
+LbRdoFree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lf3">
+	<summary>
+lf3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoPieceAmount">
+	<summary>
+RdoPieceAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtPieceAmount">
+	<summary>
+txtPieceAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbPiece">
+	<summary>
+LbPiece control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoBathAmount">
+	<summary>
+RdoBathAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtBathAmount">
+	<summary>
+txtBathAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbBathAmount">
+	<summary>
+LbBathAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoForDiscountBathOrPercent">
+	<summary>
+RdoForDiscountBathOrPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbForDiscount">
+	<summary>
+LbForDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtForDiscountBathOrPercent">
+	<summary>
+txtForDiscountBathOrPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.DdlForDiscountBathOrPercent">
+	<summary>
+DdlForDiscountBathOrPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbDiscountFor">
+	<summary>
+LbDiscountFor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtDiscountForBonusProduct">
+	<summary>
+txtDiscountForBonusProduct control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbPieceText_P">
+	<summary>
+LbPieceText_P control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoFreeOfCharge">
+	<summary>
+RdoFreeOfCharge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbFree">
+	<summary>
+LbFree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.txtFreeOrPurchase">
+	<summary>
+txtFreeOrPurchase control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.LbFree_P">
+	<summary>
+LbFree_P control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.lf4">
+	<summary>
+lf4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoProductSame">
+	<summary>
+RdoProductSame control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.RdoProductdifferent">
+	<summary>
+RdoProductdifferent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Lb5">
+	<summary>
+Lb5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Lb7">
+	<summary>
+Lb7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.TxtOverPrice">
+	<summary>
+TxtOverPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.Lb6">
+	<summary>
+Lb6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.DDlDiscountMinpriceToMax">
+	<summary>
+DDlDiscountMinpriceToMax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.btnBackToEditPromo">
+	<summary>
+btnBackToEditPromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.btnSavePromo">
+	<summary>
+btnSavePromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lbBackToHomePage">
+	<summary>
+lbBackToHomePage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lbPromoName">
+	<summary>
+lbPromoName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lf1">
+	<summary>
+lf1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.PlPromoType">
+	<summary>
+PlPromoType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.RdoPromoType">
+	<summary>
+RdoPromoType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Pl1">
+	<summary>
+Pl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.ChkPromoStaff">
+	<summary>
+ChkPromoStaff control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Pl2">
+	<summary>
+Pl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.ChkPromoCoupon">
+	<summary>
+ChkPromoCoupon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Pl3">
+	<summary>
+Pl3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.ChkVoucher">
+	<summary>
+ChkVoucher control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Pl4">
+	<summary>
+Pl4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.ChkMemberGroup">
+	<summary>
+ChkMemberGroup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lf2">
+	<summary>
+lf2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lf3">
+	<summary>
+lf3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.RdoPieceAmount">
+	<summary>
+RdoPieceAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.RdoBathAmount">
+	<summary>
+RdoBathAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.lf4">
+	<summary>
+lf4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.RdoProductSame">
+	<summary>
+RdoProductSame control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.RdoProductdifferent">
+	<summary>
+RdoProductdifferent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Lb5">
+	<summary>
+Lb5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Lb7">
+	<summary>
+Lb7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.TxtOverPrice">
+	<summary>
+TxtOverPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.Lb6">
+	<summary>
+Lb6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.DDlDiscountMinpriceToMax">
+	<summary>
+DDlDiscountMinpriceToMax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.btnBackToEditPromo">
+	<summary>
+btnBackToEditPromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.btnSavePromo">
+	<summary>
+btnSavePromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_link_level.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.lh">
+	<summary>
+lh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.lf1">
+	<summary>
+lf1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.lbPromoLevelName">
+	<summary>
+lbPromoLevelName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtPromoLevelName">
+	<summary>
+txtPromoLevelName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbPromoAmount">
+	<summary>
+LbPromoAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbPromoStartAmount">
+	<summary>
+LbPromoStartAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtStartAmount">
+	<summary>
+txtStartAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbPromoEndAmount">
+	<summary>
+LbPromoEndAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtEndAmount">
+	<summary>
+txtEndAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbAmountText">
+	<summary>
+LbAmountText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbUseOnly">
+	<summary>
+LbUseOnly control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoUseOnly">
+	<summary>
+RdoUseOnly control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.lf2">
+	<summary>
+lf2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoPercentDiscount">
+	<summary>
+RdoPercentDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtPercentDiscount">
+	<summary>
+txtPercentDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbPercentDiscount">
+	<summary>
+LbPercentDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoDiscountAmount">
+	<summary>
+RdoDiscountAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtDiscountAmount">
+	<summary>
+txtDiscountAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbDiscountAmount">
+	<summary>
+LbDiscountAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoFree">
+	<summary>
+RdoFree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbRdoFree">
+	<summary>
+LbRdoFree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.PlDiscount">
+	<summary>
+PlDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoOtherDiscount">
+	<summary>
+RdoOtherDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoForDiscountBathOrPercent">
+	<summary>
+RdoForDiscountBathOrPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbForDiscount">
+	<summary>
+LbForDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtForDiscountBathOrPercent">
+	<summary>
+txtForDiscountBathOrPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.DdlForDiscountBathOrPercent">
+	<summary>
+DdlForDiscountBathOrPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbDiscountFor">
+	<summary>
+LbDiscountFor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtDiscountForBonusProduct">
+	<summary>
+txtDiscountForBonusProduct control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbPieceText_P">
+	<summary>
+LbPieceText_P control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoFreeOfCharge">
+	<summary>
+RdoFreeOfCharge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbFree">
+	<summary>
+LbFree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.txtFreeOrPurchase">
+	<summary>
+txtFreeOrPurchase control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbFree_P">
+	<summary>
+LbFree_P control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoNoDiscount">
+	<summary>
+RdoNoDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.LbCoupon">
+	<summary>
+LbCoupon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.DdlCoupon">
+	<summary>
+DdlCoupon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.SetHeaderFooterCouponNextReceipt">
+	<summary>
+SetHeaderFooterCouponNextReceipt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.lf4">
+	<summary>
+lf4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoProductSame">
+	<summary>
+RdoProductSame control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.RdoProductdifferent">
+	<summary>
+RdoProductdifferent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.BtnSavePromo">
+	<summary>
+BtnSavePromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.BtnUpdatePromo">
+	<summary>
+BtnUpdatePromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.promotion_Level_Edit.BtnCancelPromo">
+	<summary>
+BtnCancelPromo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_NextReceiptHeaderFooter.HeaderPosition">
+	<summary>
+HeaderPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_NextReceiptHeaderFooter.h_pricegroupid">
+	<summary>
+h_pricegroupid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_NextReceiptHeaderFooter.HeaderLine">
+	<summary>
+HeaderLine control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_NextReceiptHeaderFooter.FooterPosition">
+	<summary>
+FooterPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_NextReceiptHeaderFooter.f_pricegroupid">
+	<summary>
+f_pricegroupid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:POSPromotionSettings.Promotion_NextReceiptHeaderFooter.FooterLine">
+	<summary>
+FooterLine control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

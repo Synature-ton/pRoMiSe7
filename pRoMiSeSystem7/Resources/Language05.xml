@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- start form menu group setting -->
+	<Form>
+		<FormID>40001</FormID>
+		<FormName>MenuGroupSetting</FormName>
+		<TextType>2</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Menu Group Setting</DefaultText>
+		<Lang1>Menu Group Setting</Lang1>
+		<Lang2>การจัดการกลุ่มเมนู</Lang2>
+	</Form>
+  <Form>
+    <FormID>40001</FormID>
+    <FormName>MenuGroupSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>setting</DefaultText>
+    <Lang1>setting</Lang1>
+    <Lang2>กำหนด</Lang2>
+  </Form>
+  <Form>
+    <FormID>40001</FormID>
+    <FormName>MenuGroupSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Branch</DefaultText>
+    <Lang1>Branch</Lang1>
+    <Lang2>สาขา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40001</FormID>
+    <FormName>MenuGroupSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Set Group Menu</DefaultText>
+    <Lang1>Set Group Menu</Lang1>
+    <Lang2>กำหนดกลุ่มเมนู</Lang2>
+  </Form>
+  <!-- end form menu group setting -->
+  <!-- start form list menu group -->
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Menu Group</DefaultText>
+    <Lang1>Menu Group</Lang1>
+    <Lang2>กลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>select branch</DefaultText>
+    <Lang1>select branch</Lang1>
+    <Lang2>เลือกสาขา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add New Menu Group</DefaultText>
+    <Lang1>Add New Menu Group</Lang1>
+    <Lang2>เพิ่มกลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>setting</DefaultText>
+    <Lang1>setting</Lang1>
+    <Lang2>กำหนด</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Normal</DefaultText>
+    <Lang1>Normal</Lang1>
+    <Lang2>ปกติ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Recommend menu</DefaultText>
+    <Lang1>Recommend menu</Lang1>
+    <Lang2>เมนูแนะนำ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Promotion</DefaultText>
+    <Lang1>Promotion</Lang1>
+    <Lang2>โปรโมชั่น</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Menu Group ID</DefaultText>
+    <Lang1>Menu Group ID</Lang1>
+    <Lang2>รหัสกลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Name Default</DefaultText>
+    <Lang1>Name Default</Lang1>
+    <Lang2>ชื่อกลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Set Group Dept</DefaultText>
+    <Lang1>Set Group Dept</Lang1>
+    <Lang2>กำหนดกลุ่มย่อย</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>11</TextID>
+    <DefaultText>Menu Group Type</DefaultText>
+    <Lang1>Menu Group Type</Lang1>
+    <Lang2>ประเภทกลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40002</FormID>
+    <FormName>listMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>12</TextID>
+    <DefaultText>Menu Group Ordering</DefaultText>
+    <Lang1>Menu Group Ordering</Lang1>
+    <Lang2>จัดเรียงกลุ่มเมนู</Lang2>
+  </Form>
+  <!-- end form list menu group -->
+  <!-- end form add menu group -->
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add Menu Group</DefaultText>
+    <Lang1>Add Menu Group</Lang1>
+    <Lang2>เพิ่มกลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Menu Group ID : </DefaultText>
+    <Lang1>Menu Group ID : </Lang1>
+    <Lang2>รหัสกลุ่มเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Group Name Default : </DefaultText>
+    <Lang1>Group Name Default : </Lang1>
+    <Lang2>ชื่อกลุ่มเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Group Name 1 : </DefaultText>
+    <Lang1>Group Name 1 : </Lang1>
+    <Lang2>ชื่อกลุ่มเมนู 1 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Group Name 2 : </DefaultText>
+    <Lang1>Group Name 2 : </Lang1>
+    <Lang2>ชื่อกลุ่มเมนู 2 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Menu Group Type : </DefaultText>
+    <Lang1>Menu Group Type : </Lang1>
+    <Lang2>ประเภทกลุ่มเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Menu Group Order : </DefaultText>
+    <Lang1>Menu Group Order : </Lang1>
+    <Lang2>จัดเรียงกลุ่มเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40003</FormID>
+    <FormName>addMenuGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <!-- end form add menu group -->
+  <!-- start form list menu dept -->
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Menu Dept Setting</DefaultText>
+    <Lang1>Menu Dept Setting</Lang1>
+    <Lang2>การจัดการกลุ่มย่อยเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>select branch</DefaultText>
+    <Lang1>select branch</Lang1>
+    <Lang2>เลือกสาขา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>menu group</DefaultText>
+    <Lang1>menu group</Lang1>
+    <Lang2>หน้ากลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Add New Menu Dept</DefaultText>
+    <Lang1>Add New Menu Dept</Lang1>
+    <Lang2>เพิ่มกลุ่มย่อยเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>setting</DefaultText>
+    <Lang1>setting</Lang1>
+    <Lang2>กำหนด</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Menu Dept ID</DefaultText>
+    <Lang1>Menu Dept ID</Lang1>
+    <Lang2>รหัสกลุ่มย่อยเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Menu Dept Name</DefaultText>
+    <Lang1>Menu Dept Name</Lang1>
+    <Lang2>ชื่อกลุ่มย่อยเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Set Menu Item</DefaultText>
+    <Lang1>Set Menu Item</Lang1>
+    <Lang2>กำหนดเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40004</FormID>
+    <FormName>listMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Menu Group Ordering</DefaultText>
+    <Lang1>Menu Group Ordering</Lang1>
+    <Lang2>จัดเรียงกลุ่มย่อยเมนู</Lang2>
+  </Form>
+  <!-- end form list menu dept -->
+  <!-- start form add menu dept -->
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add Menu Dept</DefaultText>
+    <Lang1>Add Menu Dept</Lang1>
+    <Lang2>เพิ่มกลุ่มย่อยเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Menu Dept ID : </DefaultText>
+    <Lang1>Menu Dept ID : </Lang1>
+    <Lang2>รหัสกลุ่มย่อยเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Dept Name Default : </DefaultText>
+    <Lang1>Dept Name Default : </Lang1>
+    <Lang2>ชื่อกลุ่มย่อยเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Dept Name 1 : </DefaultText>
+    <Lang1>Dept Name 1 : </Lang1>
+    <Lang2>ชื่อกลุ่มย่อย 1 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Dept Name 2 :</DefaultText>
+    <Lang1>Dept Name 2 :</Lang1>
+    <Lang2>ชื่อกลุ่มย่อย 2 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Menu Group Order : </DefaultText>
+    <Lang1>Menu Group Order : </Lang1>
+    <Lang2>จัดเรียงกลุ่มย่อย : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40005</FormID>
+    <FormName>addMenuDept</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <!-- end form add menu dept -->
+  <!-- start form list menu item -->
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Menu Item Setting</DefaultText>
+    <Lang1>Menu Item Setting</Lang1>
+    <Lang2>การจัดการเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>select branch</DefaultText>
+    <Lang1>select branch</Lang1>
+    <Lang2>เลือกสาขา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>menu group</DefaultText>
+    <Lang1>menu group</Lang1>
+    <Lang2>หน้ากลุ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>menu dept</DefaultText>
+    <Lang1>menu dept</Lang1>
+    <Lang2>หน้ากลุ่มเมนูย่อย</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Add New Menu Item</DefaultText>
+    <Lang1>Add New Menu Item</Lang1>
+    <Lang2>เพิ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Menu Item ID</DefaultText>
+    <Lang1>Menu Item ID</Lang1>
+    <Lang2>รหัสเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Menu Item Name</DefaultText>
+    <Lang1>Menu Item Name</Lang1>
+    <Lang2>ชื่อเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Price</DefaultText>
+    <Lang1>Price</Lang1>
+    <Lang2>ราคา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Description</DefaultText>
+    <Lang1>Description</Lang1>
+    <Lang2>คำอธิบาย</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Image</DefaultText>
+    <Lang1>Image</Lang1>
+    <Lang2>รูปภาพ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40006</FormID>
+    <FormName>listMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>11</TextID>
+    <DefaultText>Menu Group Ordering</DefaultText>
+    <Lang1>Menu Group Ordering</Lang1>
+    <Lang2>จัดเรียงเมนู</Lang2>
+  </Form>
+  <!-- end form list menu item -->
+  <!-- start form add menu item -->
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add Menu Item</DefaultText>
+    <Lang1>Add Menu Item</Lang1>
+    <Lang2>เพิ่มเมนู</Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Menu Item ID : </DefaultText>
+    <Lang1>Menu Item ID : </Lang1>
+    <Lang2>รหัสเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Product : </DefaultText>
+    <Lang1>Product : </Lang1>
+    <Lang2>สินค้า : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Price : </DefaultText>
+    <Lang1>Price : </Lang1>
+    <Lang2>ราคา : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Item Name Default : </DefaultText>
+    <Lang1>Item Name Default : </Lang1>
+    <Lang2>ชื่อเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Short Description : </DefaultText>
+    <Lang1>Short Description : </Lang1>
+    <Lang2>คำอธิบาย : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Long Description : </DefaultText>
+    <Lang1>Long Description : </Lang1>
+    <Lang2>คำอธิบายเพิ่มเติม : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Item Name 1 : </DefaultText>
+    <Lang1>Item Name 1 : </Lang1>
+    <Lang2>ชื่อเมนู 1 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>11</TextID>
+    <DefaultText>Item Name 2 : </DefaultText>
+    <Lang1>Item Name 2 : </Lang1>
+    <Lang2>ชื่อเมนู 2 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>12</TextID>
+    <DefaultText>Image Link : </DefaultText>
+    <Lang1>Image Link : </Lang1>
+    <Lang2>เลือกรูป : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>13</TextID>
+    <DefaultText>Menu Item Order : </DefaultText>
+    <Lang1>Menu Item Order : </Lang1>
+    <Lang2>จัดเรียงเมนู : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>14</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40007</FormID>
+    <FormName>addMenuItem</FormName>
+    <TextType>2</TextType>
+    <TextID>15</TextID>
+    <DefaultText>No Picture</DefaultText>
+    <Lang1>No Picture</Lang1>
+    <Lang2>ไม่มีรูปภาพ</Lang2>
+  </Form>
+  <!-- end form add menu item -->
+  <!-- start form menu comment setting -->
+  <Form>
+    <FormID>40008</FormID>
+    <FormName>MenuCommentSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Menu Comment Setting</DefaultText>
+    <Lang1>Menu Comment Setting</Lang1>
+    <Lang2>การจัดการเมนูคอมเม้นต์</Lang2>
+  </Form>
+  <Form>
+    <FormID>40008</FormID>
+    <FormName>MenuCommentSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>setting</DefaultText>
+    <Lang1>setting</Lang1>
+    <Lang2>กำหนด</Lang2>
+  </Form>
+  <Form>
+    <FormID>40008</FormID>
+    <FormName>MenuCommentSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Branch</DefaultText>
+    <Lang1>Branch</Lang1>
+    <Lang2>สาขา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40008</FormID>
+    <FormName>MenuCommentSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Set Comment Menu</DefaultText>
+    <Lang1>Set Comment Menu</Lang1>
+    <Lang2>กำหนดเมนูคอมเม้นต์</Lang2>
+  </Form>
+  <!-- end form menu comment setting -->
+  <!-- start form list menu comment -->
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Menu Comment</DefaultText>
+    <Lang1>Menu Comment</Lang1>
+    <Lang2>เมนูคอมเม้นต์</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>select branch</DefaultText>
+    <Lang1>select branch</Lang1>
+    <Lang2>เลือกสาขา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Get Data</DefaultText>
+    <Lang1>Get Data</Lang1>
+    <Lang2>ดึงข้อมูล</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Menu Comment ID</DefaultText>
+    <Lang1>Menu Comment ID</Lang1>
+    <Lang2>รหัสเมนูคอมเม้นต์</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Product Name</DefaultText>
+    <Lang1>Product Name</Lang1>
+    <Lang2>ชื่อสินค้า</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Price</DefaultText>
+    <Lang1>Price</Lang1>
+    <Lang2>ราคา</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Comment Default</DefaultText>
+    <Lang1>Comment Default</Lang1>
+    <Lang2>คอมเม้นต์</Lang2>
+  </Form>
+  <Form>
+    <FormID>40009</FormID>
+    <FormName>listMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Comment Ordering</DefaultText>
+    <Lang1>Comment Ordering</Lang1>
+    <Lang2>จัดเรียงคอมเม้นต์</Lang2>
+  </Form>
+  <!-- end form list menu comment -->
+  <!-- start form add menu comment -->
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add Menu Comment</DefaultText>
+    <Lang1>Add Menu Comment</Lang1>
+    <Lang2>เพิ่มเมนูคอมเม้นต์</Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Comment Default : </DefaultText>
+    <Lang1>Comment Default : </Lang1>
+    <Lang2>คอมเม้นต์ : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Comment 1 : </DefaultText>
+    <Lang1>Comment 1 : </Lang1>
+    <Lang2>คอมเม้นต์ 1 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Comment 2 : </DefaultText>
+    <Lang1>Comment 2 : </Lang1>
+    <Lang2>คอมเม้นต์ 2 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Comment 3 : </DefaultText>
+    <Lang1>Comment 3 : </Lang1>
+    <Lang2>คอมเม้นต์ 3 : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Comment Order : </DefaultText>
+    <Lang1>Comment Order : </Lang1>
+    <Lang2>จัดเรียงคอมเม้นต์ : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40010</FormID>
+    <FormName>addMenuComment</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <!-- end form add menu comment -->
+  <!-- start form welcome image setting -->
+  <Form>
+    <FormID>40011</FormID>
+    <FormName>WelcomeImageSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Welcome Image Setting</DefaultText>
+    <Lang1>Welcome Image Setting</Lang1>
+    <Lang2>การจัดการรูปภาพ Welcome</Lang2>
+  </Form>
+  <Form>
+    <FormID>40011</FormID>
+    <FormName>WelcomeImageSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>setting</DefaultText>
+    <Lang1>setting</Lang1>
+    <Lang2>กำหนด</Lang2>
+  </Form>
+  <Form>
+    <FormID>40011</FormID>
+    <FormName>WelcomeImageSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Shop</DefaultText>
+    <Lang1>Shop</Lang1>
+    <Lang2>ร้าน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40011</FormID>
+    <FormName>WelcomeImageSetting</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Set Welcome Image</DefaultText>
+    <Lang1>Set Welcome Image</Lang1>
+    <Lang2>กำหนดรูปภาพ</Lang2>
+  </Form>
+  <!-- end form welcome image setting -->
+  <!-- start form list welcome image -->
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Welcome Image</DefaultText>
+    <Lang1>Welcome Image</Lang1>
+    <Lang2>รูปภาพ Welcome</Lang2>
+  </Form>
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>select shop</DefaultText>
+    <Lang1>select shop</Lang1>
+    <Lang2>เลือกร้าน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add New Welcome Image</DefaultText>
+    <Lang1>Add New Welcome Image</Lang1>
+    <Lang2>เพิ่มรูปภาพ Welcome</Lang2>
+  </Form>
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Welcome Image ID</DefaultText>
+    <Lang1>Welcome Image ID</Lang1>
+    <Lang2>รหัสรูปภาพ Welcome</Lang2>
+  </Form>
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Picture Name</DefaultText>
+    <Lang1>Picture Name</Lang1>
+    <Lang2>ชื่อรูป</Lang2>
+  </Form>
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Image</DefaultText>
+    <Lang1>Image</Lang1>
+    <Lang2>รูปภาพ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40012</FormID>
+    <FormName>listWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Ordering</DefaultText>
+    <Lang1>Ordering</Lang1>
+    <Lang2>จัดเรียง</Lang2>
+  </Form>
+  <!-- end form list welcome image -->
+  <!-- start form add welcome image -->
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add Welcome Image</DefaultText>
+    <Lang1>Add Welcome Image</Lang1>
+    <Lang2>เพิ่มรูปภาพ Welcome</Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Welcome Image ID : </DefaultText>
+    <Lang1>Welcome Image ID : </Lang1>
+    <Lang2>รหัสรูปภาพ Welcome : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Welcome Image : </DefaultText>
+    <Lang1>Welcome Image : </Lang1>
+    <Lang2>เลือกรูปภาพ : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Order : </DefaultText>
+    <Lang1>Order : </Lang1>
+    <Lang2>จัดเรียง : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>No Picture</DefaultText>
+    <Lang1>No Picture</Lang1>
+    <Lang2>ไม่มีรูปภาพ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40013</FormID>
+    <FormName>addWelcomeImage</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Menu : </DefaultText>
+    <Lang1>Menu : </Lang1>
+    <Lang2>เมนู  :</Lang2>
+  </Form>
+  <!-- end form add welcome image -->
+  <!-- start form list permission group -->
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Permission Group Setting</DefaultText>
+    <Lang1>Permission Group Setting</Lang1>
+    <Lang2>การจัดการกลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Add New Permission Group</DefaultText>
+    <Lang1>Add New Permission Group</Lang1>
+    <Lang2>เพิ่มกลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Permission Group ID</DefaultText>
+    <Lang1>Permission Group ID</Lang1>
+    <Lang2>รหัสกลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Permission Group Name</DefaultText>
+    <Lang1>Permission Group Name</Lang1>
+    <Lang2>ชื่อกลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Permission Group Ordering</DefaultText>
+    <Lang1>Permission Group Ordering</Lang1>
+    <Lang2>จัดเรียงกลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Edit</DefaultText>
+    <Lang1>Edit</Lang1>
+    <Lang2>แก้ไข</Lang2>
+  </Form>
+  <Form>
+    <FormID>40014</FormID>
+    <FormName>listPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Active</DefaultText>
+    <Lang1>Active</Lang1>
+    <Lang2>สถานะ</Lang2>
+  </Form>
+  <!-- end form list permission group -->
+  <!-- start form add permission group -->
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add new permission group</DefaultText>
+    <Lang1>Add new permission group</Lang1>
+    <Lang2>เพิ่มกลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Permission Group ID : </DefaultText>
+    <Lang1>Permission Group ID : </Lang1>
+    <Lang2>รหัสกลุ่ม Link URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Permission Group Name EN : </DefaultText>
+    <Lang1>Permission Group Name EN : </Lang1>
+    <Lang2>ชื่อกลุ่ม Link URL (อังกฤษ) : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Permission Group Name TH : </DefaultText>
+    <Lang1>Permission Group Name TH : </Lang1>
+    <Lang2>ชื่อกลุ่ม Link URL (ไทย) : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Permission Order No : </DefaultText>
+    <Lang1>Permission Order No : </Lang1>
+    <Lang2>จัดเรียงกลุ่ม Link URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40015</FormID>
+    <FormName>addPermissionGroup</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <!-- end form add permission group -->
+  <!-- start form list permission item -->
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Permission Setting</DefaultText>
+    <Lang1>Permission Setting</Lang1>
+    <Lang2>การจัดการ Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>All Group</DefaultText>
+    <Lang1>All Group</Lang1>
+    <Lang2>ทุกกลุ่ม</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add New Permission</DefaultText>
+    <Lang1>Add New Permission</Lang1>
+    <Lang2>เพิ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Permission Item ID</DefaultText>
+    <Lang1>Permission Item ID</Lang1>
+    <Lang2>รหัส Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Permission Group</DefaultText>
+    <Lang1>Permission Group</Lang1>
+    <Lang2>กลุ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Permission Name</DefaultText>
+    <Lang1>Permission Name</Lang1>
+    <Lang2>ชื่อ Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Permission Item Param</DefaultText>
+    <Lang1>Permission Item Param</Lang1>
+    <Lang2>ชื่อพารามิเตอร์ URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Permission Item URL</DefaultText>
+    <Lang1>Permission Item URL</Lang1>
+    <Lang2>ตำแหน่ง Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Permission Item Order</DefaultText>
+    <Lang1>Permission Item Order</Lang1>
+    <Lang2>จัดเรียง Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Permission Item ID Parent</DefaultText>
+    <Lang1>Permission Item ID Parent</Lang1>
+    <Lang2>รหัส Link URL หลัก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>11</TextID>
+    <DefaultText>Permission Item Assign</DefaultText>
+    <Lang1>Permission Item Assign</Lang1>
+    <Lang2>กำหนดการใช้งาน URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>12</TextID>
+    <DefaultText>Active</DefaultText>
+    <Lang1>Active</Lang1>
+    <Lang2>สถานะ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>13</TextID>
+    <DefaultText>Edit</DefaultText>
+    <Lang1>Edit</Lang1>
+    <Lang2>แก้ไข</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>14</TextID>
+    <DefaultText>Delete</DefaultText>
+    <Lang1>Delete</Lang1>
+    <Lang2>ลบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>15</TextID>
+    <DefaultText>Enable</DefaultText>
+    <Lang1>Enable</Lang1>
+    <Lang2>สามารถใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40016</FormID>
+    <FormName>listPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>16</TextID>
+    <DefaultText>Disable</DefaultText>
+    <Lang1>Disable</Lang1>
+    <Lang2>ไม่สามารถใช้งาน</Lang2>
+  </Form>
+  <!-- end form list permission item -->
+  <!-- start form add permission item -->
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add new permission</DefaultText>
+    <Lang1>Add new permission</Lang1>
+    <Lang2>เพิ่ม Link URL</Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Permission Item ID : </DefaultText>
+    <Lang1>Permission Item ID : </Lang1>
+    <Lang2>รหัส Link URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Permission Group ID : </DefaultText>
+    <Lang1>Permission Group ID : </Lang1>
+    <Lang2>รหัสกลุ่ม Link URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Permission Item Param : </DefaultText>
+    <Lang1>Permission Item Param : </Lang1>
+    <Lang2>ชื่อพารามิเตอร์ URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Permission Name EN : </DefaultText>
+    <Lang1>Permission Name EN : </Lang1>
+    <Lang2>ชื่อ Link URL(อังกฤษ) : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Permission Name TH : </DefaultText>
+    <Lang1>Permission Name TH : </Lang1>
+    <Lang2>ชื่อ Link URL(ไทย) : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Permission URL : </DefaultText>
+    <Lang1>Permission URL : </Lang1>
+    <Lang2>ตำแหน่ง URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Permission Order No : </DefaultText>
+    <Lang1>Permission Order No : </Lang1>
+    <Lang2>จัดเรียง Link URL : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>11</TextID>
+    <DefaultText>Permission Parent ID : </DefaultText>
+    <Lang1>Permission Parent ID : </Lang1>
+    <Lang2>รหัส Link URL หลัก : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>12</TextID>
+    <DefaultText>Active : </DefaultText>
+    <Lang1>Active : </Lang1>
+    <Lang2>สถานะ : </Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>13</TextID>
+    <DefaultText>Back</DefaultText>
+    <Lang1>Back</Lang1>
+    <Lang2>ย้อนกลับ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>14</TextID>
+    <DefaultText>Enable</DefaultText>
+    <Lang1>Enable</Lang1>
+    <Lang2>สามารถใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>15</TextID>
+    <DefaultText>Disable</DefaultText>
+    <Lang1>Disable</Lang1>
+    <Lang2>ไม่สามารถใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40017</FormID>
+    <FormName>addPermissionItem</FormName>
+    <TextType>2</TextType>
+    <TextID>16</TextID>
+    <DefaultText>not set</DefaultText>
+    <Lang1>not set</Lang1>
+    <Lang2>ไม่ระบุ</Lang2>
+  </Form>
+  <!-- end form add permission item -->
+  <!-- start form list promise product -->
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>List pRoMiSe Product</DefaultText>
+    <Lang1>List pRoMiSe Product</Lang1>
+    <Lang2>รายการสินค้า pRoMiSe</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Add New pRoMiSe Product</DefaultText>
+    <Lang1>Add New pRoMiSe Product</Lang1>
+    <Lang2>เพิ่มรายการสินค้า pRoMiSe</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Product ID</DefaultText>
+    <Lang1>Product ID</Lang1>
+    <Lang2>รหัสสินค้า</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Product Name</DefaultText>
+    <Lang1>Product Name</Lang1>
+    <Lang2>ชื่อสินค้า</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Product Version</DefaultText>
+    <Lang1>Product Version</Lang1>
+    <Lang2>รุ่นสินค้า</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Status</DefaultText>
+    <Lang1>Status</Lang1>
+    <Lang2>สถานะ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Enable</DefaultText>
+    <Lang1>Enable</Lang1>
+    <Lang2>เปิดใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Disable</DefaultText>
+    <Lang1>Disable</Lang1>
+    <Lang2>ปิดใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40018</FormID>
+    <FormName>listPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Edit</DefaultText>
+    <Lang1>Edit</Lang1>
+    <Lang2>แก้ไข</Lang2>
+  </Form>
+  <!-- end form list promise product -->
+  <!-- start form add promise product -->
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add pRoMiSe Product</DefaultText>
+    <Lang1>Add pRoMiSe Product</Lang1>
+    <Lang2>เพิ่มสินค้า pRoMiSe</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>pRoMiSe Product ID :</DefaultText>
+    <Lang1>pRoMiSe Product ID :</Lang1>
+    <Lang2>รหัสสินค้า pRoMiSe :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>pRoMiSe Product Name :</DefaultText>
+    <Lang1>pRoMiSe Product Name :</Lang1>
+    <Lang2>ชื่อสินค้า pRoMiSe :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>pRoMiSe Product Version :</DefaultText>
+    <Lang1>pRoMiSe Product Version :</Lang1>
+    <Lang2>รุ่นสินค้า pRoMiSe :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Status :</DefaultText>
+    <Lang1>Status :</Lang1>
+    <Lang2>สถานะ :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Enable</DefaultText>
+    <Lang1>Enable</Lang1>
+    <Lang2>เปิดใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40019</FormID>
+    <FormName>addPromiseProduct</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Disable</DefaultText>
+    <Lang1>Disable</Lang1>
+    <Lang2>ปิดใช้งาน</Lang2>
+  </Form>
+  <!-- end form add promise product -->
+  <!-- start form list promise patch -->
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>1</TextID>
+    <DefaultText>List Patch</DefaultText>
+    <Lang1>List Patch</Lang1>
+    <Lang2>รายการ Patch</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Add New Patch</DefaultText>
+    <Lang1>Add New Patch</Lang1>
+    <Lang2>เพิ่ม Patch</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Patch ID</DefaultText>
+    <Lang1>Patch ID</Lang1>
+    <Lang2>รหัส Patch</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>pRoMiSe Product</DefaultText>
+    <Lang1>pRoMiSe Product</Lang1>
+    <Lang2>ชื่อสินค้า pRoMiSe</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>Patch Name</DefaultText>
+    <Lang1>Patch Name</Lang1>
+    <Lang2>ชื่อไฟล์ Patch</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Description</DefaultText>
+    <Lang1>Description</Lang1>
+    <Lang2>คำอธิบาย</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Status</DefaultText>
+    <Lang1>Status</Lang1>
+    <Lang2>สถานะ</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Enable</DefaultText>
+    <Lang1>Enable</Lang1>
+    <Lang2>เปิดใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Disable</DefaultText>
+    <Lang1>Disable</Lang1>
+    <Lang2>ปิดใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Download</DefaultText>
+    <Lang1>Download</Lang1>
+    <Lang2>ดาวน์โหลด</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>11</TextID>
+    <DefaultText>Edit</DefaultText>
+    <Lang1>Edit</Lang1>
+    <Lang2>แก้ไข</Lang2>
+  </Form>
+  <Form>
+    <FormID>40020</FormID>
+    <FormName>listPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>12</TextID>
+    <DefaultText>Update Date</DefaultText>
+    <Lang1>Update Date</Lang1>
+    <Lang2>วันที่อัพเดท</Lang2>
+  </Form>
+  <!-- end form list promise patch -->
+  <!-- start form add promise patch -->
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Save</DefaultText>
+    <Lang1>Save</Lang1>
+    <Lang2>บันทึก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Cancel</DefaultText>
+    <Lang1>Cancel</Lang1>
+    <Lang2>ยกเลิก</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>3</TextID>
+    <DefaultText>Add Patch</DefaultText>
+    <Lang1>Add Patch</Lang1>
+    <Lang2>เพิ่ม Patch</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>4</TextID>
+    <DefaultText>Patch ID :</DefaultText>
+    <Lang1>Patch ID :</Lang1>
+    <Lang2>รหัส Patch :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>5</TextID>
+    <DefaultText>pRoMiSe Product :</DefaultText>
+    <Lang1>pRoMiSe Product :</Lang1>
+    <Lang2>รายการสินค้า pRoMiSe :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>6</TextID>
+    <DefaultText>Choose File :</DefaultText>
+    <Lang1>Choose File :</Lang1>
+    <Lang2>เลือกไฟล์ :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>7</TextID>
+    <DefaultText>Description :</DefaultText>
+    <Lang1>Description :</Lang1>
+    <Lang2>คำอธิบาย :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>8</TextID>
+    <DefaultText>Status :</DefaultText>
+    <Lang1>Status :</Lang1>
+    <Lang2>สถานะ :</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>9</TextID>
+    <DefaultText>Enable</DefaultText>
+    <Lang1>Enable</Lang1>
+    <Lang2>เปิดใช้งาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>40021</FormID>
+    <FormName>addPromisePatch</FormName>
+    <TextType>2</TextType>
+    <TextID>10</TextID>
+    <DefaultText>Disable</DefaultText>
+    <Lang1>Disable</Lang1>
+    <Lang2>ปิดใช้งาน</Lang2>
+  </Form>
+  <!-- end form add promise patch -->
+</LanguageData>
