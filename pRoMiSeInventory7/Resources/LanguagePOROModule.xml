@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LanguageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>ไม่สามารถทำการบันทึกข้อมูลเอกสารนี้ได้ เนื่องจากคลังสินค้าได้มีการยกยอดสต๊อกผ่านเดือนของวันที่ของเอกสารมาแล้ว</DefaultText>
+    <Lang1>Can not save document due to this inventory already approve stock count for this month.</Lang1>
+    <Lang2>ไม่สามารถทำการบันทึกข้อมูลเอกสารนี้ได้ เนื่องจากคลังสินค้าได้มีการยกยอดสต๊อกผ่านเดือนของวันที่ของเอกสารมาแล้ว</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>ไม่สามารถทำการบันทึกข้อมูลเอกสารนี้ได้ เนื่องจากวันที่ของเอกสารอยู่ก่อนหน้าการทำ End Day ของคลังสินค้านี้ไปแล้ว</DefaultText>
+    <Lang1>Can not save document due to document date was before ths last stock end day.</Lang1>
+    <Lang2>ไม่สามารถทำการบันทึกข้อมูลเอกสารนี้ได้ เนื่องจากวันที่ของเอกสารอยู่ก่อนหน้าการทำ End Day ของคลังสินค้านี้ไปแล้ว</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>3</TextID>
+    <DefaultText>End Day ครั้งล่าสุดเมื่อวันที่</DefaultText>
+    <Lang1>Last end day is </Lang1>
+    <Lang2>End Day ครั้งล่าสุดเมื่อวันที่</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>4</TextID>
+    <DefaultText>ไม่อนุญาตให้ทำการ approve เอกสารได้ เนื่องจากคลังสินค้าได้มีการยกยอดสต๊อกผ่านเดือนของวันที่ของเอกสารมาแล้ว</DefaultText>
+    <Lang1>Can not approve this document due to this inventory already approve stock count for this month.</Lang1>
+    <Lang2>ไม่อนุญาตให้ทำการ approve เอกสารได้ เนื่องจากคลังสินค้าได้มีการยกยอดสต๊อกผ่านเดือนของวันที่ของเอกสารมาแล้ว</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>5</TextID>
+    <DefaultText>ไม่สามารถสร้างเอกสารได้เนื่องจากไม่มีเอกสารอ้างอิง</DefaultText>
+    <Lang1>Can not create document due to there is no reference document.</Lang1>
+    <Lang2>ไม่สามารถสร้างเอกสารได้เนื่องจากไม่มีเอกสารอ้างอิง</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>6</TextID>
+    <DefaultText>เอกสาร PR ถูกยกเลิกไปแล้ว ไม่สามารถอนุญาตให้รับสินค้าได้</DefaultText>
+    <Lang1>PR document is already canceled, can not create document</Lang1>
+    <Lang2>เอกสาร PR ถูกยกเลิกไปแล้ว ไม่สามารถอนุญาตให้รับสินค้าได้</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>7</TextID>
+    <DefaultText>เอกสาร PO ถูกยกเลิกไปแล้ว ไม่สามารถอนุญาตให้รับสินค้าได้</DefaultText>
+    <Lang1>PO document is already canceled, can not create document</Lang1>
+    <Lang2>เอกสาร PO ถูกยกเลิกไปแล้ว ไม่สามารถอนุญาตให้รับสินค้าได้</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>8</TextID>
+    <DefaultText>เอกสารขอถูกยกเลิกไปแล้ว ไม่สามารถอนุญาตให้ทำการโอนสินค้าได้</DefaultText>
+    <Lang1>Document is already canceled, can not create transfer document.</Lang1>
+    <Lang2>เอกสารขอถูกยกเลิกไปแล้ว ไม่สามารถอนุญาตให้ทำการโอนสินค้าได้</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>9</TextID>
+    <DefaultText>เอกสารสั่งซื้ออ้างอิงจากเอกสารรับเลขที่</DefaultText>
+    <Lang1>PO Document refer from receive document number :</Lang1>
+    <Lang2>เอกสารสั่งซื้ออ้างอิงจากเอกสารรับเลขที่</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>10</TextID>
+    <DefaultText>อ้างอิงกับเอกสารสั่งซื้อเลขที่</DefaultText>
+    <Lang1>Refer to PO number</Lang1>
+    <Lang2>อ้างอิงกับเอกสารสั่งซื้อเลขที่</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>11</TextID>
+    <DefaultText>ไม่สามารถทำการยกเลิกข้อมูลเอกสารนี้ได้ เนื่องจากวันที่ของเอกสารอยู่ก่อนหน้าการทำปรับสต๊อกของคลังสินค้านี้ไปแล้ว</DefaultText>
+    <Lang1>Can not cancel document due to document date was before ths last stock end day.</Lang1>
+    <Lang2>ไม่สามารถทำการยกเลิกข้อมูลเอกสารนี้ได้ เนื่องจากวันที่ของเอกสารอยู่ก่อนหน้าการทำปรับสต๊อกของคลังสินค้านี้ไปแล้ว</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>12</TextID>
+    <DefaultText>ไม่สามารถทำการยกเลิกข้อมูลเอกสารนี้ได้ เนื่องจากเอกสารนี้ีมีการรับสินค้าไปแล้ว</DefaultText>
+    <Lang1>Can not allow to cancel this document because this document is already recieved.</Lang1>
+    <Lang2>ไม่สามารถทำการยกเลิกข้อมูลเอกสารนี้ได้ เนื่องจากเอกสารนี้ีมีการรับสินค้าไปแล้ว</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>13</TextID>
+    <DefaultText>ไม่สามารถทำการยกเลิกข้อมูลเอกสารนี้ได้ เนื่องจากเอกสารนี้ีมีการอ้างอิงกับเอกสารอื่นไปแล้ว</DefaultText>
+    <Lang1>Can not allow to cancel this document because there is document refered from this document.</Lang1>
+    <Lang2>ไม่สามารถทำการยกเลิกข้อมูลเอกสารนี้ได้ เนื่องจากเอกสารนี้ีมีการอ้างอิงกับเอกสารอื่นไปแล้ว</Lang2>
+  </Form>
+<Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>14</TextID>
+    <DefaultText>เอกสารดังกล่าวกำลังถูกแก้ไขโดยพนักงานคนอื่นอยู่ ทำให้ไม่สามารถดูเอกสารนี้ได้</DefaultText>
+    <Lang1>This document is editting by other staff.</Lang1>
+    <Lang2>เอกสารดังกล่าวกำลังถูกแก้ไขโดยพนักงานคนอื่นอยู่ ทำให้ไม่สามารถดูเอกสารนี้ได้</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>15</TextID>
+    <DefaultText>Template ดังกล่าวกำลังถูกแก้ไขโดยพนักงานคนอื่นอยู่ ทำให้ไม่สามารถดู Template นี้ได้</DefaultText>
+    <Lang1>This template is editting by other staff.</Lang1>
+    <Lang2>Template ดังกล่าวกำลังถูกแก้ไขโดยพนักงานคนอื่นอยู่ ทำให้ไม่สามารถดู Template นี้ได้</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>16</TextID>
+    <DefaultText>Template code is already exists.</DefaultText>
+    <Lang1>Template code is already exists.</Lang1>
+    <Lang2>Template code นี้ถูกใช้ไปแล้ว</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>17</TextID>
+    <DefaultText>Address 1</DefaultText>
+    <Lang1>Address 1</Lang1>
+    <Lang2>Address 1</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>18</TextID>
+    <DefaultText>Address 2 (Delivery)</DefaultText>
+    <Lang1>Address 2 (Delivery)</Lang1>
+    <Lang2>Address 2 (Delivery)</Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>19</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>20</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>21</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>22</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>23</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID>24</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID></TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID></TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID></TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  <Form>
+    <FormID>1</FormID>
+    <FormName>POROModule</FormName>
+    <TextType>1</TextType>
+    <TextID></TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+ <Form>
+    <FormID>2</FormID>
+    <FormName>StockCardModule</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>ยอดยกมา</DefaultText>
+    <Lang1>Transfer Amount</Lang1>
+    <Lang2>ยอดยกมา</Lang2>
+  </Form>
+ <Form>
+    <FormID>2</FormID>
+    <FormName>StockCardModule</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+ <Form>
+    <FormID>2</FormID>
+    <FormName>StockCardModule</FormName>
+    <TextType>1</TextType>
+    <TextID>3</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+ <Form>
+    <FormID>2</FormID>
+    <FormName>StockCardModule</FormName>
+    <TextType>1</TextType>
+    <TextID>4</TextID>
+    <DefaultText></DefaultText>
+    <Lang1></Lang1>
+    <Lang2></Lang2>
+  </Form>
+  
+</LanguageData>

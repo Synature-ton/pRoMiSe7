@@ -1351,12 +1351,130 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Extra Table</Lang1>
 		<Lang2>เพิ่มโต๊ะพิเศษ</Lang2>
 	</Form>
-	<Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
 		<TextID>46</TextID>
+		<DefaultText>Ref No./ Customer Name</DefaultText>
+		<Lang1>Ref No./ Customer Name</Lang1>
+		<Lang2>Ref No./ Customer Name</Lang2>
 	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>47</TextID>
+		<DefaultText>Reserve Time</DefaultText>
+		<Lang1>Reserve Time</Lang1>
+		<Lang2>Reserve Time</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>48</TextID>
+		<DefaultText>Item Qty.</DefaultText>
+		<Lang1>Item Qty.</Lang1>
+		<Lang2>Item Qty.</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>49</TextID>
+		<DefaultText>Total Price</DefaultText>
+		<Lang1>Total Price</Lang1>
+		<Lang2>Total Price</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>50</TextID>
+		<DefaultText>Sale Mode</DefaultText>
+		<Lang1>Sale Mode</Lang1>
+		<Lang2>Sale Mode</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>51</TextID>
+		<DefaultText>Order From Web</DefaultText>
+		<Lang1>Order From Web</Lang1>
+		<Lang2>Order From Web</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>52</TextID>
+		<DefaultText>เลขอ้างอิง</DefaultText>
+		<Lang1>Ref. Number</Lang1>
+		<Lang2>เลขอ้างอิง</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>53</TextID>
+		<DefaultText>ค้นหา</DefaultText>
+		<Lang1>Search</Lang1>
+		<Lang2>ค้นหา</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>54</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>55</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>56</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>57</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>1</TextType>
+		<TextID>58</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	
+	
+	
+	
+	
+	
+	
 	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
@@ -1519,6 +1637,25 @@ Please check order item again.</Lang1>
 		<Lang1>Buffet Detail</Lang1>
 		<Lang2>รายการบุฟเฟ่ต์</Lang2>
 	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>คำเตือน! ไม่พบรายการที่ใช้เลขอ้างอิงนี้.  กรุณาค้นหาใหม่อีกครั้ง</DefaultText>
+		<Lang1>Warning! This reference no. is not found. Please search again.</Lang1>
+		<Lang2>คำเตือน! ไม่พบรายการที่ใช้เลขอ้างอิงนี้.  กรุณาค้นหาใหม่อีกครั้ง</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>3</FormID>
+		<FormName>FormMainTable</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>กรุณาใส่เลขที่อ้างอิงที่ต้องการค้นหา</DefaultText>
+		<Lang1>Please input reference number.</Lang1>
+		<Lang2>กรุณาใส่เลขที่อ้างอิงที่ต้องการค้นหา</Lang2>
+	</Form>	
+	
 	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
@@ -1860,12 +1997,6 @@ Please check order item again.</Lang1>
 		<DefaultText>รวมราคาทั้งสิ้น :</DefaultText>
 		<Lang1>Grand Total :</Lang1>
 		<Lang2>รวมราคาทั้งสิ้น :</Lang2>
-	</Form>
-	<Form>
-		<FormID>3</FormID>
-		<FormName>FormMainTable</FormName>
-		<TextType>3</TextType>
-		<TextID>40</TextID>
 	</Form>
 	<Form>
 		<FormID>4</FormID>
@@ -6026,6 +6157,51 @@ Exhchange data to HQ...complete</DefaultText>
 		<Lang1>Move Table</Lang1>
 		<Lang2>ย้ายโต๊ะ</Lang2>
 	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>27</FormID>
+		<FormName>FormMoveTable</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>เลือกโต๊ะสำหรับรายการนี้ (Assign Table)</DefaultText>
+		<Lang1>Assign Table</Lang1>
+		<Lang2>เลือกโต๊ะสำหรับรายการนี้</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>27</FormID>
+		<FormName>FormMoveTable</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เลือกโต๊ะสำหรับรายการนี้ (Assign Table)</DefaultText>
+		<Lang1>Assign Table</Lang1>
+		<Lang2>เลือกโต๊ะสำหรับรายการนี้</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>27</FormID>
+		<FormName>FormMoveTable</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>รายการของ :</DefaultText>
+		<Lang1>Customer :</Lang1>
+		<Lang2>รายการของ :</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>27</FormID>
+		<FormName>FormMoveTable</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>เลือกโต๊ะที่ต้องการ :</DefaultText>
+		<Lang1>Select Target Table :</Lang1>
+		<Lang2>เลือกโต๊ะที่ต้องการ :</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>27</FormID>
+		<FormName>FormMoveTable</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>เลือกโต๊ะ</DefaultText>
+		<Lang1>Assign Table</Lang1>
+		<Lang2>เลือกโต๊ะ</Lang2>
+	</Form>
 	<Form>
 		<FormID>27</FormID>
 		<FormName>FormMoveTable</FormName>
@@ -9013,13 +9189,15 @@ Front stock report (D'oro)</DefaultText>
 		<Lang1>Save Member</Lang1>
 		<Lang2>บันทึกสมาชิก</Lang2>
 	</Form>
-	<FormID>61</FormID>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>61</FormID>
 		<FormName>FormNewMember</FormName>
 		<TextType>1</TextType>
 		<TextID>23</TextID>
 		<DefaultText>บัตรประชาชน :</DefaultText>
 		<Lang1>ID Card :</Lang1>
 		<Lang2>บัตรประชาชน :</Lang2>	
+	</Form>
 	<Form>
 		<FormID>61</FormID>
 		<FormName>FormNewMember</FormName>
@@ -11619,6 +11797,186 @@ Current sale date is</Lang1>
 		<FormName>FormExtraTable</FormName>
 		<TextType>1</TextType>
 		<TextID>8</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Manage Order From Web API</DefaultText>
+		<Lang1>Manage Order From Web API</Lang1>
+		<Lang2>Manage Order From Web API</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Customer Name :</DefaultText>
+		<Lang1>Customer Name :</Lang1>
+		<Lang2>ลูกค้า :</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Order Time :</DefaultText>
+		<Lang1>Order Time :</Lang1>
+		<Lang2>เวลาที่สั่ง :</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Reserve Time :</DefaultText>
+		<Lang1>Reserve Time :</Lang1>
+		<Lang2>เวลามารับ/ ใช้บริการ :</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Print Receipt</DefaultText>
+		<Lang1>Print Receipt</Lang1>
+		<Lang2>พิมพ์ใบเสร็จ</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ส่งรายการ</DefaultText>
+		<Lang1>Send Order</Lang1>
+		<Lang2>ส่งรายการ</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Discount</DefaultText>
+		<Lang1>Discount</Lang1>
+		<Lang2>Discount</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Fast  Discount</DefaultText>
+		<Lang1>Fast  Discount</Lang1>
+		<Lang2>Fast  Discount</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Close</DefaultText>
+		<Lang1>Close</Lang1>
+		<Lang2>ปิด</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Assign Table</DefaultText>
+		<Lang1>Assign Table</Lang1>
+		<Lang2>เลือกโต๊ะ</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Pick up and Close</DefaultText>
+		<Lang1>Pick up and Close</Lang1>
+		<Lang2>รับของแล้ว</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Item Code</DefaultText>
+		<Lang1>Item Code</Lang1>
+		<Lang2>รหัสสินค้า</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Item Name</DefaultText>
+		<Lang1>Item Name</Lang1>
+		<Lang2>ชื่อสินค้า</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Price/Unit</DefaultText>
+		<Lang1>Price/Unit</Lang1>
+		<Lang2>ราคา/หน่วย</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Qty.</DefaultText>
+		<Lang1>Qty.</Lang1>
+		<Lang2>จน.</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Total</DefaultText>
+		<Lang1>Total</Lang1>
+		<Lang2>ราคารวม</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>ทำรายการ</DefaultText>
+		<Lang1>Take Order</Lang1>
+		<Lang2>ทำรายการ</Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>	<!--insert date 30/07/19 Patch6208-->
+		<FormID>76</FormID>
+		<FormName>FormManageOrderFromWebAPI</FormName>
+		<TextType>1</TextType>
+		<TextID></TextID>
 		<DefaultText></DefaultText>
 		<Lang1></Lang1>
 		<Lang2></Lang2>

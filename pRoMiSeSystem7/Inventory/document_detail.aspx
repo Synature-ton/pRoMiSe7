@@ -5,6 +5,8 @@
 <%@Import Namespace="POSMySQL.POSControl" %>
 <%@Import Namespace="BackOfficeClass.Configuration" %>
 <%@Import Namespace="pRoMiSeLanguage" %>
+<%@Import Namespace="POSBackOfficeReport" %>
+<%@Import Namespace="pRoMiSeUtil.pRoMiSeUtil" %>
 <%@Import Namespace="POSMySQL.GlobalFunctions" %>
 <%@Import Namespace="System.Globalization" %>
 <%@Import Namespace="CostingClass.pRoMiSeCosting" %>
@@ -182,6 +184,7 @@ Dim CostInfo As New CostClass()
                 Text10.InnerHtml = "Std Cost/Unit"
                 Text11.InnerHtml = "Total Cost"
 			
+                Dim bolDisplayTemplateCodeInDocumentNumber As Boolean
                 Dim ChkDocType As DataTable = getInfo.GetDocTypeID(Request.QueryString("DocumentID"), Request.QueryString("ShopID"), objCnn)
                 Dim VendorData As DataTable
                 Dim dtTable As New DataTable()
@@ -207,7 +210,7 @@ Dim CostInfo As New CostClass()
                 Dim outputString As StringBuilder = New StringBuilder
                 Dim strCostFormat, strQtyFormat As String
                 Dim SelectedText As String = "text"
-                Dim DocHeader As String
+                Dim strDocNumber, strDocRefNumber, strTemplateCode As String
                 Dim TotalCost As Double = 0
                 Dim SubTotalCost As Double = 0
                 Dim SubTotalCost2 As Double = 0
@@ -233,15 +236,31 @@ Dim CostInfo As New CostClass()
                 End If
 			
                 If VendorData.Rows.Count > 0 Then
-                    DocHeader = FormatHeader.DocumentNumber(VendorData.Rows(0)("ShopID"), VendorData.Rows(0)("DocumentTypeID"), VendorData.Rows(0)("DocumentID"), Session("LangID"), GlobalParam.YearType, objCnn)
+                    bolDisplayTemplateCodeInDocumentNumber = POSBackOfficeReport.ReportShareSQL.Inventory_DisplayTemplateCodeInDocumentNumber(objDB, objCnn)
+                    
+                    strDocNumber = FormatHeader.DocumentNumber(VendorData.Rows(0)("ShopID"), VendorData.Rows(0)("DocumentTypeID"), VendorData.Rows(0)("DocumentID"), Session("LangID"), GlobalParam.YearType, objCnn)
+                    If bolDisplayTemplateCodeInDocumentNumber = True Then
+                        strTemplateCode = POSBackOfficeReport.ReportShareSQL.Inventory_GetTemplateCodeFromDocument(objDB, objCnn, _
+                                                     VendorData.Rows(0)("DocumentID"), VendorData.Rows(0)("ShopID"))
+                        strDocNumber = pRoMiSeUtil.pRoMiSeUtil.SetTemplateCodeToDocumentNumber(strDocNumber, strTemplateCode)
+                    End If
+                    
                     If Not IsDBNull(VendorData.Rows(0)("DocIDRefShopID")) And Not IsDBNull(VendorData.Rows(0)("DocumentTypeIDRef")) And Not IsDBNull(VendorData.Rows(0)("DocumentIDRef")) Then
-                        DocRefText.InnerHtml = "<a href=""JavaScript: newWindow = window.open( 'document_detail.aspx?MaterialID=0" & "&DocumentID=" & VendorData.Rows(i)("DocumentIDRef").ToString & "&ShopID=" & VendorData.Rows(i)("DocIDRefShopID").ToString + "', '', 'width=800,height=700,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" + FormatHeader.DocumentNumber(VendorData.Rows(0)("DocIDRefShopID"), VendorData.Rows(0)("DocumentTypeIDRef"), VendorData.Rows(0)("DocumentIDRef"), Session("LangID"), GlobalParam.YearType, objCnn) + "</a>"
+                        strDocRefNumber = FormatHeader.DocumentNumber(VendorData.Rows(0)("DocIDRefShopID"), VendorData.Rows(0)("DocumentTypeIDRef"), _
+                                                           VendorData.Rows(0)("DocumentIDRef"), Session("LangID"), GlobalParam.YearType, objCnn)
+                        If bolDisplayTemplateCodeInDocumentNumber = True Then
+                            strTemplateCode = POSBackOfficeReport.ReportShareSQL.Inventory_GetTemplateCodeFromDocument(objDB, objCnn, _
+                                                         VendorData.Rows(0)("DocumentIDRef"), VendorData.Rows(0)("DocIDRefShopID"))
+                            strDocRefNumber = pRoMiSeUtil.pRoMiSeUtil.SetTemplateCodeToDocumentNumber(strDocRefNumber, strTemplateCode)
+                        End If
+                        DocRefText.InnerHtml = "<a href=""JavaScript: newWindow = window.open( 'document_detail.aspx?MaterialID=0" & "&DocumentID=" & VendorData.Rows(i)("DocumentIDRef").ToString & "&ShopID=" & VendorData.Rows(i)("DocIDRefShopID").ToString + "', '', 'width=800,height=700,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" & _
+                                strDocRefNumber + "</a>"
                     Else
                         DocRefText.InnerHtml = "-"
                     End If
                     StatusText.InnerHtml = VendorData.Rows(0)("DocumentStatusText") ' + "::" + VendorData.Rows(0)("DocumentTypeID").ToString
                     DocTypeText.InnerHtml = VendorData.Rows(0)("DocumentTypeName")
-                    DocNoText.InnerHtml = DocHeader
+                    DocNoText.InnerHtml = strDocNumber
                     DocDateText.InnerHtml = DateTimeUtil.FormatDateTime(VendorData.Rows(0)("DocumentDate"), "DateOnly")
                     If Not IsDBNull(VendorData.Rows(0)("ToInvName")) Then
                         InventoryText.InnerHtml = VendorData.Rows(0)("ToInvName")
@@ -315,6 +334,12 @@ Dim CostInfo As New CostClass()
                         VendorTelFax += "/Fax:-"
                     End If
                     VendorTelFaxText.InnerHtml = VendorTelFax
+                    
+                    If VendorData.Rows(0)("DocumentTypeID") = 63 Then
+                        VendorData.Rows(0)("TermOfPaymentText") = ""
+                    ElseIf Not IsDBNull(VendorData.Rows(0)("TermOfPaymentText")) Then
+                        VendorData.Rows(0)("TermOfPaymentText") = "-"
+                    End If
 				
                     If VendorData.Rows(0)("TermOfPayment") = 2 Then
                         TermOfPaymentText.InnerHtml = VendorData.Rows(0)("TermOfPaymentText") + " " + VendorData.Rows(0)("CreditDay").ToString + " day(s)"
