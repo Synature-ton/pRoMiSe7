@@ -4366,5 +4366,10 @@ Create TABLE PMSCMC_PaymentARAccountInfo(
 ) ENGINE=InnoDB;
 
 -- INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6205'));
-INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6207'));
+-- INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6207'));
 -- 12/07/2019
+INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6208'));
+
+UPDATE DocumentTypeProperty SET PrintFormFileName_Lang1= 'CRReceiveFromTransfer-EN.rpt', PrintFormFileName_Lang2 = 'CRReceiveFromTransfer-TH.rpt' WHERE DocumentTypeID = 25 AND PrintFormFileName_Lang1= 'CRReceiveTransferDocument-EN.rpt';
+
+
