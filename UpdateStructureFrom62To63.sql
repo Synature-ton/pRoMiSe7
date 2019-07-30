@@ -4154,7 +4154,7 @@ CREATE TABLE DocumentTemplateHideMaterial (
  PRIMARY KEY  (TemplateID, TemplateShopID, DocDetailID, MaterialID)
 ) ENGINE=InnoDB;
 
-
+UPDATE DocumentTypeProperty SET PrintFormFileName_Lang1= 'CRReceiveFromTransfer-EN.rpt', PrintFormFileName_Lang2 = 'CRReceiveFromTransfer-TH.rpt' WHERE DocumentTypeID = 25 AND PrintFormFileName_Lang1= 'CRReceiveTransferDocument-EN.rpt';
 
 
 
