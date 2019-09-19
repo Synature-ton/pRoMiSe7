@@ -171,67 +171,67 @@ Dim SaleReportPageID As Integer = 6
 Dim MemberDiscountPageID As Integer = 101
 Dim bolMemberDiscountReport As Boolean
 
-Sub Page_Load()
-	If User.Identity.IsAuthenticated  AND Session("Report_PromotionByProduct") Then
+    Sub Page_Load()
+        If User.Identity.IsAuthenticated And Session("Report_PromotionByProduct") Then
 		
-	Try	
-		objCnn = getCnn.EstablishConnection()
+            Try
+                objCnn = getCnn.EstablishConnection()
 		
-		Dim PropertyInfo As DataTable = getProp.PropertyInfo(1,objCnn)
+                Dim PropertyInfo As DataTable = getProp.PropertyInfo(1, objCnn)
 		
-		ServiceProduct.Value = PropertyInfo.Rows(0)("ServiceProduct")
-		SubmitForm.Attributes.Item("onclick") = "this.disabled=true; " & GetPostBackEventReference(SubmitForm).ToString
+                ServiceProduct.Value = PropertyInfo.Rows(0)("ServiceProduct")
+                SubmitForm.Attributes.Item("onclick") = "this.disabled=true; " & GetPostBackEventReference(SubmitForm).ToString
 		
-		Dim i As Integer
-		Dim z As Integer
-		If NOT Request.QueryString("ToLangID") Is Nothing Then
-			If IsNumeric(Request.QueryString("ToLangID")) Then
-				Session("LangID") = Request.QueryString("ToLangID")
-			End If
-		End If
+                Dim i As Integer
+                Dim z As Integer
+                If Not Request.QueryString("ToLangID") Is Nothing Then
+                    If IsNumeric(Request.QueryString("ToLangID")) Then
+                        Session("LangID") = Request.QueryString("ToLangID")
+                    End If
+                End If
 
-		Dim CultureString As String = Util.GetCultureByLangID(Session("LangID"), objCnn)
-		Dim PageName as string = System.IO.Path.GetFileName(Request.ServerVariables("SCRIPT_NAME"))
-		Dim LangListText As String = ""
-		Dim LangListData As DataTable
-		Dim LangData As DataTable = getProp.GetLang(LangListText,LangListData,PageName & "?ID" & Request.QueryString("ID") & "&Order=" + Request.QueryString("Order") & "&GroupID=" & Request.QueryString("GroupID"),MemberDiscountPageID,1,-1,Request,objCnn)
-		Dim LangText As String = "lang" + Session("LangID").ToString
+                Dim CultureString As String = Util.GetCultureByLangID(Session("LangID"), objCnn)
+                Dim PageName As String = System.IO.Path.GetFileName(Request.ServerVariables("SCRIPT_NAME"))
+                Dim LangListText As String = ""
+                Dim LangListData As DataTable
+                Dim LangData As DataTable = getProp.GetLang(LangListText, LangListData, PageName & "?ID" & Request.QueryString("ID") & "&Order=" + Request.QueryString("Order") & "&GroupID=" & Request.QueryString("GroupID"), MemberDiscountPageID, 1, -1, Request, objCnn)
+                Dim LangText As String = "lang" + Session("LangID").ToString
 		
-		For z = 0 To LangData.Rows.Count - 1
-			Dim TestLabel =	Util.FindControlRecursive(mainForm,"LangText" & z)
-			Try
-				TestLabel.Text = LangData.Rows(z)(LangText)
-			Catch ex As Exception
-			End Try
-		Next
-		LangList.Text = LangListText
+                For z = 0 To LangData.Rows.Count - 1
+                    Dim TestLabel = Util.FindControlRecursive(mainForm, "LangText" & z)
+                    Try
+                        TestLabel.Text = LangData.Rows(z)(LangText)
+                    Catch ex As Exception
+                    End Try
+                Next
+                LangList.Text = LangListText
 		
-		Dim LangData2 As DataTable = getProp.GetLangData(SaleReportPageID,2,-1,Request)
-		Dim DiscountLangData As DataTable = getProp.GetLangData(MemberDiscountPageID,2,-1,Request)
+                Dim LangData2 As DataTable = getProp.GetLangData(SaleReportPageID, 2, -1, Request)
+                Dim DiscountLangData As DataTable = getProp.GetLangData(MemberDiscountPageID, 2, -1, Request)
 	
-		If Request.QueryString("ID") = 703 then
-			LangText0.Text =BackOfficeReport.GetLanguageText(DiscountLangData,7,LangText,"Staff Discount Report")  
-			bolMemberDiscountReport = False
-		Else
-			bolMemberDiscountReport = True
-		End If
+                If Request.QueryString("ID") = 703 Then
+                    LangText0.Text = BackOfficeReport.GetLanguageText(DiscountLangData, 7, LangText, "Staff Discount Report")
+                    bolMemberDiscountReport = False
+                Else
+                    bolMemberDiscountReport = True
+                End If
 	
-		Dim LangDefault As DataTable = getProp.GetLangData(999,2,-1,Request)
-		If LangDefault.Rows.Count >= 2 Then
-			PrintText.Text = LangDefault.Rows(0)(LangText)
-			Export.Text = LangDefault.Rows(1)(LangText)
-		End If
+                Dim LangDefault As DataTable = getProp.GetLangData(999, 2, -1, Request)
+                If LangDefault.Rows.Count >= 2 Then
+                    PrintText.Text = LangDefault.Rows(0)(LangText)
+                    Export.Text = LangDefault.Rows(1)(LangText)
+                End If
  
                 SubmitForm.Text = LangDefault.Rows(3)(LangText)
                 chkDisplayDate.Text = BackOfficeReport.GetLanguageText(DiscountLangData, 14, LangText, "แสดงสินค้าตามวันที่ขาย")
 
-		ResultText.InnerHtml = ""
-		ResultSearchText.InnerHtml = ""
-		errorMsg.InnerHtml = ""
-		ExtraHeader.InnerHtml = ""
+                ResultText.InnerHtml = ""
+                ResultSearchText.InnerHtml = ""
+                errorMsg.InnerHtml = ""
+                ExtraHeader.InnerHtml = ""
 		
-		Dim HeaderString As String = ""
-		Dim strTemp As String
+                Dim HeaderString As String = ""
+                Dim strTemp As String
                 If optViewByBill.Checked = True Then
                     'Member/ StaffCode
                     If bolMemberDiscountReport = True Then
@@ -302,57 +302,57 @@ Sub Page_Load()
                     End If
                     HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
                 End If
-		TableHeaderText.InnerHtml = HeaderString
+                TableHeaderText.InnerHtml = HeaderString
 		
-		StartTable.InnerHtml = "<table border=""1"" cellpadding=""4"" cellspacing=""0"" style=""border-collapse:collapse;"" width=""100%"">"
+                startTable.InnerHtml = "<table border=""1"" cellpadding=""4"" cellspacing=""0"" style=""border-collapse:collapse;"" width=""100%"">"
 
                 ReportProductOrdering.Items(0).Text = LangData2.Rows(2)(LangText)
-		ReportProductOrdering.Items(0).Value = "p.ProductCode"
-		ReportProductOrdering.Items(1).Text = LangData2.Rows(3)(LangText)
-		ReportProductOrdering.Items(1).Value = "p.ProductName"
-		If Request.Form("ReportProductOrdering") = "p.ProductCode" Then
-			ReportProductOrdering.Items(0).Selected = True
-		ElseIf Request.Form("ReportProductOrdering") = "p.ProductName" Then
-			ReportProductOrdering.Items(1).Selected = True
-		Else
-			ReportProductOrdering.Items(0).Selected = True
-		End If
-		ReportProductOrdering.Visible = False
+                ReportProductOrdering.Items(0).Value = "p.ProductCode"
+                ReportProductOrdering.Items(1).Text = LangData2.Rows(3)(LangText)
+                ReportProductOrdering.Items(1).Value = "p.ProductName"
+                If Request.Form("ReportProductOrdering") = "p.ProductCode" Then
+                    ReportProductOrdering.Items(0).Selected = True
+                ElseIf Request.Form("ReportProductOrdering") = "p.ProductName" Then
+                    ReportProductOrdering.Items(1).Selected = True
+                Else
+                    ReportProductOrdering.Items(0).Selected = True
+                End If
+                ReportProductOrdering.Visible = False
 		
-		DocumentToDateParam.InnerHtml = LangDefault.Rows(22)(LangText)
+                DocumentToDateParam.InnerHtml = LangDefault.Rows(22)(LangText)
 			
-		DailyDate.YearType = GlobalParam.YearType
-		DailyDate.FormName = "DocDaily"
-		DailyDate.StartYear = GlobalParam.StartYear
-		DailyDate.EndYear = GlobalParam.EndYear
-		DailyDate.LangID = Session("LangID")
-		DailyDate.Lang_Data = LangDefault
-		DailyDate.Culture = CultureString
+                DailyDate.YearType = GlobalParam.YearType
+                DailyDate.FormName = "DocDaily"
+                DailyDate.StartYear = GlobalParam.StartYear
+                DailyDate.EndYear = GlobalParam.EndYear
+                DailyDate.LangID = Session("LangID")
+                DailyDate.Lang_Data = LangDefault
+                DailyDate.Culture = CultureString
 		
-		CurrentDate.YearType = GlobalParam.YearType
-		CurrentDate.FormName = "Doc"
-		CurrentDate.StartYear = GlobalParam.StartYear
-		CurrentDate.EndYear = GlobalParam.EndYear
-		CurrentDate.LangID = Session("LangID")
-		CurrentDate.Lang_Data = LangDefault
-		CurrentDate.Culture = CultureString
+                CurrentDate.YearType = GlobalParam.YearType
+                CurrentDate.FormName = "Doc"
+                CurrentDate.StartYear = GlobalParam.StartYear
+                CurrentDate.EndYear = GlobalParam.EndYear
+                CurrentDate.LangID = Session("LangID")
+                CurrentDate.Lang_Data = LangDefault
+                CurrentDate.Culture = CultureString
 		
-		ToDate.YearType = GlobalParam.YearType
-		ToDate.FormName = "DocTo"
-		ToDate.StartYear = GlobalParam.StartYear
-		ToDate.EndYear = GlobalParam.EndYear
-		ToDate.LangID = Session("LangID")
-		ToDate.Lang_Data = LangDefault
-		ToDate.Culture = CultureString
+                ToDate.YearType = GlobalParam.YearType
+                ToDate.FormName = "DocTo"
+                ToDate.StartYear = GlobalParam.StartYear
+                ToDate.EndYear = GlobalParam.EndYear
+                ToDate.LangID = Session("LangID")
+                ToDate.Lang_Data = LangDefault
+                ToDate.Culture = CultureString
 		
-		MonthYearDate.YearType = GlobalParam.YearType
-		MonthYearDate.FormName = "MonthYearDate"
-		MonthYearDate.StartYear = GlobalParam.StartYear
-		MonthYearDate.EndYear = GlobalParam.EndYear
-		MonthYearDate.LangID = Session("LangID")
-		MonthYearDate.ShowDay = False
-		MonthYearDate.Lang_Data = LangDefault
-		MonthYearDate.Culture = CultureString
+                MonthYearDate.YearType = GlobalParam.YearType
+                MonthYearDate.FormName = "MonthYearDate"
+                MonthYearDate.StartYear = GlobalParam.StartYear
+                MonthYearDate.EndYear = GlobalParam.EndYear
+                MonthYearDate.LangID = Session("LangID")
+                MonthYearDate.ShowDay = False
+                MonthYearDate.Lang_Data = LangDefault
+                MonthYearDate.Culture = CultureString
 					
                 optViewByBill.Text = BackOfficeReport.GetLanguageText(DiscountLangData, 1, LangText, "รายงานส่วนลดสมาชิกตามใบเสร็จ")
                 optViewByProduct.Text = BackOfficeReport.GetLanguageText(DiscountLangData, 2, LangText, "รายงานส่วนลดสมาชิกตามสินค้า")
@@ -370,145 +370,145 @@ Sub Page_Load()
                 DailyDate.SelectedDay = Session("DocDailyDay")
 		
 		
-		If IsNumeric(Request.Form("DocDaily_Month")) Then 
-			Session("DocDaily_Month") = Request.Form("DocDaily_Month")
-		Else If IsNumeric(Request.QueryString("DocDaily_Month")) Then 
-			Session("DocDaily_Month") = Request.QueryString("DocDaily_Month")
-		Else If Trim(Session("DocDaily_Month")) = "" Then
-			Session("DocDaily_Month") = DateTime.Now.Month
-		Else If Trim(Session("DocDaily_Month")) = 0 And Not Page.IsPostBack Then
-			Session("DocDaily_Month") = DateTime.Now.Month
-		End If
-		If Page.IsPostBack AND Request.Form("DocDaily_Month") = "" Then Session("DocDaily_Month") = 0
-		DailyDate.SelectedMonth = Session("DocDaily_Month")
+                If IsNumeric(Request.Form("DocDaily_Month")) Then
+                    Session("DocDaily_Month") = Request.Form("DocDaily_Month")
+                ElseIf IsNumeric(Request.QueryString("DocDaily_Month")) Then
+                    Session("DocDaily_Month") = Request.QueryString("DocDaily_Month")
+                ElseIf Trim(Session("DocDaily_Month")) = "" Then
+                    Session("DocDaily_Month") = DateTime.Now.Month
+                ElseIf Trim(Session("DocDaily_Month")) = 0 And Not Page.IsPostBack Then
+                    Session("DocDaily_Month") = DateTime.Now.Month
+                End If
+                If Page.IsPostBack And Request.Form("DocDaily_Month") = "" Then Session("DocDaily_Month") = 0
+                DailyDate.SelectedMonth = Session("DocDaily_Month")
 		
-		If IsNumeric(Request.Form("DocDaily_Year")) Then 
-			Session("DocDaily_Year") = Request.Form("DocDaily_Year")
-		Else If IsNumeric(Request.QueryString("DocDaily_Year")) Then 
-			Session("DocDaily_Year") = Request.QueryString("DocDaily_Year")
-		Else If Trim(Session("DocDaily_Year")) = "" Then
-			Session("DocDaily_Year") = DateTime.Now.Year
-		Else If Trim(Session("DocDaily_Year")) = 0 And Not Page.IsPostBack Then
-			Session("DocDaily_Year") = DateTime.Now.Year
-		End If
-		If Page.IsPostBack AND Request.Form("DocDaily_Year") = "" Then Session("DocDaily_Year") = 0
-		DailyDate.SelectedYear = Session("DocDaily_Year")
+                If IsNumeric(Request.Form("DocDaily_Year")) Then
+                    Session("DocDaily_Year") = Request.Form("DocDaily_Year")
+                ElseIf IsNumeric(Request.QueryString("DocDaily_Year")) Then
+                    Session("DocDaily_Year") = Request.QueryString("DocDaily_Year")
+                ElseIf Trim(Session("DocDaily_Year")) = "" Then
+                    Session("DocDaily_Year") = DateTime.Now.Year
+                ElseIf Trim(Session("DocDaily_Year")) = 0 And Not Page.IsPostBack Then
+                    Session("DocDaily_Year") = DateTime.Now.Year
+                End If
+                If Page.IsPostBack And Request.Form("DocDaily_Year") = "" Then Session("DocDaily_Year") = 0
+                DailyDate.SelectedYear = Session("DocDaily_Year")
 		
-		If IsNumeric(Request.Form("Doc_Day")) Then 
-			Session("DocDay") = Request.Form("Doc_Day")
-		Else If IsNumeric(Request.QueryString("Doc_Day")) Then 
-			Session("DocDay") = Request.QueryString("Doc_Day")
-		Else If Trim(Session("DocDay")) = "" Then
-			Session("DocDay") = DateTime.Now.Day
-		Else If Trim(Session("DocDay")) = 0 And Not Page.IsPostBack Then
-			Session("DocDay") = DateTime.Now.Day
-		End If
-		If Page.IsPostBack AND Request.Form("Doc_Day") = "" Then Session("DocDay") = 0
-		CurrentDate.SelectedDay = Session("DocDay")
-		
-		
-		If IsNumeric(Request.Form("Doc_Month")) Then 
-			Session("Doc_Month") = Request.Form("Doc_Month")
-		Else If IsNumeric(Request.QueryString("Doc_Month")) Then 
-			Session("Doc_Month") = Request.QueryString("Doc_Month")
-		Else If Trim(Session("Doc_Month")) = "" Then
-			Session("Doc_Month") = DateTime.Now.Month
-		Else If Trim(Session("Doc_Month")) = 0 And Not Page.IsPostBack Then
-			Session("Doc_Month") = DateTime.Now.Month
-		End If
-		If Page.IsPostBack AND Request.Form("Doc_Month") = "" Then Session("Doc_Month") = 0
-		CurrentDate.SelectedMonth = Session("Doc_Month")
-		
-		If IsNumeric(Request.Form("Doc_Year")) Then 
-			Session("Doc_Year") = Request.Form("Doc_Year")
-		Else If IsNumeric(Request.QueryString("Doc_Year")) Then 
-			Session("Doc_Year") = Request.QueryString("Doc_Year")
-		Else If Trim(Session("Doc_Year")) = "" Then
-			Session("Doc_Year") = DateTime.Now.Year
-		Else If Trim(Session("Doc_Year")) = 0 And Not Page.IsPostBack Then
-			Session("Doc_Year") = DateTime.Now.Year
-		End If
-		If Page.IsPostBack AND Request.Form("Doc_Year") = "" Then Session("Doc_Year") = 0
-		CurrentDate.SelectedYear = Session("Doc_Year")
-		
-		If IsNumeric(Request.Form("DocTo_Day")) Then 
-			Session("DocTo_Day") = Request.Form("DocTo_Day")
-		Else If IsNumeric(Request.QueryString("DocTo_Day")) Then 
-			Session("DocTo_Day") = Request.QueryString("DocTo_Day")
-		Else If Trim(Session("DocTo_Day")) = "" Then
-			Session("DocTo_Day") = DateTime.Now.Day
-		Else If Trim(Session("DocTo_Day")) = 0 And Not Page.IsPostBack Then
-			Session("DocTo_Day") = DateTime.Now.Day
-		End If
-		If Page.IsPostBack AND Request.Form("DocTo_Day") = "" Then Session("DocTo_Day") = 0
-		ToDate.SelectedDay = Session("DocTo_Day")
+                If IsNumeric(Request.Form("Doc_Day")) Then
+                    Session("DocDay") = Request.Form("Doc_Day")
+                ElseIf IsNumeric(Request.QueryString("Doc_Day")) Then
+                    Session("DocDay") = Request.QueryString("Doc_Day")
+                ElseIf Trim(Session("DocDay")) = "" Then
+                    Session("DocDay") = DateTime.Now.Day
+                ElseIf Trim(Session("DocDay")) = 0 And Not Page.IsPostBack Then
+                    Session("DocDay") = DateTime.Now.Day
+                End If
+                If Page.IsPostBack And Request.Form("Doc_Day") = "" Then Session("DocDay") = 0
+                CurrentDate.SelectedDay = Session("DocDay")
 		
 		
-		If IsNumeric(Request.Form("DocTo_Month")) Then 
-			Session("DocTo_Month") = Request.Form("DocTo_Month")
-		Else If IsNumeric(Request.QueryString("DocTo_Month")) Then 
-			Session("DocTo_Month") = Request.QueryString("DocTo_Month")
-		Else If Trim(Session("DocTo_Month")) = "" Then
-			Session("DocTo_Month") = DateTime.Now.Month
-		Else If Trim(Session("DocTo_Month")) = 0 And Not Page.IsPostBack Then
-			Session("DocTo_Month") = DateTime.Now.Month
-		End If
-		If Page.IsPostBack AND Request.Form("DocTo_Month") = "" Then Session("DocTo_Month") = 0
-		ToDate.SelectedMonth = Session("DocTo_Month")
+                If IsNumeric(Request.Form("Doc_Month")) Then
+                    Session("Doc_Month") = Request.Form("Doc_Month")
+                ElseIf IsNumeric(Request.QueryString("Doc_Month")) Then
+                    Session("Doc_Month") = Request.QueryString("Doc_Month")
+                ElseIf Trim(Session("Doc_Month")) = "" Then
+                    Session("Doc_Month") = DateTime.Now.Month
+                ElseIf Trim(Session("Doc_Month")) = 0 And Not Page.IsPostBack Then
+                    Session("Doc_Month") = DateTime.Now.Month
+                End If
+                If Page.IsPostBack And Request.Form("Doc_Month") = "" Then Session("Doc_Month") = 0
+                CurrentDate.SelectedMonth = Session("Doc_Month")
 		
-		If IsNumeric(Request.Form("DocTo_Year")) Then 
-			Session("DocTo_Year") = Request.Form("DocTo_Year")
-		Else If IsNumeric(Request.QueryString("DocTo_Year")) Then 
-			Session("DocTo_Year") = Request.QueryString("DocTo_Year")
-		Else If Trim(Session("DocTo_Year")) = "" Then
-			Session("DocTo_Year") = DateTime.Now.Year
-		Else If Trim(Session("DocTo_Year")) = 0 And Not Page.IsPostBack Then
-			Session("DocTo_Year") = DateTime.Now.Year
-		End If
-		If Page.IsPostBack AND Request.Form("DocTo_Year") = "" Then Session("DocTo_Year") = 0
-		ToDate.SelectedYear = Session("DocTo_Year")
+                If IsNumeric(Request.Form("Doc_Year")) Then
+                    Session("Doc_Year") = Request.Form("Doc_Year")
+                ElseIf IsNumeric(Request.QueryString("Doc_Year")) Then
+                    Session("Doc_Year") = Request.QueryString("Doc_Year")
+                ElseIf Trim(Session("Doc_Year")) = "" Then
+                    Session("Doc_Year") = DateTime.Now.Year
+                ElseIf Trim(Session("Doc_Year")) = 0 And Not Page.IsPostBack Then
+                    Session("Doc_Year") = DateTime.Now.Year
+                End If
+                If Page.IsPostBack And Request.Form("Doc_Year") = "" Then Session("Doc_Year") = 0
+                CurrentDate.SelectedYear = Session("Doc_Year")
 		
-		If IsNumeric(Request.Form("MonthYearDate_Day")) Then 
-			Session("MonthYearDate_Day") = Request.Form("MonthYearDate_Day")
-		Else If IsNumeric(Request.QueryString("MonthYearDate_Day")) Then 
-			Session("MonthYearDate_Day") = Request.QueryString("MonthYearDate_Day")
-		Else If Trim(Session("MonthYearDate_Day")) = "" Then
-			Session("MonthYearDate_Day") = DateTime.Now.Day
-		Else If Trim(Session("MonthYearDate_Day")) = 0 And Not Page.IsPostBack Then
-			Session("MonthYearDate_Day") = DateTime.Now.Day
-		End If
-		If Page.IsPostBack AND Request.Form("MonthYearDate_Day") = "" Then Session("MonthYearDate_Day") = 0
-		MonthYearDate.SelectedDay = Session("MonthYearDate_Day")
+                If IsNumeric(Request.Form("DocTo_Day")) Then
+                    Session("DocTo_Day") = Request.Form("DocTo_Day")
+                ElseIf IsNumeric(Request.QueryString("DocTo_Day")) Then
+                    Session("DocTo_Day") = Request.QueryString("DocTo_Day")
+                ElseIf Trim(Session("DocTo_Day")) = "" Then
+                    Session("DocTo_Day") = DateTime.Now.Day
+                ElseIf Trim(Session("DocTo_Day")) = 0 And Not Page.IsPostBack Then
+                    Session("DocTo_Day") = DateTime.Now.Day
+                End If
+                If Page.IsPostBack And Request.Form("DocTo_Day") = "" Then Session("DocTo_Day") = 0
+                ToDate.SelectedDay = Session("DocTo_Day")
 		
 		
-		If IsNumeric(Request.Form("MonthYearDate_Month")) Then 
-			Session("MonthYearDate_Month") = Request.Form("MonthYearDate_Month")
-		Else If IsNumeric(Request.QueryString("MonthYearDate_Month")) Then 
-			Session("MonthYearDate_Month") = Request.QueryString("MonthYearDate_Month")
-		Else If Trim(Session("MonthYearDate_Month")) = "" Then
-			Session("MonthYearDate_Month") = DateTime.Now.Month
-		Else If Trim(Session("MonthYearDate_Month")) = 0 And Not Page.IsPostBack Then
-			Session("MonthYearDate_Month") = DateTime.Now.Month
-		End If
-		If Page.IsPostBack AND Request.Form("MonthYearDate_Month") = "" Then Session("MonthYearDate_Month") = 0
-		MonthYearDate.SelectedMonth = Session("MonthYearDate_Month")
+                If IsNumeric(Request.Form("DocTo_Month")) Then
+                    Session("DocTo_Month") = Request.Form("DocTo_Month")
+                ElseIf IsNumeric(Request.QueryString("DocTo_Month")) Then
+                    Session("DocTo_Month") = Request.QueryString("DocTo_Month")
+                ElseIf Trim(Session("DocTo_Month")) = "" Then
+                    Session("DocTo_Month") = DateTime.Now.Month
+                ElseIf Trim(Session("DocTo_Month")) = 0 And Not Page.IsPostBack Then
+                    Session("DocTo_Month") = DateTime.Now.Month
+                End If
+                If Page.IsPostBack And Request.Form("DocTo_Month") = "" Then Session("DocTo_Month") = 0
+                ToDate.SelectedMonth = Session("DocTo_Month")
 		
-		If IsNumeric(Request.Form("MonthYearDate_Year")) Then 
-			Session("MonthYearDate_Year") = Request.Form("MonthYearDate_Year")
-		Else If IsNumeric(Request.QueryString("MonthYearDate_Year")) Then 
-			Session("MonthYearDate_Year") = Request.QueryString("MonthYearDate_Year")
-		Else If Trim(Session("MonthYearDate_Year")) = "" Then
-			Session("MonthYearDate_Year") = DateTime.Now.Year
-		Else If Trim(Session("MonthYearDate_Year")) = 0 And Not Page.IsPostBack Then
-			Session("MonthYearDate_Year") = DateTime.Now.Year
-		End If
-		If Page.IsPostBack AND Request.Form("MonthYearDate_Year") = "" Then Session("MonthYearDate_Year") = 0
-		MonthYearDate.SelectedYear = Session("MonthYearDate_Year")
+                If IsNumeric(Request.Form("DocTo_Year")) Then
+                    Session("DocTo_Year") = Request.Form("DocTo_Year")
+                ElseIf IsNumeric(Request.QueryString("DocTo_Year")) Then
+                    Session("DocTo_Year") = Request.QueryString("DocTo_Year")
+                ElseIf Trim(Session("DocTo_Year")) = "" Then
+                    Session("DocTo_Year") = DateTime.Now.Year
+                ElseIf Trim(Session("DocTo_Year")) = 0 And Not Page.IsPostBack Then
+                    Session("DocTo_Year") = DateTime.Now.Year
+                End If
+                If Page.IsPostBack And Request.Form("DocTo_Year") = "" Then Session("DocTo_Year") = 0
+                ToDate.SelectedYear = Session("DocTo_Year")
+		
+                If IsNumeric(Request.Form("MonthYearDate_Day")) Then
+                    Session("MonthYearDate_Day") = Request.Form("MonthYearDate_Day")
+                ElseIf IsNumeric(Request.QueryString("MonthYearDate_Day")) Then
+                    Session("MonthYearDate_Day") = Request.QueryString("MonthYearDate_Day")
+                ElseIf Trim(Session("MonthYearDate_Day")) = "" Then
+                    Session("MonthYearDate_Day") = DateTime.Now.Day
+                ElseIf Trim(Session("MonthYearDate_Day")) = 0 And Not Page.IsPostBack Then
+                    Session("MonthYearDate_Day") = DateTime.Now.Day
+                End If
+                If Page.IsPostBack And Request.Form("MonthYearDate_Day") = "" Then Session("MonthYearDate_Day") = 0
+                MonthYearDate.SelectedDay = Session("MonthYearDate_Day")
+		
+		
+                If IsNumeric(Request.Form("MonthYearDate_Month")) Then
+                    Session("MonthYearDate_Month") = Request.Form("MonthYearDate_Month")
+                ElseIf IsNumeric(Request.QueryString("MonthYearDate_Month")) Then
+                    Session("MonthYearDate_Month") = Request.QueryString("MonthYearDate_Month")
+                ElseIf Trim(Session("MonthYearDate_Month")) = "" Then
+                    Session("MonthYearDate_Month") = DateTime.Now.Month
+                ElseIf Trim(Session("MonthYearDate_Month")) = 0 And Not Page.IsPostBack Then
+                    Session("MonthYearDate_Month") = DateTime.Now.Month
+                End If
+                If Page.IsPostBack And Request.Form("MonthYearDate_Month") = "" Then Session("MonthYearDate_Month") = 0
+                MonthYearDate.SelectedMonth = Session("MonthYearDate_Month")
+		
+                If IsNumeric(Request.Form("MonthYearDate_Year")) Then
+                    Session("MonthYearDate_Year") = Request.Form("MonthYearDate_Year")
+                ElseIf IsNumeric(Request.QueryString("MonthYearDate_Year")) Then
+                    Session("MonthYearDate_Year") = Request.QueryString("MonthYearDate_Year")
+                ElseIf Trim(Session("MonthYearDate_Year")) = "" Then
+                    Session("MonthYearDate_Year") = DateTime.Now.Year
+                ElseIf Trim(Session("MonthYearDate_Year")) = 0 And Not Page.IsPostBack Then
+                    Session("MonthYearDate_Year") = DateTime.Now.Year
+                End If
+                If Page.IsPostBack And Request.Form("MonthYearDate_Year") = "" Then Session("MonthYearDate_Year") = 0
+                MonthYearDate.SelectedYear = Session("MonthYearDate_Year")
 	
-		If Not Page.IsPostBack Then
-			optDailyDate.Checked = True
-			optViewByBill.Checked = True
-		End If
+                If Not Page.IsPostBack Then
+                    optDailyDate.Checked = True
+                    optViewByBill.Checked = True
+                End If
 
                 Dim strIDValue As String = "0"
                 If IsNumeric(Request.Form("ShopID")) Then
@@ -579,7 +579,7 @@ Sub Page_Load()
                     If dtData.Rows.Count > 1 Then
                         If Not Page.IsPostBack Then
                             FormSelected = "selected"
-                        ElseIf strIDValue  = 0 Then
+                        ElseIf strIDValue = 0 Then
                             FormSelected = "selected"
                         Else
                             FormSelected = ""
@@ -658,50 +658,57 @@ Sub Page_Load()
                 errorMsg.InnerHtml = ex.Message
             End Try
 	  
-	Else
-		showPage.Visible = False
-		errorMsg.InnerHtml = "Access Denied"
-	End If
-End Sub
+        Else
+            showPage.Visible = False
+            errorMsg.InnerHtml = "Access Denied"
+        End If
+    End Sub
 
-Sub DoSearch(Source As Object, E As EventArgs)
+    Sub DoSearch(Source As Object, E As EventArgs)
 	
-	Dim PropertyInfo As DataTable = getProp.PropertyInfo(1,objCnn)
-	Dim FoundError As Boolean
-	FoundError = False
-	Session("ReportResult") = ""
+        Dim PropertyInfo As DataTable = getProp.PropertyInfo(1, objCnn)
+        Dim FoundError As Boolean
+        FoundError = False
+        Session("ReportResult") = ""
 	
-	Dim LangDiscountData As DataTable = getProp.GetLangData(MemberDiscountPageID,2,-1,Request)
-	Dim LangData2 As DataTable = getProp.GetLangData(SaleReportPageID,2,-1,Request)
-	Dim LangDefault As DataTable = getProp.GetLangData(999,2,-1,Request)
-	Dim LangText As String = "lang" + Session("LangID").ToString
+        Dim LangDiscountData As DataTable = getProp.GetLangData(MemberDiscountPageID, 2, -1, Request)
+        Dim LangData2 As DataTable = getProp.GetLangData(SaleReportPageID, 2, -1, Request)
+        Dim LangDefault As DataTable = getProp.GetLangData(999, 2, -1, Request)
+        Dim LangText As String = "lang" + Session("LangID").ToString
 	
-	Dim DateFromValue As String = ""
-	Dim DateToValue As String = ""
-	Dim DailyDateValue As String = ""
-	Dim InvC As CultureInfo = CultureInfo.InvariantCulture
-	Dim AdditionalHeader As String = ""
+        Dim DateFromValue As String = ""
+        Dim DateToValue As String = ""
+        Dim DailyDateValue As String = ""
+        Dim InvC As CultureInfo = CultureInfo.InvariantCulture
+        Dim AdditionalHeader As String = ""
 	
-	Dim StartDate,EndDate As String
-	Dim StartMonthValue,StartYearValue,EndMonthValue,EndYearValue As Integer
-	Dim outputString As String = ""
-	Dim grandTotal As Double = 0
-	Dim VATTotal As Double = 0
-	Dim GraphData As New DataSet()
+        Dim StartDate, EndDate As String
+        Dim StartMonthValue, StartYearValue, EndMonthValue, EndYearValue As Integer
+        Dim outputString As String = ""
+        Dim grandTotal As Double = 0
+        Dim VATTotal As Double = 0
+        Dim GraphData As New DataSet()
         Dim ReportDate, strPromoID, strGroupID As String
         Dim bolByDate, bolByMonth, bolByDateRange As Boolean
-	Dim bolViewByBill, bolViewByProduct As Boolean
-	bolByMonth = False
-	bolByDateRange = False
-	bolByDate = False
-	If Request.Form("ReportSelectDateGroup") = "optMonthlyDate" Then 
-		bolByMonth = True
-	ElseIf Request.Form("ReportSelectDateGroup") = "optRangeDate" Then
-		bolByDateRange = True
-	ElseIf Request.Form("ReportSelectDateGroup") = "optDailyDate" Then 
-		bolByDate = True
-	End If
+        Dim bolViewByBill, bolViewByProduct As Boolean
+        bolByMonth = False
+        bolByDateRange = False
+        bolByDate = False
+        If Request.Form("ReportSelectDateGroup") = "optMonthlyDate" Then
+            bolByMonth = True
+        ElseIf Request.Form("ReportSelectDateGroup") = "optRangeDate" Then
+            bolByDateRange = True
+        ElseIf Request.Form("ReportSelectDateGroup") = "optDailyDate" Then
+            bolByDate = True
+        End If
 	
+        If Request.QueryString("ID") = 703 Then
+            bolMemberDiscountReport = False
+        Else
+            bolMemberDiscountReport = True
+        End If
+        
+
         Dim ReportType As String
         ReportType = ""
         If Request.Form("ReportViewGroup") = "optViewByBill" Then
@@ -794,42 +801,42 @@ Sub DoSearch(Source As Object, E As EventArgs)
             DailyDateValue = ""
         End If
 
-	If FoundError = False Then
-		If LangDefault.Rows.Count >= 3 Then
-			CreateReportDate.Text = LangDefault.Rows(2)(LangText) & " " & DateTimeUtil.FormatDateTime(NOW(), "DateAndTime",Session("LangID"),objCnn)
-		End If
-		Dim displayTable As New DataTable()
+        If FoundError = False Then
+            If LangDefault.Rows.Count >= 3 Then
+                CreateReportDate.Text = LangDefault.Rows(2)(LangText) & " " & DateTimeUtil.FormatDateTime(Now(), "DateAndTime", Session("LangID"), objCnn)
+            End If
+            Dim displayTable As New DataTable()
 		
-		ShowPrint.Visible = True
-		ShowResults.Visible = True
+            ShowPrint.Visible = True
+            showResults.Visible = True
 				
-		'Application.Lock()
+            'Application.Lock()
 		
-		Dim LangPath As String = Util.GetLangPath(Request.PhysicalApplicationPath)
+            Dim LangPath As String = Util.GetLangPath(Request.PhysicalApplicationPath)
             If Request.Form("MemberStaffPromotionID") = 0 Then
                 strPromoID = PromotionIDList.Value
             Else
                 strPromoID = Request.Form("MemberStaffPromotionID")
             End If
             ResultText.InnerHtml = getReport.MemberStaffDiscountReport(GlobalParam.GrayBGColor, GlobalParam.AdminBGColor, Session("LangID"), _
-                                         bolViewByBill, bolViewByProduct, bolMemberDiscountReport, chkDisplayDate.Checked, _
+                                         bolViewByBill, bolViewByProduct, chkDisplayDate.Checked, bolMemberDiscountReport, _
                                          Request.Form("MemberStaffGroupID"), "", "", "", StartDate, EndDate, _
                                          Request.Form("ShopID"), strPromoID, LangPath, Session("StaffRole"), objCnn)
 
-		Dim ShopDisplay As String
-		If Request.Form("ShopID") = 0 Then
-			ShopDisplay = LangData2.Rows(70)(LangText)
-		Else
-			ShopDisplay = SelShopName.Value
-		End If
-		ResultSearchText.InnerHtml = ReportType + " " + ShopDisplay + " (" + ReportDate + ")"
-		'Application.UnLock()
+            Dim ShopDisplay As String
+            If Request.Form("ShopID") = 0 Then
+                ShopDisplay = LangData2.Rows(70)(LangText)
+            Else
+                ShopDisplay = SelShopName.Value
+            End If
+            ResultSearchText.InnerHtml = ReportType + " " + ShopDisplay + " (" + ReportDate + ")"
+            'Application.UnLock()
 		
-		Session("ReportResult") = "<table><tr><td align=""center"">" & ResultSearchText.InnerHtml & "</td></tr><tr><td align=""right"">" & CreateReportDate.Text & "</td></tr><tr><td>" & startTable.InnerHtml & "<tr>" & TableHeaderText.InnerHtml & ExtraHeader.InnerHtml & "</tr>" & ResultText.InnerHtml & "</td></tr></table>"
+            Session("ReportResult") = "<table><tr><td align=""center"">" & ResultSearchText.InnerHtml & "</td></tr><tr><td align=""right"">" & CreateReportDate.Text & "</td></tr><tr><td>" & startTable.InnerHtml & "<tr>" & TableHeaderText.InnerHtml & ExtraHeader.InnerHtml & "</tr>" & ResultText.InnerHtml & "</td></tr></table>"
 
-	End If
+        End If
 
-End Sub
+    End Sub
  
 Sub ExportData(Source As Object, E As EventArgs)
 	Dim FileName As String = "MemberDiscountData_" & DateTime.Now.ToString("yyyyMMdd_HHmmss", InvC) & ".xls"

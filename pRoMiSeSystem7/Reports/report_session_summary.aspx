@@ -581,6 +581,7 @@ End Sub
                 manualVoidQRCount = 0
             End If
                
+            ReDim IDList(-1)
             For i = 0 To PayTypeData.Rows.Count - 1
                 TestString += "<br>" + PayTypeIDList.IndexOf("," + PayTypeData.Rows(i)("PayTypeID").ToString + ",").ToString
                 If PayTypeIDList.IndexOf("," + PayTypeData.Rows(i)("PayTypeID").ToString + ",") = -1 Then
@@ -597,20 +598,19 @@ End Sub
             Next
             Dim Summary(counter + 7 + manualVoidQRCount) As Double
             Dim sumTotal(counter + 7 + manualVoidQRCount) As Double
-            If ExtraHeaderString <> "" Then
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Total Payment" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Float" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Sale Cash" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Deposit Cash" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash In/Out" + "</td>"
-                If bolManualVoidQR = True Then
-                    ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Manual Void From QR Payment" + "</td>"
-                End If
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Total Cash" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Count" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Diff" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Total Payment" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Float" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Sale Cash" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Deposit Cash" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash In/Out" + "</td>"
+            If bolManualVoidQR = True Then
+                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Manual Void From QR Payment" + "</td>"
             End If
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Total Cash" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Count" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Diff" + "</td>"
             ExtraHeader.InnerHtml = ExtraHeaderString
+            
             Dim BgColor As String = GlobalParam.GrayBGColor
             Dim Zero As Integer = 0
             Dim dtManualVoidQR As DataTable

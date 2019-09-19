@@ -3443,6 +3443,13 @@
 		<Lang1>Exempt Tax</Lang1>
 		<Lang2>Exempt VAT</Lang2>
 	</Form>
+	<Form>	<!--insert date 19/09/19-->
+		<FormID>14</FormID>
+		<TextID>36</TextID>
+		<DefaultText>Member's Promotion Set</DefaultText>
+		<Lang1>Member's Promotion Set</Lang1>
+		<Lang2>Member's Promotion Set</Lang2>
+	</Form>
 	<Form/>
 	<Form>
 		<FormID>15</FormID>
@@ -3611,6 +3618,13 @@
 		<DefaultText>แก้ไขรายการที่ลด</DefaultText>
 		<Lang1>Edit Order For Discount</Lang1>
 		<Lang2>แก้ไขรายการที่ลด</Lang2>
+	</Form>
+	<Form>	<!--insert date 19/09/19-->
+		<FormID>15</FormID>
+		<TextID>25</TextID>
+		<DefaultText>Promotion Set</DefaultText>
+		<Lang1>Promotion Set</Lang1>
+		<Lang2>Promotion Set</Lang2>
 	</Form>
 	<Form/>
 	<Form>
@@ -17046,8 +17060,15 @@
 	<Lang1>Export Data Success</Lang1>
 	<Lang2>Export Data Success</Lang2>
 </Form>
-<Form>
-	<FormID>68</FormID><!--insert date 30/05/19-->
+<Form>	<!--insert date 19/09/19-->
+	<FormID>67</FormID>
+	<TextID>45</TextID>
+	<DefaultText>Search Not Found.</DefaultText>
+	<Lang1>Search Not Found</Lang1>
+	<Lang2>ไม่พบข้อมูลที่ค้นหา</Lang2>
+</Form>
+<Form>	<!--insert date 30/05/19-->
+	<FormID>68</FormID>
 	<TextID>1</TextID>
 	<DefaultText>Submit</DefaultText>
 	<Lang1>Submit</Lang1>
@@ -18608,6 +18629,13 @@
 	<Lang1>This mobile number already exists.</Lang1>
 	<Lang2>เบอร์มือถือนี้มีอยู่ในระบบแล้ว</Lang2>
 </Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>80</FormID>
+	<TextID>5</TextID>
+	<DefaultText>ไม่พบข้อมูลเบอร์มือถือ กรุณาทำการ update ข้อมูลสมาชิกก่อน</DefaultText>
+	<Lang1>There is no mobile number. Please update member profile.</Lang1>
+	<Lang2>ไม่พบข้อมูลเบอร์มือถือ กรุณาทำการ update ข้อมูลสมาชิกก่อน</Lang2>
+</Form>
 <Form>	<!--insert date 12/07/19 Patch6207-->
 	<FormID>81</FormID>
 	<TextID>1</TextID>
@@ -18678,5 +18706,256 @@
 	<Lang1>Current Order Reference</Lang1>
 	<Lang2>Current Order Reference</Lang2>
 </Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>81</FormID>
+	<TextID>11</TextID>
+	<DefaultText>Start Order</DefaultText>
+	<Lang1>Start Order</Lang1>
+	<Lang2>เริ่มสั่ง</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>81</FormID>
+	<TextID>12</TextID>
+	<DefaultText>This table can start to order from web.</DefaultText>
+	<Lang1>This table can start to order from web.</Lang1>
+	<Lang2>สามารสั่งรายการของโต๊ะนี้ได้</Lang2>
+</Form>
+
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>1</TextID>
+	<DefaultText>ชื่อ Voucher/ คูปอง</DefaultText>
+	<Lang1>Voucher/ Coupon</Lang1>
+	<Lang2>ชื่อ Voucher/ คูปอง</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>2</TextID>
+	<DefaultText>วันที่ใช้</DefaultText>
+	<Lang1>Use date</Lang1>
+	<Lang2>วันที่ใช้</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>3</TextID>
+	<DefaultText>ร้านที่ใช้</DefaultText>
+	<Lang1>Use at Shop</Lang1>
+	<Lang2>ร้านที่ใช้</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>4</TextID>
+	<DefaultText>ปิด</DefaultText>
+	<Lang1>Close</Lang1>
+	<Lang2>ปิด</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>5</TextID>
+	<DefaultText>รหัสสมาชิก :</DefaultText>
+	<Lang1>Member Code :</Lang1>
+	<Lang2>รหัสสมาชิก :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>6</TextID>
+	<DefaultText>ชื่อ-นามสกุล :</DefaultText>
+	<Lang1>Name :</Lang1>
+	<Lang2>ชื่อ-นามสกุล :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>7</TextID>
+	<DefaultText>Promotion :</DefaultText>
+	<Lang1>Promotion :</Lang1>
+	<Lang2>Promotion :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>8</TextID>
+	<DefaultText>Package Detail</DefaultText>
+	<Lang1>Package Detail</Lang1>
+	<Lang2>Package Detail</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>9</TextID>
+	<DefaultText>วันที่เริ่มต้น  :</DefaultText>
+	<Lang1>Start Date :</Lang1>
+	<Lang2>วันที่เริ่มต้น  :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>10</TextID>
+	<DefaultText>วันที่สิ้นสุด :</DefaultText>
+	<Lang1>End Date :</Lang1>
+	<Lang2>วันที่สิ้นสุด :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>11</TextID>
+	<DefaultText>หมายเหตุ :</DefaultText>
+	<Lang1>Remark :</Lang1>
+	<Lang2>หมายเหตุ :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>12</TextID>
+	<DefaultText>ชุดส่วนลดที่สมาชิกสามารถใช้ได้</DefaultText>
+	<Lang1>Promotion set member can use</Lang1>
+	<Lang2>ชุดส่วนลดที่สมาชิกสามารถใช้ได้</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>13</TextID>
+	<DefaultText>ส่วนลดจาก Promotion Set</DefaultText>
+	<Lang1>Promotion Set Discount</Lang1>
+	<Lang2>ส่วนลดจาก Promotion Set</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>14</TextID>
+	<DefaultText>ใช้</DefaultText>
+	<Lang1>Use</Lang1>
+	<Lang2>ใช้</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>15</TextID>
+	<DefaultText>ยกเลิก</DefaultText>
+	<Lang1>Cancel</Lang1>
+	<Lang2>ยกเลิก</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>16</TextID>
+	<DefaultText>ไม่สามารถตรวจสอบข้อมูลจาก HQ ได้</DefaultText>
+	<Lang1>Can not connect HQ to get data.</Lang1>
+	<Lang2>ไม่สามารถตรวจสอบข้อมูลจาก HQ ได้</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>82</FormID>
+	<TextID>17</TextID>
+	<DefaultText></DefaultText>
+	<Lang1></Lang1>
+	<Lang2></Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>1</TextID>
+	<DefaultText>วันที่ขาย</DefaultText>
+	<Lang1>Sale Date</Lang1>
+	<Lang2>วันที่ขาย</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>2</TextID>
+	<DefaultText>ใบเสร็จ</DefaultText>
+	<Lang1>Receipt No.</Lang1>
+	<Lang2>ใบเสร็จ</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>3</TextID>
+	<DefaultText>โต๊ะ</DefaultText>
+	<Lang1>Table</Lang1>
+	<Lang2>โต๊ะ</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>4</TextID>
+	<DefaultText>เวลาเปิด</DefaultText>
+	<Lang1>Open Time</Lang1>
+	<Lang2>เวลาเปิด</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>5</TextID>
+	<DefaultText>เวลาจ่ายเงิน</DefaultText>
+	<Lang1>Paid Time</Lang1>
+	<Lang2>เวลาจ่ายเงิน</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>6</TextID>
+	<DefaultText>ส่วนลด</DefaultText>
+	<Lang1>Discount</Lang1>
+	<Lang2>ส่วนลด</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>7</TextID>
+	<DefaultText>ราคารวม</DefaultText>
+	<Lang1>Sale Price</Lang1>
+	<Lang2>ราคารวม</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>8</TextID>
+	<DefaultText>เลือกสมาชิก</DefaultText>
+	<Lang1>Select</Lang1>
+	<Lang2>เลือกสมาชิก</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>9</TextID>
+	<DefaultText>ยกเลิก</DefaultText>
+	<Lang1>Cancel</Lang1>
+	<Lang2>ยกเลิก</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>10</TextID>
+	<DefaultText>ปิด</DefaultText>
+	<Lang1>Close</Lang1>
+	<Lang2>ปิด</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>11</TextID>
+	<DefaultText>รหัสสมาชิก :</DefaultText>
+	<Lang1>Member Code :</Lang1>
+	<Lang2>รหัสสมาชิก :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>12</TextID>
+	<DefaultText>ชื่อ-นามสกุล :</DefaultText>
+	<Lang1>Member Name :</Lang1>
+	<Lang2>ชื่อ-นามสกุล :</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>13</TextID>
+	<DefaultText>รายละเอียดการใช้ของสมาชิก</DefaultText>
+	<Lang1>Member Usage Detail</Lang1>
+	<Lang2>รายละเอียดการใช้ของสมาชิก</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>14</TextID>
+	<DefaultText>รายละเอียดการมาใช้ในวันนี้</DefaultText>
+	<Lang1>Today's Usage</Lang1>
+	<Lang2>รายละเอียดการมาใช้ในวันนี้</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>15</TextID>
+	<DefaultText>รายละเอียดการมาใช้ครั้งที่แล้ว</DefaultText>
+	<Lang1>Last Time Usage</Lang1>
+	<Lang2>รายละเอียดการมาใช้ครั้งที่แล้ว</Lang2>
+</Form>
+<Form>	<!--insert date 19/09/19-->
+	<FormID>83</FormID>
+	<TextID>16</TextID>
+	<DefaultText></DefaultText>
+	<Lang1></Lang1>
+	<Lang2></Lang2>
+</Form>
+
+
+
+
+
 </LanguageData>
 

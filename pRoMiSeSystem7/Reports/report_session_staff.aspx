@@ -336,6 +336,7 @@ Dim PageID As Integer  = 998
             Dim SumRow, SumRowCash As Double
 		
             PayTypeIDList = ""
+            ReDim IDList(-1)
             For i = 0 To dtTable.Rows.Count - 1
                 If dtTable.Rows(i)("PayTypeID") <> -1 Then
                     TestString += "<br>" + PayTypeIDList.IndexOf("," + dtTable.Rows(i)("PayTypeID").ToString + ",").ToString
@@ -359,24 +360,22 @@ Dim PageID As Integer  = 998
             noAdditonalCol = 0
             CashInOutCount = 0
             manualVoidQRCount = 0
-            If ExtraHeaderString <> "" Then
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Total Payment" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Initial" + "</td>"
-                If CashInOutFeature = True Then
-                    ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash In" + "</td>"
-                    ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Out" + "</td>"
-                    noAdditonalCol += 2
-                    CashInOutCount = 2
-                End If
-                If bolHasVoidManualQR = True Then
-                    ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Manual Void From QR Payment" + "</td>"
-                    noAdditonalCol += 1
-                    manualVoidQRCount = 1
-                End If
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Total" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Count" + "</td>"
-                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Diff" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Total Payment" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Initial" + "</td>"
+            If CashInOutFeature = True Then
+                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash In" + "</td>"
+                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Out" + "</td>"
+                noAdditonalCol += 2
+                CashInOutCount = 2
             End If
+            If bolHasVoidManualQR = True Then
+                ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Manual Void From QR Payment" + "</td>"
+                noAdditonalCol += 1
+                manualVoidQRCount = 1
+            End If
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Total" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Cash Count" + "</td>"
+            ExtraHeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Diff" + "</td>"
             ReDim Summary(counter + noAdditonalCol + 4)
             ReDim sumTotal(counter + noAdditonalCol + 4)
 

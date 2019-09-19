@@ -811,7 +811,7 @@
                                                 <table>
                                                     <tr>
                                                         <td align="left">
-                                                            <asp:Label ID="Lb7" runat="server" ></asp:Label>
+                                                            <asp:Label ID="lblForPriceMoreThan" runat="server" >สำหรับราคารวมที่มากกว่า</asp:Label>
                                                         </td>
                                                         <td>
                                                             <asp:TextBox ID="TxtOverPrice" runat="server" Width="70px"></asp:TextBox>
@@ -819,7 +819,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="right">
-                                                            <asp:Label ID="Lb6" runat="server" ></asp:Label>
+                                                            <asp:Label ID="lblCalculateOrder" runat="server" >เรียงลำดับจาก</asp:Label>
                                                         </td>
                                                         <td>
                                                             <asp:DropDownList ID="DDlDiscountMinpriceToMax" runat="server">

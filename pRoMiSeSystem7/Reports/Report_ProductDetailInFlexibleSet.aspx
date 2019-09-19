@@ -6,8 +6,6 @@
 <head id="Head1" runat="server">
     <title>Product Detail In Set Report</title>
     <link href="../StyleSheet/admin.css" rel="stylesheet" />
-    <link href="../StyleSheet/StyleSheet2.css" rel="stylesheet" />
-
     <script language="JavaScript" src="../StyleSheet/webscript.js"></script> 
     <script src="../Scripts/jquery.js" type="text/javascript"></script>
 

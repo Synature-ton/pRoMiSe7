@@ -1280,6 +1280,327 @@
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
+	<Form>	<!-- 19/09/19 -->
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Set Member Feature at Front</DefaultText>
+		<Lang1>Set Member Feature at Front</Lang1>
+		<Lang2>Set Member Feature at Front</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Property</DefaultText>
+		<Lang1>Property</Lang1>
+		<Lang2>รายละเอียดตัวแปร</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Value</DefaultText>
+		<Lang1>Value</Lang1>
+		<Lang2>ค่าตัวแปร</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Create New Member</DefaultText>
+		<Lang1>Create New Member</Lang1>
+		<Lang2>สร้างสมาชิกใหม่จาก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Add new member</DefaultText>
+		<Lang1>Add new member</Lang1>
+		<Lang2>เพิ่มสมาชิกใหม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Activate from imported member</DefaultText>
+		<Lang1>Activate from imported member</Lang1>
+		<Lang2>Activate จากสมาชิกที่สร้างไว้แล้ว</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Expiration Setting</DefaultText>
+		<Lang1>Expiration Setting</Lang1>
+		<Lang2>ตั้งค่าวันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>ReNew/ Change Member Code</DefaultText>
+		<Lang1>ReNew/ Change Member Code</Lang1>
+		<Lang2>ต่ออายุ/ เปลี่ยนรหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Yes</DefaultText>
+		<Lang1>Yes</Lang1>
+		<Lang2>Yes</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>No</DefaultText>
+		<Lang1>No</Lang1>
+		<Lang2>No</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Can Cancel Activated Member</DefaultText>
+		<Lang1>Can Cancel Activated Member</Lang1>
+		<Lang2>ยกเลิกสถานะ activate ของสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Edit Member Info</DefaultText>
+		<Lang1>Edit Member Info</Lang1>
+		<Lang2>แก้ไขรายละเอียดของสมาชิก (ที Front)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Edit Member Expire Date</DefaultText>
+		<Lang1>Edit Member Expire Date</Lang1>
+		<Lang2>แก้ไขวันหมดอายุ (ที่ Front)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Retrieve From HQ (From Online) - User Define Data</DefaultText>
+		<Lang1>Retrieve From HQ (From Online) - User Define Data</Lang1>
+		<Lang2>ดึงข้อมูลจาก HQ - User Define Data</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Retrieve From HQ (From Online) - History of Change Member Code</DefaultText>
+		<Lang1>Retrieve From HQ (From Online) - History of Change Member Code</Lang1>
+		<Lang2>ดึงข้อมูลจาก HQ - ประวัติการแก้ไขรหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Submit Changes</DefaultText>
+		<Lang1>Submit Changes</Lang1>
+		<Lang2>Submit Changes</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Member Expiration Setting</DefaultText>
+		<Lang1>Member Expiration Setting</Lang1>
+		<Lang2>กำหนดค่าวันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Name</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Expire Date Setting </DefaultText>
+		<Lang1>Expire Date Setting </Lang1>
+		<Lang2>ตั้งวันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>กำหนดเอง</DefaultText>
+		<Lang1>Manual setting</Lang1>
+		<Lang2>กำหนดเอง</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>หมดอายุหลังจากสมัคร/ activate ภายใน </DefaultText>
+		<Lang1>Expire after add/ activate </Lang1>
+		<Lang2>หมดอายุหลังจากสมัคร/ activate ภายใน </Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>บันทึก</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>ยกเลิก</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>วัน</DefaultText>
+		<Lang1>Day(s)</Lang1>
+		<Lang2>วัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>เดือน</DefaultText>
+		<Lang1>Month(s)</Lang1>
+		<Lang2>เดือน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>ปี</DefaultText>
+		<Lang1>Year(s)</Lang1>
+		<Lang2>ปี</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>วัน - แก้ไขได้</DefaultText>
+		<Lang1>Day(s) - can edit</Lang1>
+		<Lang2>วัน - แก้ไขได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>เดือน - แก้ไขได้</DefaultText>
+		<Lang1>Month(s) - can edit</Lang1>
+		<Lang2>เดือน - แก้ไขได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>ปี - แก้ไขได้</DefaultText>
+		<Lang1>Year(s) - can edit</Lang1>
+		<Lang2>ปี - แก้ไขได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Number of Expire Date must be numeric only.</DefaultText>
+		<Lang1>จำนวนวันหมดอายุต้องเป็นตัวเลขเท่านั้น</Lang1>
+		<Lang2>Number of Expire Date must be numeric only.</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Number of Expire Date must be > 0.</DefaultText>
+		<Lang1>จำนวนวันหมดอายุต้องมากกว่า 0</Lang1>
+		<Lang2>Number of Expire Date must be > 0.</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	</LanguageData>
 
