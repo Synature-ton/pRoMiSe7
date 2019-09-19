@@ -4140,10 +4140,14 @@ INSERT INTO PermissionGroupName(PermissionGroupNameID, PermissionGroupID, Permis
 
 Update PermissionItem Set PermissionGroupID = 34 Where PermissionItemID IN (722,60037,60038);
 
--- 07/06/2019 - Session Module - Not Print Discount Detail By PromotionName
-INSERT INTO PropertyTextDesp(PropertyTypeID, PropertyPosition, PropertyName, Description, PropertyOption, FunctionGroupID, Deleted) VALUES (105,15,'Not Print Payment Detail', '0 = Print, 1 = Not Print',0,0,0);
-INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (105,15,1, 'Print', 0, 0, 1);
-INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (105,15,2, 'Not Print', 1, 1, 0);
+-- 07/06/2019 - Session Module - Not Print Payment Detail/ Shop Summary
+INSERT INTO PropertyTextDesp(PropertyTypeID, PropertyPosition, PropertyName, Description, PropertyOption, FunctionGroupID, Deleted) VALUES (105,15,'Not Print Payment/ Summary Detail', '0 = Print, 1 = Not Print',0,0,0);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (105,15,1, 'Print Both', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (105,15,2, 'Not Print Payment', 1, 1, 0);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (105,15,3, 'Not Print Payment and Shop Summary', 2, 2, 0);
+
+-- 02/08/2019 - Session Module - Number Decimal Digit For Display Price In Session
+INSERT INTO PropertyTextDesp(PropertyTypeID, PropertyPosition, PropertyName, Description, PropertyOption, FunctionGroupID, Deleted) VALUES (105,16,'Number Decimal Digit For Display Price (Rounding)', '',0,0,0);
 
 -- 12/06/2019 - Add DocumentTemplateHideMaterial
 CREATE TABLE DocumentTemplateHideMaterial (
@@ -4156,6 +4160,152 @@ CREATE TABLE DocumentTemplateHideMaterial (
 
 UPDATE DocumentTypeProperty SET PrintFormFileName_Lang1= 'CRReceiveFromTransfer-EN.rpt', PrintFormFileName_Lang2 = 'CRReceiveFromTransfer-TH.rpt' WHERE DocumentTypeID = 25 AND PrintFormFileName_Lang1= 'CRReceiveTransferDocument-EN.rpt';
 
+
+-- 21/08/2019 - Export InvOnCloud Via API
+ALTER TABLE ExportInvOnCloud_ConfigSetting ADD ExportUseAPI tinyint NOT NULL DEFAULT '0' After DefaultDocumentTypeMappingCode;
+ALTER TABLE ExportInvOnCloud_ConfigSetting ADD APIURLAddress varchar(200) NULL After ExportUseAPI;
+ALTER TABLE ExportInvOnCloud_ConfigSetting ADD APIUserName varchar(50) NULL After APIURLAddress;
+ALTER TABLE ExportInvOnCloud_ConfigSetting ADD APIPassword varchar(20) NULL After APIUserName;
+
+CREATE TABLE ExportInvOnCloud_APIType (
+ APIType tinyint NOT NULL DEFAULT '0',
+ Description varchar(30) NULL,
+ CallAPIURL varchar(100) NULL,
+ PRIMARY KEY  (APIType)
+) ENGINE=InnoDB;
+
+INSERT INTO ExportInvOnCloud_APIType(APIType, Description, CallAPIURL) VALUES(1, 'Log In', '/api/auth/login');
+INSERT INTO ExportInvOnCloud_APIType(APIType, Description, CallAPIURL) VALUES(2, 'Export To POS Data', '/api/menu/pos-data-import');
+INSERT INTO ExportInvOnCloud_APIType(APIType, Description, CallAPIURL) VALUES(3, 'Log Out', '/api/auth/logout');
+
+-- 23/07/2019 Change MemberCode History
+CREATE TABLE HistoryOfChangeMemberCode (
+  HistoryID int NOT NULL Auto_Increment,
+  ProductLevelID int NOT NULL DEFAULT '0',
+  MemberID int NOT NULL DEFAULT '0',
+  ChangeFromMemberCode varchar(50) NULL,
+  ChangeToMemberCode varchar(50) NULL,
+  ChangePrice decimal(18,4) NOT NULL DEFAULT '0',
+  ChangeFromComputerID int NOT NULL DEFAULT '0',
+  ChangeStaffID int NOT NULL DEFAULT '0',
+  ChangeNote varchar(255) NULL,
+  HistoryDateTime datetime NULL,
+  PRIMARY KEY  (HistoryID, ProductLevelID)
+) ENGINE=InnoDB;
+ALTER TABLE HistoryOfChangeMemberCode ADD FrontFunctionID int NOT NULL DEFAULT '0' After ChangeNote;
+ALTER TABLE HistoryOfChangeMemberCode ADD MemberExpireDate date NULL After ChangeToMemberCode;
+ALTER TABLE HistoryOfChangeMemberCode CHANGE ChangeDateTime HistoryDateTime datetime NULL;
+ALTER TABLE HistoryOfChangeMemberCode ADD ChangeProductLevelCode varchar(20) NULL After HistoryDateTime;
+ALTER TABLE HistoryOfChangeMemberCode ADD ChangeProductLevelName varchar(100) NULL After HistoryDateTime;
+
+ALTER TABLE HistoryOfChangeMemberCode ADD INDEX MemberIndex (MemberID, FrontFunctionID);
+
+CREATE TABLE MemberFrontFeature (
+ SettingID tinyint NOT NULL DEFAULT '0',
+ AddNewOrActivatedMember tinyint NOT NULL DEFAULT '0',
+ CancelActivateMember tinyint NOT NULL DEFAULT '0',
+ ReNewMember tinyint NOT NULL DEFAULT '0',
+ CanEditMember tinyint NOT NULL DEFAULT '1' ,
+ AllowEditExpireDate tinyint NOT NULL DEFAULT '1' ,
+ PRIMARY KEY  (SettingID)
+) ENGINE=InnoDB;
+INSERT INTO MemberFrontFeature(SettingID, AddNewOrActivatedMember, CancelActivateMember, ReNewMember, CanEditMember, AllowEditExpireDate) VALUES(1, 0, 0, 0, 1, 1);
+
+ALTER TABLE MemberFrontFeature ADD RetrieveFromHQ_UDD tinyint NOT NULL DEFAULT '0';
+ALTER TABLE MemberFrontFeature ADD RetrieveFromHQ_HistoryChangeMember tinyint NOT NULL DEFAULT '0';
+
+CREATE TABLE MemberActivateRenewSetting (
+ SettingID int NOT NULL DEFAULT '0',
+ SettingFor tinyint NOT NULL DEFAULT '0',
+ Description varchar(200) NULL,
+ MemberExpireDateType tinyint NOT NULL DEFAULT '0', 
+ NumberOfExpireDate int NOT NULL DEFAULT '0', 
+ IsAtEndOfMonthYear tinyint NOT NULL DEFAULT '0',  
+ IsDefaultSetting tinyint NOT NULL DEFAULT '0',  
+ Deleted tinyint NOT NULL DEFAULT '0',
+ UpdateStaffID int NOT NULL DEFAULT '0',
+ UpdateDate datetime NULL,
+ PRIMARY KEY  (SettingID)
+) ENGINE=InnoDB;
+
+CREATE TABLE MemberActivateSetting_MemberGroup (
+ SettingID int NOT NULL DEFAULT '0',
+ MemberGroupID int NOT NULL DEFAULT '0',
+ PRIMARY KEY  (SettingID, MemberGroupID)
+) ENGINE=InnoDB;
+
+CREATE TABLE MemberActivateReNewSettingFor (
+ SettingFor int NOT NULL DEFAULT '0',
+ Description varchar(30) NULL,
+ PRIMARY KEY  (SettingFor)
+) ENGINE=InnoDB;
+INSERT INTO MemberActivateReNewSettingFor(SettingFor, Description) VALUES(1, 'Add New');
+INSERT INTO MemberActivateReNewSettingFor(SettingFor, Description) VALUES(2, 'Activate');
+INSERT INTO MemberActivateReNewSettingFor(SettingFor, Description) VALUES(3, 'Renew/ Change');
+
+CREATE TABLE MemberActivateRenewExpireDateType (
+ ExpireType tinyint NOT NULL DEFAULT '0',
+ Description varchar(30) NULL,
+ PRIMARY KEY  (ExpireType)
+) ENGINE=InnoDB;
+INSERT INTO MemberActivateRenewExpireDateType VALUES(0, 'Manual Set Expire');
+INSERT INTO MemberActivateRenewExpireDateType VALUES(1, 'Expire Day (Lock)');
+INSERT INTO MemberActivateRenewExpireDateType VALUES(2, 'Expire Month (Lock)');
+INSERT INTO MemberActivateRenewExpireDateType VALUES(3, 'Expire Year (Lock)');
+INSERT INTO MemberActivateRenewExpireDateType VALUES(4, 'Expire Day (Can Edit)');
+INSERT INTO MemberActivateRenewExpireDateType VALUES(5, 'Expire Month (Can Edit)');
+INSERT INTO MemberActivateRenewExpireDateType VALUES(6, 'Expire Year (Can Edit)');
+
+Insert INTO FrontFunctionDescription(FrontFunctionID, FrontFunctionCode, Description, Description_TH) VALUES(49,'MEM_ACT','Activate member', 'เปิดใช้งานสมาชิก');
+Insert INTO FrontFunctionDescription(FrontFunctionID, FrontFunctionCode, Description, Description_TH) VALUES(50,'MEM_RENEW','Renew/ Change member', 'ต่ออายุสมาชิก/เปลี่ยนบัตร');
+Insert INTO FrontFunctionDescription(FrontFunctionID, FrontFunctionCode, Description, Description_TH) VALUES(51,'MEM_CACT','Cancel activate member', 'ปิดการใช้งานสมาชิก');
+
+ALTER TABLE Members ADD ActivateAtProductLevelID int NOT NULL DEFAULT '0' after InsertAtProductLevelName;
+
+INSERT INTO permissionitem(PermissionItemID,PermissionGroupID,PermissionItemParam,PermissionItemUrl,PermissionItemOrder,PermissionItemIDParent,PermissionItemAssign,PermissionShopType,PermissionFeature,Deleted,Remark,SystemEdition,ProgramTypeID) 
+VALUES(222,6,'Member_CancelActivate','',21,0,NULL,0,0,0,NULL,0,0);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID) VALUES(1,222,'Cancel Activate Member at Front',1);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID) VALUES(2,222,'ยกเลิกสถานะ Activate ของ Member ที่ Front',2);
+Delete From StaffPermission Where PermissionItemID = 222 AND StaffRoleID IN (1,2);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID) VALUES(1,222);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID) VALUES(2,222);
+
+INSERT INTO permissionitem (PermissionItemID, PermissionGroupID, PermissionItemParam, PermissionItemUrl,PermissionItemOrder, PermissionItemIDParent,PermissionItemAssign,Deleted)
+VALUES (22010,5,'Member_SetFrontFeature','Preferences/MemberSetFrontFeature.aspx',2,0,null,0);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID) VALUES(1,22010,'Set Member Feature at Front',1);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID) VALUES(2,22010,'ตั้งค่าการทำงานของหน้าสมาชิก ที่ Front',2);
+Delete From StaffPermission Where PermissionItemID = 22010 AND StaffRoleID IN (1,2);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID) VALUES(1,22010);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID) VALUES(2,22010);
+
+-- 07/09/2019 - Member Promotion Package Setting
+INSERT INTO permissionitem (PermissionItemID, PermissionGroupID, PermissionItemParam, PermissionItemUrl,PermissionItemOrder, PermissionItemIDParent,PermissionItemAssign,Deleted)
+VALUES (22011,7,'Member_PromotionPackage_Setup','Promotions/PromotionPackageManagement.aspx',32,0,null,0);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID) VALUES(1,22011,'Promotion Set for Member Management',1);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID) VALUES(2,22011,'ระบบจัดชุดโปรโมชั่นของสมาชิก',2);
+Delete From StaffPermission Where PermissionItemID = 22011 AND StaffRoleID IN (1,2);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID) VALUES(1,22011);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID) VALUES(2,22011);
+
+-- 12/09/2019 -- ReferenceNo For PayByVoucher = 100
+ALTER TABLE PayByVoucher CHANGE ReferenceNo ReferenceNo varchar(100) NULL;
+ALTER TABLE PayByVoucherFront CHANGE ReferenceNo ReferenceNo varchar(100) NULL;
+
+-- 17/09/2019 -- OrderUpdateDiscountPrice For Calculate Promotion 
+CREATE TABLE OrderUpdateDiscountPriceCalculateTemp (
+ TransactionID int NOT NULL DEFAULT '0',
+ ComputerID int NOT NULL DEFAULT '0',
+ OrderDetailID int NOT NULL DEFAULT '0',
+ FromComputerID int NOT NULL DEFAULT '0',
+ DiscountType tinyint NOT NULL DEFAULT '0',
+ DiscountPrice decimal(18,4) NOT NULL DEFAULT '0',
+ CalculatePrice decimal(18,4) NOT NULL DEFAULT '0',
+ DiscountPercent decimal(8,4) NOT NULL DEFAULT '0',
+ DiscountAmount decimal(18,4) NOT NULL DEFAULT '0',
+ DiscountAllow tinyint NOT NULL DEFAULT '0',
+ PRIMARY KEY  (TransactionID, ComputerID, OrderDetailID, FromComputerID, DiscountType),
+ INDEX OrderIndex(TransactionID, ComputerID, OrderDetailID)
+) ENGINE=InnoDB;
 
 
 
