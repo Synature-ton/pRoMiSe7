@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="DatabaseSetting">
+    <entry name="DBIPAddress">localhost</entry>
+    <entry name="DBName">promise74bts</entry>
+  </section>
+</profile>

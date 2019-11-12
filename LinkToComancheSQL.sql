@@ -302,7 +302,27 @@ Create TABLE PMSCMC_PaymentARAccountInfo(
 ) ENGINE=InnoDB;
 
 
+-- 13/08/2019 - Send Sale To API Setting
+ALTER TABLE PMSCMC_ConfigSetting ADD SendSaleToCMCType tinyint NOT NULL DEFAULT '0' After ID;
+ALTER TABLE PMSCMC_ConfigSetting ADD CMCAPIURLAddress varchar(255) NULL After Password;
+ALTER TABLE PMSCMC_ConfigSetting ADD CMCAPIToken varchar(50) NULL After CMCAPIURLAddress;
+ALTER TABLE PMSCMC_ConfigSetting ADD CMCAPIApplicationID varchar(50) NULL After CMCAPIToken;
 
+ALTER TABLE PMSCMC_ExportTransactionLog ADD ExportToCMCAPI tinyint NOT NULL DEFAULT '0';
+
+CREATE TABLE PMSCMC_APIType (
+ APIType tinyint NOT NULL DEFAULT '0',
+ Description varchar(30) NULL,
+ CallAPIURL varchar(100) NULL,
+ TestJSonText text NULL,
+ PRIMARY KEY  (APIType)
+) ENGINE=InnoDB;
+
+INSERT INTO PMSCMC_APIType(APIType, Description, CallAPIURL) VALUES(1, 'Get Hotel Date', '/operations/VINCE/hoteldate');
+INSERT INTO PMSCMC_APIType(APIType, Description, CallAPIURL) VALUES(2, 'Search Guest/ Room', '/operations/VINCE/guest');
+INSERT INTO PMSCMC_APIType(APIType, Description, CallAPIURL) VALUES(3, 'Post Sale (Folio/ InfDetail)', '/synPOS/VINCE/posting');
+
+Update PMSCMC_ConfigSetting Set CMCAPIURLAddress = 'https://comancheapps.com/wPMSiG/api/v1'
 
 
 

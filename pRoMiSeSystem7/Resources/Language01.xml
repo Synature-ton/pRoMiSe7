@@ -5865,6 +5865,60 @@
 		<Lang2>แสดงสินค้าตามวันที่ขาย</Lang2>
 	</Form>
 	<Form>
+		<FormID>101</FormID>
+		<FormName>report_memberdiscount.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Summary :</DefaultText>
+		<Lang1>Summary :</Lang1>
+		<Lang2>Summary :</Lang2>
+	</Form>
+	<Form>
+		<FormID>101</FormID>
+		<FormName>report_memberdiscount.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Table Name</DefaultText>
+		<Lang1>Table Name</Lang1>
+		<Lang2>โต๊ะ</Lang2>
+	</Form>
+	<Form>
+		<FormID>101</FormID>
+		<FormName>report_memberdiscount.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Open Time</DefaultText>
+		<Lang1>Open Time</Lang1>
+		<Lang2>เวลาเปิด</Lang2>
+	</Form>
+	<Form>
+		<FormID>101</FormID>
+		<FormName>report_memberdiscount.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Paid Time</DefaultText>
+		<Lang1>Paid Time</Lang1>
+		<Lang2>เวลาชำระเงิน</Lang2>
+	</Form>
+	<Form>
+		<FormID>101</FormID>
+		<FormName>report_memberdiscount.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>บริกร</DefaultText>
+		<Lang1>Print Bill Staff</Lang1>
+		<Lang2>บริกร</Lang2>
+	</Form>
+	<Form>
+		<FormID>101</FormID>
+		<FormName>report_memberdiscount.aspx</FormName>
+		<TextType>2</TextType>
+		<TextID>20</TextID>
+		<DefaultText>แคชเชียร์</DefaultText>
+		<Lang1>Paid Staff</Lang1>
+		<Lang2>แคชเชียร์</Lang2>
+	</Form>
+	<Form>
 		<FormID>102</FormID>
 		<FormName>report_sale_hourgroup.aspx</FormName>
 		<TextType>1</TextType>
@@ -7350,6 +7404,33 @@
 		<Lang2></Lang2>
 	</Form>
 	<Form>
+		<FormID>111</FormID>
+		<FormName>member_info_details.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Total Reward Point</DefaultText>
+		<Lang1>Total Reward Point</Lang1>
+		<Lang2>แต้มสะสมทั้งหมด</Lang2>
+	</Form>
+	<Form>
+		<FormID>111</FormID>	
+		<FormName>member_info_details.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>รหัสสมาชิกเดิม</DefaultText>
+		<Lang1>Previous Member Code</Lang1>
+		<Lang2>รหัสสมาชิกเดิม</Lang2>
+	</Form>
+	<Form>
+		<FormID>111</FormID>	
+		<FormName>member_info_details.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Search Include Old Member Code</DefaultText>
+		<Lang1>Search Include Old Member Code</Lang1>
+		<Lang2>รวมการคันหาจากรหัสสมาชิกเดิม</Lang2>
+	</Form>
+	<Form>
 		<FormID>200</FormID>
 		<FormName>Report_BZB_Redeem.aspx</FormName>
 		<TextType>1</TextType>
@@ -8493,8 +8574,188 @@
 		<Lang2>Female</Lang2>
 	</Form>
 	<Form>
-		<FormID>208</FormID>
-		<FormName>PrepaidMemberInfo.aspx</FormName>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>History of Activate/ Renew Member</DefaultText>
+		<Lang1>History of Activate/ Renew Member</Lang1>
+		<Lang2>ประวัติการ Activate/ Renew ของสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>View</DefaultText>
+		<Lang1>View</Lang1>
+		<Lang2>View</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Member Group</DefaultText>
+		<Lang1>Member Group</Lang1>
+		<Lang2>กลุ่มสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Search Member Code</DefaultText>
+		<Lang1>Search Member Code</Lang1>
+		<Lang2>ค้นหาจากรหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>----- All Shops -----</DefaultText>
+		<Lang1>----- All Shops -----</Lang1>
+		<Lang2>----- ทุกร้าน -----</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Export To Excel</DefaultText>
+		<Lang1>Export To Excel</Lang1>
+		<Lang2>Export To Excel</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>---- All Member Group ----</DefaultText>
+		<Lang1>---- All Member Group ----</Lang1>
+		<Lang2>---- ทุกกลุ่มสมาชิก ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Order by Member</DefaultText>
+		<Lang1>Order by Member</Lang1>
+		<Lang2>เรียงตามสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Order by Shop</DefaultText>
+		<Lang1>Order by Shop</Lang1>
+		<Lang2>เรียงตามร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>History Of Activate/ Renew Member</DefaultText>
+		<Lang1>History Of Activate/ Renew Member</Lang1>
+		<Lang2>ประวัติการ Activate/ ReNew ของสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Shop Code</DefaultText>
+		<Lang1>Shop Code</Lang1>
+		<Lang2>รหัสร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Member Code</DefaultText>
+		<Lang1>Member Code</Lang1>
+		<Lang2>รหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Member Name</DefaultText>
+		<Lang1>Member Name</Lang1>
+		<Lang2>ชื่อสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Operation</DefaultText>
+		<Lang1>Operation</Lang1>
+		<Lang2>Operation</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Old Member Code</DefaultText>
+		<Lang1>Old Member Code</Lang1>
+		<Lang2>รหัสสมาชิกเก่า</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>New Member Code</DefaultText>
+		<Lang1>New Member Code</Lang1>
+		<Lang2>รหัสสมาชิกใหม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Expire Date</DefaultText>
+		<Lang1>Expire Date</Lang1>
+		<Lang2>วันหมดอายุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Remark</DefaultText>
+		<Lang1>Remark</Lang1>
+		<Lang2>หมายเหตุ</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>History Date Time</DefaultText>
+		<Lang1>History Date Time</Lang1>
+		<Lang2>วัน-เวลาที่ทำรายการ</Lang2>
+	</Form>
+	<Form>
+		<FormID>209</FormID>
+		<FormName>Member_HistoryOfChangeCode.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>21</TextID>
 		<DefaultText></DefaultText>
@@ -8502,10 +8763,182 @@
 		<Lang2></Lang2>
 	</Form>
 
+
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Prefinish By Material Report</DefaultText>
+		<Lang1>Prefinish By Material Report</Lang1>
+		<Lang2>รายงานแปรรูปสินค้า แสดงรายการผลิต</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>View</DefaultText>
+		<Lang1>View</Lang1>
+		<Lang2>View</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Export To Excel</DefaultText>
+		<Lang1>Export To Excel</Lang1>
+		<Lang2>Export To Excel</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Display Prefnish Material By Date</DefaultText>
+		<Lang1>Display Prefnish Material By Date</Lang1>
+		<Lang2>แสดงการผลิตแยกตามวัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>---- All Group ----</DefaultText>
+		<Lang1>---- All Group ----</Lang1>
+		<Lang2>---- ทุกกลุ่ม ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>---- All Dept ----</DefaultText>
+		<Lang1>---- All Dept ----</Lang1>
+		<Lang2>---- ทุกหมวด ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>display by date</DefaultText>
+		<Lang1>display by date</Lang1>
+		<Lang2>แสดงตามวัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Material Code</DefaultText>
+		<Lang1>Material Code</Lang1>
+		<Lang2>รหัสวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Material Name</DefaultText>
+		<Lang1>Material Name</Lang1>
+		<Lang2>ชื่อวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Prefinish Date</DefaultText>
+		<Lang1>Prefinish Date</Lang1>
+		<Lang2>วันที่ผลิต</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Prefinish Amount</DefaultText>
+		<Lang1>Prefinish Amount</Lang1>
+		<Lang2>จำนวนผลิต</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>PAR</DefaultText>
+		<Lang1>PAR</Lang1>
+		<Lang2>PAR</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Diff</DefaultText>
+		<Lang1>Diff</Lang1>
+		<Lang2>Diff</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Diff %</DefaultText>
+		<Lang1>Diff %</Lang1>
+		<Lang2>Diff %</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Unit Name</DefaultText>
+		<Lang1>Unit Name</Lang1>
+		<Lang2>หน่วย</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Summary</DefaultText>
+		<Lang1>Summary</Lang1>
+		<Lang2>ยอดรวม</Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>210</FormID>
+		<FormName>Report_Prefinish.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
 	
-
-
-
+	
+	
+	
 	<Form>
 		<FormID>1000</FormID>
 		<FormName>manage_table.aspx</FormName>

@@ -1280,7 +1280,7 @@
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!-- 19/09/19 -->
+	<Form>
 		<FormID>9013</FormID>
 		<FormName>MemberSetFrontFeature.aspx</FormName>
 		<TextType>1</TextType>
@@ -1426,6 +1426,33 @@
 	</Form>
 	<Form>
 		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Re New Only Within</DefaultText>
+		<Lang1>Re New Only Within</Lang1>
+		<Lang2>ต่ออายุถายใน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>day(s)</DefaultText>
+		<Lang1>day(s)</Lang1>
+		<Lang2>วัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9013</FormID>
+		<FormName>MemberSetFrontFeature.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>must be numeric only</DefaultText>
+		<Lang1>must be numeric only</Lang1>
+		<Lang2>ต้องเป็นตัวเลขเท่านั้น</Lang2>
+	</Form>
+	<Form>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>1</TextID>
@@ -1434,7 +1461,7 @@
 		<Lang2>กำหนดค่าวันหมดอายุ</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>2</TextID>
@@ -1443,7 +1470,7 @@
 		<Lang2>ชื่อ</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>3</TextID>
@@ -1452,7 +1479,7 @@
 		<Lang2>ตั้งวันหมดอายุ</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>4</TextID>
@@ -1461,7 +1488,7 @@
 		<Lang2>กำหนดเอง</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>5</TextID>
@@ -1470,7 +1497,7 @@
 		<Lang2>หมดอายุหลังจากสมัคร/ activate ภายใน </Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>6</TextID>
@@ -1479,7 +1506,7 @@
 		<Lang2>บันทึก</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>7</TextID>
@@ -1488,7 +1515,7 @@
 		<Lang2>ยกเลิก</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>8</TextID>
@@ -1497,7 +1524,7 @@
 		<Lang2>วัน</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>9</TextID>
@@ -1506,7 +1533,7 @@
 		<Lang2>เดือน</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>10</TextID>
@@ -1515,7 +1542,7 @@
 		<Lang2>ปี</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>11</TextID>
@@ -1524,7 +1551,7 @@
 		<Lang2>วัน - แก้ไขได้</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>12</TextID>
@@ -1533,7 +1560,7 @@
 		<Lang2>เดือน - แก้ไขได้</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>13</TextID>
@@ -1542,7 +1569,7 @@
 		<Lang2>ปี - แก้ไขได้</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>14</TextID>
@@ -1551,7 +1578,7 @@
 		<Lang2>Number of Expire Date must be numeric only.</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>15</TextID>
@@ -1560,32 +1587,465 @@
 		<Lang2>Number of Expire Date must be > 0.</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>16</TextID>
-		<DefaultText></DefaultText>
-		<Lang1></Lang1>
-		<Lang2></Lang2>
+		<DefaultText>Add new member</DefaultText>
+		<Lang1>Add new member</Lang1>
+		<Lang2>เพิ่มสมาชิกใหม่</Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
+		<FormID>9014</FormID>
 		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>17</TextID>
+		<DefaultText>Activate from imported member</DefaultText>
+		<Lang1>Activate from imported member</Lang1>
+		<Lang2>Activate จากสมาชิกที่สร้างไว้แล้ว</Lang2>
+	</Form>
+	<Form>
+		<FormID>9014</FormID>
+		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>ReNew/ Change Member Code</DefaultText>
+		<Lang1>ReNew/ Change Member Code</Lang1>
+		<Lang2>ต่ออายุ/ เปลี่ยนรหัสสมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>KDS Setting Table Zone</DefaultText>
+		<Lang1>KDS Setting Table Zone</Lang1>
+		<Lang2>KDS Setting Table Zone</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Save</DefaultText>
+		<Lang1>Save</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>--- All Shop ---</DefaultText>
+		<Lang1>--- All Shop ---</Lang1>
+		<Lang2>--- ทุกร้าน ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Zone Name</DefaultText>
+		<Lang1>Zone Name</Lang1>
+		<Lang2>ชื่อโซน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>From KDS</DefaultText>
+		<Lang1>From KDS</Lang1>
+		<Lang2>จาก KDS</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>To KDS</DefaultText>
+		<Lang1>To KDS</Lang1>
+		<Lang2>ไปยัง KDS</Lang2>
+	</Form>
+	<Form>
+		<FormID>9015</FormID>
+		<FormName>settingKDSTableZone.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>---- Select KDS ----</DefaultText>
+		<Lang1>---- Select KDS ----</Lang1>
+		<Lang2>---- กรุณาเลือก KDS ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>KDS Sale Mode Setting</DefaultText>
+		<Lang1>KDS Sale Mode Setting</Lang1>
+		<Lang2>KDS Sale Mode Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Save</DefaultText>
+		<Lang1>Save</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>--- All Shop ---</DefaultText>
+		<Lang1>--- All Shop ---</Lang1>
+		<Lang2>--- ทุกร้าน ---</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Sale Mode</DefaultText>
+		<Lang1>Sale Mode</Lang1>
+		<Lang2>Sale Mode</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Warning Time (Min.)</DefaultText>
+		<Lang1>Warning Time (Min.)</Lang1>
+		<Lang2>Warning Time (Min.)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Critical Time (Min.)</DefaultText>
+		<Lang1>Critical Time (Min.)</Lang1>
+		<Lang2>Critical Time (Min.)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Time After Finish (Min.)</DefaultText>
+		<Lang1>Time After Finish (Min.)</Lang1>
+		<Lang2>Time After Finish (Min.)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Print To Printer</DefaultText>
+		<Lang1>Print To Printer</Lang1>
+		<Lang2>Print To Printer</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Print Summary To Printer</DefaultText>
+		<Lang1>Print Summary To Printer</Lang1>
+		<Lang2>Print Summary To Printer</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Summary Printer</DefaultText>
+		<Lang1>Summary Printer</Lang1>
+		<Lang2>Summary Printer</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Insert To KDS Transaction</DefaultText>
+		<Lang1>Insert To KDS Transaction</Lang1>
+		<Lang2>Insert To KDS Transaction</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>KDS Summary Type</DefaultText>
+		<Lang1>KDS Summary Type</Lang1>
+		<Lang2>KDS Summary Type</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>No</DefaultText>
+		<Lang1>No</Lang1>
+		<Lang2>No</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Yes</DefaultText>
+		<Lang1>Yes</Lang1>
+		<Lang2>Yes</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Print When Finish Process</DefaultText>
+		<Lang1>Print When Finish Process</Lang1>
+		<Lang2>Print When Finish Process</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Print When Send To KDS</DefaultText>
+		<Lang1>Print When Send To KDS</Lang1>
+		<Lang2>Print When Send To KDS</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Can Not Click</DefaultText>
+		<Lang1>Can Not Click</Lang1>
+		<Lang2>Can Not Click</Lang2>
+	</Form>
+	<Form>
+		<FormID>9016</FormID>
+		<FormName>settingKDSSaleModeProperty.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Can Click</DefaultText>
+		<Lang1>Can Click</Lang1>
+		<Lang2>Can Click</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>KDS Setting</DefaultText>
+		<Lang1>KDS Setting</Lang1>
+		<Lang2>KDS Setting</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Save</DefaultText>
+		<Lang1>Save</Lang1>
+		<Lang2>Save</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Display</DefaultText>
+		<Lang1>Display</Lang1>
+		<Lang2>Display</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Product Name</DefaultText>
+		<Lang1>Product Name</Lang1>
+		<Lang2>ชื่อสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Delay Time (Min.)</DefaultText>
+		<Lang1>Delay Time (Min.)</Lang1>
+		<Lang2>Delay Time (Min.)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Warning Time (Min.)</DefaultText>
+		<Lang1>Warning Time (Min.)</Lang1>
+		<Lang2>Warning Time (Min.)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Critical Time (Min.)</DefaultText>
+		<Lang1>Critical Time (Min.)</Lang1>
+		<Lang2>Critical Time (Min.)</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Step</DefaultText>
+		<Lang1>Step</Lang1>
+		<Lang2>Step</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Summary</DefaultText>
+		<Lang1>Summary</Lang1>
+		<Lang2>Summary</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ร้าน</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Number Of Step</DefaultText>
+		<Lang1>Number Of Step</Lang1>
+		<Lang2>Number Of Step</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Number Of KDS/ Step</DefaultText>
+		<Lang1>Number Of KDS/ Step</Lang1>
+		<Lang2>Number Of KDS/ Step</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Setting KDS By</DefaultText>
+		<Lang1>Setting KDS By</Lang1>
+		<Lang2>Setting KDS By</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Product Group</DefaultText>
+		<Lang1>Product Group</Lang1>
+		<Lang2>กลุ่มสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Product Dept</DefaultText>
+		<Lang1>Product Dept</Lang1>
+		<Lang2>หมวดสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText>Product</DefaultText>
+		<Lang1>Product</Lang1>
+		<Lang2>สินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>18</TextID>
+		<DefaultText>Select Group</DefaultText>
+		<Lang1>Select Group</Lang1>
+		<Lang2>เลือกกลุ่ม</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>19</TextID>
+		<DefaultText>Select Dept</DefaultText>
+		<Lang1>Select Dept</Lang1>
+		<Lang2>เลือกหมวด</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>20</TextID>
+		<DefaultText>Select Product</DefaultText>
+		<Lang1>Select Product</Lang1>
+		<Lang2>เลือกสินค้า</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>21</TextID>
+		<DefaultText>Select All</DefaultText>
+		<Lang1>Select All</Lang1>
+		<Lang2>Select All</Lang2>
+	</Form>
+	<Form>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>22</TextID>
 		<DefaultText></DefaultText>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
 	<Form>
-		<FormID>9013</FormID>
-		<FormName>MemberSetFrontExpiration_Edit.aspx</FormName>
+		<FormID>9017</FormID>
+		<FormName>settingKDS.aspx</FormName>
 		<TextType>1</TextType>
-		<TextID>18</TextID>
+		<TextID>23</TextID>
 		<DefaultText></DefaultText>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
+
 	
 	
 	

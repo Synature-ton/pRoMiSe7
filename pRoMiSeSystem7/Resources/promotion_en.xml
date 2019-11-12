@@ -839,7 +839,7 @@
     <langid>1</langid>
     <value>The lowest first prices.</value>
   </Form>
-  <Form>	<!-- 19/09/19 -->
+  <Form>
     <formid>5</formid>
     <formname>promotion_Level_Edit.aspx</formname>
     <id>0</id>

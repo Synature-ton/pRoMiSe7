@@ -224,13 +224,22 @@ Sub Page_Load()
                 'Paid TIme
                 strTemp = BackOfficeReport.GetLanguageText(DiscountLangData, 18, LangText, "Paid Name")
                 HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+                'Total Price
+                strTemp = BackOfficeReport.GetLanguageText(LangData2, 22, LangText, "ราคาขาย")
+                HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
                 'Discount Price
-                strTemp = BackOfficeReport.GetLanguageText(DiscountLangData, 5, LangText, "à¸ªà¹à¸§à¸à¸¥à¸à¸ªà¸¡à¸²à¸à¸´à¸")
+                strTemp = BackOfficeReport.GetLanguageText(LangData2, 23, LangText, "ส่วนลด")
                 HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
                 'Sale Price
-                HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & BackOfficeReport.GetLanguageText(LangData2, 26, LangText, "à¸£à¸²à¸à¸²à¸ªà¸¸à¸à¸à¸´") & "</td>"
-			
-          
+                BackOfficeReport.GetLanguageText(LangData2, 26, LangText, "à¸£à¸²à¸à¸²à¸ªà¸¸à¸à¸à¸´")
+                HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+                'Print Bill Staff
+                strTemp = BackOfficeReport.GetLanguageText(DiscountLangData, 19, LangText, "Print Bill Staff")
+                HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+                'Paid Staff
+                strTemp = BackOfficeReport.GetLanguageText(DiscountLangData, 20, LangText, "Paid Staff")
+                HeaderString &= "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+                         
                 TableHeaderText.InnerHtml = HeaderString
 		
                 startTable.InnerHtml = "<table border=""1"" cellpadding=""4"" cellspacing=""0"" style=""border-collapse:collapse;"" width=""100%"">"

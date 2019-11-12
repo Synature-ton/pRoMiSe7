@@ -47,10 +47,9 @@
 	<table><tr><td valign="top">
 		<table id="myTable" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
 		<tr>
-			<td id="headerTD1" align="center" class="tdHeader" runat="server">&nbsp;</td>
-			<td id="headerTD2" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText" runat="server"></div></td>
-			<td id="headerTD3" align="center" class="tdHeader" runat="server"><div id="UsedText" runat="server"></div></td>
-			<td id="headerTD4" align="center" class="tdHeader" runat="server"><div id="NumUseText" runat="server"></div></td>
+			<td id="headerTD1_1" align="center" class="tdHeader" runat="server">&nbsp;</td>
+			<td id="headerTD2_1" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText" runat="server"></div></td>
+			<td id="headerTD3_1" align="center" class="tdHeader" runat="server"><div id="NumUseText" runat="server"></div></td>
 		</tr>
 		
 		<div id="ResultText" runat="server"></div>
@@ -60,10 +59,9 @@
 	<td id="secondCol" runat="server" visible="False" valign="top">
 		<table id="myTable2" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
 		<tr>
-			<td id="headerTD11" align="center" class="tdHeader" runat="server">&nbsp;</td>
-			<td id="headerTD22" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText2" runat="server"></div></td>
-			<td id="headerTD33" align="center" class="tdHeader" runat="server"><div id="UsedText2" runat="server"></div></td>
-			<td id="headerTD44" align="center" class="tdHeader" runat="server"><div id="NumUseText2" runat="server"></div></td>
+			<td id="headerTD1_2" align="center" class="tdHeader" runat="server">&nbsp;</td>
+			<td id="headerTD2_2" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText2" runat="server"></div></td>
+			<td id="headerTD3_2" align="center" class="tdHeader" runat="server"><div id="NumUseText2" runat="server"></div></td>
 		</tr>
 		
 		<div id="ResultText2" runat="server"></div>
@@ -73,10 +71,9 @@
 	<td id="thirdCol" runat="server" visible="False" valign="top">
 		<table id="myTable3" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
 		<tr>
-			<td id="headerTD111" align="center" class="tdHeader" runat="server">&nbsp;</td>
-			<td id="headerTD222" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText3" runat="server"></div></td>
-			<td id="headerTD333" align="center" class="tdHeader" runat="server"><div id="UsedText3" runat="server"></div></td>
-			<td id="headerTD444" align="center" class="tdHeader" runat="server"><div id="NumUseText3" runat="server"></div></td>
+			<td id="headerTD1_3" align="center" class="tdHeader" runat="server">&nbsp;</td>
+			<td id="headerTD2_3" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText3" runat="server"></div></td>
+			<td id="headerTD3_3" align="center" class="tdHeader" runat="server"><div id="NumUseText3" runat="server"></div></td>
 		</tr>
 		
 		<div id="ResultText3" runat="server"></div>
@@ -84,18 +81,42 @@
 		</table>
 	</td>
 	<td id="fourthCol" runat="server" visible="False" valign="top">
-		<table id="myTable3" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
+		<table id="myTable4" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
 		<tr>
-			<td id="headerTD1111" align="center" class="tdHeader" runat="server">&nbsp;</td>
-			<td id="headerTD2222" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText4" runat="server"></div></td>
-			<td id="headerTD3333" align="center" class="tdHeader" runat="server"><div id="UsedText4" runat="server"></div></td>
-			<td id="headerTD4444" align="center" class="tdHeader" runat="server"><div id="NumUseText4" runat="server"></div></td>
+			<td id="headerTD1_4" align="center" class="tdHeader" runat="server">&nbsp;</td>
+			<td id="headerTD2_4" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText4" runat="server"></div></td>
+			<td id="headerTD3_4" align="center" class="tdHeader" runat="server"><div id="NumUseText4" runat="server"></div></td>
 		</tr>
 		
 		<div id="ResultText4" runat="server"></div>
 	
 		</table>
 	</td>
+	<td id="fifthCol" runat="server" visible="False" valign="top">
+		<table id="myTable5" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
+		<tr>
+			<td id="headerTD1_5" align="center" class="tdHeader" runat="server">&nbsp;</td>
+			<td id="headerTD2_5" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText5" runat="server"></div></td>
+			<td id="headerTD3_5" align="center" class="tdHeader" runat="server"><div id="NumUseText5" runat="server"></div></td>
+		</tr>
+		
+		<div id="ResultText5" runat="server"></div>
+	
+		</table>
+	</td>
+	<td id="sixthCol" runat="server" visible="False" valign="top">
+		<table id="myTable6" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" >
+		<tr>
+			<td id="headerTD1_6" align="center" class="tdHeader" runat="server">&nbsp;</td>
+			<td id="headerTD2_6" align="center" class="tdHeader" visible="true" runat="server"><div id="CVNumberText6" runat="server"></div></td>
+			<td id="headerTD3_6" align="center" class="tdHeader" runat="server"><div id="NumUseText6" runat="server"></div></td>
+		</tr>
+		
+		<div id="ResultText6" runat="server"></div>
+	
+		</table>
+	</td>
+
 	</tr></table>
 	</td></tr>
 	<tr id="showRange" visible="true" runat="server">
@@ -147,230 +168,231 @@ Dim getData As New CPromotions()
 Dim getPageText As New DefaultText()
 Dim getProp As New CPreferences()
 Dim objDB As New CDBUtil()
-Sub Page_Load()
-	If User.Identity.IsAuthenticated AND ( (Session("Promotion_Coupon") AND Request.QueryString("type") = 4) OR (Session("Promotion_Voucher") AND Request.QueryString("type") = 5) ) Then
+    
+    Dim rowPerPage As Integer = 90
+    Dim rowPerCol As Integer = 15
+    
+    Sub Page_Load()
+        If User.Identity.IsAuthenticated And ((Session("Promotion_Coupon") And Request.QueryString("type") = 4) Or (Session("Promotion_Voucher") And Request.QueryString("type") = 5)) Then
 		
-		SubmitForm.Attributes.Item("onclick") = "this.disabled=true; " & GetPostBackEventReference(SubmitForm).ToString
+            SubmitForm.Attributes.Item("onclick") = "this.disabled=true; " & GetPostBackEventReference(SubmitForm).ToString
 		
-		headerTD1.BgColor = GlobalParam.AdminBGColor
-		headerTD2.BgColor = GlobalParam.AdminBGColor
-		headerTD3.BgColor = GlobalParam.AdminBGColor
-		headerTD4.BgColor = GlobalParam.AdminBGColor
-		headerTD11.BgColor = GlobalParam.AdminBGColor
-		headerTD22.BgColor = GlobalParam.AdminBGColor
-		headerTD33.BgColor = GlobalParam.AdminBGColor
-		headerTD44.BgColor = GlobalParam.AdminBGColor
-		headerTD111.BgColor = GlobalParam.AdminBGColor
-		headerTD222.BgColor = GlobalParam.AdminBGColor
-		headerTD333.BgColor = GlobalParam.AdminBGColor
-		headerTD444.BgColor = GlobalParam.AdminBGColor
-		headerTD1111.BgColor = GlobalParam.AdminBGColor
-		headerTD2222.BgColor = GlobalParam.AdminBGColor
-		headerTD3333.BgColor = GlobalParam.AdminBGColor
-		headerTD4444.BgColor = GlobalParam.AdminBGColor
+            headerTD1_1.BgColor = GlobalParam.AdminBGColor
+            headerTD2_1.BgColor = GlobalParam.AdminBGColor
+            headerTD3_1.BgColor = GlobalParam.AdminBGColor
+            headerTD1_2.BgColor = GlobalParam.AdminBGColor
+            headerTD2_2.BgColor = GlobalParam.AdminBGColor
+            headerTD3_2.BgColor = GlobalParam.AdminBGColor
+            headerTD1_3.BgColor = GlobalParam.AdminBGColor
+            headerTD2_3.BgColor = GlobalParam.AdminBGColor
+            headerTD3_3.BgColor = GlobalParam.AdminBGColor
+            headerTD1_4.BgColor = GlobalParam.AdminBGColor
+            headerTD2_4.BgColor = GlobalParam.AdminBGColor
+            headerTD3_4.BgColor = GlobalParam.AdminBGColor
+            headerTD1_5.BgColor = GlobalParam.AdminBGColor
+            headerTD2_5.BgColor = GlobalParam.AdminBGColor
+            headerTD3_5.BgColor = GlobalParam.AdminBGColor
+            headerTD1_6.BgColor = GlobalParam.AdminBGColor
+            headerTD2_6.BgColor = GlobalParam.AdminBGColor
+            headerTD3_6.BgColor = GlobalParam.AdminBGColor
 		
-		headerTD1.Visible= True
-		headerTD11.Visible= True
-		headerTD111.Visible= True
-		headerTD1111.Visible= True
-		
-		VoucherTypeID.Value = Request.QueryString("VoucherTypeID")
-		'Try
-			objCnn = getCnn.EstablishConnection()
+            headerTD1_1.Visible = True
+            headerTD2_1.Visible = True
+            headerTD3_1.Visible = True
+            
+            VoucherTypeID.Value = Request.QueryString("VoucherTypeID")
+            'Try
+            objCnn = getCnn.EstablishConnection()
 			
-			Dim PropertyInfo As DataTable = getProp.PropertyInfo(1,objCnn)
-			If PropertyInfo.Rows(0)("HeadOrBranch") = 1 Then
-				headerTD1.Visible = False
-				headerTD11.Visible = False
-				headerTD111.Visible = False
-				headerTD1111.Visible = False
-			End If
-			Dim ExtraURL As String = ""
-			If IsNumeric(Request.QueryString("type")) Then
-				ExtraURL = "type=" + Request.QueryString("type").ToString
-			End If
-			Dim UsedValue As Integer = -1
-			If IsNumeric(Request.QueryString("Used")) Then
-				UsedValue = Request.QueryString("Used")
-				ExtraURL += "&Used=" + UsedValue.ToString
-			End If
-			If UsedValue = -1 AND headerTD1.Visible = True Then
-				showSubmit.Visible = True
-			End If
-			
-			
-			Dim textTable As New DataTable()
-			textTable = getPageText.GetText(12,Session("LangID"),objCnn)
+            Dim PropertyInfo As DataTable = getProp.PropertyInfo(1, objCnn)
+            If PropertyInfo.Rows(0)("HeadOrBranch") = 1 Then
+                headerTD1_1.Visible = False
+                headerTD1_2.Visible = False
+                headerTD1_3.Visible = False
+                headerTD1_4.Visible = False
+                headerTD1_5.Visible = False
+                headerTD1_6.Visible = False
+            End If
+            Dim ExtraURL As String = ""
+            If IsNumeric(Request.QueryString("type")) Then
+                ExtraURL = "type=" + Request.QueryString("type").ToString
+            End If
+            Dim UsedValue As Integer = -1
+            If IsNumeric(Request.QueryString("Used")) Then
+                UsedValue = Request.QueryString("Used")
+                ExtraURL += "&Used=" + UsedValue.ToString
+            End If
+            If UsedValue = -1 And headerTD1_1.Visible = True Then
+                showSubmit.Visible = True
+            End If
+            'Hide Delete Button
+            showSubmit.Visible = False
+						
+            Dim textTable As New DataTable()
+            textTable = getPageText.GetText(12, Session("LangID"), objCnn)
 				
-			Dim defaultTextTable As New DataTable()
-			defaultTextTable = getPageText.GetDefaultText(Session("LangID"),objCnn)
+            Dim defaultTextTable As New DataTable()
+            defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
 
 			
-			Dim PromotionType As String = "Voucher"
-			Dim CouponType As Integer
-			If Request.QueryString("type") = 4 Then
-				PromotionType = "Coupon"
-				SubmitForm.Text = "Delete Coupon"
-				VoucherRangeText.InnerHtml = "Coupon Number Range"
-				TotalText.InnerHtml = "Total Coupon(s)"
-				TotalUsedText.InnerHtml = "Total Used Coupon(s)"
-			Else
-				PromotionType = "Voucher"
-				SubmitForm.Text = "Delete Voucher"
-				VoucherRangeText.InnerHtml = "Voucher Number Range"
-				TotalText.InnerHtml = "Total Voucher(s)"
-				TotalUsedText.InnerHtml = "Total Used Voucher(s)"
-			End If
-			CVNumberText.InnerHtml = PromotionType + " #"
-			UsedText.InnerHtml = "Used"
-			NumUseText.InnerHtml = " # Used"
-			CVNumberText2.InnerHtml = PromotionType + " #"
-			UsedText2.InnerHtml = "Used"
-			NumUseText2.InnerHtml = " # Used"
-			CVNumberText3.InnerHtml = PromotionType + " #"
-			UsedText3.InnerHtml = "Used"
-			NumUseText3.InnerHtml = " # Used"
-			CVNumberText4.InnerHtml = PromotionType + " #"
-			UsedText4.InnerHtml = "Used"
-			NumUseText4.InnerHtml = " # Used"
-			GoBackText.InnerHtml = "<a href=""promotion_voucher.aspx?" + ExtraURL + """>" + defaultTextTable.Rows(51)("TextParamValue") + "</a>"
-			Dim RangeTable As DataTable
-			Dim TotalUsedCV As Integer
-			Dim dtTable As New DataTable()
-			dtTable = getData.GetCVPromoDetails_New(RangeTable,TotalUsedCV,-1, VoucherTypeID.Value, "", -1, UsedValue, objCnn)	
-			TotalUsedVal.InnerHtml = TotalUsedCV.ToString
-			Dim RangeT As String = ""
-			Dim TotalNumCV As Integer = 0
+            Dim PromotionType As String = "Voucher"
+            If Request.QueryString("type") = 4 Then
+                PromotionType = "Coupon"
+                SubmitForm.Text = "Delete Coupon"
+                VoucherRangeText.InnerHtml = "Coupon Number Range"
+                TotalText.InnerHtml = "Total Coupon(s)"
+                TotalUsedText.InnerHtml = "Total Used Coupon(s)"
+            Else
+                PromotionType = "Voucher"
+                SubmitForm.Text = "Delete Voucher"
+                VoucherRangeText.InnerHtml = "Voucher Number Range"
+                TotalText.InnerHtml = "Total Voucher(s)"
+                TotalUsedText.InnerHtml = "Total Used Voucher(s)"
+            End If
+            CVNumberText.InnerHtml = PromotionType + " #"
+            NumUseText.InnerHtml = " # Used"
+            CVNumberText2.InnerHtml = PromotionType + " #"
+            NumUseText2.InnerHtml = " # Used"
+            CVNumberText3.InnerHtml = PromotionType + " #"
+            NumUseText3.InnerHtml = " # Used"
+            CVNumberText4.InnerHtml = PromotionType + " #"
+            NumUseText4.InnerHtml = " # Used"
+            CVNumberText5.InnerHtml = PromotionType + " #"
+            NumUseText5.InnerHtml = " # Used"
+            CVNumberText6.InnerHtml = PromotionType + " #"
+            NumUseText6.InnerHtml = " # Used"
+            GoBackText.InnerHtml = "<a href=""promotion_voucher.aspx?" + ExtraURL + """>" + defaultTextTable.Rows(51)("TextParamValue") + "</a>"
+            Dim RangeTable As DataTable
+            Dim TotalUsedCV As Integer
+            Dim dtTable As New DataTable()
+            dtTable = getData.GetCVPromoDetails_New(RangeTable, TotalUsedCV, -1, VoucherTypeID.Value, "", -1, UsedValue, objCnn)
+            TotalUsedVal.InnerHtml = TotalUsedCV.ToString
+            Dim RangeT As String = ""
+            Dim TotalNumCV As Integer = 0
 			
-			Dim j As Integer
-			For j = 0 To RangeTable.Rows.Count - 1
-				If j = 0 Then
-					RangeT += RangeTable.Rows(j)("StartNo").ToString + "-" + RangeTable.Rows(j)("EndNo").ToString
-				Else
-					RangeT += ", " + RangeTable.Rows(j)("StartNo").ToString + "-" + RangeTable.Rows(j)("EndNo").ToString
-				End If
-				TotalNumCV += RangeTable.Rows(j)("EndNo") - RangeTable.Rows(j)("StartNo") + 1
-			Next
-			VoucherRangeVal.InnerHtml = RangeT
-			TotalVal.InnerHtml = TotalNumCV.ToString
+            Dim j As Integer
+            For j = 0 To RangeTable.Rows.Count - 1
+                If j = 0 Then
+                    RangeT += RangeTable.Rows(j)("StartNo").ToString + "-" + RangeTable.Rows(j)("EndNo").ToString
+                Else
+                    RangeT += ", " + RangeTable.Rows(j)("StartNo").ToString + "-" + RangeTable.Rows(j)("EndNo").ToString
+                End If
+                TotalNumCV += RangeTable.Rows(j)("EndNo") - RangeTable.Rows(j)("StartNo") + 1
+            Next
+            VoucherRangeVal.InnerHtml = RangeT
+            TotalVal.InnerHtml = TotalNumCV.ToString
 			
-			If dtTable.Rows.Count > 0 Then
-				Text_SectionParam.InnerHtml = dtTable.Rows(0)("VoucherTypeName") + " (" + dtTable.Rows(0)("VoucherHeader") + ")"
+            If dtTable.Rows.Count > 0 Then
+                Text_SectionParam.InnerHtml = dtTable.Rows(0)("VoucherTypeName") + " (" + dtTable.Rows(0)("VoucherHeader") + ")"
 				
+                Dim StartPageIndex As Integer = 0
+                Dim EndPageIndex, NumberOfPage As Integer
 				
-				Dim NumPerPage As Integer = 40
-				Dim StartPageIndex As Integer = 0
-				Dim EndPageIndex,NumberOfPage As Integer
+                If IsNumeric(Request.QueryString("StartPageIndex")) Then
+                    If Request.QueryString("StartPageIndex") < dtTable.Rows.Count Then
+                        StartPageIndex = Request.QueryString("StartPageIndex")
+                    End If
+                End If
 				
-				If IsNumeric(Request.QueryString("StartPageIndex")) Then
-					If Request.QueryString("StartPageIndex") < dtTable.Rows.Count Then
-						StartPageIndex = Request.QueryString("StartPageIndex")
-					End If
-				End If
+                NumberOfPage = Math.Ceiling(dtTable.Rows.Count / rowPerPage)
 				
-				NumberOfPage = Math.ceiling(dtTable.Rows.Count/NumPerPage)
+                If (StartPageIndex + rowPerPage - 1) < dtTable.Rows.Count Then
+                    EndPageIndex = StartPageIndex + rowPerPage - 1
+                Else
+                    EndPageIndex = dtTable.Rows.Count - 1
+                End If
 				
-				If (StartPageIndex + NumPerPage - 1) < dtTable.Rows.Count Then
-					EndPageIndex = StartPageIndex + NumPerPage - 1
-				Else
-					EndPageIndex = dtTable.Rows.Count - 1
-				End If
+                'errorMsg.InnerHtml = "StartPage=" + StartPageIndex.ToString + ":Used=" + UsedValue.ToString
 				
-				'errorMsg.InnerHtml = "StartPage=" + StartPageIndex.ToString + ":Used=" + UsedValue.ToString
+                Dim i, NumberForPage As Integer
+                Dim strVoucherNo As String
+                Dim IndexString As String = ""
+                If NumberOfPage > 1 Then
+                    For i = 1 To NumberOfPage
+                        NumberForPage = (i - 1) * rowPerPage
+                        If StartPageIndex <> NumberForPage Then
+                            IndexString += " " + "<a href=""promotion_voucher_details.aspx?VoucherTypeID=" + VoucherTypeID.Value.ToString + "&StartPageIndex=" + NumberForPage.ToString + "&" + ExtraURL + """>" + i.ToString + "</a>"
+                        Else
+                            IndexString += " " + i.ToString
+                        End If
+                    Next
+                    navigateText.InnerHtml = IndexString
+                End If
 				
-				Dim i,maxNum,NumberForPage As Integer
-				Dim IndexString As String = ""
-				If NumberOfPage > 1 Then
-					For i=1 To NumberOfPage
-						NumberForPage = (i-1)*NumPerPage
-						If StartPageIndex <> NumberForPage Then
-							indexString += " " + "<a href=""promotion_voucher_details.aspx?VoucherTypeID=" + VoucherTypeID.Value.ToString + "&StartPageIndex=" + NumberForPage.ToString + "&" + ExtraURL + """>" + i.ToString + "</a>"
-						Else
-							indexString += " " + i.ToString
-						End If
-					Next
-					navigateText.InnerHtml = indexString
-				End If			
-				
-				Dim outputString As String = ""
-				Dim IDNumber As String
-				Dim StartLoop,EndLoop As Integer
+                Dim outputString As String = ""
+                Dim StartLoop, EndLoop As Integer
 
-				For j = 0 To 3
-					outputString = ""
-					StartLoop = StartPageIndex + j*10
-					EndLoop = StartPageIndex + (j+1)*10 - 1
+                For j = 0 To 5
+                    outputString = ""
+                    StartLoop = StartPageIndex + j * rowPerCol
+                    EndLoop = StartPageIndex + (j + 1) * rowPerCol - 1
 
-					If EndLoop > dtTable.Rows.Count - 1 Then EndLoop = dtTable.Rows.Count - 1
-					For i = StartLoop to EndLoop
-						If dtTable.Rows(i)("ReuseCoupon") = 1 Then
-							headerTD4.Visible = True
-							headerTD44.Visible = True
-							headerTD444.Visible = True
-							headerTD4444.Visible = True
-						Else
-							headerTD4.Visible = False
-							headerTD44.Visible = False
-							headerTD444.Visible = False
-							headerTD4444.Visible = False
-						End If
-						outputString += "<tr>"
-						If headerTD1.Visible = True Then
-							If dtTable.Rows(i)("Used") = 0 Then
-								outputString += "<td align=""center""><input type=""checkbox"" name=""selectedItem"" value=""" + dtTable.Rows(i)("VoucherID").ToString + """></td>"
-							Else
-								outputString += "<td>&nbsp;</td>"
-							End If
-						End If
-						maxNum = dtTable.Rows(i)("VoucherID") + 1000000
-						IDNumber = dtTable.Rows(i)("VoucherHeader") + "/" + Right(maxNum.ToString, 6)
-						outputString += "<td class=""text"">" + IDNumber + "</td>"
-						outputString += "<td align=""center"" class=""text"">" + dtTable.Rows(i)("Used").ToString + "</td>"
-						If headerTD4.Visible = True Then
-							outputString += "<td align=""center"" class=""text"">" + dtTable.Rows(i)("NumUse").ToString + "</td>"
-						End If
-						outputString += "</tr>"
-					Next
-					If outputString <> "" Then
-						If j = 0 Then
-							ResultText.InnerHtml = outputString
-						ElseIf j = 1 Then
-							SecondCol.Visible = True
-							ResultText2.InnerHtml = outputString
-						ElseIf j = 2 Then
-							ThirdCol.Visible = True
-							ResultText3.InnerHtml = outputString
-						Else
-							FourthCol.Visible = True
-							ResultText4.InnerHtml = outputString
-						End If
-					End If
-				Next
-			End If
+                    If EndLoop > dtTable.Rows.Count - 1 Then EndLoop = dtTable.Rows.Count - 1
+                    For i = StartLoop To EndLoop
+                        outputString += "<tr>"
+                        If headerTD1_1.Visible = True Then
+                            If dtTable.Rows(i)("Used") = 0 Then
+                                outputString += "<td align=""center""><input type=""checkbox"" name=""selectedItem"" value=""" + dtTable.Rows(i)("VoucherID").ToString + """></td>"
+                            Else
+                                outputString += "<td>&nbsp;</td>"
+                            End If
+                        End If
+                        strVoucherNo = dtTable.Rows(i)("VoucherID")
+                        strVoucherNo = dtTable.Rows(i)("VoucherHeader") & "/" & strVoucherNo.ToString.PadLeft(6, "0")
+                        outputString += "<td class=""text"">" & strVoucherNo & "</td>"
+                        outputString += "<td align=""center"" class=""text"">" + dtTable.Rows(i)("NumUse").ToString + "</td>"
+                        outputString += "</tr>"
+                    Next i
+                    
+                    If outputString <> "" Then
+                        Select Case j
+                            Case 0
+                                ResultText.InnerHtml = outputString
+
+                            Case 1
+                                secondCol.Visible = True
+                                ResultText2.InnerHtml = outputString
+
+                            Case 2
+                                thirdCol.Visible = True
+                                ResultText3.InnerHtml = outputString
+                                
+                            Case 3
+                                fourthCol.Visible = True
+                                ResultText4.InnerHtml = outputString
+
+                            Case 4
+                                fifthCol.Visible = True
+                                ResultText5.InnerHtml = outputString
+                                
+                            Case 5
+                                sixthCol.Visible = True
+                                ResultText6.InnerHtml = outputString
+                        End Select
+                    End If
+                Next
+            End If
 				
 			
-		'Catch ex As Exception
-			'errorMsg.InnerHtml = ex.Message
-		'End Try
-	Else
-		updateMessage.Text = "Access Denied"
-	End If
-End Sub
+            'Catch ex As Exception
+            'errorMsg.InnerHtml = ex.Message
+            'End Try
+        Else
+            updateMessage.Text = "Access Denied"
+        End If
+    End Sub
 
-Sub DoDelete(Source As Object, E As EventArgs)
-	
-	Dim Result As String
-	If Trim(ItemList.Text) <> "" Then
-		Result = getData.ModifyVouchers_New(VoucherTypeID.Value,ItemList.Text,objCnn)
-	End If
-	Response.Redirect("promotion_voucher_details.aspx?" + Request.QueryString.ToString)
+    Sub DoDelete(Source As Object, E As EventArgs)
+        Dim Result As String
+        If Trim(ItemList.Text) <> "" Then
+            Result = getData.ModifyVouchers_New(VoucherTypeID.Value, ItemList.Text, objCnn)
+        End If
+        Response.Redirect("promotion_voucher_details.aspx?" + Request.QueryString.ToString)
+    End Sub
 
-End Sub
-
-
-Sub Page_UnLoad()
-	objCnn.Close()
-End Sub
+    Sub Page_UnLoad()
+        objCnn.Close()
+    End Sub
 
 </script>
 </body>

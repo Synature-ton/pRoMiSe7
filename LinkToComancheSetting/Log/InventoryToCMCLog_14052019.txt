@@ -1,0 +1,10 @@
+14-05-2019 16:44:44.195 : Start Sync Data From ComanancheDB To POSDB
+14-05-2019 16:44:44.210 : Get Vendor Data From CMC DB & POS DB
+14-05-2019 16:44:44.460 : Check and Update Vendor From CMC To POSDB
+14-05-2019 16:44:44.867 : End Sync Data From ComanancheDB To POSDB
+--------------------------------------------------------------------------------
+14-05-2019 17:16:16.477 : Start Sync Data From ComanancheDB To POSDB
+14-05-2019 17:16:16.524 : Get Vendor Data From CMC DB & POS DB
+14-05-2019 17:16:16.734 : Check and Update Vendor From CMC To POSDB
+14-05-2019 17:16:17.163 : End Sync Data From ComanancheDB To POSDB
+--------------------------------------------------------------------------------

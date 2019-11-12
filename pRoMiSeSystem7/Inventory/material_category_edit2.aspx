@@ -581,13 +581,13 @@ Dim getProp As New CPreferences()
                 Dim typeTable As New DataTable()
 		
                 Dim ChkPrefinish As DataTable = objDB.List("select * from programpropertyvalue where ProgramTypeID=3 AND PropertyID=9 AND KeyID=1", objCnn)
-                Dim EnablePre As Boolean = False
+                Dim bolEnablePrefinish As Boolean = False
                 If ChkPrefinish.Rows.Count > 0 Then
-                    If ChkPrefinish.Rows(0)("PropertyValue") = 1 Then
-                        EnablePre = True
+                    If ChkPrefinish.Rows(0)("PropertyValue") <> 0 Then
+                        bolEnablePrefinish = True
                     End If
                 End If
-                If EnablePre = False Then
+                If bolEnablePrefinish = False Then
                     typeTable = getInfo.GetMaterialType(1, Session("LangID"), objCnn)
                 Else
                     typeTable = getInfo.GetMaterialType(0, Session("LangID"), objCnn)

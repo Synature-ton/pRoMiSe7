@@ -81,20 +81,20 @@
 <input type="hidden" id="DocToMonth" value="" runat="server" />
 <input type="hidden" id="DocToYear" value="" runat="server" />
 
-<input type="hidden" id="SelMonth9" value="" runat="server" />
-<input type="hidden" id="SelYear9" value="" runat="server" />
+<input type="hidden" id="monthly_SaleReport_Month" value="" runat="server" />
+<input type="hidden" id="monthly_SaleReport_Year" value="" runat="server" />
 
-<input type="hidden" id="DocDailyDay9" value="" runat="server" />
-<input type="hidden" id="DocDailyMonth9" value="" runat="server" />
-<input type="hidden" id="DocDailyYear9" value="" runat="server" />
+<input type="hidden" id="daily_SaleReport_Day" value="" runat="server" />
+<input type="hidden" id="daily_SaleReport_Month" value="" runat="server" />
+<input type="hidden" id="daily_SaleReport_Year" value="" runat="server" />
 
-<input type="hidden" id="DocDay9" value="" runat="server" />
-<input type="hidden" id="DocMonth9" value="" runat="server" />
-<input type="hidden" id="DocYear9" value="" runat="server" />
-<input type="hidden" id="DocToDay9" value="" runat="server" />
-<input type="hidden" id="DocToMonth9" value="" runat="server" />
-<input type="hidden" id="DocToYear9" value="" runat="server" />
-
+<input type="hidden" id="FromDate_SaleReport_Day" value="" runat="server" />
+<input type="hidden" id="FromDate_SaleReport_Month" value="" runat="server" />
+<input type="hidden" id="FromDate_SaleReport_Year" value="" runat="server" />
+<input type="hidden" id="ToDate_SaleReport_Day" value="" runat="server" />
+<input type="hidden" id="ToDate_SaleReport_Month" value="" runat="server" />
+<input type="hidden" id="ToDate_SaleReport_Year" value="" runat="server" />
+    
 <input type="hidden" id="SendDateDay" value="" runat="server" />
 <input type="hidden" id="SendDateMonth" value="" runat="server" />
 <input type="hidden" id="SendDateYear" value="" runat="server" />
@@ -114,14 +114,14 @@
 <div class="noprint">
 <table border="0" cellpadding="4" cellspacing="0" style="border-collapse:collapse;">
 	<tr>
-		<td class="text">[<asp:LinkButton ID="SearchCriteria" OnClick="DoSwitch1" Enabled="false" runat="server"></asp:LinkButton>]</td>
-		<td class="text">[<asp:LinkButton ID="SearchResult" OnClick="DoSwitch2" runat="server"></asp:LinkButton>]</td>
-		<td class="text">[<asp:LinkButton ID="BestSeller" OnClick="DoSwitch3" runat="server"></asp:LinkButton>]</td>
-		<td class="text">[<asp:LinkButton ID="SaleReport" OnClick="DoSwitch4" runat="server"></asp:LinkButton>]</td>
-		<span id="ShowSMS" visible="false" runat="server"><td class="text">[<asp:LinkButton ID="SMSForm" OnClick="DoSwitch8" runat="server"></asp:LinkButton>]</td></span>
-		<span id="ShowEmail" visible="true" runat="server"><td class="text">[<asp:LinkButton ID="EmailForm" OnClick="DoSwitch5" runat="server"></asp:LinkButton>]</td></span>
-		<span id="ShowLabel" visible="false" runat="server"><td>[<asp:LinkButton ID="LabelLink" OnClick="DoSwitch6" runat="server"></asp:LinkButton>]</td></span>
-		<span id="ShowOptions" visible="true" runat="server"><td class="text">[<asp:LinkButton ID="Options" OnClick="DoSwitch7" runat="server"></asp:LinkButton>]</td></span>
+		<td class="text">[<asp:LinkButton ID="SearchCriteria" OnClick="DoSwitch_SearchCriteria" Enabled="false" runat="server"></asp:LinkButton>]</td>
+		<td class="text">[<asp:LinkButton ID="SearchResult" OnClick="DoSwitch_SearchResult" runat="server"></asp:LinkButton>]</td>
+		<td class="text">[<asp:LinkButton ID="BestSeller" OnClick="DoSwitch_TopSale" runat="server"></asp:LinkButton>]</td>
+		<td class="text">[<asp:LinkButton ID="SaleReport" OnClick="DoSwitch_SaleReport" runat="server"></asp:LinkButton>]</td>
+		<span id="ShowSMS" visible="false" runat="server"><td class="text">[<asp:LinkButton ID="SMSForm" OnClick="DoSwitch_SMS" runat="server"></asp:LinkButton>]</td></span>
+		<span id="ShowEmail" visible="false" runat="server"><td class="text">[<asp:LinkButton ID="EmailForm" OnClick="DoSwitch_Email" runat="server"></asp:LinkButton>]</td></span>
+		<span id="ShowLabel" visible="false" runat="server"><td>[<asp:LinkButton ID="LabelLink" OnClick="DoSwitch_Label" runat="server"></asp:LinkButton>]</td></span>
+		<span id="ShowOptions" visible="true" runat="server"><td class="text">[<asp:LinkButton ID="Options" OnClick="DoSwitch_Option" runat="server"></asp:LinkButton>]</td></span>
 	</tr>
 </table>
 <table border="0" cellpadding="4" cellspacing="0">
@@ -132,7 +132,7 @@
 	</tr>
 </table>
 </div>
-<div id="Section1" runat="server">
+<div id="sec_SearchCriteria" runat="server">
 <table border="1" cellpadding="4" cellspacing="0" width="100%" style="border-collapse:collapse;">
 <tr><td>
 <table cellpadding="0" cellspacing="3">
@@ -365,7 +365,7 @@
 </table>
 </div>
 
-<div id="section2" visible="false" runat="server">
+<div id="sec_SearchResult" visible="false" runat="server">
 	
 <div class="noprint">
 <table width="100%">
@@ -395,7 +395,7 @@
 </table>
 </div>
 
-<div id="section3" visible="false" runat="server">
+<div id="sec_TopSale" visible="false" runat="server">
 	<table width="100%">
 		<tr><td align="center"><div id="FavoriteHeader" class="boldText" runat="server" /></td></tr>
 	</table>
@@ -426,18 +426,18 @@
 	<td>
 	<table>
 		<tr>
-		<td><asp:radiobutton ID="Radio_3" GroupName="Group1" runat="server" /></td>
-		<td colspan="3"><synature:date id="DailyDate" runat="server" /></td>
+		<td><asp:radiobutton ID="optFavorite_Daily" GroupName="Group1" runat="server" /></td>
+		<td colspan="3"><synature:date id="dateDaily_Favorite" runat="server" /></td>
 		</tr>
 		<tr>
-		<td><asp:radiobutton ID="Radio_1" GroupName="Group1" runat="server" /></td>
-		<td colspan="3"><synature:date id="MonthYearDate0" runat="server" /></td>
+		<td><asp:radiobutton ID="optFavorite_Monthly" GroupName="Group1" runat="server" /></td>
+		<td colspan="3"><synature:date id="dateMonthYear_Favorite" runat="server" /></td>
 		</tr>
 		<tr>
-		<td><asp:radiobutton ID="Radio_2" GroupName="Group1" runat="server" /></td>
-		<td><synature:date id="CurrentDate" runat="server" /></td>
+		<td><asp:radiobutton ID="optFavorite_DateRange" GroupName="Group1" runat="server" /></td>
+		<td><synature:date id="dateFromDate_Favorite" runat="server" /></td>
 		<td class="text"><div id="DocumentToDateParam" class="text" runat="server"></div></td>
-		<td><synature:date id="ToDate" runat="server" /></td>
+		<td><synature:date id="dateToDate_Favorite" runat="server" /></td>
 	</tr>
 	<tr><td>&nbsp;</td>
 		<td colspan="4" class="text"><asp:button ID="SubmitFavorite" Font-Size="8" Height="20" Width="110" OnClick="DoSearchFavorite" runat="server" />&nbsp;<asp:CheckBox ID="DisplayGraph" CssClass="text" Checked="false" runat="server" />&nbsp;&nbsp;Display <asp:TextBox ID="NumDisplay" CssClass="text" Width="30" Text="10" runat="server"></asp:TextBox> record(s)</td>
@@ -471,7 +471,7 @@
 <asp:Panel ID="showGraph" Visible="false" runat="server">
 <br>
 <Web:ChartControl id="ChartControl1" ChartPadding=40 runat="Server" />
-</asp:Panel>
+    </asp:Panel>
 </div>
 </div>
 
@@ -485,7 +485,7 @@
 			}
 </script>
 
-<div id="Section4" visible="false" runat="server">
+<div id="sec_SaleReport" visible="false" runat="server">
 <div class="noprint">
 <table border="0">
 <tr>
@@ -499,18 +499,18 @@
 	<td>
 	<table border="0">
 		<tr>
-			<td><asp:radiobutton ID="Radio_13" GroupName="Group1" runat="server" /></td>
-			<td colspan="3"><synature:date id="DailyDate9" runat="server" /></td>
+			<td><asp:radiobutton ID="optSaleReport_Daily" GroupName="Group_SaleReport" runat="server" /></td>
+			<td colspan="3"><synature:date id="dateDaily_SaleReport" runat="server" /></td>
 		</tr>
 		<tr>
-			<td><asp:radiobutton ID="Radio_11" GroupName="Group1" runat="server" /></td>
-			<td colspan="3"><synature:date id="MonthYearDate9" runat="server" /></td>
+			<td><asp:radiobutton ID="optSaleReport_Monthly" GroupName="Group_SaleReport" runat="server" /></td>
+			<td colspan="3"><synature:date id="dateMonthYear_SaleReport" runat="server" /></td>
 		</tr>
 		<tr>
-			<td><asp:radiobutton ID="Radio_12" GroupName="Group1" runat="server" /></td>
-			<td width="40%"><synature:date id="CurrentDate9" runat="server" /></td>
+			<td><asp:radiobutton ID="optSaleReport_DateRange" GroupName="Group_SaleReport" runat="server" /></td>
+			<td width="40%"><synature:date id="dateFromDate_SaleReport" runat="server" /></td>
 			<td class="text" align="left"><span id="DocumentToDateParam9" class="text" runat="server"></span></td>
-			<td align="left"><synature:date id="ToDate9" runat="server" /></td>
+			<td align="left"><synature:date id="dateToDate_SaleReport" runat="server" /></td>
 	</tr>
 	<tr><td>&nbsp;</td>
 		<td colspan="3" class="text"><asp:button ID="SubmitSale" Font-Size="8" Height="20" Width="110" OnClick="DoSearchSale" runat="server" /></td>
@@ -536,7 +536,7 @@
 			<asp:BoundColumn ItemStyle-HorizontalAlign="left" DataField="Member Code"></asp:BoundColumn> 
 			<asp:BoundColumn ItemStyle-HorizontalAlign="left" DataField="Member Name"></asp:BoundColumn> 
 			<asp:BoundColumn ItemStyle-HorizontalAlign="left" DataField="Mobile Number"></asp:BoundColumn> 
-            <asp:BoundColumn ItemStyle-HorizontalAlign="right" DataField="Total Bill"></asp:BoundColumn> 
+            <asp:BoundColumn ItemStyle-HorizontalAlign="center" DataField="Total Bill"></asp:BoundColumn> 
 			<asp:BoundColumn ItemStyle-HorizontalAlign="right" DataField="Purchase Amount"></asp:BoundColumn> 
 
 		</columns>
@@ -547,7 +547,7 @@
 </div>
 </div>
 
-<div id="Section8" visible="false" runat="server">
+<div id="sec_SMS" visible="false" runat="server">
 <br>
 <table>
 <tr><td>
@@ -639,7 +639,7 @@
 </table>
 </div>
 
-<div id="Section5" visible="false" runat="server">
+<div id="sec_Email" visible="false" runat="server">
 <div id="ShowEmailForm" visible="false" runat="server">
 <table border="0" width="100%">
 	<tr><td colspan="2" height="10"></td></tr>
@@ -714,11 +714,11 @@
 </div>
 </div>
 
-<div id="Section6" visible="false" runat="server">
+<div id="sec_Label" visible="false" runat="server">
 
 </div>
 
-<div id="Section7" visible="false" runat="server">
+<div id="sec_Option" visible="false" runat="server">
 <table>
 	<tr>
 		<td height="20">&nbsp;</td>
@@ -803,1762 +803,1794 @@ Dim RecordPerPage As Integer = 100
 Dim InvC As CultureInfo = CultureInfo.InvariantCulture
 Dim PageID As Integer  = 998
 
-Sub Page_Load()
-	If User.Identity.IsAuthenticated AND Session("Analyze_Member") Then
+    Sub Page_Load()
+        If User.Identity.IsAuthenticated And Session("Analyze_Member") Then
 				
-		Dim SystemPath As String = Replace(Request.ServerVariables("PATH_INFO"),"Reports/Analyze_Member.aspx","")
-		SystemPath += "FCKeditor/"
-		FCKeditor1.BasePath = SystemPath
+            Dim SystemPath As String = Replace(Request.ServerVariables("PATH_INFO"), "Reports/Analyze_Member.aspx", "")
+            SystemPath += "FCKeditor/"
+            FCKeditor1.BasePath = SystemPath
 		
-		Dim QueryStringList As String
-		Dim InvC As CultureInfo = CultureInfo.InvariantCulture
-		SearchCriteria.Text = "Search Criteria"
-		SearchResult.Text = "Search Result"
-		BestSeller.Text = "Favorite Products"
-		SaleReport.Text = "Member Sale Report"
-		SMSForm.Text = "Send SMS"
-		EmailForm.Text = "Send Email"
-		LabelLink.Text = "Printing Label"
-		Options.Text = "Options"
-		ApplyToSearchResult.Text = "Apply to Search Result"
-		errorMsg.InnerHtml = ""
-		CouponError.InnerHtml = ""
+            Dim InvC As CultureInfo = CultureInfo.InvariantCulture
+            SearchCriteria.Text = "Search Criteria"
+            SearchResult.Text = "Search Result"
+            BestSeller.Text = "Favorite Products"
+            SaleReport.Text = "Member Sale Report"
+            SMSForm.Text = "Send SMS"
+            EmailForm.Text = "Send Email"
+            LabelLink.Text = "Printing Label"
+            Options.Text = "Options"
+            ApplyToSearchResult.Text = "Apply to Search Result"
+            errorMsg.InnerHtml = ""
+            CouponError.InnerHtml = ""
 		
 		
-		Try
-			objCnn = getCnn.EstablishConnection()
-			Dim PropertyInfo As DataTable = getProp.PropertyInfo(1,objCnn)	
+            Try
+                objCnn = getCnn.EstablishConnection()
+                Dim PropertyInfo As DataTable = getProp.PropertyInfo(1, objCnn)
 			
-		Dim z As Integer
-		If NOT Request.QueryString("ToLangID") Is Nothing Then
-			If IsNumeric(Request.QueryString("ToLangID")) Then
-				Session("LangID") = Request.QueryString("ToLangID")
-			End If
-		End If
+                Dim z As Integer
+                If Not Request.QueryString("ToLangID") Is Nothing Then
+                    If IsNumeric(Request.QueryString("ToLangID")) Then
+                        Session("LangID") = Request.QueryString("ToLangID")
+                    End If
+                End If
 
-		Dim CultureString As String = Util.GetCultureByLangID(Session("LangID"), objCnn)
-		Dim PageName as string = System.IO.Path.GetFileName(Request.ServerVariables("SCRIPT_NAME"))
-		Dim LangListText As String = ""
-		Dim LangListData As DataTable
-		Dim LangData As DataTable = getProp.GetLang(LangListText,LangListData,PageName & "?ID" & Request.QueryString("ID") & "&Order=" + Request.QueryString("Order") & "&GroupID=" & Request.QueryString("GroupID"),PageID,1,-1,Request,objCnn)
-		Dim LangText As String = "lang" + Session("LangID").ToString
+                Dim CultureString As String = Util.GetCultureByLangID(Session("LangID"), objCnn)
+                Dim PageName As String = System.IO.Path.GetFileName(Request.ServerVariables("SCRIPT_NAME"))
+                Dim LangListText As String = ""
+                Dim LangListData As DataTable
+                Dim LangData As DataTable = getProp.GetLang(LangListText, LangListData, PageName & "?ID" & Request.QueryString("ID") & "&Order=" + Request.QueryString("Order") & "&GroupID=" & Request.QueryString("GroupID"), PageID, 1, -1, Request, objCnn)
+                Dim LangText As String = "lang" + Session("LangID").ToString
 		
-		For z = 0 To LangData.Rows.Count - 1
-			Dim TestLabel =	Util.FindControlRecursive(mainForm,"LangText" & z)
-			Try
-				TestLabel.Text = LangData.Rows(z)(LangText)
-			Catch ex As Exception
-			End Try
-		Next
-		LangList.Text = LangListText
+                For z = 0 To LangData.Rows.Count - 1
+                    Dim TestLabel = Util.FindControlRecursive(mainForm, "LangText" & z)
+                    Try
+                        TestLabel.Text = LangData.Rows(z)(LangText)
+                    Catch ex As Exception
+                    End Try
+                Next
+                LangList.Text = LangListText
 		
-		Dim LangData2 As DataTable = getProp.GetLangData(PageID,2,-1,Request)
+                Dim LangData2 As DataTable = getProp.GetLangData(PageID, 2, -1, Request)
 		
-		Dim LangDefault As DataTable = getProp.GetLangData(999,2,-1,Request)
+                Dim LangDefault As DataTable = getProp.GetLangData(999, 2, -1, Request)
 			
-			If PropertyInfo.Rows(0)("ImportDataToCopyTable") = 0 Then
-				'ShopList.SelectionMode = "Single"
-			End If
+                If PropertyInfo.Rows(0)("ImportDataToCopyTable") = 0 Then
+                    'ShopList.SelectionMode = "Single"
+                End If
 			
-			If PropertyInfo.Rows(0)("SMSFeature") = 1 Then
-				ShowSMS.Visible = True
-			End If
-			If PropertyInfo.Rows(0)("SystemEditionID") = 1 Then
-				ShowOptions.Visible = False
-				ShowEmail.Visible = False
-				ShowSMS.Visible = False
-			End If
+                If PropertyInfo.Rows(0)("SMSFeature") = 1 Then
+                    ShowSMS.Visible = True
+                End If
+                If PropertyInfo.Rows(0)("SystemEditionID") = 1 Then
+                    ShowOptions.Visible = False
+                    ShowEmail.Visible = False
+                    ShowSMS.Visible = False
+                End If
 				
-			Dim textTable As New DataTable()
-			textTable = getPageText.GetText(11,Session("LangID"),objCnn)
+                Dim textTable As New DataTable()
+                textTable = getPageText.GetText(11, Session("LangID"), objCnn)
 			
-			Dim defaultTextTable As New DataTable()
-			defaultTextTable = getPageText.GetDefaultText(Session("LangID"),objCnn)
+                Dim defaultTextTable As New DataTable()
+                defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
 			
-			LangText0.Text = "Member Data Analysis"
+                LangText0.Text = "Member Data Analysis"
 			
-			Dim i As Integer
+                Dim i As Integer
 			
-			CodeSearchText.InnerHtml = textTable.Rows(19)("TextParamValue")
-			FirstNameSearchText.InnerHtml = defaultTextTable.Rows(16)("TextParamValue")
-			LastNameSearchText.InnerHtml = defaultTextTable.Rows(17)("TextParamValue")
-			GroupSearchText.InnerHtml = textTable.Rows(18)("TextParamValue")
-			TelSearchText.InnerHtml = defaultTextTable.Rows(23)("TextParamValue")
-			MobileSearchText.InnerHtml = defaultTextTable.Rows(27)("TextParamValue")
-			GenderSearchText.InnerHtml = defaultTextTable.Rows(28)("TextParamValue")
-			SubmitForm.Text = defaultTextTable.Rows(92)("TextParamValue")
+                CodeSearchText.InnerHtml = textTable.Rows(19)("TextParamValue")
+                FirstNameSearchText.InnerHtml = defaultTextTable.Rows(16)("TextParamValue")
+                LastNameSearchText.InnerHtml = defaultTextTable.Rows(17)("TextParamValue")
+                GroupSearchText.InnerHtml = textTable.Rows(18)("TextParamValue")
+                TelSearchText.InnerHtml = defaultTextTable.Rows(23)("TextParamValue")
+                MobileSearchText.InnerHtml = defaultTextTable.Rows(27)("TextParamValue")
+                GenderSearchText.InnerHtml = defaultTextTable.Rows(28)("TextParamValue")
+                SubmitForm.Text = defaultTextTable.Rows(92)("TextParamValue")
 			
-			FromAgeText.InnerHtml =  textTable.Rows(47)("TextParamValue")
-			ToAgeText.InnerHtml =  defaultTextTable.Rows(91)("TextParamValue")
-			BirthDayText.InnerHtml =  defaultTextTable.Rows(31)("TextParamValue")
-			BirthDayPeriodText.InnerHtml =  defaultTextTable.Rows(104)("TextParamValue")
-			ToPeriodText.InnerHtml =  defaultTextTable.Rows(91)("TextParamValue")
-			NAText.InnerHtml =  defaultTextTable.Rows(103)("TextParamValue")
-			DocumentToDateParam9.InnerHtml =  defaultTextTable.Rows(91)("TextParamValue")
-			ProvinceText.InnerHtml = defaultTextTable.Rows(21)("TextParamValue")
-			CityText.InnerHtml = defaultTextTable.Rows(20)("TextParamValue")
-			SearchText1.InnerHtml = textTable.Rows(48)("TextParamValue")
-			DayText.InnerHtml = defaultTextTable.Rows(106)("TextParamValue")
-			OnlyNotExpire.Text = textTable.Rows(49)("TextParamValue")
+                FromAgeText.InnerHtml = textTable.Rows(47)("TextParamValue")
+                ToAgeText.InnerHtml = defaultTextTable.Rows(91)("TextParamValue")
+                BirthDayText.InnerHtml = defaultTextTable.Rows(31)("TextParamValue")
+                BirthDayPeriodText.InnerHtml = defaultTextTable.Rows(104)("TextParamValue")
+                ToPeriodText.InnerHtml = defaultTextTable.Rows(91)("TextParamValue")
+                NAText.InnerHtml = defaultTextTable.Rows(103)("TextParamValue")
+                DocumentToDateParam9.InnerHtml = defaultTextTable.Rows(91)("TextParamValue")
+                ProvinceText.InnerHtml = defaultTextTable.Rows(21)("TextParamValue")
+                CityText.InnerHtml = defaultTextTable.Rows(20)("TextParamValue")
+                SearchText1.InnerHtml = textTable.Rows(48)("TextParamValue")
+                DayText.InnerHtml = defaultTextTable.Rows(106)("TextParamValue")
+                OnlyNotExpire.Text = textTable.Rows(49)("TextParamValue")
 			
-			ProductCriteriaText.InnerHtml = "From"
-			ToProductCriteriaText.InnerHtml = "To"
+                ProductCriteriaText.InnerHtml = "From"
+                ToProductCriteriaText.InnerHtml = "To"
 			
-			MonthYearDate.YearType = GlobalParam.YearType
-			MonthYearDate.FormName = "MonthYearDate"
-			MonthYearDate.StartYear = GlobalParam.StartYear
-			MonthYearDate.EndYear = GlobalParam.EndYear
-			MonthYearDate.LangID = Session("LangID")
-			MonthYearDate.ShowDay = False
+                MonthYearDate.YearType = GlobalParam.YearType
+                MonthYearDate.FormName = "MonthYearDate"
+                MonthYearDate.StartYear = GlobalParam.StartYear
+                MonthYearDate.EndYear = GlobalParam.EndYear
+                MonthYearDate.LangID = Session("LangID")
+                MonthYearDate.ShowDay = False
 			
-			MonthYearDate1.YearType = GlobalParam.YearType
-			MonthYearDate1.FormName = "MonthYearDate1"
-			MonthYearDate1.StartYear = 100
-			MonthYearDate1.EndYear = 0
-			MonthYearDate1.LangID = Session("LangID")
-			MonthYearDate1.ShowDay = False
+                MonthYearDate1.YearType = GlobalParam.YearType
+                MonthYearDate1.FormName = "MonthYearDate1"
+                MonthYearDate1.StartYear = 100
+                MonthYearDate1.EndYear = 0
+                MonthYearDate1.LangID = Session("LangID")
+                MonthYearDate1.ShowDay = False
 			
-			MonthYearDate2.YearType = GlobalParam.YearType
-			MonthYearDate2.FormName = "MonthYearDate2"
-			MonthYearDate2.StartYear = 100
-			MonthYearDate2.EndYear = 0
-			MonthYearDate2.LangID = Session("LangID")
-			MonthYearDate2.ShowDay = False
+                MonthYearDate2.YearType = GlobalParam.YearType
+                MonthYearDate2.FormName = "MonthYearDate2"
+                MonthYearDate2.StartYear = 100
+                MonthYearDate2.EndYear = 0
+                MonthYearDate2.LangID = Session("LangID")
+                MonthYearDate2.ShowDay = False
 			
-			MonthYearDate11.YearType = GlobalParam.YearType
-			MonthYearDate11.FormName = "MonthYearDate11"
-			MonthYearDate11.StartYear = 1
-			MonthYearDate11.EndYear = 0
-			MonthYearDate11.LangID = Session("LangID")
-			MonthYearDate11.ShowDay = False
+                MonthYearDate11.YearType = GlobalParam.YearType
+                MonthYearDate11.FormName = "MonthYearDate11"
+                MonthYearDate11.StartYear = 1
+                MonthYearDate11.EndYear = 0
+                MonthYearDate11.LangID = Session("LangID")
+                MonthYearDate11.ShowDay = False
 			
-			MonthYearDate12.YearType = GlobalParam.YearType
-			MonthYearDate12.FormName = "MonthYearDate12"
-			MonthYearDate12.StartYear = 1
-			MonthYearDate12.EndYear = 0
-			MonthYearDate12.LangID = Session("LangID")
-			MonthYearDate12.ShowDay = False
+                MonthYearDate12.YearType = GlobalParam.YearType
+                MonthYearDate12.FormName = "MonthYearDate12"
+                MonthYearDate12.StartYear = 1
+                MonthYearDate12.EndYear = 0
+                MonthYearDate12.LangID = Session("LangID")
+                MonthYearDate12.ShowDay = False
 			
-			If Page.IsPostBack Then
-				If IsNumeric(Request.Form("SelMonth")) Then
-					MonthYearDate.SelectedMonth = Request.Form("SelMonth")
-				End If
-				If IsNumeric(Request.Form("SelYear")) Then
-					MonthYearDate.SelectedYear = Request.Form("SelYear")
-				End If
-				If IsNumeric(Request.Form("SelMonth1")) Then
-					MonthYearDate1.SelectedMonth = Request.Form("SelMonth1")
-				End If
-				If IsNumeric(Request.Form("SelYear1")) Then
-					MonthYearDate1.SelectedYear = Request.Form("SelYear1")
-				End If
-				If IsNumeric(Request.Form("SelMonth2")) Then
-					MonthYearDate2.SelectedMonth = Request.Form("SelMonth2")
-				End If
-				If IsNumeric(Request.Form("SelYear2")) Then
-					MonthYearDate2.SelectedYear = Request.Form("SelYear2")
-				End If
+                If Page.IsPostBack Then
+                    If IsNumeric(Request.Form("SelMonth")) Then
+                        MonthYearDate.SelectedMonth = Request.Form("SelMonth")
+                    End If
+                    If IsNumeric(Request.Form("SelYear")) Then
+                        MonthYearDate.SelectedYear = Request.Form("SelYear")
+                    End If
+                    If IsNumeric(Request.Form("SelMonth1")) Then
+                        MonthYearDate1.SelectedMonth = Request.Form("SelMonth1")
+                    End If
+                    If IsNumeric(Request.Form("SelYear1")) Then
+                        MonthYearDate1.SelectedYear = Request.Form("SelYear1")
+                    End If
+                    If IsNumeric(Request.Form("SelMonth2")) Then
+                        MonthYearDate2.SelectedMonth = Request.Form("SelMonth2")
+                    End If
+                    If IsNumeric(Request.Form("SelYear2")) Then
+                        MonthYearDate2.SelectedYear = Request.Form("SelYear2")
+                    End If
 				
-				If IsNumeric(Request.Form("SelMonth11")) Then
-					MonthYearDate11.SelectedMonth = Request.Form("SelMonth11")
-				End If
-				If IsNumeric(Request.Form("SelYear11")) Then
-					MonthYearDate11.SelectedYear = Request.Form("SelYear11")
-				End If
-				If IsNumeric(Request.Form("SelMonth12")) Then
-					MonthYearDate12.SelectedMonth = Request.Form("SelMonth12")
-				End If
-				If IsNumeric(Request.Form("SelYear12")) Then
-					MonthYearDate12.SelectedYear = Request.Form("SelYear12")
-				End If
+                    If IsNumeric(Request.Form("SelMonth11")) Then
+                        MonthYearDate11.SelectedMonth = Request.Form("SelMonth11")
+                    End If
+                    If IsNumeric(Request.Form("SelYear11")) Then
+                        MonthYearDate11.SelectedYear = Request.Form("SelYear11")
+                    End If
+                    If IsNumeric(Request.Form("SelMonth12")) Then
+                        MonthYearDate12.SelectedMonth = Request.Form("SelMonth12")
+                    End If
+                    If IsNumeric(Request.Form("SelYear12")) Then
+                        MonthYearDate12.SelectedYear = Request.Form("SelYear12")
+                    End If
 
-			End If
+                End If
 			
-			'-------- Section 3 Parameters---------
-			GroupByParam.Items(0).Text = "Top Product Sale By Price"
-			GroupByParam.Items(0).Value = "1"
-			GroupByParam.Items(1).Text = "Top Product Sale By Amount"
-			GroupByParam.Items(1).Value = "2"
-			GroupByParam.Items(2).Text = "Lowest Product Sale By Price"
-			GroupByParam.Items(2).Value = "3"
-			GroupByParam.Items(3).Text = "Lowest Product Sale By Amount"
-			GroupByParam.Items(3).Value = "4"
+                '-------- Section 3 Parameters---------
+                GroupByParam.Items(0).Text = "Top Product Sale By Price"
+                GroupByParam.Items(0).Value = "1"
+                GroupByParam.Items(1).Text = "Top Product Sale By Amount"
+                GroupByParam.Items(1).Value = "2"
+                GroupByParam.Items(2).Text = "Lowest Product Sale By Price"
+                GroupByParam.Items(2).Value = "3"
+                GroupByParam.Items(3).Text = "Lowest Product Sale By Amount"
+                GroupByParam.Items(3).Value = "4"
 			
-			DisplayGraph.Text = "Display Graph"
+                DisplayGraph.Text = "Display Graph"
 			
-			DocumentToDateParam.InnerHtml = defaultTextTable.Rows(91)("TextParamValue")
+                DocumentToDateParam.InnerHtml = defaultTextTable.Rows(91)("TextParamValue")
 			
-			DailyDate.YearType = GlobalParam.YearType
-			DailyDate.FormName = "DocDaily"
-			DailyDate.StartYear = GlobalParam.StartYear
-			DailyDate.EndYear = GlobalParam.EndYear
-		DailyDate.LangID = Session("LangID")
-		DailyDate.Lang_Data = LangDefault
-		DailyDate.Culture = CultureString
-		
-		CurrentDate.YearType = GlobalParam.YearType
-			CurrentDate.FormName = "Doc"
-			CurrentDate.StartYear = GlobalParam.StartYear
-			CurrentDate.EndYear = GlobalParam.EndYear
-		CurrentDate.LangID = Session("LangID")
-		CurrentDate.Lang_Data = LangDefault
-		CurrentDate.Culture = CultureString
-		
-		ToDate.YearType = GlobalParam.YearType
-			ToDate.FormName = "DocTo"
-			ToDate.StartYear = GlobalParam.StartYear
-			ToDate.EndYear = GlobalParam.EndYear
-			ToDate.LangID = Session("LangID")
+                dateDaily_Favorite.YearType = GlobalParam.YearType
+                dateDaily_Favorite.FormName = "dateDaily_Favorite"
+                dateDaily_Favorite.StartYear = GlobalParam.StartYear
+                dateDaily_Favorite.EndYear = GlobalParam.EndYear
+                dateDaily_Favorite.LangID = Session("LangID")
+                dateDaily_Favorite.Lang_Data = LangDefault
+                dateDaily_Favorite.Culture = CultureString
+                dateDaily_Favorite.SelectedDay = Day(Now())
+                dateDaily_Favorite.SelectedMonth = Month(Now())
+                dateDaily_Favorite.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateDaily_Favorite.Lang_Data = LangDefault
+                dateDaily_Favorite.Culture = CultureString
+
+                dateFromDate_Favorite.YearType = GlobalParam.YearType
+                dateFromDate_Favorite.FormName = "Doc"
+                dateFromDate_Favorite.StartYear = GlobalParam.StartYear
+                dateFromDate_Favorite.EndYear = GlobalParam.EndYear
+                dateFromDate_Favorite.LangID = Session("LangID")
+                dateFromDate_Favorite.Lang_Data = LangDefault
+                dateFromDate_Favorite.Culture = CultureString
+                dateFromDate_Favorite.SelectedDay = 1
+                dateFromDate_Favorite.SelectedMonth = Month(Now())
+                dateFromDate_Favorite.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateFromDate_Favorite.Lang_Data = LangDefault
+                dateFromDate_Favorite.Culture = CultureString
+
+                dateToDate_Favorite.YearType = GlobalParam.YearType
+                dateToDate_Favorite.FormName = "dateToDate_Favorite"
+                dateToDate_Favorite.StartYear = GlobalParam.StartYear
+                dateToDate_Favorite.EndYear = GlobalParam.EndYear
+                dateToDate_Favorite.LangID = Session("LangID")
+                dateToDate_Favorite.SelectedDay = Day(Now())
+                dateToDate_Favorite.SelectedMonth = Month(Now())
+                dateToDate_Favorite.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateToDate_Favorite.Lang_Data = LangDefault
+                dateToDate_Favorite.Culture = CultureString
+
+                dateMonthYear_Favorite.YearType = GlobalParam.YearType
+                dateMonthYear_Favorite.FormName = "dateMonthYear_Favorite"
+                dateMonthYear_Favorite.StartYear = GlobalParam.StartYear
+                dateMonthYear_Favorite.EndYear = GlobalParam.EndYear
+                dateMonthYear_Favorite.LangID = Session("LangID")
+                dateMonthYear_Favorite.ShowDay = False
+                dateMonthYear_Favorite.SelectedMonth = Month(Now())
+                dateMonthYear_Favorite.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateMonthYear_Favorite.Lang_Data = LangDefault
+                dateMonthYear_Favorite.Culture = CultureString
+
+                dateDaily_SaleReport.YearType = GlobalParam.YearType
+                dateDaily_SaleReport.FormName = "dateDaily_SaleReport"
+                dateDaily_SaleReport.StartYear = GlobalParam.StartYear
+                dateDaily_SaleReport.EndYear = GlobalParam.EndYear
+                dateDaily_SaleReport.LangID = Session("LangID")
+                dateDaily_SaleReport.SelectedDay = Day(Now())
+                dateDaily_SaleReport.SelectedMonth = Month(Now())
+                dateDaily_SaleReport.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateDaily_SaleReport.Lang_Data = LangDefault
+                dateDaily_SaleReport.Culture = CultureString
 			
-			MonthYearDate0.YearType = GlobalParam.YearType
-			MonthYearDate0.FormName = "MonthYearDate0"
-			MonthYearDate0.StartYear = GlobalParam.StartYear
-			MonthYearDate0.EndYear = GlobalParam.EndYear
-			MonthYearDate0.LangID = Session("LangID")
-			MonthYearDate0.ShowDay = False
-			MonthYearDate0.SelectedMonth = Month(Now())
-			MonthYearDate0.SelectedYear =  DateTime.Now.ToString("yyyy", InvC) 
+                dateFromDate_SaleReport.YearType = GlobalParam.YearType
+                dateFromDate_SaleReport.FormName = "dateFromDate_SaleReport"
+                dateFromDate_SaleReport.StartYear = GlobalParam.StartYear
+                dateFromDate_SaleReport.EndYear = GlobalParam.EndYear
+                dateFromDate_SaleReport.LangID = Session("LangID")
+                dateFromDate_SaleReport.SelectedDay = 1
+                dateFromDate_SaleReport.SelectedMonth = Month(Now())
+                dateFromDate_SaleReport.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateFromDate_SaleReport.Lang_Data = LangDefault
+                dateFromDate_SaleReport.Culture = CultureString
 			
-			DailyDate9.YearType = GlobalParam.YearType
-			DailyDate9.FormName = "DocDaily9"
-			DailyDate9.StartYear = GlobalParam.StartYear
-			DailyDate9.EndYear = GlobalParam.EndYear
-			DailyDate9.LangID = Session("LangID")
+                dateToDate_SaleReport.YearType = GlobalParam.YearType
+                dateToDate_SaleReport.FormName = "dateToDate_SaleReport"
+                dateToDate_SaleReport.StartYear = GlobalParam.StartYear
+                dateToDate_SaleReport.EndYear = GlobalParam.EndYear
+                dateToDate_SaleReport.LangID = Session("LangID")
+                dateToDate_SaleReport.SelectedDay = Day(Now())
+                dateToDate_SaleReport.SelectedMonth = Month(Now())
+                dateToDate_SaleReport.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateToDate_SaleReport.Lang_Data = LangDefault
+                dateToDate_SaleReport.Culture = CultureString
+
+                dateMonthYear_SaleReport.YearType = GlobalParam.YearType
+                dateMonthYear_SaleReport.FormName = "dateMonthYear_SaleReport"
+                dateMonthYear_SaleReport.StartYear = GlobalParam.StartYear
+                dateMonthYear_SaleReport.EndYear = GlobalParam.EndYear
+                dateMonthYear_SaleReport.LangID = Session("LangID")
+                dateMonthYear_SaleReport.ShowDay = False
+                dateMonthYear_SaleReport.SelectedMonth = Month(Now())
+                dateMonthYear_SaleReport.SelectedYear = DateTime.Now.ToString("yyyy", InvC)
+                dateMonthYear_SaleReport.Lang_Data = LangDefault
+                dateMonthYear_SaleReport.Culture = CultureString
+
+                SubmitFavorite.Text = "Submit Query"
+                SubmitSale.Text = "Submit Query"
 			
-			CurrentDate9.YearType = GlobalParam.YearType
-			CurrentDate9.FormName = "Doc9"
-			CurrentDate9.StartYear = GlobalParam.StartYear
-			CurrentDate9.EndYear = GlobalParam.EndYear
-			CurrentDate9.LangID = Session("LangID")
-			
-			ToDate9.YearType = GlobalParam.YearType
-			ToDate9.FormName = "DocTo9"
-			ToDate9.StartYear = GlobalParam.StartYear
-			ToDate9.EndYear = GlobalParam.EndYear
-			ToDate9.LangID = Session("LangID")
-			
-			MonthYearDate9.YearType = GlobalParam.YearType
-			MonthYearDate9.FormName = "MonthYearDate9"
-			MonthYearDate9.StartYear = GlobalParam.StartYear
-			MonthYearDate9.EndYear = GlobalParam.EndYear
-			MonthYearDate9.LangID = Session("LangID")
-			MonthYearDate9.ShowDay = False
-			MonthYearDate9.SelectedMonth = Month(Now())
-			MonthYearDate9.SelectedYear =  DateTime.Now.ToString("yyyy", InvC) 
-			
-			SubmitFavorite.Text = "Submit Query"
-			SubmitSale.Text = "Submit Query"
-			
-			If Page.IsPostBack Then
-				If IsNumeric(Request.Form("MonthYearDate0_Month")) Then
-					MonthYearDate0.SelectedMonth = Request.Form("MonthYearDate0_Month")
-				ElseIf IsNumeric(Request.Form("SelMonth0")) Then
-					MonthYearDate0.SelectedMonth = Request.Form("SelMonth0")
-				End If
-				If IsNumeric(Request.Form("MonthYearDate0_Year")) Then
-					MonthYearDate0.SelectedYear = Request.Form("MonthYearDate0_Year")
-				ElseIf IsNumeric(Request.Form("SelYear0")) Then
-					MonthYearDate0.SelectedYear = Request.Form("SelYear0")
-				End If
+                If Page.IsPostBack Then
+                    If IsNumeric(Request.Form("dateMonthYear_Favorite_Month")) Then
+                        dateMonthYear_Favorite.SelectedMonth = Request.Form("dateMonthYear_Favorite_Month")
+                    ElseIf IsNumeric(Request.Form("SelMonth0")) Then
+                        dateMonthYear_Favorite.SelectedMonth = Request.Form("SelMonth0")
+                    End If
+                    If IsNumeric(Request.Form("dateMonthYear_Favorite_Year")) Then
+                        dateMonthYear_Favorite.SelectedYear = Request.Form("dateMonthYear_Favorite_Year")
+                    ElseIf IsNumeric(Request.Form("SelYear0")) Then
+                        dateMonthYear_Favorite.SelectedYear = Request.Form("SelYear0")
+                    End If
 				
-				If IsNumeric(Request.Form("DocDaily_Day")) Then
-					DailyDate.SelectedDay = Request.Form("DocDaily_Day")
-				ElseIf IsNumeric(Request.Form("DocDailyDay")) Then
-					DailyDate.SelectedDay = Request.Form("DocDailyDay")
-				End If
-				If IsNumeric(Request.Form("DocDaily_Month")) Then
-					DailyDate.SelectedMonth = Request.Form("DocDaily_Month")
-				ElseIf IsNumeric(Request.Form("DocDailyMonth")) Then
-					DailyDate.SelectedMonth = Request.Form("DocDailyMonth")
-				End If
-				If IsNumeric(Request.Form("DocDaily_Year")) Then
-					DailyDate.SelectedYear = Request.Form("DocDaily_Year")
-				ElseIf IsNumeric(Request.Form("DocDailyYear")) Then
-					DailyDate.SelectedYear = Request.Form("DocDailyYear")
-				End If
+                    If IsNumeric(Request.Form("dateDaily_FavoriteDay")) Then
+                        dateDaily_Favorite.SelectedDay = Request.Form("dateDaily_FavoriteDay")
+                    ElseIf IsNumeric(Request.Form("DocDailyDay")) Then
+                        dateDaily_Favorite.SelectedDay = Request.Form("DocDailyDay")
+                    End If
+                    If IsNumeric(Request.Form("dateDaily_FavoriteMonth")) Then
+                        dateDaily_Favorite.SelectedMonth = Request.Form("dateDaily_FavoriteMonth")
+                    ElseIf IsNumeric(Request.Form("DocDailyMonth")) Then
+                        dateDaily_Favorite.SelectedMonth = Request.Form("DocDailyMonth")
+                    End If
+                    If IsNumeric(Request.Form("dateDaily_FavoriteYear")) Then
+                        dateDaily_Favorite.SelectedYear = Request.Form("dateDaily_FavoriteYear")
+                    ElseIf IsNumeric(Request.Form("DocDailyYear")) Then
+                        dateDaily_Favorite.SelectedYear = Request.Form("DocDailyYear")
+                    End If
 				
-				If IsNumeric(Request.Form("Doc_Day")) Then
-					CurrentDate.SelectedDay = Request.Form("Doc_Day")
-				ElseIf IsNumeric(Request.Form("DocDay")) Then
-					CurrentDate.SelectedDay = Request.Form("DocDay")
-				End If
-				If IsNumeric(Request.Form("Doc_Month")) Then
-					CurrentDate.SelectedMonth = Request.Form("Doc_Month")
-				ElseIf IsNumeric(Request.Form("DocMonth")) Then
-					CurrentDate.SelectedMonth = Request.Form("DocMonth")
-				End If
-				If IsNumeric(Request.Form("Doc_Year")) Then
-					CurrentDate.SelectedYear = Request.Form("Doc_Year")
-				ElseIf IsNumeric(Request.Form("DocYear")) Then
-					CurrentDate.SelectedYear = Request.Form("DocYear")
-				End If
+                    If IsNumeric(Request.Form("dateFromDate_Favorite_Day")) Then
+                        dateFromDate_Favorite.SelectedDay = Request.Form("dateFromDate_Favorite_Day")
+                    ElseIf IsNumeric(Request.Form("DocDay")) Then
+                        dateFromDate_Favorite.SelectedDay = Request.Form("DocDay")
+                    End If
+                    If IsNumeric(Request.Form("dateFromDate_Favorite_Month")) Then
+                        dateFromDate_Favorite.SelectedMonth = Request.Form("dateFromDate_Favorite_Month")
+                    ElseIf IsNumeric(Request.Form("DocMonth")) Then
+                        dateFromDate_Favorite.SelectedMonth = Request.Form("DocMonth")
+                    End If
+                    If IsNumeric(Request.Form("dateFromDate_Favorite_Year")) Then
+                        dateFromDate_Favorite.SelectedYear = Request.Form("dateFromDate_Favorite_Year")
+                    ElseIf IsNumeric(Request.Form("DocYear")) Then
+                        dateFromDate_Favorite.SelectedYear = Request.Form("DocYear")
+                    End If
 				
-				If IsNumeric(Request.Form("DocTo_Day")) Then
-					ToDate.SelectedDay = Request.Form("DocTo_Day")
-				ElseIf IsNumeric(Request.Form("DocToDay")) Then
-					ToDate.SelectedDay = Request.Form("DocToDay")
-				End If
-				If IsNumeric(Request.Form("DocTo_Month")) Then
-					ToDate.SelectedMonth = Request.Form("DocTo_Month")
-				ElseIf IsNumeric(Request.Form("DocToMonth")) Then
-					ToDate.SelectedMonth = Request.Form("DocToMonth")
-				End If
-				If IsNumeric(Request.Form("DocTo_Year")) Then
-					ToDate.SelectedYear = Request.Form("DocTo_Year")
-				ElseIf IsNumeric(Request.Form("DocToYear")) Then
-					ToDate.SelectedYear = Request.Form("DocToYear")
-				End If
+                    If IsNumeric(Request.Form("dateToDate_Favorite_Day")) Then
+                        dateToDate_Favorite.SelectedDay = Request.Form("dateToDate_Favorite_Day")
+                    ElseIf IsNumeric(Request.Form("DocToDay")) Then
+                        dateToDate_Favorite.SelectedDay = Request.Form("DocToDay")
+                    End If
+                    If IsNumeric(Request.Form("dateToDate_Favorite_Month")) Then
+                        dateToDate_Favorite.SelectedMonth = Request.Form("dateToDate_Favorite_Month")
+                    ElseIf IsNumeric(Request.Form("DocToMonth")) Then
+                        dateToDate_Favorite.SelectedMonth = Request.Form("DocToMonth")
+                    End If
+                    If IsNumeric(Request.Form("dateToDate_Favorite_Year")) Then
+                        dateToDate_Favorite.SelectedYear = Request.Form("dateToDate_Favorite_Year")
+                    ElseIf IsNumeric(Request.Form("DocToYear")) Then
+                        dateToDate_Favorite.SelectedYear = Request.Form("DocToYear")
+                    End If
 				
 				
-				If IsNumeric(Request.Form("MonthYearDate9_Month")) Then
-					MonthYearDate9.SelectedMonth = Request.Form("MonthYearDate9_Month")
-				ElseIf IsNumeric(Request.Form("SelMonth9")) Then
-					MonthYearDate9.SelectedMonth = Request.Form("SelMonth9")
-				End If
-				If IsNumeric(Request.Form("MonthYearDate9_Year")) Then
-					MonthYearDate9.SelectedYear = Request.Form("MonthYearDate9_Year")
-				ElseIf IsNumeric(Request.Form("SelYear9")) Then
-					MonthYearDate9.SelectedYear = Request.Form("SelYear9")
-				End If
+                    If IsNumeric(Request.Form("dateMonthYear_SaleReport_Month")) Then
+                        dateMonthYear_SaleReport.SelectedMonth = Request.Form("dateMonthYear_SaleReport_Month")
+                    ElseIf IsNumeric(Request.Form("monthly_SaleReport_Month")) Then
+                        dateMonthYear_SaleReport.SelectedMonth = Request.Form("monthly_SaleReport_Month")
+                    End If
+                    If IsNumeric(Request.Form("dateMonthYear_SaleReport_Year")) Then
+                        dateMonthYear_SaleReport.SelectedYear = Request.Form("dateMonthYear_SaleReport_Year")
+                    ElseIf IsNumeric(Request.Form("monthly_SaleReport_Year")) Then
+                        dateMonthYear_SaleReport.SelectedYear = Request.Form("monthly_SaleReport_Year")
+                    End If
 				
-				If IsNumeric(Request.Form("DocDaily9_Day")) Then
-					DailyDate9.SelectedDay = Request.Form("DocDaily9_Day")
-				ElseIf IsNumeric(Request.Form("DocDailyDay9")) Then
-					DailyDate9.SelectedDay = Request.Form("DocDailyDay9")
-				End If
-				If IsNumeric(Request.Form("DocDaily9_Month")) Then
-					DailyDate9.SelectedMonth = Request.Form("DocDaily9_Month")
-				ElseIf IsNumeric(Request.Form("DocDailyMonth9")) Then
-					DailyDate9.SelectedMonth = Request.Form("DocDailyMonth9")
-				End If
-				If IsNumeric(Request.Form("DocDaily9_Year")) Then
-					DailyDate9.SelectedYear = Request.Form("DocDaily9_Year")
-				ElseIf IsNumeric(Request.Form("DocDailyYear9")) Then
-					DailyDate9.SelectedYear = Request.Form("DocDailyYear9")
-				End If
+                    If IsNumeric(Request.Form("dateDaily_SaleReport_Day")) Then
+                        dateDaily_SaleReport.SelectedDay = Request.Form("dateDaily_SaleReport_Day")
+                    ElseIf IsNumeric(Request.Form("daily_SaleReport_Day")) Then
+                        dateDaily_SaleReport.SelectedDay = Request.Form("daily_SaleReport_Day")
+                    End If
+                    If IsNumeric(Request.Form("dateDaily_SaleReport_Month")) Then
+                        dateDaily_SaleReport.SelectedMonth = Request.Form("dateDaily_SaleReport_Month")
+                    ElseIf IsNumeric(Request.Form("daily_SaleReport_Month")) Then
+                        dateDaily_SaleReport.SelectedMonth = Request.Form("daily_SaleReport_Month")
+                    End If
+                    If IsNumeric(Request.Form("dateDaily_SaleReport_Year")) Then
+                        dateDaily_SaleReport.SelectedYear = Request.Form("dateDaily_SaleReport_Year")
+                    ElseIf IsNumeric(Request.Form("daily_SaleReport_Year")) Then
+                        dateDaily_SaleReport.SelectedYear = Request.Form("daily_SaleReport_Year")
+                    End If
 				
-				If IsNumeric(Request.Form("Doc9_Day")) Then
-					CurrentDate9.SelectedDay = Request.Form("Doc9_Day")
-				ElseIf IsNumeric(Request.Form("DocDay9")) Then
-					CurrentDate9.SelectedDay = Request.Form("DocDay9")
-				End If
-				If IsNumeric(Request.Form("Doc9_Month")) Then
-					CurrentDate9.SelectedMonth = Request.Form("Doc9_Month")
-				ElseIf IsNumeric(Request.Form("DocMonth9")) Then
-					CurrentDate9.SelectedMonth = Request.Form("DocMonth9")
-				End If
-				If IsNumeric(Request.Form("Doc9_Year")) Then
-					CurrentDate9.SelectedYear = Request.Form("Doc9_Year")
-				ElseIf IsNumeric(Request.Form("DocYear9")) Then
-					CurrentDate9.SelectedYear = Request.Form("DocYear9")
-				End If
+                    If IsNumeric(Request.Form("dateFromDate_SaleReport_Day")) Then
+                        dateFromDate_SaleReport.SelectedDay = Request.Form("dateFromDate_SaleReport_Day")
+                    ElseIf IsNumeric(Request.Form("FromDate_SaleReport_Day")) Then
+                        dateFromDate_SaleReport.SelectedDay = Request.Form("FromDate_SaleReport_Day")
+                    End If
+                    If IsNumeric(Request.Form("dateFromDate_SaleReport_Month")) Then
+                        dateFromDate_SaleReport.SelectedMonth = Request.Form("dateFromDate_SaleReport_Month")
+                    ElseIf IsNumeric(Request.Form("FromDate_SaleReport_Month")) Then
+                        dateFromDate_SaleReport.SelectedMonth = Request.Form("FromDate_SaleReport_Month")
+                    End If
+                    If IsNumeric(Request.Form("dateFromDate_SaleReport_Year")) Then
+                        dateFromDate_SaleReport.SelectedYear = Request.Form("dateFromDate_SaleReport_Year")
+                    ElseIf IsNumeric(Request.Form("FromDate_SaleReport_Year")) Then
+                        dateFromDate_SaleReport.SelectedYear = Request.Form("FromDate_SaleReport_Year")
+                    End If
 				
-				If IsNumeric(Request.Form("DocTo9_Day")) Then
-					ToDate9.SelectedDay = Request.Form("DocTo9_Day")
-				ElseIf IsNumeric(Request.Form("DocToDay9")) Then
-					ToDate9.SelectedDay = Request.Form("DocToDay9")
-				End If
-				If IsNumeric(Request.Form("DocTo9_Month")) Then
-					ToDate9.SelectedMonth = Request.Form("DocTo9_Month")
-				ElseIf IsNumeric(Request.Form("DocToMonth9")) Then
-					ToDate9.SelectedMonth = Request.Form("DocToMonth9")
-				End If
-				If IsNumeric(Request.Form("DocTo9_Year")) Then
-					ToDate9.SelectedYear = Request.Form("DocTo9_Year")
-				ElseIf IsNumeric(Request.Form("DocToYear9")) Then
-					ToDate9.SelectedYear = Request.Form("DocToYear9")
-				End If
-				
-				If IsNumeric(Request.Form("SendDate_Day")) Then
-					SendScheduleDate.SelectedDay = Request.Form("SendDate_Day")
-				ElseIf IsNumeric(Request.Form("SendDateDay")) Then
-					SendScheduleDate.SelectedDay = Request.Form("SendDateDay")
-				End If
-				If IsNumeric(Request.Form("SendDate_Month")) Then
-					SendScheduleDate.SelectedMonth = Request.Form("SendDate_Month")
-				ElseIf IsNumeric(Request.Form("SendDateMonth")) Then
-					SendScheduleDate.SelectedMonth = Request.Form("SendDateMonth")
-				End If
-				If IsNumeric(Request.Form("SendDate_Year")) Then
-					SendScheduleDate.SelectedYear = Request.Form("SendDate_Year")
-				ElseIf IsNumeric(Request.Form("SendDateYear")) Then
-					SendScheduleDate.SelectedYear = Request.Form("SendDateYear")
-				End If
-			End If
-			'-------- End Section 3 -------------
+                    If IsNumeric(Request.Form("dateToDate_SaleReport_Day")) Then
+                        dateToDate_SaleReport.SelectedDay = Request.Form("dateToDate_SaleReport_Day")
+                    ElseIf IsNumeric(Request.Form("ToDate_SaleReport_Day")) Then
+                        dateToDate_SaleReport.SelectedDay = Request.Form("ToDate_SaleReport_Day")
+                    End If
+                    If IsNumeric(Request.Form("dateToDate_SaleReport_Month")) Then
+                        dateToDate_SaleReport.SelectedMonth = Request.Form("dateToDate_SaleReport_Month")
+                    ElseIf IsNumeric(Request.Form("ToDate_SaleReport_Month")) Then
+                        dateToDate_SaleReport.SelectedMonth = Request.Form("ToDate_SaleReport_Month")
+                    End If
+                    If IsNumeric(Request.Form("dateToDate_SaleReport_Year")) Then
+                        dateToDate_SaleReport.SelectedYear = Request.Form("dateToDate_SaleReport_Year")
+                    ElseIf IsNumeric(Request.Form("ToDate_SaleReport_Year")) Then
+                        dateToDate_SaleReport.SelectedYear = Request.Form("ToDate_SaleReport_Year")
+                    End If
+				 
+                    If IsNumeric(Request.Form("SendDate_Day")) Then
+                        SendScheduleDate.SelectedDay = Request.Form("SendDate_Day")
+                    ElseIf IsNumeric(Request.Form("SendDateDay")) Then
+                        SendScheduleDate.SelectedDay = Request.Form("SendDateDay")
+                    End If
+                    If IsNumeric(Request.Form("SendDate_Month")) Then
+                        SendScheduleDate.SelectedMonth = Request.Form("SendDate_Month")
+                    ElseIf IsNumeric(Request.Form("SendDateMonth")) Then
+                        SendScheduleDate.SelectedMonth = Request.Form("SendDateMonth")
+                    End If
+                    If IsNumeric(Request.Form("SendDate_Year")) Then
+                        SendScheduleDate.SelectedYear = Request.Form("SendDate_Year")
+                    ElseIf IsNumeric(Request.Form("SendDateYear")) Then
+                        SendScheduleDate.SelectedYear = Request.Form("SendDateYear")
+                    End If
+                End If
+                '-------- End Section 3 -------------
 			
-			'----------- Section 8 -------------
-			BeforeAfter.Items(0).Text = "Before"
-			BeforeAfter.Items(0).Value = "-1"
-			BeforeAfter.Items(1).Text = "After"
-			BeforeAfter.Items(1).Value = "1"
+                '----------- Section 8 -------------
+                BeforeAfter.Items(0).Text = "Before"
+                BeforeAfter.Items(0).Value = "-1"
+                BeforeAfter.Items(1).Text = "After"
+                BeforeAfter.Items(1).Value = "1"
 			
-			EventType.Items(0).Text = "General"
-			EventType.Items(0).Value = "General"
-			EventType.Items(1).Text = "Promotion"
-			EventType.Items(1).Value = "Promotion"
-			EventType.Items(2).Text = "Reminder"
-			EventType.Items(2).Value = "Reminder"
-			EventType.Items(3).Text = "News & Events"
-			EventType.Items(3).Value = "News & Events"
-			EventType.Items(4).Text = "Greeting"
-			EventType.Items(4).Value = "Greeting"
-			EventType.Items(5).Text = "Birthday"
-			EventType.Items(5).Value = "Birthday"
-			EventType.Items(6).Text = "New Year"
-			EventType.Items(6).Value = "New Year"
-			EventType.Items(7).Text = "Customer Care"
-			EventType.Items(7).Value = "Customer Care"
+                EventType.Items(0).Text = "General"
+                EventType.Items(0).Value = "General"
+                EventType.Items(1).Text = "Promotion"
+                EventType.Items(1).Value = "Promotion"
+                EventType.Items(2).Text = "Reminder"
+                EventType.Items(2).Value = "Reminder"
+                EventType.Items(3).Text = "News & Events"
+                EventType.Items(3).Value = "News & Events"
+                EventType.Items(4).Text = "Greeting"
+                EventType.Items(4).Value = "Greeting"
+                EventType.Items(5).Text = "Birthday"
+                EventType.Items(5).Value = "Birthday"
+                EventType.Items(6).Text = "New Year"
+                EventType.Items(6).Value = "New Year"
+                EventType.Items(7).Text = "Customer Care"
+                EventType.Items(7).Value = "Customer Care"
 			
-			SendScheduleDate.YearType = GlobalParam.YearType
-			SendScheduleDate.FormName = "SendDate"
-			SendScheduleDate.StartYear = -1
-			SendScheduleDate.EndYear = 2
-			SendScheduleDate.LangID = Session("LangID")
+                SendScheduleDate.YearType = GlobalParam.YearType
+                SendScheduleDate.FormName = "SendDate"
+                SendScheduleDate.StartYear = -1
+                SendScheduleDate.EndYear = 2
+                SendScheduleDate.LangID = Session("LangID")
 			
-			'----------- End Section 8 ---------
+                '----------- End Section 8 ---------
 			
-			If Not Page.IsPostBack Then
-				If PropertyInfo.Rows.Count > 0 Then
-					If Not IsDBNull(PropertyInfo.Rows(0)("WebmasterEmail")) Then
-						EmailFrom.Text = PropertyInfo.Rows(0)("WebmasterEmail")
-					Else
-						EmailFrom.Text = ""
-					End If
-				End If
-				Radio4.Checked = True
-				Radio_11.Checked = True
-				Radio_1.Checked = True
+                If Not Page.IsPostBack Then
+                    If PropertyInfo.Rows.Count > 0 Then
+                        If Not IsDBNull(PropertyInfo.Rows(0)("WebmasterEmail")) Then
+                            EmailFrom.Text = PropertyInfo.Rows(0)("WebmasterEmail")
+                        Else
+                            EmailFrom.Text = ""
+                        End If
+                    End If
+                    Radio4.Checked = True
+                    optSaleReport_Monthly.Checked = True
+                    optFavorite_Monthly.Checked = True
 				
-				GenderList.Items(0).Text = defaultTextTable.Rows(29)("TextParamValue")
-				GenderList.Items(0).Value = "1"
-				GenderList.Items(1).Text = defaultTextTable.Rows(30)("TextParamValue")
-				GenderList.Items(1).Value = "2"
-				GenderList.Items(2).Text = "N/A"
-				GenderList.Items(2).Value = "0"
+                    GenderList.Items(0).Text = defaultTextTable.Rows(29)("TextParamValue")
+                    GenderList.Items(0).Value = "1"
+                    GenderList.Items(1).Text = defaultTextTable.Rows(30)("TextParamValue")
+                    GenderList.Items(1).Value = "2"
+                    GenderList.Items(2).Text = "N/A"
+                    GenderList.Items(2).Value = "0"
 				
-				GenderList.Items(2).Selected = True
+                    GenderList.Items(2).Selected = True
 				
-				UDDDataBound(0,objCnn)
-				UDDDataBoundSMS(objCnn)
-				CheckDynamicCol(Session("StaffID"),objCnn)
+                    UDDDataBound(0, objCnn)
+                    UDDDataBoundSMS(objCnn)
+                    CheckDynamicCol(Session("StaffID"), objCnn)
 			
-				Dim GroupTable As New DataTable()
-				GroupTable = getData.GetMemberInfo(4,-1,-1,-1,"MemberGroupID",objCnn)
-				Dim outputString,FormSelected As String
+                    Dim GroupTable As New DataTable()
+                    GroupTable = getData.GetMemberInfo(4, -1, -1, -1, "MemberGroupID", objCnn)
 				
-				Dim SelectString As String = textTable.Rows(11)("TextParamValue")
+                    Dim SelectString As String = textTable.Rows(11)("TextParamValue")
 				
-				Dim myDataTable As DataTable = new DataTable("ParentTable")
+                    Dim myDataTable As DataTable = New DataTable("ParentTable")
 	
-				Dim myDataColumn As DataColumn 
-				Dim myDataRow As DataRow
+                    Dim myDataColumn As DataColumn
+                    Dim myDataRow As DataRow
 	
-				myDataColumn = New DataColumn()
-				myDataColumn.DataType = System.Type.GetType("System.Int32")
-				myDataColumn.ColumnName = "MemberGroupID"
-				myDataColumn.ReadOnly = True
-				myDataColumn.Unique = True
-				myDataTable.Columns.Add(myDataColumn)
+                    myDataColumn = New DataColumn()
+                    myDataColumn.DataType = System.Type.GetType("System.Int32")
+                    myDataColumn.ColumnName = "MemberGroupID"
+                    myDataColumn.ReadOnly = True
+                    myDataColumn.Unique = True
+                    myDataTable.Columns.Add(myDataColumn)
 				
-				myDataColumn = New DataColumn()
-				myDataColumn.DataType = System.Type.GetType("System.String")
-				myDataColumn.ColumnName = "MemberGroupName"
-				myDataTable.Columns.Add(myDataColumn)
+                    myDataColumn = New DataColumn()
+                    myDataColumn.DataType = System.Type.GetType("System.String")
+                    myDataColumn.ColumnName = "MemberGroupName"
+                    myDataTable.Columns.Add(myDataColumn)
 	
-				myDataRow = myDataTable.NewRow()
-				myDataRow("MemberGroupID") = 0
-				myDataRow("MemberGroupName") = SelectString
-				myDataTable.Rows.Add(myDataRow)
+                    myDataRow = myDataTable.NewRow()
+                    myDataRow("MemberGroupID") = 0
+                    myDataRow("MemberGroupName") = SelectString
+                    myDataTable.Rows.Add(myDataRow)
 				
-				myDataRow = myDataTable.NewRow()
-				myDataRow("MemberGroupID") = -1
-				myDataRow("MemberGroupName") = textTable.Rows(12)("TextParamValue")
-				myDataTable.Rows.Add(myDataRow)
+                    myDataRow = myDataTable.NewRow()
+                    myDataRow("MemberGroupID") = -1
+                    myDataRow("MemberGroupName") = textTable.Rows(12)("TextParamValue")
+                    myDataTable.Rows.Add(myDataRow)
 				   
-				For i = 0 to GroupTable.Rows.Count - 1
-				   myDataRow = myDataTable.NewRow()
-				   myDataRow("MemberGroupID") = GroupTable.Rows(i)("MemberGroupID")
-				   myDataRow("MemberGroupName") = GroupTable.Rows(i)("MemberGroupName")
-				   myDataTable.Rows.Add(myDataRow)
-				Next i
+                    For i = 0 To GroupTable.Rows.Count - 1
+                        myDataRow = myDataTable.NewRow()
+                        myDataRow("MemberGroupID") = GroupTable.Rows(i)("MemberGroupID")
+                        myDataRow("MemberGroupName") = GroupTable.Rows(i)("MemberGroupName")
+                        myDataTable.Rows.Add(myDataRow)
+                    Next i
 				
-				GroupList.DataSource = myDataTable
-				GroupList.DataValueField = "MemberGroupID"
-				GroupList.DataTextField = "MemberGroupName"
-				GroupList.DataBind()
+                    GroupList.DataSource = myDataTable
+                    GroupList.DataValueField = "MemberGroupID"
+                    GroupList.DataTextField = "MemberGroupName"
+                    GroupList.DataBind()
 				
-				Dim provinceTable As DataTable = new DataTable("ParentTable")
+                    Dim provinceTable As DataTable = New DataTable("ParentTable")
 	
-				Dim myDataColumn1 As DataColumn 
+                    Dim myDataColumn1 As DataColumn
 	
-				myDataColumn1 = New DataColumn()
-				myDataColumn1.DataType = System.Type.GetType("System.Int32")
-				myDataColumn1.ColumnName = "ProvinceID"
-				myDataColumn1.ReadOnly = True
-				myDataColumn1.Unique = True
-				provinceTable.Columns.Add(myDataColumn1)
+                    myDataColumn1 = New DataColumn()
+                    myDataColumn1.DataType = System.Type.GetType("System.Int32")
+                    myDataColumn1.ColumnName = "ProvinceID"
+                    myDataColumn1.ReadOnly = True
+                    myDataColumn1.Unique = True
+                    provinceTable.Columns.Add(myDataColumn1)
 				
-				myDataColumn1 = New DataColumn()
-				myDataColumn1.DataType = System.Type.GetType("System.String")
-				myDataColumn1.ColumnName = "ProvinceName"
-				provinceTable.Columns.Add(myDataColumn1)
+                    myDataColumn1 = New DataColumn()
+                    myDataColumn1.DataType = System.Type.GetType("System.String")
+                    myDataColumn1.ColumnName = "ProvinceName"
+                    provinceTable.Columns.Add(myDataColumn1)
 	
-				myDataRow = provinceTable.NewRow()
-				myDataRow("ProvinceID") = 0
-				myDataRow("ProvinceName") = defaultTextTable.Rows(102)("TextParamValue")
-				provinceTable.Rows.Add(myDataRow)
+                    myDataRow = provinceTable.NewRow()
+                    myDataRow("ProvinceID") = 0
+                    myDataRow("ProvinceName") = defaultTextTable.Rows(102)("TextParamValue")
+                    provinceTable.Rows.Add(myDataRow)
 				
-				Dim provinceData As DataTable = objDB.List("select ProvinceID,ProvinceName from provinces where LangID=" + Session("LangID").ToString + " order by ProvinceName", objCnn)
+                    Dim provinceData As DataTable = objDB.List("select ProvinceID,ProvinceName from provinces where LangID=" + Session("LangID").ToString + " order by ProvinceName", objCnn)
 				
-				For i = 0 to provinceData.Rows.Count - 1
-				   myDataRow = provinceTable.NewRow()
-				   myDataRow("ProvinceID") = provinceData.Rows(i)("ProvinceID")
-				   myDataRow("ProvinceName") = provinceData.Rows(i)("ProvinceName")
-				   provinceTable.Rows.Add(myDataRow)
-				Next i
-				Province.DataSource = provinceTable
-				Province.DataValueField = "ProvinceID"
-				Province.DataTextField = "ProvinceName"
-				Province.DataBind()
-				Province.Items(0).Selected = True
+                    For i = 0 To provinceData.Rows.Count - 1
+                        myDataRow = provinceTable.NewRow()
+                        myDataRow("ProvinceID") = provinceData.Rows(i)("ProvinceID")
+                        myDataRow("ProvinceName") = provinceData.Rows(i)("ProvinceName")
+                        provinceTable.Rows.Add(myDataRow)
+                    Next i
+                    Province.DataSource = provinceTable
+                    Province.DataValueField = "ProvinceID"
+                    Province.DataTextField = "ProvinceName"
+                    Province.DataBind()
+                    Province.Items(0).Selected = True
 				
-				Dim displayTable As DataTable = new DataTable("ParentTable")
+                    Dim displayTable As DataTable = New DataTable("ParentTable")
 	
-				Dim myDataColumn2 As DataColumn 
+                    Dim myDataColumn2 As DataColumn
 	
-				myDataColumn2 = New DataColumn()
-				myDataColumn2.DataType = System.Type.GetType("System.Int32")
-				myDataColumn2.ColumnName = "ID"
-				myDataColumn2.ReadOnly = True
-				myDataColumn2.Unique = True
-				displayTable.Columns.Add(myDataColumn2)
+                    myDataColumn2 = New DataColumn()
+                    myDataColumn2.DataType = System.Type.GetType("System.Int32")
+                    myDataColumn2.ColumnName = "ID"
+                    myDataColumn2.ReadOnly = True
+                    myDataColumn2.Unique = True
+                    displayTable.Columns.Add(myDataColumn2)
 				
-				myDataColumn2 = New DataColumn()
-				myDataColumn2.DataType = System.Type.GetType("System.String")
-				myDataColumn2.ColumnName = "Name"
-				displayTable.Columns.Add(myDataColumn2)
+                    myDataColumn2 = New DataColumn()
+                    myDataColumn2.DataType = System.Type.GetType("System.String")
+                    myDataColumn2.ColumnName = "Name"
+                    displayTable.Columns.Add(myDataColumn2)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 1
-				myDataRow("Name") = textTable.Rows(19)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 1
+                    myDataRow("Name") = textTable.Rows(19)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 2
-				myDataRow("Name") = textTable.Rows(17)("TextParamValue") + "/" + defaultTextTable.Rows(25)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 2
+                    myDataRow("Name") = textTable.Rows(17)("TextParamValue") + "/" + defaultTextTable.Rows(25)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 3
-				myDataRow("Name") = defaultTextTable.Rows(47)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 3
+                    myDataRow("Name") = defaultTextTable.Rows(47)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 4
-				myDataRow("Name") = defaultTextTable.Rows(28)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 4
+                    myDataRow("Name") = defaultTextTable.Rows(28)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 5
-				myDataRow("Name") = textTable.Rows(18)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 5
+                    myDataRow("Name") = textTable.Rows(18)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 6
-				myDataRow("Name") = defaultTextTable.Rows(31)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 6
+                    myDataRow("Name") = defaultTextTable.Rows(31)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 7
-				myDataRow("Name") = defaultTextTable.Rows(105)("TextParamValue")
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 7
+                    myDataRow("Name") = defaultTextTable.Rows(105)("TextParamValue")
 
-				displayTable.Rows.Add(myDataRow)
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 8
-				myDataRow("Name") = defaultTextTable.Rows(23)("TextParamValue") + "/<br>" + defaultTextTable.Rows(27)("TextParamValue")
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 8
+                    myDataRow("Name") = defaultTextTable.Rows(23)("TextParamValue") + "/<br>" + defaultTextTable.Rows(27)("TextParamValue")
+                    displayTable.Rows.Add(myDataRow)
 				
-				myDataRow = displayTable.NewRow()
-				myDataRow("ID") = 9
-				myDataRow("Name") = "Register Date/<br>Expire Date"
-				displayTable.Rows.Add(myDataRow)
+                    myDataRow = displayTable.NewRow()
+                    myDataRow("ID") = 9
+                    myDataRow("Name") = "Register Date/<br>Expire Date"
+                    displayTable.Rows.Add(myDataRow)
 				
-				DisplayList.DataSource = displayTable
-				DisplayList.DataValueField = "ID"
-				DisplayList.DataTextField = "Name"
-				DisplayList.DataBind()
+                    DisplayList.DataSource = displayTable
+                    DisplayList.DataValueField = "ID"
+                    DisplayList.DataTextField = "Name"
+                    DisplayList.DataBind()
 				
-				For i = 0 To DisplayList.Items.Count - 1
-					If i <> 2 AND i <> 4 Then
-						DisplayList.Items(i).Selected = True
-					Else
-						DisplayList.Items(i).Selected = False
-					End If
-				Next
+                    For i = 0 To DisplayList.Items.Count - 1
+                        If i <> 2 And i <> 4 Then
+                            DisplayList.Items(i).Selected = True
+                        Else
+                            DisplayList.Items(i).Selected = False
+                        End If
+                    Next
 				
 				
 				
-				'-------- Section 3 Default Data ----------
-				Dim ShopData As DataTable = getInfo.GetProductLevelAccess(-1,Session("StaffRole"),objCnn)
-				ShopInfo.DataSource = ShopData
-				ShopInfo.DataValueField = "ProductLevelID"
-				ShopInfo.DataTextField = "ProductLevelName"
-				ShopInfo.DataBind()
+                    '-------- Section 3 Default Data ----------
+                    Dim ShopData As DataTable = getInfo.GetProductLevelAccess(-1, Session("StaffRole"), objCnn)
+                    ShopInfo.DataSource = ShopData
+                    ShopInfo.DataValueField = "ProductLevelID"
+                    ShopInfo.DataTextField = "ProductLevelName"
+                    ShopInfo.DataBind()
 				
-				ShowGroup()
+                    ShowGroup()
 				
-				Dim ShopData1 As DataTable = getInfo.GetProductLevel(-999,objCnn)
-				ShopInfo1.DataSource = ShopData1
-				ShopInfo1.DataValueField = "ProductLevelID"
-				ShopInfo1.DataTextField = "ProductLevelName"
-				ShopInfo1.DataBind()
+                    Dim ShopData1 As DataTable = getInfo.GetProductLevel(-999, objCnn)
+                    ShopInfo1.DataSource = ShopData1
+                    ShopInfo1.DataValueField = "ProductLevelID"
+                    ShopInfo1.DataTextField = "ProductLevelName"
+                    ShopInfo1.DataBind()
 				
-				ShowGroup1()
+                    ShowGroup1()
 
-				'-------- End Section 3 -------------
+                    '-------- End Section 3 -------------
 				
-				'----------- Section 4 -------------
-				ShopList.DataSource = ShopData
-				ShopList.DataValueField = "ProductLevelID"
-				ShopList.DataTextField = "ProductLevelName"
-				ShopList.DataBind()
-				If ShopData.Rows.Count > 0 Then
-					ShopList.Items(0).Selected = True
-				End If
-				'----------- End Section 4 -----------
+                    '----------- Section 4 -------------
+                    ShopList.DataSource = ShopData
+                    ShopList.DataValueField = "ProductLevelID"
+                    ShopList.DataTextField = "ProductLevelName"
+                    ShopList.DataBind()
+                    If ShopData.Rows.Count > 0 Then
+                        ShopList.Items(0).Selected = True
+                    End If
+                    '----------- End Section 4 -----------
 				
-				Dim DateColData As DataTable = new DataTable("ParentTable")
-				Dim myDataColumn3 As DataColumn 
-				Dim myDataRow1 As DataRow
+                    Dim DateColData As DataTable = New DataTable("ParentTable")
+                    Dim myDataColumn3 As DataColumn
+                    Dim myDataRow1 As DataRow
 	
-				myDataColumn3 = New DataColumn()
-				myDataColumn3.DataType = System.Type.GetType("System.Int32")
-				myDataColumn3.ColumnName = "UDDID"
-				myDataColumn3.ReadOnly = True
-				myDataColumn3.Unique = True
-				DateColData.Columns.Add(myDataColumn3)
+                    myDataColumn3 = New DataColumn()
+                    myDataColumn3.DataType = System.Type.GetType("System.Int32")
+                    myDataColumn3.ColumnName = "UDDID"
+                    myDataColumn3.ReadOnly = True
+                    myDataColumn3.Unique = True
+                    DateColData.Columns.Add(myDataColumn3)
 				
-				myDataColumn3 = New DataColumn()
-				myDataColumn3.DataType = System.Type.GetType("System.String")
-				myDataColumn3.ColumnName = "ColumnName"
-				DateColData.Columns.Add(myDataColumn3)
+                    myDataColumn3 = New DataColumn()
+                    myDataColumn3.DataType = System.Type.GetType("System.String")
+                    myDataColumn3.ColumnName = "ColumnName"
+                    DateColData.Columns.Add(myDataColumn3)
 	
-				myDataRow1 = DateColData.NewRow()
-				myDataRow1("UDDID") = -100
-				myDataRow1("ColumnName") = "Date of Birth"
-				DateColData.Rows.Add(myDataRow1)
+                    myDataRow1 = DateColData.NewRow()
+                    myDataRow1("UDDID") = -100
+                    myDataRow1("ColumnName") = "Date of Birth"
+                    DateColData.Rows.Add(myDataRow1)
 				
-				myDataRow1 = DateColData.NewRow()
-				myDataRow1("UDDID") = -99
-				myDataRow1("ColumnName") = "Expire Date"
-				DateColData.Rows.Add(myDataRow1)
+                    myDataRow1 = DateColData.NewRow()
+                    myDataRow1("UDDID") = -99
+                    myDataRow1("ColumnName") = "Expire Date"
+                    DateColData.Rows.Add(myDataRow1)
 				
-				Dim DateData As DataTable = PromiseCRM.UDDForDynamicAll(1, objCnn)
-				Dim ii As Integer
-				For ii = 0 to DateData.Rows.Count - 1
-				   myDataRow1 = DateColData.NewRow()
-				   myDataRow1("UDDID") = DateData.Rows(ii)("UDDID")
-				   myDataRow1("ColumnName") = DateData.Rows(ii)("UDDName")
-				   DateColData.Rows.Add(myDataRow1)
-				Next ii
-				DateColumn.DataSource = DateColData
-				DateColumn.DataValueField = "UDDID"
-				DateColumn.DataTextField = "ColumnName"
-				DateColumn.DataBind()
+                    Dim DateData As DataTable = PromiseCRM.UDDForDynamicAll(1, objCnn)
+                    Dim ii As Integer
+                    For ii = 0 To DateData.Rows.Count - 1
+                        myDataRow1 = DateColData.NewRow()
+                        myDataRow1("UDDID") = DateData.Rows(ii)("UDDID")
+                        myDataRow1("ColumnName") = DateData.Rows(ii)("UDDName")
+                        DateColData.Rows.Add(myDataRow1)
+                    Next ii
+                    DateColumn.DataSource = DateColData
+                    DateColumn.DataValueField = "UDDID"
+                    DateColumn.DataTextField = "ColumnName"
+                    DateColumn.DataBind()
 				
 				
-				Dim dsSet As New DataSet
-				Dim rNew As DataRow
-				Dim dtCoupon As New DataTable
-				Dim dtCriteria As New DataTable
+                    Dim dsSet As New DataSet
+                    Dim rNew As DataRow
+                    Dim dtCoupon As New DataTable
+                    Dim dtCriteria As New DataTable
 			
-				dtCoupon.Columns.Add("CouponTypeID", System.Type.GetType("System.Int32"))
-				dtCoupon.Columns.Add("CouponTypeName", System.Type.GetType("System.String"))
+                    dtCoupon.Columns.Add("CouponTypeID", System.Type.GetType("System.Int32"))
+                    dtCoupon.Columns.Add("CouponTypeName", System.Type.GetType("System.String"))
 	
-				rNew = dtCoupon.NewRow
-				rNew("CouponTypeID") = 0
-				rNew("CouponTypeName") = "--- Select Coupon Type ---"
-				dtCoupon.Rows.Add(rNew)
+                    rNew = dtCoupon.NewRow
+                    rNew("CouponTypeID") = 0
+                    rNew("CouponTypeName") = "--- Select Coupon Type ---"
+                    dtCoupon.Rows.Add(rNew)
 				
-				Dim CouponData As DataTable = PromiseCRM.GetCouponInfo(-1,objCnn)
+                    Dim CouponData As DataTable = PromiseCRM.GetCouponInfo(-1, objCnn)
 				
-				For i = 0 To CouponData.Rows.Count - 1
-					rNew = dtCoupon.NewRow
-					rNew("CouponTypeID") = CouponData.Rows(i)("VoucherTypeID")
-					If CouponData.Rows(i)("ReuseCoupon") = 0 Then
-						rNew("CouponTypeName") = CouponData.Rows(i)("VoucherTypeName")
-					Else
-						rNew("CouponTypeName") = CouponData.Rows(i)("VoucherTypeName") + " (Reuse)"
-					End If
-					dtCoupon.Rows.Add(rNew)
-				Next
-				CouponType.DataSource = dtCoupon
-				CouponType.DataValueField = "CouponTypeID"
-				CouponType.DataTextField = "CouponTypeName"
-				CouponType.DataBind()
+                    For i = 0 To CouponData.Rows.Count - 1
+                        rNew = dtCoupon.NewRow
+                        rNew("CouponTypeID") = CouponData.Rows(i)("VoucherTypeID")
+                        If CouponData.Rows(i)("ReuseCoupon") = 0 Then
+                            rNew("CouponTypeName") = CouponData.Rows(i)("VoucherTypeName")
+                        Else
+                            rNew("CouponTypeName") = CouponData.Rows(i)("VoucherTypeName") + " (Reuse)"
+                        End If
+                        dtCoupon.Rows.Add(rNew)
+                    Next
+                    CouponType.DataSource = dtCoupon
+                    CouponType.DataValueField = "CouponTypeID"
+                    CouponType.DataTextField = "CouponTypeName"
+                    CouponType.DataBind()
 				
-				dtCriteria.Columns.Add("CriteriaID", System.Type.GetType("System.String"))
-				dtCriteria.Columns.Add("CriterialName", System.Type.GetType("System.String"))
+                    dtCriteria.Columns.Add("CriteriaID", System.Type.GetType("System.String"))
+                    dtCriteria.Columns.Add("CriterialName", System.Type.GetType("System.String"))
 	
-				rNew = dtCriteria.NewRow
-				rNew("CriteriaID") = "="
-				rNew("CriterialName") = "="
-				dtCriteria.Rows.Add(rNew)
+                    rNew = dtCriteria.NewRow
+                    rNew("CriteriaID") = "="
+                    rNew("CriterialName") = "="
+                    dtCriteria.Rows.Add(rNew)
 				
-				rNew = dtCriteria.NewRow
-				rNew("CriteriaID") = ">"
-				rNew("CriterialName") = ">"
-				dtCriteria.Rows.Add(rNew)
+                    rNew = dtCriteria.NewRow
+                    rNew("CriteriaID") = ">"
+                    rNew("CriterialName") = ">"
+                    dtCriteria.Rows.Add(rNew)
 				
-				rNew = dtCriteria.NewRow
-				rNew("CriteriaID") = ">="
-				rNew("CriterialName") = ">="
-				dtCriteria.Rows.Add(rNew)
+                    rNew = dtCriteria.NewRow
+                    rNew("CriteriaID") = ">="
+                    rNew("CriterialName") = ">="
+                    dtCriteria.Rows.Add(rNew)
 				
-				rNew = dtCriteria.NewRow
-				rNew("CriteriaID") = "<"
-				rNew("CriterialName") = "<"
-				dtCriteria.Rows.Add(rNew)
+                    rNew = dtCriteria.NewRow
+                    rNew("CriteriaID") = "<"
+                    rNew("CriterialName") = "<"
+                    dtCriteria.Rows.Add(rNew)
 				
-				rNew = dtCriteria.NewRow
-				rNew("CriteriaID") = "<="
-				rNew("CriterialName") = "<="
-				dtCriteria.Rows.Add(rNew)
+                    rNew = dtCriteria.NewRow
+                    rNew("CriteriaID") = "<="
+                    rNew("CriterialName") = "<="
+                    dtCriteria.Rows.Add(rNew)
 				
-				rNew = dtCriteria.NewRow
-				rNew("CriteriaID") = "between"
-				rNew("CriterialName") = "between"
-				dtCriteria.Rows.Add(rNew)
+                    rNew = dtCriteria.NewRow
+                    rNew("CriteriaID") = "between"
+                    rNew("CriterialName") = "between"
+                    dtCriteria.Rows.Add(rNew)
 				
-				DynamicNumeric1.DataSource = dtCriteria
-				DynamicNumeric1.DataValueField = "CriteriaID"
-				DynamicNumeric1.DataTextField = "CriterialName"
-				DynamicNumeric1.DataBind()
+                    DynamicNumeric1.DataSource = dtCriteria
+                    DynamicNumeric1.DataValueField = "CriteriaID"
+                    DynamicNumeric1.DataTextField = "CriterialName"
+                    DynamicNumeric1.DataBind()
 				
-				DynamicNumeric2.DataSource = dtCriteria
-				DynamicNumeric2.DataValueField = "CriteriaID"
-				DynamicNumeric2.DataTextField = "CriterialName"
-				DynamicNumeric2.DataBind()
+                    DynamicNumeric2.DataSource = dtCriteria
+                    DynamicNumeric2.DataValueField = "CriteriaID"
+                    DynamicNumeric2.DataTextField = "CriterialName"
+                    DynamicNumeric2.DataBind()
 				
-				DynamicNumeric3.DataSource = dtCriteria
-				DynamicNumeric3.DataValueField = "CriteriaID"
-				DynamicNumeric3.DataTextField = "CriterialName"
-				DynamicNumeric3.DataBind()
+                    DynamicNumeric3.DataSource = dtCriteria
+                    DynamicNumeric3.DataValueField = "CriteriaID"
+                    DynamicNumeric3.DataTextField = "CriterialName"
+                    DynamicNumeric3.DataBind()
 				
-				DynamicNumeric4.DataSource = dtCriteria
-				DynamicNumeric4.DataValueField = "CriteriaID"
-				DynamicNumeric4.DataTextField = "CriterialName"
-				DynamicNumeric4.DataBind()
+                    DynamicNumeric4.DataSource = dtCriteria
+                    DynamicNumeric4.DataValueField = "CriteriaID"
+                    DynamicNumeric4.DataTextField = "CriterialName"
+                    DynamicNumeric4.DataBind()
 				
-				DynamicDate1.DataSource = dtCriteria
-				DynamicDate1.DataValueField = "CriteriaID"
-				DynamicDate1.DataTextField = "CriterialName"
-				DynamicDate1.DataBind()
+                    DynamicDate1.DataSource = dtCriteria
+                    DynamicDate1.DataValueField = "CriteriaID"
+                    DynamicDate1.DataTextField = "CriterialName"
+                    DynamicDate1.DataBind()
 				
-				DynamicDate2.DataSource = dtCriteria
-				DynamicDate2.DataValueField = "CriteriaID"
-				DynamicDate2.DataTextField = "CriterialName"
-				DynamicDate2.DataBind()
+                    DynamicDate2.DataSource = dtCriteria
+                    DynamicDate2.DataValueField = "CriteriaID"
+                    DynamicDate2.DataTextField = "CriterialName"
+                    DynamicDate2.DataBind()
 				
-				DynamicDate3.DataSource = dtCriteria
-				DynamicDate3.DataValueField = "CriteriaID"
-				DynamicDate3.DataTextField = "CriterialName"
-				DynamicDate3.DataBind()
+                    DynamicDate3.DataSource = dtCriteria
+                    DynamicDate3.DataValueField = "CriteriaID"
+                    DynamicDate3.DataTextField = "CriterialName"
+                    DynamicDate3.DataBind()
 				
-				DynamicDate4.DataSource = dtCriteria
-				DynamicDate4.DataValueField = "CriteriaID"
-				DynamicDate4.DataTextField = "CriterialName"
-				DynamicDate4.DataBind()
+                    DynamicDate4.DataSource = dtCriteria
+                    DynamicDate4.DataValueField = "CriteriaID"
+                    DynamicDate4.DataTextField = "CriterialName"
+                    DynamicDate4.DataBind()
 				
-				FilterSaleCriteria.DataSource = dtCriteria
-				FilterSaleCriteria.DataValueField = "CriteriaID"
-				FilterSaleCriteria.DataTextField = "CriterialName"
-				FilterSaleCriteria.DataBind()
+                    FilterSaleCriteria.DataSource = dtCriteria
+                    FilterSaleCriteria.DataValueField = "CriteriaID"
+                    FilterSaleCriteria.DataTextField = "CriterialName"
+                    FilterSaleCriteria.DataBind()
 
-			End If
+                End If
 			
 			
-			If PropertyInfo.Rows(0)("SystemEditionID") = 1 Then
-				DynamicCriteria.Visible = False
-				DynamicNumeric.Visible = False
-				DynamicDate.Visible = False
-			End If
+                If PropertyInfo.Rows(0)("SystemEditionID") = 1 Then
+                    DynamicCriteria.Visible = False
+                    DynamicNumeric.Visible = False
+                    DynamicDate.Visible = False
+                End If
 
-		Catch ex As Exception
-			errorMsg.InnerHtml = ""'ex.Message
-			SubmitSale.Enabled = False
-			SubmitFavorite.Enabled = False
-		End Try
-	Else
-		updateMessage.Text = "Access Denied"
-	End If
-End Sub
+            Catch ex As Exception
+                errorMsg.InnerHtml = "" 'ex.Message
+                SubmitSale.Enabled = False
+                SubmitFavorite.Enabled = False
+            End Try
+        Else
+            updateMessage.Text = "Access Denied"
+        End If
+    End Sub
 
-Sub DoSearch(Source As Object, E As EventArgs)
+    Sub DoSearch(Source As Object, E As EventArgs)
 	
-	Dim i As Integer
-	For i = 0 To DisplayList.Items.Count - 1
-		Results.Columns(i+1).Visible = DisplayList.Items(i).Selected
-	Next
+        Dim i As Integer
+        For i = 0 To DisplayList.Items.Count - 1
+            Results.Columns(i + 1).Visible = DisplayList.Items(i).Selected
+        Next
 
-	SelMonth.Value = Request.Form("MonthYearDate_Month")
-	SelYear.Value = Request.Form("MonthYearDate_Year")
-	SelMonth1.Value = Request.Form("MonthYearDate1_Month")
-	SelYear1.Value = Request.Form("MonthYearDate1_Year")
-	SelMonth2.Value = Request.Form("MonthYearDate2_Month")
-	SelYear2.Value = Request.Form("MonthYearDate2_Year")
+        SelMonth.Value = Request.Form("MonthYearDate_Month")
+        SelYear.Value = Request.Form("MonthYearDate_Year")
+        SelMonth1.Value = Request.Form("MonthYearDate1_Month")
+        SelYear1.Value = Request.Form("MonthYearDate1_Year")
+        SelMonth2.Value = Request.Form("MonthYearDate2_Month")
+        SelYear2.Value = Request.Form("MonthYearDate2_Year")
 	
-	SelMonth11.Value = Request.Form("MonthYearDate11_Month")
-	SelYear11.Value = Request.Form("MonthYearDate11_Year")
-	SelMonth12.Value = Request.Form("MonthYearDate12_Month")
-	SelYear12.Value = Request.Form("MonthYearDate12_Year")
+        SelMonth11.Value = Request.Form("MonthYearDate11_Month")
+        SelYear11.Value = Request.Form("MonthYearDate11_Year")
+        SelMonth12.Value = Request.Form("MonthYearDate12_Month")
+        SelYear12.Value = Request.Form("MonthYearDate12_Year")
 
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = False
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = False
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
 	
-	Section1.Visible = False
-	Section2.Visible = True
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = True
 	
-	Dim AgeSel As Integer = 0
-	Dim FromMonth,FromYear,ToMonth,ToYear,DummyYear1,DummyYear2 As Integer
+        Dim AgeSel As Integer = 0
+        Dim FromMonth, FromYear, ToMonth, ToYear, DummyYear1, DummyYear2 As Integer
 	
 	
-	If Radio1.Checked = True Then
-		AgeSel = 1
-	ElseIf Radio2.Checked = True Then
-		AgeSel = 2
-	ElseIf Radio3.Checked = True Then
-		AgeSel = 3
-	End If
+        If Radio1.Checked = True Then
+            AgeSel = 1
+        ElseIf Radio2.Checked = True Then
+            AgeSel = 2
+        ElseIf Radio3.Checked = True Then
+            AgeSel = 3
+        End If
 	
-	Dim outData As DataTable
-	GenResult(outData,GroupList,Trim(MemberCode.Text),Trim(MemberFirstName.Text),Trim(MemberLastName.Text),Trim(MemberTelephone.Text),Trim(MemberMobile.Text),GenderList.SelectedItem.Value, AgeSel, txtFromAge.Value, txtToAge.Value, SelMonth.Value, SelYear.Value, SelMonth1.Value, SelYear1.Value, SelMonth2.Value, SelYear2.Value, objCnn)
+        Dim outData As DataTable
+        GenResult(outData, GroupList, Trim(MemberCode.Text), Trim(MemberFirstName.Text), Trim(MemberLastName.Text), Trim(MemberTelephone.Text), Trim(MemberMobile.Text), GenderList.SelectedItem.Value, AgeSel, txtFromAge.Value, txtToAge.Value, SelMonth.Value, SelYear.Value, SelMonth1.Value, SelYear1.Value, SelMonth2.Value, SelYear2.Value, objCnn)
 	
-End Sub
+    End Sub
 
-Public Function GenResult(ByRef outData As DataTable,ByVal MemberGroup As Object, ByVal MemberCode As String, ByVal MemberFirstName As String, ByVal MemberLastName As String, ByVal MemberTelephone As String, ByVal MemberMobile As String, ByVal GenderValue As Integer, ByVal AgeSel As Integer, ByVal FromAgeValue As String, ByVal ToAgeValue As String, ByVal SelMonth As String, ByVal SelYear As String, ByVal SelMonth1 As String, ByVal SelYear1 As String, ByVal SelMonth2 As String, ByVal SelYear2 As String, ByVal objCnn As MySqlConnection) As String
-	Dim MIDList As String
+    Public Function GenResult(ByRef outData As DataTable, ByVal MemberGroup As Object, ByVal MemberCode As String, ByVal MemberFirstName As String, ByVal MemberLastName As String, ByVal MemberTelephone As String, ByVal MemberMobile As String, ByVal GenderValue As Integer, ByVal AgeSel As Integer, ByVal FromAgeValue As String, ByVal ToAgeValue As String, ByVal SelMonth As String, ByVal SelYear As String, ByVal SelMonth1 As String, ByVal SelYear1 As String, ByVal SelMonth2 As String, ByVal SelYear2 As String, ByVal objCnn As MySqlConnection) As String
+        Dim MIDList As String
 	
-	Dim DynamicString(5) AS String
-	Dim DynamicNumericString(3) As String
-	Dim DynamicDateString(3) As String
-	Dim j As Integer
-	Dim ListString As String
+        Dim DynamicString(5) As String
+        Dim DynamicNumericString(3) As String
+        Dim DynamicDateString(3) As String
+        Dim j As Integer
+        Dim ListString As String
 	
-	Dim propData As DataTable = getProp.PropertyInfo(1,objCnn)	
+        Dim propData As DataTable = getProp.PropertyInfo(1, objCnn)
 	
-	ListString = ""
-	For j = 0 to Dynamic1.Items.Count - 1
-		If Dynamic1.Items(j).Selected = True
-			ListString += "," + Dynamic1.Items(j).Value
-		End If
-	Next
-	If ListString <> ",0" AND ListString <> "" Then
-		DynamicString(0) = "-1" + ListString
-		Dynamic1List.Value = ListString + ","
-	Else
-		DynamicString(0) = ""
-	End If
+        ListString = ""
+        For j = 0 To Dynamic1.Items.Count - 1
+            If Dynamic1.Items(j).Selected = True Then
+                ListString += "," + Dynamic1.Items(j).Value
+            End If
+        Next
+        If ListString <> ",0" And ListString <> "" Then
+            DynamicString(0) = "-1" + ListString
+            Dynamic1List.Value = ListString + ","
+        Else
+            DynamicString(0) = ""
+        End If
 	
-	ListString = ""
-	For j = 0 to Dynamic2.Items.Count - 1
-		If Dynamic2.Items(j).Selected = True
-			ListString += "," + Dynamic2.Items(j).Value
-		End If
-	Next
-	If ListString <> ",0" AND ListString <> "" Then
-		DynamicString(1) = "-1" + ListString
-		Dynamic2List.Value = ListString + ","
-	Else
-		DynamicString(1) = ""
-	End If
+        ListString = ""
+        For j = 0 To Dynamic2.Items.Count - 1
+            If Dynamic2.Items(j).Selected = True Then
+                ListString += "," + Dynamic2.Items(j).Value
+            End If
+        Next
+        If ListString <> ",0" And ListString <> "" Then
+            DynamicString(1) = "-1" + ListString
+            Dynamic2List.Value = ListString + ","
+        Else
+            DynamicString(1) = ""
+        End If
 	
-	ListString = ""
-	For j = 0 to Dynamic3.Items.Count - 1
-		If Dynamic3.Items(j).Selected = True
-			ListString += "," + Dynamic3.Items(j).Value
-		End If
-	Next
-	If ListString <> ",0" AND ListString <> "" Then
-		DynamicString(2) = "-1" + ListString
-		Dynamic3List.Value = ListString + ","
-	Else
-		DynamicString(2) = ""
-	End If
+        ListString = ""
+        For j = 0 To Dynamic3.Items.Count - 1
+            If Dynamic3.Items(j).Selected = True Then
+                ListString += "," + Dynamic3.Items(j).Value
+            End If
+        Next
+        If ListString <> ",0" And ListString <> "" Then
+            DynamicString(2) = "-1" + ListString
+            Dynamic3List.Value = ListString + ","
+        Else
+            DynamicString(2) = ""
+        End If
 	
-	ListString = ""
-	For j = 0 to Dynamic4.Items.Count - 1
-		If Dynamic4.Items(j).Selected = True
-			ListString += "," + Dynamic4.Items(j).Value
-		End If
-	Next
-	If ListString <> ",0" AND ListString <> "" Then
-		DynamicString(3) = "-1" + ListString
-		Dynamic4List.Value = ListString + ","
-	Else
-		DynamicString(3) = ""
-	End If
+        ListString = ""
+        For j = 0 To Dynamic4.Items.Count - 1
+            If Dynamic4.Items(j).Selected = True Then
+                ListString += "," + Dynamic4.Items(j).Value
+            End If
+        Next
+        If ListString <> ",0" And ListString <> "" Then
+            DynamicString(3) = "-1" + ListString
+            Dynamic4List.Value = ListString + ","
+        Else
+            DynamicString(3) = ""
+        End If
 	
-	ListString = ""
-	For j = 0 to Dynamic5.Items.Count - 1
-		If Dynamic5.Items(j).Selected = True
-			ListString += "," + Dynamic5.Items(j).Value
-		End If
-	Next
-	If ListString <> ",0" AND ListString <> "" Then
-		DynamicString(4) = "-1" + ListString
-		Dynamic5List.Value = ListString + ","
-	Else
-		DynamicString(4) = ""
-	End If
+        ListString = ""
+        For j = 0 To Dynamic5.Items.Count - 1
+            If Dynamic5.Items(j).Selected = True Then
+                ListString += "," + Dynamic5.Items(j).Value
+            End If
+        Next
+        If ListString <> ",0" And ListString <> "" Then
+            DynamicString(4) = "-1" + ListString
+            Dynamic5List.Value = ListString + ","
+        Else
+            DynamicString(4) = ""
+        End If
 	
-	ListString = ""
-	For j = 0 to Dynamic6.Items.Count - 1
-		If Dynamic6.Items(j).Selected = True
-			ListString += "," + Dynamic6.Items(j).Value
-		End If
-	Next
-	If ListString <> ",0" AND ListString <> "" Then
-		DynamicString(5) = "-1" + ListString
-		Dynamic6List.Value = ListString + ","
-	Else
-		DynamicString(5) = ""
-	End If
+        ListString = ""
+        For j = 0 To Dynamic6.Items.Count - 1
+            If Dynamic6.Items(j).Selected = True Then
+                ListString += "," + Dynamic6.Items(j).Value
+            End If
+        Next
+        If ListString <> ",0" And ListString <> "" Then
+            DynamicString(5) = "-1" + ListString
+            Dynamic6List.Value = ListString + ","
+        Else
+            DynamicString(5) = ""
+        End If
 	
-	Try 
+        Try
 	
-	If DynamicNumeric1.SelectedItem.Value = "between" Then
-		If IsNumeric(StartNumericText1.Text) AND IsNumeric(EndNumericText1.Text) Then
-			DynamicNumericString(0) = " between " + StartNumericText1.Text + " and " + EndNumericText1.Text
-		End If
-	Else
-		If IsNumeric(StartNumericText1.Text) Then
-			DynamicNumericString(0) = DynamicNumeric1.SelectedItem.Value + StartNumericText1.Text
-		End If
-	End If
+            If DynamicNumeric1.SelectedItem.Value = "between" Then
+                If IsNumeric(StartNumericText1.Text) And IsNumeric(EndNumericText1.Text) Then
+                    DynamicNumericString(0) = " between " + StartNumericText1.Text + " and " + EndNumericText1.Text
+                End If
+            Else
+                If IsNumeric(StartNumericText1.Text) Then
+                    DynamicNumericString(0) = DynamicNumeric1.SelectedItem.Value + StartNumericText1.Text
+                End If
+            End If
 	
-	If DynamicNumeric2.SelectedItem.Value = "between" Then
-		If IsNumeric(StartNumericText2.Text) AND IsNumeric(EndNumericText2.Text) Then
-			DynamicNumericString(1) = " between " + StartNumericText2.Text + " and " + EndNumericText2.Text
-		End If
-	Else
-		If IsNumeric(StartNumericText2.Text) Then
-			DynamicNumericString(1) = DynamicNumeric2.SelectedItem.Value + StartNumericText2.Text
-		End If
-	End If
+            If DynamicNumeric2.SelectedItem.Value = "between" Then
+                If IsNumeric(StartNumericText2.Text) And IsNumeric(EndNumericText2.Text) Then
+                    DynamicNumericString(1) = " between " + StartNumericText2.Text + " and " + EndNumericText2.Text
+                End If
+            Else
+                If IsNumeric(StartNumericText2.Text) Then
+                    DynamicNumericString(1) = DynamicNumeric2.SelectedItem.Value + StartNumericText2.Text
+                End If
+            End If
 	
-	If DynamicNumeric3.SelectedItem.Value = "between" Then
-		If IsNumeric(StartNumericText3.Text) AND IsNumeric(EndNumericText3.Text) Then
-			DynamicNumericString(2) = " between " + StartNumericText3.Text + " and " + EndNumericText3.Text
-		End If
-	Else
-		If IsNumeric(StartNumericText3.Text) Then
-			DynamicNumericString(2) = DynamicNumeric3.SelectedItem.Value + StartNumericText3.Text
-		End If
-	End If
+            If DynamicNumeric3.SelectedItem.Value = "between" Then
+                If IsNumeric(StartNumericText3.Text) And IsNumeric(EndNumericText3.Text) Then
+                    DynamicNumericString(2) = " between " + StartNumericText3.Text + " and " + EndNumericText3.Text
+                End If
+            Else
+                If IsNumeric(StartNumericText3.Text) Then
+                    DynamicNumericString(2) = DynamicNumeric3.SelectedItem.Value + StartNumericText3.Text
+                End If
+            End If
 	
-	If DynamicNumeric4.SelectedItem.Value = "between" Then
-		If IsNumeric(StartNumericText4.Text) AND IsNumeric(EndNumericText4.Text) Then
-			DynamicNumericString(3) = " between " + StartNumericText4.Text + " and " + EndNumericText4.Text
-		End If
-	Else
-		If IsNumeric(StartNumericText4.Text) Then
-			DynamicNumericString(3) = DynamicNumeric4.SelectedItem.Value + StartNumericText4.Text
-		End If
-	End If
+            If DynamicNumeric4.SelectedItem.Value = "between" Then
+                If IsNumeric(StartNumericText4.Text) And IsNumeric(EndNumericText4.Text) Then
+                    DynamicNumericString(3) = " between " + StartNumericText4.Text + " and " + EndNumericText4.Text
+                End If
+            Else
+                If IsNumeric(StartNumericText4.Text) Then
+                    DynamicNumericString(3) = DynamicNumeric4.SelectedItem.Value + StartNumericText4.Text
+                End If
+            End If
 	
-	Dim StartDateText As String
-	Dim EndDateText As String
-	Dim StartYear,EndYear As Integer
-	If DynamicDate1.SelectedItem.Value = "between" Then
-		If IsNumeric(StartDayText1.Text) AND IsNumeric(StartMonthText1.Text) AND IsNumeric(StartYearText1.Text) AND IsNumeric(EndDayText1.Text) AND IsNumeric(EndMonthText1.Text) AND IsNumeric(EndYearText1.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText1.Text) - 543
-				EndYear = CInt(EndYearText1.Text) - 543
-			Else
-				StartYear = StartYearText1.Text
-				EndYear = EndYearText1.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText1.Text,StartDayText1.Text)
-				Dim EndDate As New Date(EndYear,EndMonthText1.Text,EndDayText1.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				EndDateText = DateTimeUtil.FormatDate(Day(EndDate),Month(EndDate),EndYear)
-				DynamicDateString(0) = " between " + StartDateText + " and " + EndDateText
-			Catch ex As Exception
-				DynamicDateString(0) = ""
-			End Try
-		End If
-	Else
-		If IsNumeric(StartDayText1.Text) AND IsNumeric(StartMonthText1.Text) AND IsNumeric(StartYearText1.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText1.Text) - 543
-			Else
-				StartYear = StartYearText1.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText1.Text,StartDayText1.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				DynamicDateString(0) = DynamicDate1.SelectedItem.Value + StartDateText
-			Catch ex As Exception
-				DynamicDateString(0) = ""
-			End Try
-		End If
-	End If
+            Dim StartDateText As String
+            Dim EndDateText As String
+            Dim StartYear, EndYear As Integer
+            If DynamicDate1.SelectedItem.Value = "between" Then
+                If IsNumeric(StartDayText1.Text) And IsNumeric(StartMonthText1.Text) And IsNumeric(StartYearText1.Text) And IsNumeric(EndDayText1.Text) And IsNumeric(EndMonthText1.Text) And IsNumeric(EndYearText1.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText1.Text) - 543
+                        EndYear = CInt(EndYearText1.Text) - 543
+                    Else
+                        StartYear = StartYearText1.Text
+                        EndYear = EndYearText1.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText1.Text, StartDayText1.Text)
+                        Dim EndDate As New Date(EndYear, EndMonthText1.Text, EndDayText1.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        EndDateText = DateTimeUtil.FormatDate(Day(EndDate), Month(EndDate), EndYear)
+                        DynamicDateString(0) = " between " + StartDateText + " and " + EndDateText
+                    Catch ex As Exception
+                        DynamicDateString(0) = ""
+                    End Try
+                End If
+            Else
+                If IsNumeric(StartDayText1.Text) And IsNumeric(StartMonthText1.Text) And IsNumeric(StartYearText1.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText1.Text) - 543
+                    Else
+                        StartYear = StartYearText1.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText1.Text, StartDayText1.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        DynamicDateString(0) = DynamicDate1.SelectedItem.Value + StartDateText
+                    Catch ex As Exception
+                        DynamicDateString(0) = ""
+                    End Try
+                End If
+            End If
 	
-	If DynamicDate2.SelectedItem.Value = "between" Then
-		If IsNumeric(StartDayText2.Text) AND IsNumeric(StartMonthText2.Text) AND IsNumeric(StartYearText2.Text) AND IsNumeric(EndDayText2.Text) AND IsNumeric(EndMonthText2.Text) AND IsNumeric(EndYearText2.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText2.Text) - 543
-				EndYear = CInt(EndYearText2.Text) - 543
-			Else
-				StartYear = StartYearText2.Text
-				EndYear = EndYearText2.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText2.Text,StartDayText2.Text)
-				Dim EndDate As New Date(EndYear,EndMonthText2.Text,EndDayText2.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				EndDateText = DateTimeUtil.FormatDate(Day(EndDate),Month(EndDate),EndYear)
-				DynamicDateString(1) = " between " + StartDateText + " and " + EndDateText
-			Catch ex As Exception
-				DynamicDateString(1) = ""
-			End Try
-		End If
-	Else
-		If IsNumeric(StartDayText2.Text) AND IsNumeric(StartMonthText2.Text) AND IsNumeric(StartYearText2.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText2.Text) - 543
-			Else
-				StartYear = StartYearText2.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText2.Text,StartDayText2.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				DynamicDateString(1) = DynamicDate2.SelectedItem.Value + StartDateText
-			Catch ex As Exception
-				DynamicDateString(1) = ""
-			End Try
-		End If
-	End If
+            If DynamicDate2.SelectedItem.Value = "between" Then
+                If IsNumeric(StartDayText2.Text) And IsNumeric(StartMonthText2.Text) And IsNumeric(StartYearText2.Text) And IsNumeric(EndDayText2.Text) And IsNumeric(EndMonthText2.Text) And IsNumeric(EndYearText2.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText2.Text) - 543
+                        EndYear = CInt(EndYearText2.Text) - 543
+                    Else
+                        StartYear = StartYearText2.Text
+                        EndYear = EndYearText2.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText2.Text, StartDayText2.Text)
+                        Dim EndDate As New Date(EndYear, EndMonthText2.Text, EndDayText2.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        EndDateText = DateTimeUtil.FormatDate(Day(EndDate), Month(EndDate), EndYear)
+                        DynamicDateString(1) = " between " + StartDateText + " and " + EndDateText
+                    Catch ex As Exception
+                        DynamicDateString(1) = ""
+                    End Try
+                End If
+            Else
+                If IsNumeric(StartDayText2.Text) And IsNumeric(StartMonthText2.Text) And IsNumeric(StartYearText2.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText2.Text) - 543
+                    Else
+                        StartYear = StartYearText2.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText2.Text, StartDayText2.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        DynamicDateString(1) = DynamicDate2.SelectedItem.Value + StartDateText
+                    Catch ex As Exception
+                        DynamicDateString(1) = ""
+                    End Try
+                End If
+            End If
 	
-	If DynamicDate3.SelectedItem.Value = "between" Then
-		If IsNumeric(StartDayText3.Text) AND IsNumeric(StartMonthText3.Text) AND IsNumeric(StartYearText3.Text) AND IsNumeric(EndDayText3.Text) AND IsNumeric(EndMonthText3.Text) AND IsNumeric(EndYearText3.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText3.Text) - 543
-				EndYear = CInt(EndYearText3.Text) - 543
-			Else
-				StartYear = StartYearText3.Text
-				EndYear = EndYearText3.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText3.Text,StartDayText3.Text)
-				Dim EndDate As New Date(EndYear,EndMonthText3.Text,EndDayText3.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				EndDateText = DateTimeUtil.FormatDate(Day(EndDate),Month(EndDate),EndYear)
-				DynamicDateString(2) = " between " + StartDateText + " and " + EndDateText
-			Catch ex As Exception
-				DynamicDateString(2) = ""
-			End Try
-		End If
-	Else
-		If IsNumeric(StartDayText3.Text) AND IsNumeric(StartMonthText3.Text) AND IsNumeric(StartYearText3.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText3.Text) - 543
-			Else
-				StartYear = StartYearText3.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText3.Text,StartDayText3.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				DynamicDateString(2) = DynamicDate3.SelectedItem.Value + StartDateText
-			Catch ex As Exception
-				DynamicDateString(2) = ""
-			End Try
-		End If
-	End If
+            If DynamicDate3.SelectedItem.Value = "between" Then
+                If IsNumeric(StartDayText3.Text) And IsNumeric(StartMonthText3.Text) And IsNumeric(StartYearText3.Text) And IsNumeric(EndDayText3.Text) And IsNumeric(EndMonthText3.Text) And IsNumeric(EndYearText3.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText3.Text) - 543
+                        EndYear = CInt(EndYearText3.Text) - 543
+                    Else
+                        StartYear = StartYearText3.Text
+                        EndYear = EndYearText3.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText3.Text, StartDayText3.Text)
+                        Dim EndDate As New Date(EndYear, EndMonthText3.Text, EndDayText3.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        EndDateText = DateTimeUtil.FormatDate(Day(EndDate), Month(EndDate), EndYear)
+                        DynamicDateString(2) = " between " + StartDateText + " and " + EndDateText
+                    Catch ex As Exception
+                        DynamicDateString(2) = ""
+                    End Try
+                End If
+            Else
+                If IsNumeric(StartDayText3.Text) And IsNumeric(StartMonthText3.Text) And IsNumeric(StartYearText3.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText3.Text) - 543
+                    Else
+                        StartYear = StartYearText3.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText3.Text, StartDayText3.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        DynamicDateString(2) = DynamicDate3.SelectedItem.Value + StartDateText
+                    Catch ex As Exception
+                        DynamicDateString(2) = ""
+                    End Try
+                End If
+            End If
 	
-	If DynamicDate4.SelectedItem.Value = "between" Then
-		If IsNumeric(StartDayText4.Text) AND IsNumeric(StartMonthText4.Text) AND IsNumeric(StartYearText4.Text) AND IsNumeric(EndDayText4.Text) AND IsNumeric(EndMonthText4.Text) AND IsNumeric(EndYearText4.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText4.Text) - 543
-				EndYear = CInt(EndYearText4.Text) - 543
-			Else
-				StartYear = StartYearText4.Text
-				EndYear = EndYearText4.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText4.Text,StartDayText4.Text)
-				Dim EndDate As New Date(EndYear,EndMonthText4.Text,EndDayText4.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				EndDateText = DateTimeUtil.FormatDate(Day(EndDate),Month(EndDate),EndYear)
-				DynamicDateString(3) = " between " + StartDateText + " and " + EndDateText
-			Catch ex As Exception
-				DynamicDateString(3) = ""
-			End Try
-		End If
-	Else
-		If IsNumeric(StartDayText4.Text) AND IsNumeric(StartMonthText4.Text) AND IsNumeric(StartYearText4.Text) Then
-			If propData.Rows(0)("YearSetting") = 1 Then
-				StartYear = CInt(StartYearText4.Text) - 543
-			Else
-				StartYear = StartYearText4.Text
-			End If
-			Try
-				Dim StartDate As New Date(StartYear,StartMonthText4.Text,StartDayText4.Text)
-				StartDateText = DateTimeUtil.FormatDate(Day(StartDate),Month(StartDate),StartYear)
-				DynamicDateString(3) = DynamicDate4.SelectedItem.Value + StartDateText
-			Catch ex As Exception
-				DynamicDateString(3) = ""
-			End Try
-		End If
-	End If
+            If DynamicDate4.SelectedItem.Value = "between" Then
+                If IsNumeric(StartDayText4.Text) And IsNumeric(StartMonthText4.Text) And IsNumeric(StartYearText4.Text) And IsNumeric(EndDayText4.Text) And IsNumeric(EndMonthText4.Text) And IsNumeric(EndYearText4.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText4.Text) - 543
+                        EndYear = CInt(EndYearText4.Text) - 543
+                    Else
+                        StartYear = StartYearText4.Text
+                        EndYear = EndYearText4.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText4.Text, StartDayText4.Text)
+                        Dim EndDate As New Date(EndYear, EndMonthText4.Text, EndDayText4.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        EndDateText = DateTimeUtil.FormatDate(Day(EndDate), Month(EndDate), EndYear)
+                        DynamicDateString(3) = " between " + StartDateText + " and " + EndDateText
+                    Catch ex As Exception
+                        DynamicDateString(3) = ""
+                    End Try
+                End If
+            Else
+                If IsNumeric(StartDayText4.Text) And IsNumeric(StartMonthText4.Text) And IsNumeric(StartYearText4.Text) Then
+                    If propData.Rows(0)("YearSetting") = 1 Then
+                        StartYear = CInt(StartYearText4.Text) - 543
+                    Else
+                        StartYear = StartYearText4.Text
+                    End If
+                    Try
+                        Dim StartDate As New Date(StartYear, StartMonthText4.Text, StartDayText4.Text)
+                        StartDateText = DateTimeUtil.FormatDate(Day(StartDate), Month(StartDate), StartYear)
+                        DynamicDateString(3) = DynamicDate4.SelectedItem.Value + StartDateText
+                    Catch ex As Exception
+                        DynamicDateString(3) = ""
+                    End Try
+                End If
+            End If
 	
-	Catch ex As Exception
+        Catch ex As Exception
 
-		End Try
+        End Try
 	
-	Dim ExpireRangeValue As Integer = 0
-	If IsNumeric(ExpireRange.Value) Then
-		ExpireRangeValue = ExpireRange.Value
-	Else
-		ExpireRangeValue = 0
-	End If
-	Dim TestTime As String
-	TestTime += DateTimeUtil.CurrentDateTime + "<br>"
-	Dim dtTable As New DataTable()
-	dtTable = PromiseCRM.SearchMember(MIDList,MemberGroup,MemberCode,MemberFirstName,MemberLastName,MemberTelephone,MemberMobile, GenderValue, "", AgeSel, FromAgeValue, ToAgeValue, SelMonth, SelYear, SelMonth1, SelYear1, SelMonth2, SelYear2, DynamicString, DynamicNumericString, DynamicDateString, Session("StaffID"), Province, MemberCity.Text, ExpireRangeValue, OnlyNotExpire.Checked, Session("LangID"), objCnn)
-	TestTime += DateTimeUtil.CurrentDateTime
+        Dim ExpireRangeValue As Integer = 0
+        If IsNumeric(ExpireRange.Value) Then
+            ExpireRangeValue = ExpireRange.Value
+        Else
+            ExpireRangeValue = 0
+        End If
+        Dim TestTime As String
+        TestTime += DateTimeUtil.CurrentDateTime + "<br>"
+        Dim dtTable As New DataTable()
+        dtTable = PromiseCRM.SearchMember(MIDList, MemberGroup, MemberCode, MemberFirstName, MemberLastName, MemberTelephone, MemberMobile, GenderValue, "", AgeSel, FromAgeValue, ToAgeValue, SelMonth, SelYear, SelMonth1, SelYear1, SelMonth2, SelYear2, DynamicString, DynamicNumericString, DynamicDateString, Session("StaffID"), Province, MemberCity.Text, ExpireRangeValue, OnlyNotExpire.Checked, Session("LangID"), objCnn)
+        TestTime += DateTimeUtil.CurrentDateTime
 
-	outData = dtTable	
+        outData = dtTable
 
-	MemberIDList.Value = MIDList
-	Dim textTable As New DataTable()
-	textTable = getPageText.GetText(11,Session("LangID"),objCnn)
+        MemberIDList.Value = MIDList
+        Dim textTable As New DataTable()
+        textTable = getPageText.GetText(11, Session("LangID"), objCnn)
 	
-	Dim defaultTextTable As New DataTable()
-	defaultTextTable = getPageText.GetDefaultText(Session("LangID"),objCnn)
+        Dim defaultTextTable As New DataTable()
+        defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
 		
-	SetSearchResult(dtTable, objCnn)
+        SetSearchResult(dtTable, objCnn)
 
-End Function
+    End Function
 
-Sub ChangeGridPage(objSender As Object, objArgs As DataGridPageChangedEventArgs)
-	Dim AgeSel As Integer = 0
-	If Radio1.Checked = True Then
-		AgeSel = 1
-	ElseIf Radio2.Checked = True Then
-		AgeSel = 2
-	ElseIf Radio3.Checked = True Then
-		AgeSel = 3
-	End If
-   'runs when one of the pager controls is clicked
+    Sub ChangeGridPage(objSender As Object, objArgs As DataGridPageChangedEventArgs)
+        Dim AgeSel As Integer = 0
+        If Radio1.Checked = True Then
+            AgeSel = 1
+        ElseIf Radio2.Checked = True Then
+            AgeSel = 2
+        ElseIf Radio3.Checked = True Then
+            AgeSel = 3
+        End If
+        'runs when one of the pager controls is clicked
 
-   'update the current page number from the parameter values
-   Results.CurrentPageIndex = objArgs.NewPageIndex
+        'update the current page number from the parameter values
+        Results.CurrentPageIndex = objArgs.NewPageIndex
 
-   'recreate the data set and bind it to the DataGrid control
-   Dim outData As DataTable
-   GenResult(outData,GroupList,Trim(MemberCode.Text),Trim(MemberFirstName.Text),Trim(MemberLastName.Text),Trim(MemberTelephone.Text),Trim(MemberMobile.Text), GenderList.SelectedItem.Value, AgeSel, txtFromAge.Value, txtToAge.Value, SelMonth.Value, SelYear.Value, SelMonth1.Value, SelYear1.Value, SelMonth2.Value, SelYear2.Value, objCnn)
+        'recreate the data set and bind it to the DataGrid control
+        Dim outData As DataTable
+        GenResult(outData, GroupList, Trim(MemberCode.Text), Trim(MemberFirstName.Text), Trim(MemberLastName.Text), Trim(MemberTelephone.Text), Trim(MemberMobile.Text), GenderList.SelectedItem.Value, AgeSel, txtFromAge.Value, txtToAge.Value, SelMonth.Value, SelYear.Value, SelMonth1.Value, SelYear1.Value, SelMonth2.Value, SelYear2.Value, objCnn)
 	
-End Sub
+    End Sub
 
 
-Sub ExportToExcel(Source As Object, E As EventArgs)
+    Sub ExportToExcel(Source As Object, E As EventArgs)
 	
-	Dim FileName As String = "ResultMemberData_" & DateTime.Now.ToString("yyyyMMdd_HHmmss", InvC) & ".xls"
+        Dim FileName As String = "ResultMemberData_" & DateTime.Now.ToString("yyyyMMdd_HHmmss", InvC) & ".xls"
 	
-	Dim OutputText As String = ""
-	Dim CSSFile as String = Replace(UCASE(Path.GetDirectoryName(Request.ServerVariables("PATH_TRANSLATED"))),"REPORTS","") & "StyleSheet\admin.css"
+        Dim OutputText As String = ""
+        Dim CSSFile As String = Replace(UCASE(Path.GetDirectoryName(Request.ServerVariables("PATH_TRANSLATED"))), "REPORTS", "") & "StyleSheet\admin.css"
 	
-	Dim dtTable As DataTable = Session("OutputData")
+        Dim dtTable As DataTable = Session("OutputData")
 	
-	Dim outputString As StringBuilder = New StringBuilder
-	outputString = outputString.Append("<tr>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "#" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Group Code" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Group Name" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Member Code" + "</td>") 
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "First Name" + "</td>") 
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Last Name" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Gender" + "</td>")  
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Address" + "</td>") 
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Address 2" + "</td>") 
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "City" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Province" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Zipcode" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Tel" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Mobile" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Email" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "ID Number" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Date of Birth" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Expire Date" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Insert Date" + "</td>")
-	outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Update Date" + "</td>")
-	
-	
+        Dim outputString As StringBuilder = New StringBuilder
+        outputString = outputString.Append("<tr>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "#" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Group Code" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Group Name" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Member Code" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "First Name" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Last Name" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Gender" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Address" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Address 2" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "City" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Province" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Zipcode" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Tel" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Mobile" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Email" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "ID Number" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Date of Birth" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Expire Date" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Insert Date" + "</td>")
+        outputString = outputString.Append("<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "Update Date" + "</td>")
 	
 	
 	
 	
-	outputString = outputString.Append("</tr>")
-	Dim i As Integer
-	For i = 0 To dtTable.Rows.Count - 1
-		outputString = outputString.Append("<tr>")
-		outputString = outputString.Append("<td align=""left"" class=""smallText"">" + (i+1).ToString + "</td>")
-		outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberGroupCode") + "</td>")
-		outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberGroupName") + "</td>")
-		outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberCode") + "</td>")
-		outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberFirstName") + "</td>")
-		outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberLastName") + "</td>")
-		If dtTable.Rows(i)("MemberGender") = 1 Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "M" + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "F" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberAddress1")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberAddress1") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberAddress2")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberAddress2") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberCity")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberCity") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("ProvinceName")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("ProvinceName") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberZipcode")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberZipcode") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberTelephone")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberTelephone") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberMobile")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberMobile") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberEmail")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberEmail") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberIDNumber")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberIDNumber") + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberBirthDay")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("MemberBirthDay"),"DateOnly",1,objCnn) + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("MemberExpiration")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("MemberExpiration"),"DateOnly",1,objCnn) + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("inputDate")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("inputDate"),"DateAndTime",1,objCnn) + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		If Not IsDBNull(dtTable.Rows(i)("UpdateDate")) Then
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("UpdateDate"),"DateAndTime",1,objCnn) + "</td>")
-		Else
-			outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
-		End If
-		
-		
+	
+	
+        outputString = outputString.Append("</tr>")
+        Dim i As Integer
+        For i = 0 To dtTable.Rows.Count - 1
+            outputString = outputString.Append("<tr>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText"">" + (i + 1).ToString + "</td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberGroupCode") + "</td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberGroupName") + "</td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberCode") + "</td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberFirstName") + "</td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberLastName") + "</td>")
+            If dtTable.Rows(i)("MemberGender") = 1 Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "M" + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "F" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberAddress1")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberAddress1") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberAddress2")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberAddress2") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberCity")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberCity") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("ProvinceName")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("ProvinceName") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberZipcode")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberZipcode") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberTelephone")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberTelephone") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberMobile")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberMobile") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberEmail")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberEmail") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberIDNumber")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + dtTable.Rows(i)("MemberIDNumber") + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberBirthDay")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("MemberBirthDay"), "DateOnly", 1, objCnn) + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("MemberExpiration")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("MemberExpiration"), "DateOnly", 1, objCnn) + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("inputDate")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("inputDate"), "DateAndTime", 1, objCnn) + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
+            If Not IsDBNull(dtTable.Rows(i)("UpdateDate")) Then
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + DateTimeUtil.FormatDateTime(dtTable.Rows(i)("UpdateDate"), "DateAndTime", 1, objCnn) + "</td>")
+            Else
+                outputString = outputString.Append("<td align=""left"" class=""smallText"">" + "" + "</td>")
+            End If
 		
 		
 		
 		
 		
-		outputString = outputString.Append("</tr>")
-	Next
-	
-	Session("ReportResult") = "<table border=""1"" cellpadding=""4"" cellspacing=""0"" style=""border-collapse:collapse;"">" & outputString.ToString() & "</table>"
-	
-	Util.ExportData(Session("ReportResult"),FileName,CSSFile,GlobalParam.ExportCharSet,-1)
-End Sub	
 		
-Sub ExportToExcelOld(Source As Object, E As EventArgs)
-	Dim outData As DataTable
-	Dim AgeSel As Integer = 0
-	If Radio1.Checked = True Then
-		AgeSel = 1
-	ElseIf Radio2.Checked = True Then
-		AgeSel = 2
-	ElseIf Radio3.Checked = True Then
-		AgeSel = 3
-	End If
-	Dim TestTime As String
-
-	TestTime += DateTimeUtil.CurrentDateTime
-	Dim dtReader As MySqlDataReader = getData.MemberResult(Session("LangID"),MemberIDList.Value,objCnn)
-	TestTime += "<br>" + DateTimeUtil.CurrentDateTime
-
-	Dim filename As String = "MemberData.csv"
-	Dim ResultText As String = ""
-	
-	ResultText = "MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10)
-	Dim i As Integer = 0
-	
-	Response.Clear()
-    Response.ContentType = "application/vnd.ms-excel"
-    Response.AddHeader("Content-Disposition", "attachment; filename=""" & filename & """")
-	Response.Charset = "windows-874"
-	Response.ContentEncoding = System.Text.Encoding.GetEncoding(874)
-    Response.Flush()
-	Response.Write("MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10))
-	While dtReader.Read()
-		Response.Write("""" + Replace(dtReader.GetValue(0),"""","""""") + """,""" + Replace(dtReader.GetValue(1),"""","""""") + " " + Replace(dtReader.GetValue(2),"""","""""") + """,""" + Replace(dtReader.GetValue(3),"""","""""") + """")
-		If Not IsDBNull(dtReader.GetValue(4)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(4),"""","""""") + """")
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(5)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(5),"""",""""""))
-			If Not IsDBNull(dtReader.GetValue(6)) Then 
-				Response.Write(" " + Replace(dtReader.GetValue(6),"""","""""") + """")
-			Else
-				Response.Write("""") 
-			End If
-		Else
-			Response.Write(",""") 
-			If Not IsDBNull(dtReader.GetValue(6)) Then 
-				Response.Write(Replace(dtReader.GetValue(6),"""","""""") + """")
-			Else
-				Response.Write("""") 
-			End If
-		End If
 		
-		If Not IsDBNull(dtReader.GetValue(7)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(7),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(8)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(8),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(9)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(9),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(10)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(10),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(11)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(11),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(12)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(12),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(13)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(13),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(14)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(14),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(15)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(15),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(16)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(16),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(17)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(17),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(18)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(18),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(19)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(19),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(20)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(20),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(21)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(21),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		Response.Write(chr(13) & chr(10))
+            outputString = outputString.Append("</tr>")
+        Next
 	
-	End While
-	dtReader.Close()
-	Response.End()
+        Session("ReportResult") = "<table border=""1"" cellpadding=""4"" cellspacing=""0"" style=""border-collapse:collapse;"">" & outputString.ToString() & "</table>"
 	
-	TestTime += "<br>" + DateTimeUtil.CurrentDateTime
-	'errorMsg.InnerHtml = TestTime + "<br>" 
-
-End Sub
-
-Sub ExportToExcelAll(Source As Object, E As EventArgs)
-	Dim outData As DataTable
-	Dim TestTime As String
-
-	TestTime += DateTimeUtil.CurrentDateTime
-	Dim dtReader As MySqlDataReader = getData.MemberResult(Session("LangID"),"-99",objCnn)
-	TestTime += "<br>" + DateTimeUtil.CurrentDateTime
-
-	Dim filename As String = "AllMemberData.csv"
-	Dim ResultText As String = ""
-	
-	ResultText = "MemberID,MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10)
-	Dim i As Integer = 0
-	
-	Response.Clear()
-    Response.ContentType = "application/vnd.ms-excel"
-    Response.AddHeader("Content-Disposition", "attachment; filename=""" & filename & """")
-	Response.Charset = "windows-874"
-	Response.ContentEncoding = System.Text.Encoding.GetEncoding(874)
-    Response.Flush()
-	Response.Write("MemberID,MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10))
-	While dtReader.Read()
-		Response.Write("""" + Replace(dtReader.GetValue(22),"""","""""") + """,""" + Replace(dtReader.GetValue(0),"""","""""") + """,""" + Replace(dtReader.GetValue(1),"""","""""") + " " + Replace(dtReader.GetValue(2),"""","""""") + """,""" + Replace(dtReader.GetValue(3),"""","""""") + """")
-		If Not IsDBNull(dtReader.GetValue(4)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(4),"""","""""") + """")
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(5)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(5),"""",""""""))
-			If Not IsDBNull(dtReader.GetValue(6)) Then 
-				Response.Write(" " + Replace(dtReader.GetValue(6),"""","""""") + """")
-			Else
-				Response.Write("""") 
-			End If
-		Else
-			Response.Write(",""") 
-			If Not IsDBNull(dtReader.GetValue(6)) Then 
-				Response.Write(Replace(dtReader.GetValue(6),"""","""""") + """")
-			Else
-				Response.Write("""") 
-			End If
-		End If
+        Util.ExportData(Session("ReportResult"), FileName, CSSFile, GlobalParam.ExportCharSet, -1)
+    End Sub
 		
-		If Not IsDBNull(dtReader.GetValue(7)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(7),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(8)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(8),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(9)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(9),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(10)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(10),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(11)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(11),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(12)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(12),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(13)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(13),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(14)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(14),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(15)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(15),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(16)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(16),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(17)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(17),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(18)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(18),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(19)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(19),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(20)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(20),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(21)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(21),"""","""""") + """") 
-		Else
-			Response.Write(",""""") 
-		End If
-		Response.Write(chr(13) & chr(10))
-	
-	End While
-	dtReader.Close()
-	Response.End()
+    Sub ExportToExcelOld(Source As Object, E As EventArgs)
+        Dim outData As DataTable
+        Dim AgeSel As Integer = 0
+        If Radio1.Checked = True Then
+            AgeSel = 1
+        ElseIf Radio2.Checked = True Then
+            AgeSel = 2
+        ElseIf Radio3.Checked = True Then
+            AgeSel = 3
+        End If
+        Dim TestTime As String
 
-End Sub
+        TestTime += DateTimeUtil.CurrentDateTime
+        Dim dtReader As MySqlDataReader = getData.MemberResult(Session("LangID"), MemberIDList.Value, objCnn)
+        TestTime += "<br>" + DateTimeUtil.CurrentDateTime
+
+        Dim filename As String = "MemberData.csv"
+        Dim ResultText As String = ""
+	
+        ResultText = "MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10)
+        Dim i As Integer = 0
+	
+        Response.Clear()
+        Response.ContentType = "application/vnd.ms-excel"
+        Response.AddHeader("Content-Disposition", "attachment; filename=""" & filename & """")
+        Response.Charset = "windows-874"
+        Response.ContentEncoding = System.Text.Encoding.GetEncoding(874)
+        Response.Flush()
+        Response.Write("MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10))
+        While dtReader.Read()
+            Response.Write("""" + Replace(dtReader.GetValue(0), """", """""") + """,""" + Replace(dtReader.GetValue(1), """", """""") + " " + Replace(dtReader.GetValue(2), """", """""") + """,""" + Replace(dtReader.GetValue(3), """", """""") + """")
+            If Not IsDBNull(dtReader.GetValue(4)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(4), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(5)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(5), """", """"""))
+                If Not IsDBNull(dtReader.GetValue(6)) Then
+                    Response.Write(" " + Replace(dtReader.GetValue(6), """", """""") + """")
+                Else
+                    Response.Write("""")
+                End If
+            Else
+                Response.Write(",""")
+                If Not IsDBNull(dtReader.GetValue(6)) Then
+                    Response.Write(Replace(dtReader.GetValue(6), """", """""") + """")
+                Else
+                    Response.Write("""")
+                End If
+            End If
 		
-Sub ExportMemberUDD(Source As Object, E As EventArgs)
-	Dim outData As DataTable
-	Dim TestTime As String
+            If Not IsDBNull(dtReader.GetValue(7)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(7), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(8)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(8), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(9)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(9), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(10)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(10), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(11)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(11), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(12)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(12), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(13)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(13), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(14)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(14), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(15)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(15), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(16)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(16), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(17)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(17), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(18)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(18), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(19)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(19), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(20)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(20), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(21)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(21), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            Response.Write(chr(13) & chr(10))
+	
+        End While
+        dtReader.Close()
+        Response.End()
+	
+        TestTime += "<br>" + DateTimeUtil.CurrentDateTime
+        'errorMsg.InnerHtml = TestTime + "<br>" 
 
-	TestTime += DateTimeUtil.CurrentDateTime
-	Dim dtReader As MySqlDataReader = getData.MemberUDDResult("-99",objCnn)
-	TestTime += "<br>" + DateTimeUtil.CurrentDateTime
+    End Sub
 
-	Dim filename As String = "MemberUserDefineData.csv"
-	Dim ResultText As String = ""
+    Sub ExportToExcelAll(Source As Object, E As EventArgs)
+        Dim outData As DataTable
+        Dim TestTime As String
 
-	Dim i As Integer = 0
-	
-	Response.Clear()
-    Response.ContentType = "application/vnd.ms-excel"
-    Response.AddHeader("Content-Disposition", "attachment; filename=""" & filename & """")
-	Response.Charset = "windows-874"
-	Response.ContentEncoding = System.Text.Encoding.GetEncoding(874)
-    Response.Flush()
-	Response.Write("MemberID,MemberCode,ColumnID,ColumnType,ColumnName,ColumnValue" + chr(13) & chr(10))
-	While dtReader.Read()
-		Response.Write("""" + Replace(dtReader.GetValue(0),"""","""""") + """")
-		If Not IsDBNull(dtReader.GetValue(1)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(1),"""","""""") + """")
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(2)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(2),"""","""""") + """")
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(4)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(4),"""","""""") + """")
-		Else
-			Response.Write(",""""") 
-		End If
-		If Not IsDBNull(dtReader.GetValue(5)) Then 
-			Response.Write(",""" + Replace(dtReader.GetValue(5),"""","""""") + """")
-		Else
-			Response.Write(",""""") 
-		End If
-		If dtReader.GetValue(3) = 1 Or dtReader.GetValue(3) = 6 Then
-			Response.Write(",""" + Replace(dtReader.GetValue(8),"""","""""") + """")
-		ElseIf dtReader.GetValue(3) = 2 Then
-			Response.Write(",""" + Replace(dtReader.GetValue(9),"""","""""") + """")
-		ElseIf dtReader.GetValue(3) = 3 Then
-			Response.Write(",""" + Replace(dtReader.GetValue(7),"""","""""") + """")
-		ElseIf dtReader.GetValue(3) = 4 Then
-			Response.Write(",""" + Replace(dtReader.GetValue(7),"""","""""") + """")
-		ElseIf dtReader.GetValue(3) = 5 Then
-			Response.Write(",""" + Replace(dtReader.GetValue(10),"""","""""") + """")
-		Else
-			Response.Write(",""""")
-		End If
-		Response.Write(chr(13) & chr(10))
-	
-	End While
-	dtReader.Close()
-	Response.End()
+        TestTime += DateTimeUtil.CurrentDateTime
+        Dim dtReader As MySqlDataReader = getData.MemberResult(Session("LangID"), "-99", objCnn)
+        TestTime += "<br>" + DateTimeUtil.CurrentDateTime
 
-End Sub
+        Dim filename As String = "AllMemberData.csv"
+        Dim ResultText As String = ""
+	
+        ResultText = "MemberID,MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10)
+        Dim i As Integer = 0
+	
+        Response.Clear()
+        Response.ContentType = "application/vnd.ms-excel"
+        Response.AddHeader("Content-Disposition", "attachment; filename=""" & filename & """")
+        Response.Charset = "windows-874"
+        Response.ContentEncoding = System.Text.Encoding.GetEncoding(874)
+        Response.Flush()
+        Response.Write("MemberID,MemberCode,MemberName,MemberGender,MemberAddress1,MemberCity,Province,ZipCode,MemberTelephone,MemberMobile,MemberEmail,MemberBirthDate,RegisterDate,ExpirationDate,MemberFax,AdditionalInfo,NationalID,IssueDate,NationalIDExpDate,MemberBlood,Activated" + chr(13) & chr(10))
+        While dtReader.Read()
+            Response.Write("""" + Replace(dtReader.GetValue(22), """", """""") + """,""" + Replace(dtReader.GetValue(0), """", """""") + """,""" + Replace(dtReader.GetValue(1), """", """""") + " " + Replace(dtReader.GetValue(2), """", """""") + """,""" + Replace(dtReader.GetValue(3), """", """""") + """")
+            If Not IsDBNull(dtReader.GetValue(4)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(4), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(5)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(5), """", """"""))
+                If Not IsDBNull(dtReader.GetValue(6)) Then
+                    Response.Write(" " + Replace(dtReader.GetValue(6), """", """""") + """")
+                Else
+                    Response.Write("""")
+                End If
+            Else
+                Response.Write(",""")
+                If Not IsDBNull(dtReader.GetValue(6)) Then
+                    Response.Write(Replace(dtReader.GetValue(6), """", """""") + """")
+                Else
+                    Response.Write("""")
+                End If
+            End If
+		
+            If Not IsDBNull(dtReader.GetValue(7)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(7), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(8)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(8), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(9)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(9), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(10)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(10), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(11)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(11), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(12)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(12), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(13)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(13), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(14)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(14), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(15)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(15), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(16)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(16), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(17)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(17), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(18)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(18), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(19)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(19), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(20)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(20), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(21)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(21), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            Response.Write(chr(13) & chr(10))
+	
+        End While
+        dtReader.Close()
+        Response.End()
 
-Sub DoSearchSale(Source As Object, E As EventArgs)
+    End Sub
+		
+    Sub ExportMemberUDD(Source As Object, E As EventArgs)
+        Dim outData As DataTable
+        Dim TestTime As String
+
+        TestTime += DateTimeUtil.CurrentDateTime
+        Dim dtReader As MySqlDataReader = getData.MemberUDDResult("-99", objCnn)
+        TestTime += "<br>" + DateTimeUtil.CurrentDateTime
+
+        Dim filename As String = "MemberUserDefineData.csv"
+        Dim ResultText As String = ""
+
+        Dim i As Integer = 0
 	
-	Session("ReportResult") = ""
-	Dim LangData2 As DataTable = getProp.GetLangData(PageID,2,-1,Request)
-	Dim LangDefault As DataTable = getProp.GetLangData(999,2,-1,Request)
-	Dim LangText As String = "lang" + Session("LangID").ToString
-	Dim FormatData As DataTable = Util.FormatParam(FormatObject,Session("LangID"),objCnn)
-	Dim ci As New CultureInfo(FormatObject.CultureString)
+        Response.Clear()
+        Response.ContentType = "application/vnd.ms-excel"
+        Response.AddHeader("Content-Disposition", "attachment; filename=""" & filename & """")
+        Response.Charset = "windows-874"
+        Response.ContentEncoding = System.Text.Encoding.GetEncoding(874)
+        Response.Flush()
+        Response.Write("MemberID,MemberCode,ColumnID,ColumnType,ColumnName,ColumnValue" + chr(13) & chr(10))
+        While dtReader.Read()
+            Response.Write("""" + Replace(dtReader.GetValue(0), """", """""") + """")
+            If Not IsDBNull(dtReader.GetValue(1)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(1), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(2)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(2), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(4)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(4), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If Not IsDBNull(dtReader.GetValue(5)) Then
+                Response.Write(",""" + Replace(dtReader.GetValue(5), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            If dtReader.GetValue(3) = 1 Or dtReader.GetValue(3) = 6 Then
+                Response.Write(",""" + Replace(dtReader.GetValue(8), """", """""") + """")
+            ElseIf dtReader.GetValue(3) = 2 Then
+                Response.Write(",""" + Replace(dtReader.GetValue(9), """", """""") + """")
+            ElseIf dtReader.GetValue(3) = 3 Then
+                Response.Write(",""" + Replace(dtReader.GetValue(7), """", """""") + """")
+            ElseIf dtReader.GetValue(3) = 4 Then
+                Response.Write(",""" + Replace(dtReader.GetValue(7), """", """""") + """")
+            ElseIf dtReader.GetValue(3) = 5 Then
+                Response.Write(",""" + Replace(dtReader.GetValue(10), """", """""") + """")
+            Else
+                Response.Write(",""""")
+            End If
+            Response.Write(chr(13) & chr(10))
 	
-	ApplyDone.Visible = False
-	showSaleResults.Visible = True
-	SelMonth9.Value = Request.Form("MonthYearDate9_Month")
-	SelYear9.Value = Request.Form("MonthYearDate9_Year")
+        End While
+        dtReader.Close()
+        Response.End()
+
+    End Sub
+
+    Sub DoSearchSale(Source As Object, E As EventArgs)
 	
-	DocDailyDay9.Value = Request.Form("DocDaily9_Day")
-	DocDailyMonth9.Value = Request.Form("DocDaily9_Month")
-	DocDailyYear9.Value = Request.Form("DocDaily9_Year")
+        Session("ReportResult") = ""
+        Dim LangData2 As DataTable = getProp.GetLangData(PageID, 2, -1, Request)
+        Dim LangDefault As DataTable = getProp.GetLangData(999, 2, -1, Request)
+        Dim LangText As String = "lang" + Session("LangID").ToString
+        Dim FormatData As DataTable = Util.FormatParam(FormatObject, Session("LangID"), objCnn)
+        Dim ci As New CultureInfo(FormatObject.CultureString)
 	
-	DocDay9.Value = Request.Form("Doc9_Day")
-	DocMonth9.Value = Request.Form("Doc9_Month")
-	DocYear9.Value = Request.Form("Doc9_Year")
-	DocToDay9.Value = Request.Form("DocTo9_Day")
-	DocToMonth9.Value = Request.Form("DocTo9_Month")
-	DocToYear9.Value = Request.Form("DocTo9_Year")
-	Dim FoundError As Boolean
-	FoundError = False
-	Session("ReportResult") = ""
-	Dim textTable As New DataTable()
-	textTable = getPageText.GetText(12,Session("LangID"),objCnn)
+        ApplyDone.Visible = False
+        showSaleResults.Visible = True
+        monthly_SaleReport_Month.Value = Request.Form("dateMonthYear_SaleReport_Month")
+        monthly_SaleReport_Year.Value = Request.Form("dateMonthYear_SaleReport_Year")
+	
+        daily_SaleReport_Day.Value = Request.Form("dateDaily_SaleReport_Day")
+        daily_SaleReport_Month.Value = Request.Form("dateDaily_SaleReport_Month")
+        daily_SaleReport_Year.Value = Request.Form("dateDaily_SaleReport_Year")
+	        
+        FromDate_SaleReport_Day.Value = Request.Form("dateFromDate_SaleReport_Day")
+        FromDate_SaleReport_Month.Value = Request.Form("dateFromDate_SaleReport_Month")
+        FromDate_SaleReport_Year.Value = Request.Form("dateFromDate_SaleReport_Year")
+        ToDate_SaleReport_Day.Value = Request.Form("dateToDate_SaleReport_Day")
+        ToDate_SaleReport_Month.Value = Request.Form("dateToDate_SaleReport_Month")
+        ToDate_SaleReport_Year.Value = Request.Form("dateToDate_SaleReport_Year")
+        Dim FoundError As Boolean
+        FoundError = False
+        Session("ReportResult") = ""
+        Dim textTable As New DataTable()
+        textTable = getPageText.GetText(12, Session("LangID"), objCnn)
 			
-	Dim defaultTextTable As New DataTable()
-	defaultTextTable = getPageText.GetDefaultText(Session("LangID"),objCnn)
+        Dim defaultTextTable As New DataTable()
+        defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
 	
-	Dim DateFromValue As String = ""
-	Dim DateToValue As String = ""
-	Dim DailyDateValue As String = ""
-	Dim InvC As CultureInfo = CultureInfo.InvariantCulture
+        Dim DateFromValue As String = ""
+        Dim DateToValue As String = ""
+        Dim DailyDateValue As String = ""
+        Dim InvC As CultureInfo = CultureInfo.InvariantCulture
 	
-	Dim StartDate,EndDate As String
-	Dim StartMonthValue,StartYearValue,EndMonthValue,EndYearValue As Integer
-	Dim outputString As String = ""
-	Dim grandTotal As Double = 0
-	Dim GraphData As New DataSet()
-	Dim ReportDate As String
+        Dim StartDate, EndDate As String
+        Dim StartMonthValue, StartYearValue, EndMonthValue, EndYearValue As Integer
+        Dim outputString As String = ""
+        Dim grandTotal As Double = 0
+        Dim GraphData As New DataSet()
+        Dim ReportDate As String
 			
-	If Radio_11.Checked = True Then
-		If IsNumeric(Request.Form("MonthYearDate9_Month")) AND IsNumeric(Request.Form("MonthYearDate9_Year")) Then
-			If Request.Form("MonthYearDate9_Month") = 12 Then
-				StartMonthValue = Request.Form("MonthYearDate9_Month")
-				EndMonthValue = 1
-				StartYearValue = Request.Form("MonthYearDate9_Year")
-				EndYearValue = Request.Form("MonthYearDate9_Year") + 1
-			Else
-				StartMonthValue = Request.Form("MonthYearDate9_Month")
-				EndMonthValue = Request.Form("MonthYearDate9_Month") + 1
-				StartYearValue = Request.Form("MonthYearDate9_Year")
-				EndYearValue = Request.Form("MonthYearDate9_Year")
-			End If
-			StartDate = DateTimeUtil.FormatDate(1,StartMonthValue,StartYearValue)
-			EndDate = DateTimeUtil.FormatDate(1,EndMonthValue,EndYearValue)
-			Dim SDate As New Date(StartYearValue,StartMonthValue,1)
-			ReportDate = DateTimeUtil.FormatDateTime(SDate, "MMMM yyyy",Session("LangID"),objCnn)
-		Else
-			SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-			FoundError = True
-		End If
-	ElseIf Radio_12.Checked = True Then
-		If IsNumeric(Request.Form("Doc9_Day")) AND IsNumeric(Request.Form("Doc9_Month")) AND IsNumeric(Request.Form("Doc9_Year")) AND IsNumeric(Request.Form("DocTo9_Year")) AND IsNumeric(Request.Form("DocTo9_Month")) AND IsNumeric(Request.Form("DocTo9_Day")) Then
-			StartDate = DateTimeUtil.FormatDate(Request.Form("Doc9_Day"),Request.Form("Doc9_Month"),Request.Form("Doc9_Year"))
-			Dim CheckDate As New DateTime(Request.Form("DocTo9_Year"), Request.Form("DocTo9_Month"), Request.Form("DocTo9_Day"), 0, 0, 0)
-			CheckDate = DateAdd("d",1,CheckDate)
-			EndDate = DateTimeUtil.FormatDate(Day(CheckDate),Month(CheckDate),CheckDate.ToString("yyyy", InvC))
+        If optSaleReport_Monthly.Checked = True Then
+            If IsNumeric(Request.Form("dateMonthYear_SaleReport_Month")) And IsNumeric(Request.Form("dateMonthYear_SaleReport_Year")) Then
+                If Request.Form("dateMonthYear_SaleReport_Month") = 12 Then
+                    StartMonthValue = Request.Form("dateMonthYear_SaleReport_Month")
+                    EndMonthValue = 1
+                    StartYearValue = Request.Form("dateMonthYear_SaleReport_Year")
+                    EndYearValue = Request.Form("dateMonthYear_SaleReport_Year") + 1
+                Else
+                    StartMonthValue = Request.Form("dateMonthYear_SaleReport_Month")
+                    EndMonthValue = Request.Form("dateMonthYear_SaleReport_Month") + 1
+                    StartYearValue = Request.Form("dateMonthYear_SaleReport_Year")
+                    EndYearValue = Request.Form("dateMonthYear_SaleReport_Year")
+                End If
+                StartDate = DateTimeUtil.FormatDate(1, StartMonthValue, StartYearValue)
+                EndDate = DateTimeUtil.FormatDate(1, EndMonthValue, EndYearValue)
+                Dim SDate As New Date(StartYearValue, StartMonthValue, 1)
+                ReportDate = DateTimeUtil.FormatDateTime(SDate, "MMMM yyyy", Session("LangID"), objCnn)
+            Else
+                SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                FoundError = True
+            End If
+        ElseIf optSaleReport_DateRange.Checked = True Then
+            If IsNumeric(Request.Form("dateFromDate_SaleReport_Day")) And IsNumeric(Request.Form("dateFromDate_SaleReport_Month")) And IsNumeric(Request.Form("dateFromDate_SaleReport_Year")) And IsNumeric(Request.Form("dateToDate_SaleReport_Year")) And IsNumeric(Request.Form("dateToDate_SaleReport_Month")) And IsNumeric(Request.Form("dateToDate_SaleReport_Day")) Then
+                StartDate = DateTimeUtil.FormatDate(Request.Form("dateFromDate_SaleReport_Day"), Request.Form("dateFromDate_SaleReport_Month"), Request.Form("dateFromDate_SaleReport_Year"))
+                Dim CheckDate As New DateTime(Request.Form("dateToDate_SaleReport_Year"), Request.Form("dateToDate_SaleReport_Month"), Request.Form("dateToDate_SaleReport_Day"), 0, 0, 0)
+                CheckDate = DateAdd("d", 1, CheckDate)
+                EndDate = DateTimeUtil.FormatDate(Day(CheckDate), Month(CheckDate), CheckDate.ToString("yyyy", InvC))
 			
-			If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
-				SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-				FoundError = True
-				DateFromValue = ""
-				DateToValue = ""
-				DailyDateValue = ""
-			Else
-				SaleResultText.InnerHtml = ""
-				Dim SDate1 As New Date(Request.Form("Doc9_Year"), Request.Form("Doc9_Month"), Request.Form("Doc9_Day"))
-				Dim EDate1 As New Date(Request.Form("DocTo9_Year"), Request.Form("DocTo9_Month"), Request.Form("DocTo9_Day"))
-				ReportDate = DateTimeUtil.FormatDateTime(SDate1, "DateOnly",Session("LangID"),objCnn) + " - " + DateTimeUtil.FormatDateTime(EDate1, "DateOnly",Session("LangID"),objCnn)
-			End If
-		Else
-			SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-			FoundError = True
-			DateFromValue = ""
-			DateToValue = ""
-			DailyDateValue = ""
-		End If
-	Else If Radio_13.Checked = True Then
-		If IsNumeric(Request.Form("DocDaily9_Day")) AND IsNumeric(Request.Form("DocDaily9_Month")) AND IsNumeric(Request.Form("DocDaily9_Year")) Then
-			StartDate = DateTimeUtil.FormatDate(Request.Form("DocDaily9_Day"),Request.Form("DocDaily9_Month"),Request.Form("DocDaily9_Year"))
-			Dim CheckDate As New DateTime(Request.Form("DocDaily9_Year"), Request.Form("DocDaily9_Month"), Request.Form("DocDaily9_Day"), 0, 0, 0)
-			CheckDate = DateAdd("d",1,CheckDate)
-			EndDate = DateTimeUtil.FormatDate(Day(CheckDate),Month(CheckDate),CheckDate.ToString("yyyy", InvC))
+                If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
+                    SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                    FoundError = True
+                    DateFromValue = ""
+                    DateToValue = ""
+                    DailyDateValue = ""
+                Else
+                    SaleResultText.InnerHtml = ""
+                    Dim SDate1 As New Date(Request.Form("dateFromDate_SaleReport_Year"), Request.Form("dateFromDate_SaleReport_Month"), Request.Form("dateFromDate_SaleReport_Day"))
+                    Dim EDate1 As New Date(Request.Form("dateToDate_SaleReport_Year"), Request.Form("dateToDate_SaleReport_Month"), Request.Form("dateToDate_SaleReport_Day"))
+                    ReportDate = DateTimeUtil.FormatDateTime(SDate1, "DateOnly", Session("LangID"), objCnn) + " - " + DateTimeUtil.FormatDateTime(EDate1, "DateOnly", Session("LangID"), objCnn)
+                End If
+            Else
+                SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                FoundError = True
+                DateFromValue = ""
+                DateToValue = ""
+                DailyDateValue = ""
+            End If
+        ElseIf optSaleReport_Daily.Checked = True Then
+            If IsNumeric(Request.Form("dateDaily_SaleReport_Day")) And IsNumeric(Request.Form("dateDaily_SaleReport_Month")) And IsNumeric(Request.Form("dateDaily_SaleReport_Year")) Then
+                StartDate = DateTimeUtil.FormatDate(Request.Form("dateDaily_SaleReport_Day"), Request.Form("dateDaily_SaleReport_Month"), Request.Form("dateDaily_SaleReport_Year"))
+                Dim CheckDate As New DateTime(Request.Form("dateDaily_SaleReport_Year"), Request.Form("dateDaily_SaleReport_Month"), Request.Form("dateDaily_SaleReport_Day"), 0, 0, 0)
+                CheckDate = DateAdd("d", 1, CheckDate)
+                EndDate = DateTimeUtil.FormatDate(Day(CheckDate), Month(CheckDate), CheckDate.ToString("yyyy", InvC))
 	
-			If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
-				SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-				FoundError = True
-				DateFromValue = ""
-				DateToValue = ""
-				DailyDateValue = ""
-			Else
-				SaleResultText.InnerHtml = ""
-				Dim SDate2 As New Date(Request.Form("DocDaily9_Year"), Request.Form("DocDaily9_Month"), Request.Form("DocDaily9_Day"))
-				ReportDate = DateTimeUtil.FormatDateTime(SDate2, "DateOnly",Session("LangID"),objCnn)
-			End If
-		Else
-			SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-			FoundError = True
-			DateFromValue = ""
-			DateToValue = ""
-			DailyDateValue = ""
-		End If
-	Else
-		DateFromValue = ""
-		DateToValue = ""
-		DailyDateValue = ""
-	End If	
-	If FoundError = False Then
-		showSaleResults.Visible = True
-		GenSaleResult(objCnn)
-	Else
-		showSaleResults.Visible = False
-	End If
-End Sub
+                If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
+                    SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                    FoundError = True
+                    DateFromValue = ""
+                    DateToValue = ""
+                    DailyDateValue = ""
+                Else
+                    SaleResultText.InnerHtml = ""
+                    Dim SDate2 As New Date(Request.Form("dateDaily_SaleReport_Year"), Request.Form("dateDaily_SaleReport_Month"), Request.Form("dateDaily_SaleReport_Day"))
+                    ReportDate = DateTimeUtil.FormatDateTime(SDate2, "DateOnly", Session("LangID"), objCnn)
+                End If
+            Else
+                SaleResultText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                FoundError = True
+                DateFromValue = ""
+                DateToValue = ""
+                DailyDateValue = ""
+            End If
+        Else
+            DateFromValue = ""
+            DateToValue = ""
+            DailyDateValue = ""
+        End If
+        If FoundError = False Then
+            showSaleResults.Visible = True
+            GenSaleResult(objCnn)
+        Else
+            showSaleResults.Visible = False
+        End If
+    End Sub
 
     Public Function GenSaleResult(ByVal objCnn As MySqlConnection) As String
         Dim InvC As CultureInfo = CultureInfo.InvariantCulture
@@ -2568,26 +2600,26 @@ End Sub
         Dim grandTotal As Double = 0
         Dim ReportDate As String
 	
-        If Radio_11.Checked = True Then
-            If Request.Form("MonthYearDate9_Month") = 12 Then
-                StartMonthValue = SelMonth9.Value
+        If optSaleReport_Monthly.Checked = True Then
+            If Request.Form("dateMonthYear_SaleReport_Month") = 12 Then
+                StartMonthValue = monthly_SaleReport_Month.Value
                 EndMonthValue = 1
-                StartYearValue = SelYear9.Value
-                EndYearValue = SelYear9.Value + 1
+                StartYearValue = monthly_SaleReport_Year.Value
+                EndYearValue = monthly_SaleReport_Year.Value + 1
             Else
-                StartMonthValue = SelMonth9.Value
-                EndMonthValue = SelMonth9.Value + 1
-                StartYearValue = SelYear9.Value
-                EndYearValue = SelYear9.Value
+                StartMonthValue = monthly_SaleReport_Month.Value
+                EndMonthValue = monthly_SaleReport_Month.Value + 1
+                StartYearValue = monthly_SaleReport_Year.Value
+                EndYearValue = monthly_SaleReport_Year.Value
             End If
             StartDate = DateTimeUtil.FormatDate(1, StartMonthValue, StartYearValue)
             EndDate = DateTimeUtil.FormatDate(1, EndMonthValue, EndYearValue)
             Dim SDate As New Date(StartYearValue, StartMonthValue, 1)
             ReportDate = DateTimeUtil.FormatDateTime(SDate, "MMMM yyyy", Session("LangID"), objCnn)
-        ElseIf Radio_12.Checked = True Then
+        ElseIf optSaleReport_DateRange.Checked = True Then
 		
-            StartDate = DateTimeUtil.FormatDate(DocDay9.Value, DocMonth9.Value, DocYear9.Value)
-            Dim CheckDate As New DateTime(DocToYear9.Value, DocToMonth9.Value, DocToDay9.Value, 0, 0, 0)
+            StartDate = DateTimeUtil.FormatDate(FromDate_SaleReport_Day.Value, FromDate_SaleReport_Month.Value, FromDate_SaleReport_Year.Value)
+            Dim CheckDate As New DateTime(ToDate_SaleReport_Year.Value, ToDate_SaleReport_Month.Value, ToDate_SaleReport_Day.Value, 0, 0, 0)
             CheckDate = DateAdd("d", 1, CheckDate)
             EndDate = DateTimeUtil.FormatDate(Day(CheckDate), Month(CheckDate), CheckDate.ToString("yyyy", InvC))
 		
@@ -2595,13 +2627,13 @@ End Sub
 
             Else
                 SaleResultText.InnerHtml = ""
-                Dim SDate1 As New Date(DocYear9.Value, DocMonth9.Value, DocDay9.Value)
-                Dim EDate1 As New Date(DocToYear9.Value, DocToMonth9.Value, DocToDay9.Value)
+                Dim SDate1 As New Date(FromDate_SaleReport_Year.Value, FromDate_SaleReport_Month.Value, FromDate_SaleReport_Day.Value)
+                Dim EDate1 As New Date(ToDate_SaleReport_Year.Value, ToDate_SaleReport_Month.Value, ToDate_SaleReport_Day.Value)
                 ReportDate = DateTimeUtil.FormatDateTime(SDate1, "DateOnly", Session("LangID"), objCnn) + " - " + DateTimeUtil.FormatDateTime(EDate1, "DateOnly", Session("LangID"), objCnn)
             End If
-        ElseIf Radio_13.Checked = True Then
-            StartDate = DateTimeUtil.FormatDate(DocDailyDay9.Value, DocDailyMonth9.Value, DocDailyYear9.Value)
-            Dim CheckDate As New DateTime(DocDailyYear9.Value, DocDailyMonth9.Value, DocDailyDay9.Value, 0, 0, 0)
+        ElseIf optSaleReport_Daily.Checked = True Then
+            StartDate = DateTimeUtil.FormatDate(daily_SaleReport_Day.Value, daily_SaleReport_Month.Value, daily_SaleReport_Year.Value)
+            Dim CheckDate As New DateTime(daily_SaleReport_Year.Value, daily_SaleReport_Month.Value, daily_SaleReport_Day.Value, 0, 0, 0)
             CheckDate = DateAdd("d", 1, CheckDate)
             EndDate = DateTimeUtil.FormatDate(Day(CheckDate), Month(CheckDate), CheckDate.ToString("yyyy", InvC))
 
@@ -2609,16 +2641,16 @@ End Sub
 
             Else
                 SaleResultText.InnerHtml = ""
-                Dim SDate2 As New Date(DocDailyYear9.Value, DocDailyMonth9.Value, DocDailyDay9.Value)
+                Dim SDate2 As New Date(daily_SaleReport_Year.Value, daily_SaleReport_Month.Value, daily_SaleReport_Day.Value)
                 ReportDate = DateTimeUtil.FormatDateTime(SDate2, "DateOnly", Session("LangID"), objCnn)
             End If
 
         End If
 	
         Dim ViewOption As Integer
-        If Radio_11.Checked = True Then
+        If optSaleReport_Monthly.Checked = True Then
             ViewOption = 1
-        ElseIf Radio_12.Checked = True Then
+        ElseIf optSaleReport_DateRange.Checked = True Then
             ViewOption = 2
         Else
             ViewOption = 0
@@ -2866,404 +2898,404 @@ End Sub
         Util.ExportData(Session("ReportResult"), FileName, CSSFile, GlobalParam.ExportCharSet, -1)
     End Sub
 
-Sub ChangeGridSalePage(objSender As Object, objArgs As DataGridPageChangedEventArgs)
-	SaleResults.CurrentPageIndex = objArgs.NewPageIndex
+    Sub ChangeGridSalePage(objSender As Object, objArgs As DataGridPageChangedEventArgs)
+        SaleResults.CurrentPageIndex = objArgs.NewPageIndex
 	
-	GenSaleResult(objCnn)
-End Sub
+        GenSaleResult(objCnn)
+    End Sub
 
-Sub DoApplySearchResult(Source As Object, E As EventArgs)
-	MemberIDList.Value = MemberIDListSale.Value
-	Dim dtTable As DataTable
-	dtTable = PromiseCRM.SearchMemberFromID(MemberIDListSale.Value,Session("LangID"),objCnn)
-	SetSearchResult(dtTable,objCnn)		
-	ApplyDone.Visible = True
-End Sub
+    Sub DoApplySearchResult(Source As Object, E As EventArgs)
+        MemberIDList.Value = MemberIDListSale.Value
+        Dim dtTable As DataTable
+        dtTable = PromiseCRM.SearchMemberFromID(MemberIDListSale.Value, Session("LangID"), objCnn)
+        SetSearchResult(dtTable, objCnn)
+        ApplyDone.Visible = True
+    End Sub
 
-Public Function SetSearchResult(ByVal dtTable As DataTable, ByVal objCnn As MySqlConnection) As String
-	If dtTable.Rows.Count > 0 Then
-		If dtTable.Rows.Count > 1 Then
-			totalRecord.InnerHtml = Format(dtTable.Rows.Count, "##,##0") + " records found"
-			FavoriteHeader.InnerHtml = "Favorite Products Analysis for " + Format(dtTable.Rows.Count, "##,##0") + " Members"
+    Public Function SetSearchResult(ByVal dtTable As DataTable, ByVal objCnn As MySqlConnection) As String
+        If dtTable.Rows.Count > 0 Then
+            If dtTable.Rows.Count > 1 Then
+                totalRecord.InnerHtml = Format(dtTable.Rows.Count, "##,##0") + " records found"
+                FavoriteHeader.InnerHtml = "Favorite Products Analysis for " + Format(dtTable.Rows.Count, "##,##0") + " Members"
 			
-		Else
-			totalRecord.InnerHtml = Format(dtTable.Rows.Count, "##,##0") + " record found"
-			FavoriteHeader.InnerHtml = "Favorite Products Analysis for " + Format(dtTable.Rows.Count, "##,##0") + " Member"
+            Else
+                totalRecord.InnerHtml = Format(dtTable.Rows.Count, "##,##0") + " record found"
+                FavoriteHeader.InnerHtml = "Favorite Products Analysis for " + Format(dtTable.Rows.Count, "##,##0") + " Member"
 			
-		End If
-	Else
-		FavoriteHeader.InnerHtml = "No Member Data"
-		totalRecord.InnerHtml = "No data found"
-	End If
+            End If
+        Else
+            FavoriteHeader.InnerHtml = "No Member Data"
+            totalRecord.InnerHtml = "No data found"
+        End If
 
-	Dim MEmailList As String = ""
-	Dim MobileList As String = ""
-	Dim ValidEmail As Integer = 0
-	Dim MobileCount As Integer = 0
-	Dim myDataTable As DataTable
-	myDataTable = PromiseCRM.GenMemberData(MEmailList,ValidEmail,MobileList,MobileCount,dtTable,objCnn)
-	If Trim(MEmailList) = "," Or Trim(MEmailList) = "" Then
-		MEmailList = ""
-	Else
-		MEmailList = Right(MEmailList, Len(MEmailList) - 1)
-	End If
-	MemberEmailList.Value = MEmailList
+        Dim MEmailList As String = ""
+        Dim MobileList As String = ""
+        Dim ValidEmail As Integer = 0
+        Dim MobileCount As Integer = 0
+        Dim myDataTable As DataTable
+        myDataTable = PromiseCRM.GenMemberData(MEmailList, ValidEmail, MobileList, MobileCount, dtTable, objCnn)
+        If Trim(MEmailList) = "," Or Trim(MEmailList) = "" Then
+            MEmailList = ""
+        Else
+            MEmailList = Right(MEmailList, Len(MEmailList) - 1)
+        End If
+        MemberEmailList.Value = MEmailList
 	
-	If Trim(MobileList) = "," Or Trim(MobileList) = "" Then
-		MobileList = ""
-	Else
-		MobileList = Right(MobileList, Len(MobileList) - 1)
-	End If
-	MemberMobileIDList.Value = MobileList
+        If Trim(MobileList) = "," Or Trim(MobileList) = "" Then
+            MobileList = ""
+        Else
+            MobileList = Right(MobileList, Len(MobileList) - 1)
+        End If
+        MemberMobileIDList.Value = MobileList
 	
-	If ValidEmail > 1 Then
-		ToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " members"
-		CToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " members"
-	ElseIf ValidEmail = 0 Then
-		ToEmailText.InnerHtml = "No valid emails"
-		CToEmailText.InnerHtml = "No valid emails"
-	Else
-		ToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " member"
-		CToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " member"
-	End If
+        If ValidEmail > 1 Then
+            ToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " members"
+            CToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " members"
+        ElseIf ValidEmail = 0 Then
+            ToEmailText.InnerHtml = "No valid emails"
+            CToEmailText.InnerHtml = "No valid emails"
+        Else
+            ToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " member"
+            CToEmailText.InnerHtml = "Sending email to " + Format(ValidEmail, "##,##0") + " member"
+        End If
 
-	If MobileCount > 1 Then
-		SMSMembers.InnerHtml = Format(MobileCount, "##,##0") + " members"
-	ElseIf MobileCount = 0 Then
-		SMSMembers.InnerHtml = "No valid mobile phones"
-	Else
-		SMSMembers.InnerHtml = Format(MobileCount, "##,##0") + " member"
-	End If
-	MemberRecord.Value = ValidEmail
-	MemberMobileRecord.Value = MobileCount
-	Results.PageSize = RecordPerPage
-	Results.PagerStyle.Mode = PagerMode.NumericPages
-	Results.DataSource = myDataTable
-	Results.DataBind()
+        If MobileCount > 1 Then
+            SMSMembers.InnerHtml = Format(MobileCount, "##,##0") + " members"
+        ElseIf MobileCount = 0 Then
+            SMSMembers.InnerHtml = "No valid mobile phones"
+        Else
+            SMSMembers.InnerHtml = Format(MobileCount, "##,##0") + " member"
+        End If
+        MemberRecord.Value = ValidEmail
+        MemberMobileRecord.Value = MobileCount
+        Results.PageSize = RecordPerPage
+        Results.PagerStyle.Mode = PagerMode.NumericPages
+        Results.DataSource = myDataTable
+        Results.DataBind()
 	
-	Session("OutputData") = dtTable
-End Function
+        Session("OutputData") = dtTable
+    End Function
 		
-Sub DoSearchFavorite(Source As Object, E As EventArgs)
-	Session("ReportResult") = ""
-	Dim LangData2 As DataTable = getProp.GetLangData(PageID,2,-1,Request)
-	Dim LangDefault As DataTable = getProp.GetLangData(999,2,-1,Request)
-	Dim LangText As String = "lang" + Session("LangID").ToString
-	Dim FormatData As DataTable = Util.FormatParam(FormatObject,Session("LangID"),objCnn)
-	Dim ci As New CultureInfo(FormatObject.CultureString)
+    Sub DoSearchFavorite(Source As Object, E As EventArgs)
+        Session("ReportResult") = ""
+        Dim LangData2 As DataTable = getProp.GetLangData(PageID, 2, -1, Request)
+        Dim LangDefault As DataTable = getProp.GetLangData(999, 2, -1, Request)
+        Dim LangText As String = "lang" + Session("LangID").ToString
+        Dim FormatData As DataTable = Util.FormatParam(FormatObject, Session("LangID"), objCnn)
+        Dim ci As New CultureInfo(FormatObject.CultureString)
 	
-	SelMonth0.Value = Request.Form("MonthYearDate0_Month")
-	SelYear0.Value = Request.Form("MonthYearDate0_Year")
+        SelMonth0.Value = Request.Form("dateMonthYear_Favorite_Month")
+        SelYear0.Value = Request.Form("dateMonthYear_Favorite_Year")
 	
-	DocDailyDay.Value = Request.Form("DocDaily_Day")
-	DocDailyMonth.Value = Request.Form("DocDaily_Month")
-	DocDailyYear.Value = Request.Form("DocDaily_Year")
+        DocDailyDay.Value = Request.Form("dateDaily_FavoriteDay")
+        DocDailyMonth.Value = Request.Form("dateDaily_FavoriteMonth")
+        DocDailyYear.Value = Request.Form("dateDaily_FavoriteYear")
 	
-	DocDay.Value = Request.Form("Doc_Day")
-	DocMonth.Value = Request.Form("Doc_Month")
-	DocYear.Value = Request.Form("Doc_Year")
-	DocToDay.Value = Request.Form("DocTo_Day")
-	DocToMonth.Value = Request.Form("DocTo_Month")
-	DocToYear.Value = Request.Form("DocTo_Year")
-	Dim FoundError As Boolean
-	FoundError = False
-	Session("ReportResult") = ""
-	Dim textTable As New DataTable()
-	textTable = getPageText.GetText(12,Session("LangID"),objCnn)
+        DocDay.Value = Request.Form("dateFromDate_Favorite_Day")
+        DocMonth.Value = Request.Form("dateFromDate_Favorite_Month")
+        DocYear.Value = Request.Form("dateFromDate_Favorite_Year")
+        DocToDay.Value = Request.Form("dateToDate_Favorite_Day")
+        DocToMonth.Value = Request.Form("dateToDate_Favorite_Month")
+        DocToYear.Value = Request.Form("dateToDate_Favorite_Year")
+        Dim FoundError As Boolean
+        FoundError = False
+        Session("ReportResult") = ""
+        Dim textTable As New DataTable()
+        textTable = getPageText.GetText(12, Session("LangID"), objCnn)
 			
-	Dim defaultTextTable As New DataTable()
-	defaultTextTable = getPageText.GetDefaultText(Session("LangID"),objCnn)
+        Dim defaultTextTable As New DataTable()
+        defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
 	
-	Dim DateFromValue As String = ""
-	Dim DateToValue As String = ""
-	Dim DailyDateValue As String = ""
-	Dim InvC As CultureInfo = CultureInfo.InvariantCulture
+        Dim DateFromValue As String = ""
+        Dim DateToValue As String = ""
+        Dim DailyDateValue As String = ""
+        Dim InvC As CultureInfo = CultureInfo.InvariantCulture
 	
-	Dim StartDate,EndDate As String
-	Dim StartMonthValue,StartYearValue,EndMonthValue,EndYearValue As Integer
-	Dim outputString As String = ""
-	Dim grandTotal As Double = 0
-	Dim GraphData As New DataSet()
-	Dim ReportDate As String
+        Dim StartDate, EndDate As String
+        Dim StartMonthValue, StartYearValue, EndMonthValue, EndYearValue As Integer
+        Dim outputString As String = ""
+        Dim grandTotal As Double = 0
+        Dim GraphData As New DataSet()
+        Dim ReportDate As String
 			
-	If Radio_1.Checked = True Then
-		If IsNumeric(Request.Form("MonthYearDate0_Month")) AND IsNumeric(Request.Form("MonthYearDate0_Year")) Then
-			If Request.Form("MonthYearDate0_Month") = 12 Then
-				StartMonthValue = Request.Form("MonthYearDate0_Month")
-				EndMonthValue = 1
-				StartYearValue = Request.Form("MonthYearDate0_Year")
-				EndYearValue = Request.Form("MonthYearDate0_Year") + 1
-			Else
-				StartMonthValue = Request.Form("MonthYearDate0_Month")
-				EndMonthValue = Request.Form("MonthYearDate0_Month") + 1
-				StartYearValue = Request.Form("MonthYearDate0_Year")
-				EndYearValue = Request.Form("MonthYearDate0_Year")
-			End If
-			StartDate = DateTimeUtil.FormatDate(1,StartMonthValue,StartYearValue)
-			EndDate = DateTimeUtil.FormatDate(1,EndMonthValue,EndYearValue)
-			Dim SDate As New Date(StartYearValue,StartMonthValue,1)
-			ReportDate = DateTimeUtil.FormatDateTime(SDate, "MMMM yyyy",Session("LangID"),objCnn)
-		Else
-			ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-			FoundError = True
-		End If
-	ElseIf Radio_2.Checked = True Then
-		If IsNumeric(Request.Form("Doc_Month")) AND IsNumeric(Request.Form("Doc_Day")) AND IsNumeric(Request.Form("Doc_Year")) AND IsNumeric(Request.Form("DocTo_Year")) AND IsNumeric(Request.Form("DocTo_Month")) AND IsNumeric(Request.Form("DocTo_Day")) Then
-			StartDate = DateTimeUtil.FormatDate(Request.Form("Doc_Day"),Request.Form("Doc_Month"),Request.Form("Doc_Year"))
-			Dim CheckDate As New DateTime(Request.Form("DocTo_Year"), Request.Form("DocTo_Month"), Request.Form("DocTo_Day"), 0, 0, 0)
-			CheckDate = DateAdd("d",1,CheckDate)
-			EndDate = DateTimeUtil.FormatDate(Day(CheckDate),Month(CheckDate),CheckDate.ToString("yyyy", InvC))
+        If optFavorite_Monthly.Checked = True Then
+            If IsNumeric(Request.Form("dateMonthYear_Favorite_Month")) And IsNumeric(Request.Form("dateMonthYear_Favorite_Year")) Then
+                If Request.Form("dateMonthYear_Favorite_Month") = 12 Then
+                    StartMonthValue = Request.Form("dateMonthYear_Favorite_Month")
+                    EndMonthValue = 1
+                    StartYearValue = Request.Form("dateMonthYear_Favorite_Year")
+                    EndYearValue = Request.Form("dateMonthYear_Favorite_Year") + 1
+                Else
+                    StartMonthValue = Request.Form("dateMonthYear_Favorite_Month")
+                    EndMonthValue = Request.Form("dateMonthYear_Favorite_Month") + 1
+                    StartYearValue = Request.Form("dateMonthYear_Favorite_Year")
+                    EndYearValue = Request.Form("dateMonthYear_Favorite_Year")
+                End If
+                StartDate = DateTimeUtil.FormatDate(1, StartMonthValue, StartYearValue)
+                EndDate = DateTimeUtil.FormatDate(1, EndMonthValue, EndYearValue)
+                Dim SDate As New Date(StartYearValue, StartMonthValue, 1)
+                ReportDate = DateTimeUtil.FormatDateTime(SDate, "MMMM yyyy", Session("LangID"), objCnn)
+            Else
+                ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                FoundError = True
+            End If
+        ElseIf optFavorite_DateRange.Checked = True Then
+            If IsNumeric(Request.Form("dateFromDate_Favorite_Month")) And IsNumeric(Request.Form("dateFromDate_Favorite_Day")) And IsNumeric(Request.Form("dateFromDate_Favorite_Year")) And IsNumeric(Request.Form("dateToDate_Favorite_Year")) And IsNumeric(Request.Form("dateToDate_Favorite_Month")) And IsNumeric(Request.Form("dateToDate_Favorite_Day")) Then
+                StartDate = DateTimeUtil.FormatDate(Request.Form("dateFromDate_Favorite_Day"), Request.Form("dateFromDate_Favorite_Month"), Request.Form("dateFromDate_Favorite_Year"))
+                Dim CheckDate As New DateTime(Request.Form("dateToDate_Favorite_Year"), Request.Form("dateToDate_Favorite_Month"), Request.Form("dateToDate_Favorite_Day"), 0, 0, 0)
+                CheckDate = DateAdd("d", 1, CheckDate)
+                EndDate = DateTimeUtil.FormatDate(Day(CheckDate), Month(CheckDate), CheckDate.ToString("yyyy", InvC))
 			
-			If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
-				ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-				FoundError = True
-				DateFromValue = ""
-				DateToValue = ""
-				DailyDateValue = ""
-			Else
-				ResultSearchText.InnerHtml = ""
-				Dim SDate1 As New Date(Request.Form("Doc_Year"), Request.Form("Doc_Month"), Request.Form("Doc_Day"))
-				Dim EDate1 As New Date(Request.Form("DocTo_Year"), Request.Form("DocTo_Month"), Request.Form("DocTo_Day"))
-				ReportDate = Format(SDate1, "d MMMM yyyy") + " - " + Format(EDate1, "d MMMM yyyy")
-			End If
-		Else
-			ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-			FoundError = True
-			DateFromValue = ""
-			DateToValue = ""
-			DailyDateValue = ""
-		End If
-	Else If Radio_3.Checked = True Then
-		If IsNumeric(Request.Form("DocDaily_Day")) AND IsNumeric(Request.Form("DocDaily_Month")) AND IsNumeric(Request.Form("DocDaily_Year")) Then
-			StartDate = DateTimeUtil.FormatDate(Request.Form("DocDaily_Day"),Request.Form("DocDaily_Month"),Request.Form("DocDaily_Year"))
-			Dim CheckDate As New DateTime(Request.Form("DocDaily_Year"), Request.Form("DocDaily_Month"), Request.Form("DocDaily_Day"), 0, 0, 0)
-			CheckDate = DateAdd("d",1,CheckDate)
-			EndDate = DateTimeUtil.FormatDate(Day(CheckDate),Month(CheckDate),CheckDate.ToString("yyyy", InvC))
+                If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
+                    ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                    FoundError = True
+                    DateFromValue = ""
+                    DateToValue = ""
+                    DailyDateValue = ""
+                Else
+                    ResultSearchText.InnerHtml = ""
+                    Dim SDate1 As New Date(Request.Form("dateFromDate_Favorite_Year"), Request.Form("dateFromDate_Favorite_Month"), Request.Form("dateFromDate_Favorite_Day"))
+                    Dim EDate1 As New Date(Request.Form("dateToDate_Favorite_Year"), Request.Form("dateToDate_Favorite_Month"), Request.Form("dateToDate_Favorite_Day"))
+                    ReportDate = Format(SDate1, "d MMMM yyyy") + " - " + Format(EDate1, "d MMMM yyyy")
+                End If
+            Else
+                ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                FoundError = True
+                DateFromValue = ""
+                DateToValue = ""
+                DailyDateValue = ""
+            End If
+        ElseIf optFavorite_Daily.Checked = True Then
+            If IsNumeric(Request.Form("dateDaily_FavoriteDay")) And IsNumeric(Request.Form("dateDaily_FavoriteMonth")) And IsNumeric(Request.Form("dateDaily_FavoriteYear")) Then
+                StartDate = DateTimeUtil.FormatDate(Request.Form("dateDaily_FavoriteDay"), Request.Form("dateDaily_FavoriteMonth"), Request.Form("dateDaily_FavoriteYear"))
+                Dim CheckDate As New DateTime(Request.Form("dateDaily_FavoriteYear"), Request.Form("dateDaily_FavoriteMonth"), Request.Form("dateDaily_FavoriteDay"), 0, 0, 0)
+                CheckDate = DateAdd("d", 1, CheckDate)
+                EndDate = DateTimeUtil.FormatDate(Day(CheckDate), Month(CheckDate), CheckDate.ToString("yyyy", InvC))
 	
-			If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
-				ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-				FoundError = True
-				DateFromValue = ""
-				DateToValue = ""
-				DailyDateValue = ""
-			Else
-				Dim SDate2 As New Date(Request.Form("DocDaily_Year"), Request.Form("DocDaily_Month"), Request.Form("DocDaily_Day"))
-				ReportDate = DateTimeUtil.FormatDateTime(SDate2, "DateOnly",Session("LangID"),objCnn)
-				ResultSearchText.InnerHtml = ""
-			End If
-		Else
-			ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
-			FoundError = True
-			DateFromValue = ""
-			DateToValue = ""
-			DailyDateValue = ""
-		End If
-	Else
-		DateFromValue = ""
-		DateToValue = ""
-		DailyDateValue = ""
-	End If
+                If Trim(StartDate) = "InvalidDate" Or Trim(EndDate) = "InvalidDate" Then
+                    ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                    FoundError = True
+                    DateFromValue = ""
+                    DateToValue = ""
+                    DailyDateValue = ""
+                Else
+                    Dim SDate2 As New Date(Request.Form("dateDaily_FavoriteYear"), Request.Form("dateDaily_FavoriteMonth"), Request.Form("dateDaily_FavoriteDay"))
+                    ReportDate = DateTimeUtil.FormatDateTime(SDate2, "DateOnly", Session("LangID"), objCnn)
+                    ResultSearchText.InnerHtml = ""
+                End If
+            Else
+                ResultSearchText.InnerHtml = "<table><tr><td class=""requireText"">" + LangDefault.Rows(19)(LangText) + "</td></tr></table>"
+                FoundError = True
+                DateFromValue = ""
+                DateToValue = ""
+                DailyDateValue = ""
+            End If
+        Else
+            DateFromValue = ""
+            DateToValue = ""
+            DailyDateValue = ""
+        End If
 	
-	If Not IsNumeric(NumDisplay.Text) Then
-		FoundError = True
-	End If	
-	If FoundError = False Then
+        If Not IsNumeric(NumDisplay.Text) Then
+            FoundError = True
+        End If
+        If FoundError = False Then
 
-		Dim dtTable As New DataTable()
+            Dim dtTable As New DataTable()
 		
-		showFavoriteResults.Visible = True
+            showFavoriteResults.Visible = True
 		
-		Dim ViewOption As Integer
-		If Radio_1.Checked = True Then
-			ViewOption = 1
-		ElseIf Radio_2.Checked = True Then
-			ViewOption = 2
-		Else
-			ViewOption = 0 
-		End If
-		Dim grandTotalQty AS Double = 0
+            Dim ViewOption As Integer
+            If optFavorite_Monthly.Checked = True Then
+                ViewOption = 1
+            ElseIf optFavorite_DateRange.Checked = True Then
+                ViewOption = 2
+            Else
+                ViewOption = 0
+            End If
+            Dim grandTotalQty As Double = 0
 		
-		Application.Lock()
+            Application.Lock()
 		
-		getReport.TopSaleReports(dtTable,grandTotalQty,grandTotal,GraphData,GroupByParam.SelectedItem.Value, StartDate, EndDate,"","", ShopInfo.SelectedItem.Value,GroupInfo.SelectedItem.Value.ToString,DeptInfo.SelectedItem.Value,NumDisplay.Text, DisplayGraph.Checked, Session("LangID"), MemberIDList.Value,1, objCnn)
+            getReport.TopSaleReports(dtTable, grandTotalQty, grandTotal, GraphData, GroupByParam.SelectedItem.Value, StartDate, EndDate, "", "", ShopInfo.SelectedItem.Value, GroupInfo.SelectedItem.Value.ToString, DeptInfo.SelectedItem.Value, NumDisplay.Text, DisplayGraph.Checked, Session("LangID"), MemberIDList.Value, 1, objCnn)
 		
-		Application.UnLock()
+            Application.UnLock()
 
-		Dim TextClass As String = "text"
-		Dim i,totalDisplay As Integer
-		If NumDisplay.Text > 0 AND NumDisplay.Text <= dtTable.Rows.Count Then
-			totalDisplay = NumDisPlay.Text
-		Else
-			totalDisplay = dtTable.Rows.Count
-		End If
+            Dim TextClass As String = "text"
+            Dim i, totalDisplay As Integer
+            If NumDisplay.Text > 0 And NumDisplay.Text <= dtTable.Rows.Count Then
+                totalDisplay = NumDisPlay.Text
+            Else
+                totalDisplay = dtTable.Rows.Count
+            End If
 		
-		Dim gData As New DataSet()
-		Dim table As DataTable = gData.Tables.Add("Data")
-        table.Columns.Add("Description")
-        table.Columns.Add("Value1", GetType(Double))
-		Dim subTotal As Double = 0
+            Dim gData As New DataSet()
+            Dim table As DataTable = gData.Tables.Add("Data")
+            table.Columns.Add("Description")
+            table.Columns.Add("Value1", GetType(Double))
+            Dim subTotal As Double = 0
 		
-		Dim MFCounter,MFProductCode,MFProductName,MFQty,MFAmount,MFPercent As String
-		MFProductCode = "Product Code"
-		MFProductName = "Product Name"
-		MFQty = "Qty"
-		MFAmount = "Amount"
-		MFPercent =  "%"
+            Dim MFCounter, MFProductCode, MFProductName, MFQty, MFAmount, MFPercent As String
+            MFProductCode = "Product Code"
+            MFProductName = "Product Name"
+            MFQty = "Qty"
+            MFAmount = "Amount"
+            MFPercent = "%"
 		
-		PercentBaseText.InnerHtml = "% (based on " +  Format(grandTotal, "##,##0.00") + ")"
-		Dim myDataTable As DataTable = new DataTable("MemberFavoriteDataTable")
-		Dim myDataColumn As DataColumn 
-		Dim myDataRow As DataRow
+            PercentBaseText.InnerHtml = "% (based on " + Format(grandTotal, "##,##0.00") + ")"
+            Dim myDataTable As DataTable = New DataTable("MemberFavoriteDataTable")
+            Dim myDataColumn As DataColumn
+            Dim myDataRow As DataRow
 
-		myDataColumn = New DataColumn()
-		myDataColumn.DataType = System.Type.GetType("System.String")
-		myDataColumn.ColumnName = "#"
-		myDataColumn.ReadOnly = True
-		myDataColumn.Unique = False
-		myDataTable.Columns.Add(myDataColumn)
+            myDataColumn = New DataColumn()
+            myDataColumn.DataType = System.Type.GetType("System.String")
+            myDataColumn.ColumnName = "#"
+            myDataColumn.ReadOnly = True
+            myDataColumn.Unique = False
+            myDataTable.Columns.Add(myDataColumn)
 		
-		myDataColumn = New DataColumn()
-		myDataColumn.DataType = System.Type.GetType("System.String")
-		myDataColumn.ColumnName = MFProductCode
-		myDataTable.Columns.Add(myDataColumn)
+            myDataColumn = New DataColumn()
+            myDataColumn.DataType = System.Type.GetType("System.String")
+            myDataColumn.ColumnName = MFProductCode
+            myDataTable.Columns.Add(myDataColumn)
 		
-		myDataColumn = New DataColumn()
-		myDataColumn.DataType = System.Type.GetType("System.String")
-		myDataColumn.ColumnName = MFProductName
-		myDataTable.Columns.Add(myDataColumn)
+            myDataColumn = New DataColumn()
+            myDataColumn.DataType = System.Type.GetType("System.String")
+            myDataColumn.ColumnName = MFProductName
+            myDataTable.Columns.Add(myDataColumn)
 		
-		myDataColumn = New DataColumn()
-		myDataColumn.DataType = System.Type.GetType("System.String")
-		myDataColumn.ColumnName = MFQty
-		myDataTable.Columns.Add(myDataColumn)
+            myDataColumn = New DataColumn()
+            myDataColumn.DataType = System.Type.GetType("System.String")
+            myDataColumn.ColumnName = MFQty
+            myDataTable.Columns.Add(myDataColumn)
 		
-		myDataColumn = New DataColumn()
-		myDataColumn.DataType = System.Type.GetType("System.String")
-		myDataColumn.ColumnName = MFAmount
-		myDataTable.Columns.Add(myDataColumn)
+            myDataColumn = New DataColumn()
+            myDataColumn.DataType = System.Type.GetType("System.String")
+            myDataColumn.ColumnName = MFAmount
+            myDataTable.Columns.Add(myDataColumn)
 		
-		myDataColumn = New DataColumn()
-		myDataColumn.DataType = System.Type.GetType("System.String")
-		myDataColumn.ColumnName = MFPercent
-		myDataTable.Columns.Add(myDataColumn)
+            myDataColumn = New DataColumn()
+            myDataColumn.DataType = System.Type.GetType("System.String")
+            myDataColumn.ColumnName = MFPercent
+            myDataTable.Columns.Add(myDataColumn)
 		
-		Dim subTotalQty As Double = 0
-		For i = 0 to totalDisplay - 1 
-			myDataRow = myDataTable.NewRow()
-			myDataRow("#") = (i+1).ToString
-			If Not IsDBNull(dtTable.Rows(i)("ProductCode")) Then
-				myDataRow(MFProductCode) = dtTable.Rows(i)("ProductCode")
-			Else
-				myDataRow(MFProductCode) = "-"
-			End If
-			If Not IsDBNull(dtTable.Rows(i)("ProductName")) Then
-				myDataRow(MFProductName) = dtTable.Rows(i)("ProductName")
-			Else
-				myDataRow(MFProductName) = "-"
-			End If
-			If Not IsDBNull(dtTable.Rows(i)("TotalQty")) Then
-				myDataRow(MFQty) = Format(dtTable.Rows(i)("TotalQty"), "##,##0.00")
-				subTotalQty += dtTable.Rows(i)("TotalQty")
-			Else
-				myDataRow(MFQty) = "-"
-			End If
-			If Not IsDBNull(dtTable.Rows(i)("TotalSale")) Then
-				myDataRow(MFAmount) = Format(dtTable.Rows(i)("TotalSale"), "##,##0.00")
-				myDataRow(MFPercent) = Format((dtTable.Rows(i)("TotalSale"))*100/grandTotal, "##,##0.00") + "%"
-				subTotal += dtTable.Rows(i)("TotalSale")
+            Dim subTotalQty As Double = 0
+            For i = 0 To totalDisplay - 1
+                myDataRow = myDataTable.NewRow()
+                myDataRow("#") = (i + 1).ToString
+                If Not IsDBNull(dtTable.Rows(i)("ProductCode")) Then
+                    myDataRow(MFProductCode) = dtTable.Rows(i)("ProductCode")
+                Else
+                    myDataRow(MFProductCode) = "-"
+                End If
+                If Not IsDBNull(dtTable.Rows(i)("ProductName")) Then
+                    myDataRow(MFProductName) = dtTable.Rows(i)("ProductName")
+                Else
+                    myDataRow(MFProductName) = "-"
+                End If
+                If Not IsDBNull(dtTable.Rows(i)("TotalQty")) Then
+                    myDataRow(MFQty) = Format(dtTable.Rows(i)("TotalQty"), "##,##0.00")
+                    subTotalQty += dtTable.Rows(i)("TotalQty")
+                Else
+                    myDataRow(MFQty) = "-"
+                End If
+                If Not IsDBNull(dtTable.Rows(i)("TotalSale")) Then
+                    myDataRow(MFAmount) = Format(dtTable.Rows(i)("TotalSale"), "##,##0.00")
+                    myDataRow(MFPercent) = Format((dtTable.Rows(i)("TotalSale")) * 100 / grandTotal, "##,##0.00") + "%"
+                    subTotal += dtTable.Rows(i)("TotalSale")
 				
-				Dim row As DataRow = table.NewRow()
-				row("Description") = dtTable.Rows(i)("ProductName")
-				row("Value1") = Format((dtTable.Rows(i)("TotalSale"))*100/grandTotal, "##,##0.00")
-				table.Rows.Add(row)
+                    Dim row As DataRow = table.NewRow()
+                    row("Description") = dtTable.Rows(i)("ProductName")
+                    row("Value1") = Format((dtTable.Rows(i)("TotalSale")) * 100 / grandTotal, "##,##0.00")
+                    table.Rows.Add(row)
 
-			Else
-				myDataRow(MFAmount) = "-"
-				myDataRow(MFPercent) = "-"
-			End If
+                Else
+                    myDataRow(MFAmount) = "-"
+                    myDataRow(MFPercent) = "-"
+                End If
 
-			myDataTable.Rows.Add(myDataRow)
+                myDataTable.Rows.Add(myDataRow)
 			
 			
-		Next
-		myDataRow = myDataTable.NewRow()
-		myDataRow("#") = ""
-		myDataRow(MFProductCode) = ""
-		myDataRow(MFProductName) = "Sub Total"
-		myDataRow(MFQty) = Format(subTotalQty, "##,##0.00")
-		myDataRow(MFAmount) = Format(subTotal, "##,##0.00")
-		myDataRow(MFPercent) = Format(subTotal*100/grandTotal, "##,##0.00") + "%"
-		myDataTable.Rows.Add(myDataRow)
-		If subTotal <> grandTotal Then
-			Dim row As DataRow = table.NewRow()
-			row("Description") = "Others"
-			row("Value1") = Format((grandTotal-subTotal)*100/grandTotal, "##,##0.00")
-			table.Rows.Add(row)
-			myDataRow = myDataTable.NewRow()
-			myDataRow("#") = ""
-			myDataRow(MFProductCode) = ""
-			myDataRow(MFProductName) = "Others"
-			myDataRow(MFQty) = Format(grandTotalQty-subTotalQty, "##,##0.00")
-			myDataRow(MFAmount) = Format(grandTotal-subTotal, "##,##0.00")
-			myDataRow(MFPercent) = Format((grandTotal-subTotal)*100/grandTotal, "##,##0.00") + "%"
-			myDataTable.Rows.Add(myDataRow)
+            Next
+            myDataRow = myDataTable.NewRow()
+            myDataRow("#") = ""
+            myDataRow(MFProductCode) = ""
+            myDataRow(MFProductName) = "Sub Total"
+            myDataRow(MFQty) = Format(subTotalQty, "##,##0.00")
+            myDataRow(MFAmount) = Format(subTotal, "##,##0.00")
+            myDataRow(MFPercent) = Format(subTotal * 100 / grandTotal, "##,##0.00") + "%"
+            myDataTable.Rows.Add(myDataRow)
+            If subTotal <> grandTotal Then
+                Dim row As DataRow = table.NewRow()
+                row("Description") = "Others"
+                row("Value1") = Format((grandTotal - subTotal) * 100 / grandTotal, "##,##0.00")
+                table.Rows.Add(row)
+                myDataRow = myDataTable.NewRow()
+                myDataRow("#") = ""
+                myDataRow(MFProductCode) = ""
+                myDataRow(MFProductName) = "Others"
+                myDataRow(MFQty) = Format(grandTotalQty - subTotalQty, "##,##0.00")
+                myDataRow(MFAmount) = Format(grandTotal - subTotal, "##,##0.00")
+                myDataRow(MFPercent) = Format((grandTotal - subTotal) * 100 / grandTotal, "##,##0.00") + "%"
+                myDataTable.Rows.Add(myDataRow)
 			
-			myDataRow = myDataTable.NewRow()
-			myDataRow("#") = ""
-			myDataRow(MFProductCode) = ""
-			myDataRow(MFProductName) = "Grand Total"
-			myDataRow(MFQty) = Format(grandTotalQty, "##,##0.00")
-			myDataRow(MFAmount) = Format(grandTotal, "##,##0.00")
-			myDataRow(MFPercent) = Format((grandTotal)*100/grandTotal, "##,##0.00") + "%"
-			myDataTable.Rows.Add(myDataRow)
+                myDataRow = myDataTable.NewRow()
+                myDataRow("#") = ""
+                myDataRow(MFProductCode) = ""
+                myDataRow(MFProductName) = "Grand Total"
+                myDataRow(MFQty) = Format(grandTotalQty, "##,##0.00")
+                myDataRow(MFAmount) = Format(grandTotal, "##,##0.00")
+                myDataRow(MFPercent) = Format((grandTotal) * 100 / grandTotal, "##,##0.00") + "%"
+                myDataTable.Rows.Add(myDataRow)
 
-		End If
+            End If
 		
-		FavoriteResults.DataSource = myDataTable
-		FavoriteResults.DataBind()
+            FavoriteResults.DataSource = myDataTable
+            FavoriteResults.DataBind()
 		
-		Dim sw As New System.IO.StringWriter()
-		Dim htw As New System.Web.UI.HtmlTextWriter(sw)
-		FavoriteResults.RenderControl(htw)
+            Dim sw As New System.IO.StringWriter()
+            Dim htw As New System.Web.UI.HtmlTextWriter(sw)
+            FavoriteResults.RenderControl(htw)
 	
-		Dim ShopGroupDept As String = ShopInfo.SelectedItem.Text
-		If GroupInfo.SelectedItem.Value <> "0" Then
-			ShopGroupDept += ":" + GroupInfo.SelectedItem.Text
-		End If
-		If DeptInfo.SelectedItem.Value <> "0" Then
-			ShopGroupDept += ":" + DeptInfo.SelectedItem.Text
-		End If
-		ResultSearchText.InnerHtml = "Top Product Sale Report of " + ShopGroupDept + " (" + ReportDate + ")"
+            Dim ShopGroupDept As String = ShopInfo.SelectedItem.Text
+            If GroupInfo.SelectedItem.Value <> "0" Then
+                ShopGroupDept += ":" + GroupInfo.SelectedItem.Text
+            End If
+            If DeptInfo.SelectedItem.Value <> "0" Then
+                ShopGroupDept += ":" + DeptInfo.SelectedItem.Text
+            End If
+            ResultSearchText.InnerHtml = "Top Product Sale Report of " + ShopGroupDept + " (" + ReportDate + ")"
 		
-		Session("ReportResult") = "<table width=""100%""><tr><td align=""left"">" + ResultSearchText.InnerHtml + "</td><td align=""right"">" + PercentBaseText.InnerHtml + "</td></tr><tr><td colspan=""2"">" + sw.ToString + "</td></tr></table>"
+            Session("ReportResult") = "<table width=""100%""><tr><td align=""left"">" + ResultSearchText.InnerHtml + "</td><td align=""right"">" + PercentBaseText.InnerHtml + "</td></tr><tr><td colspan=""2"">" + sw.ToString + "</td></tr></table>"
 		
-		If DisplayGraph.Checked = True Then
+            If DisplayGraph.Checked = True Then
 
-				showGraph.Visible = True
-				Dim view As DataView = gData.Tables(0).DefaultView
+                showGraph.Visible = True
+                Dim view As DataView = gData.Tables(0).DefaultView
             
-				Dim chart As New PieChart()
-				chart.Explosion = 3
-				chart.Fill.Color = Color.FromArgb(80, Color.SpringGreen)
-            	chart.Line.Color = Color.SteelBlue
-            	chart.Line.Width = 1
-				chart.ShowLegend = True
-				chart.DataLabels.Visible = True
-				chart.DataSource = view
-				chart.DataXValueField = "Description"
-				chart.DataYValueField = "Value1"
-				chart.DataBind()
-				ChartControl1.Charts.Add(chart)
-				ConfigureColors("Top Product Sale Report of " + ShopGroupDept + " (" + ReportDate + ")")
+                Dim chart As New PieChart()
+                chart.Explosion = 3
+                chart.Fill.Color = Color.FromArgb(80, Color.SpringGreen)
+                chart.Line.Color = Color.SteelBlue
+                chart.Line.Width = 1
+                chart.ShowLegend = True
+                chart.DataLabels.Visible = True
+                chart.DataSource = view
+                chart.DataXValueField = "Description"
+                chart.DataYValueField = "Value1"
+                chart.DataBind()
+                ChartControl1.Charts.Add(chart)
+                ConfigureColors("Top Product Sale Report of " + ShopGroupDept + " (" + ReportDate + ")")
         
-        		ChartControl1.RedrawChart()
-		Else
-			showGraph.Visible = False
-		End If
-	Else
-		showFavoriteResults.Visible = False
-	End If
-End Sub
+                ChartControl1.RedrawChart()
+            Else
+                showGraph.Visible = False
+            End If
+        Else
+            showFavoriteResults.Visible = False
+        End If
+    End Sub
 
 Sub ExportFavData(Source As Object, E As EventArgs)
 	
@@ -3275,180 +3307,184 @@ Sub ExportFavData(Source As Object, E As EventArgs)
 	Util.ExportData(Session("ReportResult"),FileName,CSSFile,GlobalParam.ExportCharSet,-1)
 End Sub	
 
-Sub DoSwitch1(Source As Object, E As EventArgs)
-	Dim i As Integer
-	SearchCriteria.Enabled = False
-	SearchResult.Enabled = True
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
-	Options.Enabled = True
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = True
-	Section2.Visible = False
-	Section3.Visible = False
-	Section4.Visible = False
-	Section5.Visible = False
-	Section6.Visible = False
-	Section7.Visible = False
+    Sub DoSwitch_SearchCriteria(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = False
+        SearchResult.Enabled = True
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
+        Options.Enabled = True
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = True
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = False
+        sec_Label.Visible = False
+        sec_Option.Visible = False
 	
-	CheckDynamicCol(Session("StaffID"),objCnn)
+        CheckDynamicCol(Session("StaffID"), objCnn)
 	
-End Sub
-Sub DoSwitch2(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = False
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
-	Options.Enabled = True
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = False
-	Section2.Visible = True
-	Section3.Visible = False
-	Section4.Visible = False
-	Section5.Visible = False
-	Section6.Visible = False
-	Section7.Visible = False
-End Sub
-Sub DoSwitch3(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = True
-	BestSeller.Enabled = False
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
-	Options.Enabled = True
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = False
-	Section2.Visible = False
-	Section3.Visible = True
-	Section4.Visible = False
-	Section5.Visible = False
-	Section6.Visible = False
-	Section7.Visible = False
-	showFavoriteResults.Visible = False
-	
-End Sub
-Sub DoSwitch4(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = True
-	BestSeller.Enabled = True
-	SaleReport.Enabled = False
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
-	Options.Enabled = True
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = False
-	Section2.Visible = False
-	Section3.Visible = False
-	Section4.Visible = True
-	Section5.Visible = False
-	Section6.Visible = False
-	Section7.Visible = False
-	showSaleResults.Visible = False
-End Sub
-Sub DoSwitch5(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = True
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = False
-	LabelLink.Enabled = True
-	Options.Enabled = True
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = False
-	Section2.Visible = False
-	Section3.Visible = False
-	Section4.Visible = False
-	Section5.Visible = True
-	Section6.Visible = False
-	Section7.Visible = False
-	Dim totalM As Integer
-	SubmitEmail.Enabled = False
-	If IsNumeric(MemberRecord.Value) Then
-		totalM = CInt(MemberRecord.Value) 
-		If totalM > 0 Then
-			SubmitEmail.Enabled = True
-		End If
-	End If
-	EmailInvalid.Visible = False
-	SubjectInvalid.Visible = False
-	ShowEmailForm.Visible = True
-	ConfirmationEmail.Visible = False
-	FinalSendEmail.Visible = False
-End Sub
-Sub DoSwitch6(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = True
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = False
-	Options.Enabled = True
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = False
-	Section2.Visible = False
-	Section3.Visible = False
-	Section4.Visible = False
-	Section5.Visible = False
-	Section6.Visible = True
-	Section7.Visible = False
-End Sub
-Sub DoSwitch7(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = True
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
-	Options.Enabled = False
-	SMSForm.Enabled = True
-	Section8.Visible = False
-	Section1.Visible = False
-	Section2.Visible = False
-	Section3.Visible = False
-	Section4.Visible = False
-	Section5.Visible = False
-	Section6.Visible = False
-	Section7.Visible = True
+    End Sub
+    Sub DoSwitch_SearchResult(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = False
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
+        Options.Enabled = True
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = True
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = False
+        sec_Label.Visible = False
+        sec_Option.Visible = False
+    End Sub
+    
+    Sub DoSwitch_TopSale(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = True
+        BestSeller.Enabled = False
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
+        Options.Enabled = True
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = True
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = False
+        sec_Label.Visible = False
+        sec_Option.Visible = False
+        showFavoriteResults.Visible = False
+    End Sub
 
-End Sub
-Sub DoSwitch8(Source As Object, E As EventArgs)
-	SearchCriteria.Enabled = True
-	SearchResult.Enabled = True
-	BestSeller.Enabled = True
-	SaleReport.Enabled = True
-	EmailForm.Enabled = True
-	LabelLink.Enabled = True
-	Options.Enabled = True
-	SMSForm.Enabled = False
-	Section1.Visible = False
-	Section2.Visible = False
-	Section3.Visible = False
-	Section4.Visible = False
-	Section5.Visible = False
-	Section6.Visible = False
-	Section7.Visible = False
-	Section8.Visible = True
-	Dim totalM As Integer
-	SubmitSMS.Enabled = False
-	If IsNumeric(MemberMobileRecord.Value) Then
-		totalM = CInt(MemberMobileRecord.Value) 
-		If totalM > 0 Then
-			SubmitSMS.Enabled = True
-		End If
-	End If
+    Sub DoSwitch_SaleReport(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = True
+        BestSeller.Enabled = True
+        SaleReport.Enabled = False
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
+        Options.Enabled = True
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = True
+        sec_Email.Visible = False
+        sec_Label.Visible = False
+        sec_Option.Visible = False
+        showSaleResults.Visible = False
+    End Sub
 
-End Sub
+    Sub DoSwitch_Email(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = True
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = False
+        LabelLink.Enabled = True
+        Options.Enabled = True
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = True
+        sec_Label.Visible = False
+        sec_Option.Visible = False
+        Dim totalM As Integer
+        SubmitEmail.Enabled = False
+        If IsNumeric(MemberRecord.Value) Then
+            totalM = CInt(MemberRecord.Value)
+            If totalM > 0 Then
+                SubmitEmail.Enabled = True
+            End If
+        End If
+        EmailInvalid.Visible = False
+        SubjectInvalid.Visible = False
+        ShowEmailForm.Visible = True
+        ConfirmationEmail.Visible = False
+        FinalSendEmail.Visible = False
+    End Sub
+
+    Sub DoSwitch_Label(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = True
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = False
+        Options.Enabled = True
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = False
+        sec_Label.Visible = True
+        sec_Option.Visible = False
+    End Sub
+
+    Sub DoSwitch_Option(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = True
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
+        Options.Enabled = False
+        SMSForm.Enabled = True
+        sec_SMS.Visible = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = False
+        sec_Label.Visible = False
+        sec_Option.Visible = True
+
+    End Sub
+
+    Sub DoSwitch_SMS(Source As Object, E As EventArgs)
+        SearchCriteria.Enabled = True
+        SearchResult.Enabled = True
+        BestSeller.Enabled = True
+        SaleReport.Enabled = True
+        EmailForm.Enabled = True
+        LabelLink.Enabled = True
+        Options.Enabled = True
+        SMSForm.Enabled = False
+        sec_SearchCriteria.Visible = False
+        sec_SearchResult.Visible = False
+        sec_TopSale.Visible = False
+        sec_SaleReport.Visible = False
+        sec_Email.Visible = False
+        sec_Label.Visible = False
+        sec_Option.Visible = False
+        sec_SMS.Visible = True
+        Dim totalM As Integer
+        SubmitSMS.Enabled = False
+        If IsNumeric(MemberMobileRecord.Value) Then
+            totalM = CInt(MemberMobileRecord.Value)
+            If totalM > 0 Then
+                SubmitSMS.Enabled = True
+            End If
+        End If
+
+    End Sub
 
 Sub SelGroup(sender As Object, e As System.EventArgs)
 	ShowGroup()

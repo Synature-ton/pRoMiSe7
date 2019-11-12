@@ -28,7 +28,12 @@
         window.addEvent('domready', function() { new Accordion($$('.panel h3.jpane-toggler'), $$('.panel div.jpane-slider'), { onActive: function(toggler, i) { toggler.addClass('jpane-toggler-down'); toggler.removeClass('jpane-toggler'); }, onBackground: function(toggler, i) { toggler.addClass('jpane-toggler'); toggler.removeClass('jpane-toggler-down'); }, duration: 10, opacity: false, alwaysHide: true }); });
 
         jQuery(document).ready(function ($) {
-            $('#txtAmount').select();
+            if ($('#txtOrderPrefinishAmount').is(":visible")) {
+                $('#txtOrderPrefinishAmount').select();
+            }
+            else {
+                $('#txtAmount').select();
+            }
         $("button, input:submit, a", "#toolbar-button").button({ icons: { primary: 'icon-action-new' }, text: true })
                   .next().button({ icons: { primary: 'icon-action-new' } })
                   .next().button({ icons: { primary: 'icon-action-copy' } })
@@ -66,12 +71,17 @@
                 if ($("#txtAmount").val() > 0) { $("#btnSaveMaterial").attr("disabled", ""); } else { $("#btnSaveMaterial").attr("disabled", "disabled"); };
 
             });
-            $("#txtAmount").keyup(function(e) {
+            $("#txtOrderPrefinishAmount").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    $("#txtAmount").focus();
+                }
+            });
+            $("#txtAmount").keyup(function (e) {
                 if (e.keyCode == 13) {
                     $("#ddlUnit").focus();
                 }
             });
-            $("#ddlUnit").keyup(function(e) {
+            $("#ddlUnit").keyup(function (e) {
                 if (e.keyCode == 13) {
                     $("#btnSaveMaterial").focus();
                 }
@@ -151,7 +161,7 @@
                     <table class="paramlist admintable" cellspacing="1" width="100%">
                         <tr>
                             <td class="paramlist_key" width="40%">
-                                <asp:Label ID="lb3" runat="server">Inventory</asp:Label>
+                                <asp:Label ID="lblInventory" runat="server">Inventory</asp:Label>
                             </td>
                             <td>
                                 <asp:DropDownList ID="ddlInv" runat="server" Width="220px" AutoPostBack="True">
@@ -162,24 +172,32 @@
                                 </asp:RequiredFieldValidator>
                             </td>
                             <td class="paramlist_key">
-                                <asp:Label ID="lb6" runat="server">Invoice Ref.</asp:Label>
+                                <asp:Label ID="lblInvoiceRef" runat="server">Invoice Ref.</asp:Label>
                             </td>
                             <td>
                                 <asp:TextBox ID="txtInvoice" runat="server" Width="220px"></asp:TextBox>
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="trTransferToInv" runat="server" >
                             <td class="paramlist_key">
-                                <asp:Label ID="lb4" runat="server" Text="To Inventory" Style="display: none;"></asp:Label>
-                                <asp:Label ID="lb5" runat="server" Height="23px">Date</asp:Label>
+                                <asp:Label ID="lblTransferToInv" runat="server" Text="To Inventory" ></asp:Label>
                             </td>
                             <td>
-                                <asp:DropDownList ID="ddlToInv" runat="server" Width="220px" Style="display: none;">
+                                <asp:DropDownList ID="ddlToInv" runat="server" Width="220px" >
                                 </asp:DropDownList>
                                 <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*"
                                     ControlToValidate="ddlToInv" Display="Dynamic" InitialValue="-1" SetFocusOnError="True"
                                     ValidationGroup="v">
                                 </asp:RequiredFieldValidator>--%>
+                            </td>
+                            <td class="paramlist_key"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="paramlist_key">
+                                <asp:Label ID="lblDocumentDate" runat="server" Height="23px">Date</asp:Label>
+                            </td>
+                            <td>
                                 <asp:DropDownList ID="RdoDocs_DdlDay" runat="server">
                                 </asp:DropDownList>
                                 <asp:DropDownList ID="RdoDocs_DdlMonth" runat="server">
@@ -189,7 +207,7 @@
                             </td>
                             <td class="paramlist_key">
                                 <asp:Label ID="lb8" runat="server" Style="display: none;">Delivery Date</asp:Label>
-                                <asp:Label ID="lb7" runat="server">Note</asp:Label>
+                                <asp:Label ID="lblRemark" runat="server">Note</asp:Label>
                             </td>
                             <td>
                                 <asp:DropDownList ID="RdoDues_DdlDay" runat="server" Style="display: none;">
@@ -222,16 +240,19 @@
                             </div>
                         </th>
                         <th nowrap="nowrap" style="width: 15%;">
-                            <asp:Label ID="lh1" runat="server" Text="Code"></asp:Label>
+                            <asp:Label ID="lblMaterialCode" runat="server" Text="Code"></asp:Label>
                         </th>
                         <th nowrap="nowrap">
-                            <asp:Label ID="lh2" runat="server" Text="Item"></asp:Label>
+                            <asp:Label ID="lblMaterialName" runat="server" Text="Item"></asp:Label>
+                        </th>
+                        <th id="thOrderPrefinishAmount" nowrap="nowrap" style="width: 5%;" runat="server" >
+                            <asp:Label ID="lblOrderPrefinishAmount" runat="server" Text="Order Amount"></asp:Label>
                         </th>
                         <th nowrap="nowrap" style="width: 5%;">
-                            <asp:Label ID="lh3" runat="server" Text="Amount"></asp:Label>
+                            <asp:Label ID="lblAmount" runat="server" Text="Amount"></asp:Label>
                         </th>
                         <th nowrap="nowrap" style="width: 5%;">
-                            <asp:Label ID="lh4" runat="server" Text="Unit"></asp:Label>
+                            <asp:Label ID="lblUnit" runat="server" Text="Unit"></asp:Label>
                         </th>
                         <th nowrap="nowrap" style="width: 5%;">
                             x
@@ -260,6 +281,9 @@
                         </td>
                         <td>
                             <asp:Label ID="lbMaterialName" runat="server"></asp:Label>
+                        </td>
+                        <td id="tdOrderPrefinishAmount" runat="server" >
+                            <asp:TextBox ID="txtOrderPrefinishAmount" runat="server" Style="width: 50px;" class="txt-numeric">0</asp:TextBox>
                         </td>
                         <td>
                             <asp:TextBox ID="txtAmount" runat="server" Style="width: 50px;" class="txt-numeric">0</asp:TextBox>

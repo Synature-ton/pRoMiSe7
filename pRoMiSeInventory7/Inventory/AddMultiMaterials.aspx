@@ -123,6 +123,7 @@
                                     <asp:HiddenField ID="hdfDocumentShopID" runat="server" />
                                     <asp:HiddenField ID="hdfIndexList" runat="server" />
                                     <asp:HiddenField ID="hdfTotalrecord" runat="server" />
+                                    <asp:HiddenField ID="hdfDisplayCurrentPage" runat="server" />
                                 </td>
                             </tr>
                         </table>
@@ -136,7 +137,7 @@
             <button id="btnClosewindow" type="button" runat="server">
                 Close window
             </button>
-            <button id="btnDoload" type="button" runat="server">
+            <button id="cmdSaveMaterial" type="button" runat="server">
                 Save Materails
             </button>
         </div>
@@ -145,11 +146,12 @@
                 color: Red; font-family: Tahoma;"></asp:Label>
         </div>
         <div style="display: none;">
-            <asp:Label ID="lh1" runat="server">Material Code</asp:Label>
-            <asp:Label ID="lh2" runat="server">Material Name</asp:Label>
-            <asp:Label ID="lh3" runat="server">Qty.</asp:Label>
-            <asp:Label ID="lh4" runat="server">Unit Name</asp:Label>
-             <asp:Label ID="lh5" runat="server">Stock</asp:Label>
+            <asp:Label ID="lblMaterialCode" runat="server">Material Code</asp:Label>
+            <asp:Label ID="lblMaterialName" runat="server">Material Name</asp:Label>
+            <asp:Label ID="lblOrderAmount" runat="server">Order Amount</asp:Label>
+            <asp:Label ID="lblAmount" runat="server">Qty.</asp:Label>
+            <asp:Label ID="lblUnitName" runat="server">Unit Name</asp:Label>
+            <asp:Label ID="lblStock" runat="server">Stock</asp:Label>
             <asp:Label ID="lM1" runat="server">Succussfuly.</asp:Label>
             <asp:Label ID="lM2" runat="server">Error</asp:Label>
         </div>

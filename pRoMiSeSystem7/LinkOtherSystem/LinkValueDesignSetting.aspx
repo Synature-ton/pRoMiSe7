@@ -108,8 +108,14 @@
 	<td><asp:Label ID="lblAPIVersion" Text="API - Version" runat="server" /></td>
 	<td class="text"><asp:textbox ID="txtAPIVersion" Width="150" runat="server" /></td>
 </tr>
-
-
+<tr id="tr_SendRewardPoint" runat="server" >
+	<td><asp:Label ID="lblSendRewardPoint" Text="Send Reward Point To Value Design" runat="server" /></td>
+	<td class="text">
+        <asp:RadioButton ID="optSendRewardPoint_Yes" runat="server" Text="Yes" GroupName="SendRewardPointGroup"  />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:RadioButton ID="optSendRewardPoint_No" runat="server" Text="No" GroupName="SendRewardPointGroup" />
+    </td>
+</tr>
 <tr>
     <td></td> 
     <td></td> 

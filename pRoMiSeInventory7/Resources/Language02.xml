@@ -1498,6 +1498,24 @@
   <Form>
     <FormID>10004</FormID>
     <FormName>Tranfer Document</FormName>
+    <TextType>2</TextType>
+    <TextID>15</TextID>
+    <DefaultText>เพื่อโอนไปที่คลัง</DefaultText>
+    <Lang1>Transfer To Inventory</Lang1>
+    <Lang2>เพื่อโอนไปที่คลัง</Lang2>
+  </Form>
+  <Form>
+    <FormID>10004</FormID>
+    <FormName>Tranfer Document</FormName>
+    <TextType>2</TextType>
+    <TextID>16</TextID>
+    <DefaultText>ไม่มีการโอนไปคลังอื่น</DefaultText>
+    <Lang1>No Transfer To Other Inventory</Lang1>
+    <Lang2>ไม่มีการโอนไปคลังอื่น</Lang2>
+  </Form>  
+  <Form>
+    <FormID>10004</FormID>
+    <FormName>Tranfer Document</FormName>
     <TextType>3</TextType>
     <TextID>1</TextID>
     <DefaultText>Code</DefaultText>
@@ -1629,6 +1647,15 @@
     <DefaultText>Total(Request)</DefaultText>
     <Lang1>Total(Request)</Lang1>
     <Lang2>ราคารวม(ขอ)</Lang2>
+  </Form>
+  <Form>
+    <FormID>10004</FormID>
+    <FormName>Tranfer Document</FormName>
+    <TextType>3</TextType>
+    <TextID>16</TextID>
+    <DefaultText>จำนวนผลิต</DefaultText>
+    <Lang1>Order Qty</Lang1>
+    <Lang2>จำนวนผลิต</Lang2>
   </Form>
  
     <Form>
@@ -3161,6 +3188,24 @@
     <DefaultText>Last Order</DefaultText>
     <Lang1>Last Order</Lang1>
     <Lang2>Last Order</Lang2>
+  </Form>
+  <Form>
+    <FormID>10009</FormID>
+    <FormName>Search Materials</FormName>
+    <TextType>3</TextType>
+    <TextID>16</TextID>
+    <DefaultText>Save Materials</DefaultText>
+    <Lang1>Save Materials</Lang1>
+    <Lang2>บันทึกวัตถุดิบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>10009</FormID>
+    <FormName>Search Materials</FormName>
+    <TextType>3</TextType>
+    <TextID>17</TextID>
+    <DefaultText>Order Amount</DefaultText>
+    <Lang1>Order Amount</Lang1>
+    <Lang2>จำนวนผลิต</Lang2>
   </Form>
   <Form>
     <FormID>10010</FormID>
@@ -5948,15 +5993,189 @@
     <Lang2></Lang2>
   </Form>
   <Form>
-    <FormID>10022</FormID>
-    <FormName>Add Reduce (New)</FormName>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>1</TextID>
+    <DefaultText>Display</DefaultText>
+    <Lang1>Display</Lang1>
+    <Lang2>แสดงรายงาน</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>2</TextID>
+    <DefaultText>Export To Excel</DefaultText>
+    <Lang1>Export To Excel</Lang1>
+    <Lang2>Export To Excel</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>3</TextID>
+    <DefaultText>รายงานการแปรรูป แสดงตามรายการผลิต</DefaultText>
+    <Lang1>Prefinish Material Report</Lang1>
+    <Lang2>รายงานการแปรรูป แสดงตามรายการผลิต</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>4</TextID>
+    <DefaultText>คลัง</DefaultText>
+    <Lang1>Inventory</Lang1>
+    <Lang2>คลัง</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>5</TextID>
+    <DefaultText>กลุ่มวัตถุดิบ</DefaultText>
+    <Lang1>Material Group</Lang1>
+    <Lang2>กลุ่มวัตถุดิบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>6</TextID>
+    <DefaultText>หมวดวัตถุดิบ</DefaultText>
+    <Lang1>Material Dept</Lang1>
+    <Lang2>หมวดวัตถุดิบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>7</TextID>
+    <DefaultText>รหัสวัตถุดิบ</DefaultText>
+    <Lang1>Material Code</Lang1>
+    <Lang2>รหัสวัตถุดิบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>8</TextID>
+    <DefaultText>วันที่เริ่มต้น</DefaultText>
+    <Lang1>Start Date</Lang1>
+    <Lang2>วันที่เริ่มต้น</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>9</TextID>
+    <DefaultText>วันที่สิ้นสุด</DefaultText>
+    <Lang1>End Date</Lang1>
+    <Lang2>วันที่สิ้นสุด</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>10</TextID>
+    <DefaultText>----- All Group -----</DefaultText>
+    <Lang1>----- All Group -----</Lang1>
+    <Lang2>----- ทุกกลุ่ม -----</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>11</TextID>
+    <DefaultText>----- All Dept -----</DefaultText>
+    <Lang1>----- All Dept -----</Lang1>
+    <Lang2>----- ทุกหมวด -----</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
     <TextType>1</TextType>
     <TextID>12</TextID>
-    <DefaultText></DefaultText>
-    <Lang1></Lang1>
-    <Lang2></Lang2>
+    <DefaultText>Document Date</DefaultText>
+    <Lang1>Document Date</Lang1>
+    <Lang2>วันที่เอกสาร</Lang2>
   </Form>
- </LanguageData>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>13</TextID>
+    <DefaultText>Amount</DefaultText>
+    <Lang1>Amount</Lang1>
+    <Lang2>จำนวน</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>14</TextID>
+    <DefaultText>Material Code</DefaultText>
+    <Lang1>Material Code</Lang1>
+    <Lang2>รหัสวัตถุดิบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>15</TextID>
+    <DefaultText>MaterialName</DefaultText>
+    <Lang1>MaterialName</Lang1>
+    <Lang2>ชื่อวัตถุดิบ</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>16</TextID>
+    <DefaultText>PAR</DefaultText>
+    <Lang1>PAR</Lang1>
+    <Lang2>PAR</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>17</TextID>
+    <DefaultText>Diff</DefaultText>
+    <Lang1>Diff</Lang1>
+    <Lang2>Diff</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>18</TextID>
+    <DefaultText>Unit Name</DefaultText>
+    <Lang1>Unit Name</Lang1>
+    <Lang2>หน่วย</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>19</TextID>
+    <DefaultText>Summary</DefaultText>
+    <Lang1>Summary</Lang1>
+    <Lang2>รวม</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>20</TextID>
+    <DefaultText>Display Prefniish Material By Date</DefaultText>
+    <Lang1>Display Prefniish Material By Date</Lang1>
+    <Lang2>แสดงการผลิตแยกตามวัน</Lang2>
+  </Form>
+
+  
+
+  </LanguageData>
  
  
  

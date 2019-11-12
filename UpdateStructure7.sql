@@ -4523,4 +4523,74 @@ CREATE TABLE OrderUpdateDiscountPriceCalculateTemp (
 ) ENGINE=InnoDB;
 
 
-INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6209')); -- 30/09/2019
+-- 27/09/2019 - TotalPrice and VAT For SCDDiscount
+ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPrice decimal(18,4) NOT NULL DEFAULT '0'  After TotalPriceBeforeVAT;
+ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPriceBeforeVAT decimal(18,4) NOT NULL DEFAULT '0'  After DiscountPrice;
+ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPriceVAT decimal(18,4) NOT NULL DEFAULT '0'  After DiscountPriceBeforeVAT;
+
+-- Print Receipt Form For SCD
+Update PropertyTextDesp Set Description = '0=Normal, 1=PDS - Print Price = Include Exclude/ SC, 2=Philippines' Where PropertyTypeID = 103 AND PropertyPosition = 14;
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (103,14,3, 'Philippines - SCD Discount Form', 2, 2, 0);
+
+ALTER TABLE Export_Sale_OrderTransaction ADD TransactionExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After TotalAmount;
+ALTER TABLE Export_Sale_OrderTransaction ADD TotalRetailPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After TotalRetailPriceVAT;
+ALTER TABLE Export_Sale_OrderTransaction ADD DiscountPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After DiscountPriceVAT;
+
+ALTER TABLE Export_Sale_OrderDetail ADD TotalRetailPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After TotalRetailPriceVAT;
+ALTER TABLE Export_Sale_OrderDetail ADD DiscountPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After DiscountPriceVAT;
+ALTER TABLE Export_Sale_OrderDetail ADD SalePriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After SalePriceVAT;
+
+ALTER TABLE Export_Sale_OrderLinkDetail ADD TotalRetailPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After TotalRetailPriceVAT;
+ALTER TABLE Export_Sale_OrderLinkDetail ADD DiscountPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After DiscountPriceVAT;
+ALTER TABLE Export_Sale_OrderLinkDetail ADD SalePriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After SalePriceVAT;
+
+ALTER TABLE Export_Sale_OrderPromotionDiscountDetail ADD DiscountPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After DiscountPriceVAT;
+ALTER TABLE Export_Sale_OrderPromotionDiscountLinkDetail ADD DiscountPriceSCDExemptVAT decimal(18,6) NOT NULL DEFAULT '0'  After DiscountPriceVAT;
+
+-- KDS Property Config
+ALTER TABLE Property ADD KDS_MaxKDSIDPerStep tinyint NOT NULL DEFAULT '1';
+
+-- 11/10/2019 - History Of Change Code For Member Report
+INSERT INTO permissionitem(PermissionItemID,PermissionGroupID,PermissionItemParam,PermissionitemUrl,PermissionItemOrder,PermissionItemIDParent)
+VALUES(724,5,'Member_HistoryOfChangeCode','Members/Member_HistoryOfChangeCode.aspx',200,0);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID)VALUES(1,724,'History Of Activate/ Renew Member',1);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID)VALUES(2,724,'ประวัติการ Activate/ReNew สมาชิก',2);
+DELETE FROM staffpermission WHERE (StaffRoleID=1 AND PermissionItemID=724) Or (StaffRoleID=2 AND PermissionItemID=724);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(1,724);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(2,724);
+
+UPDATE PermissionItemName Set PermissionItemName = 'รายงาน แต้มสะสมสมาชิก' WHERE PermissionItemID = 30004 AND LangID=2;
+
+INSERT INTO FrontFunctionDescriptionGroup(FrontFunctionGroupID, FrontFunctionGroupName) VALUES(11, 'Member History');
+Update FrontFunctionDescription Set FrontFunctionGroupID = 11 Where FrontFunctionID IN (49,50,51);
+
+
+-- 19/10/2019 - Header/ Footer For Print RewardPoint
+INSERT INTO ReceiptHeaderFooterDescription(LineType, Description, HeaderOrFooter, AutoGen, GlobalConfig, Deleted) VALUES(40,'RewardPoint Header',0,1,1,0);
+INSERT INTO ReceiptHeaderFooterDescription(LineType, Description, HeaderOrFooter, AutoGen, GlobalConfig, Deleted) VALUES(41,'RewardPoint Footer',1,1,1,0);
+
+-- 28/10/2019 - Prefinish Document Report
+INSERT INTO permissionitem(PermissionItemID,PermissionGroupID,PermissionItemParam,PermissionitemUrl,PermissionItemOrder,PermissionItemIDParent)
+VALUES(725,17,'Report_Prefinish','Reports/report_Prefinish.aspx',1010,0);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID)VALUES(1,725,'Prefinish Report',1);
+INSERT INTO permissionitemname(PermissionItemNameID,PermissionItemID,PermissionItemName,LangID)VALUES(2,725,'รายงานแปรรูปสินค้า',2);
+DELETE FROM staffpermission WHERE (StaffRoleID=1 AND PermissionItemID=725) Or (StaffRoleID=2 AND PermissionItemID=725);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(1,725);
+INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(2,725);
+
+
+
+-- 12/11/2019 - SaleMode Script
+ALTER TABLE Products ADD SaleMode6 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode5;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(6, '', 1);
+
+-- INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6212')); -- 30/07/2019
+
+
+
+
+
+
+
+
+

@@ -143,32 +143,107 @@
 </tr>
 
 <span id="showPrice" visible="true" runat="server">
-<div id="validatePrice" runat="server" />
-<tr>
-	<td><div class="text" id="PriceParam" runat="server"></div></td>
-	<td><asp:textbox ID="ProductMainPrice" Width="100" MaxLength="100" runat="server" /></td>
-</tr>
-<div id="validatePriceSM2" runat="server" />
-<tr id="PriceSM2" visible="false" runat="server">
-	<td><div class="text" id="PriceParamSM2" runat="server"></div></td>
-	<td><asp:textbox ID="ProductPriceSM2" Width="100" MaxLength="100" runat="server" /></td>
-</tr>
-<div id="validatePriceSM3" runat="server" />
-<tr id="PriceSM3" visible="false" runat="server">
-	<td><div class="text" id="PriceParamSM3" runat="server"></div></td>
-	<td><asp:textbox ID="ProductPriceSM3" Width="100" MaxLength="100" runat="server" /></td>
-</tr>
-<div id="validatePriceSM4" runat="server" />
-<tr id="PriceSM4" visible="false" runat="server">
-	<td><div class="text" id="PriceParamSM4" runat="server"></div></td>
-	<td><asp:textbox ID="ProductPriceSM4" Width="100" MaxLength="100" runat="server" /></td>
-</tr>
-<div id="validatePriceSM5" runat="server" />
-<tr id="PriceSM5" visible="false" runat="server">
-	<td><div class="text" id="PriceParamSM5" runat="server"></div></td>
-	<td><asp:textbox ID="ProductPriceSM5" Width="100" MaxLength="100" runat="server" /></td>
-</tr>
-</span>
+    <div id="validatePrice" runat="server" />
+    <tr id="PriceSM1" visible="true" runat="server" >
+	    <td><div class="text" id="PriceParam" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductMainPrice" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM2" runat="server" />
+    <tr id="PriceSM2" visible="false" runat="server">
+	    <td><div class="text" id="PriceParamSM2" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM2" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM3" runat="server" />
+    <tr id="PriceSM3" visible="false" runat="server">
+	    <td><div class="text" id="PriceParamSM3" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM3" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM4" runat="server" />
+    <tr id="PriceSM4" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM4" runat="server"></div></td>
+    	<td><asp:textbox ID="txtProductPriceSM4" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM5" runat="server" />
+    <tr id="PriceSM5" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM5" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM5" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM6" runat="server" />
+    <tr id="PriceSM6" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM6" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM6" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM7" runat="server" />
+    <tr id="PriceSM7" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM7" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM7" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM8" runat="server" />
+    <tr id="PriceSM8" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM8" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM8" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM9" runat="server" />
+    <tr id="PriceSM9" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM9" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM9" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM10" runat="server" />
+    <tr id="PriceSM10" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM10" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM10" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM11" runat="server" />
+    <tr id="PriceSM11" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM11" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM11" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM12" runat="server" />
+    <tr id="PriceSM12" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM12" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM12" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM13" runat="server" />
+    <tr id="PriceSM13" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM13" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM13" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM14" runat="server" />
+    <tr id="PriceSM14" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM14" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM14" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM15" runat="server" />
+    <tr id="PriceSM15" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM15" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM15" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM16" runat="server" />
+    <tr id="PriceSM16" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM16" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM16" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM17" runat="server" />
+    <tr id="PriceSM17" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM17" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM17" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM18" runat="server" />
+    <tr id="PriceSM18" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM18" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM18" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM19" runat="server" />
+    <tr id="PriceSM19" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM19" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM19" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    <div id="validatePriceSM20" runat="server" />
+    <tr id="PriceSM20" visible="false" runat="server">
+    	<td><div class="text" id="PriceParamSM20" runat="server"></div></td>
+	    <td><asp:textbox ID="txtProductPriceSM20" Width="100" MaxLength="100" runat="server" /></td>
+    </tr>
+    </span>
 <span id="ShowMultiplePrice" visible="false" runat="server">
 	<div id="validatePrice2" runat="server" />
 	<tr>
@@ -267,8 +342,7 @@
 
 <span id="showCommentAmount" runat="server">
 <span id="validateAddAmount" runat="server"></span>
-<tr>
-	
+<tr>	
 	<td><div class="requireText" id="AddAmountParam" runat="server"></div></td>
 	<td><input type="radio" id="Radio_01" name="RequireAddAmountForProduct" value="1" runat="server" />YES&nbsp;&nbsp;<input type="radio" id="Radio_02" name="RequireAddAmountForProduct" value="0" runat="server" />NO</td>
 </tr>
@@ -362,24 +436,107 @@
 
 <tr id="SM1" visible="false" runat="server">
 	<td><div class="text" id="SaleMode1Param" runat="server"></div></td>
-	<td class="text"><input type="radio" id="Radio25" name="SaleMode1" value="1" runat="server" /><span id="YesText9" runat="server"></span>&nbsp;&nbsp;<input type="radio" id="Radio26" name="SaleMode1" value="0" runat="server" /><span id="NoText9" runat="server"></span></td>
+	<td class="text"><input type="radio" id="optYesSM1" name="SaleMode1" value="1" runat="server" /><span id="spYesSM1" runat="server"></span>
+         &nbsp;&nbsp;<input type="radio" id="optNoSM1" name="SaleMode1" value="0" runat="server" /><span id="spNoSM1" runat="server"></span></td>
 </tr>
 <tr id="SM2" visible="false" runat="server">
 	<td><div class="text" id="SaleMode2Param" runat="server"></div></td>
-	<td class="text"><input type="radio" id="Radio27" name="SaleMode2" value="1" runat="server" /><span id="YesText10" runat="server"></span>&nbsp;&nbsp;<input type="radio" id="Radio28" name="SaleMode2" value="0" runat="server" /><span id="NoText10" runat="server"></span></td>
+	<td class="text"><input type="radio" id="optYesSM2" name="SaleMode2" value="1" runat="server" /><span id="spYesSM2" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM2" name="SaleMode2" value="0" runat="server" /><span id="spNoSM2" runat="server"></span></td>
 </tr>
 <tr id="SM3" visible="false" runat="server">
 	<td><div class="text" id="SaleMode3Param" runat="server"></div></td>
-	<td class="text"><input type="radio" id="Radio29" name="SaleMode3" value="1" runat="server" /><span id="YesText11" runat="server"></span>&nbsp;&nbsp;<input type="radio" id="Radio30" name="SaleMode3" value="0" runat="server" /><span id="NoText11" runat="server"></span></td>
+	<td class="text"><input type="radio" id="optYesSM3" name="SaleMode3" value="1" runat="server" /><span id="spYesSM3" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM3" name="SaleMode3" value="0" runat="server" /><span id="spNoSM3" runat="server"></span></td>
 </tr>
 <tr id="SM4" visible="false" runat="server">
 	<td><div class="text" id="SaleMode4Param" runat="server"></div></td>
-	<td class="text"><input type="radio" id="Radio31" name="SaleMode4" value="1" runat="server" /><span id="YesText12" runat="server"></span>&nbsp;&nbsp;<input type="radio" id="Radio32" name="SaleMode4" value="0" runat="server" /><span id="NoText12" runat="server"></span></td>
+	<td class="text"><input type="radio" id="optYesSM4" name="SaleMode4" value="1" runat="server" /><span id="spYesSM4" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM4" name="SaleMode4" value="0" runat="server" /><span id="spNoSM4" runat="server"></span></td>
 </tr>
 <tr id="SM5" visible="false" runat="server">
 	<td><div class="text" id="SaleMode5Param" runat="server"></div></td>
-	<td class="text"><input type="radio" id="Radio33" name="SaleMode5" value="1" runat="server" /><span id="YesText13" runat="server"></span>&nbsp;&nbsp;<input type="radio" id="Radio34" name="SaleMode5" value="0" runat="server" /><span id="NoText13" runat="server"></span></td>
+	<td class="text"><input type="radio" id="optYesSM5" name="SaleMode5" value="1" runat="server" /><span id="spYesSM5" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM5" name="SaleMode5" value="0" runat="server" /><span id="spNoSM5" runat="server"></span></td>
 </tr>
+
+<tr id="SM6" visible="false" runat="server">
+	<td><div class="text" id="SaleMode6Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM6" name="SaleMode6" value="1" runat="server" /><span id="spYesSM6" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM6" name="SaleMode6" value="0" runat="server" /><span id="spNoSM6" runat="server"></span></td>
+</tr>
+<tr id="SM7" visible="false" runat="server">
+	<td><div class="text" id="SaleMode7Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM7" name="SaleMode7" value="1" runat="server" /><span id="spYesSM7" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM7" name="SaleMode7" value="0" runat="server" /><span id="spNoSM7" runat="server"></span></td>
+</tr>
+<tr id="SM8" visible="false" runat="server">
+	<td><div class="text" id="SaleMode8Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM8" name="SaleMode8" value="1" runat="server" /><span id="spYesSM8" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM8" name="SaleMode8" value="0" runat="server" /><span id="spNoSM8" runat="server"></span></td>
+</tr>
+<tr id="SM9" visible="false" runat="server">
+	<td><div class="text" id="SaleMode9Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM9" name="SaleMode9" value="1" runat="server" /><span id="spYesSM9" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM9" name="SaleMode9" value="0" runat="server" /><span id="spNoSM9" runat="server"></span></td>
+</tr>
+<tr id="SM10" visible="false" runat="server">
+	<td><div class="text" id="SaleMode10Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM10" name="SaleMode10" value="1" runat="server" /><span id="spYesSM10" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM10" name="SaleMode10" value="0" runat="server" /><span id="spNoSM10" runat="server"></span></td>
+</tr>
+<tr id="SM11" visible="false" runat="server">
+	<td><div class="text" id="SaleMode11Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM11" name="SaleMode11" value="1" runat="server" /><span id="spYesSM11" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM11" name="SaleMode11" value="0" runat="server" /><span id="spNoSM11" runat="server"></span></td>
+</tr>
+<tr id="SM12" visible="false" runat="server">
+	<td><div class="text" id="SaleMode12Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM12" name="SaleMode12" value="1" runat="server" /><span id="spYesSM12" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM12" name="SaleMode12" value="0" runat="server" /><span id="spNoSM12" runat="server"></span></td>
+</tr>
+<tr id="SM13" visible="false" runat="server">
+	<td><div class="text" id="SaleMode13Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM13" name="SaleMode13" value="1" runat="server" /><span id="spYesSM13" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM13" name="SaleMode13" value="0" runat="server" /><span id="spNoSM13" runat="server"></span></td>
+</tr>
+<tr id="SM14" visible="false" runat="server">
+	<td><div class="text" id="SaleMode14Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM14" name="SaleMode14" value="1" runat="server" /><span id="spYesSM14" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM14" name="SaleMode14" value="0" runat="server" /><span id="spNoSM14" runat="server"></span></td>
+</tr>
+<tr id="SM15" visible="false" runat="server">
+	<td><div class="text" id="SaleMode15Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM15" name="SaleMode15" value="1" runat="server" /><span id="spYesSM15" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM15" name="SaleMode15" value="0" runat="server" /><span id="spNoSM15" runat="server"></span></td>
+</tr>
+<tr id="SM16" visible="false" runat="server">
+	<td><div class="text" id="SaleMode16Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM16" name="SaleMode16" value="1" runat="server" /><span id="spYesSM16" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM16" name="SaleMode16" value="0" runat="server" /><span id="spNoSM16" runat="server"></span></td>
+</tr>
+<tr id="SM17" visible="false" runat="server">
+	<td><div class="text" id="SaleMode17Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM17" name="SaleMode17" value="1" runat="server" /><span id="spYesSM17" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM17" name="SaleMode17" value="0" runat="server" /><span id="spNoSM17" runat="server"></span></td>
+</tr>
+<tr id="SM18" visible="false" runat="server">
+	<td><div class="text" id="SaleMode18Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM18" name="SaleMode18" value="1" runat="server" /><span id="spYesSM18" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM18" name="SaleMode18" value="0" runat="server" /><span id="spNoSM18" runat="server"></span></td>
+</tr>
+<tr id="SM19" visible="false" runat="server">
+	<td><div class="text" id="SaleMode19Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM19" name="SaleMode19" value="1" runat="server" /><span id="spYesSM19" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM19" name="SaleMode19" value="0" runat="server" /><span id="spNoSM19" runat="server"></span></td>
+</tr>
+<tr id="SM20" visible="false" runat="server">
+	<td><div class="text" id="SaleMode20Param" runat="server"></div></td>
+	<td class="text"><input type="radio" id="optYesSM20" name="SaleMode20" value="1" runat="server" /><span id="spYesSM20" runat="server"></span>
+        &nbsp;&nbsp;<input type="radio" id="optNoSM20" name="SaleMode20" value="0" runat="server" /><span id="spNoSM20" runat="server"></span></td>
+</tr>
+
+
 
 <span id="showReturn" runat="server">
 <tr>
@@ -542,16 +699,46 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             NoText7.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
             YesText8.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
             NoText8.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
-            YesText9.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
-            NoText9.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
-            YesText10.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
-            NoText10.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
-            YesText11.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
-            NoText11.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
-            YesText12.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
-            NoText12.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
-            YesText13.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
-            NoText13.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spYesSM1.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM2.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM3.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM4.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM5.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM6.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM7.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM8.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM9.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM10.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM11.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM12.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM13.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM14.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM15.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM16.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM17.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM18.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM19.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spYesSM20.InnerHtml = defaultTextTable.Rows(3)("TextParamValue")
+            spNoSM1.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM2.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM3.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM4.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM5.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM6.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM7.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM8.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM9.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM10.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM11.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM12.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM13.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM14.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM15.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM16.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM17.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM18.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM19.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
+            spNoSM20.InnerHtml = defaultTextTable.Rows(4)("TextParamValue")
 			
             VATTypeParam.InnerHtml = defaultTextTable.Rows(99)("TextParamValue")
             NoVAT.InnerHtml = defaultTextTable.Rows(89)("TextParamValue")
@@ -605,40 +792,132 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             ShortNameParam.InnerHtml = "Product Short Name"
 			
             Dim i As Integer
-            Dim SMData As DataTable = objDB.List("select * from SaleMode where Deleted=0 order by SaleModeID", objCnn)
+            Dim dtSMData As DataTable = objDB.List("select * from SaleMode where Deleted=0 order by SaleModeID", objCnn)
 			
-            SM1.Visible = False
-            SM2.Visible = False
-            SM3.Visible = False
-            SM4.Visible = False
-            SM5.Visible = False
-            For i = 0 To SMData.Rows.Count - 1
-                If SMData.Rows(i)("SaleModeID") = 1 Then
-                    SM1.Visible = True
-                    SaleMode1Param.InnerHtml = SMData.Rows(i)("SaleModeName")
-                ElseIf SMData.Rows(i)("SaleModeID") = 2 Then
-                    SM2.Visible = True
-                    SaleMode2Param.InnerHtml = SMData.Rows(i)("SaleModeName")
-                    PriceSM2.Visible = True
-                    PriceParamSM2.InnerHtml = textTable1.Rows(20)("TextParamValue") + " " + SMData.Rows(i)("SaleModeName")
-                ElseIf SMData.Rows(i)("SaleModeID") = 3 Then
-                    SM3.Visible = True
-                    SaleMode3Param.InnerHtml = SMData.Rows(i)("SaleModeName")
-                    PriceSM3.Visible = True
-                    PriceParamSM3.InnerHtml = textTable1.Rows(20)("TextParamValue") + " " + SMData.Rows(i)("SaleModeName")
-                ElseIf SMData.Rows(i)("SaleModeID") = 4 Then
-                    SM4.Visible = True
-                    SaleMode4Param.InnerHtml = SMData.Rows(i)("SaleModeName")
-                    PriceSM4.Visible = True
-                    PriceParamSM4.InnerHtml = textTable1.Rows(20)("TextParamValue") + " " + SMData.Rows(i)("SaleModeName")
-                ElseIf SMData.Rows(i)("SaleModeID") = 5 Then
-                    SM5.Visible = True
-                    SaleMode5Param.InnerHtml = SMData.Rows(i)("SaleModeName")
-                    PriceSM5.Visible = True
-                    PriceParamSM5.InnerHtml = textTable1.Rows(20)("TextParamValue") + " " + SMData.Rows(i)("SaleModeName")
+            Dim strTemp As String
+            Dim txtProductPrice As TextBox
+            Dim rResult() As DataRow
+            Dim SMParam, SMPriceParam As HtmlGenericControl
+            Dim trSM, trPriceSM As HtmlTableRow
+                        
+            For i = 0 To dtSMData.Rows.Count - 1
+                Select Case dtSMData.Rows(i)("SaleModeID")
+                    Case 1
+                        trSM = SM1
+                        SMParam = SaleMode1Param
+                        trPriceSM = PriceSM1
+                        SMPriceParam = PriceParam
+                    Case 2
+                        trSM = SM2
+                        SMParam = SaleMode2Param
+                        trPriceSM = PriceSM2
+                        SMPriceParam = PriceParamSM2
+                    Case 3
+                        trSM = SM3
+                        SMParam = SaleMode3Param
+                        trPriceSM = PriceSM3
+                        SMPriceParam = PriceParamSM3
+                    Case 4
+                        trSM = SM4
+                        SMParam = SaleMode4Param
+                        trPriceSM = PriceSM4
+                        SMPriceParam = PriceParamSM4
+                    Case 5
+                        trSM = SM5
+                        SMParam = SaleMode5Param
+                        trPriceSM = PriceSM5
+                        SMPriceParam = PriceParamSM5
+                    Case 6
+                        trSM = SM6
+                        SMParam = SaleMode6Param
+                        trPriceSM = PriceSM6
+                        SMPriceParam = PriceParamSM6
+                    Case 7
+                        trSM = SM7
+                        SMParam = SaleMode7Param
+                        trPriceSM = PriceSM7
+                        SMPriceParam = PriceParamSM7
+                    Case 8
+                        trSM = SM8
+                        SMParam = SaleMode8Param
+                        trPriceSM = PriceSM8
+                        SMPriceParam = PriceParamSM8
+                    Case 9
+                        trSM = SM9
+                        SMParam = SaleMode9Param
+                        trPriceSM = PriceSM9
+                        SMPriceParam = PriceParamSM9
+                    Case 10
+                        trSM = SM10
+                        SMParam = SaleMode10Param
+                        trPriceSM = PriceSM10
+                        SMPriceParam = PriceParamSM10
+                    Case 11
+                        trSM = SM11
+                        SMParam = SaleMode11Param
+                        trPriceSM = PriceSM11
+                        SMPriceParam = PriceParamSM11
+                    Case 12
+                        trSM = SM12
+                        SMParam = SaleMode12Param
+                        trPriceSM = PriceSM12
+                        SMPriceParam = PriceParamSM12
+                    Case 13
+                        trSM = SM13
+                        SMParam = SaleMode13Param
+                        trPriceSM = PriceSM13
+                        SMPriceParam = PriceParamSM13
+                    Case 14
+                        trSM = SM14
+                        SMParam = SaleMode14Param
+                        trPriceSM = PriceSM14
+                        SMPriceParam = PriceParamSM14
+                    Case 15
+                        trSM = SM15
+                        SMParam = SaleMode15Param
+                        trPriceSM = PriceSM15
+                        SMPriceParam = PriceParamSM15
+                    Case 16
+                        trSM = SM16
+                        SMParam = SaleMode16Param
+                        trPriceSM = PriceSM16
+                        SMPriceParam = PriceParamSM16
+                    Case 17
+                        trSM = SM17
+                        SMParam = SaleMode17Param
+                        trPriceSM = PriceSM17
+                        SMPriceParam = PriceParamSM17
+                    Case 18
+                        trSM = SM18
+                        SMParam = SaleMode18Param
+                        trPriceSM = PriceSM18
+                        SMPriceParam = PriceParamSM18
+                    Case 19
+                        trSM = SM19
+                        SMParam = SaleMode19Param
+                        trPriceSM = PriceSM19
+                        SMPriceParam = PriceParamSM19
+                    Case 20
+                        trSM = SM20
+                        SMParam = SaleMode20Param
+                        trPriceSM = PriceSM20
+                        SMPriceParam = PriceParamSM20
+                    Case Else
+                        trSM = SM1
+                        SMParam = SaleMode1Param
+                        trPriceSM = PriceSM1
+                        SMPriceParam = PriceParam
+                End Select
+                
+                trSM.Visible = True
+                If IsDBNull(dtSMData.Rows(i)("SaleModeName")) Then
+                    dtSMData.Rows(i)("SaleModeName") = ""
                 End If
-            Next
-
+                SMParam.InnerHtml = dtSMData.Rows(i)("SaleModeName")
+                trPriceSM.Visible = True
+                SMPriceParam.InnerHtml = textTable1.Rows(20)("TextParamValue") + " " + dtSMData.Rows(i)("SaleModeName")
+            Next i
+            
             PrintOrderingParam.InnerHtml = "Print Ordering"
 			
             ProductEnableDateTime.LangID = Session("LangID")
@@ -712,13 +991,12 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                         PriceParam5.InnerHtml = textTable1.Rows(20)("TextParamValue") + " 5"
                     End If
                 End If
-			
-			
+						
                 ProductID.Value = Request.QueryString("ProductID")
 			
                 Dim getData As DataTable
                 getData = getInfo.GetProductInfo(0, ProductID.Value, objCnn)
-                Dim productPriceTable As New DataTable()
+                Dim dtProductPrice As DataTable
                 Dim multiplePriceTable As DataTable
                 Dim CheckDigit As Double
                 Dim Check2Digit As Double
@@ -806,36 +1084,13 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                         End If
                         Radio20.Checked = True
                         Radio22.Checked = True
-                        Radio25.Checked = True
+                        optYesSM1.Checked = True
                         ProductCode_Old.Value = ""
                         Radio1000.Checked = True
 					
-                        Dim SaleMode2 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=2 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                        If SaleMode2.Rows.Count > 0 Then
-                            Radio27.Checked = True
-                        Else
-                            Radio28.Checked = True
-                        End If
-                        Dim SaleMode3 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=3 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                        If SaleMode3.Rows.Count > 0 Then
-                            Radio29.Checked = True
-                        Else
-                            Radio30.Checked = True
-                        End If
-					
-                        Dim SaleMode4 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=4 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                        If SaleMode4.Rows.Count > 0 Then
-                            Radio31.Checked = True
-                        Else
-                            Radio32.Checked = True
-                        End If
-					
-                        Dim SaleMode5 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=5 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                        If SaleMode5.Rows.Count > 0 Then
-                            Radio33.Checked = True
-                        Else
-                            Radio34.Checked = True
-                        End If
+                        'Set Yes/ No For All SaleMode
+                        SetYesNoForEachSaleMode(dtSMData, getData)
+                        
                         Radio24.Checked = True
                         ProductOrdering.Text = "0"
                         PrintOrdering.Text = "0"
@@ -845,7 +1100,6 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                     If promoData1.Rows.Count > 0 Then
                         showPromo.Visible = True
                     End If
-					
                 Else
                     If Not Page.IsPostBack Then
                         multiplePriceTable = getInfo.GetProductPriceInfo(ProductID.Value, 0, 0, objCnn)
@@ -862,94 +1116,75 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                             End Select
                         Next
 					
-                        productPriceTable = getInfo.GetProductPriceInfo(ProductID.Value, 1, 0, 1, objCnn)
+                        'Get ProductPrice For All SaleMode
+                        dtProductPrice = getInfo.GetProductPriceInfo(ProductID.Value, 0, 0, 1, objCnn)
 					
-                        If productPriceTable.Rows.Count > 0 Then
-                            CheckDigit = productPriceTable.Rows(0)("ProductPrice") Mod 1
-                            Check2Digit = (productPriceTable.Rows(0)("ProductPrice") Mod 1) * 100 Mod 1
-                            If CheckDigit = 0 Then
-                                ProductMainPrice.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0")
-                                If Not IsDBNull(productPriceTable.Rows(0)("PrepaidPrice")) Then
-                                    PrepaidPrice.Text = Format(productPriceTable.Rows(0)("PrepaidPrice"), "##0")
-                                End If
-                            ElseIf Check2Digit = 0 Then
-                                ProductMainPrice.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.00")
-                                If Not IsDBNull(productPriceTable.Rows(0)("PrepaidPrice")) Then
-                                    PrepaidPrice.Text = Format(productPriceTable.Rows(0)("PrepaidPrice"), "##0.00")
-                                End If
-                            Else
-                                ProductMainPrice.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.0000")
-                                If Not IsDBNull(productPriceTable.Rows(0)("PrepaidPrice")) Then
-                                    PrepaidPrice.Text = Format(productPriceTable.Rows(0)("PrepaidPrice"), "##0.0000")
-                                End If
-                            End If
-
-                        End If
-					
-                        If SM2.Visible = True Then
-                            productPriceTable = getInfo.GetProductPriceInfo(ProductID.Value, 2, 0, 1, objCnn)
-                            If productPriceTable.Rows.Count > 0 Then
-                                CheckDigit = productPriceTable.Rows(0)("ProductPrice") Mod 1
-                                Check2Digit = (productPriceTable.Rows(0)("ProductPrice") Mod 1) * 100 Mod 1
+                        'Set Product For Each Sale Mode
+                        For i = 0 To dtSMData.Rows.Count - 1
+                            rResult = dtProductPrice.Select("SaleMode = " & dtSMData.Rows(i)("SaleModeID"))
+                            If rResult.Length <> 0 Then
+                                Select Case dtSMData.Rows(i)("SaleModeID")
+                                    Case 1
+                                        txtProductPrice = txtProductMainPrice
+                                    Case 2
+                                        txtProductPrice = txtProductPriceSM2
+                                    Case 3
+                                        txtProductPrice = txtProductPriceSM3
+                                    Case 4
+                                        txtProductPrice = txtProductPriceSM4
+                                    Case 5
+                                        txtProductPrice = txtProductPriceSM5
+                                    Case 6
+                                        txtProductPrice = txtProductPriceSM6
+                                    Case 7
+                                        txtProductPrice = txtProductPriceSM7
+                                    Case 8
+                                        txtProductPrice = txtProductPriceSM8
+                                    Case 9
+                                        txtProductPrice = txtProductPriceSM9
+                                    Case 10
+                                        txtProductPrice = txtProductPriceSM10
+                                    Case 11
+                                        txtProductPrice = txtProductPriceSM11
+                                    Case 12
+                                        txtProductPrice = txtProductPriceSM12
+                                    Case 13
+                                        txtProductPrice = txtProductPriceSM13
+                                    Case 14
+                                        txtProductPrice = txtProductPriceSM14
+                                    Case 15
+                                        txtProductPrice = txtProductPriceSM15
+                                    Case 16
+                                        txtProductPrice = txtProductPriceSM16
+                                    Case 17
+                                        txtProductPrice = txtProductPriceSM17
+                                    Case 18
+                                        txtProductPrice = txtProductPriceSM18
+                                    Case 19
+                                        txtProductPrice = txtProductPriceSM19
+                                    Case 20
+                                        txtProductPrice = txtProductPriceSM20
+                                    Case Else
+                                        txtProductPrice = txtProductMainPrice
+                                End Select
+                            
+                                CheckDigit = rResult(0)("ProductPrice") Mod 1
+                                Check2Digit = (rResult(0)("ProductPrice") Mod 1) * 100 Mod 1
                                 If CheckDigit = 0 Then
-                                    ProductPriceSM2.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0")
+                                    strTemp = Format(rResult(0)("ProductPrice"), "##0")
                                 ElseIf Check2Digit = 0 Then
-                                    ProductPriceSM2.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.00")
+                                    strTemp = Format(rResult(0)("ProductPrice"), "##0.00")
                                 Else
-                                    ProductPriceSM2.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.0000")
+                                    strTemp = Format(rResult(0)("ProductPrice"), "##0.0000")
                                 End If
+                                txtProductPrice.Text = strTemp
 	
-                            End If
-                        End If
-					
-                        If SM3.Visible = True Then
-                            productPriceTable = getInfo.GetProductPriceInfo(ProductID.Value, 3, 0, 1, objCnn)
-                            If productPriceTable.Rows.Count > 0 Then
-                                CheckDigit = productPriceTable.Rows(0)("ProductPrice") Mod 1
-                                Check2Digit = (productPriceTable.Rows(0)("ProductPrice") Mod 1) * 100 Mod 1
-                                If CheckDigit = 0 Then
-                                    ProductPriceSM3.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0")
-                                ElseIf Check2Digit = 0 Then
-                                    ProductPriceSM3.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.00")
-                                Else
-                                    ProductPriceSM3.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.0000")
+                                If dtSMData.Rows(i)("SaleModeID") = 1 Then
+                                    PrepaidPrice.Text = strTemp
                                 End If
-	
                             End If
-                        End If
-					
-                        If SM4.Visible = True Then
-                            productPriceTable = getInfo.GetProductPriceInfo(ProductID.Value, 4, 0, 1, objCnn)
-                            If productPriceTable.Rows.Count > 0 Then
-                                CheckDigit = productPriceTable.Rows(0)("ProductPrice") Mod 1
-                                Check2Digit = (productPriceTable.Rows(0)("ProductPrice") Mod 1) * 100 Mod 1
-                                If CheckDigit = 0 Then
-                                    ProductPriceSM4.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0")
-                                ElseIf Check2Digit = 0 Then
-                                    ProductPriceSM4.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.00")
-                                Else
-                                    ProductPriceSM4.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.0000")
-                                End If
-	
-                            End If
-                        End If
-					
-                        If SM5.Visible = True Then
-                            productPriceTable = getInfo.GetProductPriceInfo(ProductID.Value, 5, 0, 1, objCnn)
-                            If productPriceTable.Rows.Count > 0 Then
-                                CheckDigit = productPriceTable.Rows(0)("ProductPrice") Mod 1
-                                Check2Digit = (productPriceTable.Rows(0)("ProductPrice") Mod 1) * 100 Mod 1
-                                If CheckDigit = 0 Then
-                                    ProductPriceSM5.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0")
-                                ElseIf Check2Digit = 0 Then
-                                    ProductPriceSM5.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.00")
-                                Else
-                                    ProductPriceSM5.Text = Format(productPriceTable.Rows(0)("ProductPrice"), "##0.0000")
-                                End If
-	
-                            End If
-                        End If
-					
+                        Next i
+                        					
                         If ShowBuffet.Visible = True Then
                             Dim GetBuffet As DataTable = objDB.List("select * from ProductBuffetSetting where ProductBuffetID=" + ProductID.Value.ToString, objCnn)
                             If GetBuffet.Rows.Count > 0 Then
@@ -1091,35 +1326,8 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                             Radio24.Checked = True
                         End If
 					
-                        If getData.Rows(0)("SaleMode1") = True Or getData.Rows(0)("SaleMode1") = 1 Then
-                            Radio25.Checked = True
-                        Else
-                            Radio26.Checked = True
-                        End If
-					
-                        If getData.Rows(0)("SaleMode2") = True Or getData.Rows(0)("SaleMode2") = 1 Then
-                            Radio27.Checked = True
-                        Else
-                            Radio28.Checked = True
-                        End If
-					
-                        If getData.Rows(0)("SaleMode3") = True Or getData.Rows(0)("SaleMode3") = 1 Then
-                            Radio29.Checked = True
-                        Else
-                            Radio30.Checked = True
-                        End If
-					
-                        If getData.Rows(0)("SaleMode4") = True Or getData.Rows(0)("SaleMode4") = 1 Then
-                            Radio31.Checked = True
-                        Else
-                            Radio32.Checked = True
-                        End If
-					
-                        If getData.Rows(0)("SaleMode5") = True Or getData.Rows(0)("SaleMode5") = 1 Then
-                            Radio33.Checked = True
-                        Else
-                            Radio34.Checked = True
-                        End If
+                        'Set Yes/ No For Each SaleMode                        
+                        SetYesNoForEachSaleMode(dtSMData, getData)
 					
                         ProductOrdering.Text = getData.Rows(0)("ProductOrdering")
                         PrintOrdering.Text = getData.Rows(0)("PrintOrdering")
@@ -1246,7 +1454,6 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                 End If
 			
             Else
-			
                 updateMessage.Text = textTable.Rows(44)("TextParamValue")
                 SubmitForm.Text = textTable.Rows(8)("TextParamValue")
                 If Not Page.IsPostBack Then
@@ -1267,34 +1474,10 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                     End If
                     Radio20.Checked = True
                     Radio22.Checked = True
-                    Radio25.Checked = True
-                    Dim SaleMode2 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=2 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                    If SaleMode2.Rows.Count > 0 Then
-                        Radio27.Checked = True
-                    Else
-                        Radio28.Checked = True
-                    End If
-                    Dim SaleMode3 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=3 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                    If SaleMode3.Rows.Count > 0 Then
-                        Radio29.Checked = True
-                    Else
-                        Radio30.Checked = True
-                    End If
-				
-                    Dim SaleMode4 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=4 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                    If SaleMode4.Rows.Count > 0 Then
-                        Radio31.Checked = True
-                    Else
-                        Radio32.Checked = True
-                    End If
-				
-                    Dim SaleMode5 As DataTable = objDB.List("select * from SaleModeProductLevelProperty where SaleMode=5 AND ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
-                    If SaleMode5.Rows.Count > 0 Then
-                        Radio33.Checked = True
-                    Else
-                        Radio34.Checked = True
-                    End If
-				
+                                      
+                    'Set Yes/ No For All SaleMode
+                    SetYesNoForEachSaleMode(dtSMData, New DataTable)
+                    
                     Radio100.Checked = True
                     Radio111.Checked = True
                     Radio112.Checked = True
@@ -1468,7 +1651,7 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             Else
                 AddAmountParam.InnerHtml = "Select items based on qty (for producttype=7)"
                 If ProductSetValue = 7 Then
-                    showCommentAmount.Visible = True
+                    '     showCommentAmount.Visible = True
                 End If
             End If
 		
@@ -1707,7 +1890,126 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             updateMessage.Text = "Access Denied"
         End If
     End Sub
-
+    
+    Private Sub SetYesNoForEachSaleMode(dtSaleMode As DataTable, dtProductInfo As DataTable)
+        Dim dtSaleModeShop As DataTable
+        Dim i As Integer
+        Dim strSaleMode As String
+        Dim rResult() As DataRow
+        Dim optYes, optNo As HtmlInputRadioButton
+        
+        If dtProductInfo.Rows.Count <> 0 Then
+            dtSaleModeShop = New DataTable
+        Else
+            dtSaleModeShop = objDB.List("select * from SaleModeProductLevelProperty Where ProductlevelID=" + Request.QueryString("ProductLevelID").ToString, objCnn)
+        End If
+        
+        For i = 0 To dtSaleMode.Rows.Count - 1
+            If dtSaleMode.Rows(i)("SaleModeID") <> 1 Then
+                Select Case dtSaleMode.Rows(i)("SaleModeID")
+                    Case 2
+                        optYes = optYesSM2
+                        optNo = optNoSM2
+                    Case 3
+                        optYes = optYesSM3
+                        optNo = optNoSM3
+                    Case 4
+                        optYes = optYesSM4
+                        optNo = optNoSM4
+                    Case 5
+                        optYes = optYesSM5
+                        optNo = optNoSM5
+                    Case 6
+                        optYes = optYesSM6
+                        optNo = optNoSM6
+                    Case 7
+                        optYes = optYesSM7
+                        optNo = optNoSM7
+                    Case 8
+                        optYes = optYesSM8
+                        optNo = optNoSM8
+                    Case 9
+                        optYes = optYesSM9
+                        optNo = optNoSM9
+                    Case 10
+                        optYes = optYesSM10
+                        optNo = optNoSM10
+                    Case 11
+                        optYes = optYesSM11
+                        optNo = optNoSM11
+                    Case 12
+                        optYes = optYesSM12
+                        optNo = optNoSM12
+                    Case 13
+                        optYes = optYesSM13
+                        optNo = optNoSM13
+                    Case 14
+                        optYes = optYesSM14
+                        optNo = optNoSM14
+                    Case 15
+                        optYes = optYesSM15
+                        optNo = optNoSM15
+                    Case 16
+                        optYes = optYesSM16
+                        optNo = optNoSM16
+                    Case 17
+                        optYes = optYesSM17
+                        optNo = optNoSM17
+                    Case 18
+                        optYes = optYesSM18
+                        optNo = optNoSM18
+                    Case 19
+                        optYes = optYesSM19
+                        optNo = optNoSM19
+                    Case 20
+                        optYes = optYesSM20
+                        optNo = optNoSM20
+                    Case Else
+                        optYes = optYesSM2
+                        optNo = optNoSM2
+                End Select
+                
+                'Set Yes/ No By SaleModeID In Product
+                If dtProductInfo.Rows.Count <> 0 Then
+                    strSaleMode = "SaleMode" & dtSaleMode.Rows(i)("SaleModeID")
+                    If dtProductInfo.Columns.Contains(strSaleMode) = False Then
+                        optNo.Checked = True
+                    Else
+                        If dtProductInfo.Rows(0)(strSaleMode) = True Or dtProductInfo.Rows(0)(strSaleMode) = 1 Then
+                            optYes.Checked = True
+                        Else
+                            optNo.Checked = True
+                        End If
+                    End If
+                Else
+                    'Set Default Yes/ No
+                    If dtSaleModeShop.Rows.Count = 0 Then
+                        optNo.Checked = True
+                    Else
+                        rResult = dtSaleModeShop.Select("SaleMode = " & dtSaleMode.Rows(i)("SaleModeID"))
+                        If rResult.Length = 0 Then
+                            optNo.Checked = True
+                        Else
+                            optYes.Checked = True
+                        End If
+                    End If
+                End If
+            Else
+                If dtProductInfo.Rows.Count <> 0 Then
+                    'SaleMode DineIn
+                    If dtProductInfo.Rows(0)("SaleMode1") = True Or dtProductInfo.Rows(0)("SaleMode1") = 1 Then
+                        optYesSM1.Checked = True
+                    Else
+                        optNoSM1.Checked = True
+                    End If
+                Else
+                    optYesSM1.Checked = True
+                End If
+            End If
+        Next i
+    End Sub
+    
+    
 
     Sub DoAddUpdate(Source As Object, E As EventArgs)
         Dim FoundError As Boolean = False
@@ -1717,7 +2019,11 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
         textTable1 = getPageText.GetText(8, Session("LangID"), objCnn)
         Dim defaultTextTable As New DataTable()
         Dim strSQL As String
-
+        Dim txtProductPrice As TextBox
+        Dim vPrice As HtmlGenericControl
+        Dim i As Integer
+        Dim dtSMData As DataTable = objDB.List("select * from SaleMode where Deleted=0 order by SaleModeID", objCnn)
+        
         defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
         validateCode.InnerHtml = ""
         validateName.InnerHtml = ""
@@ -1763,49 +2069,81 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             FoundError = True
         End If
 	
-        If Trim(ProductMainPrice.Text) <> "" Then
-            If Not IsNumeric(ProductMainPrice.Text) Then
-                validatePrice.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable1.Rows(24)("TextParamValue") & "</td></tr>"
-                FoundError = True
-            End If
-        End If
-	
-        If SM2.Visible = True Then
-            If Trim(ProductPriceSM2.Text) <> "" Then
-                If Not IsNumeric(ProductPriceSM2.Text) Then
-                    validatePriceSM2.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable1.Rows(24)("TextParamValue") & "</td></tr>"
+        
+        For i = 0 To dtSMData.Rows.Count - 1
+            Select Case dtSMData.Rows(i)("SaleModeID")
+                Case 1
+                    txtProductPrice = txtProductMainPrice
+                    vPrice = validatePrice
+                Case 2
+                    txtProductPrice = txtProductPriceSM2
+                    vPrice = validatePriceSM2
+                Case 3
+                    txtProductPrice = txtProductPriceSM3
+                    vPrice = validatePriceSM3
+                Case 4
+                    txtProductPrice = txtProductPriceSM4
+                    vPrice = validatePriceSM4
+                Case 5
+                    txtProductPrice = txtProductPriceSM5
+                    vPrice = validatePriceSM5
+                Case 6
+                    txtProductPrice = txtProductPriceSM6
+                    vPrice = validatePriceSM6
+                Case 7
+                    txtProductPrice = txtProductPriceSM7
+                    vPrice = validatePriceSM7
+                Case 8
+                    txtProductPrice = txtProductPriceSM8
+                    vPrice = validatePriceSM8
+                Case 9
+                    txtProductPrice = txtProductPriceSM9
+                    vPrice = validatePriceSM9
+                Case 10
+                    txtProductPrice = txtProductPriceSM10
+                    vPrice = validatePriceSM10
+                Case 11
+                    txtProductPrice = txtProductPriceSM11
+                    vPrice = validatePriceSM11
+                Case 12
+                    txtProductPrice = txtProductPriceSM12
+                    vPrice = validatePriceSM12
+                Case 13
+                    txtProductPrice = txtProductPriceSM13
+                    vPrice = validatePriceSM13
+                Case 14
+                    txtProductPrice = txtProductPriceSM14
+                    vPrice = validatePriceSM14
+                Case 15
+                    txtProductPrice = txtProductPriceSM15
+                    vPrice = validatePriceSM15
+                Case 16
+                    txtProductPrice = txtProductPriceSM16
+                    vPrice = validatePriceSM16
+                Case 17
+                    txtProductPrice = txtProductPriceSM17
+                    vPrice = validatePriceSM17
+                Case 18
+                    txtProductPrice = txtProductPriceSM18
+                    vPrice = validatePriceSM18
+                Case 19
+                    txtProductPrice = txtProductPriceSM19
+                    vPrice = validatePriceSM19
+                Case 20
+                    txtProductPrice = txtProductPriceSM20
+                    vPrice = validatePriceSM20
+                Case Else
+                    txtProductPrice = txtProductMainPrice
+                    vPrice = validatePrice
+            End Select
+            If Trim(txtProductPrice.Text) <> "" Then
+                If Not IsNumeric(txtProductPrice.Text) Then
+                    vPrice.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable1.Rows(24)("TextParamValue") & "</td></tr>"
                     FoundError = True
                 End If
             End If
-        End If
-	
-        If SM3.Visible = True Then
-            If Trim(ProductPriceSM3.Text) <> "" Then
-                If Not IsNumeric(ProductPriceSM3.Text) Then
-                    validatePriceSM3.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable1.Rows(24)("TextParamValue") & "</td></tr>"
-                    FoundError = True
-                End If
-            End If
-        End If
-	
-        If SM4.Visible = True Then
-            If Trim(ProductPriceSM4.Text) <> "" Then
-                If Not IsNumeric(ProductPriceSM4.Text) Then
-                    validatePriceSM4.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable1.Rows(24)("TextParamValue") & "</td></tr>"
-                    FoundError = True
-                End If
-            End If
-        End If
-	
-        If SM5.Visible = True Then
-            If Trim(ProductPriceSM5.Text) <> "" Then
-                If Not IsNumeric(ProductPriceSM5.Text) Then
-                    validatePriceSM5.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable1.Rows(24)("TextParamValue") & "</td></tr>"
-                    FoundError = True
-                End If
-            End If
-        End If
-	
+        Next i
+
         If ShowMultiplePrice.Visible = True Then
             If Trim(ProductPrice2.Text) <> "" Then
                 If Not IsNumeric(ProductPrice2.Text) Then
@@ -2200,13 +2538,13 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             End If
 		
             objDB.sqlExecute("delete from SaleModeProduct where ProductID=" + UpdateProductID.ToString, objCnn)
-            If Radio27.Checked = True Then
+            If optYesSM2.Checked = True Then
                 objDB.sqlExecute("insert into SaleModeProduct (ProductID,SaleModeID) values (" + UpdateProductID.ToString + ",2)", objCnn)
             End If
-            If Radio29.Checked = True Then
+            If optYesSM3.Checked = True Then
                 objDB.sqlExecute("insert into SaleModeProduct (ProductID,SaleModeID) values (" + UpdateProductID.ToString + ",3)", objCnn)
             End If
-            If Radio31.Checked = True Then
+            If optYesSM4.Checked = True Then
                 objDB.sqlExecute("insert into SaleModeProduct (ProductID,SaleModeID) values (" + UpdateProductID.ToString + ",4)", objCnn)
             End If
             If Len(Trim(Request.Form("PrinterID"))) = 0 Then
@@ -2224,44 +2562,79 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                     'getPromo.PromoProduct(Request.Form("SelPromo"),objCnn)
                 End If
 
-
-                If Trim(ProductMainPrice.Text) <> "" Then
-                    getInfo.UpdateProductPrice(UpdateProductID, 1, ProductMainPrice.Text, PrepaidPrice.Text, objCnn)
-                Else
-                    getInfo.DelProductPrice(UpdateProductID, 1, 1, objCnn)
-                End If
-			
-                If SM2.Visible = True Then
-                    If Trim(ProductPriceSM2.Text) <> "" Then
-                        getInfo.UpdateProductPrice(UpdateProductID, 2, ProductPriceSM2.Text, "", objCnn)
+                For i = 0 To dtSMData.Rows.Count - 1
+                    Select Case dtSMData.Rows(i)("SaleModeID")
+                        Case 1
+                            txtProductPrice = txtProductMainPrice
+                            vPrice = validatePrice
+                        Case 2
+                            txtProductPrice = txtProductPriceSM2
+                            vPrice = validatePriceSM2
+                        Case 3
+                            txtProductPrice = txtProductPriceSM3
+                            vPrice = validatePriceSM3
+                        Case 4
+                            txtProductPrice = txtProductPriceSM4
+                            vPrice = validatePriceSM4
+                        Case 5
+                            txtProductPrice = txtProductPriceSM5
+                            vPrice = validatePriceSM5
+                        Case 6
+                            txtProductPrice = txtProductPriceSM6
+                            vPrice = validatePriceSM6
+                        Case 7
+                            txtProductPrice = txtProductPriceSM7
+                            vPrice = validatePriceSM7
+                        Case 8
+                            txtProductPrice = txtProductPriceSM8
+                            vPrice = validatePriceSM8
+                        Case 9
+                            txtProductPrice = txtProductPriceSM9
+                            vPrice = validatePriceSM9
+                        Case 10
+                            txtProductPrice = txtProductPriceSM10
+                            vPrice = validatePriceSM10
+                        Case 11
+                            txtProductPrice = txtProductPriceSM11
+                            vPrice = validatePriceSM11
+                        Case 12
+                            txtProductPrice = txtProductPriceSM12
+                            vPrice = validatePriceSM12
+                        Case 13
+                            txtProductPrice = txtProductPriceSM13
+                            vPrice = validatePriceSM13
+                        Case 14
+                            txtProductPrice = txtProductPriceSM14
+                            vPrice = validatePriceSM14
+                        Case 15
+                            txtProductPrice = txtProductPriceSM15
+                            vPrice = validatePriceSM15
+                        Case 16
+                            txtProductPrice = txtProductPriceSM16
+                            vPrice = validatePriceSM16
+                        Case 17
+                            txtProductPrice = txtProductPriceSM17
+                            vPrice = validatePriceSM17
+                        Case 18
+                            txtProductPrice = txtProductPriceSM18
+                            vPrice = validatePriceSM18
+                        Case 19
+                            txtProductPrice = txtProductPriceSM19
+                            vPrice = validatePriceSM19
+                        Case 20
+                            txtProductPrice = txtProductPriceSM20
+                            vPrice = validatePriceSM20
+                        Case Else
+                            txtProductPrice = txtProductMainPrice
+                            vPrice = validatePrice
+                    End Select
+                    'Update/ Delete ProductPrice
+                    If Trim(txtProductPrice.Text) <> "" Then
+                        getInfo.UpdateProductPrice(UpdateProductID, dtSMData.Rows(i)("SaleModeID"), txtProductPrice.Text, "", objCnn)
                     Else
-                        getInfo.DelProductPrice(UpdateProductID, 2, 1, objCnn)
+                        getInfo.DelProductPrice(UpdateProductID, dtSMData.Rows(i)("SaleModeID"), 1, objCnn)
                     End If
-                End If
-			
-                If SM3.Visible = True Then
-                    If Trim(ProductPriceSM3.Text) <> "" Then
-                        getInfo.UpdateProductPrice(UpdateProductID, 3, ProductPriceSM3.Text, "", objCnn)
-                    Else
-                        getInfo.DelProductPrice(UpdateProductID, 3, 1, objCnn)
-                    End If
-                End If
-			
-                If SM4.Visible = True Then
-                    If Trim(ProductPriceSM4.Text) <> "" Then
-                        getInfo.UpdateProductPrice(UpdateProductID, 4, ProductPriceSM4.Text, "", objCnn)
-                    Else
-                        getInfo.DelProductPrice(UpdateProductID, 4, 1, objCnn)
-                    End If
-                End If
-			
-                If SM5.Visible = True Then
-                    If Trim(ProductPriceSM5.Text) <> "" Then
-                        getInfo.UpdateProductPrice(UpdateProductID, 5, ProductPriceSM5.Text, "", objCnn)
-                    Else
-                        getInfo.DelProductPrice(UpdateProductID, 5, 1, objCnn)
-                    End If
-                End If
+                Next i
 				
                 If ShowMultiplePrice.Visible = True Then
                     getInfo.MultiProductPrice(UpdateProductID, ProductPrice2.Text, ProductPrice3.Text, ProductPrice4.Text, ProductPrice5.Text, objCnn)

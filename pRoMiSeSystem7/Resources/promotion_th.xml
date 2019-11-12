@@ -766,13 +766,13 @@
     <langid>2</langid>
     <value>ลดจากราคาต่ำก่อน</value>
   </Form>
-  <Form>	<!-- 19/09/19 -->
+  <Form>
     <formid>5</formid>
     <formname>promotion_Level_Edit.aspx</formname>
     <id>0</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>การกำหนดโปรโมชั่นแบบลำดับขั้น</value>
   </Form>
   <Form>
@@ -781,7 +781,7 @@
     <id>1</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>โปรโมชั่น</value>
   </Form>
   <Form>
@@ -790,7 +790,7 @@
     <id>2</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>ชื่อโปรโมชั่น</value>
   </Form>
   <Form>
@@ -799,7 +799,7 @@
     <id>3</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>จำนวน</value>
   </Form>
   <Form>
@@ -808,7 +808,7 @@
     <id>4</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>ใช้เฉพาะลำดับขั้นนี้</value>
   </Form>
   <Form>
@@ -817,7 +817,7 @@
     <id>5</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>ไม่มีส่วนลด</value>
   </Form>
   <Form>
@@ -826,7 +826,7 @@
     <id>6</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>คูปองสวนลดสำหรับใช้ในใบเสร็จถัดไป</value>
   </Form>
   <Form>
@@ -835,7 +835,7 @@
     <id>7</id>
     <name>promotion_Level_Edit.aspx</name>
     <type>Label</type>
-    <langid>1</langid>
+    <langid>2</langid>
     <value>คูปอง</value>
   </Form>
   <Form>

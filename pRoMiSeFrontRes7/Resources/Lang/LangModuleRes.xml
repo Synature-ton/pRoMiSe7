@@ -18945,12 +18945,26 @@
 	<Lang1>Last Time Usage</Lang1>
 	<Lang2>รายละเอียดการมาใช้ครั้งที่แล้ว</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>	<!--insert date 12/11/19-->
 	<FormID>83</FormID>
 	<TextID>16</TextID>
-	<DefaultText></DefaultText>
-	<Lang1></Lang1>
-	<Lang2></Lang2>
+	<DefaultText>ยอดก่อนลด</DefaultText>
+	<Lang1>Total Price</Lang1>
+	<Lang2>ยอดก่อนลด</Lang2>
+</Form>
+<Form>
+	<FormID>83</FormID>
+	<TextID>17</TextID>
+	<DefaultText>บริกร</DefaultText>
+	<Lang1>Bill Staff</Lang1>
+	<Lang2>บริกร</Lang2>
+</Form>
+<Form>
+	<FormID>83</FormID>
+	<TextID>18</TextID>
+	<DefaultText>แคชเชียร์</DefaultText>
+	<Lang1>Paid Staff</Lang1>
+	<Lang2>แคชเชียร์</Lang2>
 </Form>
 
 
