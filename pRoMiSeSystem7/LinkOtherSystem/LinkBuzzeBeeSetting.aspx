@@ -65,6 +65,11 @@
 	<td><asp:Label ID="lblMessageForVoidManual" Text="Message for void manual payment" runat="server" /></td>
 	<td class="text"><asp:textbox ID="txtMessageForVoidManual" Width="700" runat="server" /></td>
 </tr>
+<tr id="trUseSSL" runat="server" >
+	<td><asp:Label ID="lblUseSSLTLS" Text="Use SSL TLS 1.2 protocol" runat="server" /></td>
+	<td class="text"><asp:RadioButton ID="optUseSSL_Yes" runat="server" Text="Yes" GroupName="UseSSLGroup" /> &nbsp;&nbsp;&nbsp; 
+                     <asp:RadioButton ID="optUseSSL_No" runat="server" Text="No" GroupName="UseSSLGroup" /> </td>
+</tr>
 <tr>
     <td></td> 
     <td></td> 

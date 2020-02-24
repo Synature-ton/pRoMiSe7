@@ -22,10 +22,13 @@
 <body style="background-color:#FFF">
 <div id="showPage" visible="true" runat="server">
 
+<form id="mainForm" runat="server" >
 <table width="100%">
 <tr>
 <td align="left"><div class="headerText" align="left" id="HeaderText" runat="server" /></td>
-<td align="right"><div class="noprint"><div class="text"><a href="javascript: window.print()">Print</a> | <a href="javascript: window.close()">Close</a></div></div></td>
+<td align="right"><div class="noprint"><a href="javascript: window.print()">Print</a> | 
+    <asp:LinkButton ID="Export" Text="Export to Excel" OnClick="ExportData" runat="server"></asp:LinkButton> | 
+    <a href="javascript: window.close()">Close</a></div></td>
 </tr>
 </table>
 
@@ -35,7 +38,7 @@
 	
 	<div id="ResultText" runat="server"></div>
 </table></div>
-
+</form>
 </div>
 <div id="errorMsg" runat="server" />
 
@@ -64,7 +67,6 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
         Dim displayTable As New DataTable()
 		
         Dim i As Integer
-        Dim DateCheck As Boolean
 		
         Dim FormatData As DataTable = Util.FormatParam(FormatObject, Session("LangID"), objCnn)
         Dim ci As New CultureInfo(FormatObject.CultureString)
@@ -80,7 +82,7 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
         If IsNumeric(Request.QueryString("PayTypeID")) Then
             PayTypeID = Request.QueryString("PayTypeID")
         End If
-		
+		        
         'Application.Lock()
         Dim dtTable As DataTable
         If PayTypeID = 0 Then
@@ -92,15 +94,22 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
             dtTable = PayTypeDetail(PayTypeID, Session("LangID"), Request.QueryString("ViewOption"), Request.QueryString("StartDate"), Request.QueryString("EndDate"), _
                                     Request.QueryString("ShopID"), Request.QueryString("SaleModeID"), objCnn)
         End If
-		 
+
+        Session("ReportResult") = ""
+
         'Application.UnLock()
         Dim DummyTypeID As Integer = -1
-
+        Dim colSpan As Integer
+        Dim strTemp As String
+        
+        Dim dPaidTime As DateTime
         Dim AdditionalHeaderText, HText, RText As String
         Dim ReceiptHeaderData As DataTable
         ReceiptHeaderData = getInfo.GetDocType(1, 0, 8, Session("LangID"), objCnn)
 
+        TotalPayment = ""
         strBuild = New StringBuilder
+        AdditionalHeaderText = ""
         If ReceiptHeaderData.Rows.Count > 0 Then
             If Not IsDBNull(ReceiptHeaderData.Rows(0)("DocumentTypeHeader")) Then
                 AdditionalHeaderText = ReceiptHeaderData.Rows(0)("DocumentTypeHeader")
@@ -113,13 +122,16 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
                 If dtTable.Rows(i)("VTypeID") = 4 Then
                     TypeHeader = "Coupons"
                     TypeString = "Coupon #"
+                    colSpan = 5
                 ElseIf dtTable.Rows(i)("VTypeID") = 5 Then
                     TypeHeader = "Vouchers"
                     TypeString = "Voucher #"
+                    colSpan = 5
                 Else
                     If PayTypeID = 0 Then
                         TypeHeader = "Cash Coupon"
                         TypeString = "Cash Coupon #"
+                        colSpan = 5
                     Else
                         Dim PayData As DataTable = getProp.PayTypeData(0, PayTypeID, Session("LangID"), objCnn)
                         If PayData.Rows.Count > 0 Then
@@ -129,11 +141,31 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
                             TypeHeader = "Cash Coupon"
                             TypeString = "Cash Coupon #"
                         End If
+                        colSpan = 7
                     End If
                 End If
-				
-                strBuild.Append("<tr><td colspan=""5"" align=""center"" class=""tdHeader"" bgColor=""" + GlobalParam.AdminBGColor + """>" + TypeHeader + "</td></tr>")
-                strBuild.Append("<tr><td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>Date</td>" + "<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>Shop Name</td>" + "<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>Receipt #</td>" + "<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" + TypeString + "</td><td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>Amount</td></tr>")
+
+                'Header 
+                strBuild.Append("<tr><td colspan=""" & colSpan & """ align=""center"" class=""tdHeader"" bgColor=""" + GlobalParam.AdminBGColor + """>" + TypeHeader + "</td></tr>")
+                'Column
+                strBuild.Append("<tr>")
+                strTemp = "Date"
+                strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                strTemp = "Shop Name"
+                strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                strTemp = "Receipt #"
+                strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                If PayTypeID <> 0 Then
+                    strTemp = "Paid Time"
+                    strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                    strTemp = "Customer Name"
+                    strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                End If
+                strTemp = TypeString
+                strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                strTemp = "Amount"
+                strBuild.Append("<td class=""tdHeader"" align=""center"" bgColor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>")
+                strBuild.Append("</tr>")
             End If
             HText = ""
             If PropertyInfo.Rows(0)("FrontSystemType") = 1 Then
@@ -172,35 +204,29 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
                 'Else
                 'CouponNumber = dtTable.Rows(i)("PayType")
                 'End If
-				
-                If Not IsDBNull(dtTable.Rows(i)("PayType")) Then
-                    CouponNumber = dtTable.Rows(i)("PayType")
-                Else
-                    CouponNumber = ""
-                End If
-				
+                CouponNumber = ""
                 Select Case dtTable.Rows(i)("IsFromEDC")
                     Case POSType.EDCType_RBSC_Coca, POSType.EDCType_BuzzeBee_Payment, POSType.EDCType_ValueDesignCashCard, POSType.EDCType_ValueDesignPoint
                         If Not IsDBNull(dtTable.Rows(i)("CreditCardNo")) Then
                             If Trim(dtTable.Rows(i)("CreditCardNo")) <> "" Then
-                                CouponNumber  &= " (" & dtTable.Rows(i)("CreditCardNo") & ") "
+                                CouponNumber = dtTable.Rows(i)("CreditCardNo")
                             End If
                         End If
                         
                     Case Else
                         If Not IsDBNull(dtTable.Rows(i)("CashCouponNumber")) Then
                             If Trim(dtTable.Rows(i)("CashCouponNumber")) <> "" Then
-                                CouponNumber += " (" + dtTable.Rows(i)("CashCouponNumber") + ")"
+                                CouponNumber = dtTable.Rows(i)("CashCouponNumber")
                             End If
                         End If
                 End Select
-				
                 If Not IsDBNull(dtTable.Rows(i)("TotalPayment")) Then
                     TotalPayment = CDbl(dtTable.Rows(i)("TotalPayment")).ToString(FormatObject.CurrencyFormat, ci)
                     grandTotal += dtTable.Rows(i)("TotalPayment")
                 End If
             End If
-            If (Not IsDBNull(dtTable.Rows(i)("CashCouponNumber")) And dtTable.Rows(i)("VTypeID") <> 4 And dtTable.Rows(i)("VTypeID") <> 5) Or dtTable.Rows(i)("VTypeID") = 4 Or dtTable.Rows(i)("VTypeID") = 5 Then
+            If (Not IsDBNull(dtTable.Rows(i)("CashCouponNumber")) And dtTable.Rows(i)("VTypeID") <> 4 And dtTable.Rows(i)("VTypeID") <> 5) Or _
+                    dtTable.Rows(i)("VTypeID") = 4 Or dtTable.Rows(i)("VTypeID") = 5 Then
                 strBuild.Append("<tr>")
                 strBuild.Append("<td align=""left"" class=""text"">" & ShowSaleDate & "</td>")
                 strBuild.Append("<td align=""left"" class=""text"">" & dtTable.Rows(i)("ProductLevelName") & "</td>")
@@ -208,6 +234,31 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
                     strBuild.Append("<td align=""left"" class=""text""><a href=""JavaScript: newWindow = window.open( '../Reports/BillDetails.aspx?ComputerID=" + dtTable.Rows(i)("ComputerID").ToString + "&ShopID=" + dtTable.Rows(i)("ShopID").ToString + "&TransactionID=" + dtTable.Rows(i)("TransactionID").ToString + "', '', 'width=750,height=600,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" & RText & "</a></td>")
                 Else
                     strBuild.Append("<td align=""left"" class=""text"">" & RText & "</td>")
+                End If
+                
+                If PayTypeID <> 0 Then
+                    'PaidTime
+                    If Not IsDBNull(dtTable.Rows(i)("PaidTime")) Then
+                        dPaidTime = dtTable.Rows(i)("PaidTime")
+                        strTemp = dPaidTime.ToString(FormatObject.ShortDateTime, ci)
+                    Else
+                        strTemp = "-"
+                    End If
+                    strBuild.Append("<td align=""center"" class=""text"">" & strTemp & "</td>")
+                
+                    'CustomerName
+                    If IsDBNull(dtTable.Rows(i)("TransactionName")) Then
+                        dtTable.Rows(i)("TransactionName") = ""
+                    End If
+                    If IsDBNull(dtTable.Rows(i)("QueueName")) Then
+                        dtTable.Rows(i)("QueueName") = ""
+                    End If
+                    If dtTable.Rows(i)("TransactionName") <> "" Then
+                        strTemp = dtTable.Rows(i)("TransactionName")
+                    Else
+                        strTemp = dtTable.Rows(i)("QueueName")
+                    End If
+                    strBuild.Append("<td align=""left"" class=""text"">" & strTemp & "</td>")
                 End If
                 strBuild.Append("<td align=""left"" class=""text"">" & CouponNumber & "</td>")
                 strBuild.Append("<td align=""right"" class=""text"">" & TotalPayment & "</td>")
@@ -218,16 +269,24 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
             DummyTypeID = dtTable.Rows(i)("VTypeID")
 
         Next
+        If PayTypeID <> 0 Then
+            colSpan = 6
+        Else
+            colSpan = 4
+        End If
         If grandTotal <> 0 Then
-            strBuild.Append("<tr><td align=""right"" class=""text"" colspan=""4"">Total</td>")
+            strBuild.Append("<tr><td align=""right"" class=""text"" colspan=""" & colSpan & """>Total</td>")
             strBuild.Append("<td align=""right"" class=""text"">" & CDbl(grandTotal).ToString(FormatObject.CurrencyFormat, ci) & "</td></tr>")
         End If
         If dtTable.Rows.Count = 0 Then
+            
             strBuild = New StringBuilder
-            strBuild.Append("<tr><td class=""boldText"" colspan=""4"">No Data Found</td></tr>")
+            strBuild.Append("<tr><td class=""boldText"" colspan=""" & colSpan & """>No Data Found</td></tr>")
         End If
         ResultText.InnerHtml = strBuild.ToString
 					
+        Session("ReportResult") = "<table>" & ResultText.InnerHtml & "</td></tr></table>"
+
         'Catch ex As Exception
         'errorMsg.InnerHtml = ex.Message
         'End Try
@@ -284,7 +343,7 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
             If ReportType = 0 Then 'combine credit card
                 sqlStatement = "select 0 AS VTypeID,a.ShopID,pl.ProductLevelName,a.TransactionID,a.ComputerID,a.SaleDate,a.ReceiptID,a.ReceiptMonth,a.ReceiptYear, " & _
                                "c.Amount AS TotalPayment,c.PaidByName AS CashCouponNumber,c.PayTypeID,f.PayType,f.PayTypeCode, e.DocumentTypeHeader,pt.PayType As GroupName, " & _
-                               "c.IsFromEDC, c.CreditCardNo " & _
+                               "c.IsFromEDC, c.CreditCardNo, a.PaidTime, a.TransactionName, a.QueueName " & _
                                "from OrderTransaction a inner join PayDetail c ON a.TransactionID=c.TransactionID AND a.ComputerID=c.ComputerID " & _
                                " left outer join DocumentType e ON a.CloseComputerID=e.ComputerID AND e.LangID=1 AND e.DocumentTypeID=8 AND e.ShopID=0 " & _
                                " LEFT OUTER JOIN PayType f ON c.PayTypeID=f.TypeID left outer join PayType pt ON c.SmartcardType=pt.TypeID " & _
@@ -296,7 +355,7 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
                 sqlStatement = "select * from (select 0 AS VTypeID,a.ShopID,pl.ProductLevelName,a.TransactionID,a.ComputerID,a.SaleDate,a.ReceiptID,a.ReceiptMonth, " & _
                                " a.ReceiptYear,c.Amount AS TotalPayment,c.PaidByName AS CashCouponNumber,IF(c.SmartcardType>0,pt.TypeID,f.TypeID) As PayTypeID, " & _
                                " IF(SmartcardType>0,pt.PayType,f.PayType) As PayType,IF(SmartcardType>0,pt.PayTypecode,f.PayTypeCode) As PayTypeCode, e.DocumentTypeHeader, " & _
-                               " pt.PayType As GroupName, c.IsFromEDC, c.CreditCardNo " & _
+                               " pt.PayType As GroupName, c.IsFromEDC, c.CreditCardNo, a.PaidTime, a.TransactionName, a.QueueName " & _
                                "from OrderTransaction a inner join PayDetail c ON a.TransactionID=c.TransactionID AND a.ComputerID=c.ComputerID " & _
                                " left outer join DocumentType e ON a.CloseComputerID=e.ComputerID AND e.LangID=1 AND e.DocumentTypeID=8 AND e.ShopID=0 " & _
                                " LEFT OUTER JOIN PayType f ON c.PayTypeID=f.TypeID left outer join PayType pt ON c.SmartcardType=pt.TypeID " & _
@@ -310,7 +369,7 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
             If ReportType = 0 Then 'combine credit card
                 sqlStatement = "select 0 AS VTypeID,a.ShopID,pl.ProductLevelName,a.TransactionID,a.ComputerID,a.SaleDate,a.ReceiptID,a.ReceiptMonth,a.ReceiptYear, " & _
                             "c.Amount AS TotalPayment,c.PaidByName AS CashCouponNumber,c.PayTypeID,f.PayType,f.PayTypeCode, e.DocumentTypeHeader,pt.PayType As GroupName, " & _
-                            " c.IsFromEDC, c.CreditCardNo " & _
+                            " c.IsFromEDC, c.CreditCardNo, a.PaidTime, a.TransactionName, a.QueueName  " & _
                             "from OrderTransaction a inner join PayDetail c ON a.TransactionID=c.TransactionID AND a.ComputerID=c.ComputerID " & _
                             " left outer join DocumentType e ON e.ComputerID=0 AND a.ShopID = e.ShopID AND e.LangID=1 AND e.DocumentTypeID=a.DocType " & _
                             " LEFT OUTER JOIN PayType f ON c.PayTypeID=f.TypeID left outer join PayType pt ON c.SmartcardType=pt.TypeID " & _
@@ -321,7 +380,7 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
                 sqlStatement = "select * from (select 0 AS VTypeID,a.ShopID,pl.ProductLevelName,a.TransactionID,a.ComputerID,a.SaleDate,a.ReceiptID,a.ReceiptMonth,a.ReceiptYear, " & _
                                 "  c.Amount AS TotalPayment,c.PaidByName AS CashCouponNumber,IF(c.SmartcardType>0,pt.TypeID,f.TypeID) As PayTypeID," & _
                                 " IF(SmartcardType>0,pt.PayType,f.PayType) As PayType,IF(SmartcardType>0,pt.PayTypecode,f.PayTypeCode) As PayTypeCode, " & _
-                                " e.DocumentTypeHeader,pt.PayType As GroupName, c.IsFromEDC, c.CreditCardNo " & _
+                                " e.DocumentTypeHeader,pt.PayType As GroupName, c.IsFromEDC, c.CreditCardNo, a.PaidTime, a.TransactionName, a.QueueName " & _
                                 " from OrderTransaction a inner join PayDetail c ON a.TransactionID=c.TransactionID AND a.ComputerID=c.ComputerID " & _
                                 "  left outer join DocumentType e ON e.ComputerID = 0 AND e.LangID=1 AND e.DocumentTypeID=a.DocType AND e.ShopID=a.ShopID " & _
                                 "  LEFT OUTER JOIN PayType f ON c.PayTypeID=f.TypeID left outer join PayType pt ON c.SmartcardType=pt.TypeID " & _
@@ -331,12 +390,18 @@ Dim InvC As CultureInfo = CultureInfo.InvariantCulture
             End If
         End If
 
-        Dim GetData As DataTable = objDB.List(sqlStatement, objCnn)
-
-        Return GetData
-
+        Return objDB.List(sqlStatement, objCnn)
     End Function
 
+    Sub ExportData(Source As Object, E As EventArgs)
+        Dim FileName As String = "ExportDetail_" & DateTime.Now.ToString("yyyyMMdd_HHmmss", InvC) & ".xls"
+        Dim CSSFile As String = Replace(UCase(Path.GetDirectoryName(Request.ServerVariables("PATH_TRANSLATED"))), "REPORTS", "") & "StyleSheet\admin.css"
+	
+        Util.ExportData(Session("ReportResult"), FileName, CSSFile, GlobalParam.ExportCharSet, -1)
+    End Sub
+
+    
+    
 Sub Page_UnLoad()
 	objCnn.Close()
 End Sub

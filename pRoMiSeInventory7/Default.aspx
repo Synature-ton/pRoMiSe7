@@ -65,6 +65,7 @@
                             <asp:Label ID="lblVendor" runat="server" Text="Vendor"></asp:Label>
                             <asp:Label ID="lblApproveDate" runat="server" Text="ApproveDate"></asp:Label>
                             <asp:Label ID="lblInvoiceRef" runat="server" Text="InvoiceRef"></asp:Label>
+                            <asp:Label ID="lblLinkForDetail" runat="server" Text="Detail"></asp:Label>
                         </div>
                         <div id="content-pane" class="pane-sliders">
                             <div class="panel" style="padding: 2px;" id="pnlAlertDocumentBatch"  runat="server"  >

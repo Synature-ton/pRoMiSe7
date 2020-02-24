@@ -43,7 +43,6 @@
                   .next().button({ icons: { primary: 'icon-action-copy'} })
                   .next().button({ icons: { primary: 'icon-action-approve'} })
                   .next().button({ icons: { primary: 'icon-action-cancel'} })
-                  .next().button({ icons: { primary: 'icon-action-print-preview'} })
                   .next().button({ icons: { primary: 'icon-action-print' }
                   });
 
@@ -142,6 +141,9 @@
         </button>
         <button id="btnPrint" type="button" runat="server">
             Print Document
+        </button>
+        <button id="btnSetPrefinishPAR" type="button" runat="server">
+            Set Stanadard PAR
         </button>
         <asp:HiddenField ID="hdfDocumentID" runat="server" />
         <asp:HiddenField ID="hdfDocumentShopID" runat="server" />

@@ -1112,7 +1112,17 @@ Dim Prop As New ConfigProperty()
                 getProp = getData.PropertyInfo(1, objCnn)
 			
                 If getProp.Rows(0)("FrontSystemType") = 1 Then
-                    Dim ResultUpdate As Boolean = getData.UpdateComputerReceipt(ComputerIDValue, Trim(DocumentTypeHeader.Text), Trim(DocumentTypeHeaderFT.Text), Trim(DocumentTypeHeaderCM.Text), Trim(DocumentTypeHeaderDP.Text), Session("LangID"), objCnn)
+                    Dim dbTrans As MySqlTransaction
+                    dbTrans = objCnn.BeginTransaction(IsolationLevel.Serializable)
+                    Try
+                        Dim ResultUpdate As Boolean = getData.UpdateComputerReceipt(ComputerIDValue, Trim(DocumentTypeHeader.Text), Trim(DocumentTypeHeaderFT.Text), _
+                                                              Trim(DocumentTypeHeaderCM.Text), Trim(DocumentTypeHeaderDP.Text), _
+                                                              Session("LangID"), objCnn, dbTrans)
+                        dbTrans.Commit()
+                    Catch ex As Exception
+                        dbTrans.Rollback()
+                        errorMsg.InnerHtml = ex.ToString
+                    End Try
                 End If
                 Dim shopInfo As New DataTable()
                 shopInfo = cls.GetProductLevel(-9999, objCnn)

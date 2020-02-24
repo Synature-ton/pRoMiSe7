@@ -232,6 +232,8 @@
                         <tr>
                             <td>
                                 <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Export to Excel</asp:LinkButton>
+                                <asp:Label ID="lblExportTab" runat="server">  ||  </asp:Label>
+                                <asp:LinkButton ID="lbtExportCSV" runat="server" OnClick="lbtExportCSV_Click">Export as CSV format</asp:LinkButton>
                                 <div id="showReport" runat="server">
                                 </div>
                                 <asp:Label ID="lbError" runat="server" Text=""></asp:Label>

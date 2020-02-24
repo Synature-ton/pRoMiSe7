@@ -1859,9 +1859,6 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
             End If
             DeptSelectionText.InnerHtml = "<select name=""ProductDeptID"" style=""width:200px;"" onchange=""submit()""><option value=""0""" + FormSelected + ">" + textTable.Rows(43)("TextParamValue") + ProductDeptString + "</select>"
 		
-		
-		
-		
             If Page.IsPostBack Then
                 validateLevel.InnerHtml = ""
                 validateGroup.InnerHtml = ""
@@ -2009,8 +2006,6 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
         Next i
     End Sub
     
-    
-
     Sub DoAddUpdate(Source As Object, E As EventArgs)
         Dim FoundError As Boolean = False
         Dim textTable As New DataTable()
@@ -2021,6 +2016,8 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
         Dim strSQL As String
         Dim txtProductPrice As TextBox
         Dim vPrice As HtmlGenericControl
+        Dim smID() As Integer
+        Dim strSMPrice() As String
         Dim i As Integer
         Dim dtSMData As DataTable = objDB.List("select * from SaleMode where Deleted=0 order by SaleModeID", objCnn)
         
@@ -2562,80 +2559,69 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                     'getPromo.PromoProduct(Request.Form("SelPromo"),objCnn)
                 End If
 
+                ReDim smID(dtSMData.Rows.Count - 1)
+                ReDim strSMPrice(dtSMData.Rows.Count - 1)
+                                                
                 For i = 0 To dtSMData.Rows.Count - 1
                     Select Case dtSMData.Rows(i)("SaleModeID")
                         Case 1
                             txtProductPrice = txtProductMainPrice
-                            vPrice = validatePrice
                         Case 2
                             txtProductPrice = txtProductPriceSM2
-                            vPrice = validatePriceSM2
                         Case 3
                             txtProductPrice = txtProductPriceSM3
-                            vPrice = validatePriceSM3
                         Case 4
                             txtProductPrice = txtProductPriceSM4
-                            vPrice = validatePriceSM4
                         Case 5
                             txtProductPrice = txtProductPriceSM5
-                            vPrice = validatePriceSM5
                         Case 6
                             txtProductPrice = txtProductPriceSM6
-                            vPrice = validatePriceSM6
                         Case 7
                             txtProductPrice = txtProductPriceSM7
-                            vPrice = validatePriceSM7
                         Case 8
                             txtProductPrice = txtProductPriceSM8
-                            vPrice = validatePriceSM8
                         Case 9
                             txtProductPrice = txtProductPriceSM9
-                            vPrice = validatePriceSM9
                         Case 10
                             txtProductPrice = txtProductPriceSM10
-                            vPrice = validatePriceSM10
                         Case 11
                             txtProductPrice = txtProductPriceSM11
-                            vPrice = validatePriceSM11
                         Case 12
                             txtProductPrice = txtProductPriceSM12
-                            vPrice = validatePriceSM12
                         Case 13
                             txtProductPrice = txtProductPriceSM13
-                            vPrice = validatePriceSM13
                         Case 14
                             txtProductPrice = txtProductPriceSM14
-                            vPrice = validatePriceSM14
                         Case 15
                             txtProductPrice = txtProductPriceSM15
-                            vPrice = validatePriceSM15
                         Case 16
                             txtProductPrice = txtProductPriceSM16
-                            vPrice = validatePriceSM16
                         Case 17
                             txtProductPrice = txtProductPriceSM17
-                            vPrice = validatePriceSM17
                         Case 18
                             txtProductPrice = txtProductPriceSM18
-                            vPrice = validatePriceSM18
                         Case 19
                             txtProductPrice = txtProductPriceSM19
-                            vPrice = validatePriceSM19
                         Case 20
                             txtProductPrice = txtProductPriceSM20
-                            vPrice = validatePriceSM20
                         Case Else
                             txtProductPrice = txtProductMainPrice
-                            vPrice = validatePrice
                     End Select
+                    
+                    smID(i) = dtSMData.Rows(i)("SaleModeID")
+                    strSMPrice(i) = txtProductPrice.Text
+                    
                     'Update/ Delete ProductPrice
-                    If Trim(txtProductPrice.Text) <> "" Then
-                        getInfo.UpdateProductPrice(UpdateProductID, dtSMData.Rows(i)("SaleModeID"), txtProductPrice.Text, "", objCnn)
-                    Else
-                        getInfo.DelProductPrice(UpdateProductID, dtSMData.Rows(i)("SaleModeID"), 1, objCnn)
-                    End If
+                    '                    If Trim(txtProductPrice.Text) <> "" Then
+                    'getInfo.UpdateProductPrice(UpdateProductID, dtSMData.Rows(i)("SaleModeID"), txtProductPrice.Text, "", objCnn)
+                    'Else
+                    'getInfo.DelProductPrice(UpdateProductID, dtSMData.Rows(i)("SaleModeID"), 1, objCnn)
+                    'End If
                 Next i
-				
+
+                'Update ProductPrice
+                getInfo.UpdateProductPrice(UpdateProductID, smID, strSMPrice, "", objCnn)
+                
                 If ShowMultiplePrice.Visible = True Then
                     getInfo.MultiProductPrice(UpdateProductID, ProductPrice2.Text, ProductPrice3.Text, ProductPrice4.Text, ProductPrice5.Text, objCnn)
                 End If

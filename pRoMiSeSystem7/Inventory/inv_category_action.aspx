@@ -32,6 +32,8 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
     Sub Page_Load()
         If User.Identity.IsAuthenticated And (Session("Inv_Product_Category") Or Session("Inv_Material_Category") Or Session("Purchase_Order") Or Session("Receive_Order")) Then
             Dim ReturnPage As String
+            Dim strTemp As String
+            
             Select Case Request.QueryString("action")
 
                 Case "delete_category"
@@ -148,8 +150,16 @@ Dim PriceEndDate As String = "{ d '9999-01-01' }"
                         End Try
                     End If
                     Dim GoBackURL As String = "product_component.aspx"
-                    If Trim(Request.QueryString("GoBackURL")) <> "" Then GoBackURL = Trim(Request.QueryString("GoBackURL"))
-                    Response.Redirect(GoBackURL + "?EditID=3&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PGroupID=" + Request.QueryString("PGroupID"))
+                    If Trim(Request.QueryString("GoBackURL")) <> "" Then
+                        GoBackURL = Trim(Request.QueryString("GoBackURL"))
+                    End If
+                    strTemp = GoBackURL & "?EditID=3&ProductGroupID=" + Request.QueryString("ProductGroupID") & _
+                                    "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") & _
+                                    "&ProductID=" + Request.QueryString("ProductID") + "&PGroupID=" & Request.QueryString("PGroupID")
+                    If Not ( Request.QueryString("SaleMode") Is Nothing)  Then
+                        strTemp &= "&SaleMode=" & Request.QueryString("SaleMode")
+                    End If
+                    Response.Redirect(strTemp)
                
                 Case "delete_notordertogether"
                     If Request.QueryString("NotTogetherProductID") IsNot Nothing Then

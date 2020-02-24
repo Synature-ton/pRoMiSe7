@@ -175,7 +175,14 @@
             var SelVal = ddlEDC.options[ddlEDC.selectedIndex].value;
             if (SelVal == 20) {
                 document.getElementById("tr_QRPaymentCode").style.display = "";
+                document.getElementById("<%=lblQRPaymentCode.ClientID%>").innerHTML = "QR Payment Code : ";
                 document.getElementById("tr_QRPaymentInquiryFeature").style.display = "";                
+            }
+            else if (SelVal == 8)
+            {
+                document.getElementById("tr_QRPaymentCode").style.display = "";
+                document.getElementById("<%=lblQRPaymentCode.ClientID%>").innerHTML = "EDC Transaction Code :";
+                document.getElementById("tr_QRPaymentInquiryFeature").style.display = "none";
             }
             else {
                 document.getElementById("tr_QRPaymentCode").style.display = "none";
@@ -404,6 +411,17 @@
                                                             </asp:RadioButtonList>
                                                         </td>
                                                     </tr>
+                                                    <tr id="trDisplayInSession" runat="server">
+                                                        <td style="text-align: right;">
+                                                            <asp:Label ID="lblDisplayInSession" runat="server" Text="Display In Session : "></asp:Label>
+                                                        </td>
+                                                        <td>
+                                                            <asp:RadioButtonList ID="rb_DisplayInSession" runat="server" RepeatDirection="Horizontal" TabIndex="15">
+                                                                <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
+                                                                <asp:ListItem Text="No" Value="0" Selected="True"></asp:ListItem>
+                                                            </asp:RadioButtonList>
+                                                        </td>
+                                                    </tr>
                                                 </table>
                                             </td>
                                             <td style="vertical-align: top;">
@@ -467,7 +485,7 @@
                                                             <asp:Label ID="lblRequireAuthorize" runat="server" Text="Require Authorize : "></asp:Label>
                                                         </td>
                                                         <td>
-                                                            <asp:RadioButtonList ID="rb_RequireAuthorize" runat="server" RepeatDirection="Horizontal" TabIndex="12">
+                                                            <asp:RadioButtonList ID="rb_RequireAuthorize" runat="server" RepeatDirection="Horizontal" TabIndex="14">
                                                                 <asp:ListItem Text="Yes" Selected="True" Value="1"></asp:ListItem>
                                                                 <asp:ListItem Text="No" Value="0"></asp:ListItem>
                                                             </asp:RadioButtonList>

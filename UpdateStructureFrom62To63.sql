@@ -4309,7 +4309,7 @@ CREATE TABLE OrderUpdateDiscountPriceCalculateTemp (
 
 
 -- 27/09/2019 - TotalPrice and VAT For SCDDiscount
-ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPrice decimal(18,4) NOT NULL DEFAULT '0'  After TotalPriceBeforeVAT;
+ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPrice decimal(18,4) NOT NULL DEFAULT '0';
 ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPriceBeforeVAT decimal(18,4) NOT NULL DEFAULT '0'  After DiscountPrice;
 ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPriceVAT decimal(18,4) NOT NULL DEFAULT '0'  After DiscountPriceBeforeVAT;
 
@@ -4364,10 +4364,81 @@ INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(1,725);
 INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(2,725);
 
 
-
 -- 12/11/2019 - SaleMode Script
 ALTER TABLE Products ADD SaleMode6 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode5;
+ALTER TABLE ProductShopOverWrite ADD SaleMode6 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode5;
 INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(6, '', 1);
+UPDATE products SET salemode6 = 1;
+
+ALTER TABLE Products ADD SaleMode7 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode6;
+ALTER TABLE ProductShopOverWrite ADD SaleMode7 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode6;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(7, '', 1);
+UPDATE products SET salemode7 = 1;
+
+ALTER TABLE Products ADD SaleMode8 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode7;
+ALTER TABLE ProductShopOverWrite ADD SaleMode8 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode7;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(8, '', 1);
+UPDATE products SET salemode8 = 1;
+
+ALTER TABLE Products ADD SaleMode9 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode8;
+ALTER TABLE ProductShopOverWrite ADD SaleMode9 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode8;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(9, '', 1);
+UPDATE products SET salemode9 = 1;
+
+-- 04/12/2019 - PaymentGroup Use Payment Code
+ALTER TABLE PayTypeGroup ADD UsePayTypeCodeForThisGroup tinyint NOT NULL DEFAULT '0';
+
+-- 03/01/2020 - Set Property For Split Order When Add
+Update ProgramProperty Set Description = '0 = Not split(Default), 1 = Split qty by one, 2 = Alway add as new order' Where ProgramTypeID = 1 AND PropertyID = 46;
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,46,2, 'Always Add As New Order', 2, 2, 0);
+
+
+-- Update KDS Data From HQ or Add Data Only (and Set Data From Branch)
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description, Deleted) VALUES(7, 8, 1, 
+'Set KDS Data From Branch', '0 = KDS Data From HQ Always OverWrite Branch data, 1 = Set KDS Data From Branch(Only Add New Data From HQ) ', 0);
+
+-- Update Export Inventory on Cloud
+DELETE FROM exportinvoncloud_configsetting;
+insert into `exportinvoncloud_configsetting` (`ID`, `CSVDelimeterString`, `BrandCode`, `QtyFormat`, `PriceFormat`, `DateFormat`, `DateTimeFormat`, `ExportIncludeHeader`, `DefaultDocumentTypeMappingCode`) values('1',',','002','0.##','0.00##','dd/MM/yyy','ddMMyyyy_HHmmss','1','POS_SA');
+
+DELETE FROM exportinvoncloud_mappingdocumenttype;
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('20','POS_SA');
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('21','POS_SA_VOID');
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('60','POS_SA');
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('62','POS_SA_VOID');
+insert into `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) values('115','POS_ENT');
+insert into `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) values('116','POS_ENT_VOID');
+
+-- 14/02/2020 EDC Type 8 BBL : CreditCard/ 9 BBL : Rabbit
+Update EDC_TypeName Set EDCTypeName = 'EDC BBL : Credit Card' Where EDCTypeID = 8;
+Update EDC_TypeName Set EDCTypeName = 'EDC BBL : Rabbit' Where EDCTypeID = 9;
+ALTER TABLE EDC_PaymentInfo ADD Rabbit_ReaderID varchar(30) NULL;
+ALTER TABLE EDC_PaymentInfo ADD Rabbit_Trace varchar(10) NULL;
+ALTER TABLE EDC_PaymentInfo ADD Rabbit_BalanceAmount varchar(20) NULL;
+
+ALTER TABLE EDC_VoidTransaction ADD PayDetailID int NOT NULL DEFAULT '0' After ComputerID;
+ALTER TABLE EDC_VoidTransaction DROP Primary Key, ADD Primary Key(TransactionID, ComputerID, PayDetailID, ShopID);
+
+INSERT INTO PayType(TypeID, PayType, PayTypeCode, DisplayName, IsAvailable, SetDefault, Deleted, ConvertPayTypeTo, EDCType, IsSale, IsVAT, IsOtherReceipt, PrepaidDiscountPercent, DefaultPayPrice, PayTypeGroupID, IsRequire, IsFixPrice, IsOpenDrawer, MaxNoPayInTransaction, 
+PayTypeFunction, CanEditDeletePaymentInMultiple, NotAllProducts, PayTypeOrdering) 
+VALUES (1152,'EDC BBL','EDCBBL','EDC BBL',1,0,1,2,8,1,1,0,0,0,0,0,0,0,0,0,0,0,1152);
+
+INSERT INTO PayType(TypeID, PayType, PayTypeCode, DisplayName, IsAvailable, SetDefault, Deleted, ConvertPayTypeTo, EDCType, IsSale, IsVAT, IsOtherReceipt, PrepaidDiscountPercent, DefaultPayPrice, PayTypeGroupID, IsRequire, IsFixPrice, IsOpenDrawer, MaxNoPayInTransaction, 
+PayTypeFunction, CanEditDeletePaymentInMultiple, NotAllProducts, PayTypeOrdering) 
+VALUES (1153,'Rabbit LinePay','Rabbit','Rabbit - LinePay',1,0,1,0,9,1,1,0,0,0,0,0,0,0,0,0,0,0,1153);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

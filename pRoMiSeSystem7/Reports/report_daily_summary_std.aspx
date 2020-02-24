@@ -872,19 +872,25 @@ End Sub
         sqlStatement = "select IF(b.QDDID is NULL,0,b.QDDID) As QDDID,IF(c.QDDName is NULL,'Other Sale Mode',c.QDDName) As QDDName,IF(QDDOrdering is NULL,99,QDDOrdering) As QDDOrdering,SUM(IF(b.QDDID is NULL,a.NoCustomer,QDVValue)) As TotalCustomer from ordertransaction a left outer join questiondefinedetail b ON a.TransactionID=b.TransactionID AND a.ComputerID=b.ComputerID left outer join questiondefinedata c ON b.QDDID=c.QDDID where a.ReceiptID>0 AND a.DocType=8 AND a.TransactionStatusID=2 " + AdditionalQuery + " Group By b.QDDID,c.QDDName,QDDOrdering Order By QDDOrdering"
         Dim CustomerData As DataTable '= objDB.List(sqlStatement, objCnn)
 		
-        sqlStatement = "select SaleMode,SaleModeName,SUM(SalePrice) As SalePrice,SUM(Amount) As TotalQty from Summary_ProductReport a where TransactionStatusID=2 AND ProductSetType NOT IN (-1,-3,14,16) AND a.DocType=8 " + SaleModeQuery + " group by SaleMode,SaleModeName order by SaleMode"
+        sqlStatement = "select SaleMode,SaleModeName,SUM(SalePrice) As SalePrice,SUM(Amount) As TotalQty from Summary_ProductReport a " & _
+                    "where TransactionStatusID=2 AND ProductSetType NOT IN (-1,-3,14,16) AND a.DocType=8 " + SaleModeQuery + " group by SaleMode,SaleModeName order by SaleMode"
         Dim SaleModeData As DataTable = objDB.List(sqlStatement, objCnn)
 		
-        sqlStatement = "select ProductName,SUM(SalePrice) As SalePrice,SUM(Amount) As TotalQty from Summary_ProductReport a where TransactionStatusID=2 AND ProductSetType NOT IN (-1,-3,14,16) AND a.DocType=8 " + AdditionalQuery + " group by ProductName order by SUM(Amount) DESC, SUM(SalePrice) DESC LIMIT 0,5"
+        sqlStatement = "select ProductName,SUM(SalePrice) As SalePrice,SUM(Amount) As TotalQty from Summary_ProductReport a " & _
+                    "where TransactionStatusID=2 AND ProductSetType NOT IN (-1,-3,14,16) AND a.DocType=8 " + AdditionalQuery + " group by ProductName order by SUM(Amount) DESC, SUM(SalePrice) DESC LIMIT 0,5"
         Dim TopMenu As DataTable = objDB.List(sqlStatement, objCnn)
 		
         sqlStatement = "select a.*,CONCAT(s1.StaffFirstName,' ',s1.StaffLastName) As OpenStaff,CONCAT(s2.StaffFirstName,' ',s2.StaffLastName) As CloseStaff from Session a left outer join Staffs s1 ON a.OpenStaffID=s1.StaffID left outer join Staffs s2 ON a.CloseStaffID=s2.StaffID where a.CloseSessionDateTime is not NULL " + SessionString + " order by SessionID"
         Dim SessionData As DataTable = objDB.List(sqlStatement, objCnn)
 		
-        sqlStatement = "select SUM(TotalCashOutPrice) As TotalCashOut,CashMovement,a.SessionID,a.ComputerID from session a, cashoutordertransaction b where a.CloseSessionDateTime is not NULL AND b.TransactionStatusID=2 AND a.SessionID=b.SessionID AND a.ComputerID=b.ComputerID" + SessionString + " Group By CashMovement,a.SessionID,a.ComputerID"
+        sqlStatement = "select SUM(TotalCashOutPrice) As TotalCashOut,CashMovement,a.SessionID,a.ComputerID from session a, cashoutordertransaction b " & _
+                        "Where a.CloseSessionDateTime is not NULL AND b.TransactionStatusID=2 AND a.SessionID=b.SessionID AND a.ComputerID=b.ComputerID" + SessionString & _
+                        " Group By CashMovement,a.SessionID,a.ComputerID"
         Dim CashOutData As DataTable = objDB.List(sqlStatement, objCnn)
 		
-        sqlStatement = "select PromotionID,PromotionName,SUM(TotalDiscount) As TotalDiscount,SUM(PriceAfterDiscount) As PriceAfterDiscount from Summary_PromotionReport a where 0=0 " + AdditionalQuery + " group by PromotionID,PromotionName order by SUM(TotalDiscount) DESC"
+        sqlStatement = "select PromotionID,PromotionName,SUM(TotalDiscount) As TotalDiscount,SUM(PriceAfterDiscount) As PriceAfterDiscount " & _
+                        "from Summary_PromotionReport a " & _
+                        "Where 0=0 AND a.TransactionStatusID = 2 " + AdditionalQuery + " group by PromotionID,PromotionName order by SUM(TotalDiscount) DESC"
         Dim PromotionData As DataTable = objDB.List(sqlStatement, objCnn)
 		
         Dim VoidQty As Double = 0

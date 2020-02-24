@@ -451,6 +451,15 @@
 		<Lang2>ข้อความสำหรับการยกเลิก manual payment</Lang2>
 	</Form>
 	<Form>
+		<FormID>9005</FormID>
+		<FormName>LinkBuzzeBeeSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Connect Use SSL TSL 1.2 Protocol</DefaultText>
+		<Lang1>Connect Use SSL TSL 1.2 Protocol</Lang1>
+		<Lang2>Connect Use SSL TSL 1.2 Protocol</Lang2>
+	</Form>
+	<Form>
 		<FormID>9006</FormID>
 		<FormName>LinkBuzzeBeeShopSetting.aspx</FormName>
 		<TextType>1</TextType>
@@ -1267,9 +1276,9 @@
 		<FormName>LinkiNetLogaSetting.aspx</FormName>
 		<TextType>1</TextType>
 		<TextID>10</TextID>
-		<DefaultText></DefaultText>
-		<Lang1></Lang1>
-		<Lang2></Lang2>
+		<DefaultText>Connect Use SSL TSL 1.2 Protocol</DefaultText>
+		<Lang1>Connect Use SSL TSL 1.2 Protocol</Lang1>
+		<Lang2>Connect Use SSL TSL 1.2 Protocol</Lang2>
 	</Form>
 	<Form>
 		<FormID>9012</FormID>
@@ -2045,6 +2054,644 @@
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Manage Over Head Cost Group</DefaultText>
+		<Lang1>Manage Over Head Cost Group</Lang1>
+		<Lang2>Manage Over Head Cost Group</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Group Name</DefaultText>
+		<Lang1>Group Name</Lang1>
+		<Lang2>Group Name</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Start Date</DefaultText>
+		<Lang1>Start Date</Lang1>
+		<Lang2>Start Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>End Date</DefaultText>
+		<Lang1>End Date</Lang1>
+		<Lang2>End Date</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Edit</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Set OverHead Cost</DefaultText>
+		<Lang1>Set OverHead Cost</Lang1>
+		<Lang2>ตั้งค่าโสหุ้ย</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>Update</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Add</DefaultText>
+		<Lang1>Add</Lang1>
+		<Lang2>Add</Lang2>
+	</Form>
+	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Set Cost</DefaultText>
+		<Lang1>Set Cost</Lang1>
+		<Lang2>ตั้งค่าโสหุ้ยวัตถุดิบ</Lang2>
+	</Form>	<Form>
+		<FormID>9018</FormID>
+		<FormName>Material_OverHeadCost_Group.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Please select start date and end date</DefaultText>
+		<Lang1>Please select start date and end date</Lang1>
+		<Lang2>Please select start date and end date</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Material Group</DefaultText>
+		<Lang1>Material Group</Lang1>
+		<Lang2>กลุ่มวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Material Dept</DefaultText>
+		<Lang1>Material Dept</Lang1>
+		<Lang2>หมวดวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Material</DefaultText>
+		<Lang1>Material</Lang1>
+		<Lang2>วัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Material Group Code</DefaultText>
+		<Lang1>Material Group Code</Lang1>
+		<Lang2>รหัสกลุ่มวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Material Group Name</DefaultText>
+		<Lang1>Material Group Name</Lang1>
+		<Lang2>ชื่อกลุ่มวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Material Dept Code</DefaultText>
+		<Lang1>Material Dept Code</Lang1>
+		<Lang2>รหัสหมวดวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Material Dept Name</DefaultText>
+		<Lang1>Material Dept Name</Lang1>
+		<Lang2>ชื่อหมวดวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Material Code</DefaultText>
+		<Lang1>Material Code</Lang1>
+		<Lang2>รหัสวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Material Name</DefaultText>
+		<Lang1>Material Name</Lang1>
+		<Lang2>ชื่อวัตถุดิบ</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Baht</DefaultText>
+		<Lang1>Baht</Lang1>
+		<Lang2>บาท</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>--- Please Select Material Group ---</DefaultText>
+		<Lang1>--- Please Select Material Group ---</Lang1>
+		<Lang2>--- กรุณาเลือกกลุ่มวัตถุดิบ ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>--- Please Select Material Dept ---</DefaultText>
+		<Lang1>--- Please Select Material Dept ---</Lang1>
+		<Lang2>--- กรุณาเลือกหมวดวัตถุดิบ ----</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Manage Over Head Cost</DefaultText>
+		<Lang1>Manage Over Head Cost</Lang1>
+		<Lang2>Manage Over Head Cost</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>Update</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>15</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>Cancel</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>16</TextID>
+		<DefaultText>Over Head Cost</DefaultText>
+		<Lang1>Over Head Cost</Lang1>
+		<Lang2>ค่าโสหุ้ย</Lang2>
+	</Form>
+	<Form>
+		<FormID>9019</FormID>
+		<FormName>Material_OverHeadCost.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>17</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Link To One Em Power Terminal Setting</DefaultText>
+		<Lang1>Link To One Em Power Terminal Setting</Lang1>
+		<Lang2>Link To One Em Power Terminal Setting</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Shop Name</DefaultText>
+		<Lang1>Shop Name</Lang1>
+		<Lang2>ชื่อร้าน</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Computer Name</DefaultText>
+		<Lang1>Computer Name</Lang1>
+		<Lang2>ชื่อเครื่อง</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>User Name</DefaultText>
+		<Lang1>User Name</Lang1>
+		<Lang2>User Name</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Password</DefaultText>
+		<Lang1>Password</Lang1>
+		<Lang2>Password</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>ID</DefaultText>
+		<Lang1>ID</Lang1>
+		<Lang2>ID</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>บันทึก</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>--- All Shop ---</DefaultText>
+		<Lang1>--- All Shop ---</Lang1>
+		<Lang2>--- ทุกร้าน ---</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>	
+	<Form>
+		<FormID>9020</FormID>
+		<FormName>LinkOneEmPowerSetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Manage Shop Category</DefaultText>
+		<Lang1>Manage Shop Category</Lang1>
+		<Lang2>Manage Shop Category</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Edit Category Group</DefaultText>
+		<Lang1>Edit Category Group</Lang1>
+		<Lang2>Edit Category Group</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>Code</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Name</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Add New Value</DefaultText>
+		<Lang1>Add New Value</Lang1>
+		<Lang2>เพิ่มใหม่</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Edit</DefaultText>
+		<Lang1>Edit</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Delete</DefaultText>
+		<Lang1>Delete</Lang1>
+		<Lang2>ลบ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Do you want to delete</DefaultText>
+		<Lang1>Do you want to delete</Lang1>
+		<Lang2>คุณต้องการลบ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>from system?</DefaultText>
+		<Lang1>from system?</Lang1>
+		<Lang2>ออกจากระบบใช่หรือไม่</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Add New Category Group</DefaultText>
+		<Lang1>Add New Category Group</Lang1>
+		<Lang2>เพิ่มกลุ่มใหม่</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>Category Group Name</DefaultText>
+		<Lang1>Category Group Name</Lang1>
+		<Lang2>ชื่อกลุ่ม</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Back</DefaultText>
+		<Lang1>Back</Lang1>
+		<Lang2>กลับ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Manage Category Group</DefaultText>
+		<Lang1>Manage Category Group</Lang1>
+		<Lang2>Manage Category Group</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9021</FormID>
+		<FormName>inv_shoparea.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText>Shop Link</DefaultText>
+		<Lang1>Shop Link</Lang1>
+		<Lang2>กำหนดร้าน</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Add New Category</DefaultText>
+		<Lang1>Add New Category</Lang1>
+		<Lang2>เพิ่มกลุ่มใหม่</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Update Group</DefaultText>
+		<Lang1>Update Group</Lang1>
+		<Lang2>แก้ไขกลุ่ม</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText>Add New</DefaultText>
+		<Lang1>Add New</Lang1>
+		<Lang2>เพิ่มใหม่</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText>Update</DefaultText>
+		<Lang1>Update</Lang1>
+		<Lang2>บันทึก</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>Cancel</DefaultText>
+		<Lang1>Cancel</Lang1>
+		<Lang2>ยกเลิก</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>6</TextID>
+		<DefaultText>Group Name</DefaultText>
+		<Lang1>Group Name</Lang1>
+		<Lang2>ชื่อกลุ่ม</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>7</TextID>
+		<DefaultText>Add New</DefaultText>
+		<Lang1>Add New </Lang1>
+		<Lang2>เพิ่มใหม่</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>8</TextID>
+		<DefaultText>Update Info</DefaultText>
+		<Lang1>Update Info</Lang1>
+		<Lang2>แก้ไข</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>9</TextID>
+		<DefaultText>Code</DefaultText>
+		<Lang1>Code</Lang1>
+		<Lang2>รหัส</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>10</TextID>
+		<DefaultText>Name</DefaultText>
+		<Lang1>Name</Lang1>
+		<Lang2>ชื่อ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>11</TextID>
+		<DefaultText>----- Select Group -----</DefaultText>
+		<Lang1>----- Select Group -----</Lang1>
+		<Lang2>----- เลือกกลุ่ม -----</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>12</TextID>
+		<DefaultText>Please Input Name</DefaultText>
+		<Lang1>Please Input Name</Lang1>
+		<Lang2>กรุณาเลือกชื่อ</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>13</TextID>
+		<DefaultText>Please Select Group</DefaultText>
+		<Lang1>Please Select Group</Lang1>
+		<Lang2>กรุณาเลือกกลุ่ม</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9022</FormID>
+		<FormName>inv_shoparea_edit.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>14</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>	
+	<Form>
+		<FormID>9023</FormID>
+		<FormName>inv_shoparea_shopsetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>1</TextID>
+		<DefaultText>Shop Selection :</DefaultText>
+		<Lang1>Shop Selection :</Lang1>
+		<Lang2>เลือกร้าน :</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9023</FormID>
+		<FormName>inv_shoparea_shopsetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>2</TextID>
+		<DefaultText>Select All</DefaultText>
+		<Lang1>Select All</Lang1>
+		<Lang2>เลือกทั้งหมด</Lang2>
+	</Form>	
+	<Form>
+		<FormID>9023</FormID>
+		<FormName>inv_shoparea_shopsetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>3</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>	
+	<Form>
+		<FormID>9023</FormID>
+		<FormName>inv_shoparea_shopsetting.aspx</FormName>
+		<TextType>1</TextType>
+		<TextID>4</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
+	</Form>	
 
 	
 	

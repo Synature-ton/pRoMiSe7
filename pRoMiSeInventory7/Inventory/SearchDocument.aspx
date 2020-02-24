@@ -94,6 +94,7 @@
                             <td>
                                 <asp:DropDownList ID="ddlVendor" runat="server" Width="250px">
                                 </asp:DropDownList>
+                                <asp:Button ID="btnSearchVendor" runat="server" Text="..." />
                                 <asp:DropDownList ID="ddlAddReduceDocumentType" runat="server" Width="250px" Style="display: none;">
                                 </asp:DropDownList>
 

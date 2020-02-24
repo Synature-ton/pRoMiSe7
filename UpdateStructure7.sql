@@ -1,3 +1,4 @@
+
 -- 12/07/2013 Flexible Product AmountPerUnit
 ALTER TABLE OrderProductSetLinkDetailFront ADD AmountInFlexiblePerUnit decimal(18,4) NOT NULL DEFAULT '1' After SetGroupNo;
 ALTER TABLE OrderProductLinkDetail ADD AmountInFlexiblePerUnit decimal(18,4) NOT NULL DEFAULT '1' After SetGroupNo;
@@ -546,7 +547,10 @@ ALTER TABLE OrderTransactionDeliveryDetailFront ADD QuoteTime int NOT NULL DEFAU
 ALTER TABLE OrderTransactionDeliveryDetail ADD QuoteTime int NOT NULL DEFAULT '0' After OrderDateTime;
 
 ALTER TABLE SaleMode ADD SaleModeType int NOT NULL DEFAULT '0' After HasServiceCharge;
-
+/*
+Delete From ComputerType Where ComputerTypeID IN (1,2);
+INSERT INTO ComputerType(ComputerTypeID, Description) VALUES (2,'Tablet/ Mobile');
+*/
 -- 09/09/2013 Cancel Bill Transaction Status
 INSERT INTO OrderTransactionStatus(TransactionStatusID, Description) VALUES (16,'Cancel Bill');
 
@@ -580,6 +584,11 @@ Select 1, 1064, ComputerID, 1, '', NULL From ComputerName c LEFT OUTER JOIN Prog
 
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,1064,1, 'Not Show', 0, 0, 1);
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,1064,2, 'Show Tab', 1, 1, 0);
+/*
+-- 16/09/2013 SourceID For Delivery
+ALTER TABLE OrderTransactionDeliveryDetail ADD SourceID tinyint NOT NULL DEFAULT '0' After SaleMode;
+ALTER TABLE OrderTransactionDeliveryDetailFront ADD SourceID tinyint NOT NULL DEFAULT '0' After SaleMode;
+*/
 
 -- 10/09/2013 Change Table Grid From 1064 To 1065
 Update ProgramProperty Set PropertyID = 1065 Where PropertyID = 1064 AND ProgramTypeID = 1;
@@ -872,6 +881,11 @@ CREATE TABLE MemberStatusDescription (
 INSERT INTO MemberStatusDescription(MemberStatus, Description, AllowActivateAtBranch) VALUES(1, 'Normal', 1);
 INSERT INTO MemberStatusDescription(MemberStatus, Description, AllowActivateAtBranch) VALUES(2, 'Blacklist', 0);
 
+/*
+-- RewardHistory
+ALTER TABLE RewardPointHistory ADD ShopCode varchar(20) NULL After ShopID;
+ALTER TABLE RewardPointHistory ADD ShopName varchar(100) NULL After ShopCode;
+*/
 CREATE TABLE SyncDataLogFront (
   SyncID int NOT NULL Auto_Increment,
   ProductLevelID int NOT NULL DEFAULT '0',
@@ -1860,6 +1874,15 @@ INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValu
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,117,1, 'By Transaction Open Time', 0, 0, 1);
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,117,2, 'By Order Submit Date Time', 1, 1, 0);
 
+
+/*
+INSERT INTO FrontFunctionDescription(FrontFunctionID, FrontFunctionGroupID, FrontFunctionCode, Description, Description_TH, DisplayInReport) VALUES(40, 3, 'PCFBILL', 'Print Cancel For Create New FullTax', 'พิมพ์ยกเลิกใบรายการเพื่อออกใบกำกับภาษี', 1);
+
+Update ProgramProperty Set PropertyName = 'Hide service charge option for each transaction',Description = '0 = Show check box option whether calculating service charge or not, 1 = Hide check box option and always calculate service charge' Where ProgramTypeID = 1 AND PropertyID = 66;
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,66,1, 'Show check box whether calculate service charge or not', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,66,2, 'Hide check box and alwasy calculate servicehcarge', 1, 1, 0);
+*/
+
 -- 07/12/2015 Prepaid Product and Payment
 ALTER TABLE PrepaidCardInfo DROP Primary Key, ADD Primary Key(CardID, ProductLevelID);
 ALTER TABLE PrepaidCardInfo CHANGE LastUpdate UpdateDate datetime NULL;
@@ -1889,7 +1912,13 @@ INSERT INTO PrepaidType(PrepaidType, Description) VALUES(2, 'Prepaid Payment');
 INSERT INTO PrepaidType(PrepaidType, Description) VALUES(3, 'Void Topup Prepaid');
 INSERT INTO PrepaidType(PrepaidType, Description) VALUES(4, 'Void Prepaid Payment');
 INSERT INTO PrepaidType(PrepaidType, Description) VALUES(5, 'Manual Adjust');
-
+/*
+CREATE TABLE PrepaidType (
+ PrepaidType tinyint NOT NULL DEFAULT '0',
+ Description varchar(50) NULL,
+ PRIMARY KEY  (PrepaidType)
+) ENGINE=InnoDB;
+*/
 CREATE TABLE ProductPrepaidSetting (
  ProductPrepaidID int NOT NULL DEFAULT '0',
  AddPrepaidAmount decimal(18,4) NOT NULL DEFAULT '0',
@@ -2064,14 +2093,148 @@ INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, Opt
 
 ALTER TABLE DocumentTypeProperty ADD CheckStockWhenApprovePrefinish tinyint NOT NULL DEFAULT '0' NULL AFTER CanReceiveAmountUpToPercent;
 ALTER TABLE KDS_OrderProcessDetail Add Index ShopDateIndex(ShopID, OrderDate);
+/*
+-- 07/12/2015 Prepaid Product and Payment
+ALTER TABLE PrepaidCardInfo DROP Primary Key, ADD Primary Key(CardID, ProductLevelID);
+ALTER TABLE PrepaidCardInfo CHANGE LastUpdate UpdateDate datetime NULL;
 
+ALTER TABLE PrepaidCardHistory CHANGE HistoryID HistoryID varchar(50) NOT NULL DEFAULT '';
+ALTER TABLE PrepaidCardHistory ADD HistoryComputerID int NOT NULL DEFAULT '0' After HistoryID;
+ALTER TABLE PrepaidCardHistory DROP Primary Key, ADD Primary Key(HistoryID, HistoryComputerID);
+
+ALTER TABLE PrepaidCardHistory ADD PrepaidType tinyint NOT NULL DEFAULT '0' After ProductLevelID;
+ALTER TABLE PrepaidCardHistory ADD OrderID int NOT NULL DEFAULT '0' After ComputerID;
+ALTER TABLE PrepaidCardHistory ADD PrepaidDate date NULL After PreviousAmount;
+ALTER TABLE PrepaidCardHistory ADD ReceiptNumber varchar(30) NULL After PrepaidDate;
+ALTER TABLE PrepaidCardHistory ADD MemberID int NOT NULL DEFAULT '0' After ComputerID;
+ALTER TABLE PrepaidCardHistory ADD InsertAtHQDateTime datetime NULL After HistoryDateTime;
+ALTER TABLE PrepaidCardHistory ADD AlreadyExportToHQ tinyint NOT NULL DEFAULT '0' After InsertProductLevelID;
+
+ALTER TABLE PrepaidCardHistory ADD Index CardIndex(CardID, ProductLevelID);
+ALTER TABLE PrepaidCardHistory ADD Index TransactionIndex(TransactionID, ComputerID);
+
+CREATE TABLE PrepaidType (
+ PrepaidType tinyint NOT NULL DEFAULT '0',
+ Description varchar(50) NULL,
+ PRIMARY KEY  (PrepaidType)
+) ENGINE=InnoDB;
+INSERT INTO PrepaidType(PrepaidType, Description) VALUES(1, 'Topup Prepaid');
+INSERT INTO PrepaidType(PrepaidType, Description) VALUES(2, 'Prepaid Payment');
+INSERT INTO PrepaidType(PrepaidType, Description) VALUES(3, 'Void Topup Prepaid');
+INSERT INTO PrepaidType(PrepaidType, Description) VALUES(4, 'Void Prepaid Payment');
+INSERT INTO PrepaidType(PrepaidType, Description) VALUES(5, 'Manual Adjust');
+
+CREATE TABLE PrepaidType (
+ PrepaidType tinyint NOT NULL DEFAULT '0',
+ Description varchar(50) NULL,
+ PRIMARY KEY  (PrepaidType)
+) ENGINE=InnoDB;
+
+CREATE TABLE ProductPrepaidSetting (
+ ProductPrepaidID int NOT NULL DEFAULT '0',
+ AddPrepaidAmount decimal(18,4) NOT NULL DEFAULT '0',
+ ExpireDate date NULL,
+ ExpireDateAfterCreate int NOT NULL DEFAULT '-1',
+ ForMemberOnly tinyint NOT NULL DEFAULT '0',
+ Updatedate datetime NULL,
+ PRIMARY KEY  (ProductPrepaidID)
+) ENGINE=InnoDB;
+
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description, Deleted) VALUES(1, 120, 2, "Prepaid Card Feature", "0=No, 1=Yes", 1);
+INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValue, PropertyTextValue, PropertyDateValue) VALUES (1, 120, 1, 0, '', NULL);
+
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,120,1, 'No', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,120,2, 'Yes', 1, 1, 0);
+
+CREATE TABLE OrderPrepaidTopupInfoFront (
+ TransactionID int NOT NULL DEFAULT '0',
+ ComputerID int NOT NULL DEFAULT '0',
+ OrderDetailID int NOT NULL DEFAULT '0',
+ CardID int NOT NULL DEFAULT '0',
+ CardProductLevelID int NOT NULL DEFAULT '0',
+ CardNo varchar(30) NULL,
+ DepositAmount decimal(18,4) NOT NULL DEFAULT '0',
+ TopupAmount decimal(18,4) NOT NULL DEFAULT '0',
+ SalePrice decimal(18,4) NOT NULL DEFAULT '0', 
+ MemberID int NOT NULL DEFAULT '0',
+ ExpireDate date NULL,
+ PRIMARY KEY (TransactionID, ComputerID, OrderDetailID)
+) ENGINE=InnoDB;
+
+CREATE TABLE OrderPrepaidTopupInfo (
+ TransactionID int NOT NULL DEFAULT '0',
+ ComputerID int NOT NULL DEFAULT '0',
+ OrderDetailID int NOT NULL DEFAULT '0',
+ CardID int NOT NULL DEFAULT '0',
+ CardProductLevelID int NOT NULL DEFAULT '0',
+ CardNo varchar(30) NULL,
+ DepositAmount decimal(18,4) NOT NULL DEFAULT '0',
+ TopupAmount decimal(18,4) NOT NULL DEFAULT '0',
+ SalePrice decimal(18,4) NOT NULL DEFAULT '0', 
+ MemberID int NOT NULL DEFAULT '0',
+ ExpireDate date NULL,
+ PRIMARY KEY (TransactionID, ComputerID, OrderDetailID)
+) ENGINE=InnoDB;
+
+Update PayType Set IsVAT = 0 Where TypeID = 9;
+
+-- 15/12/2015 Display Cash Change In PayType
+ALTER TABLE PayType ADD IsDisplayCashChange tinyint NOT NULL DEFAULT '0' After IsOpenDrawer;
+
+-- 21/12/2015 Link With PMS Hotel System
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description, Deleted) VALUES(1, 121, 2, "PMS Hotel System Feature", "0=No, 1=Yes", 1);
+INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValue, PropertyTextValue, PropertyDateValue) VALUES (1, 121, 1, 0, '', NULL);
+
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,121,1, 'No', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,121,2, 'Yes', 1, 1, 0);
+
+CREATE TABLE PMS_PaymentRoomInfo (
+ TransactionID int NOT NULL DEFAULT '0',
+ ComputerID int NOT NULL DEFAULT '0',
+ ShopID int NOT NULL DEFAULT '0',
+ PaymentAmount decimal(18,4) NOT NULL DEFAULT '0',
+ ReferenceNo varchar(100) NULL,
+ AccountNo varchar(100) NULL,
+ GuestName varchar(100) NULL,
+ RoomNo varchar(100) NULL,
+ UpdateDate datetime NULL,
+ PRIMARY KEY (TransactionID, ComputerID)
+) ENGINE=InnoDB;
+
+INSERT INTO PayType(TypeID, PayType, PayTypeCode, DisplayName, IsAvailable, SetDefault, Deleted, ConvertPayTypeTo, EDCType, IsSale, IsVAT, IsOtherReceipt, PrepaidDiscountPercent, DefaultPayPrice, PayTypeGroupID, IsRequire, IsFixPrice, IsOpenDrawer, MaxNoPayInTransaction, 
+PayTypeFunction, CanEditDeletePaymentInMultiple, NotAllProducts, PayTypeOrdering) 
+VALUES (1120,'Charge To Room','PMS','Charge To Room',1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1120);
+
+CREATE TABLE PMS_MappingCreditCardType (
+ CreditCardType tinyint NOT NULL DEFAULT '0',
+ PMSPayType tinyint NOT NULL DEFAULT '0',
+ PMSPayTypeName varchar(50) NULL,
+ PRIMARY KEY (CreditCardType, PMSPayType)
+) ENGINE=InnoDB;
+INSERT INTO PMS_MappingCreditCardType(CreditCardType, PMSPayType, PMSPayTypeName) VALUES(1, 10, 'Visa');
+INSERT INTO PMS_MappingCreditCardType(CreditCardType, PMSPayType, PMSPayTypeName) VALUES(2, 9, 'Master');
+INSERT INTO PMS_MappingCreditCardType(CreditCardType, PMSPayType, PMSPayTypeName) VALUES(3, 6, 'AMEX');
+INSERT INTO PMS_MappingCreditCardType(CreditCardType, PMSPayType, PMSPayTypeName) VALUES(5, 8, 'JCB');
+*/
 CREATE TABLE PMS_PaymentToPMSSystem (
  PayTypeID int NOT NULL DEFAULT '0',
  PMSPayType int NOT NULL DEFAULT '0',
  PRIMARY KEY (PaytypeID)
 ) ENGINE=InnoDB;
 INSERT INTO PMS_PaymentToPMSSystem(PayTypeID, PMSPayType) VALUES(1,5),(2,0),(1120,0);
+/*
+-- 08/01/2016 Redeem Point For Discount - Applied To Current Transaction
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description, Deleted) VALUES(1, 122, 2, "Redeem Point Discount To Current Transaction Feature", "0=No, 1=Yes", 1);
+INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValue, PropertyTextValue, PropertyDateValue) VALUES (1, 122, 1, 0, '', NULL);
 
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,122,1, 'No', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,122,2, 'Yes', 1, 1, 0);
+
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description) VALUES (1, 1096, 2, "Show cash change popup windows mode", "0=No show cash change when cash change=0(Default), 1=Show cash change always");
+INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValue, PropertyTextValue, PropertyDateValue) VALUES (1, 1096, 1, 0, '', NULL);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,1096,1, 'No', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,1096,2, 'Yes', 1, 1, 0);
+*/
 -- 08/04/2016 - Add field for RewardPointCalculatePointDetail --> SpecialSetting and MemberBirthDay
 ALTER TABLE RewardPointCalculatePointDetail ADD SpecialSettingID int NOT NULL DEFAULT '0' After	RewardSettingID;
 ALTER TABLE RewardPointCalculatePointDetail ADD ForMemberBirthDay date NULL After LevelID;
@@ -3245,17 +3408,17 @@ INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValu
 -- 02/12/2017 - Header/ Footer For QR Code Oishi
 INSERT INTO ReceiptHeaderFooterDescription(LineType, Description, HeaderOrFooter, AutoGen, GlobalConfig, Deleted) VALUES(36,'QR Survey Header',0,1,1,1);
 INSERT INTO ReceiptHeaderFooterDescription(LineType, Description, HeaderOrFooter, AutoGen, GlobalConfig, Deleted) VALUES(37,'QR Survey Footer',1,1,1,1);
-
--- 10/08/2018 พบว่ามีการเปลี่ยนแปลงโครงสร้าง
--- โครงสร้างเก่า
--- CREATE TABLE QRSurvey_ConfigSetting (
--- BrandCode varchar(10) NULL,
--- SurveyDomain varchar(250) NULL,
--- QRType tinyint NOT NULL DEFAULT '0',
--- Description varchar(100) NULL,
--- PRIMARY KEY (BrandCode)
--- ) ENGINE=InnoDB;
-
+/*
+10/08/2018 พบว่ามีการเปลี่ยนแปลงโครงสร้าง
+โครงสร้างเก่า
+CREATE TABLE QRSurvey_ConfigSetting (
+BrandCode varchar(10) NULL,
+SurveyDomain varchar(250) NULL,
+QRType tinyint NOT NULL DEFAULT '0',
+Description varchar(100) NULL,
+PRIMARY KEY (BrandCode)
+) ENGINE=InnoDB;
+*/
 -- ปรับโครงสร้างเก่ากรณีไม่ Drop Table
 ALTER TABLE QRSurvey_ConfigSetting ADD SettingID int NOT NULL DEFAULT '0' first,drop primary key,add primary key(SettingID);
 ALTER TABLE QRSurvey_ConfigSetting drop column QRType;
@@ -3365,14 +3528,14 @@ INSERT INTO EDC_TypeName(EDCTypeID, EDCTypeName) VALUES(10, 'Gift Card MyKitchen
 INSERT INTO EDC_TypeName(EDCTypeID, EDCTypeName) VALUES(11, 'CIMB NINGA - Indo');
 ALTER TABLE EDC_TypeName ADD Deleted tinyint NOT NULL DEFAULT '0';
 Update EDC_TypeName Set Deleted = 1 Where EDCTypeID IN (5,6,7,8,9,10,11);
-
+/*
 -- Patch 610511
 -- 09/04/2018 - Display Shop In Combo In Report By MasterShop
--- INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description) VALUES(2, 20, 1, 'Display Shop In Combo In Report By MasterShop', '1 = Display By MasterShop.');
--- INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValue, PropertyTextValue, PropertyDateValue) VALUES (2, 20, 1, 0, '', NULL);
--- INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (2,20,1, 'No', 0, 0, 1);
--- INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (2,20,2, 'Yes.', 1, 1, 0);
-
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description) VALUES(2, 20, 1, 'Display Shop In Combo In Report By MasterShop', '1 = Display By MasterShop.');
+INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValue, PropertyTextValue, PropertyDateValue) VALUES (2, 20, 1, 0, '', NULL);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (2,20,1, 'No', 0, 0, 1);
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (2,20,2, 'Yes.', 1, 1, 0);
+*/
 -- 23/04/2018 - Manual Select Promotion
 ALTER TABLE PromotionPriceGroup ADD IsManualSelectPromotion tinyint NOT NULL DEFAULT '0' After PrintSignatureInReceipt;
 
@@ -3687,10 +3850,10 @@ Create TABLE ExportInvOnCloud_MappingDocumentType(
  MappingCode varchar(50) NULL,
  PRIMARY KEY(DocumentTypeID)
 ) ENGINE=InnoDB;
-INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(20, 'POS_SA') ;
-INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(21, 'POS_SA_VOID') ;
-INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(60, 'POS_SA') ;
-INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(62, 'POS_SA_VOID') ;
+INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(20, 'SALE_POS') ;
+INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(21, 'SALE_POS_VOID') ;
+INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(60, 'SALE_POS') ;
+INSERT INTO ExportInvOnCloud_MappingDocumentType(DocumentTypeID, MappingCode) VALUES(62, 'SALE_POS_VOID') ;
 
 
 -- 07/01/2019 - Product Cost Table (Same as Material Cost Table)
@@ -3786,6 +3949,8 @@ INSERT INTO ProgramPropertyValue (ProgramTypeID, PropertyID, KeyID, PropertyValu
 
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (3,26,1, 'No.', 0, 0, 1);
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (3,26,2, 'Yes.', 1, 1, 0);
+
+
 -- 11/02/2019 - Print Customize Receipt Form Type : 1 = PDS : SalePrice In Order Include ExcludeVAT/ ServiceCharge
 INSERT INTO PropertyTextDesp(PropertyTypeID, PropertyPosition, PropertyName, Description, PropertyOption, FunctionGroupID, Deleted) VALUES (103,14,'Print Receipt Form (Customize Form)', '0=Normal, 1=PDS - Print Price = Include Exclude/ SC ',0,0,1);
 INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (103,14,1, 'Normal Form', 0, 0, 1);
@@ -3858,9 +4023,7 @@ INSERT INTO DocumentDefaultPriceType(DefaultPriceType, Description) VALUES(2, 'F
 INSERT INTO DocumentDefaultPriceType(DefaultPriceType, Description) VALUES(3, 'From MaterialTransferPrice');
 INSERT INTO DocumentDefaultPriceType(DefaultPriceType, Description) VALUES(4, 'From Average Price');
 INSERT INTO DocumentDefaultPriceType(DefaultPriceType, Description) VALUES(5, 'MaterialDefaultTransferPrice(For TransferWithCost)');
-
-
-INSERT INTO DocumentDefaultPriceType(DefaultPriceType, Description) VALUES(6, 'MaterialDefaultTransferPrice For Each To Inventory'); -- 11/07/2019
+INSERT INTO DocumentDefaultPriceType(DefaultPriceType, Description) VALUES(6, 'MaterialDefaultTransferPrice For Each To Inventory');
 
 -- 22/10/2018 - CrytalReport Form For Inventory
 ALTER TABLE DocumentTypeProperty ADD PrintFormFileName_Lang1 varchar(50) NULL;
@@ -4524,7 +4687,7 @@ CREATE TABLE OrderUpdateDiscountPriceCalculateTemp (
 
 
 -- 27/09/2019 - TotalPrice and VAT For SCDDiscount
-ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPrice decimal(18,4) NOT NULL DEFAULT '0'  After TotalPriceBeforeVAT;
+ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPrice decimal(18,4) NOT NULL DEFAULT '0';
 ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPriceBeforeVAT decimal(18,4) NOT NULL DEFAULT '0'  After DiscountPrice;
 ALTER TABLE SCDDiscount_OrderDetail ADD DiscountPriceVAT decimal(18,4) NOT NULL DEFAULT '0'  After DiscountPriceBeforeVAT;
 
@@ -4579,12 +4742,83 @@ INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(1,725);
 INSERT INTO staffpermission(StaffRoleID,PermissionItemID)VALUES(2,725);
 
 
-
 -- 12/11/2019 - SaleMode Script
 ALTER TABLE Products ADD SaleMode6 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode5;
+ALTER TABLE ProductShopOverWrite ADD SaleMode6 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode5;
 INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(6, '', 1);
+UPDATE products SET salemode6 = 1;
 
--- INSERT INTO zz_historypatch(zz_historypatch) VALUES(CONCAT(Now(),' : Patch6212')); -- 30/07/2019
+ALTER TABLE Products ADD SaleMode7 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode6;
+ALTER TABLE ProductShopOverWrite ADD SaleMode7 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode6;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(7, '', 1);
+UPDATE products SET salemode7 = 1;
+
+ALTER TABLE Products ADD SaleMode8 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode7;
+ALTER TABLE ProductShopOverWrite ADD SaleMode8 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode7;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(8, '', 1);
+UPDATE products SET salemode8 = 1;
+
+ALTER TABLE Products ADD SaleMode9 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode8;
+ALTER TABLE ProductShopOverWrite ADD SaleMode9 TINYINT NOT NULL DEFAULT '0' AFTER SaleMode8;
+INSERT INTO SaleMode(SaleModeID, SaleModeName, Deleted) VALUES(9, '', 1);
+UPDATE products SET salemode9 = 1;
+
+-- 04/12/2019 - PaymentGroup Use Payment Code
+ALTER TABLE PayTypeGroup ADD UsePayTypeCodeForThisGroup tinyint NOT NULL DEFAULT '0';
+
+-- 03/01/2020 - Set Property For Split Order When Add
+Update ProgramProperty Set Description = '0 = Not split(Default), 1 = Split qty by one, 2 = Alway add as new order' Where ProgramTypeID = 1 AND PropertyID = 46;
+INSERT INTO PropertyOption(PropertyTypeID, PropertyID, OptionID, OptionName, OptionValue, OptionOrdering, OptionDefault) VALUES (1,46,2, 'Always Add As New Order', 2, 2, 0);
+
+
+-- Update KDS Data From HQ or Add Data Only (and Set Data From Branch)
+INSERT INTO ProgramProperty (ProgramTypeID,PropertyID,KeyTypeID,PropertyName,Description, Deleted) VALUES(7, 8, 1, 
+'Set KDS Data From Branch', '0 = KDS Data From HQ Always OverWrite Branch data, 1 = Set KDS Data From Branch(Only Add New Data From HQ) ', 0);
+
+-- Update Export Inventory on Cloud
+DELETE FROM exportinvoncloud_configsetting;
+insert into `exportinvoncloud_configsetting` (`ID`, `CSVDelimeterString`, `BrandCode`, `QtyFormat`, `PriceFormat`, `DateFormat`, `DateTimeFormat`, `ExportIncludeHeader`, `DefaultDocumentTypeMappingCode`) values('1',',','002','0.##','0.00##','dd/MM/yyy','ddMMyyyy_HHmmss','1','POS_SA');
+
+DELETE FROM exportinvoncloud_mappingdocumenttype;
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('20','POS_SA');
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('21','POS_SA_VOID');
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('60','POS_SA');
+INSERT INTO `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) VALUES('62','POS_SA_VOID');
+insert into `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) values('115','POS_ENT');
+insert into `exportinvoncloud_mappingdocumenttype` (`DocumentTypeID`, `MappingCode`) values('116','POS_ENT_VOID');
+
+-- 14/02/2020 EDC Type 8 BBL : CreditCard/ 9 BBL : Rabbit
+Update EDC_TypeName Set EDCTypeName = 'EDC BBL : Credit Card' Where EDCTypeID = 8;
+Update EDC_TypeName Set EDCTypeName = 'EDC BBL : Rabbit' Where EDCTypeID = 9;
+ALTER TABLE EDC_PaymentInfo ADD Rabbit_ReaderID varchar(30) NULL;
+ALTER TABLE EDC_PaymentInfo ADD Rabbit_Trace varchar(10) NULL;
+ALTER TABLE EDC_PaymentInfo ADD Rabbit_BalanceAmount varchar(20) NULL;
+
+ALTER TABLE EDC_VoidTransaction ADD PayDetailID int NOT NULL DEFAULT '0' After ComputerID;
+ALTER TABLE EDC_VoidTransaction DROP Primary Key, ADD Primary Key(TransactionID, ComputerID, PayDetailID, ShopID);
+
+INSERT INTO PayType(TypeID, PayType, PayTypeCode, DisplayName, IsAvailable, SetDefault, Deleted, ConvertPayTypeTo, EDCType, IsSale, IsVAT, IsOtherReceipt, PrepaidDiscountPercent, DefaultPayPrice, PayTypeGroupID, IsRequire, IsFixPrice, IsOpenDrawer, MaxNoPayInTransaction, 
+PayTypeFunction, CanEditDeletePaymentInMultiple, NotAllProducts, PayTypeOrdering) 
+VALUES (1152,'EDC BBL','EDCBBL','EDC BBL',1,0,1,2,8,1,1,0,0,0,0,0,0,0,0,0,0,0,1152);
+
+INSERT INTO PayType(TypeID, PayType, PayTypeCode, DisplayName, IsAvailable, SetDefault, Deleted, ConvertPayTypeTo, EDCType, IsSale, IsVAT, IsOtherReceipt, PrepaidDiscountPercent, DefaultPayPrice, PayTypeGroupID, IsRequire, IsFixPrice, IsOpenDrawer, MaxNoPayInTransaction, 
+PayTypeFunction, CanEditDeletePaymentInMultiple, NotAllProducts, PayTypeOrdering) 
+VALUES (1153,'Rabbit LinePay','Rabbit','Rabbit - LinePay',1,0,1,0,9,1,1,0,0,0,0,0,0,0,0,0,0,0,1153);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -840,7 +840,7 @@
 		<Lang1>Table is not found.</Lang1>
 		<Lang2>ไม่พบโต๊ะตัวนี้ิ์</Lang2>
 	</Form>
-	<Form> <!--insert date 12/07/19 Patch6207-->
+	<Form>
 		<FormID>1</FormID>
 		<TextID>121</TextID>
 		<DefaultText>เนื่องจากใบเสร็จนี้มีการแยกใบเสร็จกัน โปรแกรมไม่อนุญาตให้เลือกโต๊ะนี้ได้</DefaultText>
@@ -853,6 +853,20 @@
 		<DefaultText>ยังมีรายการที่ไม่ได้ยืนยันการสั่งเหลืออยู่ โปรแกรมไม่อนุญาตให้ทำการปิดใบเสร็จนี้ได้</DefaultText>
 		<Lang1>Due to unconfirm order, program can not allow to close this bill.</Lang1>
 		<Lang2>ยังมีรายการที่ไม่ได้ยืนยันการสั่งเหลืออยู่ โปรแกรมไม่อนุญาตให้ทำการปิดใบเสร็จนี้ได้</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>123</TextID>
+		<DefaultText>ไม่อนุญาตให้พิมพ์ใบเสร็จเพราะไม่ได้ใส่พนักงานผู้ขอ</DefaultText>
+		<Lang1>Can not print receipt because you do not input request bill staff.</Lang1>
+		<Lang2>ไม่อนุญาตให้พิมพ์ใบเสร็จเพราะไม่ได้ใส่พนักงานผู้ขอ</Lang2>
+	</Form>
+	<Form>
+		<FormID>1</FormID>
+		<TextID>124</TextID>
+		<DefaultText>กรุณาใส่ชื่อพนักงานผู้ขอใบเสร็จ</DefaultText>
+		<Lang1>Please input request bill staff.</Lang1>
+		<Lang2>กรุณาใส่ชื่อพนักงานผู้ขอใบเสร็จ</Lang2>
 	</Form>
 	<Form/>
 	<Form>
@@ -1073,14 +1087,14 @@
 		<Lang2>&lt; ย้าย</Lang2>
 	</Form>
 	<Form>
-		<FormID>2</FormID><!--insert date 30/05/19-->
+		<FormID>2</FormID>
 		<TextID>32</TextID>
 		<DefaultText>ไม่อนุญาตให้ย้าย</DefaultText>
 		<Lang1>Can not allow to move</Lang1>
 		<Lang2>ไม่อนุญาตให้ย้าย</Lang2>
 	</Form>
 	<Form>
-		<FormID>2</FormID><!--insert date 30/05/19-->
+		<FormID>2</FormID>
 		<TextID>33</TextID>
 		<DefaultText>ไปร่วมกับ</DefaultText>
 		<Lang1>together with</Lang1>
@@ -1544,14 +1558,14 @@
 		<Lang2>รายการที่ต้องการแก้ไขเป็นรายการที่ซื้อ voucher โปรแกรมไม่อนุญาตให้มีการแก้ไขจำนวน</Lang2>
 	</Form>	
 	<Form>
-		<FormID>5</FormID><!--insert date 30/05/19-->
+		<FormID>5</FormID>
 		<TextID>55</TextID>
 		<DefaultText>ไม่อนุญาตให้สั่ง</DefaultText>
 		<Lang1>Can not allow to order</Lang1>
 		<Lang2>ไม่อนุญาตให้สั่ง</Lang2>
 	</Form>	
 	<Form>
-		<FormID>5</FormID><!--insert date 30/05/19-->
+		<FormID>5</FormID>
 		<TextID>56</TextID>
 		<DefaultText>ร่วมกับ</DefaultText>
 		<Lang1>together with</Lang1>
@@ -2858,7 +2872,7 @@
 		<Lang1>No to back to add bonus product</Lang1>
 		<Lang2>กด No ถ้าต้องการกลับไปเพิ่มสินค้า</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>11</FormID>
 		<TextID>26</TextID>
 		<DefaultText>โปรแกรมไม่รองรับการเพิ่มสินค้าแลก/แถมของสินค้าประเภทนี้</DefaultText>
@@ -3443,7 +3457,7 @@
 		<Lang1>Exempt Tax</Lang1>
 		<Lang2>Exempt VAT</Lang2>
 	</Form>
-	<Form>	<!--insert date 19/09/19-->
+	<Form>
 		<FormID>14</FormID>
 		<TextID>36</TextID>
 		<DefaultText>Member's Promotion Set</DefaultText>
@@ -3619,7 +3633,7 @@
 		<Lang1>Edit Order For Discount</Lang1>
 		<Lang2>แก้ไขรายการที่ลด</Lang2>
 	</Form>
-	<Form>	<!--insert date 19/09/19-->
+	<Form>
 		<FormID>15</FormID>
 		<TextID>25</TextID>
 		<DefaultText>Promotion Set</DefaultText>
@@ -4428,14 +4442,14 @@
 	<Lang1>Cancan Payment Gateway does not allow to void this payment.</Lang1>
 	<Lang2>Cancan Payment Gateway ไม่อนุญาตให้ทำการยกเลิกการจ่ายเงิน</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>18</FormID>
 	<TextID>63</TextID>
 	<DefaultText>Print Bill</DefaultText>
 	<Lang1>Print Bill</Lang1>
 	<Lang2>Print Bill</Lang2>
 </Form>
-	<Form>
+<Form>
 	<FormID>18</FormID>
 	<TextID>64</TextID>
 	<DefaultText>มีการชำระเงินประเภทอื่นอยู่ กรุณาทำการลบการชำระเงินประเภทอื่นก่อน</DefaultText>
@@ -4848,6 +4862,48 @@
 		<DefaultText>หมายเหตุ/ เลขที่อ้างอิง :</DefaultText>
 		<Lang1>Note/ Ref. Number :</Lang1>
 		<Lang2>หมายเหตุ/ เลขที่อ้างอิง :</Lang2>
+	</Form>	
+	<Form>
+		<FormID>21</FormID>
+		<TextID>20</TextID>
+		<DefaultText>รหัสการจ่ายเงิน</DefaultText>
+		<Lang1>Payment Code</Lang1>
+		<Lang2>รหัสการจ่ายเงิน</Lang2>
+	</Form>	
+	<Form>
+		<FormID>21</FormID>
+		<TextID>21</TextID>
+		<DefaultText>กรุณาใส่รหัสการจ่ายเงิน</DefaultText>
+		<Lang1>Please input payment code</Lang1>
+		<Lang2>กรุณาใส่รหัสการจ่ายเงิน</Lang2>
+	</Form>	
+	<Form>
+		<FormID>21</FormID>
+		<TextID>22</TextID>
+		<DefaultText>รหัสสำหรับการจ่ายเงิน</DefaultText>
+		<Lang1>Payment From Payment Code</Lang1>
+		<Lang2>รหัสสำหรับการจ่ายเงิน</Lang2>
+	</Form>	
+	<Form>
+		<FormID>21</FormID>
+		<TextID>23</TextID>
+		<DefaultText>กรุณาใส่รหัสการจ่ายเงิน</DefaultText>
+		<Lang1>Please input payment code</Lang1>
+		<Lang2>กรุณาใส่รหัสการจ่ายเงิน</Lang2>
+	</Form>	
+	<Form>
+		<FormID>21</FormID>
+		<TextID>24</TextID>
+		<DefaultText>ไม่พบการจ่ายเงินที่ใช้รหัสนี้</DefaultText>
+		<Lang1>Payment use this code is not found.</Lang1>
+		<Lang2>ไม่พบการจ่ายเงินที่ใช้รหัสนี้</Lang2>
+	</Form>	
+	<Form>
+		<FormID>21</FormID>
+		<TextID>25</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>
 	</Form>	
 	<Form/>
 	<Form/>
@@ -5511,7 +5567,56 @@
 	<Lang1>Exempt Tax</Lang1>
 	<Lang2>Exempt VAT</Lang2>
  </Form>
-  <Form/>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>76</TextID>
+	<DefaultText> ทำการยกเลิกการจ่ายเงินผ่าน EDC สำเร็จ</DefaultText>
+	<Lang1>Void receipt via EDC success.</Lang1>
+	<Lang2> ทำการยกเลิกการจ่ายเงินผ่าน EDC สำเร็จ</Lang2>
+ </Form>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>77</TextID>
+	<DefaultText>(สามารถคืนเงินเข้าบัญชีลูกค้าได้สำเร็จ)</DefaultText>
+	<Lang1>(can return cash to customer account)</Lang1>
+	<Lang2>(สามารถคืนเงินเข้าบัญชีลูกค้าได้สำเร็จ)</Lang2>
+ </Form>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>78</TextID>
+	<DefaultText> คืนเงินสดของร้านให้กับลูกค้า</DefaultText>
+	<Lang1>Refund cash to customer</Lang1>
+	<Lang2> คืนเงินสดของร้านให้กับลูกค้า</Lang2>
+ </Form>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>79</TextID>
+	<DefaultText>เนื่องจากไม่สามารถยกเลิกการจ่ายเงินผ่านเครื่อง EDC ได้</DefaultText>
+	<Lang1>due to can not void payment via EDC</Lang1>
+	<Lang2>เนื่องจากไม่สามารถยกเลิกการจ่ายเงินผ่านเครื่อง EDC ได้</Lang2>
+ </Form>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>80</TextID>
+	<DefaultText>การยกเลิกใบเสร็จที่จ่ายเงินด้วย Ali Pay/ WeChat Pay</DefaultText>
+	<Lang1>Void receipt (Pay by Ali Pay/ WeChat Pay)</Lang1>
+	<Lang2>การยกเลิกใบเสร็จที่จ่ายเงินด้วย Ali Pay/ WeChat Pay</Lang2>
+ </Form>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>81</TextID>
+	<DefaultText>เลือกวิธีการยกเลิก</DefaultText>
+	<Lang1>Select Void Option</Lang1>
+	<Lang2>เลือกวิธีการยกเลิก</Lang2>
+ </Form>
+ <Form>
+	<FormID>23</FormID>
+	<TextID>82</TextID>
+	<DefaultText>ยกเลิก</DefaultText>
+	<Lang1>Cancel</Lang1>
+	<Lang2>ยกเลิก</Lang2>
+ </Form>
+ <Form/>
 	<Form/>
 	<Form>
 		<FormID>24</FormID>
@@ -6428,21 +6533,21 @@
 		<Lang1>POS :</Lang1>
 		<Lang2>POS :</Lang2>
 	</Form>
-	<Form>  <!--VAT TYPE No VAT--> <!--	VAT TYPE Display in bill -->
+	<Form><!-- VAT TYPE Display in bill -->
 		<FormID>24</FormID>
 		<TextID>132</TextID>
 		<DefaultText>N</DefaultText>
 		<Lang1>N</Lang1>
 		<Lang2>N</Lang2>
 	</Form>
-	<Form>  <!--VAT TYPE Inc VAT-->
+	<Form>
 		<FormID>24</FormID>
 		<TextID>133</TextID>
 		<DefaultText>I</DefaultText>
 		<Lang1> </Lang1>
 		<Lang2> </Lang2>
 	</Form>
-	<Form>  <!--VAT TYPE Exc VAT-->
+	<Form>
 		<FormID>24</FormID>
 		<TextID>134</TextID>
 		<DefaultText>E</DefaultText>
@@ -6714,7 +6819,7 @@
 		<DefaultText>Current Prepaid Amount</DefaultText>
 		<Lang1>Current Prepaid Amount</Lang1>
 		<Lang2>Current Prepaid Amount</Lang2>
-	</Form>	
+	</Form>
 	<Form>
 		<FormID>24</FormID>
 		<TextID>173</TextID>
@@ -6722,7 +6827,7 @@
 		<Lang1>RC :</Lang1>
 		<Lang2>RC :</Lang2>
 	</Form>
-	<Form>  <!--Insert 22/10/18-->
+	<Form>
 		<FormID>24</FormID>
 		<TextID>174</TextID>
 		<DefaultText>Cash Card No.</DefaultText>
@@ -6772,18 +6877,25 @@
 		<Lang2>Total Balance</Lang2>
 	</Form>
 	<Form>
-		<FormID>24</FormID><!--insert date 30/05/19-->
+		<FormID>24</FormID>
 		<TextID>181</TextID>
 		<DefaultText>เติมเงินจากใบเสร็จ :</DefaultText>
 		<Lang1>Topup Receipt :</Lang1>
 		<Lang2>เติมเงินจากใบเสร็จ :</Lang2>
 	</Form>
-	<Form> <!--insert date 12/07/19 Patch6207-->
+	<Form>
 		<FormID>24</FormID>
 		<TextID>182</TextID>
 		<DefaultText>Bonus Amount</DefaultText>
 		<Lang1>Bonus Amount</Lang1>
 		<Lang2>Bonus Amount</Lang2>
+	</Form>
+	<Form>
+		<FormID>24</FormID>
+		<TextID>183</TextID>
+		<DefaultText>Request By</DefaultText>
+		<Lang1>Request By</Lang1>
+		<Lang2>ขอโดย</Lang2>
 	</Form>
 	<Form>
 		<FormID>25</FormID>
@@ -7092,6 +7204,13 @@
 		<DefaultText>Ref.</DefaultText>
 		<Lang1>Ref.</Lang1>
 		<Lang2>Ref.</Lang2>
+	</Form>
+	<Form>
+		<FormID>25</FormID>
+		<TextID>45</TextID>
+		<DefaultText>Input By</DefaultText>
+		<Lang1>Input By</Lang1>
+		<Lang2>คีย์รายการโดย</Lang2>
 	</Form>
 	<Form/>
 	<Form>
@@ -8313,47 +8432,61 @@
 		<Lang1>Total Cash To Transfer</Lang1>
 		<Lang2>สรุปจำนวนเงินสดที่ต้องโอน</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>27</FormID>
 		<TextID>155</TextID>
 		<DefaultText>Deposit Cash</DefaultText>
 		<Lang1>Deposit Cash</Lang1>
 		<Lang2>Deposit Cash</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>27</FormID>
 		<TextID>156</TextID>
 		<DefaultText>Deposit Cash</DefaultText>
 		<Lang1>Deposit Cash</Lang1>
 		<Lang2>Deposit Cash</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>27</FormID>
 		<TextID>157</TextID>
 		<DefaultText>Total Deposit Cash</DefaultText>
 		<Lang1>Total Deposit Cash</Lang1>
 		<Lang2>Total Deposit Cash</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>27</FormID>
 		<TextID>158</TextID>
 		<DefaultText>Deposit Cash ทั้งหมดของวันนี้</DefaultText>
 		<Lang1>Total Deposit Cash</Lang1>
 		<Lang2>Deposit Cash ทั้งหมดของวันนี้</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>27</FormID>
 		<TextID>159</TextID>
 		<DefaultText>สรุปยอดการขายประจำวัน</DefaultText>
 		<Lang1>สรุปยอดการขายประจำวัน</Lang1>
 		<Lang2>สรุปยอดการขายประจำวัน</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>27</FormID>
 		<TextID>160</TextID>
 		<DefaultText>End Day Sale</DefaultText>
 		<Lang1>End Day Sale</Lang1>
 		<Lang2>End Day Sale</Lang2>
+	</Form>
+	<Form>
+		<FormID>27</FormID>
+		<TextID>161</TextID>
+		<DefaultText>Refund Cash From Void QR Payment</DefaultText>
+		<Lang1>Refund Cash From Void QR Payment</Lang1>
+		<Lang2>คืนเงินสดจาก Void QR Payment</Lang2>
+	</Form>
+	<Form>
+		<FormID>27</FormID>
+		<TextID>162</TextID>
+		<DefaultText>สรุป</DefaultText>
+		<Lang1>Summary</Lang1>
+		<Lang2>สรุป</Lang2>
 	</Form>
 	<Form/>
 	<Form>
@@ -8503,7 +8636,7 @@
 		<Lang1>Non Sale Only</Lang1>
 		<Lang2>Non Sale Only</Lang2>
 	</Form>
-	<Form>  <!--insert date 22/10/18-->
+	<Form>
 		<FormID>28</FormID>
 		<TextID>22</TextID>
 		<DefaultText>Display Specific PayType</DefaultText>
@@ -9988,6 +10121,13 @@
 		<DefaultText>Prepaid</DefaultText>
 		<Lang1>Prepaid</Lang1>
 		<Lang2>Prepaid</Lang2>
+	</Form>
+	<Form>
+		<FormID>36</FormID>
+		<TextID>87</TextID>
+		<DefaultText>ผู้ขอ</DefaultText>
+		<Lang1>Request From</Lang1>
+		<Lang2>ผู้ขอ</Lang2>
 	</Form>
 	<Form>
 		<FormID>36</FormID>
@@ -13217,63 +13357,63 @@
 		<Lang2>พิมพ์ใบกำกับภาษี ฟอร์มย่อ ครึ่ง A4</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>98</TextID>
 		<DefaultText>โปรแกรมอนุญาตให้ออกใบกำกับภาษีสำหรับใบเสร็จที่ขายในวันปัจจุบันเท่านั้น</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>โปรแกรมอนุญาตให้ออกใบกำกับภาษีสำหรับใบเสร็จที่ขายในวันปัจจุบันเท่านั้น</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>99</TextID>
 		<DefaultText>ไม่อนุญาตให้ทำการออกใบกำกับภาษีนี้เนื่องจากระบบอนุญาตให้ออกใบกำกับภาษีที่วันที่ขายไม่เกิน </DefaultText>
 		<Lang1></Lang1>
 		<Lang2>ไม่อนุญาตให้ทำการออกใบกำกับภาษีนี้เนื่องจากระบบอนุญาตให้ออกใบกำกับภาษีที่วันที่ขายไม่เกิน </Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>100</TextID>
 		<DefaultText>วันเท่านั้น</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>วันเท่านั้น</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>101</TextID>
 		<DefaultText>ไม่อนุญาตให้ออกใบกำกับภาษี</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>ไม่อนุญาตให้ออกใบกำกับภาษี</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>102</TextID>
 		<DefaultText>คุณกำลังจะทำการออกใบกำกับภาษีย้อนหลัง ซึ่งอนุญาตให้แต่ผู้มีสิทธิ์เท่านั้น</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>คุณกำลังจะทำการออกใบกำกับภาษีย้อนหลัง ซึ่งอนุญาตให้แต่ผู้มีสิทธิ์เท่านั้น</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>103</TextID>
 		<DefaultText>กรอกรหัสเพื่อทำการออกใบกำกับภาษีย้อนหลัง</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>กรอกรหัสเพื่อทำการออกใบกำกับภาษีย้อนหลัง</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>104</TextID>
 		<DefaultText>ไม่สามารถออกใบกำกับภาษีย้อนหลังได้เพราะท่านไม่มีอำนาจในการออกใบกำกับภาษี</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>ไม่สามารถออกใบกำกับภาษีย้อนหลังได้เพราะท่านไม่มีอำนาจในการออกใบกำกับภาษี</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>105</TextID>
 		<DefaultText>ไม่อนุญาตให้ออกใบกำกับภาษีย้อนหลัง</DefaultText>
 		<Lang1></Lang1>
 		<Lang2>ไม่อนุญาตให้ออกใบกำกับภาษีย้อนหลัง</Lang2>
 	</Form>
 	<Form>
-		<FormID>47</FormID><!--insert date 30/05/19 ยังไม่มี lang1-->
+		<FormID>47</FormID>
 		<TextID>106</TextID>
 		<DefaultText>ออกใบกำกับภาษีย้อนหลัง</DefaultText>
 		<Lang1></Lang1>
@@ -16163,77 +16303,77 @@
 	<Lang1>Please select QR type.</Lang1>
 	<Lang2>กรุณาเลือกธนาคารของ QR ที่ชำระ</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>175</TextID>
 	<DefaultText>PTT Wallet</DefaultText>
 	<Lang1>PTT Wallet</Lang1>
 	<Lang2>PTT Wallet</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>176</TextID>
 	<DefaultText>จำนวนเงินที่ต้องการชำระ</DefaultText>
 	<Lang1>Payment amount</Lang1>
 	<Lang2>จำนวนเงินที่ต้องการชำระ</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>177</TextID>
 	<DefaultText>จ่าย wallet</DefaultText>
 	<Lang1>Pay by Wallet</Lang1>
 	<Lang2>จ่าย wallet</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>178</TextID>
 	<DefaultText>ทำการสแกน QR Code เพื่อทำการจ่ายด้วย Wallet</DefaultText>
 	<Lang1>Please scan QR code for wallet payment</Lang1>
 	<Lang2>ทำการสแกน QR Code เพื่อทำการจ่ายด้วย Wallet</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>179</TextID>
 	<DefaultText>จ่ายเงินด้วย PTT Wallet</DefaultText>
 	<Lang1>Pay by PTT Wallet</Lang1>
 	<Lang2>จ่ายเงินด้วย PTT Wallet</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>180</TextID>
 	<DefaultText>กรุณาทำการจ่ายเงินด้วย PTT Wallet ก่อน</DefaultText>
 	<Lang1>Please pay with PTT Wallet first.</Lang1>
 	<Lang2>กรุณาทำการจ่ายเงินด้วย PTT Wallet ก่อน</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>181</TextID>
 	<DefaultText>กรุณา scan QR เพื่อทำการจ่ายเงินด้วย Wallet ก่อน</DefaultText>
 	<Lang1>Please scan QR for payment by wallet first</Lang1>
 	<Lang2>กรุณา scan QR เพื่อทำการจ่ายเงินด้วย Wallet ก่อน</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>182</TextID>
 	<DefaultText>*กรุณากดปุ่มลบการจ่ายเงิน หากต้องการเปลี่ยนประเภทการชำระเงิน</DefaultText>
 	<Lang1>* Please click delete payment if you want to change payment type.</Lang1>
 	<Lang2>*กรุณากดปุ่มลบการจ่ายเงิน หากต้องการเปลี่ยนประเภทการชำระเงิน</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>183</TextID>
 	<DefaultText>ทำการสแกน QR Code เพื่อตรวจสอบสิทธิ์ในการใช้โปรโมชั่น</DefaultText>
 	<Lang1>Please scan QR code for redeem.</Lang1>
 	<Lang2>ทำการสแกน QR Code เพื่อตรวจสอบสิทธิ์ในการใช้โปรโมชั่น</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>184</TextID>
 	<DefaultText>ตรวจสอบโปรโมชั่นจาก PTT Wallet</DefaultText>
 	<Lang1>Check promotion from PTT Wallet</Lang1>
 	<Lang2>ตรวจสอบโปรโมชั่นจาก PTT Wallet</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>185</TextID>
 	<DefaultText>กรุณา scan QR ก่อน</DefaultText>
@@ -16247,7 +16387,7 @@
 	<Lang1>Invalid QR Code. Please scan QR code again.</Lang1>
 	<Lang2>QR Code ไม่ถูกต้อง กรุณา scan QR ใหม่</Lang2>
 </Form>
-<Form> 	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>62</FormID>
 	<TextID>187</TextID>
 	<DefaultText>QR Code ไม่ตรงกับ โปรโมชั่น รบกวนตรวจสอบอีกครั้ง</DefaultText>
@@ -17033,41 +17173,41 @@
 	<Lang2>ไม่สามารถติดต่อไปยัง database AR ของ Comanche กรุณาตรวจสอบอีกครั้ง</Lang2>
 </Form>
 <Form>
-	<FormID>67</FormID><!--insert date 30/05/19-->
+	<FormID>67</FormID>
 	<TextID>41</TextID>
 	<DefaultText>Export Usage Stock เป็น Text File</DefaultText>
 	<Lang1>Export Usage Stock To Text File</Lang1>
 	<Lang2>Export Usage Stock เป็น Text File</Lang2>
 </Form>
 <Form>
-	<FormID>67</FormID><!--insert date 30/05/19-->
+	<FormID>67</FormID>
 	<TextID>42</TextID>
 	<DefaultText>วันที่ขาย</DefaultText>
 	<Lang1>Sale Date</Lang1>
 	<Lang2>วันที่ขาย</Lang2>
 </Form>
 <Form>
-	<FormID>67</FormID><!--insert date 30/05/19-->
+	<FormID>67</FormID>
 	<TextID>43</TextID>
 	<DefaultText>ทำการ export ข้อมูลเรียบร้อย</DefaultText>
 	<Lang1>Export usage stock to text file finish.</Lang1>
 	<Lang2>ทำการ export ข้อมูลเรียบร้อย</Lang2>
 </Form>
 <Form>
-	<FormID>67</FormID><!--insert date 30/05/19-->
+	<FormID>67</FormID>
 	<TextID>44</TextID>
 	<DefaultText>Export Data Success</DefaultText>
 	<Lang1>Export Data Success</Lang1>
 	<Lang2>Export Data Success</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>67</FormID>
 	<TextID>45</TextID>
 	<DefaultText>Search Not Found.</DefaultText>
 	<Lang1>Search Not Found</Lang1>
 	<Lang2>ไม่พบข้อมูลที่ค้นหา</Lang2>
 </Form>
-<Form>	<!--insert date 30/05/19-->
+<Form>
 	<FormID>68</FormID>
 	<TextID>1</TextID>
 	<DefaultText>Submit</DefaultText>
@@ -17606,34 +17746,36 @@
 	<Lang1></Lang1>
 	<Lang2></Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>71</FormID>
 	<TextID>1</TextID>
 	<DefaultText>ไม่พบการตั้งค่าการร้านหรือเครื่องกับระบบ AOT กรุณาตั้งค่าก่อน</DefaultText>
 	<Lang1>There is no shop/ computer config setting for link to AOT system. Please set config first.</Lang1>
 	<Lang2>ไม่พบการตั้งค่าการร้านหรือเครื่องกับระบบ AOT กรุณาตั้งค่าก่อน</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>71</FormID>
 	<TextID>2</TextID>
 	<DefaultText>ผิดพลาด</DefaultText>
 	<Lang1>Error</Lang1>
 	<Lang2>ผิดพลาด</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>71</FormID>
 	<TextID>3</TextID>
 	<DefaultText>ไม่อนุญาตให้ทำการจ่ายเงินใบเสร็จนี้ได้เนื่องจากไม่สามารถขอค่า RCCode จากทาง AOT ได้</DefaultText>
 	<Lang1>Can not close transaction because it can not request RCCode from AOT.</Lang1>
 	<Lang2>ไม่อนุญาตให้ทำการจ่ายเงินใบเสร็จได้เนื่องจากไม่สามารถขอค่า RCCode จากทาง AOT ได้</Lang2>
 </Form>
-<Form>  <!--insert date 22/10/18-->
+<Form>
 	<FormID>71</FormID>
 	<TextID>4</TextID>
 	<DefaultText>ไม่อนุญาตยกเลิกใบเสร็จนี้ได้เนื่องจากไม่สามารถขอค่า RCCode จากทาง AOT ได้</DefaultText>
 	<Lang1>Can not void transaction because it can not request RCCode from AOT.</Lang1>
 	<Lang2>ไม่อนุญาตยกเลิกใบเสร็จนี้ได้เนื่องจากไม่สามารถขอค่า RCCode จากทาง AOT ได้</Lang2>
 </Form>
+
+
 <Form>
 	<FormID>72</FormID>
 	<TextID>1</TextID>
@@ -18126,594 +18268,594 @@
 	<Lang2>Export Data Success</Lang2>
 </Form>
 <Form>
-	<FormID>75</FormID><!--insert date 30/05/19-->
+	<FormID>75</FormID>
 	<TextID>1</TextID>
 	<DefaultText>กรุณาเลือกการ Export ข้อมูล</DefaultText>
 	<Lang1>Please select export data.</Lang1>
 	<Lang2>กรุณาเลือกการ Export ข้อมูล</Lang2>
 </Form>
 <Form>
-	<FormID>75</FormID><!--insert date 30/05/19-->
+	<FormID>75</FormID>
 	<TextID>2</TextID>
 	<DefaultText>Usage Stock</DefaultText>
 	<Lang1>Usage Stock</Lang1>
 	<Lang2>Usage Stock</Lang2>
 </Form>
 <Form>
-	<FormID>75</FormID><!--insert date 30/05/19-->
+	<FormID>75</FormID>
 	<TextID>3</TextID>
 	<DefaultText>Sale To Text File</DefaultText>
 	<Lang1>Sale To Text File</Lang1>
 	<Lang2>Sale To Text File</Lang2>
 </Form>
 <Form>
-	<FormID>75</FormID><!--insert date 30/05/19-->
+	<FormID>75</FormID>
 	<TextID>4</TextID>
 	<DefaultText>ยกเลิก</DefaultText>
 	<Lang1>Cancel</Lang1>
 	<Lang2>ยกเลิก</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>1</TextID>
 	<DefaultText>เลขที่ใบเสร็จ</DefaultText>
 	<Lang1>Receipt Number</Lang1>
 	<Lang2>เลขที่ใบเสร็จ</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>2</TextID>
 	<DefaultText>วันที่เติมเงิน</DefaultText>
 	<Lang1>Top up Date</Lang1>
 	<Lang2>วันที่เติมเงิน</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>3</TextID>
 	<DefaultText>จำนวนเงินที่เติม</DefaultText>
 	<Lang1>Top up Amount</Lang1>
 	<Lang2>จำนวนเงินที่เติม</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>4</TextID>
 	<DefaultText>เลือกใบเสร็จ</DefaultText>
 	<Lang1>Select</Lang1>
 	<Lang2>เลือกใบเสร็จ</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>5</TextID>
 	<DefaultText>ยกเลิก</DefaultText>
 	<Lang1>Cancel</Lang1>
 	<Lang2>ยกเลิก</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>6</TextID>
 	<DefaultText>เลือกใบเสร็จจากการเติมเงิน</DefaultText>
 	<Lang1>Select Top up Receipt Number.</Lang1>
 	<Lang2>เลือกใบเสร็จจากการเติมเงิน</Lang2>
 </Form>
 <Form>
-	<FormID>76</FormID><!--insert date 30/05/19-->
+	<FormID>76</FormID>
 	<TextID>7</TextID>
 	<DefaultText></DefaultText>
 	<Lang1></Lang1>
 	<Lang2></Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>1</TextID>
 	<DefaultText>รายละเอียด Prepaid</DefaultText>
 	<Lang1>Prepaid Information</Lang1>
 	<Lang2>รายละเอียด Prepaid</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>2</TextID>
 	<DefaultText>เลือกใบเสร็จ Topup</DefaultText>
 	<Lang1>Select Topup Receipt</Lang1>
 	<Lang2>เลือกใบเสร็จ Topup</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>3</TextID>
 	<DefaultText>เลขที่ใบเสร็จ</DefaultText>
 	<Lang1>ReceiptNo.</Lang1>
 	<Lang2>เลขที่ใบเสร็จ</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>4</TextID>
 	<DefaultText>จำนวนเงินเติม</DefaultText>
 	<Lang1>Topup Amount</Lang1>
 	<Lang2>จำนวนเงินเติม</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>5</TextID>
 	<DefaultText>วันที่เติม</DefaultText>
 	<Lang1>Topup Date</Lang1>
 	<Lang2>วันที่เติม</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>6</TextID>
 	<DefaultText>คืนเงินจากการเติมเงิน</DefaultText>
 	<Lang1>Refund from Topup</Lang1>
 	<Lang2>คืนเงินจากการเติมเงิน</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>7</TextID>
 	<DefaultText>เลขที่ใบเสร็จ :</DefaultText>
 	<Lang1>Receipt No. :</Lang1>
 	<Lang2>เลขที่ใบเสร็จ :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>8</TextID>
 	<DefaultText>วันที่เติมเงิน :</DefaultText>
 	<Lang1>Topup Date :</Lang1>
 	<Lang2>วันที่เติมเงิน :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>9</TextID>
 	<DefaultText>จำนวนเงินเติม :</DefaultText>
 	<Lang1>Topup Amount :</Lang1>
 	<Lang2>จำนวนเงินเติม :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>10</TextID>
 	<DefaultText>จำนวนที่คืนไปแล้ว :</DefaultText>
 	<Lang1>Already Refund Amount :</Lang1>
 	<Lang2>จำนวนที่คืนไปแล้ว :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>11</TextID>
 	<DefaultText>Refund Amount :</DefaultText>
 	<Lang1>Refund Amount :</Lang1>
 	<Lang2>Refund Amount :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>12</TextID>
 	<DefaultText>หมายเหตุ :</DefaultText>
 	<Lang1>Note :</Lang1>
 	<Lang2>หมายเหตุ :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>13</TextID>
 	<DefaultText>จำนวนเงินหลังคืนเงิน</DefaultText>
 	<Lang1>Prepaid Amount After Refund</Lang1>
 	<Lang2>จำนวนเงินหลังคืนเงิน</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>14</TextID>
 	<DefaultText>Void</DefaultText>
 	<Lang1>Void</Lang1>
 	<Lang2>Void</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>15</TextID>
 	<DefaultText>Reprint</DefaultText>
 	<Lang1>Reprint</Lang1>
 	<Lang2>พิมพ์ใบเสร็จซ้ำ</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>16</TextID>
 	<DefaultText>Refund</DefaultText>
 	<Lang1>Refund</Lang1>
 	<Lang2>Refund</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>17</TextID>
 	<DefaultText>Close</DefaultText>
 	<Lang1>Close</Lang1>
 	<Lang2>ปิด</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>18</TextID>
 	<DefaultText>Refund Prepaid จากการเติมเงิน</DefaultText>
 	<Lang1>Refund Prepaid จากการเติมเงิน</Lang1>
 	<Lang2>คืนเงิน Prepaid จากการเติมเงิน</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>19</TextID>
 	<DefaultText>Refund Prepaid</DefaultText>
 	<Lang1>Refund Prepaid</Lang1>
 	<Lang2>Refund Prepaid</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>20</TextID>
 	<DefaultText>กรุณาใส่จำนวนเงินที่ต้องการ refund</DefaultText>
 	<Lang1>Please input refund amount.</Lang1>
 	<Lang2>กรุณาใส่จำนวนเงินที่ต้องการ refund</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>21</TextID>
 	<DefaultText>Prepaid Management</DefaultText>
 	<Lang1>Prepaid Management</Lang1>
 	<Lang2>Prepaid Management</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>22</TextID>
 	<DefaultText>Refund จากการ Topup</DefaultText>
 	<Lang1>Refund From Topup</Lang1>
 	<Lang2>Refund จากการ Topup</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>23</TextID>
 	<DefaultText>รายละเอียด Prepaid</DefaultText>
 	<Lang1>Prepaid Information</Lang1>
 	<Lang2>รายละเอียด Prepaid</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>24</TextID>
 	<DefaultText>ยกเลิก</DefaultText>
 	<Lang1>Cancel</Lang1>
 	<Lang2>ยกเลิก</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>25</TextID>
 	<DefaultText>ไม่อนุญาตให้ทำการคืนเงิน prepaid จากการเติมเงินได้</DefaultText>
 	<Lang1>Can not allow to refund prepaid amount from topup.</Lang1>
 	<Lang2>ไม่อนุญาตให้ทำการคืนเงิน prepaid จากการเติมเงินได้</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>26</TextID>
 	<DefaultText>พิมพ์ซ้ำ</DefaultText>
 	<Lang1>Reprint</Lang1>
 	<Lang2>พิมพ์ซ้ำ</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>27</TextID>
 	<DefaultText>------การคืนเงินจากการเติมเงิน Prepaid------</DefaultText>
 	<Lang1>------Refund Prepaid from Topup------</Lang1>
 	<Lang2>------การคืนเงินจากการเติมเงิน Prepaid------</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>28</TextID>
 	<DefaultText>วันที่คืนเงิน :</DefaultText>
 	<Lang1>Refund Date</Lang1>
 	<Lang2>วันที่คืนเงิน :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>29</TextID>
 	<DefaultText>Prepaid No. :</DefaultText>
 	<Lang1>Prepaid No. :</Lang1>
 	<Lang2>Prepaid No. :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>30</TextID>
 	<DefaultText>Refund No. :</DefaultText>
 	<Lang1>Refund No. :</Lang1>
 	<Lang2>Refund No. :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>31</TextID>
 	<DefaultText>คืนเงินจากใบเสร็จ :</DefaultText>
 	<Lang1>Refund From Receipt :</Lang1>
 	<Lang2>คืนเงินจากใบเสร็จ :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>32</TextID>
 	<DefaultText>จำนวนเงินที่คืน :</DefaultText>
 	<Lang1>Refund Amount :</Lang1>
 	<Lang2>จำนวนเงินที่คืน :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>33</TextID>
 	<DefaultText>จำนวนเงินคงเหลือ :</DefaultText>
 	<Lang1>Prepaid Amount Left :</Lang1>
 	<Lang2>จำนวนเงินคงเหลือ :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>34</TextID>
 	<DefaultText>หมายเหตุ :</DefaultText>
 	<Lang1>Note :</Lang1>
 	<Lang2>หมายเหตุ :</Lang2>
 </Form>
 <Form>
-	<FormID>77</FormID><!--insert date 30/05/19-->
+	<FormID>77</FormID>
 	<TextID>35</TextID>
 	<DefaultText>Check Balance (Value Design)</DefaultText>
 	<Lang1>Check Balance (Value Design)</Lang1>
 	<Lang2>Check Balance (Value Design)</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>1</TextID>
 	<DefaultText>เลขที่ใบเสร็จ</DefaultText>
 	<Lang1>Receipt No.</Lang1>
 	<Lang2>เลขที่ใบเสร็จ</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>2</TextID>
 	<DefaultText>Prepaid No.</DefaultText>
 	<Lang1>Prepaid No.</Lang1>
 	<Lang2>Prepaid No.</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>3</TextID>
 	<DefaultText>เงินที่คืน</DefaultText>
 	<Lang1>Refund Amount.</Lang1>
 	<Lang2>เงินที่คืน</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>4</TextID>
 	<DefaultText>รายละเอียดของการคืนเงิน</DefaultText>
 	<Lang1>Refund Detail</Lang1>
 	<Lang2>รายละเอียดของการคืนเงิน</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>5</TextID>
 	<DefaultText>เลขที่ใบเสร็จ :</DefaultText>
 	<Lang1>Receipt No. :</Lang1>
 	<Lang2>เลขที่ใบเสร็จ :</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>6</TextID>
 	<DefaultText>วันที่คืนเงิน :</DefaultText>
 	<Lang1>Refund Date :</Lang1>
 	<Lang2>วันที่คืนเงิน :</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>7</TextID>
 	<DefaultText>เลขที่ใบเสร็จการเติมเงิน:</DefaultText>
 	<Lang1>Refund From Receipt No. :</Lang1>
 	<Lang2>เลขที่ใบเสร็จการเติมเงิน:</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>8</TextID>
 	<DefaultText>จำนวนเงินเติม :</DefaultText>
 	<Lang1>Topup Amount :</Lang1>
 	<Lang2>จำนวนเงินเติม :</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>9</TextID>
 	<DefaultText>จำนวนเงินที่คืน :</DefaultText>
 	<Lang1>Refund Amount :</Lang1>
 	<Lang2>จำนวนเงินที่คืน :</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>10</TextID>
 	<DefaultText>หมายเหตุ :</DefaultText>
 	<Lang1>Note :</Lang1>
 	<Lang2>หมายเหตุ :</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>11</TextID>
 	<DefaultText>เลือกรายการการคืนเงินเพื่อทำการพิมพ์ซ้ำ</DefaultText>
 	<Lang1>Select Refund Detail for RePrint</Lang1>
 	<Lang2>เลือกรายการการคืนเงินเพื่อทำการพิมพ์ซ้ำ</Lang2>
 </Form>
 <Form>
-	<FormID>78</FormID><!--insert date 30/05/19-->
+	<FormID>78</FormID>
 	<TextID>12</TextID>
 	<DefaultText>เลือกรายการคืนเงินเพื่อทำการยกเลิก</DefaultText>
 	<Lang1>Select Refund Detail for Void</Lang1>
 	<Lang2>เลือกรายการคืนเงินเพื่อทำการยกเลิก</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>1</TextID>
 	<DefaultText>วัตถุดิบที่มีค่าติดลบหรือต่ำกว่าค่าต่ำสุด</DefaultText>
 	<Lang1>Display minimum or less than 0 stock</Lang1>
 	<Lang2>วัตถุดิบที่มีค่าติดลบหรือต่ำกว่าค่าต่ำสุด</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>2</TextID>
 	<DefaultText>รหัสวัตถุดิบ</DefaultText>
 	<Lang1>Material Code</Lang1>
 	<Lang2>รหัสวัตถุดิบ</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>3</TextID>
 	<DefaultText>รายการวัตถุดิบ</DefaultText>
 	<Lang1>Material Name</Lang1>
 	<Lang2>รายการวัตถุดิบ</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>4</TextID>
 	<DefaultText>จำนวนต่ำสุด</DefaultText>
 	<Lang1>Min. Qty.</Lang1>
 	<Lang2>จำนวนต่ำสุด</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>5</TextID>
 	<DefaultText>จำนวน ณ ปัจจุบัน</DefaultText>
 	<Lang1>Current Qty.</Lang1>
 	<Lang2>จำนวน ณ ปัจจุบัน</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>6</TextID>
 	<DefaultText>หน่วย</DefaultText>
 	<Lang1>Unit Name</Lang1>
 	<Lang2>หน่วย</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>7</TextID>
 	<DefaultText>Refresh</DefaultText>
 	<Lang1>Refresh</Lang1>
 	<Lang2>Refresh</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>8</TextID>
 	<DefaultText>ปิด</DefaultText>
 	<Lang1>Close</Lang1>
 	<Lang2>ปิด</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>9</TextID>
 	<DefaultText>Exit Program</DefaultText>
 	<Lang1>Exit Program</Lang1>
 	<Lang2>Exit Program</Lang2>
 </Form>
 <Form>
-	<FormID>79</FormID><!--insert date 30/05/19-->
+	<FormID>79</FormID>
 	<TextID>10</TextID>
 	<DefaultText>โปรแกรมไม่อนุญาตให้ใช้งานเนื่องจากยังมีวัตถุดิบที่มีจำนวนต่ำกว่าค่าที่ตั้งไว้ กรุณาทำการรับวัตถุดิบเพิ่มก่อน</DefaultText>
 	<Lang1>Program does not allow to use due to there is some material still less than minimum stock.</Lang1>
 	<Lang2>โปรแกรมไม่อนุญาตให้ใช้งานเนื่องจากยังมีวัตถุดิบที่มีจำนวนต่ำกว่าค่าที่ตั้งไว้ กรุณาทำการรับวัตถุดิบเพิ่มก่อน</Lang2>
 </Form>
 <Form>
-	<FormID>80</FormID><!--insert date 30/05/19-->
+	<FormID>80</FormID>
 	<TextID>1</TextID>
 	<DefaultText>พบปัญหาการเชื่อมต่อ กรุณาตรวจสอบการตั้งค่ากับ Loga</DefaultText>
 	<Lang1>There is a connection error. Please check setting with Loga system.</Lang1>
 	<Lang2>พบปัญหาการเชื่อมต่อ กรุณาตรวจสอบการตั้งค่ากับ Loga</Lang2>
 </Form>
 <Form>
-	<FormID>80</FormID><!--insert date 30/05/19-->
+	<FormID>80</FormID>
 	<TextID>2</TextID>
 	<DefaultText>สมาชิกนี้มีอยู่แล้ว</DefaultText>
 	<Lang1>This member already exists.</Lang1>
 	<Lang2>สมาชิกนี้มีอยู่แล้ว</Lang2>
 </Form>
 <Form>
-	<FormID>80</FormID><!--insert date 30/05/19-->
+	<FormID>80</FormID>
 	<TextID>3</TextID>
 	<DefaultText>ไม่พบข้อมูลสมาชิกที่ค้นหา</DefaultText>
 	<Lang1>Member not found</Lang1>
 	<Lang2>ไม่พบข้อมูลสมาชิกที่ค้นหา</Lang2>
 </Form>
 <Form>
-	<FormID>80</FormID><!--insert date 30/05/19-->
+	<FormID>80</FormID>
 	<TextID>4</TextID>
 	<DefaultText>เบอร์มือถือนี้มีอยู่ในระบบแล้ว</DefaultText>
 	<Lang1>This mobile number already exists.</Lang1>
 	<Lang2>เบอร์มือถือนี้มีอยู่ในระบบแล้ว</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>80</FormID>
 	<TextID>5</TextID>
 	<DefaultText>ไม่พบข้อมูลเบอร์มือถือ กรุณาทำการ update ข้อมูลสมาชิกก่อน</DefaultText>
 	<Lang1>There is no mobile number. Please update member profile.</Lang1>
 	<Lang2>ไม่พบข้อมูลเบอร์มือถือ กรุณาทำการ update ข้อมูลสมาชิกก่อน</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>1</TextID>
 	<DefaultText>ชื่อโต๊ะ</DefaultText>
 	<Lang1>Table Name</Lang1>
 	<Lang2>ชื่อโต๊ะ</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>2</TextID>
 	<DefaultText>เวลาที่ขอ</DefaultText>
 	<Lang1>Request Time</Lang1>
 	<Lang2>เวลาที่ขอ</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>3</TextID>
 	<DefaultText>Current Ref.</DefaultText>
 	<Lang1>Current Ref.</Lang1>
 	<Lang2>Current Ref.</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>4</TextID>
 	<DefaultText>Refresh</DefaultText>
 	<Lang1>Refresh</Lang1>
 	<Lang2>Refresh</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>5</TextID>
 	<DefaultText>Cancel</DefaultText>
 	<Lang1>Cancel</Lang1>
 	<Lang2>Cancel</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>6</TextID>
 	<DefaultText>Request Order Ref.</DefaultText>
 	<Lang1>Request Order Ref.</Lang1>
 	<Lang2>Request Order Ref.</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>7</TextID>
 	<DefaultText>Order Reference for</DefaultText>
 	<Lang1>Order Reference for</Lang1>
 	<Lang2>Order Reference for</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>8</TextID>
 	<DefaultText>Get Ref.</DefaultText>
 	<Lang1>Get Ref.</Lang1>
 	<Lang2>Get Ref.</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>9</TextID>
 	<DefaultText>Order Reference</DefaultText>
 	<Lang1>Order Reference</Lang1>
 	<Lang2>Order Reference</Lang2>
 </Form>
-<Form>	<!--insert date 12/07/19 Patch6207-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>10</TextID>
 	<DefaultText>Current Order Reference</DefaultText>
 	<Lang1>Current Order Reference</Lang1>
 	<Lang2>Current Order Reference</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>11</TextID>
 	<DefaultText>Start Order</DefaultText>
 	<Lang1>Start Order</Lang1>
 	<Lang2>เริ่มสั่ง</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>81</FormID>
 	<TextID>12</TextID>
 	<DefaultText>This table can start to order from web.</DefaultText>
@@ -18721,231 +18863,231 @@
 	<Lang2>สามารสั่งรายการของโต๊ะนี้ได้</Lang2>
 </Form>
 
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>1</TextID>
 	<DefaultText>ชื่อ Voucher/ คูปอง</DefaultText>
 	<Lang1>Voucher/ Coupon</Lang1>
 	<Lang2>ชื่อ Voucher/ คูปอง</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>2</TextID>
 	<DefaultText>วันที่ใช้</DefaultText>
 	<Lang1>Use date</Lang1>
 	<Lang2>วันที่ใช้</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>3</TextID>
 	<DefaultText>ร้านที่ใช้</DefaultText>
 	<Lang1>Use at Shop</Lang1>
 	<Lang2>ร้านที่ใช้</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>4</TextID>
 	<DefaultText>ปิด</DefaultText>
 	<Lang1>Close</Lang1>
 	<Lang2>ปิด</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>5</TextID>
 	<DefaultText>รหัสสมาชิก :</DefaultText>
 	<Lang1>Member Code :</Lang1>
 	<Lang2>รหัสสมาชิก :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>6</TextID>
 	<DefaultText>ชื่อ-นามสกุล :</DefaultText>
 	<Lang1>Name :</Lang1>
 	<Lang2>ชื่อ-นามสกุล :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>7</TextID>
 	<DefaultText>Promotion :</DefaultText>
 	<Lang1>Promotion :</Lang1>
 	<Lang2>Promotion :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>8</TextID>
 	<DefaultText>Package Detail</DefaultText>
 	<Lang1>Package Detail</Lang1>
 	<Lang2>Package Detail</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>9</TextID>
 	<DefaultText>วันที่เริ่มต้น  :</DefaultText>
 	<Lang1>Start Date :</Lang1>
 	<Lang2>วันที่เริ่มต้น  :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>10</TextID>
 	<DefaultText>วันที่สิ้นสุด :</DefaultText>
 	<Lang1>End Date :</Lang1>
 	<Lang2>วันที่สิ้นสุด :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>11</TextID>
 	<DefaultText>หมายเหตุ :</DefaultText>
 	<Lang1>Remark :</Lang1>
 	<Lang2>หมายเหตุ :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>12</TextID>
 	<DefaultText>ชุดส่วนลดที่สมาชิกสามารถใช้ได้</DefaultText>
 	<Lang1>Promotion set member can use</Lang1>
 	<Lang2>ชุดส่วนลดที่สมาชิกสามารถใช้ได้</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>13</TextID>
 	<DefaultText>ส่วนลดจาก Promotion Set</DefaultText>
 	<Lang1>Promotion Set Discount</Lang1>
 	<Lang2>ส่วนลดจาก Promotion Set</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>14</TextID>
 	<DefaultText>ใช้</DefaultText>
 	<Lang1>Use</Lang1>
 	<Lang2>ใช้</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>15</TextID>
 	<DefaultText>ยกเลิก</DefaultText>
 	<Lang1>Cancel</Lang1>
 	<Lang2>ยกเลิก</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>16</TextID>
 	<DefaultText>ไม่สามารถตรวจสอบข้อมูลจาก HQ ได้</DefaultText>
 	<Lang1>Can not connect HQ to get data.</Lang1>
 	<Lang2>ไม่สามารถตรวจสอบข้อมูลจาก HQ ได้</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>82</FormID>
 	<TextID>17</TextID>
 	<DefaultText></DefaultText>
 	<Lang1></Lang1>
 	<Lang2></Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>1</TextID>
 	<DefaultText>วันที่ขาย</DefaultText>
 	<Lang1>Sale Date</Lang1>
 	<Lang2>วันที่ขาย</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>2</TextID>
 	<DefaultText>ใบเสร็จ</DefaultText>
 	<Lang1>Receipt No.</Lang1>
 	<Lang2>ใบเสร็จ</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>3</TextID>
 	<DefaultText>โต๊ะ</DefaultText>
 	<Lang1>Table</Lang1>
 	<Lang2>โต๊ะ</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>4</TextID>
 	<DefaultText>เวลาเปิด</DefaultText>
 	<Lang1>Open Time</Lang1>
 	<Lang2>เวลาเปิด</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>5</TextID>
 	<DefaultText>เวลาจ่ายเงิน</DefaultText>
 	<Lang1>Paid Time</Lang1>
 	<Lang2>เวลาจ่ายเงิน</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>6</TextID>
 	<DefaultText>ส่วนลด</DefaultText>
 	<Lang1>Discount</Lang1>
 	<Lang2>ส่วนลด</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>7</TextID>
 	<DefaultText>ราคารวม</DefaultText>
 	<Lang1>Sale Price</Lang1>
 	<Lang2>ราคารวม</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>8</TextID>
 	<DefaultText>เลือกสมาชิก</DefaultText>
 	<Lang1>Select</Lang1>
 	<Lang2>เลือกสมาชิก</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>9</TextID>
 	<DefaultText>ยกเลิก</DefaultText>
 	<Lang1>Cancel</Lang1>
 	<Lang2>ยกเลิก</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>10</TextID>
 	<DefaultText>ปิด</DefaultText>
 	<Lang1>Close</Lang1>
 	<Lang2>ปิด</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>11</TextID>
 	<DefaultText>รหัสสมาชิก :</DefaultText>
 	<Lang1>Member Code :</Lang1>
 	<Lang2>รหัสสมาชิก :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>12</TextID>
 	<DefaultText>ชื่อ-นามสกุล :</DefaultText>
 	<Lang1>Member Name :</Lang1>
 	<Lang2>ชื่อ-นามสกุล :</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>13</TextID>
 	<DefaultText>รายละเอียดการใช้ของสมาชิก</DefaultText>
 	<Lang1>Member Usage Detail</Lang1>
 	<Lang2>รายละเอียดการใช้ของสมาชิก</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>14</TextID>
 	<DefaultText>รายละเอียดการมาใช้ในวันนี้</DefaultText>
 	<Lang1>Today's Usage</Lang1>
 	<Lang2>รายละเอียดการมาใช้ในวันนี้</Lang2>
 </Form>
-<Form>	<!--insert date 19/09/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>15</TextID>
 	<DefaultText>รายละเอียดการมาใช้ครั้งที่แล้ว</DefaultText>
 	<Lang1>Last Time Usage</Lang1>
 	<Lang2>รายละเอียดการมาใช้ครั้งที่แล้ว</Lang2>
 </Form>
-<Form>	<!--insert date 12/11/19-->
+<Form>
 	<FormID>83</FormID>
 	<TextID>16</TextID>
 	<DefaultText>ยอดก่อนลด</DefaultText>
@@ -18960,11 +19102,116 @@
 	<Lang2>บริกร</Lang2>
 </Form>
 <Form>
-	<FormID>83</FormID>
-	<TextID>18</TextID>
-	<DefaultText>แคชเชียร์</DefaultText>
-	<Lang1>Paid Staff</Lang1>
-	<Lang2>แคชเชียร์</Lang2>
+	<FormID>84</FormID>
+	<TextID>1</TextID>
+	<DefaultText>ปิด</DefaultText>
+	<Lang1>Close</Lang1>
+	<Lang2>ปิด</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>2</TextID>
+	<DefaultText>ค้นหา</DefaultText>
+	<Lang1>Search</Lang1>
+	<Lang2>ค้นหา</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>3</TextID>
+	<DefaultText>วันที่ขาย</DefaultText>
+	<Lang1>Sale Date</Lang1>
+	<Lang2>วันที่ขาย</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>4</TextID>
+	<DefaultText>รหัสสินค้า</DefaultText>
+	<Lang1>Product Code</Lang1>
+	<Lang2>รหัสสินค้า</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>5</TextID>
+	<DefaultText>ชื่อสินค้า</DefaultText>
+	<Lang1>Product Name</Lang1>
+	<Lang2>ชื่อสินค้า</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>6</TextID>
+	<DefaultText>จำนวนรวมทั้งหมด</DefaultText>
+	<Lang1>Total Qty.</Lang1>
+	<Lang2>จำนวนรวมทั้งหมด</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>7</TextID>
+	<DefaultText>โต๊ะ</DefaultText>
+	<Lang1>Table</Lang1>
+	<Lang2>โต๊ะ</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>8</TextID>
+	<DefaultText>จำนวน</DefaultText>
+	<Lang1>Qty.</Lang1>
+	<Lang2>จำนวน</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>9</TextID>
+	<DefaultText>รหัสพนักงานผู้สั่ง</DefaultText>
+	<Lang1>Order Staff</Lang1>
+	<Lang2>รหัสพนักงานผู้สั่ง</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>10</TextID>
+	<DefaultText>รหัสผู้คีย์รายการ</DefaultText>
+	<Lang1>Input Staff</Lang1>
+	<Lang2>รหัสผู้คีย์รายการ</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>11</TextID>
+	<DefaultText>เวลาสั่ง</DefaultText>
+	<Lang1>Order Time</Lang1>
+	<Lang2>เวลาสั่ง</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>12</TextID>
+	<DefaultText>เลขที่ใบเสร็จ</DefaultText>
+	<Lang1>Receipt No.</Lang1>
+	<Lang2>เลขที่ใบเสร็จ</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>13</TextID>
+	<DefaultText>ค้นหาข้อมูลการสั่งสินค้าจากรหัสสินค้า</DefaultText>
+	<Lang1>Search Order From Product Code</Lang1>
+	<Lang2>ค้นหาข้อมูลการสั่งสินค้าจากรหัสสินค้า</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>14</TextID>
+	<DefaultText>กรุณาใส่รหัสสินค้าที่ต้องการค้นหาก่อน</DefaultText>
+	<Lang1>Please input product code.</Lang1>
+	<Lang2>กรุณาใส่รหัสสินค้าที่ต้องการค้นหาก่อน</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>15</TextID>
+	<DefaultText>ไม่พบสินค้าที่ใช้รหัสนี้ กรุณาค้นหาใหม่</DefaultText>
+	<Lang1>There is no product with this code. Please search again.</Lang1>
+	<Lang2>ไม่พบสินค้าที่ใช้รหัสนี้ กรุณาค้นหาใหม่</Lang2>
+</Form>
+<Form>
+	<FormID>84</FormID>
+	<TextID>16</TextID>
+	<DefaultText></DefaultText>
+	<Lang1></Lang1>
+	<Lang2></Lang2>
 </Form>
 
 
@@ -18972,4 +19219,9 @@
 
 
 </LanguageData>
+
+
+
+
+
 

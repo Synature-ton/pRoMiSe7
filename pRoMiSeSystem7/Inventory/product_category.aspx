@@ -1137,6 +1137,9 @@
             If Request.QueryString("MaterialAmount") IsNot Nothing Then
                 strURL &= "&MaterialAmount=" & Request.QueryString("MaterialAmount")
             End If
+            If Request.QueryString("SaleMode") IsNot Nothing Then
+                strURL &= "&SaleMode=" & Request.QueryString("SaleMode")
+            End If
         End If
         Response.Redirect(strURL)
 

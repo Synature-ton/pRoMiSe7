@@ -10,6 +10,7 @@
 <%@Import Namespace="POSMySQL.GlobalFunctions" %>
 <%@Import Namespace="System.Globalization" %>
 <%@Import Namespace="ReportModule" %>
+<%@Import Namespace="POSBackOfficeReport" %>
 <%@Import Namespace="System.IO" %>
 
 <%@ Register tagprefix="synature" Tagname="date" Src="../UserControls/Date.ascx" %>
@@ -116,11 +117,16 @@
 			<asp:BoundColumn ItemStyle-HorizontalAlign="center" ItemStyle-CssClass="smallText" DataField="TableName"></asp:BoundColumn>
 			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="ReceiptNumber"></asp:BoundColumn> 
 			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="SaleDate"></asp:BoundColumn>
+			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="ProductCode"></asp:BoundColumn>
 			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="ProductName"></asp:BoundColumn>
 			<asp:BoundColumn ItemStyle-HorizontalAlign="center" ItemStyle-CssClass="smallText" DataField="ProductQty"></asp:BoundColumn>
-			<asp:BoundColumn ItemStyle-HorizontalAlign="right" ItemStyle-CssClass="smallText" DataField="ProductPrice"></asp:BoundColumn> 
-			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="PrintTime"></asp:BoundColumn> 
-			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="PrintBy"></asp:BoundColumn>  
+			<asp:BoundColumn ItemStyle-HorizontalAlign="right" ItemStyle-CssClass="smallText" DataField="PricePerUnit"></asp:BoundColumn> 
+			<asp:BoundColumn ItemStyle-HorizontalAlign="right" ItemStyle-CssClass="smallText" DataField="TotalRetailPrice"></asp:BoundColumn> 
+			<asp:BoundColumn ItemStyle-HorizontalAlign="right" ItemStyle-CssClass="smallText" DataField="DiscountPrice"></asp:BoundColumn> 
+			<asp:BoundColumn ItemStyle-HorizontalAlign="right" ItemStyle-CssClass="smallText" DataField="SalePrice"></asp:BoundColumn> 
+            <asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="PrintTime"></asp:BoundColumn> 
+			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="OrderStaffCode"></asp:BoundColumn>  
+			<asp:BoundColumn ItemStyle-HorizontalAlign="left" ItemStyle-CssClass="smallText" DataField="OrderStaffName"></asp:BoundColumn>  
 		</columns>
 	</asp:DataGrid>
 </td></tr>
@@ -156,7 +162,7 @@ Dim getProp As New CPreferences()
 Dim objDB As New CDBUtil()
 Dim FormatDocNumber As New FormatText()
 Dim InvC As CultureInfo = CultureInfo.InvariantCulture
-Dim PageID As Integer  = 998
+    Dim PageID As Integer = 212
 
     Sub Page_Load()
 	
@@ -626,7 +632,8 @@ Dim PageID As Integer  = 998
             End If
 
             'Application.Lock()
-            Dim dtTable As DataTable = getReport.SearchOrderNumberReport(Session.SessionID, StartDate, EndDate, Request.Form("ShopID"), OrderBookNo.Text, OrderNumber.Text, Session("LangID"), objCnn)
+            Dim dtTable As DataTable = getReport.SearchOrderNumberReport(Session.SessionID, StartDate, EndDate, Request.Form("ShopID"), OrderBookNo.Text, OrderNumber.Text, _
+                                                                  Session("LangID"), objCnn)
 
             'Application.UnLock()
 		
@@ -655,15 +662,24 @@ Dim PageID As Integer  = 998
 
     Private Sub Results_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DataGridItemEventArgs)
         If e.Item.ItemType = ListItemType.Header Then
-            e.Item.Cells(0).Text = "Order #"
-            e.Item.Cells(1).Text = "Table"
-            e.Item.Cells(2).Text = "Receipt #"
-            e.Item.Cells(3).Text = "Receipt Date"
-            e.Item.Cells(4).Text = "Product Name"
-            e.Item.Cells(5).Text = "Qty"
-            e.Item.Cells(6).Text = "Sale Price"
-            e.Item.Cells(7).Text = "Print Time"
-            e.Item.Cells(8).Text = "Printed By"
+            Dim dtLangeData As DataTable
+            Dim langText As String = "lang" + Session("LangID").ToString
+            dtLangeData = getProp.GetLangData(PageID, 1, -1, Request)
+            
+            e.Item.Cells(0).Text = BackOfficeReport.GetLanguageText(dtLangeData, 1, langText, "Order #")
+            e.Item.Cells(1).Text = BackOfficeReport.GetLanguageText(dtLangeData, 2, langText, "Table")
+            e.Item.Cells(2).Text = BackOfficeReport.GetLanguageText(dtLangeData, 3, langText, "Receipt #")
+            e.Item.Cells(3).Text = BackOfficeReport.GetLanguageText(dtLangeData, 4, langText, "Sale Date")
+            e.Item.Cells(4).Text = BackOfficeReport.GetLanguageText(dtLangeData, 5, langText, "Product Code")
+            e.Item.Cells(5).Text = BackOfficeReport.GetLanguageText(dtLangeData, 6, langText, "Product Name")
+            e.Item.Cells(6).Text = BackOfficeReport.GetLanguageText(dtLangeData, 7, langText, "Qty")
+            e.Item.Cells(7).Text = BackOfficeReport.GetLanguageText(dtLangeData, 8, langText, "Price/ Unit")
+            e.Item.Cells(8).Text = BackOfficeReport.GetLanguageText(dtLangeData, 9, langText, "Total Price")
+            e.Item.Cells(9).Text = BackOfficeReport.GetLanguageText(dtLangeData, 10, langText, "Discount")
+            e.Item.Cells(10).Text = BackOfficeReport.GetLanguageText(dtLangeData, 11, langText, "Sale Price")
+            e.Item.Cells(11).Text = BackOfficeReport.GetLanguageText(dtLangeData, 12, langText, "Print Time")
+            e.Item.Cells(12).Text = BackOfficeReport.GetLanguageText(dtLangeData, 13, langText, "OrderStaff Code")
+            e.Item.Cells(13).Text = BackOfficeReport.GetLanguageText(dtLangeData, 14, langText, "Order Staff Name")
         End If
     End Sub
 

@@ -3208,6 +3208,24 @@
     <Lang2>จำนวนผลิต</Lang2>
   </Form>
   <Form>
+    <FormID>10009</FormID>
+    <FormName>Search Materials</FormName>
+    <TextType>3</TextType>
+    <TextID>18</TextID>
+    <DefaultText>PAR</DefaultText>
+    <Lang1>PAR</Lang1>
+    <Lang2>ค่า PAR</Lang2>
+  </Form>
+  <Form>
+    <FormID>10009</FormID>
+    <FormName>Search Materials</FormName>
+    <TextType>3</TextType>
+    <TextID>19</TextID>
+    <DefaultText>Close</DefaultText>
+    <Lang1>Close</Lang1>
+    <Lang2>ปิด</Lang2>
+  </Form>
+  <Form>
     <FormID>10010</FormID>
     <FormName>Form search Tranfer and request document</FormName>
     <TextType>1</TextType>
@@ -3567,6 +3585,15 @@
     <DefaultText>Ref. Number</DefaultText>
     <Lang1>Ref. Number</Lang1>
     <Lang2>Ref. Number</Lang2>
+  </Form>
+  <Form>
+    <FormID>10011</FormID>
+    <FormName>Default Page</FormName>
+    <TextType>3</TextType>
+    <TextID>12</TextID>
+    <DefaultText>View Detail</DefaultText>
+    <Lang1>View Detail</Lang1>
+    <Lang2>View Detail</Lang2>
   </Form>
   <Form>
     <FormID>10012</FormID>
@@ -6171,6 +6198,15 @@
     <DefaultText>Display Prefniish Material By Date</DefaultText>
     <Lang1>Display Prefniish Material By Date</Lang1>
     <Lang2>แสดงการผลิตแยกตามวัน</Lang2>
+  </Form>
+  <Form>
+    <FormID>10023</FormID>
+    <FormName>Prefinish Report By Material</FormName>
+    <TextType>1</TextType>
+    <TextID>21</TextID>
+    <DefaultText>Standard PAR</DefaultText>
+    <Lang1>Standard PAR</Lang1>
+    <Lang2>Standard PAR</Lang2>
   </Form>
 
   

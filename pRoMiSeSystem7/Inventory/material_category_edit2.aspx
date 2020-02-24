@@ -750,109 +750,105 @@ Dim getProp As New CPreferences()
                         validateDept.InnerHtml = "<tr><td></td><td class=""errorText"">" & textTable.Rows(49)("TextParamValue") & "</td></tr>"
                     End If
                 End If
-                Dim CheckUnit As DataTable
-                Dim DCheckUnit As DataTable
-                Dim outputString As String = ""
+                Dim outputString As StringBuilder
                 Dim Checked As String = ""
                 Dim DChecked As String = ""
                 Dim UnitText As String = ""
+                
                 Dim bgColor As String = "white"
                 Dim UnitRows As Integer = 5
                 If PropertyInfo.Rows(0)("SystemEditionID") = 1 Then
                     UnitRows = 1
                 End If
+                outputString = New StringBuilder
+                Dim selDocType As Integer
+                Dim dtMaterialUnit, dtUnitInfo As DataTable
+                Dim rResult() As DataRow
+                dtUnitInfo = New DataTable
+                dtMaterialUnit = getInfo.GetMaterialAllInvenUnitAndUnitInfo(objCnn, 1, MaterialID.Value, dtUnitInfo)
+                
                 For i = 0 To UnitRows
                     If i Mod 2 = 0 Then
                         bgColor = "white"
                     Else
                         bgColor = "#e1e1e1"
                     End If
-                    Checked = ""
-                    CheckUnit = getInfo.MaterialInvenUnit(1, 1, MaterialID.Value, i, -1, objCnn)
-                    If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                    DChecked = ""
-                    DCheckUnit = getInfo.MaterialInvenUnit(1, 1, MaterialID.Value, i, 1, objCnn)
-                    If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                    outputString += "<tr bgColor=""" + bgColor + """>"
-                    outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_1""" + DChecked + "></td>"
-                    outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_1_" + i.ToString + """" + Checked + "></td>"
-                    outputString += "<td></td>"
+                        
+                    'PO Document
+                    selDocType = 1
+                    SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                    outputString.Append("<tr bgColor=""" + bgColor + """>")
+                    outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_1""" + DChecked + "></td>")
+                    outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_1_" + i.ToString + """" + Checked + "></td>")
+                    outputString.Append("<td></td>")
 			
-                    Checked = ""
-                    CheckUnit = getInfo.MaterialInvenUnit(1, 7, MaterialID.Value, i, -1, objCnn)
-                    If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                    DChecked = ""
-                    DCheckUnit = getInfo.MaterialInvenUnit(1, 7, MaterialID.Value, i, 1, objCnn)
-                    If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                    outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_7""" + DChecked + "></td>"
-                    outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_7_" + i.ToString + """" + Checked + "></td>"
-                    outputString += "<td></td>"
+                    'Stock Count Document
+                    selDocType = 7
+                    SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                    outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_7""" + DChecked + "></td>")
+                    outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_7_" + i.ToString + """" + Checked + "></td>")
+                    outputString.Append("<td></td>")
 
-                    Checked = ""
-                    CheckUnit = getInfo.MaterialInvenUnit(1, 39, MaterialID.Value, i, -1, objCnn)
-                    If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                    DChecked = ""
-                    DCheckUnit = getInfo.MaterialInvenUnit(1, 39, MaterialID.Value, i, 1, objCnn)
-                    If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                    outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_39""" + DChecked + "></td>"
-                    outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_39_" + i.ToString + """" + Checked + "></td>"
-                    outputString += "<td></td>"
+                    'DRO Document
+                    selDocType = 39
+                    SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                    outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_39""" + DChecked + "></td>")
+                    outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_39_" + i.ToString + """" + Checked + "></td>")
+                    outputString.Append("<td></td>")
 			
                     If PropertyInfo.Rows(0)("SystemEditionID") <> 1 Then
-                        Checked = ""
-                        CheckUnit = getInfo.MaterialInvenUnit(1, 3, MaterialID.Value, i, -1, objCnn)
-                        If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                        DChecked = ""
-                        DCheckUnit = getInfo.MaterialInvenUnit(1, 3, MaterialID.Value, i, 1, objCnn)
-                        If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                        outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_3""" + DChecked + "></td>"
-                        outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_3_" + i.ToString + """" + Checked + "></td>"
-                        outputString += "<td></td>"
+                        'Transfer Document
+                        selDocType = 3
+                        SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                        outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_3""" + DChecked + "></td>")
+                        outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_3_" + i.ToString + """" + Checked + "></td>")
+                        outputString.Append("<td></td>")
 			
-                        Checked = ""
-                        CheckUnit = getInfo.MaterialInvenUnit(1, 17, MaterialID.Value, i, -1, objCnn)
-                        If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                        DChecked = ""
-                        DCheckUnit = getInfo.MaterialInvenUnit(1, 17, MaterialID.Value, i, 1, objCnn)
-                        If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                        outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_17""" + DChecked + "></td>"
-                        outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_17_" + i.ToString + """" + Checked + "></td>"
-                        outputString += "<td></td>"
+                        'Request Document
+                        selDocType = 17
+                        SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                        outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_17""" + DChecked + "></td>")
+                        outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_17_" + i.ToString + """" + Checked + "></td>")
+                        outputString.Append("<td></td>")
                     End If
-			
-                    Checked = ""
-                    CheckUnit = getInfo.MaterialInvenUnit(1, 0, MaterialID.Value, i, -1, objCnn)
-                    If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                    DChecked = ""
-                    DCheckUnit = getInfo.MaterialInvenUnit(1, 0, MaterialID.Value, i, 1, objCnn)
-                    If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                    outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_0""" + DChecked + "></td>"
-                    outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_0_" + i.ToString + """" + Checked + "></td>"
-                    outputString += "<td></td>"
+                    'Adjust Document
+                    selDocType = 0
+                    SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                    outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_0""" + DChecked + "></td>")
+                    outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_0_" + i.ToString + """" + Checked + "></td>")
+                    outputString.Append("<td></td>")
 			
                     If PropertyInfo.Rows(0)("SystemEditionID") <> 1 Then
-                        Checked = ""
-                        CheckUnit = getInfo.MaterialInvenUnit(1, 26, MaterialID.Value, i, -1, objCnn)
-                        If CheckUnit.Rows.Count > 0 Then Checked = " checked"
-                        DChecked = ""
-                        DCheckUnit = getInfo.MaterialInvenUnit(1, 26, MaterialID.Value, i, 1, objCnn)
-                        If DCheckUnit.Rows.Count > 0 Then DChecked = " checked"
-                        outputString += "<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_26""" + DChecked + "></td>"
-                        outputString += "<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_26_" + i.ToString + """" + Checked + "></td>"
+                        'Prefinish Document
+                        selDocType = 26
+                        SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit, dtUnitInfo, i, selDocType, Checked, DChecked)
+                        outputString.Append("<td class=""text"" align=""center""><input type=""Radio"" value=""" + i.ToString + """ name=""UnitDefault_26""" + DChecked + "></td>")
+                        outputString.Append("<td class=""text"" align=""center""><input type=""checkbox"" value=""1"" name=""UnitLargeID_26_" + i.ToString + """" + Checked + "></td>")
 			  
-                        outputString += "<td></td>"
+                        outputString.Append("<td></td>")
                     End If
-                    UnitText = getInfo.MaterialInvenUnitName(MaterialID.Value, i, objCnn)
-
-                    outputString += "<td class=""text"">" + UnitText + "</td>"
-
-                    outputString += "</tr>"
-                Next
-                ResultText.InnerHtml = outputString
+                    'UnitName
+                    If dtUnitInfo.Rows.Count > i Then
+                        If IsDBNull(dtUnitInfo.Rows(i)("UnitLargeName")) Then
+                            dtUnitInfo.Rows(i)("UnitLargeName") = ""
+                        End If
+                        UnitText = dtUnitInfo.Rows(i)("UnitLargeName")
+                    Else
+                        If i = 0 Then
+                            UnitText = "Small Unit"
+                        Else
+                            UnitText = "Large " & i
+                        End If
+                    End If
+                    outputString.Append("<td class=""text"">" + UnitText + "</td>")
+                    outputString.Append("</tr>")
+                Next i
+                
+                ResultText.InnerHtml = outputString.ToString
 		
             Catch ex As Exception
-                errorMsg.InnerHtml = ex.Message
-            End Try
+            errorMsg.InnerHtml = ex.Message
+        End Try
         Else
             updateMessage.Text = "Access Denied"
         End If
@@ -974,6 +970,23 @@ Dim getProp As New CPreferences()
         End If
     End Sub
 
+    Private Sub SetCheckAndDefaultUnitForMaterialInvenUnit(dtMaterialUnit As DataTable, dtUnitInfo As DataTable, unitIndex As Integer, selDocType As Integer, _
+    ByRef strChecked As String, ByRef strDefaultChecked As String)
+        Dim rResult() As DataRow
+        strChecked = ""
+        strDefaultChecked = ""
+        If dtUnitInfo.Rows.Count > unitIndex Then
+            rResult = dtMaterialUnit.Select("SelectUnitLargeID = " & dtUnitInfo.Rows(unitIndex)("UnitLargeID") & " AND DocumentTypeID = " & selDocType)
+            If rResult.Length > 0 Then
+                strChecked = " checked"
+                If rResult(0)("IsDefault") = 1 Then
+                    strDefaultChecked = " checked"
+                End If
+            End If
+        End If
+    End Sub
+    
+    
     Sub DoCancel(Source As Object, E As EventArgs)
         Response.Redirect("material_category.aspx?" + Request.QueryString.ToString)
     End Sub

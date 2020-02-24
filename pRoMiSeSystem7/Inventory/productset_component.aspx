@@ -6,6 +6,7 @@
 <%@Import Namespace="BackOfficeClass.Configuration" %>
 <%@Import Namespace="pRoMiSeLanguage" %>
 <%@Import Namespace="POSMySql.GlobalFunctions" %>
+<%@Import Namespace="POSTypeClass" %>
 <%@Import Namespace="CostingClass.pRoMiSeCosting" %>
 <%@ Register tagprefix="synature" Tagname="date" Src="../UserControls/Date.ascx" %>
 <html>
@@ -30,7 +31,12 @@
 </table>
 
 <table id="myTable" border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;" width="90%">
-	<tr>
+   <tr>
+       <td id="TDSaleModeCombo" align="left" runat="server" colspan="9">
+           <asp:DropDownList ID="cboSaleMode"  runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboSaleMode_SelectedIndexChanged"  ></asp:DropDownList>
+       </td>
+   </tr>
+	<tr id="trHeader" runat="server" >
 		<td id="headerTD1" align="center" class="tdHeader" runat="server"><div id="OrderText" runat="server"></div></td>
 		<td id="headerTD2" align="center" class="tdHeader" runat="server"><div id="CodeText" runat="server"></div></td>
 		<td id="headerTD3" align="center" class="tdHeader" runat="server"><div id="NameText" runat="server"></div></td>
@@ -48,6 +54,8 @@
 	<div id="showAddMaterial" runat="server">
 	
 	<input type="hidden" id="ProductID" runat="server">
+	<input type="hidden" id="ProductSetType" runat="server">
+	<input type="hidden" id="CurrentPGroupID" runat="server">
 	<input type="hidden" id="MaterialID" runat="server">
 	<input type="hidden" id="PComponentOrdering" runat="server">
 	<input type="hidden" id="UnitSmallID" runat="server">
@@ -83,7 +91,11 @@ Dim getInfo As New CCategory()
 Dim getPageText As New DefaultText()
 Dim objDB As New CDBUtil()
 Dim DateTimeUtil As New MyDateTime()
-Dim CostInfo As New CostClass()
+    Dim CostInfo As New CostClass()
+    
+    Dim bolCanAddCompoenntPrice As Boolean
+    Dim textTable As New DataTable()
+    Dim defaultTextTable As New DataTable()
 		
     Sub Page_Load()
         If User.Identity.IsAuthenticated And Session("Inv_Product_Category") Then
@@ -94,10 +106,12 @@ Dim CostInfo As New CostClass()
                 'ShowAddMaterial.Visible = False
                 'End If
                 ProductID.Value = Request.QueryString("ProductID")
-                Dim PGroupID As Integer = 0
                 If IsNumeric(Request.QueryString("PGroupID")) Then
-                    PGroupID = Request.QueryString("PGroupID")
+                    CurrentPGroupID.Value = Request.QueryString("PGroupID")
+                Else
+                    CurrentPGroupID.Value = 0
                 End If
+                ProductSetType.Value = 0
 		
                 headerTD1.BgColor = GlobalParam.AdminBGColor
                 headerTD2.BgColor = GlobalParam.AdminBGColor
@@ -149,43 +163,49 @@ Dim CostInfo As New CostClass()
                 objCnn = getCnn.EstablishConnection()
 
                 Dim strTemp As String
-                Dim dtTable As New DataTable()
+                Dim dtTable, dtPCompoentGroup As DataTable
                 dtTable = getInfo.GetProductInfo(0, Request.QueryString("ProductID"), objCnn)
 			
                 If dtTable.Rows.Count <> 0 Then
-			
-                    Dim textTable As New DataTable()
                     textTable = getPageText.GetText(8, Session("LangID"), objCnn)
-				
-                    Dim componentTable As New DataTable()
-                    Dim unComponentTable As New DataTable()
-                    componentTable = getInfo.GetProductSetInfo(Request.QueryString("ProductID"), PGroupID, "0", 1, Session("PMonthYearDate_Month"), Session("PMonthYearDate_Year"), _
-                                                            Request.QueryString("ProductLevelID"), objCnn)
-                    unComponentTable = getInfo.GetProductSetInfo1(Request.QueryString("ProductID"), PGroupID, "0", 1, objCnn)
-				
-                    Dim defaultTextTable As New DataTable()
+			         
                     defaultTextTable = getPageText.GetDefaultText(Session("LangID"), objCnn)
-                    Dim bolCanAddPrice As Boolean
-				
+                   
+                    ProductSetType.Value  = dtTable.Rows(0)("ProductSet")
                     If dtTable.Rows(0)("ProductSet") = 7 Then
                         GoBackText.InnerHtml = "<a href=""pcomponent_group.aspx?ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + """>" + textTable.Rows(57)("TextParamValue") + "</a>"
-                        bolCanAddPrice = True
+                        bolCanAddCompoenntPrice = True
                     Else
                         GoBackText.InnerHtml = ""
-                        bolCanAddPrice = False
+                        bolCanAddCompoenntPrice = False
                     End If
 				
-                    headerTD10.Visible = bolCanAddPrice
-                    headerTD11.Visible = bolCanAddPrice
-                    Flex1.Visible = bolCanAddPrice
-                    Flex2.Visible = bolCanAddPrice
-                    txtOrdering.Visible = bolCanAddPrice
+                    headerTD10.Visible = bolCanAddCompoenntPrice
+                    headerTD11.Visible = bolCanAddCompoenntPrice
+                    Flex1.Visible = bolCanAddCompoenntPrice
+                    Flex2.Visible = bolCanAddCompoenntPrice
+                    txtOrdering.Visible = bolCanAddCompoenntPrice
                     
-                    HeaderText.InnerHtml = textTable.Rows(37)("TextParamValue") + " " + dtTable.Rows(0)("ProductName")
+                    dtPCompoentGroup = getInfo.GetComponentGroup(dtTable.Rows(0)("ProductID"), CurrentPGroupID.Value, objCnn)
+                    
+                    strTemp = textTable.Rows(37)("TextParamValue") & " " & dtTable.Rows(0)("ProductName")
+                    If dtPCompoentGroup.Rows.Count > 0 Then
+                        If IsDBNull(dtPCompoentGroup.Rows(0)("SetGroupName")) Then
+                            dtPCompoentGroup.Rows(0)("SetGroupName") = ""
+                        End If
+                        strTemp &= " : " & dtPCompoentGroup.Rows(0)("SetGroupName")
+                        If dtPCompoentGroup.Rows(0)("SetGroupNo") > 0 Then
+                            If dtPCompoentGroup.Rows(0)("RequireAddAmountForProduct") > 0 Then
+                                strTemp &= " (# Of Products = " & dtPCompoentGroup.Rows(0)("RequireAddAmountForProduct") & ") "
+                            End If
+                        End If
+                    End If
+                    HeaderText.InnerHtml = strTemp
+                    
                     OrderText.InnerHtml = textTable.Rows(1)("TextParamValue")
                     CodeText.InnerHtml = textTable.Rows(35)("TextParamValue")
                     NameText.InnerHtml = textTable.Rows(36)("TextParamValue")
-                    AmountText.InnerHtml = textTable.Rows(4)("TextParamValue")
+                    AmountText.InnerHtml = "Amount per select" 'textTable.Rows(4)("TextParamValue") 
                     UnitText.InnerHtml = defaultTextTable.Rows(10)("TextParamValue") + "/" + textTable.Rows(5)("TextParamValue")
 
                     ActionText.InnerHtml = textTable.Rows(7)("TextParamValue")
@@ -204,232 +224,14 @@ Dim CostInfo As New CostClass()
                     End If
                     AddAmountText.InnerHtml = strTemp
 				
-                    Dim costValue As Decimal = 0
-				
-                    Dim i, counter, j As Integer
-                    Dim outputString As String = ""
-				
-                    Dim UnitIDValue As Integer = 0
-                    Dim SelectedText As String
-                    Dim SelectedMaterialID As String = 0
-                    Dim selectOrdering As Integer = 0
-                    Dim SelectedMaterialAmount As String
-                    Dim FlexIncPrice As Boolean
-                    Dim FlexProductPrice As Double
-                    Dim componentList As String = ""
-                    counter = 1
-                    Dim subCostValue As Double
-                    Dim costTable As DataTable
-
-                    For i = 0 To componentTable.Rows.Count - 1
-                        If Not IsDBNull(componentTable.Rows(i)("ProductID")) Then
-                            If Not Request.QueryString("a") Is Nothing Then
-                                If Request.QueryString("a") = "yes" And Request.QueryString("PComponentID") = componentTable.Rows(i)("PComponentID") Then
-                                    SelectedText = "disabledText"
-                                    SelectedMaterialID = componentTable.Rows(i)("ProductID")
-                                    selectOrdering = componentTable.Rows(i)("Ordering")
-                                    SelectedMaterialAmount = Format(componentTable.Rows(i)("ProductAmount"), "##,##0")
-                                    If componentTable.Rows(i)("FlexibleProductIncludePrice") = 0 Then
-                                        FlexIncPrice = False
-                                    Else
-                                        FlexIncPrice = True
-                                    End If
-                                    FlexProductPrice = componentTable.Rows(i)("FlexibleProductPrice")
-                                Else
-                                    SelectedText = "text"
-                                End If
-                            Else
-                                SelectedText = "text"
-                            End If
-                            'costTable = getInfo.ProductUnitCost(Request.QueryString("ProductLevelID"),componentTable.Rows(i)("ProductID"), Session("PMonthYearDate_Month"),Session("PMonthYearDate_Year"),objCnn)
-					
-                            If txtOrdering.Visible = True Then
-                                outputString += "<tr><td align=""center"" class=""" + SelectedText + """>" & componentTable.Rows(i)("Ordering") & "</td>"
-                                counter = componentTable.Rows(i)("Ordering")
-                            Else
-                                outputString += "<tr><td align=""center"" class=""" + SelectedText + """>" & counter.ToString & "</td>"
-                            End If
-                            outputString += "<td align=""left"" class=""" + SelectedText + """>" & componentTable.Rows(i)("ProductCode") & "</td>"
-                            outputString += "<td align=""left"" class=""" + SelectedText + """>" & componentTable.Rows(i)("ProductName") & "</td>"
-                            outputString += "<td align=""center"" class=""" + SelectedText + """>" & Format(componentTable.Rows(i)("ProductAmount"), "##,##0") & "</td>"
-                            If bolCanAddPrice = True Then
-                                If componentTable.Rows(i)("FlexibleProductIncludePrice") = 0 Then
-                                    outputString += "<td align=""center"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>"
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>"
-                                Else
-                                    outputString += "<td align=""center"" class=""" + SelectedText + """>" & componentTable.Rows(i)("FlexibleProductIncludePrice") & "</td>"
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & Format(componentTable.Rows(i)("FlexibleProductPrice"), "##,##0.00") & "&nbsp;<a href=""JavaScript: newWindow = window.open( 'productcomponent_multishop.aspx?ProductLevelID=" + Request.QueryString("ProductLevelID").ToString + "&PGroupID=" + Request.QueryString("PGroupID").ToString + "&ProductID=" + Request.QueryString("ProductID").ToString + "&SubProductID=" + componentTable.Rows(i)("ProductID").ToString + "', '', 'width=1100,height=650,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" + "Multi Price" + "</a></td>"
-                                End If
-						
-                            End If
-                            subCostValue = 0
-                            If Session("Material_Cost") = True Then
-                                For j = 0 To costTable.Rows.Count - 1
-                                    If Not IsDBNull(costTable.Rows(j)("TotalPrice")) And Not IsDBNull(costTable.Rows(j)("TotalAmount")) Then
-                                        If costTable.Rows(j)("TotalAmount") > 0 Then
-                                            subCostValue += (costTable.Rows(j)("MaterialAmount") * costTable.Rows(j)("TotalPrice")) / costTable.Rows(j)("TotalAmount")
-                                        End If
-                                    End If
-                                Next
-						
-                                If subCostValue > 0 Then
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & Format(subCostValue, "##,##0.0000") & "</td>"
-                                Else
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>"
-                                End If
-                            End If
-					
-                            If Session("Material_Cost") = True Then
-                                If subCostValue > 0 Then
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & Format(subCostValue * componentTable.Rows(i)("ProductAmount"), "##,##0.00") & "</td>"
-                                    costValue += subCostValue * componentTable.Rows(i)("ProductAmount")
-							
-                                Else
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>"
-                                End If
-                            End If
-
-					
-                            If SelectedText = "text" Then
-                                outputString += "<td align=""center"" class=""text""><a href=""productset_component.aspx?EditID=3&a=yes&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PComponentID=" + componentTable.Rows(i)("PComponentID").ToString + "&PGroupID=" + PGroupID.ToString + """>Edit</a>"
-                                outputString += "&nbsp;&nbsp;<a href=""inv_category_action.aspx?action=delete_component&EditID=3&GoBackURL=productset_component.aspx&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PComponentID=" + componentTable.Rows(i)("PComponentID").ToString + "&PGroupID=" + PGroupID.ToString + """" + "onClick=""javascript: return confirm('" & textTable.Rows(13)("TextParamValue") & " " & Replace(componentTable.Rows(i)("ProductName"), "'", "\'") & " " & textTable.Rows(15)("TextParamValue") & "')"">" + "Del</a></td>"
-                            Else
-                                outputString += "<td align=""center"" class=""" + SelectedText + """>Updating</td>"
-                            End If
-                            outputString += "</tr>"
-                            counter += 1
-                            componentList += "," + componentTable.Rows(i)("PComponentID").ToString
-                        End If
-                    Next
-                    componentList += ","
-				
-                    Dim compareString As String
-                    For i = 0 To unComponentTable.Rows.Count - 1
-                        compareString = "," + unComponentTable.Rows(i)("PComponentID").ToString + ","
-                        If componentList.IndexOf(compareString) = -1 Then
-                            If Request.QueryString("a") = "yes" And Request.QueryString("PComponentID") = unComponentTable.Rows(i)("PComponentID") Then
-                                SelectedText = "disabledText"
-                                SelectedMaterialID = unComponentTable.Rows(i)("ProductID")
-                                SelectedMaterialAmount = Format(unComponentTable.Rows(i)("ProductAmount"), "##,##0")
-                            Else
-                                SelectedText = "text"
-                            End If
-                            If txtOrdering.Visible = True Then
-                                outputString += "<tr><td align=""center"" class=""" + SelectedText + """>" & unComponentTable.Rows(i)("Ordering") & "</td>"
-                                counter = unComponentTable.Rows(i)("Ordering")
-                            Else
-                                outputString += "<tr><td align=""center"" class=""" + SelectedText + """>" & counter.ToString & "</td>"
-                            End If
-                            outputString += "<td align=""left"" class=""" + SelectedText + """>" & unComponentTable.Rows(i)("ProductCode") & "</td>"
-                            outputString += "<td align=""left"" class=""" + SelectedText + """>" & unComponentTable.Rows(i)("ProductName") & "</td>"
-                            outputString += "<td align=""center"" class=""" + SelectedText + """>" & Format(unComponentTable.Rows(i)("ProductAmount"), "##,##0") & "</td>"
-                            If bolCanAddPrice = True Then
-                                If unComponentTable.Rows(i)("FlexibleProductIncludePrice") = 0 Then
-                                    outputString += "<td align=""center"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>"
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>"
-                                Else
-                                    outputString += "<td align=""center"" class=""" + SelectedText + """>" & unComponentTable.Rows(i)("FlexibleProductIncludePrice") & "</td>"
-                                    outputString += "<td align=""right"" class=""" + SelectedText + """>" & Format(unComponentTable.Rows(i)("FlexibleProductPrice"), "##,##0.00") & "</td>"
-                                End If
-							
-                            End If
-                            If Session("Material_Cost") = True Then
-                                outputString += "<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>"
-                                outputString += "<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>"
-                            End If
-						
-                            If SelectedText = "text" Then
-                                outputString += "<td align=""center"" class=""text""><a href=""productset_component.aspx?EditID=3&a=yes&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PComponentID=" + unComponentTable.Rows(i)("PComponentID").ToString + "&PGroupID=" + PGroupID.ToString + """>Edit</a>"
-                                outputString += "&nbsp;&nbsp;<a href=""inv_category_action.aspx?action=delete_component&EditID=3&GoBackURL=productset_component.aspx&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PComponentID=" + unComponentTable.Rows(i)("PComponentID").ToString + "&PGroupID=" + PGroupID.ToString + """" + "onClick=""javascript: return confirm('" & textTable.Rows(13)("TextParamValue") & " " & Replace(unComponentTable.Rows(i)("ProductName"), "'", "\'") & " " & textTable.Rows(15)("TextParamValue") & "')"">" + "Del</a></td>"
-                            Else
-                                outputString += "<td align=""center"" class=""" + SelectedText + """>Updating</td>"
-                            End If
-                            outputString += "</tr>"
-                            counter = counter + 1
-                        End If
-                    Next
-				
-                    Dim CostTextValue As String = "0"
-                    If costValue > 0 Then
-                        CostTextValue = Format(costValue, "##,##0.00")
-                    End If
-                    If Session("Material_Cost") = True Then
-                        'CostText.InnerHtml = textTable.Rows(16)("TextParamValue") + " " + dtTable.Rows(0)("ProductName") + " " + textTable.Rows(17)("TextParamValue") + " " + costTextValue + " " + defaultTextTable.Rows(10)("TextParamValue")
-                    End If
-				
-                    Dim AttachEditText As String
-                    If Request.QueryString("a") <> "yes" Then
-                        If bolCanAddPrice = False Then
-                            counterText.InnerHtml = counter.ToString
-                        Else
-                            counterText.InnerHtml = ""
-                            
-                            If Not Page.IsPostBack Then
-                                txtOrdering.Text = counter.ToString()
-                            End If
-                        End If
-                        SubmitForm.Text = "Add"
-                        AttachEditText = "&b=null"
-                        PComponentID.Value = "0"
-                    Else
-                        SubmitForm.Text = "Update"
-                        counterText.InnerHtml = "<a href=""productset_component.aspx?EditID=3&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" & _
-                                        Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" & _
-                                        Request.QueryString("ProductID") + "&PGroupID=" + PGroupID.ToString + """>Cancel</a>"
-                        AttachEditText = "&a=yes"
-                        If Request.QueryString("PComponentID") IsNot Nothing Then
-                            PComponentID.Value = Request.QueryString("PComponentID")
-                        End If
-                    End If
-				
+                  
                     If Not Page.IsPostBack Then
-                        If Not Request.QueryString("MaterialID") And IsNumeric(Request.QueryString("MaterialID")) And Not Page.IsPostBack Then
-                            SelectedMaterialID = Request.QueryString("MaterialID")
+                        LoadSaleModeIntoCombo()
+                        
+                        If cboSaleMode.Items.Count > 0 Then
+                            DisplayProductComponentBySaleMode(cboSaleMode.SelectedValue)
                         End If
                     End If
-				
-                    If IsNumeric(SelectedMaterialID) And SelectedMaterialID > 0 And Not Page.IsPostBack Then
-					
-                        Dim materialData As DataTable
-                        materialData = getInfo.GetProductInfo(0, SelectedMaterialID, objCnn)
-					
-                        If materialData.Rows.Count > 0 Then
-					
-                            MaterialCode.Text = materialData.Rows(0)("ProductCode")
-                            MaterialNameText.InnerHtml = materialData.Rows(0)("ProductName")
-                            MaterialID.Value = materialData.Rows(0)("ProductID")
-						
-                            If dtTable.Rows(0)("ProductSet") = 6 Then
-                                MaterialAmount.Text = "1"
-                                MaterialAmount.Enabled = False
-                            Else
-                                If Request.QueryString("a") = "yes" Then
-                                    MaterialAmount.Text = SelectedMaterialAmount
-                                    If Flex1.Visible = True Then
-                                        FlexibleProductIncludePrice.Checked = FlexIncPrice
-                                        txtFlexibleProductPrice.Text = Format(FlexProductPrice, "##0.00")
-                                    End If
-                                End If
-                                If Request.QueryString("MaterialAmount") <> Nothing Then
-                                    MaterialAmount.Text = Request.QueryString("MaterialAmount")
-                                End If
-                                MaterialAmount.Enabled = True
-                                
-                                'For Add New Use Counter
-                                If PComponentID.Value = "0" Then
-                                    txtOrdering.Text = counter
-                                Else
-                                    txtOrdering.Text = selectOrdering
-                                End If
-                            End If
-
-                        End If
-                    End If
-				
-                    ResultText.InnerHtml = outputString
-				
-                    selectMaterialText.InnerHtml = "<a href=""JavaScript: newWindow = window.open( 'product_category.aspx?EditID=3&From=component&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PGroupID=" + PGroupID.ToString + "&ProductSet=" + dtTable.Rows(0)("ProductSet").ToString + "&MaterialAmount=' + document.forms[0].MaterialAmount.value + '&PComponentID=' + document.forms[0].PComponentID.value + '" + AttachEditText + "', '', 'width=600,height=530,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" + defaultTextTable.Rows(9)("TextParamValue") + "</a>"
-				
                 Else
                     updateMessage.Text = "No Data"
                 End If
@@ -443,7 +245,347 @@ Dim CostInfo As New CostClass()
             updateMessage.Text = "Access Denied"
         End If
     End Sub
+    
+    Private Sub LoadSaleModeIntoCombo()
+        Dim dtAllSaleMode As DataTable
+        Dim i As Integer
+        Dim lstItem As ListItem
+        Dim selIndex, selSaleMode As Integer
+        selIndex = -1
+        
+        If Request.QueryString("SaleMode") Is Nothing Then
+            selSaleMode = 1
+        Else
+            If IsNumeric(Request.QueryString("SaleMode")) Then
+                selSaleMode = CInt(Request.QueryString("SaleMode"))
+            Else
+                selSaleMode = 1
+            End If
+        End If
+        
+        dtAllSaleMode = POSDBSQLFront.POSUtilSQL.ListAllSaleMode(objDB, objCnn)
+        For i = 0 To dtAllSaleMode.Rows.Count - 1
+            lstItem = New ListItem
+            lstItem.Text = dtAllSaleMode.Rows(i)("SaleModeName")
+            lstItem.Value = dtAllSaleMode.Rows(i)("SaleModeID")
+            cboSaleMode.Items.Add(lstItem)
+            
+            If dtAllSaleMode.Rows(i)("SaleModeID") = selSaleMode Then
+                selIndex = i
+            End If
+        Next i
 
+        If dtAllSaleMode.Rows.Count <> 0 Then
+            cboSaleMode.SelectedIndex = selIndex
+        End If
+        
+    End Sub
+    
+    Private Sub DisplayProductComponentBySaleMode(displaySaleMode As Integer)
+        Dim costValue As Decimal = 0
+        Dim strTemp As String
+        Dim i, counter, j As Integer
+        Dim strBuild As StringBuilder
+		
+        Dim bolIsUpdateComponentMode As Boolean
+        Dim editSaleModeID As Integer
+        Dim UnitIDValue As Integer = 0
+        Dim SelectedText As String
+        Dim SelectedMaterialID As String = 0
+        Dim selectOrdering As Integer = 0
+        Dim SelectedMaterialAmount As String
+        Dim FlexIncPrice As Boolean
+        Dim FlexProductPrice As Double
+        Dim componentList As String = ""
+        counter = 1
+        Dim subCostValue As Double
+        Dim costTable As DataTable
+
+        Dim dtComponent, dtUnComponent As DataTable
+        dtComponent = getInfo.GetProductSetInfo(Request.QueryString("ProductID"), CurrentPGroupID.Value, "0", displaySaleMode, Session("PMonthYearDate_Month"), _
+                                      Session("PMonthYearDate_Year"), Request.QueryString("ProductLevelID"), objCnn)
+        dtUnComponent = getInfo.GetProductSetInfo1(Request.QueryString("ProductID"), CurrentPGroupID.Value, "0", displaySaleMode, objCnn)
+			                    
+        
+        If IsNumeric(Request.QueryString("SaleMode")) Then
+            editSaleModeID = Request.QueryString("SaleMode")
+        End If
+        bolIsUpdateComponentMode = False
+        If Not Page.IsPostBack Then
+            If Request.QueryString("a") = "yes" Then
+                'Check For Same Display SaleMode
+                If editSaleModeID = displaySaleMode Then
+                    bolIsUpdateComponentMode = True
+                End If
+            End If
+        End If
+        
+        '  errorMsg.InnerHtml = "PGroupID = " & CurrentPGroupID.Value & ", SaleMode = " & displaySaleMode & " : Component = " & dtComponent.Rows.Count & ", " & _
+        '                      " UnComponent = " & dtUnComponent.Rows.Count
+        
+        'Clear Control
+        counterText.InnerHtml = ""
+        MaterialCode.Text = ""
+        MaterialNameText.InnerHtml = ""
+        MaterialID.Value = 0
+        MaterialAmount.Text = ""
+        FlexibleProductIncludePrice.Checked = False
+        txtFlexibleProductPrice.Text = ""
+
+        SelectedMaterialAmount = ""
+        strBuild = New StringBuilder
+        
+        If (dtComponent.Rows.Count = 0) And (displaySaleMode <> POSType.SALEMODE_DINEIN) Then
+            trHeader.Visible = True
+            AddDataText.Visible = True 
+            strBuild.Append("<tr><td colspan=""8""  align=""center"" class=""" + "boldText" + """>" & "SAME AS DINE IN" & "</td></tr>")
+        Else
+            trHeader.Visible = True
+            AddDataText.Visible = True
+            For i = 0 To dtComponent.Rows.Count - 1
+                If Not IsDBNull(dtComponent.Rows(i)("ProductID")) Then
+                    If bolIsUpdateComponentMode = True And Request.QueryString("PComponentID") = dtComponent.Rows(i)("PComponentID") Then
+                        SelectedText = "disabledText"
+                        SelectedMaterialID = dtComponent.Rows(i)("ProductID")
+                        selectOrdering = dtComponent.Rows(i)("Ordering")
+                        SelectedMaterialAmount = Format(dtComponent.Rows(i)("ProductAmount"), "##,##0")
+                        If dtComponent.Rows(i)("FlexibleProductIncludePrice") = 0 Then
+                            FlexIncPrice = False
+                        Else
+                            FlexIncPrice = True
+                        End If
+                        FlexProductPrice = dtComponent.Rows(i)("FlexibleProductPrice")
+                    Else
+                        SelectedText = "text"
+                    End If
+          
+                    'costTable = getInfo.ProductUnitCost(Request.QueryString("ProductLevelID"),componentTable.Rows(i)("ProductID"), Session("PMonthYearDate_Month"),Session("PMonthYearDate_Year"),objCnn)
+					
+                    If txtOrdering.Visible = True Then
+                        strBuild.Append("<tr><td align=""center"" class=""" + SelectedText + """>" & dtComponent.Rows(i)("Ordering") & "</td>")
+                        counter = dtComponent.Rows(i)("Ordering")
+                    Else
+                        strBuild.Append("<tr><td align=""center"" class=""" + SelectedText + """>" & counter.ToString & "</td>")
+                    End If
+                    strBuild.Append("<td align=""left"" class=""" + SelectedText + """>" & dtComponent.Rows(i)("ProductCode") & "</td>")
+                    strBuild.Append("<td align=""left"" class=""" + SelectedText + """>" & dtComponent.Rows(i)("ProductName") & "</td>")
+                    strBuild.Append("<td align=""center"" class=""" + SelectedText + """>" & Format(dtComponent.Rows(i)("ProductAmount"), "##,##0") & "</td>")
+                    If bolCanAddCompoenntPrice = True Then
+                        If dtComponent.Rows(i)("FlexibleProductIncludePrice") = 0 Then
+                            strBuild.Append("<td align=""center"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>")
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>")
+                        Else
+                            strBuild.Append("<td align=""center"" class=""" + SelectedText + """>" & dtComponent.Rows(i)("FlexibleProductIncludePrice") & "</td>")
+                            strTemp = "&nbsp;<a href=""JavaScript: newWindow = window.open( 'productcomponent_multishop.aspx?ProductLevelID=" & Request.QueryString("ProductLevelID").ToString & _
+                                    "&PGroupID=" & CurrentPGroupID.Value & "&ProductID=" + Request.QueryString("ProductID").ToString & _
+                                    "&SubProductID=" + dtComponent.Rows(i)("ProductID").ToString & "&SaleMode=" & dtComponent.Rows(i)("SaleMode") & _
+                                    "', '', 'width=550,height=650,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" & _
+                                    "Multi Price" & "</a>"
+                                    
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & Format(dtComponent.Rows(i)("FlexibleProductPrice"), "##,##0.00") & _
+                                          strTemp & "</td>")
+                        End If
+						
+                    End If
+                    subCostValue = 0
+                    If Session("Material_Cost") = True Then
+                        For j = 0 To costTable.Rows.Count - 1
+                            If Not IsDBNull(costTable.Rows(j)("TotalPrice")) And Not IsDBNull(costTable.Rows(j)("TotalAmount")) Then
+                                If costTable.Rows(j)("TotalAmount") > 0 Then
+                                    subCostValue += (costTable.Rows(j)("MaterialAmount") * costTable.Rows(j)("TotalPrice")) / costTable.Rows(j)("TotalAmount")
+                                End If
+                            End If
+                        Next
+						
+                        If subCostValue > 0 Then
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & Format(subCostValue, "##,##0.0000") & "</td>")
+                        Else
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>")
+                        End If
+                    End If
+					
+                    If Session("Material_Cost") = True Then
+                        If subCostValue > 0 Then
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & Format(subCostValue * dtComponent.Rows(i)("ProductAmount"), "##,##0.00") & "</td>")
+                            costValue += subCostValue * dtComponent.Rows(i)("ProductAmount")
+							
+                        Else
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>")
+                        End If
+                    End If
+					
+                    If SelectedText = "text" Then
+                        strTemp = "<a href=""productset_component.aspx?EditID=3&a=yes&ProductGroupID=" + Request.QueryString("ProductGroupID") & _
+                                    "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") & _
+                                    "&ProductID=" + Request.QueryString("ProductID") + "&PComponentID=" + dtComponent.Rows(i)("PComponentID").ToString & _
+                                    "&PGroupID=" + CurrentPGroupID.Value & "&SaleMode=" & dtComponent.Rows(i)("SaleMode") & """>"
+                        strBuild.Append("<td align=""center"" class=""text"">" & strTemp & "Edit</a>")
+                                
+                        strTemp = "<a href=""inv_category_action.aspx?action=delete_component&EditID=3&GoBackURL=productset_component.aspx" & _
+                                 "&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") & _
+                                 "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") & _
+                                 "&PComponentID=" + dtComponent.Rows(i)("PComponentID").ToString + "&PGroupID=" & CurrentPGroupID.Value & _
+                                 "&SaleMode=" & dtComponent.Rows(i)("SaleMode") & """" & _
+                                 "onClick=""javascript: return confirm('" & textTable.Rows(13)("TextParamValue") & " " & _
+                                    Replace(dtComponent.Rows(i)("ProductName"), "'", "\'") & " " & textTable.Rows(15)("TextParamValue") & "')"">"
+                        strBuild.Append("&nbsp;&nbsp;" & strTemp & "Del</a></td>")
+                    Else
+                        strBuild.Append("<td align=""center"" class=""" + SelectedText + """>Updating</td>")
+                    End If
+                    strBuild.Append("</tr>")
+                    counter += 1
+                    componentList += "," + dtComponent.Rows(i)("PComponentID").ToString
+                End If
+            Next i
+            componentList += ","
+				
+            Dim compareString As String
+            For i = 0 To dtUnComponent.Rows.Count - 1
+                compareString = "," + dtUnComponent.Rows(i)("PComponentID").ToString + ","
+                If componentList.IndexOf(compareString) = -1 Then
+                    If Request.QueryString("a") = "yes" And Request.QueryString("PComponentID") = dtUnComponent.Rows(i)("PComponentID") Then
+                        SelectedText = "disabledText"
+                        SelectedMaterialID = dtUnComponent.Rows(i)("ProductID")
+                        SelectedMaterialAmount = Format(dtUnComponent.Rows(i)("ProductAmount"), "##,##0")
+                    Else
+                        SelectedText = "text"
+                    End If
+                    If txtOrdering.Visible = True Then
+                        strBuild.Append("<tr><td align=""center"" class=""" + SelectedText + """>" & dtUnComponent.Rows(i)("Ordering") & "</td>")
+                        counter = dtUnComponent.Rows(i)("Ordering")
+                    Else
+                        strBuild.Append("<tr><td align=""center"" class=""" + SelectedText + """>" & counter.ToString & "</td>")
+                    End If
+                    strBuild.Append("<td align=""left"" class=""" + SelectedText + """>" & dtUnComponent.Rows(i)("ProductCode") & "EEEE</td>")
+                    strBuild.Append("<td align=""left"" class=""" + SelectedText + """>" & dtUnComponent.Rows(i)("ProductName") & "</td>")
+                    strBuild.Append("<td align=""center"" class=""" + SelectedText + """>" & Format(dtUnComponent.Rows(i)("ProductAmount"), "##,##0") & "</td>")
+                    If bolCanAddCompoenntPrice = True Then
+                        If dtUnComponent.Rows(i)("FlexibleProductIncludePrice") = 0 Then
+                            strBuild.Append("<td align=""center"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>")
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & "&nbsp;" & "</td>")
+                        Else
+                            strBuild.Append("<td align=""center"" class=""" + SelectedText + """>" & dtUnComponent.Rows(i)("FlexibleProductIncludePrice") & "</td>")
+                            strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & Format(dtUnComponent.Rows(i)("FlexibleProductPrice"), "##,##0.00") & "</td>")
+                        End If
+							
+                    End If
+                    If Session("Material_Cost") = True Then
+                        strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>")
+                        strBuild.Append("<td align=""right"" class=""" + SelectedText + """>" & "N/A" & "</td>")
+                    End If
+						
+                    If SelectedText = "text" Then
+                        strTemp = "<a href=""productset_component.aspx?EditID=3&a=yes&ProductGroupID=" + Request.QueryString("ProductGroupID") & _
+                                "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") & _
+                                "&ProductID=" + Request.QueryString("ProductID") + "&PComponentID=" + dtUnComponent.Rows(i)("PComponentID").ToString & _
+                                "&PGroupID=" & CurrentPGroupID.Value & "&SaleMode=" & dtUnComponent.Rows(i)("SaleMode") & """>"
+                        strBuild.Append("<td align=""center"" class=""text"">" & strTemp & "Edit</a>")
+                                
+                        strTemp = "<a href=""inv_category_action.aspx?action=delete_component&EditID=3&GoBackURL=productset_component.aspx" & _
+                                "&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") & _
+                                "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") & _
+                                "&PComponentID=" + dtUnComponent.Rows(i)("PComponentID").ToString + "&PGroupID=" & CurrentPGroupID.Value & _
+                                "&SaleMode=" & dtUnComponent.Rows(i)("SaleMode") & """" & _
+                                "onClick=""javascript: return confirm('" & textTable.Rows(13)("TextParamValue") & " " & _
+                                Replace(dtUnComponent.Rows(i)("ProductName"), "'", "\'") & " " & textTable.Rows(15)("TextParamValue") & "')"">"
+                                
+                        strBuild.Append("&nbsp;&nbsp;" & strTemp & "Del</a></td>")
+                    Else
+                        strBuild.Append("<td align=""center"" class=""" + SelectedText + """>Updating</td>")
+                    End If
+                    strBuild.Append("</tr>")
+                    counter = counter + 1
+                End If
+            Next
+        End If
+				
+        Dim CostTextValue As String = "0"
+        If costValue > 0 Then
+            CostTextValue = Format(costValue, "##,##0.00")
+        End If
+        If Session("Material_Cost") = True Then
+            'CostText.InnerHtml = textTable.Rows(16)("TextParamValue") + " " + dtTable.Rows(0)("ProductName") + " " + textTable.Rows(17)("TextParamValue") + " " + costTextValue + " " + defaultTextTable.Rows(10)("TextParamValue")
+        End If
+		
+        Dim AttachEditText As String
+
+        If bolIsUpdateComponentMode = False Then
+            If bolCanAddCompoenntPrice = False Then
+                counterText.InnerHtml = counter.ToString
+            Else
+                counterText.InnerHtml = ""
+                            
+                If Not Page.IsPostBack Then
+                    txtOrdering.Text = counter.ToString()
+                End If
+            End If
+            SubmitForm.Text = "Add"
+            AttachEditText = "&b=null"
+            PComponentID.Value = "0"
+        Else
+            SubmitForm.Text = "Update"
+            counterText.InnerHtml = "<a href=""productset_component.aspx?EditID=3&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" & _
+                            Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") & _
+                            "&ProductID=" & Request.QueryString("ProductID") + "&PGroupID=" & CurrentPGroupID.Value & _
+                            "&SaleMode=" & Request.QueryString("SaleMode") & """>Cancel</a>"
+            AttachEditText = "&a=yes"
+            If Request.QueryString("PComponentID") IsNot Nothing Then
+                PComponentID.Value = Request.QueryString("PComponentID")
+            End If
+        End If
+        
+        ResultText.InnerHtml = strBuild.ToString
+        
+        selectMaterialText.InnerHtml = "<a href=""JavaScript: newWindow = window.open( 'product_category.aspx?EditID=3&From=component" & _
+                    "&ProductGroupID=" & Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") & _
+                    "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") & _
+                    "&PGroupID=" & CurrentPGroupID.Value & "&ProductSet=" & ProductSetType.Value & "&SaleMode=" & displaySaleMode & _
+                    "&MaterialAmount=' + document.forms[0].MaterialAmount.value + '&PComponentID=' + document.forms[0].PComponentID.value + '" + AttachEditText & _
+                    "', '', 'width=600,height=530,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" & _
+                    defaultTextTable.Rows(9)("TextParamValue") + "</a>"
+       
+        'For Add New Use Counter
+        If PComponentID.Value = "0" Then
+            txtOrdering.Text = counter
+        Else
+            txtOrdering.Text = selectOrdering
+        End If
+          
+        If Not Request.QueryString("MaterialID") And IsNumeric(Request.QueryString("MaterialID")) And Not Page.IsPostBack Then
+            SelectedMaterialID = Request.QueryString("MaterialID")
+        End If
+
+        If Not Page.IsPostBack Then
+            If SelectedMaterialID > 0 Then
+                Dim materialData As DataTable
+                materialData = getInfo.GetProductInfo(0, SelectedMaterialID, objCnn)
+					
+                If materialData.Rows.Count > 0 Then
+                    MaterialCode.Text = materialData.Rows(0)("ProductCode")
+                    MaterialNameText.InnerHtml = materialData.Rows(0)("ProductName")
+                    MaterialID.Value = materialData.Rows(0)("ProductID")
+						
+                    If ProductSetType.Value = 6 Then
+                        MaterialAmount.Text = "1"
+                        MaterialAmount.Enabled = False
+                    Else
+                        If Request.QueryString("a") = "yes" Then
+                            MaterialAmount.Text = SelectedMaterialAmount
+                            If Flex1.Visible = True Then
+                                FlexibleProductIncludePrice.Checked = FlexIncPrice
+                                txtFlexibleProductPrice.Text = Format(FlexProductPrice, "##0.00")
+                            End If
+                        End If
+                        If Request.QueryString("MaterialAmount") <> Nothing Then
+                            MaterialAmount.Text = Request.QueryString("MaterialAmount")
+                        End If
+                        MaterialAmount.Enabled = True
+                    End If
+                End If
+            End If
+        End If
+    End Sub
+    
     Sub DoAddUpdate(Source As Object, E As EventArgs)
         Dim strTemp As String
         Dim FoundError As Boolean = False
@@ -463,7 +605,8 @@ Dim CostInfo As New CostClass()
             FoundError = True
         Else
             Dim chkComponent As New DataTable()
-            chkComponent = getInfo.GetProductInfo1(0, MaterialCode.Text, ProductID.Value, Request.QueryString("ProductLevelID"), PGroupID, objCnn)
+            chkComponent = getInfo.GetProductInfo1(0, MaterialCode.Text, ProductID.Value, Request.QueryString("ProductLevelID"), PGroupID, _
+                                  cboSaleMode.SelectedValue, objCnn)
             If chkComponent.Rows.Count > 0 Then
                 If (PComponentID.Value = "0" Or (PComponentID.Value <> "0" And PComponentID.Value <> chkComponent.Rows(0)("PComponentID"))) Then
                     ValidateCode.InnerHtml = "<tr><td colspan=""3"" class=""errorText"">" & textTable.Rows(38)("TextParamValue") & "</td></tr>"
@@ -529,15 +672,23 @@ Dim CostInfo As New CostClass()
             
             Application.Lock()
             If PComponentID.Value = "0" Then
-                Result = getInfo.AUDComponent("Add", "0", ProductID.Value, MaterialID.Value, MaterialAmount.Text, 0, 0, PGroupID, 1, FlexInc, FlexPrice, ordering, 0, objCnn)
+                Result = getInfo.AUDComponent("Add", "0", ProductID.Value, MaterialID.Value, MaterialAmount.Text, 0, 0, PGroupID, cboSaleMode.SelectedValue, _
+                                           FlexInc, FlexPrice, ordering, 0, objCnn)
             ElseIf myArray.Length >= 4 Then
+                'Update Data --> PGroupID, MateiralID, SaleMode --> Is In PComponentID Value
                 Result = getInfo.AUDComponent("Update", PComponentID.Value, ProductID.Value, MaterialID.Value, MaterialAmount.Text, 0, 0, PGroupID, 1, FlexInc, _
                                              FlexPrice, ordering, 0, objCnn)
+            Else
+                Result = ""
             End If
             getInfo.UpdateProductDate(ProductID.Value, objCnn)
             Application.UnLock()
             If Result = "Success" Then
-                Response.Redirect("productset_component.aspx?EditID=3&ProductGroupID=" + Request.QueryString("ProductGroupID") + "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") + "&ProductID=" + Request.QueryString("ProductID") + "&PGroupID=" + PGroupID.ToString)
+                strTemp = "productset_component.aspx?EditID=3&ProductGroupID=" + Request.QueryString("ProductGroupID") & _
+                            "&ProductLevelID=" + Request.QueryString("ProductLevelID") + "&ProductDeptID=" + Request.QueryString("ProductDeptID") & _
+                            "&ProductID=" + Request.QueryString("ProductID") + "&PGroupID=" + PGroupID.ToString & _
+                            "&SaleMode=" & cboSaleMode.SelectedValue
+                Response.Redirect(strTemp)
             Else
                 errorMsg.InnerHtml = Result
             End If
@@ -553,10 +704,14 @@ Dim CostInfo As New CostClass()
         MaterialID.Value = materialByCode.Rows(0)("ProductID")
     End Sub
 
-Sub Page_UnLoad()
-	objCnn.Close()
-End Sub
+    Sub Page_UnLoad()
+        objCnn.Close()
+    End Sub
 
+   
+    Protected Sub cboSaleMode_SelectedIndexChanged(sender As Object, e As EventArgs)
+        DisplayProductComponentBySaleMode(cboSaleMode.SelectedValue)
+    End Sub
 </script>
 </body>
 </html>

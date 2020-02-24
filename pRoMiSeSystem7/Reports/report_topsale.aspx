@@ -21,11 +21,34 @@
 <link href="../StyleSheet/admin.css" type="text/css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script language="JavaScript" src="../StyleSheet/webscript.js"></script> 
+
+    <script src="../Scripts/jquery.js" type="text/javascript"></script>
+
+    <script src="../Scripts/jquery-ui.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+
+            $('#chkSelectAllShop').live('click', function () {
+                $("#chklShopInfo INPUT[type='checkbox']").attr('checked', $(this).is(':checked') ? 'checked' : '');
+            });
+
+            $("#chklShopInfo input").live("click", function () {
+                if ($("#chklShopInfo input[type='checkbox']:checked").length == $("#chklShopInfo input").length) {
+                    $('#chkSelectAllShop').attr('checked', 'checked').next();
+                }
+                else {
+                    $('#chkSelectAllShop').removeAttr('checked');
+                }
+
+            });
+        });
+    </script>
+
 </head>
 <body>
 <div id="showPage" visible="true" runat="server">
-
-
 
 <form id="mainForm" runat="server">
 <input type="hidden" id="ServiceProduct" runat="server" />
@@ -51,11 +74,37 @@
 <div class="noprint">
 <table>
 <tr id="ShowShop" runat="server">
+    <td valign="top">
+        <div id="ShowMasterShop" runat="server" >
+		<table>
+ 			<tr>
+                <td width="170px">
+                    <asp:Panel ID="pnlMasterShop" runat="server" Height="180px" ScrollBars="Auto" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px">
+                    <asp:CheckBoxList ID="chklMasterShop" runat="server" AutoPostBack="true" OnSelectedIndexChanged="SelShop" Height="16px" Width="145px"></asp:CheckBoxList>       
+                     </asp:Panel>
+                </td> 
+		    </tr>
+		</table>
+	    </div>
+    </td>
+ 	<td valign="top">
+		<table>
+    		<tr>
+	            <td width="225px" id="ShowShopInfoList" runat="server">
+                    <asp:Panel ID="pnlShop" runat="server" Height="180px" ScrollBars="Auto" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px">
+                    &nbsp;<asp:CheckBox ID="chkSelectAllShop" runat="server" Text="Select All" />
+                    <asp:CheckBoxList ID="chklShopInfo" runat="server" Height="16px" Width="200px"></asp:CheckBoxList>       
+                     </asp:Panel>
+                </td>    
+			</tr>
+		</table>
+	</td>
 	<td valign="top">
 		<table>
-
 			<tr>
-				<td><asp:DropDownList ID="ShopInfo" CssClass="text" Width="200" AutoPostBack="true" OnSelectedIndexChanged="SelGroup" runat="server"></asp:DropDownList></td>
+				<td id="ShowShopInfoCombo" runat="server">
+                    <asp:DropDownList ID="cboShopInfo" CssClass="text" Width="200" AutoPostBack="true" OnSelectedIndexChanged="SelGroup" runat="server"></asp:DropDownList>
+				</td>
 			</tr>
             <tr id="showSaleMode" visible="false" runat="server">
 				<td><asp:DropDownList ID="SaleModeInfo" CssClass="text" Width="200" runat="server"></asp:DropDownList></td>
@@ -483,12 +532,8 @@ Dim PageID As Integer  = 998
 
             Dim i As Integer
 		
-            Dim ShopData As DataTable = getInfo.GetProductLevelAccess(-1, Session("StaffRole"), objCnn)
             If Not Page.IsPostBack Then
-                ShopInfo.DataSource = ShopData
-                ShopInfo.DataValueField = "ProductLevelID"
-                ShopInfo.DataTextField = "ProductLevelName"
-                ShopInfo.DataBind()
+                InitialLoadMasterShopIntoCombo()
 			
                 ShowGroup()
 			
@@ -627,7 +672,8 @@ Dim PageID As Integer  = 998
             FoundError = True
         End If
 	
-        Dim strShopID As String
+        Dim strShopID, strSelShopName As String
+        Dim bolSelAllShop, bolSelMultipleShop As Boolean
         Dim StartTime As String = ""
         Dim EndTime As String = ""
         If (IsNumeric(Request.Form("FromTime_Hour")) And IsNumeric(Request.Form("FromTime_Minute"))) Then
@@ -659,21 +705,10 @@ Dim PageID As Integer  = 998
             End If
             Dim grandTotalQty As Double
 
-            If ShopInfo.SelectedValue <= 0 Then
-                strShopID = ""
-                For i = 0 To ShopInfo.Items.Count - 1
-                    If ShopInfo.Items(i).Value > 0 Then
-                        strShopID &= ShopInfo.Items(i).Value & ", "
-                    End If
-                Next i
-                If strShopID <> "" Then
-                    strShopID = Mid(strShopID, 1, Len(strShopID) - 2)
-                Else
-                    strShopID = "-1"
-                End If
-            Else
-                strShopID = ShopInfo.SelectedValue
-            End If
+            'Get Select Shop
+            strShopID = ""
+            strSelShopName = ""
+            GetSelectShopIDAndName(strShopID, strSelShopName, bolSelAllShop, bolSelMultipleShop)
             
             getReport.TopSaleReports(dtTable, grandTotalQty, grandTotal, GraphData, GroupByParam.SelectedItem.Value, StartDate, EndDate, StartTime, EndTime, _
                               strShopID, SaleModeInfo.SelectedItem.Value, GroupInfo.SelectedItem.Value, DeptInfo.SelectedItem.Value, _
@@ -761,7 +796,6 @@ Dim PageID As Integer  = 998
                 outputString += "</tr>"
             End If
             ResultText.InnerHtml = outputString
-            Dim ShopGroupDept As String = ShopInfo.SelectedItem.Text
             Dim GroupText As String = ""
             If GroupInfo.SelectedItem.Value <> "0" Then
                 GroupText = ": " + GroupInfo.SelectedItem.Text
@@ -780,9 +814,9 @@ Dim PageID As Integer  = 998
             End If
 		
             If GroupByParam.SelectedItem.Value = 5 Then
-                ResultSearchText.InnerHtml = "No Sale Report of " + ShopGroupDept + " (" + ReportDate + ")"
+                ResultSearchText.InnerHtml = "No Sale Report of " & strSelShopName & " (" + ReportDate + ")"
             Else
-                ResultSearchText.InnerHtml = "Top Product Sale Report of " + ShopGroupDept + SaleModeText + GroupText + " (" + ReportDate + ")"
+                ResultSearchText.InnerHtml = "Top Product Sale Report of " & strSelShopName & SaleModeText + GroupText + " (" + ReportDate + ")"
             End If
             Dim ExportData As String = ""
             ExportData += "<table width=""100%"">"
@@ -821,7 +855,7 @@ Dim PageID As Integer  = 998
                 chart.DataYValueField = "Value1"
                 chart.DataBind()
                 ChartControl1.Charts.Add(chart)
-                ConfigureColors("Top Product Sale Report of " + ShopGroupDept + " (" + ReportDate + ")")
+                ConfigureColors("Top Product Sale Report of " & strSelShopName & " (" + ReportDate + ")")
         
                 ChartControl1.RedrawChart()
             Else
@@ -829,139 +863,299 @@ Dim PageID As Integer  = 998
             End If
         End If
     End Sub
-
- Sub ConfigureColors(TitleName)
-        	'ChartControl1.Background.Color = Color.FromArgb(75, Color.SteelBlue)
-			Dim ChartWidth As Integer = 700
-			Dim ChartHeight As Integer = 550
-			
-			
-            ChartControl1.Background.Type = InteriorType.LinearGradient
-            ChartControl1.Background.ForeColor = Color.SteelBlue
-            ChartControl1.Background.EndPoint = new Point(ChartWidth, ChartHeight) 
-            ChartControl1.Legend.Position = LegendPosition.Bottom
-           ' 'ChartControl1.Legend.Width = 40
-			ChartControl1.Width = Unit.Parse(ChartWidth.ToString + "px")
-			ChartControl1.Height = Unit.Parse(ChartHeight.ToString + "px")
- 
-            ChartControl1.YAxisFont.ForeColor = Color.SteelBlue
-            ChartControl1.XAxisFont.ForeColor = Color.SteelBlue
-            
-            ChartControl1.ChartTitle.Text = TitleName
-            ChartControl1.ChartTitle.ForeColor = Color.White
-      
-            ChartControl1.Border.Color = Color.SteelBlue
-            'ChartControl1.BorderStyle = BorderStyle.Ridge
-    End Sub
-
-Sub SelGroup(sender As Object, e As System.EventArgs)
-	ShowGroup()
-End Sub
-
-        Public Function GetProductGroupNew(ByVal ProductLevelID As Integer, ByVal ProductGroupID As Integer, ByVal objCnn As MySqlConnection) As DataTable
-            Dim sqlStatement As String
-            Dim AdditionalQuery As String = ""
-            Dim getMaster As DataTable = objDB.List("select * from ProductLevel WHERE ProductLevelID=" + ProductLevelID.ToString, objCnn)
-            Dim MasterID As Integer = 0
-            If getMaster.Rows.Count > 0 Then
-                If getMaster.Rows(0)("MasterShop") = 0 Then
-                    MasterID = getMaster.Rows(0)("MasterShopLink")
+    
+    Private Sub GetSelectShopIDAndName(ByRef selShopID As String, ByRef selShopName As String, ByRef bolSelAllShop As Boolean, ByRef bolSelMultipleShop As Boolean)
+        Dim i, noSelShop As Integer
+        bolSelAllShop = False
+        bolSelMultipleShop = False
+        selShopID = ""
+        selShopName = ""
+        If ShowShopInfoCombo.Visible = True Then
+            If cboShopInfo.Items.Count > 0 Then
+                If cboShopInfo.SelectedIndex = 0 Then
+                    bolSelAllShop = True
+                    bolSelMultipleShop = True
+                    For i = 1 To cboShopInfo.Items.Count - 1
+                        selShopID &= cboShopInfo.Items(i).Value & ", "
+                        selShopName &= cboShopInfo.Items(i).Text & ", "
+                    Next i
+                Else
+                    bolSelAllShop = False
+                    selShopID &= cboShopInfo.SelectedItem.Value & ", "
+                    selShopName &= cboShopInfo.SelectedItem.Text & ", "
                 End If
             End If
-            If MasterID <> 0 And IsNumeric(MasterID) Then
-                AdditionalQuery += " AND a.MasterShop=" + MasterID.ToString
-			Else
-				If ProductLevelID > 0 Then 
-					AdditionalQuery += " AND a.ProductlevelID=" + ProductLevelID.ToString 
-				End if 
+        Else
+            bolSelAllShop = chkSelectAllShop.Checked
+            noSelShop = 0
+            For i = 0 To chklShopInfo.Items.Count - 1
+                If chklShopInfo.Items(i).Selected = True Then
+                    selShopID &= chklShopInfo.Items(i).Value & ", "
+                    selShopName &= chklShopInfo.Items(i).Text & ", "
+                    noSelShop += 1
+                End If
+            Next
+            If noSelShop > 1 Then
+                bolSelMultipleShop = True
             End If
-            If ProductGroupID > 0 And IsNumeric(ProductGroupID) Then
-                AdditionalQuery += " AND b.ProductGroupID=" + ProductGroupID.ToString
+            
+            If selShopID = "" Then
+                If chklMasterShop.Items.Count > 0 Then
+                    'No Shop Select ---> Check For MasterShop
+                    For i = 0 To chklMasterShop.Items.Count - 1
+                        If chklMasterShop.Items(i).Selected = True Then
+                            selShopID &= chklMasterShop.Items(i).Value & ", "
+                            selShopName &= chklMasterShop.Items(i).Text & ", "
+                        End If
+                    Next i
+                    'No Check For MasterShop ---> Select All MasterShop
+                    If selShopID = "" Then
+                        For i = 0 To chklMasterShop.Items.Count - 1
+                            selShopID &= chklMasterShop.Items(i).Value & ", "
+                            selShopName &= chklMasterShop.Items(i).Text & ", "
+                        Next i
+                    End If
+                Else
+                    'No MasterShop ----> Select All Shop
+                    For i = 0 To chklShopInfo.Items.Count - 1
+                        selShopID &= chklShopInfo.Items(i).Value & ", "
+                        selShopName &= chklShopInfo.Items(i).Text & ", "
+                    Next i
+                End If
+                If selShopID <> "" Then
+                    bolSelMultipleShop = True
+                End If
             End If
-            sqlStatement = "SELECT CAST(ProductGroupCode AS UNSIGNED INTEGER) AS CodeOrder,a.*,b.* FROM ProductLevel a LEFT OUTER JOIN ProductGroup b ON a.ProductLevelID=b.ProductLevelID WHERE a.Deleted=0 AND b.Deleted=0 " + AdditionalQuery + " ORDER BY ProductLevelName,ProductGroupOrdering,CodeOrder,ProductGroupCode"
+        End If
+        If selShopID <> "" Then
+            selShopID = Mid(selShopID, 1, Len(selShopID) - 2)
+        Else
+            selShopID = "-1"
+        End If
+        If selShopName <> "" Then
+            selShopName = Mid(selShopName, 1, Len(selShopName) - 2)
+        End If
+    End Sub
 
-            Return objDB.List(sqlStatement, objCnn)
-        End Function
+    Private Sub InitialLoadMasterShopIntoCombo()
+        If POSBackOfficeReport.ReportShareSQL.BackOfficeReport_IsDisplayShopByMasterShop(objDB, objCnn) <> 0 Then
+            Dim lstItem As ListItem
+            Dim i As Integer
+            Dim dtShopMaster As DataTable
+            dtShopMaster = getInfo.ListMasterShop(Session("StaffRole"), objCnn)
+            chklMasterShop.Items.Clear()
+            For i = 0 To dtShopMaster.Rows.Count - 1
+                lstItem = New ListItem
+                lstItem.Text = dtShopMaster.Rows(i)("ProductLevelName")
+                lstItem.Value = dtShopMaster.Rows(i)("ProductLevelID")
+                    
+                chklMasterShop.Items.Add(lstItem)
+            Next i
+            If chklMasterShop.Items.Count <= 1 Then
+                ShowMasterShop.Visible = False
+            Else
+                ShowMasterShop.Visible = True
+            End If
+            ShowShopInfoList.Visible = True
+            ShowShopInfoCombo.Visible = False
+        Else
+            chklMasterShop.Items.Clear()
+            ShowMasterShop.Visible = False
+            ShowShopInfoList.Visible = False
+            ShowShopInfoCombo.Visible = True
+        End If
+        LoadShopIntoCheckBoxList()
+    End Sub
 
+    Sub SelShop(sender As Object, e As System.EventArgs)
+        LoadShopIntoCheckBoxList()
+    End Sub
+    
+    Private Sub LoadShopIntoCheckBoxList()
+        Dim dtShopData As DataTable
+        Dim lstItem As ListItem
+        Dim i As Integer
+        Dim strSelMasterShopID As String
+        
+        strSelMasterShopID = ""
+        For i = 0 To chklMasterShop.Items.Count - 1
+            If chklMasterShop.Items(i).Selected = True Then
+                strSelMasterShopID &= chklMasterShop.Items(i).Value & ", "
+            End If
+        Next i
+        
+        If strSelMasterShopID = "" Then
+            dtShopData = getInfo.GetProductLevelAccess(-999, Session("StaffRole"), objCnn)
+        Else
+            dtShopData = getInfo.GetProductLevelAccess(-999, Session("StaffRole"), Mid(strSelMasterShopID, 1, Len(strSelMasterShopID) - 2), objCnn)
+        End If
+        
+        cboShopInfo.Items.Clear()
+        chklShopInfo.Items.Clear()
+        
+        'All Shop For Combo
+        lstItem = New ListItem
+        lstItem.Text = "----- All Shops -----"
+        lstItem.Value = 0
+        cboShopInfo.Items.Add(lstItem)
+        For i = 0 To dtShopData.Rows.Count - 1
+            lstItem = New ListItem
+            lstItem.Text = dtShopData.Rows(i)("ProductLevelName")
+            lstItem.Value = dtShopData.Rows(i)("ProductLevelID")
+            chklShopInfo.Items.Add(lstItem)
+            lstItem = New ListItem
+            lstItem.Text = dtShopData.Rows(i)("ProductLevelName")
+            lstItem.Value = dtShopData.Rows(i)("ProductLevelID")
+            cboShopInfo.Items.Add(lstItem)
+        Next i
+        
+        If dtShopData.Rows.Count >= 1 Then
+            cboShopInfo.SelectedIndex = 1
+        End If
+        
+        If ShowShopInfoCombo.Visible = False Then
+            ShowGroup()
+        End If
+    End Sub
 
-Sub ShowGroup()
-	showGraph.Visible = False
-	Dim i As Integer
-	Dim gpTable As New DataTable()
-'	gpTable = getInfo.GetProductGroupNew(ShopInfo.SelectedItem.Value,0,objCnn)
-	gpTable = GetProductGroupNew(ShopInfo.SelectedItem.Value,0,objCnn)
+    Sub ConfigureColors(TitleName As String)
+        'ChartControl1.Background.Color = Color.FromArgb(75, Color.SteelBlue)
+        Dim ChartWidth As Integer = 700
+        Dim ChartHeight As Integer = 550
 			
-	Dim groupTable As DataTable = New DataTable("GroupData")
-	groupTable.Columns.Add("ProductGroupName")
-	groupTable.Columns.Add("ProductGroupID")
-	Dim myrow As DataRow = groupTable.NewRow()
-	myrow("ProductGroupName") = "-- Display All Groups --"
-	myrow("ProductGroupID") = "0"
-	groupTable.Rows.Add(myrow)
-	For i = 0 To gpTable.Rows.Count - 1
-		If gpTable.Rows(i)("IsComment") = 0 Then
-			myrow = groupTable.NewRow()
-			myrow("ProductGroupName") = gpTable.Rows(i)("ProductGroupName")
-			myrow("ProductGroupID") = gpTable.Rows(i)("ProductGroupCode")
-			groupTable.Rows.Add(myrow)
-		End If
-	Next
-	GroupInfo.DataSource = groupTable
-	GroupInfo.DataValueField = "ProductGroupID"
-	GroupInfo.DataTextField = "ProductGroupName"
-	GroupInfo.DataBind()
+			
+        ChartControl1.Background.Type = InteriorType.LinearGradient
+        ChartControl1.Background.ForeColor = Color.SteelBlue
+        ChartControl1.Background.EndPoint = New Point(ChartWidth, ChartHeight)
+        ChartControl1.Legend.Position = LegendPosition.Bottom
+        ' 'ChartControl1.Legend.Width = 40
+        ChartControl1.Width = Unit.Parse(ChartWidth.ToString + "px")
+        ChartControl1.Height = Unit.Parse(ChartHeight.ToString + "px")
+ 
+        ChartControl1.YAxisFont.ForeColor = Color.SteelBlue
+        ChartControl1.XAxisFont.ForeColor = Color.SteelBlue
+            
+        ChartControl1.ChartTitle.Text = TitleName
+        ChartControl1.ChartTitle.ForeColor = Color.White
+      
+        ChartControl1.Border.Color = Color.SteelBlue
+        'ChartControl1.BorderStyle = BorderStyle.Ridge
+    End Sub
+
+    Sub SelGroup(sender As Object, e As System.EventArgs)
+        ShowGroup()
+    End Sub
+       
+    Public Function GetProductGroupNew(ByVal groupOfShopID As String, ByVal ProductGroupID As Integer, ByVal objCnn As MySqlConnection) As DataTable
+        Dim sqlStatement As String
+        Dim AdditionalQuery As String = ""
+        Dim strSelShopID As String
+        
+        strSelShopID = POSDBSQLFront.POSProductSQL.GetGroupOfMasterShopID(objDB, objCnn, groupOfShopID)
+        If strSelShopID <> "" Then
+            AdditionalQuery &= " AND a.ProductlevelID IN (" & strSelShopID & ") "
+        End If
+        If ProductGroupID > 0 And IsNumeric(ProductGroupID) Then
+            AdditionalQuery &= " AND b.ProductGroupID=" + ProductGroupID.ToString
+        End If
+        sqlStatement = "SELECT CAST(ProductGroupCode AS UNSIGNED INTEGER) AS CodeOrder,a.*,b.* " & _
+                       "FROM ProductLevel a LEFT OUTER JOIN ProductGroup b ON a.ProductLevelID=b.ProductLevelID " & _
+                       "WHERE a.Deleted=0 AND b.Deleted=0 " + AdditionalQuery + " ORDER BY ProductLevelName,ProductGroupOrdering,CodeOrder,ProductGroupCode"
+        Return objDB.List(sqlStatement, objCnn)
+    End Function
+
+
+    Sub ShowGroup()
+        showGraph.Visible = False
+        Dim i As Integer
+        Dim strSelShopID As String
+        Dim bolSelAllShop, bolSelMultipleShop As Boolean
+        Dim gpTable As New DataTable()
+        '	gpTable = getInfo.GetProductGroupNew(ShopInfo.SelectedItem.Value,0,objCnn)
+
+        'Get SelectShop
+        strSelShopID = ""
+        GetSelectShopIDAndName(strSelShopID, "", bolSelAllShop, bolSelMultipleShop)
+        
+        gpTable = GetProductGroupNew(strSelShopID, 0, objCnn)
+			
+        Dim groupTable As DataTable = New DataTable("GroupData")
+        groupTable.Columns.Add("ProductGroupName")
+        groupTable.Columns.Add("ProductGroupID")
+        Dim myrow As DataRow = groupTable.NewRow()
+        myrow("ProductGroupName") = "-- Display All Groups --"
+        myrow("ProductGroupID") = "0"
+        groupTable.Rows.Add(myrow)
+        For i = 0 To gpTable.Rows.Count - 1
+            If gpTable.Rows(i)("IsComment") = 0 Then
+                myrow = groupTable.NewRow()
+                myrow("ProductGroupName") = gpTable.Rows(i)("ProductGroupName")
+                myrow("ProductGroupID") = gpTable.Rows(i)("ProductGroupCode")
+                groupTable.Rows.Add(myrow)
+            End If
+        Next
+        GroupInfo.DataSource = groupTable
+        GroupInfo.DataValueField = "ProductGroupID"
+        GroupInfo.DataTextField = "ProductGroupName"
+        GroupInfo.DataBind()
 	
-	Dim deptTable As DataTable = New DataTable("DeptData")
-	deptTable.Columns.Add("ProductDeptName")
-	deptTable.Columns.Add("ProductDeptID")
-	Dim deptRow As DataRow = deptTable.NewRow()
-	deptRow("ProductDeptName") = "-- Display All Dept --"
-	deptRow("ProductDeptID") = "0"
-	deptTable.Rows.Add(deptRow)
-	DeptInfo.DataSource = deptTable
-	DeptInfo.DataValueField = "ProductDeptID"
-	DeptInfo.DataTextField = "ProductDeptName"
-	DeptInfo.DataBind()
-	DeptInfo.Enabled = False
-End Sub
+        Dim deptTable As DataTable = New DataTable("DeptData")
+        deptTable.Columns.Add("ProductDeptName")
+        deptTable.Columns.Add("ProductDeptID")
+        Dim deptRow As DataRow = deptTable.NewRow()
+        deptRow("ProductDeptName") = "-- Display All Dept --"
+        deptRow("ProductDeptID") = "0"
+        deptTable.Rows.Add(deptRow)
+        DeptInfo.DataSource = deptTable
+        DeptInfo.DataValueField = "ProductDeptID"
+        DeptInfo.DataTextField = "ProductDeptName"
+        DeptInfo.DataBind()
+        DeptInfo.Enabled = False
+    End Sub
 
-Sub SelDept(sender As Object, e As System.EventArgs)
-	ShowDept()
-End Sub
+    Sub SelDept(sender As Object, e As System.EventArgs)
+        ShowDept()
+    End Sub
 
-Sub ShowDept()
-	showGraph.Visible = False
-	Dim i As Integer
-	Dim deptTable As DataTable = New DataTable("DeptData")
-	deptTable.Columns.Add("ProductDeptName")
-	deptTable.Columns.Add("ProductDeptID")
-	Dim deptRow As DataRow = deptTable.NewRow()
-	If GroupInfo.SelectedItem.Value = "0" Then
-		DeptInfo.Enabled = False
+    Sub ShowDept()
+        showGraph.Visible = False
+        Dim i As Integer
+        Dim deptTable As DataTable = New DataTable("DeptData")
+        deptTable.Columns.Add("ProductDeptName")
+        deptTable.Columns.Add("ProductDeptID")
+        Dim deptRow As DataRow = deptTable.NewRow()
+        If GroupInfo.SelectedItem.Value = "0" Then
+            DeptInfo.Enabled = False
 		
-		deptRow("ProductDeptName") = "-- Display All Dept --"
-		deptRow("ProductDeptID") = "0"
-		deptTable.Rows.Add(deptRow)
-		DeptInfo.Enabled = False
-	Else
-		DeptInfo.Enabled = True
-		Dim dpTable As New DataTable()
-		dpTable = getInfo.GetProductDeptCode(ShopInfo.SelectedItem.Value,GroupInfo.SelectedItem.Value,0,objCnn)'getInfo.GetProductDept(GroupInfo.SelectedItem.Value,0,objCnn)
-		deptRow("ProductDeptName") = "-- Display All Dept --"
-		deptRow("ProductDeptID") = "0"
-		deptTable.Rows.Add(deptRow)
-		For i = 0 To dpTable.Rows.Count - 1
-			deptRow = deptTable.NewRow()
-			deptRow("ProductDeptName") = dpTable.Rows(i)("ProductDeptName")
-			deptRow("ProductDeptID") = dpTable.Rows(i)("ProductDeptCode")
-			deptTable.Rows.Add(deptRow)
-		Next
-		DeptInfo.DataSource = deptTable
-		DeptInfo.DataValueField = "ProductDeptID"
-		DeptInfo.DataTextField = "ProductDeptName"
-		DeptInfo.DataBind()
-	End If
-End Sub
+            deptRow("ProductDeptName") = "-- Display All Dept --"
+            deptRow("ProductDeptID") = "0"
+            deptTable.Rows.Add(deptRow)
+            DeptInfo.Enabled = False
+        Else
+            Dim strSelShopID As String
+            Dim bolSelAllShop, bolSelMultipleShop As Boolean
+            'Get SelectShop
+            strSelShopID = ""
+            GetSelectShopIDAndName(strSelShopID, "", bolSelAllShop, bolSelMultipleShop)
+        
+            DeptInfo.Enabled = True
+            Dim dpTable As New DataTable()
+            dpTable = getInfo.GetProductDeptCode(strSelShopID, GroupInfo.SelectedItem.Value, 0, objCnn) 'getInfo.GetProductDept(GroupInfo.SelectedItem.Value,0,objCnn)
+            deptRow("ProductDeptName") = "-- Display All Dept --"
+            deptRow("ProductDeptID") = "0"
+            deptTable.Rows.Add(deptRow)
+            For i = 0 To dpTable.Rows.Count - 1
+                deptRow = deptTable.NewRow()
+                deptRow("ProductDeptName") = dpTable.Rows(i)("ProductDeptName")
+                deptRow("ProductDeptID") = dpTable.Rows(i)("ProductDeptCode")
+                deptTable.Rows.Add(deptRow)
+            Next
+            DeptInfo.DataSource = deptTable
+            DeptInfo.DataValueField = "ProductDeptID"
+            DeptInfo.DataTextField = "ProductDeptName"
+            DeptInfo.DataBind()
+        End If
+    End Sub
 
 Sub ExportData(Source As Object, E As EventArgs)
 	

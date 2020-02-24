@@ -469,6 +469,61 @@
     <value>Exempt Product Tax (SCD Discount)</value>
   </Form>
   <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>17</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Promo Code</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>18</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Manual Select Promotion</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>19</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Description</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>20</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>Convert To PayType</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>21</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value>----- Not Convert -----</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>22</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value></value>
+  </Form>
+
+  <Form>
     <formid>4</formid>
     <formname>Promotion_Link.aspx</formname>
     <id>0</id>

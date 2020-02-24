@@ -35,6 +35,10 @@
 <input type="hidden" id="SelShopName" runat="server" />
 <input type="hidden" id="SelPromotionIDList" runat="server" />
 
+    <script src="../Scripts/jquery.js" type="text/javascript"></script>
+
+    <script src="../Scripts/jquery-ui.js" type="text/javascript"></script>
+
  <SCRIPT type="text/javascript">
      function CheckAll(checked) {
          len = document.forms[0].chkbSelectPromotion.Items.Count;
@@ -44,6 +48,23 @@
          }
      }
      
+     jQuery(document).ready(function ($) {
+
+         $('#chkSelectAllShop').live('click', function () {
+             $("#chklShopInfo INPUT[type='checkbox']").attr('checked', $(this).is(':checked') ? 'checked' : '');
+         });
+
+         $("#chklShopInfo input").live("click", function () {
+             if ($("#chklShopInfo input[type='checkbox']:checked").length == $("#chklShopInfo input").length) {
+                 $('#chkSelectAllShop').attr('checked', 'checked').next();
+             }
+             else {
+                 $('#chkSelectAllShop').removeAttr('checked');
+             }
+
+         });
+     });
+
 </script>
     
 

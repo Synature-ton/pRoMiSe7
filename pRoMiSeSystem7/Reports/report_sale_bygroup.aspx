@@ -1,4 +1,4 @@
-<%@ Page Language="VB" ContentType="text/html" EnableViewState="False" debug="True" %>
+﻿<%@ Page Language="VB" ContentType="text/html" EnableViewState="False" debug="True" %>
 <%@ Register tagPrefix="Web" Namespace="WebChart" Assembly="WebChart" %>
 <%@ Import Namespace="System.Drawing" %>
 <%@Import Namespace="System.Web.Security" %>
@@ -10,6 +10,7 @@
 <%@Import Namespace="POSMySQL.GlobalFunctions" %>
 <%@Import Namespace="System.Globalization" %>
 <%@Import Namespace="POSBackOfficeReport" %>
+<%@Import Namespace="pRoMiSeProgramProperty" %>
 <%@Import Namespace="ReportModule" %>
 <%@Import Namespace="POSTypeClass" %>
 <%@Import Namespace="System.IO" %>
@@ -653,7 +654,7 @@ Dim PageID As Integer = 7
     Public Sub GenOutput(ByVal ViewOption As Integer, ByVal ShopID As String, ByVal AllShopID As String, ByVal LangID As Integer, ByVal StartDate As String, _
     ByVal EndDate As String, ByVal ReportDate As String, ByVal ReportOption As Integer, ByVal objCnn As MySqlConnection)
         Dim i, j As Integer
-        Dim bolDisplayExemptVAT, bolDisplayRBSCCardNo, bolDisplayDiffForPaymentNotCalVAT As Boolean
+        Dim bolDisplayExemptVAT, bolDisplayRBSCCardNo, bolDisplayDiffForPaymentNotCalVAT, bolDisplayRequestBillStaff, bolDisplayCustomerName As Boolean
         Dim PayTypeList, PayTypeData, ColumnData As DataTable
         Dim rResult() As DataRow
         Dim LangData2 As DataTable = getProp.GetLangData(PageID, 2, -1, Request)
@@ -669,10 +670,12 @@ Dim PageID As Integer = 7
         ElseIf ShopInfo.Rows(0)("DisplayReceiptVATableType") = 2 Then
             DisplayVATType = "E"
         End If
+        Dim bolDisplayRefundCashFromVoidQR As Boolean
         Dim payIndexForInsertCCType As Integer
         Dim CCTypeList, CCTypeData As DataTable
-        Dim dtRBSCData As DataTable
+        Dim dtRBSCData, dtRefundCash, dtRequestBillStaff As DataTable
         Dim VoidData, IncomeType, IncomeData As DataTable
+        Dim strTemp As String
         'Application.Lock()
                 
         Dim dtTable As DataTable = Reports.SaleReportByGroup(ColumnData, PayTypeList, PayTypeData, CCTypeList, CCTypeData, VoidData, IncomeType, IncomeData, _
@@ -691,7 +694,7 @@ Dim PageID As Integer = 7
             ResultSearchText.InnerHtml = LangData2.Rows(1)(LangText) + " (" + ReportDate + ")"
         Else
             'ResultSearchText.InnerHtml = LangData2.Rows(2)(LangText) + " " + ShopInfo.Rows(0)("ProductLevelName") + " (" + ReportDate + ")"
-            Dim strTemp As String = ""
+            strTemp = ""
             For i = 0 To ShopInfo.Rows.Count - 1
                 strTemp &= ShopInfo.Rows(i)("ProductLevelName") & ", "
             Next i
@@ -738,7 +741,39 @@ Dim PageID As Integer = 7
         Else
             dtRBSCData = New DataTable
         End If
-               
+        
+        'For Display RequestBillStaffInfo (Only Daily Option)
+        If (ViewOption = 1) And (AllShop = False) Then
+            If pRoMiSeProgramProperty.ProgramPropertyFunction.GetProgramPropertyValueInDB(objDB, objCnn, POSAdditionalProgramVariable.PROGRAMTYPE_BACKOFFICEREPORT, _
+                       1, POSAdditionalProgramVariable.BACKOFFICE_REPORT_SALE_BY_GROUP_DISPLAYPRINTBILLSTAFF, 0) = 1 Then
+                bolDisplayRequestBillStaff = True
+            Else
+                bolDisplayRequestBillStaff = False
+            End If
+            If pRoMiSeProgramProperty.ProgramPropertyFunction.GetProgramPropertyValueInDB(objDB, objCnn, POSAdditionalProgramVariable.PROGRAMTYPE_BACKOFFICEREPORT, _
+                       1, POSAdditionalProgramVariable.BACKOFFICE_REPORT_SALE_BY_GROUP_DISPLAYCUSTOMERNAMEANDPAIDTIME, 0) = 1 Then
+                bolDisplayCustomerName = True
+            Else
+                bolDisplayCustomerName = False
+            End If
+        Else
+            bolDisplayRequestBillStaff = False
+            bolDisplayCustomerName = False
+        End If
+        If bolDisplayRequestBillStaff = True Then
+            dtRequestBillStaff = Reports.GetRequestBillStaffInfo(StartDate, EndDate, ShopID, objCnn)
+        Else
+            dtRequestBillStaff = New DataTable
+        End If
+        
+        'Refund Cash
+        bolDisplayRefundCashFromVoidQR = ReportModule.ReportMySQL.IsDisplayRefundCashInSaleReport(objDB, objCnn)
+        If bolDisplayRefundCashFromVoidQR = True Then
+            dtRefundCash = Reports.GetRefundCashFromVoidQRPayment(StartDate, EndDate, ShopID, ViewOption, objCnn)
+        Else
+            dtRefundCash = New DataTable
+        End If
+        
         Dim SMQuery As String = ""
         If ReportOption > 3 Then
             Dim SaleModeReport As Integer = ReportOption - 3
@@ -758,6 +793,16 @@ Dim PageID As Integer = 7
                 HeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(6)(LangText) + "</td>"
             End If
         End If
+        
+        'For Paid Time/ Customer Name
+        If bolDisplayCustomerName = True Then
+            strTemp = BackOfficeReport.GetLanguageText(LangData2, 42, LangText, "Paid Time")
+            HeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+            strTemp = BackOfficeReport.GetLanguageText(LangData2, 43, LangText, "Customer Name")
+            HeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+            ColSpan += 2
+        End If
+        
         If bolDisplayRBSCCardNo = True Then
             HeaderString += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + "RBSC Member ID" + "</td>"
             ColSpan += 1
@@ -862,8 +907,11 @@ Dim PageID As Integer = 7
             End If
         Next i
         
+        'Total Payment
         AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(22)(LangText) + "</td>"
+        'Diff
         AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(23)(LangText) + "</td>"
+               
         If HavePrepaidDiscount = True Then
             AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(24)(LangText) + "</td>"
             ColSpan += 1
@@ -873,13 +921,31 @@ Dim PageID As Integer = 7
             AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(26)(LangText) + "</td>"
             ColSpan += 2
         End If
+        If bolDisplayRefundCashFromVoidQR = True Then
+            AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & _
+                                    POSBackOfficeReport.BackOfficeReport.GetLanguageText(LangData2, 38, LangText, "Refund จาก Void QR") & "</td>"
+            ColSpan += 1
+        End If
 		
         If ViewOption <> 1 Then
             AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(27)(LangText) + "</td>"
             AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" + LangData2.Rows(28)(LangText) + "</td>"
             ColSpan += 2
         End If
-		
+        
+        'For Request Bill/ Paid Staff/ Open/ Close Time
+        If bolDisplayRequestBillStaff = True Then
+            strTemp = BackOfficeReport.GetLanguageText(LangData2, 39, LangText, "Request Staff Code")
+            AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+            strTemp = BackOfficeReport.GetLanguageText(LangData2, 40, LangText, "Paid Staff Code")
+            AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+            strTemp = BackOfficeReport.GetLanguageText(LangData2, 41, LangText, "Open Time")
+            AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+            strTemp = BackOfficeReport.GetLanguageText(LangData2, 42, LangText, "Paid Time")
+            AdditionalHeader += "<td align=""center"" class=""smallTdHeader"" bgcolor=""" + GlobalParam.AdminBGColor + """>" & strTemp & "</td>"
+            ColSpan += 4
+        End If
+        		
         If DisplayVATType = "E" Then
             ColSpan += 1
         End If
@@ -892,8 +958,9 @@ Dim PageID As Integer = 7
 		
         Dim outputResult As String = GenSaleReportByGroup(ColSpan, GlobalParam.GrayBGColor, GlobalParam.AdminBGColor, ShopID, ViewOption, StartDate, EndDate, ColumnData, _
                                    dtTable, PayTypeList, PayTypeData, CCTypeList, CCTypeData, payIndexForInsertCCType, VoidData, IncomeType, IncomeData, _
-                                   dtRBSCData, ReportDate, Session("LangID"), LangPath, SMData, ReportOption, _
-                                   bolDisplayExemptVAT, bolDisplayRBSCCardNo, bolDisplayDiffForPaymentNotCalVAT, objCnn)
+                                   dtRBSCData, dtRefundCash, dtRequestBillStaff, ReportDate, Session("LangID"), LangPath, SMData, ReportOption, _
+                                   bolDisplayExemptVAT, bolDisplayRBSCCardNo, bolDisplayDiffForPaymentNotCalVAT, _
+                                   bolDisplayRefundCashFromVoidQR, bolDisplayCustomerName, bolDisplayRequestBillStaff, objCnn)
 		
         ResultText.InnerHtml = outputResult
         Session("ReportResult") = "<table><tr><td align=""center"">" & ResultSearchText.InnerHtml & "</td></tr><tr><td align=""right"">" & CreateReportDate.Text & "</td></tr><tr><td>" & startTable.InnerHtml & "<tr>" & TableHeaderText.InnerHtml & ExtraHeader.InnerHtml & "</tr>" & ResultText.InnerHtml & "</td></tr></table>"
@@ -903,16 +970,16 @@ Dim PageID As Integer = 7
     Private Function GenSaleReportByGroup(ByVal ColSpan As Integer, ByVal GrayBGColor As String, ByVal AdminBGColor As String, ByVal ShopID As String, _
     ByVal ViewOption As Integer, ByVal StartDate As String, ByVal EndDate As String, ByVal ColumnData As DataTable, ByVal dtTable As DataTable, _
     ByVal PayTypeList As DataTable, ByVal PayTypeData As DataTable, ByVal CCTypeList As DataTable, ByVal CCTypeData As DataTable, payIndexForInsertCCType As Integer, _
-    ByVal VoidData As DataTable, ByVal IncomeType As DataTable, ByVal IncomeData As DataTable, RBSCPaymentInfo As DataTable, _
-    ByVal ReportDate As String, ByVal LangID As Integer, _
-    ByVal LangPath As String, ByVal SMData As DataTable, ByVal ReportOption As Integer, displayExemptVAT As Boolean, displayRBSCCardNo As Boolean, _
-    displayDiffForPaymentNoVAT As Boolean, ByVal objCnn As MySqlConnection) As String
+    ByVal VoidData As DataTable, ByVal IncomeType As DataTable, ByVal IncomeData As DataTable, dtRBSCPaymentInfo As DataTable, dtRefundCashInfo As DataTable, _
+    dtRequestBillStaffInfo As DataTable, ByVal ReportDate As String, ByVal LangID As Integer, ByVal LangPath As String, ByVal SMData As DataTable, ByVal ReportOption As Integer, _
+    displayExemptVAT As Boolean, displayRBSCCardNo As Boolean, displayDiffForPaymentNoVAT As Boolean, displayRefundCash As Boolean, _
+    displayCustomerName As Boolean, displayRequestBillStaff As Boolean, ByVal objCnn As MySqlConnection) As String
         Dim FormatData As DataTable = Fm.FormatParam(FormatObject, LangID, objCnn)
         Dim ci As New CultureInfo(FormatObject.CultureString)
         Dim i, j, k, m As Integer
         Dim outputString As StringBuilder = New StringBuilder
         Dim TotalProductDiscount As Double = 0
-        Dim TotalSale, EachTotalSale As Double
+        Dim TotalSale, EachTotalSale, dclRefundCash As Double
         Dim grandTotalRetailPrice As Double = 0
         Dim grandTotalDiscount As Double = 0
         Dim grandTotalServiceCharge As Double = 0
@@ -922,6 +989,7 @@ Dim PageID As Integer = 7
         Dim grandTotalBeforeVAT As Double = 0
         Dim grandTotalVAT As Double = 0
         Dim grandTotalAfterVAT As Double = 0
+        Dim grandTotalRefundCash As Double = 0
         Dim grandTotalBill As Integer = 0
         Dim grandTotalCustomer As Integer = 0
         Dim grandTotalVoid As Double = 0
@@ -967,7 +1035,7 @@ Dim PageID As Integer = 7
         Dim SumSubCCType(CCTypeList.Rows.Count - 1) As Double
         Dim SumSubPaymentDiscount(PayTypeList.Rows.Count - 1) As Double
         Dim SubTotalCustomer, SubTotalServiceCharge, SubTotalServiceChargeVAT, subTotalExcludeVAT, SubTotalAmount, SubTotalDiscount, SubTotalSale, SubTotalVatable As Double
-        Dim SubTotalVAT, SubPayment, SubTotalPaymentDiscount, SubTotalBill, SubTotalExemptVAT, subTotalAmountFromPaymentNotCalVAT As Double
+        Dim SubTotalVAT, SubPayment, SubTotalPaymentDiscount, SubTotalBill, SubTotalExemptVAT, subTotalAmountFromPaymentNotCalVAT, subTotalRefundCash As Double
         Dim dclTemp, dclDiff As Decimal
 
         Dim SumIncome(IncomeType.Rows.Count - 1) As Double
@@ -1089,6 +1157,7 @@ Dim PageID As Integer = 7
                     subTotalExcludeVAT = 0
                     SubTotalExemptVAT = 0
                     subTotalAmountFromPaymentNotCalVAT = 0
+                    subTotalRefundCash = 0
                     SubTotalVAT = 0
                     SubTotalVatable = 0
                     SubTotalCustomer = 0
@@ -1137,7 +1206,10 @@ Dim PageID As Integer = 7
                             FullText = ""
                         End If
                         If RText <> "-" Then
-                            DisplayString = "<a class=""smallText"" href=""JavaScript: newWindow = window.open( 'BillDetails.aspx?ComputerID=" + dtTable.Rows(i)("ComputerID").ToString + "&ShopID=" + dtTable.Rows(i)("ShopID").ToString + "&TransactionID=" + dtTable.Rows(i)("TransactionID").ToString + "', '', 'width=750,height=600,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" & RText & "</a>" & VoidText & FullText
+                            DisplayString = "<a class=""smallText"" href=""JavaScript: newWindow = window.open( 'BillDetails.aspx?ComputerID=" + dtTable.Rows(i)("ComputerID").ToString & _
+                                                "&ShopID=" + dtTable.Rows(i)("ShopID").ToString + "&TransactionID=" + dtTable.Rows(i)("TransactionID").ToString & _
+                                                "', '', 'width=750,height=600,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" & _
+                                                RText & "</a>" & VoidText & FullText
                         Else
                             DisplayString = RText & VoidText
                         End If
@@ -1193,7 +1265,7 @@ Dim PageID As Integer = 7
                         SubTotalVatable += dtTable.Rows(i)("TransactionVATable") - dtTable.Rows(i)("TransactionVAT")
                         SubTotalServiceCharge += dtTable.Rows(i)("ServiceCharge")
                         grandTotalServiceCharge += dtTable.Rows(i)("ServiceCharge")
-
+                        
                         If displayDiffForPaymentNoVAT = True Then
                             If dtTable.Rows(i)("DiffForPaymentNotCalVAT") > 0.1 Then
                                 subTotalAmountFromPaymentNotCalVAT += dtTable.Rows(i)("DiffForPaymentNotCalVAT")
@@ -1208,8 +1280,37 @@ Dim PageID As Integer = 7
 
                 outputString = outputString.Append("<tr bgColor=""" + "white" + """>")
                 outputString = outputString.Append("<td align=""left"" class=""" + TextClass + """>" + DisplayString + "</td>")
+
+                'Display Customer Name/ PaidTime
+                If displayCustomerName = True Then
+                    'PaidTime
+                    If IsDBNull(dtTable.Rows(i)("PaidTime")) Then
+                        strTemp = ""
+                    Else
+                        strTemp = CDate(dtTable.Rows(i)("PaidTime")).ToString(FormatObject.TimeFormat, ci)
+                    End If
+                    outputString = outputString.Append("<td align=""left"" class=""smallText"">" & strTemp & "</td>")
+                    'Customer Name
+                    If dtTable.Columns.Contains("TransactionName") = True Then
+                        If IsDBNull(dtTable.Rows(i)("TransactionName")) Then
+                            dtTable.Rows(i)("TransactionName") = ""
+                        End If
+                        If IsDBNull(dtTable.Rows(i)("QueueName")) Then
+                            dtTable.Rows(i)("QueueName") = ""
+                        End If
+                        If dtTable.Rows(i)("TransactionName") <> "" Then
+                            strTemp = dtTable.Rows(i)("TransactionName")
+                        Else
+                            strTemp = dtTable.Rows(i)("QueueName")
+                        End If
+                    Else
+                        strTemp = ""
+                    End If
+                    outputString = outputString.Append("<td align=""left"" class=""smallText"">" & strTemp & "</td>")
+                End If
+                
                 If displayRBSCCardNo = True Then
-                    rResult = RBSCPaymentInfo.Select("TransactionID = " & dtTable.Rows(i)("TransactionID") & " AND ComputerID = " & dtTable.Rows(i)("ComputerID"))
+                    rResult = dtRBSCPaymentInfo.Select("TransactionID = " & dtTable.Rows(i)("TransactionID") & " AND ComputerID = " & dtTable.Rows(i)("ComputerID"))
                     If rResult.Length = 0 Then
                         strTemp = ""
                     Else
@@ -1537,38 +1638,101 @@ Dim PageID As Integer = 7
                         Next
                     End If
                 Next
-                    outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
-                    If Math.Round(lineSale, 2) - Math.Round(totalEachPayment, 2) <> 0 Then
-                        outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment - lineSale).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+                outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+                If Math.Round(lineSale, 2) - Math.Round(totalEachPayment, 2) <> 0 Then
+                    outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment - lineSale).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+                Else
+                    outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>-</td>")
+                End If
+                If HavePrepaidDiscount = True Then
+                    outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment - totalEachPaymentDiscount).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+                End If
+                If HavePrepaid = True Then
+                    If totalEachPaymentPrepaid > 0 Then
+                        outputString = outputString.Append("<td bgColor=""#ffffcc"" align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPaymentPrepaid).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
                     Else
-                        outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>-</td>")
+                        outputString = outputString.Append("<td bgColor=""#ffffcc"" align=""right"" class=""" + TextClass + """>-</td>")
                     End If
-                    If HavePrepaidDiscount = True Then
-                        outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment - totalEachPaymentDiscount).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
-                    End If
-                    If HavePrepaid = True Then
-                        If totalEachPaymentPrepaid > 0 Then
-                            outputString = outputString.Append("<td bgColor=""#ffffcc"" align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPaymentPrepaid).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
-                        Else
-                            outputString = outputString.Append("<td bgColor=""#ffffcc"" align=""right"" class=""" + TextClass + """>-</td>")
-                        End If
-                        outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment - totalEachPaymentPrepaid).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
-                    End If
+                    outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" + CDbl(totalEachPayment - totalEachPaymentPrepaid).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+                End If
 
-                    If ViewOption <> 1 Then
-                        expression = "TransactionKey = '" + dtTable.Rows(i)("TransactionKey") + "'"
-                        foundRows2 = VoidData.Select(expression)
-                        If foundRows2.GetUpperBound(0) >= 0 Then
-                            outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""right"" class=""" + TextClass + """>" + CDbl(foundRows2(0)("NoVoid")).ToString(FormatObject.QtyFormat, ci) + "</td>")
-                            outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""right"" class=""" + TextClass + """><a class=""" + TextClass + """ href=""JavaScript: newWindow = window.open( 'report_void.aspx?ShopID=" + ShopID.ToString + "&StartDate=" + Replace(DateFrom, "'", "\'") + "&EndDate=" + Replace(DateTo, "'", "\'") + "', '', 'width=900,height=530,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" + CDbl(foundRows2(0)("VoidAmount")).ToString(FormatObject.CurrencyFormat, ci) + "</a></td>")
-                            grandTotalVoid += foundRows2(0)("NoVoid")
-                            grandTotalVoidAmount += foundRows2(0)("VoidAmount")
-                        Else
-                            outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""center"" class=""" + TextClass + """>" + "&nbsp;" + "</td>")
-                            outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""center"" class=""" + TextClass + """>" + "&nbsp;" + "</td>")
-                        End If
+                If displayRefundCash = True Then
+                    expression = "TransactionKey = '" & dtTable.Rows(i)("TransactionKey") & "'"
+                    rResult = dtRefundCashInfo.Select(expression)
+                    dclRefundCash = 0
+                    For j = 0 To rResult.Length - 1
+                        dclRefundCash += rResult(j)("RefundCash")
+                    Next j
+                    subTotalRefundCash += dclRefundCash
+                    grandTotalRefundCash += dclRefundCash
+                    If dclRefundCash = 0 Then
+                        strTemp = "-"
+                    Else
+                        strTemp = dclRefundCash.ToString(FormatObject.CurrencyFormat, ci)
                     End If
-                    outputString = outputString.Append("</tr>")
+                    outputString = outputString.Append("<td align=""right"" class=""" + TextClass + """>" & strTemp & "</td>")
+                End If
+                
+                If ViewOption <> 1 Then
+                    expression = "TransactionKey = '" + dtTable.Rows(i)("TransactionKey") + "'"
+                    foundRows2 = VoidData.Select(expression)
+                    If foundRows2.GetUpperBound(0) >= 0 Then
+                        outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""right"" class=""" + TextClass + """>" + CDbl(foundRows2(0)("NoVoid")).ToString(FormatObject.QtyFormat, ci) + "</td>")
+                        outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""right"" class=""" + TextClass + """><a class=""" + TextClass + """ href=""JavaScript: newWindow = window.open( 'report_void.aspx?ShopID=" + ShopID.ToString + "&StartDate=" + Replace(DateFrom, "'", "\'") + "&EndDate=" + Replace(DateTo, "'", "\'") + "', '', 'width=900,height=530,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" + CDbl(foundRows2(0)("VoidAmount")).ToString(FormatObject.CurrencyFormat, ci) + "</a></td>")
+                        grandTotalVoid += foundRows2(0)("NoVoid")
+                        grandTotalVoidAmount += foundRows2(0)("VoidAmount")
+                    Else
+                        outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""center"" class=""" + TextClass + """>" + "&nbsp;" + "</td>")
+                        outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""center"" class=""" + TextClass + """>" + "&nbsp;" + "</td>")
+                    End If
+                End If
+                
+                If displayRequestBillStaff = True Then
+                    If dtTable.Columns.Contains("PaidStaffCode") = True Then
+                        If dtRequestBillStaffInfo.Rows.Count = 0 Then
+                            strTemp = ""
+                        Else
+                            rResult = dtRequestBillStaffInfo.Select("TransactionID = " & dtTable.Rows(i)("TransactionID") & " AND ComputerID = " & dtTable.Rows(i)("ComputerID"))
+                            If rResult.Length <> 0 Then
+                                If IsDBNull(rResult(0)("RequestStaffCode")) Then
+                                    rResult(0)("RequestStaffCode") = ""
+                                End If
+                                If IsDBNull(rResult(0)("RequestStaffFirstName")) Then
+                                    rResult(0)("RequestStaffFirstName") = ""
+                                End If
+                                strTemp = Trim(rResult(0)("RequestStaffCode") & "  " & rResult(0)("RequestStaffFirstName"))
+                            Else
+                                strTemp = ""
+                            End If
+                        End If
+                        outputString = outputString.Append("<td align=""left"" class=""smallText"">" & strTemp & "</td>")
+                        'Paid Staff
+                        If IsDBNull(dtTable.Rows(i)("PaidStaffCode")) Then
+                            dtTable.Rows(i)("PaidStaffCode") = ""
+                        End If
+                        If IsDBNull(dtTable.Rows(i)("PaidStaffFirstName")) Then
+                            dtTable.Rows(i)("PaidStaffFirstName") = ""
+                        End If
+                        strTemp = Trim(dtTable.Rows(i)("PaidStaffCode") & "  " & dtTable.Rows(i)("PaidStaffFirstName"))
+                        outputString = outputString.Append("<td align=""left"" class=""smallText"">" & strTemp & "</td>")
+                        'Open Time
+                        If IsDBNull(dtTable.Rows(i)("OpenTime")) Then
+                            strTemp = ""
+                        Else
+                            strTemp = CDate(dtTable.Rows(i)("OpenTime")).ToString(FormatObject.TimeFormat, ci)
+                        End If
+                        outputString = outputString.Append("<td align=""left"" class=""smallText"">" & strTemp & "</td>")
+                        'PaidTime
+                        If IsDBNull(dtTable.Rows(i)("PaidTime")) Then
+                            strTemp = ""
+                        Else
+                            strTemp = CDate(dtTable.Rows(i)("PaidTime")).ToString(FormatObject.TimeFormat, ci)
+                        End If
+                        outputString = outputString.Append("<td align=""left"" class=""smallText"">" & strTemp & "</td>")
+                    End If
+                End If
+                
+                outputString = outputString.Append("</tr>")
             End If
             DummyTransactionKey = dtTable.Rows(i)("TransactionKey")
             If ViewOption = 1 And AllShop = False Then
@@ -1579,8 +1743,9 @@ Dim PageID As Integer = 7
                                         SumSubPaymentDiscount, CCTypeList, SumSubCCType, payIndexForInsertCCType, SumSubIncome, SubTotalBill, _
                                         SubTotalCustomer, SubTotalServiceCharge, SubTotalServiceChargeVAT, subTotalExcludeVAT, SubTotalExemptVAT, SubTotalAmount, _
                                         SubTotalDiscount, SubTotalSale, SubTotalVatable, SubTotalVAT, subTotalAmountFromPaymentNotCalVAT, _
-                                        SubPayment, FormatData, LangData2, LangText, SMData, IncomeType, _
-                                        ReportOption, displayExemptVAT, displayRBSCCardNo, displayDiffForPaymentNoVAT, objCnn))
+                                        subTotalRefundCash, SubPayment, FormatData, LangData2, LangText, SMData, IncomeType, _
+                                        ReportOption, displayExemptVAT, displayRBSCCardNo, displayDiffForPaymentNoVAT, displayRefundCash, _
+                                        displayCustomerName, displayRequestBillStaff, objCnn))
                     End If
                 End If
             End If
@@ -1590,19 +1755,25 @@ Dim PageID As Integer = 7
                                          SumSubPaymentDiscount, CCTypeList, SumSubCCType, payIndexForInsertCCType, SumSubIncome, SubTotalBill, _
                                          SubTotalCustomer, SubTotalServiceCharge, SubTotalServiceChargeVAT, subTotalExcludeVAT, SubTotalExemptVAT, _
                                          SubTotalAmount, SubTotalDiscount, SubTotalSale, _
-                                         SubTotalVatable, SubTotalVAT, subTotalAmountFromPaymentNotCalVAT, SubPayment, FormatData, LangData2, LangText, _
-                                         SMData, IncomeType, ReportOption, displayExemptVAT, displayRBSCCardNo, displayDiffForPaymentNoVAT, objCnn))
+                                         SubTotalVatable, SubTotalVAT, subTotalAmountFromPaymentNotCalVAT, subTotalRefundCash, SubPayment, _
+                                         FormatData, LangData2, LangText, _
+                                         SMData, IncomeType, ReportOption, displayExemptVAT, displayRBSCCardNo, displayDiffForPaymentNoVAT, displayRefundCash, _
+                                         displayCustomerName, displayRequestBillStaff, objCnn))
         End If
         Dim grandTotalPrepaid As Double = 0
 
+        'Display Grand Summary
         outputString = outputString.Append("<tr><td height=""10px"" colspan=""" + ColSpan.ToString + """></td></tr>")
         outputString = outputString.Append("<tr bgColor=""" + "#ebebeb" + """>")
 
+        i = 1
         If (AllShop = True) Or (displayRBSCCardNo = True) Then
-            outputString = outputString.Append("<td colspan=""2"" align=""right"" class=""smallText"">" + LangData2.Rows(33)(LangText) + "</td>")
-        Else
-            outputString = outputString.Append("<td align=""right"" class=""smallText"">" + LangData2.Rows(33)(LangText) + "</td>")
+            i += 1
         End If
+        If displayCustomerName = True Then
+            i += 2
+        End If
+        outputString = outputString.Append("<td colspan=""" & i & """ align=""right"" class=""smallText"">" + LangData2.Rows(33)(LangText) + "</td>")
 
         outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(grandTotalBill).ToString(FormatObject.QtyFormat, ci) + "</td>")
 
@@ -1732,11 +1903,23 @@ Dim PageID As Integer = 7
             End If
             outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(grandPayment - grandTotalPrepaid).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
         End If
+                
+        If displayRefundCash = True Then
+            outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(grandTotalRefundCash).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+        End If
+
         If ViewOption <> 1 Then
             outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""right"" class=""smallText"">" + CDbl(grandTotalVoid).ToString(FormatObject.QtyFormat, ci) + "</td>")
             outputString = outputString.Append("<td bgColor=""#ffdab9"" align=""right"" class=""" + TextClass + """><a class=""" + TextClass + """ href=""JavaScript: newWindow = window.open( 'report_void.aspx?ShopID=" + ShopID.ToString + "&StartDate=" + Replace(StartDate, "'", "\'") + "&EndDate=" + Replace(EndDate, "'", "\'") + "', '', 'width=900,height=530,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()"">" + CDbl(grandTotalVoidAmount).ToString(FormatObject.CurrencyFormat, ci) + "</a></td>")
         End If
-
+        
+        If displayRequestBillStaff = True Then
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+        End If
+        
         outputString = outputString.Append("</tr>")
         'outputString = outputString.Append("</table>")
 
@@ -1749,9 +1932,11 @@ Dim PageID As Integer = 7
     ByVal SumSubIncome() As Double, ByVal SubTotalBill As Double, ByVal SubTotalCustomer As Double, ByVal SubTotalServiceCharge As Double, _
     ByVal SubTotalServiceChargeVAT As Double, subTotalExcludeVAT As Decimal, subTotalExemptVAT As Double, ByVal SubTotalAmount As Double, _
     ByVal SubTotalDiscount As Double, ByVal SubTotalSale As Double, _
-    ByVal SubTotalVatable As Double, ByVal SubTotalVAT As Double, subTotalAmountFromPaymentNotCalVAT As Double, ByVal SubPayment As Double, ByVal FormatData As DataTable, _
+    ByVal SubTotalVatable As Double, ByVal SubTotalVAT As Double, subTotalAmountFromPaymentNotCalVAT As Double, _
+    subTotalRefundCash As Double, ByVal SubPayment As Double, ByVal FormatData As DataTable, _
     ByVal LangData2 As DataTable, ByVal LangText As String, ByVal SMData As DataTable, ByVal IncomeType As DataTable, _
-    ByVal ReportOption As Integer, displayExemptVAT As Boolean, displayRBSCCardNo As Boolean, displayDiffForPaymentNoVAT As Boolean, ByVal objCnn As MySqlConnection) As String
+    ByVal ReportOption As Integer, displayExemptVAT As Boolean, displayRBSCCardNo As Boolean, displayDiffForPaymentNoVAT As Boolean, _
+    displayRefundCash As Boolean, displayCustomerName As Boolean, displayRequestBillStaff As Boolean, ByVal objCnn As MySqlConnection) As String
         Dim ci As New CultureInfo(FormatObject.CultureString)
         Dim PaymentDiscountText As String
         Dim outputString As StringBuilder = New StringBuilder
@@ -1768,6 +1953,9 @@ Dim PageID As Integer = 7
         colSpan = 1
         If displayRBSCCardNo = True Then
             colSpan += 1
+        End If
+        If displayCustomerName = True Then
+            colSpan += 2
         End If
         outputString = outputString.Append("<tr bgColor=""" + "#ebebeb" + """>")
         outputString = outputString.Append("<td colspan=""" + colSpan.ToString + """ align=""right""  class=""smallText"">" + LangData2.Rows(34)(LangText) + "</td>")
@@ -1825,7 +2013,7 @@ Dim PageID As Integer = 7
             If displayDiffForPaymentNoVAT = True Then
                 dclTemp += subTotalAmountFromPaymentNotCalVAT
             End If
-            outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(dclTemp).ToString(FormatObject.CurrencyFormat, ci) + "</td>")           
+            outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(dclTemp).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
         Else
             SubTotalDiff = SubTotalSale
         End If
@@ -1863,24 +2051,36 @@ Dim PageID As Integer = 7
         If HavePrepaidDiscount = True Then
             outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(SubPayment - SubTotalPaymentDiscount).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
         End If
+
+        If displayRefundCash = True Then
+            outputString = outputString.Append("<td align=""right"" class=""smallText"">" + CDbl(subTotalRefundCash).ToString(FormatObject.CurrencyFormat, ci) + "</td>")
+        End If
+        
+        If displayRequestBillStaff = True Then
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+            outputString = outputString.Append("<td align=""left"" class=""smallText""></td>")
+        End If
+        
         outputString = outputString.Append("</tr>")
         Return outputString.ToString()
     End Function
 
 
-	Sub ExportData(Source As Object, E As EventArgs)
+    Sub ExportData(Source As Object, E As EventArgs)
 	
-	Dim FileName As String = "SaleSummaryData_" & DateTime.Now.ToString("yyyyMMdd_HHmmss", InvC) & ".xls"
+        Dim FileName As String = "SaleSummaryData_" & DateTime.Now.ToString("yyyyMMdd_HHmmss", InvC) & ".xls"
 	
-	Dim OutputText As String = ""
-	Dim CSSFile as String = Replace(UCASE(Path.GetDirectoryName(Request.ServerVariables("PATH_TRANSLATED"))),"REPORTS","") & "StyleSheet\admin.css"
+        Dim OutputText As String = ""
+        Dim CSSFile As String = Replace(UCase(Path.GetDirectoryName(Request.ServerVariables("PATH_TRANSLATED"))), "REPORTS", "") & "StyleSheet\admin.css"
 	
-	Util.ExportData(Session("ReportResult"),FileName,CSSFile,GlobalParam.ExportCharSet,-1)
-End Sub	
+        Util.ExportData(Session("ReportResult"), FileName, CSSFile, GlobalParam.ExportCharSet, -1)
+    End Sub
 	
-Sub Page_UnLoad()
-	objCnn.Close()
-End Sub
+    Sub Page_UnLoad()
+        objCnn.Close()
+    End Sub
 
 </script>
 </body>

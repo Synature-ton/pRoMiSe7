@@ -1351,7 +1351,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Extra Table</Lang1>
 		<Lang2>เพิ่มโต๊ะพิเศษ</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1360,7 +1360,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Ref No./ Customer Name</Lang1>
 		<Lang2>Ref No./ Customer Name</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1369,7 +1369,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Reserve Time</Lang1>
 		<Lang2>Reserve Time</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1378,7 +1378,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Item Qty.</Lang1>
 		<Lang2>Item Qty.</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1387,7 +1387,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Total Price</Lang1>
 		<Lang2>Total Price</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1396,7 +1396,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Sale Mode</Lang1>
 		<Lang2>Sale Mode</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1405,7 +1405,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Order From Web</Lang1>
 		<Lang2>Order From Web</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1414,7 +1414,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Ref. Number</Lang1>
 		<Lang2>เลขอ้างอิง</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1423,16 +1423,16 @@ Please choose or search member before take order.</Lang1>
 		<Lang1>Search</Lang1>
 		<Lang2>ค้นหา</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
 		<TextID>54</TextID>
-		<DefaultText></DefaultText>
-		<Lang1></Lang1>
-		<Lang2></Lang2>
+		<DefaultText>New Order</DefaultText>
+		<Lang1>New Order</Lang1>
+		<Lang2>New Order</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1441,7 +1441,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1450,7 +1450,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1459,7 +1459,7 @@ Please choose or search member before take order.</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>1</TextType>
@@ -1637,7 +1637,7 @@ Please check order item again.</Lang1>
 		<Lang1>Buffet Detail</Lang1>
 		<Lang2>รายการบุฟเฟ่ต์</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>2</TextType>
@@ -1646,7 +1646,7 @@ Please check order item again.</Lang1>
 		<Lang1>Warning! This reference no. is not found. Please search again.</Lang1>
 		<Lang2>คำเตือน! ไม่พบรายการที่ใช้เลขอ้างอิงนี้.  กรุณาค้นหาใหม่อีกครั้ง</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>3</FormID>
 		<FormName>FormMainTable</FormName>
 		<TextType>2</TextType>
@@ -4367,6 +4367,18 @@ Program will print summary end day and bank deposit information.</Lang1>
 		<FormName>FormListTwFF</FormName>
 		<TextType>1</TextType>
 		<TextID>4</TextID>
+		<DefaultText>List Order Item</DefaultText>
+		<Lang1>List Order Item</Lang1>
+		<Lang2>List Order Item</Lang2>
+	</Form>
+	<Form>
+		<FormID>15</FormID>
+		<FormName>FormListTwFF</FormName>
+		<TextType>1</TextType>
+		<TextID>5</TextID>
+		<DefaultText>รายการลูกค้าพักบิล</DefaultText>
+		<Lang1>Hold Order List</Lang1>
+		<Lang2>รายการลูกค้าพักบิล</Lang2>
 	</Form>
 	<Form>
 		<FormID>15</FormID>
@@ -6157,7 +6169,7 @@ Exhchange data to HQ...complete</DefaultText>
 		<Lang1>Move Table</Lang1>
 		<Lang2>ย้ายโต๊ะ</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>27</FormID>
 		<FormName>FormMoveTable</FormName>
 		<TextType>1</TextType>
@@ -6166,7 +6178,7 @@ Exhchange data to HQ...complete</DefaultText>
 		<Lang1>Assign Table</Lang1>
 		<Lang2>เลือกโต๊ะสำหรับรายการนี้</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>27</FormID>
 		<FormName>FormMoveTable</FormName>
 		<TextType>1</TextType>
@@ -6175,7 +6187,7 @@ Exhchange data to HQ...complete</DefaultText>
 		<Lang1>Assign Table</Lang1>
 		<Lang2>เลือกโต๊ะสำหรับรายการนี้</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>27</FormID>
 		<FormName>FormMoveTable</FormName>
 		<TextType>1</TextType>
@@ -6184,7 +6196,7 @@ Exhchange data to HQ...complete</DefaultText>
 		<Lang1>Customer :</Lang1>
 		<Lang2>รายการของ :</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>27</FormID>
 		<FormName>FormMoveTable</FormName>
 		<TextType>1</TextType>
@@ -6193,7 +6205,7 @@ Exhchange data to HQ...complete</DefaultText>
 		<Lang1>Select Target Table :</Lang1>
 		<Lang2>เลือกโต๊ะที่ต้องการ :</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>27</FormID>
 		<FormName>FormMoveTable</FormName>
 		<TextType>1</TextType>
@@ -9189,7 +9201,7 @@ Front stock report (D'oro)</DefaultText>
 		<Lang1>Save Member</Lang1>
 		<Lang2>บันทึกสมาชิก</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>61</FormID>
 		<FormName>FormNewMember</FormName>
 		<TextType>1</TextType>
@@ -9198,6 +9210,110 @@ Front stock report (D'oro)</DefaultText>
 		<Lang1>ID Card :</Lang1>
 		<Lang2>บัตรประชาชน :</Lang2>	
 	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>24</TextID>
+		<DefaultText>Activate Member</DefaultText>
+		<Lang1>Activate Member</Lang1>
+		<Lang2>ทำการ Activate สมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>25</TextID>
+		<DefaultText>Activate Member</DefaultText>
+		<Lang1>Activate Member</Lang1>
+		<Lang2>ทำการ Activate สมาชิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>26</TextID>
+		<DefaultText>Enter</DefaultText>
+		<Lang1>Enter</Lang1>
+		<Lang2>ค้นหา</Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>27</TextID>
+		<DefaultText>ต่ออายุสมาชิก (ReNew Member)</DefaultText>
+		<Lang1>ReNew Member</Lang1>
+		<Lang2>ต่ออายุสมาชิก (ReNew Member)</Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>28</TextID>
+		<DefaultText>ต่ออายุสมาชิก (ReNew Member)</DefaultText>
+		<Lang1>ReNew Member</Lang1>
+		<Lang2>ต่ออายุสมาชิก (ReNew Member)</Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>29</TextID>
+		<DefaultText>รหัสสมาชิกใหม่</DefaultText>
+		<Lang1>New member code</Lang1>
+		<Lang2>รหัสสมาชิกใหม่</Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>30</TextID>
+		<DefaultText>วันหมดอายุใหม่</DefaultText>
+		<Lang1>New expire date</Lang1>
+		<Lang2>วันหมดอายุใหม่</Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>31</TextID>
+		<DefaultText>บันทึกการต่ออายุ</DefaultText>
+		<Lang1>Update ReNew Member</Lang1>
+		<Lang2>บันทึกการต่ออายุ</Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID>32</TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID></TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>	
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>1</TextType>
+		<TextID></TextID>
+		<DefaultText></DefaultText>
+		<Lang1></Lang1>
+		<Lang2></Lang2>	
+	</Form>
+	
+	
+	
+	
+	
 	<Form>
 		<FormID>61</FormID>
 		<FormName>FormNewMember</FormName>
@@ -9374,9 +9490,9 @@ Please verify member code again.</Lang1>
 		<FormName>FormNewMember</FormName>
 		<TextType>2</TextType>
 		<TextID>17</TextID>
-		<DefaultText>"Warning!...Please input member last name.</DefaultText>
-		<Lang1>"Warning!...Please input member last name.</Lang1>
-		<Lang2></Lang2>
+		<DefaultText>Warning!...Please input member last name.</DefaultText>
+		<Lang1>Warning!...Please input member last name.</Lang1>
+		<Lang2>คำเตือน! กรุณาใส่นามสกุลสมาชิก</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9385,7 +9501,7 @@ Please verify member code again.</Lang1>
 		<TextID>18</TextID>
 		<DefaultText>Warning!...Please input telephone number.</DefaultText>
 		<Lang1>Warning!...Please input telephone number.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่หมายเลขโทรศัพท์</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9394,7 +9510,7 @@ Please verify member code again.</Lang1>
 		<TextID>19</TextID>
 		<DefaultText>Warning!...Please input mobile number.</DefaultText>
 		<Lang1>Warning!...Please input mobile number.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่หมายเลขมือถือด้วย</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9403,7 +9519,7 @@ Please verify member code again.</Lang1>
 		<TextID>20</TextID>
 		<DefaultText>Warning!...Please input fax number.</DefaultText>
 		<Lang1>Warning!...Please input fax number.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่หมายเลขแฟกซ์</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9412,7 +9528,7 @@ Please verify member code again.</Lang1>
 		<TextID>21</TextID>
 		<DefaultText>Warning!...Please input email.</DefaultText>
 		<Lang1>Warning!...Please input email.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่ e mail ด้วย</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9421,7 +9537,7 @@ Please verify member code again.</Lang1>
 		<TextID>22</TextID>
 		<DefaultText>Warning!...Please input address.</DefaultText>
 		<Lang1>Warning!...Please input address.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่ที่อยู่</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9430,7 +9546,7 @@ Please verify member code again.</Lang1>
 		<TextID>23</TextID>
 		<DefaultText>Warning!...Please input zip code.</DefaultText>
 		<Lang1>Warning!...Please input zip code.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่รหัสไปรษณีย์</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9439,7 +9555,7 @@ Please verify member code again.</Lang1>
 		<TextID>24</TextID>
 		<DefaultText>Warning!...Please input ID card number.</DefaultText>
 		<Lang1>Warning!...Please input ID card number.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่เลขบัตรประชาชนด้วย</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9448,7 +9564,7 @@ Please verify member code again.</Lang1>
 		<TextID>25</TextID>
 		<DefaultText>Warning!...Please input remark.</DefaultText>
 		<Lang1>Warning!...Please input remark.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่หมายเหตุ</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9457,7 +9573,7 @@ Please verify member code again.</Lang1>
 		<TextID>26</TextID>
 		<DefaultText>Warning!...Please input member's expired date.</DefaultText>
 		<Lang1>Warning!...Please input member's expired date.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาระบุวันหมดอายุสมาชิกด้วย</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9466,7 +9582,7 @@ Please verify member code again.</Lang1>
 		<TextID>27</TextID>
 		<DefaultText>Warning!...Please input member's birthday.</DefaultText>
 		<Lang1>Warning!...Please input member's birthday.</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาระบุวันเกิดสมาชิกด้วย</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9475,7 +9591,7 @@ Please verify member code again.</Lang1>
 		<TextID>28</TextID>
 		<DefaultText>Warning!...Please input</DefaultText>
 		<Lang1>Warning!...Please input</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาใส่</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9484,7 +9600,7 @@ Please verify member code again.</Lang1>
 		<TextID>29</TextID>
 		<DefaultText>must be numeric only</DefaultText>
 		<Lang1>must be numeric only</Lang1>
-		<Lang2></Lang2>
+		<Lang2>ต้องเป็นตัวเลขเท่านั้น</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
@@ -9493,13 +9609,40 @@ Please verify member code again.</Lang1>
 		<TextID>30</TextID>
 		<DefaultText>Warning!...Please select</DefaultText>
 		<Lang1>Warning!...Please select</Lang1>
-		<Lang2></Lang2>
+		<Lang2>คำเตือน! กรุณาเลือก</Lang2>
 	</Form>
 	<Form>
 		<FormID>61</FormID>
 		<FormName>FormNewMember</FormName>
 		<TextType>2</TextType>
 		<TextID>31</TextID>
+		<DefaultText>ทำการ activate สมาชิกสมบูรณ์</DefaultText>
+		<Lang1>Activate member complete.</Lang1>
+		<Lang2>ทำการ activate สมาชิกสมบูรณ์</Lang2>
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>2</TextType>
+		<TextID>32</TextID>
+		<DefaultText>Warning!...Please input reason to cancel.</DefaultText>
+		<Lang1>Warning!...Please input reason to cancel</Lang1>
+		<Lang2>คำเตือน! กรุณาใส่เหตุผลที่ยกเลิก</Lang2>
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>2</TextType>
+		<TextID>33</TextID>
+		<DefaultText>Warning!...Member expire less than current date.</DefaultText>
+		<Lang1>Warning!...Member expire less than current date.</Lang1>
+		<Lang2>คำเตือน! วันหมดอายุน้อยกว่าวันที่ปัจจุบัน</Lang2>
+	</Form>
+	<Form>
+		<FormID>61</FormID>
+		<FormName>FormNewMember</FormName>
+		<TextType>2</TextType>
+		<TextID>34</TextID>
 		<DefaultText></DefaultText>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
@@ -9508,16 +9651,7 @@ Please verify member code again.</Lang1>
 		<FormID>61</FormID>
 		<FormName>FormNewMember</FormName>
 		<TextType>2</TextType>
-		<TextID></TextID>
-		<DefaultText></DefaultText>
-		<Lang1></Lang1>
-		<Lang2></Lang2>
-	</Form>
-	<Form>
-		<FormID>61</FormID>
-		<FormName>FormNewMember</FormName>
-		<TextType>2</TextType>
-		<TextID></TextID>
+		<TextID>35</TextID>
 		<DefaultText></DefaultText>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
@@ -10065,6 +10199,15 @@ Please verify member code again.</Lang1>
 	<Form>
 		<FormID>63</FormID>
 		<FormName>FormMemberManager</FormName>
+		<TextType>1</TextType>
+		<TextID>47</TextID>
+		<DefaultText>Staff Name :</DefaultText>
+		<Lang1>พนักงาน :</Lang1>
+		<Lang2>Staff Name :</Lang2>
+	</Form>
+	<Form>
+		<FormID>63</FormID>
+		<FormName>FormMemberManager</FormName>
 		<TextType>2</TextType>
 		<TextID>1</TextID>
 		<DefaultText>คำเตือน! คุณยังไม่ได้ใส่รหัสสมาชิก. 
@@ -10193,9 +10336,9 @@ Please enter member code again.</Lang1>
 		<FormName>FormMemberManager</FormName>
 		<TextType>2</TextType>
 		<TextID>14</TextID>
-		<DefaultText>Complete...This member is deactivate success.</DefaultText>
-		<Lang1>Complete...This member is deactivate success.</Lang1>
-		<Lang2>Complete...This member is deactivate success.</Lang2>
+		<DefaultText>Complete...This member is deactivated.</DefaultText>
+		<Lang1>Complete...This member is deactivated.</Lang1>
+		<Lang2>ทำการยกเลิกสถานะสมาชิกเรียบร้อย</Lang2>
 	</Form>
 	<Form>
 		<FormID>63</FormID>
@@ -10216,6 +10359,36 @@ Please enter member code again.</Lang1>
 		<Lang1>Warning!...This member is Expire.
 		Please re-input member code again.</Lang1>
 		<Lang2>คำเตือน!...สมาชิกนี้หมดอายุแล้ว กรุณาใส่รหัสสมาชิกใหม่</Lang2>
+	</Form>
+	<Form>
+		<FormID>63</FormID>
+		<FormName>FormMemberManager</FormName>
+		<TextType>2</TextType>
+		<TextID>17</TextID>
+		<DefaultText>คำเตือน! ไม่พบรหัสสมาชิกหมายเลขนี้ในการ activate สมาชิก. 
+โปรดใส่รหัสสมาชิกใหม่อีกครั้ง</DefaultText>
+		<Lang1>Warning! Member code is not found for activate.
+Please enter member code again.</Lang1>
+		<Lang2>คำเตือน! ไม่พบรหัสสมาชิกหมายเลขนี้ในการ activate สมาชิก. 
+โปรดใส่รหัสสมาชิกใหม่อีกครั้ง</Lang2>
+	</Form>
+	<Form>
+		<FormID>63</FormID>
+		<FormName>FormMemberManager</FormName>
+		<TextType>2</TextType>
+		<TextID>18</TextID>
+		<DefaultText>อนุญาตให้ทำการต่ออายุสมาชิกไม่เกิน</DefaultText>
+		<Lang1>Can re new member only expire less than</Lang1>
+		<Lang2>อนุญาตให้ทำการต่ออายุสมาชิกไม่เกิน</Lang2>
+	</Form>
+	<Form>
+		<FormID>63</FormID>
+		<FormName>FormMemberManager</FormName>
+		<TextType>2</TextType>
+		<TextID>19</TextID>
+		<DefaultText>วัน หลังจากหมดอายุเท่านั้น</DefaultText>
+		<Lang1>day(s) after expiration.</Lang1>
+		<Lang2>วัน หลังจากหมดอายุเท่านั้น</Lang2>
 	</Form>
 	<Form>
 		<FormID>63</FormID>
@@ -11801,7 +11974,7 @@ Current sale date is</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11810,7 +11983,7 @@ Current sale date is</Lang1>
 		<Lang1>Manage Order From Web API</Lang1>
 		<Lang2>Manage Order From Web API</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11819,7 +11992,7 @@ Current sale date is</Lang1>
 		<Lang1>Customer Name :</Lang1>
 		<Lang2>ลูกค้า :</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11828,7 +12001,7 @@ Current sale date is</Lang1>
 		<Lang1>Order Time :</Lang1>
 		<Lang2>เวลาที่สั่ง :</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11837,7 +12010,7 @@ Current sale date is</Lang1>
 		<Lang1>Reserve Time :</Lang1>
 		<Lang2>เวลามารับ/ ใช้บริการ :</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11846,7 +12019,7 @@ Current sale date is</Lang1>
 		<Lang1>Print Receipt</Lang1>
 		<Lang2>พิมพ์ใบเสร็จ</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11855,7 +12028,7 @@ Current sale date is</Lang1>
 		<Lang1>Send Order</Lang1>
 		<Lang2>ส่งรายการ</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11864,7 +12037,7 @@ Current sale date is</Lang1>
 		<Lang1>Discount</Lang1>
 		<Lang2>Discount</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11873,7 +12046,7 @@ Current sale date is</Lang1>
 		<Lang1>Fast  Discount</Lang1>
 		<Lang2>Fast  Discount</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11882,7 +12055,7 @@ Current sale date is</Lang1>
 		<Lang1>Close</Lang1>
 		<Lang2>ปิด</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11891,7 +12064,7 @@ Current sale date is</Lang1>
 		<Lang1>Assign Table</Lang1>
 		<Lang2>เลือกโต๊ะ</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11900,7 +12073,7 @@ Current sale date is</Lang1>
 		<Lang1>Pick up and Close</Lang1>
 		<Lang2>รับของแล้ว</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11909,7 +12082,7 @@ Current sale date is</Lang1>
 		<Lang1>Item Code</Lang1>
 		<Lang2>รหัสสินค้า</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11918,7 +12091,7 @@ Current sale date is</Lang1>
 		<Lang1>Item Name</Lang1>
 		<Lang2>ชื่อสินค้า</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11927,7 +12100,7 @@ Current sale date is</Lang1>
 		<Lang1>Price/Unit</Lang1>
 		<Lang2>ราคา/หน่วย</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11936,7 +12109,7 @@ Current sale date is</Lang1>
 		<Lang1>Qty.</Lang1>
 		<Lang2>จน.</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11945,7 +12118,7 @@ Current sale date is</Lang1>
 		<Lang1>Total</Lang1>
 		<Lang2>ราคารวม</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11954,7 +12127,7 @@ Current sale date is</Lang1>
 		<Lang1>Take Order</Lang1>
 		<Lang2>ทำรายการ</Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11963,7 +12136,7 @@ Current sale date is</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11972,7 +12145,7 @@ Current sale date is</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
-	<Form>	<!--insert date 30/07/19 Patch6208-->
+	<Form>
 		<FormID>76</FormID>
 		<FormName>FormManageOrderFromWebAPI</FormName>
 		<TextType>1</TextType>
@@ -11981,6 +12154,12 @@ Current sale date is</Lang1>
 		<Lang1></Lang1>
 		<Lang2></Lang2>
 	</Form>
+	
+	
+	
+	
+	
+	
 	<Form>
 		<FormID>999</FormID>
 		<FormName>CommonText</FormName>

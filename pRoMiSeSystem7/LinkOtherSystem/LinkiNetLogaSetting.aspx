@@ -69,6 +69,11 @@
 	<td><asp:Label ID="lblDefaultAddMemberGroupID" Text="Default MemberGroup For Add in DB" runat="server" /></td>
 	<td class="text"><asp:DropDownList ID="cboDefaultMemberGroup" Width="200px" runat="server"></asp:DropDownList></td>
 </tr>
+<tr id="trUseSSL" runat="server" >
+	<td><asp:Label ID="lblUseSSLTLS" Text="Use SSL TLS 1.2 protocol" runat="server" /></td>
+	<td class="text"><asp:RadioButton ID="optUseSSL_Yes" runat="server" Text="Yes" GroupName="UseSSLGroup" /> &nbsp;&nbsp;&nbsp; 
+                     <asp:RadioButton ID="optUseSSL_No" runat="server" Text="No" GroupName="UseSSLGroup" /> </td>
+</tr>
 <tr>
     <td></td> 
     <td></td> 

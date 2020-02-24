@@ -1947,7 +1947,7 @@ Dim Prop As New ConfigProperty()
                     SString = SString.Append("<br><table id=""myTable4"" class=""blue"" width=""100%"">")
                     SString = SString.Append("<thead><tr>")
                     SString = SString.Append("<th align=""center"">#</th>")
-                    SString = SString.Append("<th align=""center"">Sale Mode Parameter Name</th>")
+                    SString = SString.Append("<th align=""center"" width=""50%"">Sale Mode Parameter Name</th>")
                     For i = 0 To SaleMode.Rows.Count - 1
                         SString = SString.Append("<th align=""center"">" + SaleMode.Rows(i)("SaleModeName") + "</th>")
                     Next
@@ -1963,7 +1963,7 @@ Dim Prop As New ConfigProperty()
                                 TextString = foundRows(0)(ColData.Rows(j)("ColumnName")).ToString
                             End If
                             ParamStringVal = "SM_" + ColData.Rows(j)("ColumnName") + "|" + SaleMode.Rows(i)("SaleModeID").ToString + ":" + ProductLevelID.Value.ToString
-                            SString = SString.Append("<td align=""center""><input type=""text"" style=""width:150px"" name=""" + ParamStringVal + """ value=""" + TextString + """></td>")
+                            SString = SString.Append("<td align=""center""><input type=""text"" style=""width:50px"" name=""" + ParamStringVal + """ value=""" + TextString + """></td>")
                         Next
                         SString = SString.Append("</tr>")
                     Next

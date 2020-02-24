@@ -469,6 +469,60 @@
     <value>ยกเว้น VAT ของสินค้า (SCD Discount)</value>
   </Form>
   <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>17</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>Promo Code</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>18</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>เลือกรายการที่ลดเอง</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>19</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>คำอธิบาย</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>20</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>แปลงเป็นการจ่ายเงิน</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>21</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>2</langid>
+    <value>----- ไม่แปลง -----</value>
+  </Form>
+  <Form>
+    <formid>3</formid>
+    <formname>Promotion_Price_Edit.aspx</formname>
+    <id>22</id>
+    <name>Promotion Price Edit</name>
+    <type>Label</type>
+    <langid>1</langid>
+    <value></value>
+  </Form>
+  <Form>
     <formid>4</formid>
     <formname>Promotion_Link.aspx</formname>
     <id>0</id>
